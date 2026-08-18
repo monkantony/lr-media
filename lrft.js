@@ -46,6 +46,12 @@
 #lrap .lrap-fill { position:absolute; top:0; bottom:0; left:0; width:0%; background:var(--lr-or); }
 #lrap .lrap-ai { font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--lr-ink40); }
 #lrap .lrap-time { font-size:9.5px; letter-spacing:.08em; color:rgba(1,16,21,.38); font-variant-numeric:tabular-nums; }
+#lrap .lrap-skip { width:36px; height:36px; flex:0 0 36px; border-radius:999px; border:1px solid rgba(1,16,21,.4);
+  background:none; color:var(--lr-ink); cursor:pointer; font-family:var(--lr-sans); font-size:8.5px; font-weight:500; letter-spacing:.04em; padding:0; }
+#lrap .lrap-rate { flex:0 0 auto; align-self:center; border:1px solid rgba(1,16,21,.4); border-radius:999px; background:none;
+  color:var(--lr-ink); cursor:pointer; font-family:var(--lr-sans); font-size:9.5px; font-weight:500; letter-spacing:.08em;
+  padding:7px 11px; font-variant-numeric:tabular-nums; }
+#lrap .lrap-skip:hover, #lrap .lrap-rate:hover { border-color:var(--lr-or); color:var(--lr-or); }
 `;document.head.appendChild(st);
 (function () {
   var DATA_URL = 'https://raw.githubusercontent.com/monkantony/lr-media/main/footer_data.txt';
@@ -91,18 +97,32 @@
     var host = document.querySelector('.text-garamond');
     if (!host || document.getElementById('lrap')) return;
     var el = document.createElement('div'); el.id = 'lrap';
-    el.innerHTML = '<button class="lrap-btn" type="button" aria-label="Play audio">'
+    el.innerHTML = '<button class="lrap-skip lrap-b15" type="button" aria-label="Back 15 seconds">&#8722;15</button>'
+      + '<button class="lrap-btn" type="button" aria-label="Play audio">'
       + '<svg class="lrap-ic-play" viewBox="0 0 16 16"><path d="M3 1.5 14 8 3 14.5z"/></svg>'
       + '<svg class="lrap-ic-pause" viewBox="0 0 16 16"><path d="M3 1.5h3.6v13H3zM9.4 1.5H13v13H9.4z"/></svg></button>'
+      + '<button class="lrap-skip lrap-f15" type="button" aria-label="Forward 15 seconds">+15</button>'
       + '<span class="lrap-meta"><span class="lrap-lbl">Listen to this editorial &#183; ' + Math.round(secs / 60) + ' min</span>'
-      + '<span class="lrap-ai">AI-generated audio &#183; LR Pod theme by Rami Awad</span>'
+      + '<span class="lrap-ai">AI-generated components &#183; LR Pod theme by Rami Awad</span>'
       + '<span class="lrap-bar"><span class="lrap-fill"></span></span>'
-      + '<span class="lrap-time">0:00 / ' + fmt(secs) + '</span></span>';
+      + '<span class="lrap-time">0:00 / ' + fmt(secs) + '</span></span>'
+      + '<button class="lrap-rate" type="button" aria-label="Playback speed">1&#215;</button>';
     host.parentNode.insertBefore(el, host);
     var a = new Audio(); a.preload = 'none'; a.src = url;
     var fill = el.querySelector('.lrap-fill'), time = el.querySelector('.lrap-time');
     function fmt(t) { t = Math.max(0, Math.round(t)); var mm = Math.floor(t / 60), ss = t % 60; return mm + ':' + (ss < 10 ? '0' : '') + ss; }
     function dur() { return a.duration && isFinite(a.duration) ? a.duration : secs; }
+    function seekBy(d) {
+      var go = function () { a.currentTime = Math.min(dur(), Math.max(0, a.currentTime + d)); };
+      if (a.readyState >= 1) { go(); } else { a.addEventListener('loadedmetadata', go, { once: true }); a.load(); }
+    }
+    el.querySelector('.lrap-b15').addEventListener('click', function () { seekBy(-15); });
+    el.querySelector('.lrap-f15').addEventListener('click', function () { seekBy(15); });
+    var RATES = [1, 1.25, 1.5, 1.75, 2], ri = 0, rateBtn = el.querySelector('.lrap-rate');
+    rateBtn.addEventListener('click', function () {
+      ri = (ri + 1) % RATES.length; a.playbackRate = RATES[ri];
+      rateBtn.innerHTML = String(RATES[ri]).replace('.25','.25').replace('.75','.75') + '&#215;';
+    });
     el.querySelector('.lrap-btn').addEventListener('click', function () {
       if (a.paused) { a.play(); } else { a.pause(); }
     });
