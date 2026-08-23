@@ -52,7 +52,38 @@
   color:var(--lr-ink); cursor:pointer; font-family:var(--lr-sans); font-size:9.5px; font-weight:500; letter-spacing:.08em;
   padding:7px 11px; font-variant-numeric:tabular-nums; }
 #lrap .lrap-skip:hover, #lrap .lrap-rate:hover { border-color:var(--lr-or); color:var(--lr-or); }
-`;document.head.appendChild(st);
+#lrtopbar { position:sticky; top:var(--lrw-navh,0px); z-index:60; background:var(--cream);
+  border-bottom:1px solid transparent; transition:border-color .25s ease, background .25s ease; }
+#lrtopbar.stuck { border-bottom-color:var(--hair); background:rgba(244,241,230,.94); backdrop-filter:blur(8px) saturate(1.1); }
+#lrtopbar .util { display:flex; align-items:center; justify-content:space-between; gap:30px; padding:17px 0 16px; }
+#lrtopbar .util nav { display:flex; gap:26px; flex:1 1 auto; min-width:0; overflow-x:auto;
+  scrollbar-width:none; -ms-overflow-style:none; justify-content:flex-end; }
+#lrtopbar .util nav::-webkit-scrollbar { display:none; }
+#lrtopbar .util nav a { font-family:var(--sans); font-size:11.5px; letter-spacing:.04em; padding-bottom:2px; border-bottom:1px solid transparent; white-space:nowrap; }
+#lrtopbar .util nav a:hover { border-color:var(--ink); }
+#lrtopbar .util .right { display:flex; align-items:center; gap:18px; }
+.die-btn { display:inline-flex; align-items:center; gap:11px; cursor:pointer; }
+.die-wrap { display:inline-block; position:relative; line-height:0; will-change:transform;
+  transform-origin:50% 60%; }
+.die-svg { display:block; overflow:visible; }
+.die-body { fill:#F7F4EA; stroke:var(--ink); stroke-width:1.6; transition:fill .2s; }
+.die-pip { fill:var(--ink); transition:fill .2s; }
+.die-face { display:none; }
+.die-face.is-on { display:block; }
+.die-lbl { font-family:var(--sans); font-size:10px; font-weight:500; letter-spacing:.16em; text-transform:uppercase; }
+.die-shadow { position:absolute; left:50%; bottom:-7px; width:76%; height:4px; translate:-50% 0;
+  background:rgba(1,16,21,.26); border-radius:50%; filter:blur(2.5px); }
+#lrtopbar .tb-search { display:flex; align-items:center; border-bottom:1px solid rgba(1,16,21,.3); padding:3px 2px; width:150px; transition:width .2s ease, border-color .2s ease; }
+#lrtopbar .tb-search:focus-within { width:230px; border-color:var(--ink); }
+#lrtopbar .tb-search input { border:0; background:none; outline:none; width:100%; font-family:var(--serif); font-style:italic; font-size:13px; color:var(--ink); }
+#lrtopbar #lrtopbar .util { padding:11px var(--frame) 10px; }
+#lrtopbar nav { justify-content:flex-start; }
+#lrtopbar { position:sticky; top:var(--lrw-navh,0px); z-index:60; background:var(--lr-cream); }
+#lrtopbar .util { max-width:1580px; margin:0 auto; padding:11px clamp(20px,4.4vw,80px) 10px; display:flex; align-items:center; justify-content:space-between; gap:22px; }
+#lrtopbar nav { display:flex; gap:24px; flex:1 1 auto; min-width:0; overflow-x:auto; justify-content:flex-start; scrollbar-width:none; }
+#lrtopbar nav::-webkit-scrollbar { display:none; }
+@media(max-width:640px){ #lrtopbar .tb-search { display:none; } }`;document.head.appendChild(st);var TOPBAR = "<header class=\"topbar\" id=\"lrtopbar\"> <div class=\"wrap util\"> <nav> <a href=\"/editorials#latest\">Latest</a> <a href=\"/editorials#interviews\">Interviews</a> <a href=\"/editorials#essays\">Essays</a> <a href=\"/editorials#dossiers\">Dossiers</a> <a href=\"/editorials#register\">Register</a> <a href=\"/editorials#subjects\">Subjects</a> <a href=\"/editorials#contributors\">Contributors</a> <a href=\"/editorials#register-pod\">Podcast</a> </nav> <div class=\"right\"> <label class=\"tb-search\"><input id=\"lrtb-q\" type=\"search\" placeholder=\"Search everything\u2026\" aria-label=\"Search editorials and episodes\"></label> <a class=\"die-btn js-die\" href=\"/editorials\" target=\"_blank\" rel=\"noopener\" aria-label=\"Open a random editorial\"><span class=\"die-wrap\"><svg class=\"die-svg\" width=\"26\" height=\"26\" viewBox=\"0 0 44 44\" aria-hidden=\"true\"> <rect class=\"die-body\" x=\"1\" y=\"1\" width=\"42\" height=\"42\" rx=\"9\"/> <g class=\"die-face\" data-f=\"1\"><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"2\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"3\"><circle class=\"die-pip\" cx=\"12\" cy=\"12\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"32\" cy=\"32\" r=\"3.7\"/></g> <g class=\"die-face\" data-f=\"4\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.7\"/></g> <g class=\"die-face is-on\" data-f=\"5\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.5\"/></g> <g class=\"die-face\" data-f=\"6\"><circle class=\"die-pip\" cx=\"13\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"33\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"33\" r=\"3.4\"/></g> </svg><span class=\"die-shadow\"></span></span><span class=\"die-lbl\">Random</span></a> </div> </div> </header>";
+
 (function () {
   var DATA_URL = 'https://raw.githubusercontent.com/monkantony/lr-media/main/footer_data.txt';
   var GROUPS = [['p','People'],['w','Works'],['o','Organisations'],['pl','Places'],['t','Techniques'],['th','Themes']];
@@ -91,6 +122,42 @@
              : '<a href="/editorials"><span class="lrft-dir">Next · the newest</span><span class="lrft-t">You are reading the latest editorial. Browse the archive</span></a>')
       + '</nav>';
     box.innerHTML = html;
+  /* the editorials header, carried onto the article pages */
+  (function(){
+    if (document.getElementById('lrtopbar')) return;
+    var host = document.querySelector('.navbar_component');
+    var bar = document.createElement('div');
+    bar.innerHTML = TOPBAR;
+    bar = bar.firstElementChild;
+    if (host && host.parentNode) host.parentNode.insertBefore(bar, host.nextSibling);
+    else document.body.insertBefore(bar, document.body.firstChild);
+    var nav = document.querySelector('.navbar_component');
+    function navh(){
+      if (nav && getComputedStyle(nav).position === 'fixed')
+        document.documentElement.style.setProperty('--lrw-navh', nav.getBoundingClientRect().height + 'px');
+    }
+    navh(); addEventListener('resize', navh, {passive:true});
+    var q = document.getElementById('lrtb-q');
+    if (q) {
+      var go = function(){
+        var v = q.value.trim();
+        if (v) location.href = '/editorials#q=' + encodeURIComponent(v);
+      };
+      q.addEventListener('keydown', function(e){ if (e.key === 'Enter') go(); });
+      q.addEventListener('search', go);
+    }
+    var SLUGS = null;
+    [].forEach.call(bar.querySelectorAll('.js-die'), function(el){
+      var faces = [].slice.call(el.querySelectorAll('.die-face'));
+      function face(n){ faces.forEach(function(g,i){ g.classList.toggle('is-on', i === n-1); }); }
+      face(5);
+      el.addEventListener('pointerdown', function(){
+        var keys = Object.keys(data.arts);
+        el.href = '/editorial/' + keys[Math.floor(Math.random()*keys.length)];
+      });
+    });
+  })();
+
     if (me.au) { try { player(me.au[0], me.au[1]); } catch (e) { /* no player beats a broken page */ } }
   }).catch(function(){ /* no footer beats a broken footer */ });
   function player(url, secs) {
