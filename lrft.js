@@ -166,6 +166,34 @@
     });
   })();
 
+  /* ---------- Article structured data, built from the payload already fetched ---------- */
+  (function(){
+    var r = data.arts[slug]; if (!r) return;
+    var ORIGIN = location.origin;
+    var ld = {
+      '@context': 'https://schema.org', '@type': 'Article',
+      'headline': r[2], 'datePublished': r[3],
+      'author': { '@type': 'Person', 'name': r[4] },
+      'publisher': { '@type': 'Organization', 'name': 'Le Random', 'url': ORIGIN },
+      'mainEntityOfPage': { '@type': 'WebPage', '@id': ORIGIN + '/editorial/' + slug },
+      'url': ORIGIN + '/editorial/' + slug,
+      'isPartOf': { '@type': 'CollectionPage', 'name': 'Le Random Editorials', 'url': ORIGIN + '/editorials' }
+    };
+    if (r[5]) ld.image = r[5];
+    if (me.au) ld.audio = { '@type': 'AudioObject', 'contentUrl': me.au[0],
+                            'duration': 'PT' + Math.round(me.au[1] / 60) + 'M',
+                            'description': 'AI-generated audio edition' };
+    var m = me.m || {}, subj = [];
+    ['p','w','o','pl','t','th'].forEach(function(k){
+      (m[k] || []).forEach(function(n){ if (subj.length < 24) subj.push(n[0]); });
+    });
+    if (subj.length) ld.about = subj.map(function(n){ return { '@type': 'Thing', 'name': n }; });
+    var el = document.createElement('script');
+    el.type = 'application/ld+json'; el.id = 'lrft-ld';
+    el.textContent = JSON.stringify(ld);
+    document.head.appendChild(el);
+  })();
+
     if (me.au) { try { player(me.au[0], me.au[1]); } catch (e) { /* no player beats a broken page */ } }
   }).catch(function(){ /* no footer beats a broken footer */ });
   function player(url, secs) {
