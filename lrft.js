@@ -55,7 +55,7 @@
 `;document.head.appendChild(st);
 (function () {
   var DATA_URL = 'https://raw.githubusercontent.com/monkantony/lr-media/main/footer_data.txt';
-  var GROUPS = [['p','People'],['w','Works'],['o','Organisations'],['pl','Places'],['t','Techniques']];
+  var GROUPS = [['p','People'],['w','Works'],['o','Organisations'],['pl','Places'],['t','Techniques'],['th','Themes']];
   var slug = location.pathname.replace(/\/+$/,'').split('/').pop();
   var box = document.getElementById('lrft');
   function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;'); }
