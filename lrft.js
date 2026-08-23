@@ -52,37 +52,45 @@
   color:var(--lr-ink); cursor:pointer; font-family:var(--lr-sans); font-size:9.5px; font-weight:500; letter-spacing:.08em;
   padding:7px 11px; font-variant-numeric:tabular-nums; }
 #lrap .lrap-skip:hover, #lrap .lrap-rate:hover { border-color:var(--lr-or); color:var(--lr-or); }
-#lrtopbar { position:sticky; top:var(--lrw-navh,0px); z-index:60; background:var(--cream);
+#lrtopbar { position:sticky; top:var(--lrw-navh,0px); z-index:60; background:#EFE9D8;
   border-bottom:1px solid transparent; transition:border-color .25s ease, background .25s ease; }
-#lrtopbar.stuck { border-bottom-color:var(--hair); background:rgba(244,241,230,.94); backdrop-filter:blur(8px) saturate(1.1); }
+#lrtopbar.stuck { border-bottom-color:rgba(1,16,21,.17); background:rgba(244,241,230,.94); backdrop-filter:blur(8px) saturate(1.1); }
 #lrtopbar .util { display:flex; align-items:center; justify-content:space-between; gap:30px; padding:17px 0 16px; }
 #lrtopbar .util nav { display:flex; gap:26px; flex:1 1 auto; min-width:0; overflow-x:auto;
   scrollbar-width:none; -ms-overflow-style:none; justify-content:flex-end; }
 #lrtopbar .util nav::-webkit-scrollbar { display:none; }
-#lrtopbar .util nav a { font-family:var(--sans); font-size:11.5px; letter-spacing:.04em; padding-bottom:2px; border-bottom:1px solid transparent; white-space:nowrap; }
-#lrtopbar .util nav a:hover { border-color:var(--ink); }
+#lrtopbar .util nav a { font-family:'Rules',Helvetica,Arial,sans-serif; font-size:11.5px; letter-spacing:.04em; padding-bottom:2px; border-bottom:1px solid transparent; white-space:nowrap; }
+#lrtopbar .util nav a:hover { border-color:#011015; }
 #lrtopbar .util .right { display:flex; align-items:center; gap:18px; }
 .die-btn { display:inline-flex; align-items:center; gap:11px; cursor:pointer; }
 .die-wrap { display:inline-block; position:relative; line-height:0; will-change:transform;
   transform-origin:50% 60%; }
 .die-svg { display:block; overflow:visible; }
-.die-body { fill:#F7F4EA; stroke:var(--ink); stroke-width:1.6; transition:fill .2s; }
-.die-pip { fill:var(--ink); transition:fill .2s; }
+.die-body { fill:#F7F4EA; stroke:#011015; stroke-width:1.6; transition:fill .2s; }
+.die-pip { fill:#011015; transition:fill .2s; }
 .die-face { display:none; }
 .die-face.is-on { display:block; }
-.die-lbl { font-family:var(--sans); font-size:10px; font-weight:500; letter-spacing:.16em; text-transform:uppercase; }
+.die-lbl { font-family:'Rules',Helvetica,Arial,sans-serif; font-size:10px; font-weight:500; letter-spacing:.16em; text-transform:uppercase; }
 .die-shadow { position:absolute; left:50%; bottom:-7px; width:76%; height:4px; translate:-50% 0;
   background:rgba(1,16,21,.26); border-radius:50%; filter:blur(2.5px); }
 #lrtopbar .tb-search { display:flex; align-items:center; border-bottom:1px solid rgba(1,16,21,.3); padding:3px 2px; width:150px; transition:width .2s ease, border-color .2s ease; }
-#lrtopbar .tb-search:focus-within { width:230px; border-color:var(--ink); }
-#lrtopbar .tb-search input { border:0; background:none; outline:none; width:100%; font-family:var(--serif); font-style:italic; font-size:13px; color:var(--ink); }
-#lrtopbar #lrtopbar .util { padding:11px var(--frame) 10px; }
+#lrtopbar .tb-search:focus-within { width:230px; border-color:#011015; }
+#lrtopbar .tb-search input { border:0; background:none; outline:none; width:100%; font-family:'Ebgaramond','EB Garamond',Garamond,Georgia,serif; font-style:italic; font-size:13px; color:#011015; }
+#lrtopbar #lrtopbar .util { padding:11px clamp(20px,4.4vw,80px) 10px; }
 #lrtopbar nav { justify-content:flex-start; }
-#lrtopbar { position:sticky; top:var(--lrw-navh,0px); z-index:60; background:var(--lr-cream); }
+#lrtopbar { position:sticky; top:var(--lrw-navh,0px); z-index:60; background:#EFE9D8; }
 #lrtopbar .util { max-width:1580px; margin:0 auto; padding:11px clamp(20px,4.4vw,80px) 10px; display:flex; align-items:center; justify-content:space-between; gap:22px; }
 #lrtopbar nav { display:flex; gap:24px; flex:1 1 auto; min-width:0; overflow-x:auto; justify-content:flex-start; scrollbar-width:none; }
 #lrtopbar nav::-webkit-scrollbar { display:none; }
-@media(max-width:640px){ #lrtopbar .tb-search { display:none; } }`;document.head.appendChild(st);var TOPBAR = "<header class=\"topbar\" id=\"lrtopbar\"> <div class=\"wrap util\"> <nav> <a href=\"/editorials#latest\">Latest</a> <a href=\"/editorials#interviews\">Interviews</a> <a href=\"/editorials#essays\">Essays</a> <a href=\"/editorials#dossiers\">Dossiers</a> <a href=\"/editorials#register\">Register</a> <a href=\"/editorials#subjects\">Subjects</a> <a href=\"/editorials#contributors\">Contributors</a> <a href=\"/editorials#register-pod\">Podcast</a> </nav> <div class=\"right\"> <label class=\"tb-search\"><input id=\"lrtb-q\" type=\"search\" placeholder=\"Search everything\u2026\" aria-label=\"Search editorials and episodes\"></label> <a class=\"die-btn js-die\" href=\"/editorials\" target=\"_blank\" rel=\"noopener\" aria-label=\"Open a random editorial\"><span class=\"die-wrap\"><svg class=\"die-svg\" width=\"26\" height=\"26\" viewBox=\"0 0 44 44\" aria-hidden=\"true\"> <rect class=\"die-body\" x=\"1\" y=\"1\" width=\"42\" height=\"42\" rx=\"9\"/> <g class=\"die-face\" data-f=\"1\"><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"2\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"3\"><circle class=\"die-pip\" cx=\"12\" cy=\"12\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"32\" cy=\"32\" r=\"3.7\"/></g> <g class=\"die-face\" data-f=\"4\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.7\"/></g> <g class=\"die-face is-on\" data-f=\"5\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.5\"/></g> <g class=\"die-face\" data-f=\"6\"><circle class=\"die-pip\" cx=\"13\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"33\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"33\" r=\"3.4\"/></g> </svg><span class=\"die-shadow\"></span></span><span class=\"die-lbl\">Random</span></a> </div> </div> </header>";
+@media(max-width:640px){ #lrtopbar .tb-search { display:none; } }
+#lrtopbar { background:#EFE9D8; border-bottom:1px solid rgba(1,16,21,.17); }
+#lrtopbar.stuck { background:rgba(239,233,216,.94); backdrop-filter:blur(8px) saturate(1.1); }
+#lrtopbar a { color:#011015; text-decoration:none; }
+#lrtopbar nav a { font-family:'Rules',Helvetica,Arial,sans-serif; font-size:11.5px; letter-spacing:.04em; padding-bottom:2px; border-bottom:1px solid transparent; white-space:nowrap; }
+#lrtopbar nav a:hover { border-color:#011015; }
+#lrtopbar .die-body { fill:none; stroke:#011015; stroke-width:2; }
+#lrtopbar .die-pip { fill:#011015; }
+#lrtopbar .die-lbl { font-family:'Rules',Helvetica,Arial,sans-serif; font-size:10px; font-weight:500; letter-spacing:.16em; text-transform:uppercase; color:#011015; }`;document.head.appendChild(st);var TOPBAR = "<header class=\"topbar\" id=\"lrtopbar\"> <div class=\"wrap util\"> <nav> <a href=\"/editorials#latest\">Latest</a> <a href=\"/editorials#interviews\">Interviews</a> <a href=\"/editorials#essays\">Essays</a> <a href=\"/editorials#dossiers\">Dossiers</a> <a href=\"/editorials#register\">Register</a> <a href=\"/editorials#subjects\">Subjects</a> <a href=\"/editorials#contributors\">Contributors</a> <a href=\"/editorials#register-pod\">Podcast</a> </nav> <div class=\"right\"> <label class=\"tb-search\"><input id=\"lrtb-q\" type=\"search\" placeholder=\"Search everything\u2026\" aria-label=\"Search editorials and episodes\"></label> <a class=\"die-btn js-die\" href=\"/editorials\" target=\"_blank\" rel=\"noopener\" aria-label=\"Open a random editorial\"><span class=\"die-wrap\"><svg class=\"die-svg\" width=\"26\" height=\"26\" viewBox=\"0 0 44 44\" aria-hidden=\"true\"> <rect class=\"die-body\" x=\"1\" y=\"1\" width=\"42\" height=\"42\" rx=\"9\"/> <g class=\"die-face\" data-f=\"1\"><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"2\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"3\"><circle class=\"die-pip\" cx=\"12\" cy=\"12\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"32\" cy=\"32\" r=\"3.7\"/></g> <g class=\"die-face\" data-f=\"4\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.7\"/></g> <g class=\"die-face is-on\" data-f=\"5\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.5\"/></g> <g class=\"die-face\" data-f=\"6\"><circle class=\"die-pip\" cx=\"13\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"33\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"33\" r=\"3.4\"/></g> </svg><span class=\"die-shadow\"></span></span><span class=\"die-lbl\">Random</span></a> </div> </div> </header>";
 
 (function () {
   var DATA_URL = 'https://raw.githubusercontent.com/monkantony/lr-media/main/footer_data.txt';
