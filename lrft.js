@@ -166,6 +166,28 @@
     });
   })();
 
+
+  /* ---------- the author box links to the author's page ---------- */
+  (function(){
+    var r = data.arts[slug]; if (!r || !r[4]) return;
+    var href = '/editorials#writer=' + encodeURIComponent(String(r[4]).toLowerCase());
+    ['.blog-post5-content_author-wrapper', '.author-about'].forEach(function(sel){
+      [].forEach.call(document.querySelectorAll(sel), function(el){
+        if (el.closest('a') || el.dataset.lrWriter) return;
+        el.dataset.lrWriter = '1';
+        el.style.cursor = 'pointer';
+        el.setAttribute('role', 'link');
+        el.setAttribute('tabindex', '0');
+        el.setAttribute('aria-label', 'All editorials by ' + r[4]);
+        function go(){ location.href = href; }
+        el.addEventListener('click', go);
+        el.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+        el.addEventListener('mouseenter', function(){ el.style.opacity = '.72'; });
+        el.addEventListener('mouseleave', function(){ el.style.opacity = ''; });
+      });
+    });
+  })();
+
   /* ---------- Article structured data, built from the payload already fetched ---------- */
   (function(){
     var r = data.arts[slug]; if (!r) return;
