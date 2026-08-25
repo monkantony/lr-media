@@ -52,6 +52,14 @@
   color:var(--lr-ink); cursor:pointer; font-family:var(--lr-sans); font-size:9.5px; font-weight:500; letter-spacing:.08em;
   padding:7px 11px; font-variant-numeric:tabular-nums; }
 #lrap .lrap-skip:hover, #lrap .lrap-rate:hover { border-color:var(--lr-or); color:var(--lr-or); }
+.lrft-ln { display:flex; align-items:baseline; gap:16px; padding:13px 0; border-bottom:1px solid rgba(1,16,21,.08); }
+.lrft-ln .ln-no { flex:0 0 34px; font-family:var(--lr-sans); font-size:10px; font-weight:500; letter-spacing:.1em; color:var(--lr-or); }
+.lrft-ln .ln-t { flex:1 1 auto; min-width:0; font-family:var(--lr-sans); font-weight:500; letter-spacing:-.02rem; font-size:16.5px; line-height:1.25; }
+.lrft-ln:hover .ln-t { color:var(--lr-or); }
+.lrft-ln .ln-len, .lrft-ln .ln-badge { font-family:var(--lr-sans); font-size:9.5px; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:rgba(1,16,21,.38); white-space:nowrap; }
+.lrft-ln .ln-badge { border:1px solid var(--lr-or); color:var(--lr-or); border-radius:999px; padding:2px 8px 1px; }
+.lrft-ln .ln-sh { flex:1 1 100%; font-family:var(--lr-serif); font-style:italic; font-size:13.5px; color:rgba(1,16,21,.38); margin-top:2px; }
+@media(max-width:640px){ .lrft-ln { flex-wrap:wrap; } }
 #lrtopbar { position:sticky; top:var(--lrw-navh,0px); z-index:60; background:#EFE9D8;
   border-bottom:1px solid transparent; transition:border-color .25s ease, background .25s ease; }
 #lrtopbar.stuck { border-bottom-color:rgba(1,16,21,.17); background:rgba(244,241,230,.94); backdrop-filter:blur(8px) saturate(1.1); }
@@ -123,6 +131,15 @@
         + '<span class="lrft-sh">Shared subjects: ' + esc(p[1].join(', ')) + '</span></a>';
     }).join('');
     if (cards) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Read next</h2><div class="lrft-rn">' + cards + '</div></section>';
+    var lnRows = (me.ln || []).map(function(l){
+      return '<a class="lrft-ln" href="/editorials#pod=' + l[0] + '">'
+        + '<span class="ln-no">' + ('0' + l[0]).slice(-2) + '</span>'
+        + '<span class="ln-t">' + esc(l[1]) + '</span>'
+        + '<span class="ln-badge">Listen</span>'
+        + '<span class="ln-len">' + Math.round((l[2] || 0) / 60) + ' min</span>'
+        + '<span class="ln-sh">Shared subjects: ' + esc((l[3] || []).join(', ')) + '</span></a>';
+    }).join('');
+    if (lnRows) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Listen next</h2>' + lnRows + '</section>';
     var prv = bySlugN[mine[0] - 1], nxt = bySlugN[mine[0] + 1];
     html += '<nav class="lrft-pn">'
       + (prv ? '<a href="' + art(prv) + '"><span class="lrft-dir">&#8592; Previous · ' + ('000' + A[prv][0]).slice(-3) + '</span><span class="lrft-t">' + esc(A[prv][2]) + '</span></a>' : '<span></span>')
