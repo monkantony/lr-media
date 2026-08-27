@@ -58,6 +58,7 @@
 .lrft-ln:hover .ln-t { color:var(--lr-or); }
 .lrft-ln .ln-len, .lrft-ln .ln-badge { font-family:var(--lr-sans); font-size:9.5px; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:rgba(1,16,21,.38); white-space:nowrap; }
 .lrft-ln .ln-badge { border:1px solid var(--lr-or); color:var(--lr-or); border-radius:999px; padding:2px 8px 1px; }
+.lrft-tl .tl-y { flex:0 0 84px; }
 .lrft-ln .ln-sh { flex:1 1 100%; font-family:var(--lr-serif); font-style:italic; font-size:13.5px; color:rgba(1,16,21,.38); margin-top:2px; }
 @media(max-width:640px){ .lrft-ln { flex-wrap:wrap; } }
 #lrtopbar { position:sticky; top:var(--lrw-navh,0px); z-index:60; background:#EFE9D8;
@@ -140,6 +141,13 @@
         + '<span class="ln-sh">Shared subjects: ' + esc((l[3] || []).join(', ')) + '</span></a>';
     }).join('');
     if (lnRows) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Listen next</h2>' + lnRows + '</section>';
+    var tlRows = (me.tl || []).map(function(m){
+      return '<a class="lrft-ln lrft-tl" href="https://timeline.lerandom.art/#/chapter-' + m[3] + '" target="_blank" rel="noopener">'
+        + '<span class="ln-no tl-y">' + esc(m[2]) + '</span>'
+        + '<span class="ln-t">' + esc(m[1]) + '</span>'
+        + '<span class="ln-badge">Timeline</span></a>';
+    }).join('');
+    if (tlRows) html += '<section class="lrft-zone"><h2 class="lrft-lbl">From the timeline</h2>' + tlRows + '</section>';
     var prv = bySlugN[mine[0] - 1], nxt = bySlugN[mine[0] + 1];
     html += '<nav class="lrft-pn">'
       + (prv ? '<a href="' + art(prv) + '"><span class="lrft-dir">&#8592; Previous · ' + ('000' + A[prv][0]).slice(-3) + '</span><span class="lrft-t">' + esc(A[prv][2]) + '</span></a>' : '<span></span>')
