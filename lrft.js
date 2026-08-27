@@ -326,7 +326,8 @@
             if (!ts.length) continue;
             cyc[key] = cyc[key] || 0;
             var tgt = ts[cyc[key] % ts.length]; cyc[key]++;
-            armed[form] = blockIdx + 3;   /* same form rests three blocks before linking again */
+            /* a subject-page link fires once; article/episode links rest three blocks */
+            armed[form] = tgt[0] === 's' ? 1e9 : blockIdx + 3;
             hits.push([s, e, hrefFor(tgt), SL[key][0]]);
           }
           if (!hits.length) return;
