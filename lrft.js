@@ -59,7 +59,7 @@
 .lrft-ln .ln-len, .lrft-ln .ln-badge { font-family:var(--lr-sans); font-size:9.5px; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:rgba(1,16,21,.38); white-space:nowrap; }
 .lrft-ln .ln-badge { border:1px solid var(--lr-or); color:var(--lr-or); border-radius:999px; padding:2px 8px 1px; }
 .lrft-tl .tl-y { flex:0 0 84px; }
-#lrmg { position:absolute; top:0; right:calc(-1 * min(320px, 24vw)); width:min(300px,22vw); pointer-events:none; }
+#lrmg { position:absolute; top:0; pointer-events:none; }
 #lrmg .lrmg-note { position:absolute; display:block; width:100%; pointer-events:auto; text-decoration:none;
   border-left:2px solid var(--lr-or); padding:2px 0 2px 14px; opacity:0; transform:translateY(6px);
   animation:lrmg-in .7s ease forwards; }
@@ -212,11 +212,18 @@
 
   /* ---------- marginalia: the archive whispers alongside the text ---------- */
   (function(){
+    function mount(){
     if (innerWidth < 1180) return;
-    var body = document.querySelector('.text-garamond'); if (!body) return;
+    var body = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
+    if (!body) return;
     var host = body.closest('div') || body.parentElement;
-    var gutter = innerWidth - body.getBoundingClientRect().right;
-    if (gutter < 300) return;
+    var br = body.getBoundingClientRect();
+    /* the article template is sidebar-left / body-right: the room is usually LEFT of the text */
+    var gr = innerWidth - br.right, gl = br.left;
+    var side = gl > gr ? 'left' : 'right';
+    var gutter = Math.max(gl, gr);
+    if (gutter < 250) return;
+    var w = Math.min(300, gutter - 56);
     fetch('https://raw.githubusercontent.com/monkantony/lr-media/main/reading.json')
       .then(function(r){ return r.json(); }).then(function(deck){
         var byslug = {}, byep = {};
@@ -240,9 +247,12 @@
         if (!notes.length) return;
         var wrap = document.createElement('div');
         wrap.id = 'lrmg';
+        wrap.style.width = w + 'px';
+        wrap.style[side] = -(w + 36) + 'px';
         host.style.position = host.style.position || 'relative';
         var bTop = body.offsetTop, bH = body.offsetHeight;
-        var stops = [0.14, 0.42, 0.68, 0.88];
+        /* left side carries the author sidebar up top — start the notes below it */
+        var stops = side === 'left' ? [0.3, 0.5, 0.7, 0.88] : [0.14, 0.42, 0.68, 0.88];
         wrap.innerHTML = notes.map(function(n, i){
           return '<a class="lrmg-note" ' + (n.ext ? 'target="_blank" rel="noopener" ' : '')
             + 'href="' + n.href.replace(/"/g, '&quot;') + '" style="top:' + Math.round(bTop + bH * stops[i]) + 'px">'
@@ -252,6 +262,10 @@
         }).join('');
         host.appendChild(wrap);
       }).catch(function(){});
+    }
+    /* measure only once layout is settled (fonts + images move the column) */
+    if (document.readyState === 'complete') setTimeout(mount, 300);
+    else addEventListener('load', function(){ setTimeout(mount, 300); }, { once: true });
   })();
 
   /* ---------- the author box links to the author's page ---------- */
