@@ -59,6 +59,21 @@
 .lrft-ln .ln-len, .lrft-ln .ln-badge { font-family:var(--lr-sans); font-size:9.5px; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:rgba(1,16,21,.38); white-space:nowrap; }
 .lrft-ln .ln-badge { border:1px solid var(--lr-or); color:var(--lr-or); border-radius:999px; padding:2px 8px 1px; }
 .lrft-tl .tl-y { flex:0 0 84px; }
+#lrmg { position:absolute; top:0; right:calc(-1 * min(320px, 24vw)); width:min(300px,22vw); pointer-events:none; }
+#lrmg .lrmg-note { position:absolute; display:block; width:100%; pointer-events:auto; text-decoration:none;
+  border-left:2px solid var(--lr-or); padding:2px 0 2px 14px; opacity:0; transform:translateY(6px);
+  animation:lrmg-in .7s ease forwards; }
+#lrmg .lrmg-note:nth-child(2) { animation-delay:.15s; } #lrmg .lrmg-note:nth-child(3) { animation-delay:.3s; }
+#lrmg .lrmg-note:nth-child(4) { animation-delay:.45s; }
+@keyframes lrmg-in { to { opacity:1; transform:none; } }
+#lrmg .lrmg-lbl { display:block; font-family:var(--lr-sans); font-size:8.5px; font-weight:500; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--lr-or); margin-bottom:6px; }
+#lrmg .lrmg-q { display:block; font-family:var(--lr-serif); font-size:14.5px; line-height:1.45; color:var(--lr-ink); }
+#lrmg .lrmg-note:hover .lrmg-q { color:var(--lr-or); }
+#lrmg .lrmg-s { display:block; font-family:var(--lr-sans); font-size:8.5px; font-weight:500; letter-spacing:.12em;
+  text-transform:uppercase; color:rgba(1,16,21,.4); margin-top:7px; }
+@media(max-width:1180px){ #lrmg { display:none; } }
+
 .lrft-ln .ln-sh { flex:1 1 100%; font-family:var(--lr-serif); font-style:italic; font-size:13.5px; color:rgba(1,16,21,.38); margin-top:2px; }
 @media(max-width:640px){ .lrft-ln { flex-wrap:wrap; } }
 #lrtopbar { position:sticky; top:var(--lrw-navh,0px); z-index:60; background:#EFE9D8;
@@ -193,6 +208,51 @@
     });
   })();
 
+
+
+  /* ---------- marginalia: the archive whispers alongside the text ---------- */
+  (function(){
+    if (innerWidth < 1180) return;
+    var body = document.querySelector('.text-garamond'); if (!body) return;
+    var host = body.closest('div') || body.parentElement;
+    var gutter = innerWidth - body.getBoundingClientRect().right;
+    if (gutter < 300) return;
+    fetch('https://raw.githubusercontent.com/monkantony/lr-media/main/reading.json')
+      .then(function(r){ return r.json(); }).then(function(deck){
+        var byslug = {}, byep = {};
+        deck.articles.forEach(function(a){ (byslug[a[0]] = byslug[a[0]] || []).push(a); });
+        deck.moments.forEach(function(m){ (byep[m[0]] = byep[m[0]] || []).push(m); });
+        var notes = [];
+        (me.rn || []).forEach(function(p){
+          var qs = byslug[p[0]];
+          if (qs) { var q = qs[Math.floor(Math.random() * qs.length)];
+            notes.push({ q: q[4], s: q[5] + ' \u00b7 ' + q[1], href: '/editorial/' + q[0], lbl: 'Elsewhere in the archive' }); }
+        });
+        (me.ln || []).forEach(function(l){
+          var ms = byep[l[0]];
+          if (ms) { var m = ms[Math.floor(Math.random() * ms.length)];
+            notes.push({ q: m[2], s: m[3] + ' \u00b7 Episode ' + ('0' + m[0]).slice(-2), href: '/editorials#pod=' + m[0], lbl: 'Said on the podcast' }); }
+        });
+        (me.tl || []).slice(0, 1).forEach(function(m){
+          notes.push({ q: m[1], s: m[2] || 'The timeline', href: 'https://timeline.lerandom.art/#/chapter-' + m[3], lbl: 'Deep history', ext: 1 });
+        });
+        notes = notes.slice(0, 4);
+        if (!notes.length) return;
+        var wrap = document.createElement('div');
+        wrap.id = 'lrmg';
+        host.style.position = host.style.position || 'relative';
+        var bTop = body.offsetTop, bH = body.offsetHeight;
+        var stops = [0.14, 0.42, 0.68, 0.88];
+        wrap.innerHTML = notes.map(function(n, i){
+          return '<a class="lrmg-note" ' + (n.ext ? 'target="_blank" rel="noopener" ' : '')
+            + 'href="' + n.href.replace(/"/g, '&quot;') + '" style="top:' + Math.round(bTop + bH * stops[i]) + 'px">'
+            + '<span class="lrmg-lbl">' + n.lbl + '</span>'
+            + '<span class="lrmg-q">\u201C' + String(n.q).replace(/&/g,'&amp;').replace(/</g,'&lt;') + '\u201D</span>'
+            + '<span class="lrmg-s">' + String(n.s).replace(/&/g,'&amp;').replace(/</g,'&lt;') + '</span></a>';
+        }).join('');
+        host.appendChild(wrap);
+      }).catch(function(){});
+  })();
 
   /* ---------- the author box links to the author's page ---------- */
   (function(){
