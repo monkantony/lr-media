@@ -60,6 +60,8 @@
 .lrft-ln .ln-badge { border:1px solid var(--lr-or); color:var(--lr-or); border-radius:999px; padding:2px 8px 1px; }
 .lrft-tl .tl-y { flex:0 0 84px; }
 #lrmg { position:absolute; top:0; pointer-events:none; }
+.lr-sl { color:inherit; text-decoration:none; border-bottom:1px solid rgba(2,176,244,.5); transition:border-color .2s ease, color .2s ease; }
+.lr-sl:hover { color:var(--lr-or); border-bottom-color:var(--lr-or); }
 #lrmg .lrmg-note { position:absolute; display:block; width:100%; pointer-events:auto; text-decoration:none;
   border-left:2px solid var(--lr-or); padding:2px 0 2px 14px; opacity:0; transform:translateY(6px);
   animation:lrmg-in .7s ease forwards; }
@@ -266,6 +268,81 @@
     /* measure only once layout is settled (fonts + images move the column) */
     if (document.readyState === 'complete') setTimeout(mount, 300);
     else addEventListener('load', function(){ setTimeout(mount, 300); }, { once: true });
+  })();
+
+  /* ---------- smart links: every mention knows its own article ---------- */
+  (function(){
+    var body = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
+    if (!body) return;
+    fetch('https://raw.githubusercontent.com/monkantony/lr-media/main/smartlinks.json')
+      .then(function(r){ return r.json(); })
+      .then(function(SL){
+        var forms = [], byForm = {};
+        Object.keys(SL).forEach(function(k){
+          var e = SL[k];
+          e[1].forEach(function(f){
+            var rec = [f, k, e[3] === 'people' && f.indexOf(' ') < 0 && e[0].indexOf(' ') > 0];
+            forms.push(rec); byForm[f] = rec;
+          });
+        });
+        forms.sort(function(a, b){ return b[0].length - a[0].length; });
+        var rx = new RegExp('(' + forms.map(function(f){
+          return f[0].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }).join('|') + ')');
+        function hrefFor(t){
+          return t[0] === 'a' ? '/editorial/' + t[1]
+               : t[0] === 'p' ? '/editorials#pod=' + t[1]
+               : '/editorials#subject=' + encodeURIComponent(t[1]);
+        }
+        var armed = {}, cyc = {}, blockIdx = 0, lastBlock = null;
+        var walker = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, { acceptNode: function(n){
+          if (!n.nodeValue || n.nodeValue.length < 3) return NodeFilter.FILTER_REJECT;
+          for (var el = n.parentElement; el && el !== body; el = el.parentElement){
+            var tg = el.tagName;
+            if (tg === 'A' || tg === 'SCRIPT' || tg === 'STYLE' || tg === 'BUTTON' || /^H[1-6]$/.test(tg))
+              return NodeFilter.FILTER_REJECT;
+            if (el.classList && el.classList.contains('lbl')) return NodeFilter.FILTER_REJECT;
+          }
+          return NodeFilter.FILTER_ACCEPT;
+        }});
+        var nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
+        nodes.forEach(function(node){
+          var blk = node.parentElement.closest('p,li,blockquote,figcaption') || node.parentElement;
+          if (blk !== lastBlock){ lastBlock = blk; blockIdx++; }
+          var txt = node.nodeValue, at = 0, m, hits = [];
+          while ((m = rx.exec(txt.slice(at)))){
+            var form = m[1], rec = byForm[form], key = rec[1], ent = SL[key];
+            var s = at + m.index, e = s + form.length;
+            at = e;
+            var okB = s === 0 || /[^A-Za-z0-9À-ɏ]/.test(txt[s - 1]);
+            var okA = e === txt.length || /[^A-Za-z0-9À-ɏ]/.test(txt[e]);
+            if (!okB || !okA) continue;
+            if (rec[2]){   /* bare surname: refuse beside another capitalized word (Paul Klee) */
+              if (/[A-Z][\wÀ-ɏ'’-]*\s+$/.test(txt.slice(0, s))) continue;
+              if (/^\s+[A-Z][a-z]/.test(txt.slice(e))) continue;
+            }
+            if (armed[form] != null && blockIdx < armed[form]) continue;
+            var ts = ent[2].filter(function(t){ return !(t[0] === 'a' && t[1] === slug); });
+            if (!ts.length) continue;
+            cyc[key] = cyc[key] || 0;
+            var tgt = ts[cyc[key] % ts.length]; cyc[key]++;
+            armed[form] = blockIdx + 3;   /* same form rests three blocks before linking again */
+            hits.push([s, e, hrefFor(tgt), SL[key][0]]);
+          }
+          if (!hits.length) return;
+          var frag = document.createDocumentFragment(), pos = 0;
+          hits.forEach(function(h){
+            if (h[0] > pos) frag.appendChild(document.createTextNode(txt.slice(pos, h[0])));
+            var a = document.createElement('a');
+            a.className = 'lr-sl'; a.href = h[2];
+            a.setAttribute('aria-label', 'More on ' + h[3] + ' at Le Random');
+            a.textContent = txt.slice(h[0], h[1]);
+            frag.appendChild(a); pos = h[1];
+          });
+          if (pos < txt.length) frag.appendChild(document.createTextNode(txt.slice(pos)));
+          node.parentNode.replaceChild(frag, node);
+        });
+      }).catch(function(){});
   })();
 
   /* ---------- the author box links to the author's page ---------- */
