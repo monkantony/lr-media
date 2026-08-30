@@ -20,9 +20,9 @@ CHECK = '''var LRW_BUILD = "%s";
       t = (t || '').trim();
       if (!t || t === LRW_BUILD) return;
       if (sessionStorage.getItem('lrw-refreshed') === t) return;   /* never loop */
-      sessionStorage.setItem('lrw-refreshed', t);
       fetch('https://raw.githubusercontent.com/monkantony/lr-media/main/lrw_bundle.txt', { cache: 'reload' })
-        .then(function(){ location.reload(); });
+        .then(function(){ sessionStorage.setItem('lrw-refreshed', t); location.reload(); })
+        .catch(function(){});   /* a failed refresh must not disarm the check */
     }).catch(function(){});
   } catch (e) {}
 })();
