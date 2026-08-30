@@ -112,8 +112,8 @@
 @media(min-width:1160px){
   #lrtopbar { position:fixed; top:0; left:0; right:0; height:var(--lrw-navh,70px); z-index:900; display:flex; align-items:center; }
   .navbar_component { pointer-events:none; }
-  .navbar_component .menu-button, .navbar_component .w-nav-brand { pointer-events:auto; }
-  .navbar_component .w-nav-brand { width:max-content; }
+  .navbar_component .menu-button, .navbar_component .w-nav-brand img { pointer-events:auto; }
+  .navbar_component .w-nav-brand { pointer-events:none; }
   #lrtopbar .util { max-width:none; margin:0; padding:0 96px 0 215px; width:100%; }
 }
 #lrtopbar { background:#EFE9D8; border-bottom:1px solid rgba(1,16,21,.17); }
