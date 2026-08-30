@@ -139,7 +139,7 @@
     GROUPS.forEach(function(g){
       var names = me.m[g[0]]; if (!names || !names.length) return;
       grps += '<div class="lrft-grp"><b>' + g[1] + '</b><span class="lrft-chips">'
-        + names.map(function(n){ return n[1] ? '<a class="lrft-chip on" href="' + SUBJ.replace('{n}', esc(String(n[0]).toLowerCase())) + '">' + esc(n[0]) + '</a>' : '<span class="lrft-chip">' + esc(n[0]) + '</span>'; }).join('')
+        + names.map(function(n){ return n[1] ? '<a class="lrft-chip on" href="/editorials#subject=' + encodeURIComponent(String(n[0]).toLowerCase()) + '">' + esc(n[0]) + '</a>' : '<span class="lrft-chip">' + esc(n[0]) + '</span>'; }).join('')
         + '</span></div>';
     });
     if (grps) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Mentioned in this editorial</h2>' + grps + '</section>';

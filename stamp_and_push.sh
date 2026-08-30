@@ -10,6 +10,7 @@ stamp=sys.argv[1]
 B='/Users/peterbauman/.lr-cache/lr-media/lrw_bundle.txt'
 b=json.load(open(B)); j=b['js']
 j=re.sub(r'var LRW_BUILD = "[0-9]*";\n', '', j)
+j=re.sub(r'/\* -+ self-healing cache:.*?\}\)\(\);\n', '', j, flags=re.S)
 CHECK = '''var LRW_BUILD = "%s";
 /* ---------- self-healing cache: a moved build id refreshes the page once ---------- */
 (function(){
