@@ -59,22 +59,19 @@
 .lrft-ln .ln-len, .lrft-ln .ln-badge { font-family:var(--lr-sans); font-size:9.5px; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:rgba(1,16,21,.38); white-space:nowrap; }
 .lrft-ln .ln-badge { border:1px solid var(--lr-or); color:var(--lr-or); border-radius:999px; padding:2px 8px 1px; }
 .lrft-tl .tl-y { flex:0 0 84px; }
-#lrmg { position:absolute; top:0; pointer-events:none; }
+.lrmg-in { float:right; clear:right; width:min(46%,300px); margin:6px 0 14px 22px;
+  border-left:2px solid var(--lr-or); background:#F7F4EA; padding:14px 16px 12px;
+  font-family:var(--lr-serif); }
+@media(max-width:720px){ .lrmg-in { float:none; width:auto; margin:18px 0; } }
 .lr-sl { color:inherit; text-decoration:none; border-bottom:1px solid rgba(2,176,244,.5); transition:border-color .2s ease, color .2s ease; }
 .lr-sl:hover { color:var(--lr-or); border-bottom-color:var(--lr-or); }
-#lrmg .lrmg-note { position:absolute; display:block; width:100%; pointer-events:auto; text-decoration:none;
-  border-left:2px solid var(--lr-or); padding:2px 0 2px 14px; opacity:0; transform:translateY(6px);
-  animation:lrmg-in .7s ease forwards; }
-#lrmg .lrmg-note:nth-child(2) { animation-delay:.15s; } #lrmg .lrmg-note:nth-child(3) { animation-delay:.3s; }
-#lrmg .lrmg-note:nth-child(4) { animation-delay:.45s; }
-@keyframes lrmg-in { to { opacity:1; transform:none; } }
-#lrmg .lrmg-lbl { display:block; font-family:var(--lr-sans); font-size:8.5px; font-weight:500; letter-spacing:.18em;
+.lrmg-in a { display:block; text-decoration:none; }
+.lrmg-in .lrmg-lbl { display:block; font-family:var(--lr-sans); font-size:8.5px; font-weight:500; letter-spacing:.18em;
   text-transform:uppercase; color:var(--lr-or); margin-bottom:6px; }
-#lrmg .lrmg-q { display:block; font-family:var(--lr-serif); font-size:14.5px; line-height:1.45; color:var(--lr-ink); }
-#lrmg .lrmg-note:hover .lrmg-q { color:var(--lr-or); }
-#lrmg .lrmg-s { display:block; font-family:var(--lr-sans); font-size:8.5px; font-weight:500; letter-spacing:.12em;
+.lrmg-in .lrmg-q { display:block; font-size:14.5px; line-height:1.45; color:var(--lr-ink); }
+.lrmg-in a:hover .lrmg-q { color:var(--lr-or); }
+.lrmg-in .lrmg-s { display:block; font-family:var(--lr-sans); font-size:8.5px; font-weight:500; letter-spacing:.12em;
   text-transform:uppercase; color:rgba(1,16,21,.4); margin-top:7px; }
-@media(max-width:960px){ #lrmg { display:none; } }
 
 .lrft-ln .ln-sh { flex:1 1 100%; font-family:var(--lr-serif); font-style:italic; font-size:13.5px; color:rgba(1,16,21,.38); margin-top:2px; }
 @media(max-width:640px){ .lrft-ln { flex-wrap:wrap; } }
@@ -219,20 +216,11 @@
 
 
 
-  /* ---------- marginalia: the archive whispers alongside the text ---------- */
+  /* ---------- marginalia: the archive whispers inside the column ---------- */
   (function(){
     function mount(){
-    if (innerWidth < 960) return;
     var body = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
     if (!body) return;
-    var host = body.closest('div') || body.parentElement;
-    var br = body.getBoundingClientRect();
-    /* the article template is sidebar-left / body-right: the room is usually LEFT of the text */
-    var gr = innerWidth - br.right, gl = br.left;
-    var side = gl > gr ? 'left' : 'right';
-    var gutter = Math.max(gl, gr);
-    if (gutter < 230) return;
-    var w = Math.min(300, gutter - 48);
     fetch('https://raw.githubusercontent.com/monkantony/lr-media/main/reading.json')
       .then(function(r){ return r.json(); }).then(function(deck){
         var byslug = {}, byep = {};
@@ -252,27 +240,29 @@
         (me.tl || []).slice(0, 1).forEach(function(m){
           notes.push({ q: m[1], s: m[2] || 'The timeline', href: 'https://timeline.lerandom.art/#/chapter-' + m[3], lbl: 'Deep history', ext: 1 });
         });
-        notes = notes.slice(0, 4);
+        notes = notes.slice(0, 3);
         if (!notes.length) return;
-        var wrap = document.createElement('div');
-        wrap.id = 'lrmg';
-        wrap.style.width = w + 'px';
-        wrap.style[side] = -(w + 36) + 'px';
-        host.style.position = host.style.position || 'relative';
-        var bTop = body.offsetTop, bH = body.offsetHeight;
-        /* left side carries the author sidebar up top — start the notes below it */
-        var stops = side === 'left' ? [0.3, 0.5, 0.7, 0.88] : [0.14, 0.42, 0.68, 0.88];
-        wrap.innerHTML = notes.map(function(n, i){
-          return '<a class="lrmg-note" ' + (n.ext ? 'target="_blank" rel="noopener" ' : '')
-            + 'href="' + n.href.replace(/"/g, '&quot;') + '" style="top:' + Math.round(bTop + bH * stops[i]) + 'px">'
+        var paras = [].filter.call(body.children, function(el){
+          return el.tagName === 'P' && (el.textContent || '').length > 150;
+        });
+        if (paras.length < 6) return;
+        var stops = [0.22, 0.55, 0.82];
+        notes.forEach(function(n, i){
+          var at = paras[Math.min(paras.length - 1, Math.round(stops[i] * paras.length))];
+          if (!at || at.dataset.lrmgUsed) return;
+          at.dataset.lrmgUsed = '1';
+          var el = document.createElement('aside');
+          el.className = 'lrmg-in';
+          el.innerHTML = '<a ' + (n.ext ? 'target="_blank" rel="noopener" ' : '')
+            + 'href="' + n.href.replace(/"/g, '&quot;') + '">'
             + '<span class="lrmg-lbl">' + n.lbl + '</span>'
             + '<span class="lrmg-q">\u201C' + String(n.q).replace(/&/g,'&amp;').replace(/</g,'&lt;') + '\u201D</span>'
             + '<span class="lrmg-s">' + String(n.s).replace(/&/g,'&amp;').replace(/</g,'&lt;') + '</span></a>';
-        }).join('');
-        host.appendChild(wrap);
+          at.parentNode.insertBefore(el, at);
+        });
       }).catch(function(){});
     }
-    /* measure only once layout is settled (fonts + images move the column) */
+    /* wait for layout so paragraph measurement is stable */
     if (document.readyState === 'complete') setTimeout(mount, 300);
     else addEventListener('load', function(){ setTimeout(mount, 300); }, { once: true });
   })();
