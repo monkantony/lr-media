@@ -270,6 +270,20 @@
     else addEventListener('load', function(){ setTimeout(mount, 300); }, { once: true });
   })();
 
+  /* ---------- staging-only: pages absent from this Webflow copy open on the live site ---------- */
+  (function(){
+    if (/(^|\.)lerandom\.art$/.test(location.hostname)) return;
+    var MISS = {'beeple-on-robot-dogs-as-canvas':1,
+      'robbie-fitzpatrick-on-basel-social-club-welcoming-the-barbarians':1,
+      'living-aesthetics-a-grammar-of-protocol-art-and-worldbuilding':1};
+    document.addEventListener('click', function(ev){
+      var a = ev.target.closest('a[href*="/editorial/"]'); if (!a) return;
+      var m = /\/editorial\/([a-z0-9-]+)/.exec(a.getAttribute('href') || '');
+      if (m && MISS[m[1]] && a.hostname !== 'www.lerandom.art')
+        a.href = 'https://www.lerandom.art/editorial/' + m[1];
+    }, true);
+  })();
+
   /* ---------- smart links: every mention knows its own article ---------- */
   (function(){
     var body = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
