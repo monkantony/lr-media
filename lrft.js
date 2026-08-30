@@ -59,16 +59,15 @@
 .lrft-ln .ln-len, .lrft-ln .ln-badge { font-family:var(--lr-sans); font-size:9.5px; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:rgba(1,16,21,.38); white-space:nowrap; }
 .lrft-ln .ln-badge { border:1px solid var(--lr-or); color:var(--lr-or); border-radius:999px; padding:2px 8px 1px; }
 .lrft-tl .tl-y { flex:0 0 84px; }
-.lrmg-in { float:right; clear:right; width:min(46%,300px); margin:6px 0 14px 22px;
-  border-left:2px solid var(--lr-or); background:#F7F4EA; padding:14px 16px 12px;
-  font-family:var(--lr-serif); }
-@media(max-width:720px){ .lrmg-in { float:none; width:auto; margin:18px 0; } }
+.lrmg-in { display:block; width:100%; margin:30px 0; box-sizing:border-box;
+  border-left:2px solid var(--lr-or); border-top:1px solid rgba(1,16,21,.12); border-bottom:1px solid rgba(1,16,21,.12);
+  background:#F7F4EA; padding:18px 22px 16px; font-family:var(--lr-serif); }
 .lr-sl { color:inherit; text-decoration:none; border-bottom:1px solid rgba(2,176,244,.5); transition:border-color .2s ease, color .2s ease; }
 .lr-sl:hover { color:var(--lr-or); border-bottom-color:var(--lr-or); }
 .lrmg-in a { display:block; text-decoration:none; }
 .lrmg-in .lrmg-lbl { display:block; font-family:var(--lr-sans); font-size:8.5px; font-weight:500; letter-spacing:.18em;
   text-transform:uppercase; color:var(--lr-or); margin-bottom:6px; }
-.lrmg-in .lrmg-q { display:block; font-size:14.5px; line-height:1.45; color:var(--lr-ink); }
+.lrmg-in .lrmg-q { display:block; font-size:16.5px; line-height:1.5; color:var(--lr-ink); max-width:64ch; }
 .lrmg-in a:hover .lrmg-q { color:var(--lr-or); }
 .lrmg-in .lrmg-s { display:block; font-family:var(--lr-sans); font-size:8.5px; font-weight:500; letter-spacing:.12em;
   text-transform:uppercase; color:rgba(1,16,21,.4); margin-top:7px; }
@@ -230,7 +229,8 @@
         (me.rn || []).forEach(function(p){
           var qs = byslug[p[0]];
           if (qs) { var q = qs[Math.floor(Math.random() * qs.length)];
-            notes.push({ q: q[4], s: q[5] + ' \u00b7 ' + q[1], href: '/editorial/' + q[0], lbl: 'Elsewhere in the archive' }); }
+            var src_ = q[1].toLowerCase().indexOf(q[5].toLowerCase()) === 0 ? q[1] : q[5] + ' \u00b7 ' + q[1];
+            notes.push({ q: q[4], s: src_, href: '/editorial/' + q[0], lbl: 'Elsewhere in the archive' }); }
         });
         (me.ln || []).forEach(function(l){
           var ms = byep[l[0]];
