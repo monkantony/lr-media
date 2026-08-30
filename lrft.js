@@ -74,7 +74,7 @@
 #lrmg .lrmg-note:hover .lrmg-q { color:var(--lr-or); }
 #lrmg .lrmg-s { display:block; font-family:var(--lr-sans); font-size:8.5px; font-weight:500; letter-spacing:.12em;
   text-transform:uppercase; color:rgba(1,16,21,.4); margin-top:7px; }
-@media(max-width:1180px){ #lrmg { display:none; } }
+@media(max-width:960px){ #lrmg { display:none; } }
 
 .lrft-ln .ln-sh { flex:1 1 100%; font-family:var(--lr-serif); font-style:italic; font-size:13.5px; color:rgba(1,16,21,.38); margin-top:2px; }
 @media(max-width:640px){ .lrft-ln { flex-wrap:wrap; } }
@@ -222,7 +222,7 @@
   /* ---------- marginalia: the archive whispers alongside the text ---------- */
   (function(){
     function mount(){
-    if (innerWidth < 1180) return;
+    if (innerWidth < 960) return;
     var body = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
     if (!body) return;
     var host = body.closest('div') || body.parentElement;
@@ -231,8 +231,8 @@
     var gr = innerWidth - br.right, gl = br.left;
     var side = gl > gr ? 'left' : 'right';
     var gutter = Math.max(gl, gr);
-    if (gutter < 250) return;
-    var w = Math.min(300, gutter - 56);
+    if (gutter < 230) return;
+    var w = Math.min(300, gutter - 48);
     fetch('https://raw.githubusercontent.com/monkantony/lr-media/main/reading.json')
       .then(function(r){ return r.json(); }).then(function(deck){
         var byslug = {}, byep = {};
