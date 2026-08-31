@@ -235,7 +235,7 @@
         (me.ln || []).forEach(function(l){
           var ms = byep[l[0]];
           if (ms) { var m = ms[Math.floor(Math.random() * ms.length)];
-            notes.push({ q: m[2], s: m[3] + ' \u00b7 Episode ' + ('0' + m[0]).slice(-2), href: '/editorials#pod=' + m[0], lbl: 'Said on the podcast' }); }
+            notes.push({ q: m[2], s: m[3] + ' \u00b7 ' + String(m[1] || '').split(' with ')[0], href: '/editorials#pod=' + m[0], lbl: 'Said on the podcast' }); }
         });
         (me.tl || []).slice(0, 1).forEach(function(m){
           notes.push({ q: m[1], s: m[2] || 'The timeline', href: 'https://timeline.lerandom.art/#/chapter-' + m[3], lbl: 'Deep history', ext: 1 });
