@@ -92,6 +92,15 @@ fi
 # two writers (this Mac + the wire Action): rebase onto the remote first so the
 # pointer names a commit that contains everything published so far
 git pull -q --rebase --autostash origin main
+# the other writer may have moved the pointer meanwhile: unless the hosts token
+# was given explicitly, take stamp/hosts from the REBASED version.txt so a race
+# can never regress the launch switch or the build id
+if [[ -f version.txt ]]; then
+  read -r R_STAMP R_COMMIT R_HOSTS < version.txt || true
+  if [[ -z "$LRW_HOSTS" && -n "$R_HOSTS" ]]; then HOSTS="${R_HOSTS//[[:space:]]/}"; HOSTS="${HOSTS:l}"; fi
+  if [[ $MODE == pointer && -n "$R_STAMP" ]]; then STAMP="$R_STAMP"; fi
+  [[ "$HOSTS" =~ '^(\*|[a-z0-9.-]+(,[a-z0-9.-]+)*)$' ]] || { echo "REFUSING after rebase: hosts token '$HOSTS' is invalid"; exit 1; }
+fi
 H=$(git rev-parse HEAD)
 print -r -- "$STAMP $H $HOSTS" > version.txt
 git add version.txt
