@@ -60,6 +60,9 @@ STAMP=$(cut -d' ' -f1 version.txt)
 [[ -n "$STAMP" ]] || { echo "version.txt has no build id"; exit 1; }
 fi
 
+# two writers now (this Mac + the wire Action): rebase onto the remote first so
+# the pointer names a commit that contains everything published so far
+git pull -q --rebase --autostash origin main
 H=$(git rev-parse HEAD)
 # third token: which hosts may render the overlay (suffix match). The launch
 # switch lives here, not in Webflow. Override with LRW_HOSTS=... or set_hosts.sh
