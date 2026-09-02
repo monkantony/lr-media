@@ -61,13 +61,17 @@ STAMP=$(cut -d' ' -f1 version.txt)
 fi
 
 H=$(git rev-parse HEAD)
-print -r -- "$STAMP $H" > version.txt
+# third token: which hosts may render the overlay (suffix match). The launch
+# switch lives here, not in Webflow. Override with LRW_HOSTS=... or set_hosts.sh
+HOSTS="${LRW_HOSTS:-$(cut -d' ' -f3 version.txt 2>/dev/null)}"
+HOSTS="${HOSTS:-webflow.io,localhost}"
+print -r -- "$STAMP $H $HOSTS" > version.txt
 git add version.txt
 git commit -q -m "pointer -> ${H:0:12}" -- version.txt
 git push -q
 
 # purge the pointer at the CDN and make sure the edge really re-read GitHub
-WANT="$STAMP $H"
+WANT="$STAMP $H $HOSTS"
 ok=0
 for i in {1..12}; do
   curl -s -m 20 "https://purge.jsdelivr.net/gh/monkantony/lr-media@main/version.txt" >/dev/null || true
@@ -82,4 +86,4 @@ for i in {1..10}; do
   sleep 3
 done
 [[ "$code" == "200" ]] || { echo "WARNING: pinned bundle not yet served ($code)"; exit 2; }
-echo "published: build $STAMP @ ${H:0:12} (pointer live at CDN)"
+echo "published: build $STAMP @ ${H:0:12} hosts=$HOSTS (pointer live at CDN)"
