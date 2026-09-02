@@ -1,19 +1,36 @@
 #!/bin/zsh
 # Publish the site bundle through a real CDN with a moving pointer.
 #
-#   default mode      stamp a build id into lrw_bundle.txt, commit everything,
-#                     move the pointer, push, purge the pointer at jsDelivr.
-#   --pointer-only    the caller already committed its data file (wire.json…);
-#                     keep the current build id, just move the pointer to HEAD.
+#   default mode      stamp a build id into lrw_bundle.txt, commit the publish
+#                     files, move the pointer, push, purge the pointer at
+#                     jsDelivr, and refuse to say "published" until the CDN
+#                     really serves it.
+#   --pointer-only    the caller already committed its data file; keep the
+#                     current build id, just move the pointer to HEAD.
 #
-# version.txt = "<build-id> <commit>". Pages read it with cache:'no-store'
-# (purged here on every push), then load lrw_bundle.txt / lrft.js / data
-# pinned to that commit: immutable at the CDN, cached a year in browsers.
+# version.txt = "<build-id> <commit> <hosts>". Pages read it with cache:'no-store'
+# (purged here on every push), then load lrw_bundle.txt / lrft.js / data pinned
+# to that commit. <hosts> is the launch switch (comma list, suffix match, or *);
+# it is NEVER defaulted: set it with LRW_HOSTS=... or ./set_hosts.sh.
+# Env: LRW_HOSTS (override the hosts token), LRW_INCLUDE_UNTRACKED=1 (publish
+# untracked files outside the known publish areas).
 set -e
 cd /Users/peterbauman/.lr-cache/lr-media
 MODE=full
 if [[ "$1" == "--pointer-only" ]]; then MODE=pointer; shift; fi
 MSG="${1:-bundle update}"
+
+# ---- the hosts token: strict, never silently defaulted -----------------------
+OLD_STAMP=""; OLD_COMMIT=""; OLD_HOSTS=""
+[[ -f version.txt ]] && read -r OLD_STAMP OLD_COMMIT OLD_HOSTS < version.txt || true
+HOSTS="${LRW_HOSTS:-$OLD_HOSTS}"
+HOSTS="${HOSTS//[[:space:]]/}"; HOSTS="${HOSTS:l}"
+for _h in ${(s:,:)HOSTS}; do [[ -e "$_h" ]] && { echo "REFUSING: host '$_h' is a file in this directory (an unquoted * ?)"; exit 1; }; done
+if [[ ! "$HOSTS" =~ '^(\*|[a-z0-9.-]+(,[a-z0-9.-]+)*)$' ]]; then
+  echo "REFUSING: hosts token is '$HOSTS' (version.txt was '$OLD_STAMP $OLD_COMMIT $OLD_HOSTS')."
+  echo "version.txt must be '<build> <commit> <hosts>'. Set it explicitly: LRW_HOSTS=\"webflow.io,localhost\" $0 ..."
+  exit 1
+fi
 
 if [[ $MODE == full ]]; then
 STAMP=$(date +%Y%m%d%H%M%S)
@@ -52,41 +69,70 @@ PY
 python3 -c "
 import json; open('/tmp/bc.js','w').write(json.load(open('/Users/peterbauman/.lr-cache/lr-media/lrw_bundle.txt'))['js'])"
 node --check /tmp/bc.js
-git add -A
+
+# ---- stage only publish files; jsDelivr keeps commit-pinned files forever ------
+git add -u
+git add -- ann pod idents audio 2>/dev/null || true
+git add -- '*.json' '*.txt' '*.mp4' '*.jpg' '*.png' '*.m4a' '*.mp3' '*.xml' '*.js' '*.sh' 2>/dev/null || true
 git reset -q -- version.txt 2>/dev/null || true
+LEFT=$(git status --porcelain | grep '^??' || true)
+if [[ -n "$LEFT" && "$LRW_INCLUDE_UNTRACKED" != 1 ]]; then
+  echo "REFUSING: unexpected untracked files would be published to the public repo (permanent at the CDN):"
+  print -r -- "$LEFT"
+  echo "Move them out, or re-run with LRW_INCLUDE_UNTRACKED=1 to publish them."
+  git reset -q
+  exit 1
+fi
 git commit -q -m "$MSG"
 else
-STAMP=$(cut -d' ' -f1 version.txt)
+STAMP="$OLD_STAMP"
 [[ -n "$STAMP" ]] || { echo "version.txt has no build id"; exit 1; }
 fi
 
-# two writers now (this Mac + the wire Action): rebase onto the remote first so
-# the pointer names a commit that contains everything published so far
+# two writers (this Mac + the wire Action): rebase onto the remote first so the
+# pointer names a commit that contains everything published so far
 git pull -q --rebase --autostash origin main
 H=$(git rev-parse HEAD)
-# third token: which hosts may render the overlay (suffix match). The launch
-# switch lives here, not in Webflow. Override with LRW_HOSTS=... or set_hosts.sh
-HOSTS="${LRW_HOSTS:-$(cut -d' ' -f3 version.txt 2>/dev/null)}"
-HOSTS="${HOSTS:-webflow.io,localhost}"
 print -r -- "$STAMP $H $HOSTS" > version.txt
 git add version.txt
 git commit -q -m "pointer -> ${H:0:12}" -- version.txt
 git push -q
 
-# purge the pointer at the CDN and make sure the edge really re-read GitHub
+# ---- purge the pointer at the CDN and prove the edge serves it ----------------
 WANT="$STAMP $H $HOSTS"
-ok=0
-for i in {1..12}; do
-  curl -s -m 20 "https://purge.jsdelivr.net/gh/monkantony/lr-media@main/version.txt" >/dev/null || true
-  sleep 3
-  GOT=$(curl -s -m 20 "https://cdn.jsdelivr.net/gh/monkantony/lr-media@main/version.txt" | tr -d '\n' || true)
-  if [[ "$GOT" == "$WANT" ]]; then ok=1; break; fi
+POINTER="https://cdn.jsdelivr.net/gh/monkantony/lr-media@main/version.txt"
+PURGE="https://purge.jsdelivr.net/gh/monkantony/lr-media@main/version.txt"
+jget() { python3 -c 'import sys,json
+try: print(json.load(sys.stdin).get(sys.argv[1],""))
+except Exception: print("")' "$1"; }
+ok=0; GOT=""
+for round in 1 2 3 4; do
+  RESP=$(curl -s -m 20 "$PURGE" || true)
+  PID=$(print -r -- "$RESP" | jget id); PST=$(print -r -- "$RESP" | jget status)
+  t=0
+  while [[ -n "$PID" && "$PST" != "finished" && $t -lt 60 ]]; do
+    sleep 5; t=$((t+5))
+    PST=$(curl -s -m 20 "https://purge.jsdelivr.net/status/$PID" | jget status)
+  done
+  for i in 1 2 3 4 5 6; do
+    GOT=$(curl -s -m 20 "$POINTER" | tr -d '\n' || true)
+    if [[ "$GOT" == "$WANT" ]]; then ok=1; break; fi
+    sleep 5
+  done
+  (( ok )) && break
+  echo "CDN still serves '$GOT' after purge round $round; waiting before purging again (jsDelivr throttles repeat purges)"
+  sleep 45
 done
-if (( ! ok )); then echo "WARNING: CDN pointer still '$GOT' (want '$WANT') — pages fall back to raw until it moves"; exit 2; fi
+if (( ! ok )); then
+  echo "FAILED: the CDN still serves '$GOT' (wanted '$WANT')."
+  echo "GitHub has the new pointer; browsers on the CDN path keep the OLD pointer for up to 12h; the raw path is unaffected."
+  echo "Re-run later:  ./stamp_and_push.sh --pointer-only"
+  exit 2
+fi
 for i in {1..10}; do
   code=$(curl -s -o /dev/null -w '%{http_code}' -m 30 "https://cdn.jsdelivr.net/gh/monkantony/lr-media@$H/lrw_bundle.txt")
   [[ "$code" == "200" ]] && break
   sleep 3
 done
-[[ "$code" == "200" ]] || { echo "WARNING: pinned bundle not yet served ($code)"; exit 2; }
-echo "published: build $STAMP @ ${H:0:12} hosts=$HOSTS (pointer live at CDN)"
+[[ "$code" == "200" ]] || { echo "FAILED: pinned bundle not served yet ($code); pages fall back to raw until it is. Re-run: ./stamp_and_push.sh --pointer-only"; exit 2; }
+echo "published: build $STAMP @ ${H:0:12} hosts=$HOSTS (pointer verified at the CDN)"
