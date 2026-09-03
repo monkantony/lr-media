@@ -191,6 +191,27 @@
         document.documentElement.style.setProperty('--lrw-navh', nav.getBoundingClientRect().height + 'px');
     }
     navh(); addEventListener('resize', navh, {passive:true});
+    /* the site's own side menu: Webflow's close interaction does not fire on these pages, so close it ourselves */
+    (function(){
+      var sm = document.querySelector('.side-menu_component'); if (!sm) return;
+      function isOpen(){ return getComputedStyle(sm).display !== 'none' && getComputedStyle(sm).opacity !== '0'; }
+      function close(){ sm.style.display = 'none'; sm.style.opacity = '0'; }
+      var cb = document.querySelector('.close-button'); if (cb) cb.addEventListener('click', function(){ setTimeout(function(){ if (isOpen()) close(); }, 450); });
+      document.addEventListener('click', function(e){
+        if (!isOpen()) return;
+        if (sm.contains(e.target) || (e.target.closest && e.target.closest('.menu-button'))) return;
+        close();
+      }, true);
+      document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && isOpen()) close(); });
+      var mb = document.querySelector('.menu-button'); if (mb) mb.addEventListener('click', function(){ if (sm.style.display === 'none') { sm.style.display = ''; sm.style.opacity = ''; } });
+    })();
+    /* the site's footer year: match the credit text beside it at every breakpoint */
+    (function(){
+      var y = document.querySelector('.footer8_component [data="year"]'), c = document.querySelector('.footer8_component .footer8_credit-text');
+      if (!y || !c) return;
+      function fit(){ var cs = getComputedStyle(c); y.style.fontSize = cs.fontSize; y.style.lineHeight = cs.lineHeight; y.style.fontFamily = cs.fontFamily; }
+      fit(); addEventListener('resize', fit, {passive:true});
+    })();
     var back = document.querySelector('a.button.is-link.is-icon');
     if (back && back.getAttribute('href') === '/editorials') back.style.marginTop = '30px';
     var q = document.getElementById('lrtb-q');
