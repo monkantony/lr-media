@@ -74,55 +74,142 @@
 
 .lrft-ln .ln-sh { flex:1 1 100%; font-family:var(--lr-serif); font-style:italic; font-size:13.5px; color:rgba(1,16,21,.38); margin-top:2px; }
 @media(max-width:640px){ .lrft-ln { flex-wrap:wrap; } }
+
+/* ---------- the editorials utility bar, carried onto the article pages ---------- */
+@font-face { font-family:'Rules'; src:url('https://cdn.prod.website-files.com/640f56f772eeb36cc6880d91/640f62c343c4c811e1a8e5c6_Rules-Regular.woff') format('woff'); font-weight:400; font-display:swap; }
+@font-face { font-family:'Rules'; src:url('https://cdn.prod.website-files.com/640f56f772eeb36cc6880d91/640f62c34eb91d0ed0988906_Rules-Medium.woff') format('woff'); font-weight:500; font-display:swap; }
+@font-face { font-family:'Rules'; src:url('https://cdn.prod.website-files.com/640f56f772eeb36cc6880d91/640f62c327b0745f3329c484_Rules-Bold.woff') format('woff'); font-weight:700; font-display:swap; }
+#lrtopbar *, #lrtopbar *::before, #lrtopbar *::after { margin:0; padding:0; box-sizing:border-box; }
+#lrtopbar { box-sizing:border-box; color:#011015; font-family:'Ebgaramond','Ebgaramond','EB Garamond',Garamond,Georgia,serif; font-size:18px;
+  line-height:1.5; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+#lrtopbar a { color:inherit; text-decoration:none; }
+#lrtopbar :focus-visible { outline:2px solid #FF4C00; outline-offset:3px; }
+#lrtopbar .wrap { max-width:1580px; margin:0 auto; padding-inline:clamp(20px,4.4vw,80px); }
+
+/* .topbar */
 #lrtopbar { position:sticky; top:var(--lrw-navh,0px); z-index:60; background:#EFE9D8;
   border-bottom:1px solid transparent; transition:border-color .25s ease, background .25s ease; }
-#lrtopbar.stuck { border-bottom-color:rgba(1,16,21,.17); background:rgba(244,241,230,.94); backdrop-filter:blur(8px) saturate(1.1); }
+/* one bar: on wide screens the toolbar rises into the navbar band, between logo and burger */
+@media(min-width:1160px){
+  #lrtopbar { position:fixed; top:0; left:0; right:0; height:var(--lrw-navh,70px); z-index:900;
+    display:flex; align-items:center; padding-left:215px; padding-right:64px; }
+  #lrtopbar > * { flex:1 1 auto; min-width:0; }
+  /* the Webflow navbar keeps only its two real controls; its invisible full-width
+     hit plane must not sit over the merged toolbar */
+  .navbar_component { pointer-events:none; background:transparent !important;
+    backdrop-filter:none !important; -webkit-backdrop-filter:none !important; }
+  .navbar_component .menu-button, .navbar_component .side-menu_component,
+  .navbar_component .side-menu_component *, .navbar_component .close-button { pointer-events:auto; }
+  /* the brand anchor stretches invisibly across the band; only its logo image takes clicks */
+  .navbar_component .w-nav-brand { pointer-events:none; }
+  .navbar_component .w-nav-brand img { pointer-events:auto; }
+}
+#lrtopbar.stuck { border-bottom-color:rgba(1,16,21,.17); background:rgba(244,241,230,.94); -webkit-backdrop-filter:blur(8px) saturate(1.1); backdrop-filter:blur(8px) saturate(1.1); }
+
+/* .util */
 #lrtopbar .util { display:flex; align-items:center; justify-content:space-between; gap:30px; padding:17px 0 16px; }
 #lrtopbar .util nav { display:flex; gap:26px; flex:1 1 auto; min-width:0; overflow-x:auto;
   scrollbar-width:none; -ms-overflow-style:none; justify-content:flex-end; }
 #lrtopbar .util nav::-webkit-scrollbar { display:none; }
-#lrtopbar .util nav a { font-family:'Rules',Helvetica,Arial,sans-serif; font-size:11.5px; letter-spacing:.04em; padding-bottom:2px; border-bottom:1px solid transparent; white-space:nowrap; }
+#lrtopbar .util nav a { font-family:'Rules',Arial,sans-serif; font-size:11.5px; letter-spacing:.04em; padding-bottom:2px; border-bottom:1px solid transparent; white-space:nowrap; }
 #lrtopbar .util nav a:hover { border-color:#011015; }
+#lrtopbar .util nav a.on { border-color:#011015; }
 #lrtopbar .util .right { display:flex; align-items:center; gap:18px; }
-.die-btn { display:inline-flex; align-items:center; gap:11px; cursor:pointer; }
-.die-wrap { display:inline-block; position:relative; line-height:0; will-change:transform;
+@media(max-width:1180px){ #lrtopbar .util { flex-wrap:wrap; } #lrtopbar .util nav { order:9; flex:1 1 100%; justify-content:flex-start; gap:18px; margin-top:9px; } }
+#lrtopbar .util nav { gap:20px; }
+
+/* ---------- the die ---------- */
+#lrtopbar .die-btn { display:inline-flex; align-items:center; gap:11px; cursor:pointer; }
+#lrtopbar .die-wrap { display:inline-block; position:relative; line-height:0; will-change:transform;
   transform-origin:50% 60%; }
-.die-svg { display:block; overflow:visible; }
-.die-body { fill:#F7F4EA; stroke:#011015; stroke-width:1.6; transition:fill .2s; }
-.die-pip { fill:#011015; transition:fill .2s; }
-.die-face { display:none; }
-.die-face.is-on { display:block; }
-.die-lbl { font-family:'Rules',Helvetica,Arial,sans-serif; font-size:10px; font-weight:500; letter-spacing:.16em; text-transform:uppercase; }
-.die-shadow { position:absolute; left:50%; bottom:-7px; width:76%; height:4px; translate:-50% 0;
+#lrtopbar .die-btn:hover .die-wrap { animation:lrDieShake .62s ease-in-out infinite; }
+#lrtopbar .die-btn.rolling .die-wrap { animation:lrDieRoll 1.15s cubic-bezier(.28,.82,.3,1) both; }
+#lrtopbar .die-svg { display:block; overflow:visible; }
+#lrtopbar .die-face { display:none; }
+#lrtopbar .die-face.is-on { display:block; }
+#lrtopbar .die-body { fill:#F7F4EA; stroke:#011015; stroke-width:1.6; transition:fill .2s; }
+#lrtopbar .die-pip { fill:#011015; transition:fill .2s; }
+#lrtopbar .die-btn:hover .die-body, #lrtopbar .die-btn.rolling .die-body { fill:#FF4C00; stroke:#FF4C00; }
+#lrtopbar .die-btn:hover .die-pip, #lrtopbar .die-btn.rolling .die-pip { fill:#F7F4EA; }
+#lrtopbar .die-shadow { position:absolute; left:50%; bottom:-7px; width:76%; height:4px; translate:-50% 0;
   background:rgba(1,16,21,.26); border-radius:50%; filter:blur(2.5px); }
-#lrtopbar .tb-search { display:flex; align-items:center; border-bottom:1px solid rgba(1,16,21,.3); padding:3px 2px; width:150px; transition:width .2s ease, border-color .2s ease; }
-#lrtopbar .tb-search:focus-within { width:230px; border-color:#011015; }
-#lrtopbar .tb-search input { border:0; background:none; outline:none; width:100%; font-family:'Ebgaramond','EB Garamond',Garamond,Georgia,serif; font-style:italic; font-size:13px; color:#011015; }
-#lrtopbar #lrtopbar .util { padding:11px clamp(20px,4.4vw,80px) 10px; }
-#lrtopbar nav { justify-content:flex-start; }
-#lrtopbar { position:sticky; top:var(--lrw-navh,0px); z-index:60; background:#EFE9D8; }
-#lrtopbar .util { max-width:1580px; margin:0 auto; padding:11px clamp(20px,4.4vw,80px) 10px; display:flex; align-items:center; justify-content:space-between; gap:22px; }
-#lrtopbar nav { display:flex; gap:24px; flex:1 1 auto; min-width:0; overflow-x:auto; justify-content:flex-start; scrollbar-width:none; }
-#lrtopbar nav::-webkit-scrollbar { display:none; }
-@media(max-width:640px){ #lrtopbar .tb-search { display:none; } }
-@media(min-width:1160px){
-  #lrtopbar { position:fixed; top:0; left:0; right:0; height:var(--lrw-navh,70px); z-index:900; display:flex; align-items:center; }
-  .navbar_component { pointer-events:none; background:transparent !important; backdrop-filter:none !important; -webkit-backdrop-filter:none !important; }
-  .navbar_component .menu-button, .navbar_component .w-nav-brand img, .navbar_component .side-menu_component, .navbar_component .side-menu_component *, .navbar_component .close-button { pointer-events:auto; }
-  .navbar_component .w-nav-brand { pointer-events:none; }
-  #lrtopbar .util { max-width:none; margin:0; padding:0 96px 0 215px; width:100%; }
+#lrtopbar .die-btn.rolling .die-shadow { animation:lrDieShadow 1.15s cubic-bezier(.28,.82,.3,1) both; }
+#lrtopbar .die-lbl { font-family:'Rules',Arial,sans-serif; font-size:10px; font-weight:500; letter-spacing:.16em; text-transform:uppercase; }
+#lrtopbar .die-btn:hover .die-lbl { color:#FF4C00; }
+@keyframes lrDieShake {
+  0%,100% { transform:rotate(-6deg); }
+  50%     { transform:rotate(6deg); }
 }
-#lrtopbar { background:#EFE9D8; border-bottom:1px solid rgba(1,16,21,.17); }
-#lrtopbar.stuck { background:rgba(239,233,216,.94); backdrop-filter:blur(8px) saturate(1.1); }
-#lrtopbar a { color:#011015; text-decoration:none; }
-#lrtopbar nav a { font-family:'Rules',Helvetica,Arial,sans-serif; font-size:11.5px; letter-spacing:.04em; padding-bottom:2px; border-bottom:1px solid transparent; white-space:nowrap; }
-#lrtopbar nav a:hover { border-color:#011015; }
-#lrtopbar .die-body { fill:none; stroke:#011015; stroke-width:2; }
-#lrtopbar .die-pip { fill:#011015; }
+@keyframes lrDieRoll {
+  0%   { transform:rotate(0deg)     translateY(0)     scale(1,1); }
+  5%   { transform:rotate(-16deg)   translateY(2px)   scale(1.08,.92); }
+  10%  { transform:rotate(18deg)    translateY(2px)   scale(1.08,.92); }
+  15%  { transform:rotate(-14deg)   translateY(3px)   scale(1.12,.88); }
+  26%  { transform:rotate(190deg)   translateY(-28px) scale(.88,1.14); }
+  44%  { transform:rotate(455deg)   translateY(-36px) scale(1,1); }
+  62%  { transform:rotate(720deg)   translateY(-20px) scale(1,1); }
+  78%  { transform:rotate(915deg)   translateY(0)     scale(1.24,.76); }
+  87%  { transform:rotate(1015deg)  translateY(-9px)  scale(.93,1.09); }
+  95%  { transform:rotate(1068deg)  translateY(0)     scale(1.07,.93); }
+  100% { transform:rotate(1080deg)  translateY(0)     scale(1,1); }
+}
+@keyframes lrDieShadow {
+  0%   { transform:translate(-50%,0) scaleX(1);   opacity:.28; }
+  15%  { transform:translate(-50%,0) scaleX(1.24);opacity:.34; }
+  44%  { transform:translate(-50%,0) scaleX(.42); opacity:.08; }
+  78%  { transform:translate(-50%,0) scaleX(1.26);opacity:.36; }
+  100% { transform:translate(-50%,0) scaleX(1);   opacity:.28; }
+}
+@media (prefers-reduced-motion:reduce) {
+  #lrtopbar .die-btn:hover .die-wrap, #lrtopbar .die-btn.rolling .die-wrap, #lrtopbar .die-btn.rolling .die-shadow { animation:none; }
+}
+
+/* top bar: more presence, harder landing when stuck */
+#lrtopbar .util { padding:20px 0 18px; }
+#lrtopbar .util nav a { font-size:10.5px; font-weight:500; letter-spacing:.15em; text-transform:uppercase; }
+#lrtopbar.stuck { border-bottom:2px solid #011015; }
+
+/* secondary editorials bar: slim, nav left, die right (brand + Subscribe live in the native navbar) */
+#lrtopbar .util { padding:11px clamp(20px,4.4vw,80px) 10px; }
+#lrtopbar .util nav { justify-content:flex-start; }   /* same specificity as the flex-end above, so source order decides, exactly as on the editorials page */
+
+/* brandless topbar: never wrap - the anchor nav scrolls, the die keeps the right edge */
+@media(max-width:1180px){
+  #lrtopbar .util { flex-wrap:nowrap; }
+  #lrtopbar .util nav { order:0; flex:1 1 auto; margin-top:0; }
+}
+
+/* ---------- search ---------- */
+#lrtopbar .tb-search { display:flex; align-items:center; border-bottom:1px solid rgba(1,16,21,.3); padding:3px 2px; width:190px; transition:border-color .2s ease; }
+#lrtopbar .tb-search:focus-within { border-color:#011015; }
+/* Webflow's own label{margin-bottom:5px} outranks the overlay's * reset, so on the
+   editorials page the right-hand group measures 31.5px and the search field sits
+   2.5px above centre. The id-scoped reset here would win, so put the 5px back and
+   the two bars line up to the pixel. */
+#lrtopbar .tb-search { margin-bottom:5px; }
+#lrtopbar .tb-search input { border:0; background:none; outline:none; width:100%; font-family:'Ebgaramond','Ebgaramond','EB Garamond',Garamond,Georgia,serif; font-style:italic; font-size:13px; line-height:1.5; height:auto; min-height:0; color:#011015; }
+#lrtopbar .tb-search input::-webkit-search-cancel-button { -webkit-appearance:none; }
+@media(max-width:860px){ #lrtopbar .tb-search { width:110px; } #lrtopbar .tb-search:focus-within { width:150px; } }
+@media(max-width:640px){ #lrtopbar .tb-search { display:none; } }
+/* iOS zoom guard - inputs never below 16px on touch screens */
+@media (pointer:coarse){ #lrtopbar .tb-search input { font-size:16px; } }
+
+/* merged bar (mirrors the bundle, 5 Sep): util shrinks to the band, nav fits from 1160 up */
+@media(min-width:1160px){
+  #lrtopbar .util { box-sizing:border-box; width:100%; max-width:none; margin:0; padding-left:0; padding-right:0; gap:22px; }
+  #lrtopbar .util nav { gap:18px; }
+  #lrtopbar .util .right { gap:14px; }
+}
+@media(min-width:1160px) and (max-width:1300px){
+  #lrtopbar .util nav { gap:13px; }
+  #lrtopbar .tb-search { width:120px; }
+  #lrtopbar .tb-search:focus-within { width:150px; }
+}
+/* the article page's own furniture, unrelated to the bar */
 /* the hand-curated Suggested Reading cards are retired: the footer handles related reading */
 a.read-next, .w-layout-grid.grid-16 { display:none !important; }
 .footer8_component [data="year"], .footer8_component .div-block-107 { font-size:inherit !important; line-height:inherit !important; display:inline !important; font-family:inherit !important; }
-#lrtopbar .die-lbl { font-family:'Rules',Helvetica,Arial,sans-serif; font-size:10px; font-weight:500; letter-spacing:.16em; text-transform:uppercase; color:#011015; }`;document.head.appendChild(st);var TOPBAR = "<header class=\"topbar\" id=\"lrtopbar\"> <div class=\"wrap util\"> <nav> <a href=\"/editorials#latest\">Latest</a> <a href=\"/editorials#interviews\">Interviews</a> <a href=\"/editorials#essays\">Essays</a> <a href=\"/editorials#dossiers\">Sets</a> <a href=\"/editorials#register\">Archive</a> <a href=\"/editorials#register-pod\">Podcast</a> <a href=\"/editorials#subjects\">Subjects</a> <a href=\"/editorials#contributors\">Contributors</a> </nav> <div class=\"right\"> <label class=\"tb-search\"><input id=\"lrtb-q\" type=\"search\" placeholder=\"Search everything\u2026\" aria-label=\"Search editorials and episodes\"></label> <a class=\"die-btn js-die\" href=\"/editorials\" target=\"_blank\" rel=\"noopener\" aria-label=\"Open a random editorial\"><span class=\"die-wrap\"><svg class=\"die-svg\" width=\"26\" height=\"26\" viewBox=\"0 0 44 44\" aria-hidden=\"true\"> <rect class=\"die-body\" x=\"1\" y=\"1\" width=\"42\" height=\"42\" rx=\"9\"/> <g class=\"die-face\" data-f=\"1\"><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"2\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"3\"><circle class=\"die-pip\" cx=\"12\" cy=\"12\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"32\" cy=\"32\" r=\"3.7\"/></g> <g class=\"die-face\" data-f=\"4\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.7\"/></g> <g class=\"die-face is-on\" data-f=\"5\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.5\"/></g> <g class=\"die-face\" data-f=\"6\"><circle class=\"die-pip\" cx=\"13\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"33\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"33\" r=\"3.4\"/></g> </svg><span class=\"die-shadow\"></span></span><span class=\"die-lbl\">Random</span></a> </div> </div> </header>";
+`;document.head.appendChild(st);var TOPBAR = "<header class=\"topbar\" id=\"lrtopbar\"> <div class=\"wrap util\"> <nav> <a href=\"/editorials#latest\">Latest</a> <a href=\"/editorials#interviews\">Interviews</a> <a href=\"/editorials#essays\">Essays</a> <a href=\"/editorials#dossiers\">Sets</a> <a href=\"/editorials#register\">Archive</a> <a href=\"/editorials#register-pod\">Podcast</a> <a href=\"/editorials#subjects\">Subjects</a> <a href=\"/editorials#contributors\">Contributors</a> </nav> <div class=\"right\"> <label class=\"tb-search\"><input id=\"lrtb-q\" type=\"search\" placeholder=\"Search everything\u2026\" aria-label=\"Search editorials and episodes\"></label> <a class=\"die-btn js-die\" href=\"/editorials\" target=\"_blank\" rel=\"noopener\" aria-label=\"Open a random editorial\"><span class=\"die-wrap\"><svg class=\"die-svg\" width=\"26\" height=\"26\" viewBox=\"0 0 44 44\" aria-hidden=\"true\"> <rect class=\"die-body\" x=\"1\" y=\"1\" width=\"42\" height=\"42\" rx=\"9\"/> <g class=\"die-face\" data-f=\"1\"><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"2\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"3\"><circle class=\"die-pip\" cx=\"12\" cy=\"12\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"32\" cy=\"32\" r=\"3.7\"/></g> <g class=\"die-face\" data-f=\"4\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.7\"/></g> <g class=\"die-face is-on\" data-f=\"5\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.5\"/></g> <g class=\"die-face\" data-f=\"6\"><circle class=\"die-pip\" cx=\"13\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"33\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"33\" r=\"3.4\"/></g> </svg><span class=\"die-shadow\"></span></span><span class=\"die-lbl\">Random</span></a> </div> </div> </header>";
 
 (function () {
   var DATA_URL = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/') + 'footer_data.txt';
@@ -193,6 +280,18 @@ a.read-next, .w-layout-grid.grid-16 { display:none !important; }
         document.documentElement.style.setProperty('--lrw-navh', nav.getBoundingClientRect().height + 'px');
     }
     navh(); addEventListener('resize', navh, {passive:true});
+    var reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
+    /* sticky bar: show its rule only after scrolling, exactly as on the editorials page */
+    (function(){
+      var tick = false;
+      function upd(){ bar.classList.toggle('stuck', window.scrollY > 6); tick = false; }
+      addEventListener('scroll', function(){
+        if (!tick) { tick = true; requestAnimationFrame(upd); }
+      }, {passive:true});
+      upd();
+    })();
+    /* the nav scroller starts at Latest, never mid-list */
+    (function(){ var n = bar.querySelector('nav'); if (n) n.scrollLeft = 0; })();
     /* the site's own side menu: Webflow's close interaction does not fire on these pages, so close it ourselves */
     (function(){
       var sm = document.querySelector('.side-menu_component'); if (!sm) return;
@@ -216,23 +315,38 @@ a.read-next, .w-layout-grid.grid-16 { display:none !important; }
     })();
     var back = document.querySelector('a.button.is-link.is-icon');
     if (back && back.getAttribute('href') === '/editorials') back.style.marginTop = '30px';
+    /* search: the editorials page filters in place, an article page hands the term over */
     var q = document.getElementById('lrtb-q');
     if (q) {
       var go = function(){
         var v = q.value.trim();
         if (v) location.href = '/editorials#q=' + encodeURIComponent(v);
       };
-      q.addEventListener('keydown', function(e){ if (e.key === 'Enter') go(); });
+      q.addEventListener('keydown', function(e){
+        if (e.key === 'Enter') { go(); q.blur(); }
+        if (e.key === 'Escape') { q.value = ''; q.blur(); }
+      });
       q.addEventListener('search', go);
     }
-    var SLUGS = null;
+    /* the die: an anchor, so the article opens in a new tab natively */
     [].forEach.call(bar.querySelectorAll('.js-die'), function(el){
       var faces = [].slice.call(el.querySelectorAll('.die-face'));
       function face(n){ faces.forEach(function(g,i){ g.classList.toggle('is-on', i === n-1); }); }
-      face(5);
-      el.addEventListener('pointerdown', function(){
+      function pick(){
         var keys = Object.keys(data.arts);
-        el.href = '/editorial/' + keys[Math.floor(Math.random()*keys.length)];
+        if (keys.length) el.href = '/editorial/' + keys[Math.floor(Math.random()*keys.length)];
+      }
+      face(5); pick();
+      el.addEventListener('pointerdown', pick);
+      el.addEventListener('click', function(){
+        if (reduce) return;
+        el.classList.remove('rolling'); void el.offsetWidth; el.classList.add('rolling');
+        var spin = setInterval(function(){ face(1 + Math.floor(Math.random()*6)); }, 62);
+        setTimeout(function(){
+          clearInterval(spin);
+          face(1 + Math.floor(Math.random()*6));
+          el.classList.remove('rolling');
+        }, 1150);
       });
     });
   })();
