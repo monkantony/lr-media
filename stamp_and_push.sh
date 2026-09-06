@@ -83,6 +83,9 @@ if [[ -n "$LEFT" && "$LRW_INCLUDE_UNTRACKED" != 1 ]]; then
   git reset -q
   exit 1
 fi
+if [[ -n "$LEFT" && "$LRW_INCLUDE_UNTRACKED" == 1 ]]; then
+  git add -A && git reset -q -- version.txt 2>/dev/null || true   # the override really stages them (6 Sep: calendar.json was left behind)
+fi
 git commit -q -m "$MSG"
 else
 STAMP="$OLD_STAMP"
