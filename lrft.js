@@ -168,6 +168,16 @@
 #lrtopbar .util { padding:20px 0 18px; }
 #lrtopbar .util nav a { font-size:10.5px; font-weight:500; letter-spacing:.15em; text-transform:uppercase; }
 #lrtopbar.stuck { border-bottom:2px solid #011015; }
+/* lr-prog: the rule under the bar doubles as the article's reading-progress bar.
+   Same 2px height. With an article body on the page the bar carries .lr-prog: the
+   stuck rule fades to the hairline track and an ink fill laid exactly over it scales
+   from the bar's left edge to its right (the viewport's edges where the bar is fixed).
+   No transition on the fill: it tracks the scroll position exactly. */
+#lrtopbar.lr-prog.stuck { border-bottom-color:rgba(1,16,21,.17); }
+#lrtopbar .tb-prog { display:none; position:absolute; left:0; right:0; bottom:-2px; height:2px;
+  background:#011015; transform:scaleX(0); transform-origin:0 50%; will-change:transform;
+  transition:none; pointer-events:none; }
+#lrtopbar.lr-prog.stuck .tb-prog { display:block; }
 
 /* secondary editorials bar: slim, nav left, die right (brand + Subscribe live in the native navbar) */
 #lrtopbar .util { padding:11px clamp(20px,4.4vw,80px) 10px; }
@@ -209,13 +219,24 @@
 /* the hand-curated Suggested Reading cards are retired: the footer handles related reading */
 a.read-next, .w-layout-grid.grid-16 { display:none !important; }
 .footer8_component [data="year"], .footer8_component .div-block-107 { font-size:inherit !important; line-height:inherit !important; display:inline !important; font-family:inherit !important; }
-`;document.head.appendChild(st);var TOPBAR = "<header class=\"topbar\" id=\"lrtopbar\"> <div class=\"wrap util\"> <nav> <a href=\"/editorials#latest\">Latest</a> <a href=\"/editorials#interviews\">Interviews</a> <a href=\"/editorials#essays\">Essays</a> <a href=\"/editorials#dossiers\">Sets</a> <a href=\"/editorials#register\">Archive</a> <a href=\"/editorials#register-pod\">Podcast</a> <a href=\"/editorials#subjects\">Subjects</a> <a href=\"/editorials#contributors\">Contributors</a> </nav> <div class=\"right\"> <label class=\"tb-search\"><input id=\"lrtb-q\" type=\"search\" placeholder=\"Search everything\u2026\" aria-label=\"Search editorials and episodes\"></label> <a class=\"die-btn js-die\" href=\"/editorials\" target=\"_blank\" rel=\"noopener\" aria-label=\"Open a random editorial\"><span class=\"die-wrap\"><svg class=\"die-svg\" width=\"26\" height=\"26\" viewBox=\"0 0 44 44\" aria-hidden=\"true\"> <rect class=\"die-body\" x=\"1\" y=\"1\" width=\"42\" height=\"42\" rx=\"9\"/> <g class=\"die-face\" data-f=\"1\"><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"2\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"3\"><circle class=\"die-pip\" cx=\"12\" cy=\"12\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"32\" cy=\"32\" r=\"3.7\"/></g> <g class=\"die-face\" data-f=\"4\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.7\"/></g> <g class=\"die-face is-on\" data-f=\"5\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.5\"/></g> <g class=\"die-face\" data-f=\"6\"><circle class=\"die-pip\" cx=\"13\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"33\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"33\" r=\"3.4\"/></g> </svg><span class=\"die-shadow\"></span></span><span class=\"die-lbl\">Random</span></a> </div> </div> </header>";
+`;document.head.appendChild(st);var TOPBAR = "<header class=\"topbar\" id=\"lrtopbar\"><span class=\"tb-prog\" aria-hidden=\"true\"></span> <div class=\"wrap util\"> <nav> <a href=\"/editorials#latest\">Latest</a> <a href=\"/editorials#interviews\">Interviews</a> <a href=\"/editorials#essays\">Essays</a> <a href=\"/editorials#dossiers\">Sets</a> <a href=\"/editorials#register\">Archive</a> <a href=\"/editorials#register-pod\">Podcast</a> <a href=\"/editorials#subjects\">Subjects</a> <a href=\"/editorials#contributors\">Contributors</a> </nav> <div class=\"right\"> <label class=\"tb-search\"><input id=\"lrtb-q\" type=\"search\" placeholder=\"Search everything\u2026\" aria-label=\"Search editorials and episodes\"></label> <a class=\"die-btn js-die\" href=\"/editorials\" target=\"_blank\" rel=\"noopener\" aria-label=\"Open a random editorial\"><span class=\"die-wrap\"><svg class=\"die-svg\" width=\"26\" height=\"26\" viewBox=\"0 0 44 44\" aria-hidden=\"true\"> <rect class=\"die-body\" x=\"1\" y=\"1\" width=\"42\" height=\"42\" rx=\"9\"/> <g class=\"die-face\" data-f=\"1\"><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"2\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"3\"><circle class=\"die-pip\" cx=\"12\" cy=\"12\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"32\" cy=\"32\" r=\"3.7\"/></g> <g class=\"die-face\" data-f=\"4\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.7\"/></g> <g class=\"die-face is-on\" data-f=\"5\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.5\"/></g> <g class=\"die-face\" data-f=\"6\"><circle class=\"die-pip\" cx=\"13\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"33\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"33\" r=\"3.4\"/></g> </svg><span class=\"die-shadow\"></span></span><span class=\"die-lbl\">Random</span></a> </div> </div> </header>";
 
 (function () {
   var DATA_URL = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/') + 'footer_data.txt';
   var GROUPS = [['p','People'],['w','Works'],['x','Exhibitions'],['o','Organisations'],['pl','Places'],['t','Techniques'],['th','Themes']];
   var slug = location.pathname.replace(/\/+$/,'').split('/').pop();
   var box = document.getElementById('lrft');
+  /* lr-selfplace: the footer belongs directly below the article body. If the Embed was
+     dropped above it (or anywhere else), move the whole embed wrapper there before rendering. */
+  (function(){
+    var b = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
+    if (!box || !b || !b.parentNode) return;
+    var n = box.parentNode && box.parentNode.classList && box.parentNode.classList.contains('w-embed') ? box.parentNode : box;
+    if (n === b || n.contains(b)) return;
+    var after = b.nextElementSibling;
+    if (after === n) return;                      /* already in place */
+    b.parentNode.insertBefore(n, b.nextSibling);
+  })();
   function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;'); }
   function art(s){ return '/editorial/' + s; }
   var SUBJ = '/editorials#subject={n}';
@@ -283,8 +304,24 @@ a.read-next, .w-layout-grid.grid-16 { display:none !important; }
     var reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
     /* sticky bar: show its rule only after scrolling, exactly as on the editorials page */
     (function(){
+      /* lr-prog: the rule doubles as the article's reading-progress bar (see TOPBAR_CSS).
+         0 while the bar's bottom edge is above the article text, 1 when it reaches the
+         text's bottom. Both rects are read before any write, so it costs one layout per
+         frame; the body is re-measured on viewport resize and whenever it changes size. */
+      var lrBody = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
+      var lrFill = bar.querySelector('.tb-prog');
+      if (lrBody && lrFill) bar.classList.add('lr-prog');
+      function lrProg(){
+        if (!lrBody || !lrFill) return;
+        var r = lrBody.getBoundingClientRect(), b = bar.getBoundingClientRect().bottom;
+        var p = r.height > 0 ? (b - r.top) / r.height : 0;
+        lrFill.style.transform = 'scaleX(' + (p < 0 ? 0 : p > 1 ? 1 : p) + ')';
+      }
+      function lrRefresh(){ if (!tick) { tick = true; requestAnimationFrame(upd); } }
+      addEventListener('resize', lrRefresh, {passive:true});
+      if (lrBody && window.ResizeObserver) new ResizeObserver(lrRefresh).observe(lrBody);
       var tick = false;
-      function upd(){ bar.classList.toggle('stuck', window.scrollY > 6); tick = false; }
+      function upd(){ lrProg(); bar.classList.toggle('stuck', window.scrollY > 6); tick = false; }
       addEventListener('scroll', function(){
         if (!tick) { tick = true; requestAnimationFrame(upd); }
       }, {passive:true});
@@ -315,6 +352,13 @@ a.read-next, .w-layout-grid.grid-16 { display:none !important; }
     })();
     var back = document.querySelector('a.button.is-link.is-icon');
     if (back && back.getAttribute('href') === '/editorials') back.style.marginTop = '30px';
+    /* the arrow returns the reader to the edition and position they left, like the browser's Back */
+    if (back && back.getAttribute('href') === '/editorials') {
+      try {
+        var lp = JSON.parse(sessionStorage.getItem('lrw-pos') || 'null');
+        if (lp && lp.seed && Date.now() - lp.t < 6 * 3600 * 1000) back.setAttribute('href', '/editorials#e=' + lp.seed);
+      } catch (e) {}
+    }
     /* search: the editorials page filters in place, an article page hands the term over */
     var q = document.getElementById('lrtb-q');
     if (q) {
@@ -495,24 +539,39 @@ a.read-next, .w-layout-grid.grid-16 { display:none !important; }
       }).catch(function(){});
   })();
 
-  /* ---------- the author box links to the author's page ---------- */
+  /* ---------- each author box links to that person's own page ----------
+     Webflow renders one .w-dyn-item per credited author; a multi-author piece gets one
+     link per person (r[6], the credited people; r[4] is the readable byline). */
   (function(){
     var r = data.arts[slug]; if (!r || !r[4]) return;
-    var href = '/editorials#writer=' + encodeURIComponent(String(r[4]).toLowerCase());
-    ['.blog-post5-content_author-wrapper', '.author-about'].forEach(function(sel){
-      [].forEach.call(document.querySelectorAll(sel), function(el){
-        if (el.closest('a') || el.dataset.lrWriter) return;
-        el.dataset.lrWriter = '1';
-        el.style.cursor = 'pointer';
-        el.setAttribute('role', 'link');
-        el.setAttribute('tabindex', '0');
-        el.setAttribute('aria-label', 'All editorials by ' + r[4]);
-        function go(){ location.href = href; }
-        el.addEventListener('click', go);
-        el.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
-        el.addEventListener('mouseenter', function(){ el.style.opacity = '.72'; });
-        el.addEventListener('mouseleave', function(){ el.style.opacity = ''; });
-      });
+    var people = (r[6] && r[6].length ? r[6] : [r[4]]).map(function(n){ return String(n).replace(/\u200d/g, '').trim(); });
+    var byKey = {}; people.forEach(function(n){ byKey[n.toLowerCase()] = n; });
+    function link(el, name){
+      if (el.closest('a') || el.dataset.lrWriter) return;
+      el.dataset.lrWriter = '1';
+      var href = '/editorials#writer=' + encodeURIComponent(name.toLowerCase());
+      el.style.cursor = 'pointer';
+      el.setAttribute('role', 'link');
+      el.setAttribute('tabindex', '0');
+      el.setAttribute('aria-label', 'All editorials by ' + name);
+      function go(){ location.href = href; }
+      el.addEventListener('click', go);
+      el.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+      el.addEventListener('mouseenter', function(){ el.style.opacity = '.72'; });
+      el.addEventListener('mouseleave', function(){ el.style.opacity = ''; });
+    }
+    var items = document.querySelectorAll('.blog-post5-content_author-wrapper .w-dyn-item');
+    if (!items.length) {
+      if (people.length === 1)
+        [].forEach.call(document.querySelectorAll('.blog-post5-content_author-wrapper'), function(el){ link(el, people[0]); });
+      return;
+    }
+    [].forEach.call(items, function(it){
+      var nm = it.querySelector('.text-weight-semibold');
+      var name = nm ? String(nm.textContent).replace(/\u200d/g, '').trim() : '';
+      var hit = byKey[name.toLowerCase()];
+      if (!hit && items.length === 1 && people.length === 1) hit = people[0];
+      if (hit) link(it, hit);
     });
   })();
 
@@ -523,7 +582,7 @@ a.read-next, .w-layout-grid.grid-16 { display:none !important; }
     var ld = {
       '@context': 'https://schema.org', '@type': 'Article',
       'headline': r[2], 'datePublished': r[3],
-      'author': { '@type': 'Person', 'name': r[4] },
+      'author': (r[6] && r[6].length ? r[6] : [r[4]]).map(function(n){ return { '@type': 'Person', 'name': n }; }),
       'publisher': { '@type': 'Organization', 'name': 'Le Random', 'url': ORIGIN },
       'mainEntityOfPage': { '@type': 'WebPage', '@id': ORIGIN + '/editorial/' + slug },
       'url': ORIGIN + '/editorial/' + slug,
