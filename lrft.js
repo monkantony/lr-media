@@ -633,10 +633,10 @@ a.read-next, .w-layout-grid.grid-16 { display:none !important; }
     var home = true;
     function dock(on) {
       if (on === el.classList.contains('float')) return;
-      if (on) { ph.style.height = el.offsetHeight + 'px'; el.classList.add('float'); }
-      else { el.classList.remove('float'); ph.style.height = '0px'; }
+      if (on) { ph.style.height = el.offsetHeight + 'px'; el.classList.add('float'); document.body.appendChild(el); }   /* on the body: a transformed Webflow ancestor would otherwise pin position:fixed to itself */
+      else { el.classList.remove('float'); ph.parentNode.insertBefore(el, ph.nextSibling); ph.style.height = '0px'; }
     }
-    if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { home = es[0].isIntersecting; dock(!home && !a.paused); }).observe(ph);
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { home = es[0].isIntersecting; dock(!home && !a.paused); }, { rootMargin: '0px 0px -120px 0px' }).observe(ph);
     var fill = el.querySelector('.lrap-fill'), time = el.querySelector('.lrap-time');
     function fmt(t) { t = Math.max(0, Math.round(t)); var mm = Math.floor(t / 60), ss = t % 60; return mm + ':' + (ss < 10 ? '0' : '') + ss; }
     function dur() { return a.duration && isFinite(a.duration) ? a.duration : secs; }
