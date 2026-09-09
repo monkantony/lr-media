@@ -52,6 +52,13 @@
   color:var(--lr-ink); cursor:pointer; font-family:var(--lr-sans); font-size:9.5px; font-weight:500; letter-spacing:.08em;
   padding:7px 11px; font-variant-numeric:tabular-nums; }
 #lrap .lrap-skip:hover, #lrap .lrap-rate:hover { border-color:var(--lr-or); color:var(--lr-or); }
+/* the player floats while it plays and its home is off screen (Peter, 8 Sep 2026) */
+.lrap-ph { height:0; }
+#lrap.float { position:fixed; left:50%; bottom:18px; transform:translateX(-50%); width:min(760px,calc(100vw - 32px)); margin:0; padding:10px 16px;
+  background:#F7F4EA; border:1px solid var(--lr-ink); border-radius:14px; box-shadow:0 12px 32px rgba(1,16,21,.18); z-index:950; gap:12px; }
+#lrap.float .lrap-ai { display:none; }
+#lrap.float .lrap-lbl { font-size:9px; }
+@media (max-width:640px){ #lrap.float { bottom:10px; width:calc(100vw - 20px); padding:8px 10px; gap:8px; } #lrap.float .lrap-skip { display:none; } }
 .lrft-ln { display:flex; align-items:baseline; gap:16px; padding:13px 0; border-bottom:1px solid rgba(1,16,21,.08); }
 .lrft-ln .ln-no { flex:0 0 34px; font-family:var(--lr-sans); font-size:10px; font-weight:500; letter-spacing:.1em; color:var(--lr-or); }
 .lrft-ln .ln-t { flex:1 1 auto; min-width:0; font-family:var(--lr-sans); font-weight:500; letter-spacing:-.02rem; font-size:16.5px; line-height:1.25; }
@@ -621,6 +628,15 @@ a.read-next, .w-layout-grid.grid-16 { display:none !important; }
       + '<button class="lrap-rate" type="button" aria-label="Playback speed">1&#215;</button>';
     host.parentNode.insertBefore(el, host);
     var a = new Audio(); a.preload = 'none'; a.src = url;
+    /* floating: the placeholder keeps the player's home; the player leaves it while playing off screen */
+    var ph = document.createElement('div'); ph.className = 'lrap-ph'; host.parentNode.insertBefore(ph, el);
+    var home = true;
+    function dock(on) {
+      if (on === el.classList.contains('float')) return;
+      if (on) { ph.style.height = el.offsetHeight + 'px'; el.classList.add('float'); }
+      else { el.classList.remove('float'); ph.style.height = '0px'; }
+    }
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { home = es[0].isIntersecting; dock(!home && !a.paused); }).observe(ph);
     var fill = el.querySelector('.lrap-fill'), time = el.querySelector('.lrap-time');
     function fmt(t) { t = Math.max(0, Math.round(t)); var mm = Math.floor(t / 60), ss = t % 60; return mm + ':' + (ss < 10 ? '0' : '') + ss; }
     function dur() { return a.duration && isFinite(a.duration) ? a.duration : secs; }
@@ -638,9 +654,9 @@ a.read-next, .w-layout-grid.grid-16 { display:none !important; }
     el.querySelector('.lrap-btn').addEventListener('click', function () {
       if (a.paused) { a.play(); } else { a.pause(); }
     });
-    a.addEventListener('play', function () { el.classList.add('on'); });
-    a.addEventListener('pause', function () { el.classList.remove('on'); });
-    a.addEventListener('ended', function () { el.classList.remove('on'); a.currentTime = 0; });
+    a.addEventListener('play', function () { el.classList.add('on'); dock(!home); });
+    a.addEventListener('pause', function () { el.classList.remove('on'); dock(false); });
+    a.addEventListener('ended', function () { el.classList.remove('on'); a.currentTime = 0; dock(false); });
     a.addEventListener('timeupdate', function () {
       fill.style.width = (a.currentTime / dur() * 100) + '%';
       time.textContent = fmt(a.currentTime) + ' / ' + fmt(dur());
