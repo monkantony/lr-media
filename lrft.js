@@ -69,8 +69,8 @@
 .lrft-ln .ln-badge { border:1px solid var(--lr-or); color:var(--lr-or); border-radius:999px; padding:2px 8px 1px; }
 .lrft-tl { grid-template-columns:84px minmax(0,1fr) 72px 64px; }
 .lrmg-in { display:block; width:100%; margin:34px 0; box-sizing:border-box;
-  border:1px solid var(--lr-ink); box-shadow:6px 7px 0 rgba(1,16,21,.1);
-  background:#F7F4EA; padding:20px 24px 18px; font-family:var(--lr-serif); }
+  border:1px solid var(--lr-ink) !important; box-shadow:6px 7px 0 rgba(1,16,21,.1) !important;
+  background:#F7F4EA !important; padding:20px 24px 18px !important; font-family:var(--lr-serif); }
 .lr-sl { color:inherit; text-decoration:none; border-bottom:1px solid rgba(2,176,244,.5); transition:border-color .2s ease, color .2s ease; }
 .lr-sl:hover { color:var(--lr-or); border-bottom-color:var(--lr-or); }
 .lrmg-in a { display:block; text-decoration:none; }
