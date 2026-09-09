@@ -74,7 +74,8 @@
   background:#F7F4EA !important; padding:20px 24px 18px !important; font-family:var(--lr-serif); }
 .lr-sl { color:inherit; text-decoration:none; border-bottom:1px solid rgba(2,176,244,.5); transition:border-color .2s ease, color .2s ease; }
 .lr-sl:hover { color:var(--lr-or); border-bottom-color:var(--lr-or); }
-.lrmg-in a { display:block; text-decoration:none; }
+.lrmg-in a, .lrmg-in a * { text-decoration:none !important; }
+.lrmg-in a { display:block; }
 .lrmg-in .lrmg-lbl { display:block; font-family:var(--lr-sans); font-size:8.5px; font-weight:500; letter-spacing:.18em;
   text-transform:uppercase; color:var(--lr-or); margin-bottom:6px; }
 .lrmg-in .lrmg-q { display:block; font-size:17px; line-height:1.5; color:var(--lr-ink); max-width:64ch; transition:color .2s; }
