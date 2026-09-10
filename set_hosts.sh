@@ -4,7 +4,9 @@
 #   ./set_hosts.sh "webflow.io,localhost,lerandom.art"    # GO LIVE (covers www. too)
 # Comma-separated, no spaces; case does not matter; "*" (quoted) means everywhere.
 set -e
-cd /Users/peterbauman/.lr-cache/lr-media
+REPO="${LR_MEDIA_REPO:-$(cd "$(dirname "$0")" && pwd)}"
+export LR_MEDIA_REPO="$REPO"
+cd "$REPO"
 [[ -n "$1" ]] || { echo "usage: set_hosts.sh \"host1,host2\""; exit 1; }
 H="${1//[[:space:]]/}"; H="${H:l}"
 for _h in ${(s:,:)H}; do [[ -e "$_h" ]] && { echo "REFUSING: host '$_h' is a file in this directory (an unquoted * ?)"; exit 1; }; done

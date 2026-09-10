@@ -15,7 +15,10 @@
 # Env: LRW_HOSTS (override the hosts token), LRW_INCLUDE_UNTRACKED=1 (publish
 # untracked files outside the known publish areas).
 set -e
-cd /Users/peterbauman/.lr-cache/lr-media
+# The repo is wherever this script lives (or LR_MEDIA_REPO); nothing here assumes Peter's Mac.
+REPO="${LR_MEDIA_REPO:-$(cd "$(dirname "$0")" && pwd)}"
+export LR_MEDIA_REPO="$REPO"
+cd "$REPO"
 MODE=full
 if [[ "$1" == "--pointer-only" ]]; then MODE=pointer; shift; fi
 MSG="${1:-bundle update}"
@@ -35,9 +38,9 @@ fi
 if [[ $MODE == full ]]; then
 STAMP=$(date +%Y%m%d%H%M%S)
 python3 - "$STAMP" <<'PY'
-import json, sys, re
+import json, sys, re, os
 stamp=sys.argv[1]
-B='/Users/peterbauman/.lr-cache/lr-media/lrw_bundle.txt'
+B=os.path.join(os.environ['LR_MEDIA_REPO'], 'lrw_bundle.txt')
 b=json.load(open(B)); j=b['js']
 j=re.sub(r'var LRW_BUILD = "[0-9]*";\n', '', j)
 j=re.sub(r'var LRWB = \(window\.LRW_RAW[^\n]*\n', '', j)
@@ -67,7 +70,7 @@ json.dump(b, open(B,'w'), ensure_ascii=False, separators=(',',':'))
 print("stamped build", stamp)
 PY
 python3 -c "
-import json; open('/tmp/bc.js','w').write(json.load(open('/Users/peterbauman/.lr-cache/lr-media/lrw_bundle.txt'))['js'])"
+import json; open('/tmp/bc.js','w').write(json.load(open('$REPO/lrw_bundle.txt'))['js'])"
 node --check /tmp/bc.js
 
 # ---- stage only publish files; jsDelivr keeps commit-pinned files forever ------
