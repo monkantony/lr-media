@@ -250,7 +250,15 @@ a.read-next, .w-layout-grid.grid-16 { display:none !important; }
   #lrtopbar .util nav::-webkit-scrollbar { display:none; }
   #lrtopbar .util nav a { flex:0 0 auto; }
   #lrtopbar .util .right { order:1; flex:0 0 auto; gap:10px; margin-left:0; }
-  #lrtopbar .tb-search { width:96px; }
+  /* search keeps its full 'SEARCH ARCHIVE' width (lr-bar-fit); the nav is the part that scrolls */
+  /* the Webflow navbar's cream plane sits above the bar (z 1000 over 900): as at 1160 and up it
+     keeps only its two real controls and lets the bar paint through */
+  .navbar_component { pointer-events:none; background:transparent !important;
+    backdrop-filter:none !important; -webkit-backdrop-filter:none !important; }
+  .navbar_component .menu-button, .navbar_component .side-menu_component,
+  .navbar_component .side-menu_component *, .navbar_component .close-button { pointer-events:auto; }
+  .navbar_component .w-nav-brand { pointer-events:none; }
+  .navbar_component .w-nav-brand img { pointer-events:auto; }
 }
 /* lr-bar-fit, mirrored from the bundle topbar (Peter, 12 Sep 2026): the roll label on two
    lines even with the die, and a search that always reads "SEARCH ARCHIVE" in full. */
