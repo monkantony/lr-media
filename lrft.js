@@ -241,6 +241,17 @@
 /* the hand-curated Suggested Reading cards are retired: the footer handles related reading */
 a.read-next, .w-layout-grid.grid-16 { display:none !important; }
 .footer8_component [data="year"], .footer8_component .div-block-107 { font-size:inherit !important; line-height:inherit !important; display:inline !important; font-family:inherit !important; }
+/* one bar from tablet width up, mirrored from the bundle topbar (Peter, 14 Sep) */
+@media(min-width:761px) and (max-width:1159px){
+  #lrtopbar { position:fixed; top:0; left:0; right:0; height:var(--lrw-navh,70px); z-index:900; display:flex; align-items:center; padding-left:calc(215px + max(0px, calc(clamp(20px,4.4vw,80px) - 24px))); padding-right:64px; }
+  #lrtopbar > * { flex:1 1 auto; min-width:0; }
+  #lrtopbar .util { box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; gap:14px; flex-wrap:nowrap; display:flex; align-items:center; }
+  #lrtopbar .util nav { order:0; flex:1 1 auto; min-width:0; margin-top:0; gap:12px; justify-content:flex-start; overflow-x:auto; scrollbar-width:none; -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent); mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent); }
+  #lrtopbar .util nav::-webkit-scrollbar { display:none; }
+  #lrtopbar .util nav a { flex:0 0 auto; }
+  #lrtopbar .util .right { order:1; flex:0 0 auto; gap:10px; margin-left:0; }
+  #lrtopbar .tb-search { width:96px; }
+}
 /* lr-bar-fit, mirrored from the bundle topbar (Peter, 12 Sep 2026): the roll label on two
    lines even with the die, and a search that always reads "SEARCH ARCHIVE" in full. */
 #lrtopbar .die-btn { gap:9px; }
