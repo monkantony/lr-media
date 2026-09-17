@@ -30,9 +30,13 @@
 #lrft .lrft-pn a:hover .lrft-t { color:var(--lr-or); }
 @media (max-width:640px){ #lrft .lrft-rn { grid-template-columns:1fr; } #lrft .lrft-grp { flex-direction:column; gap:7px; } }
 #lrap { --lr-ink:#011015; --lr-ink40:rgba(1,16,21,.38); --lr-or:#FF4C00; --lr-sans:'Rules',Arial,sans-serif;
-  display:flex; align-items:center; gap:16px; padding:15px 0; margin:26px 0 34px;
+  display:flex; flex-wrap:wrap; align-items:center; column-gap:16px; row-gap:10px; padding:15px 0; margin:26px 0 34px;
   border-top:1px solid var(--lr-ink); border-bottom:1px solid rgba(1,16,21,.17);
   font-family:var(--lr-sans); color:var(--lr-ink); }
+/* 17 Sep 2026 (Peter): no "N min" in the label (the time is right below); desktop reads "Listen" + the
+   piece's title, phones read "Listen to this editorial"; the credit is one plain line under the player */
+#lrap .lrap-lbl-x { display:none; }
+#lrap .lrap-title { font-size:15px; font-weight:500; line-height:1.25; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 #lrap .lrap-btn { width:44px; height:44px; flex:0 0 44px; border-radius:999px; border:1px solid var(--lr-ink);
   background:none; color:var(--lr-ink); cursor:pointer; display:grid; place-items:center; padding:0; }
 #lrap .lrap-btn:hover { border-color:var(--lr-or); color:var(--lr-or); }
@@ -40,11 +44,16 @@
 #lrap.on .lrap-ic-play { display:none; }
 #lrap:not(.on) .lrap-ic-pause { display:none; }
 #lrap .lrap-meta { flex:1; min-width:0; display:flex; flex-direction:column; gap:7px; }
-#lrap .lrap-lbl { font-size:10px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; }
+#lrap .lrap-lbl { font-size:10px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 #lrap .lrap-bar { height:2px; background:rgba(1,16,21,.12); position:relative; cursor:pointer; }
 #lrap .lrap-bar::before { content:""; position:absolute; inset:-8px 0; }
 #lrap .lrap-fill { position:absolute; top:0; bottom:0; left:0; width:0%; background:var(--lr-or); }
-#lrap .lrap-ai { font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--lr-ink40); }
+#lrap::after { content:""; flex:0 0 100%; order:1; height:1px; background:rgba(1,16,21,.12); }   /* the rule between the player and its credit */
+#lrap .lrap-ai { flex:0 0 100%; order:2; min-width:0; padding-left:164px; font-size:12px; letter-spacing:0; text-transform:none;
+  color:rgba(1,16,21,.62); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+/* phones: the speed pill joins the credit row so the label keeps its whole line beside the buttons */
+@media (max-width:640px){ #lrap .lrap-ai { flex:1 1 0; padding-left:0; font-size:10.5px; } #lrap .lrap-rate { order:3; flex-basis:48px; width:48px; padding:6px 6px; } #lrap.float .lrap-rate { order:0; flex-basis:58px; width:58px; padding:7px 11px; } }
+#lrap.float::after { display:none; }
 #lrap .lrap-time { font-size:9.5px; letter-spacing:.08em; color:rgba(1,16,21,.38); font-variant-numeric:tabular-nums; }
 #lrap .lrap-skip { width:36px; height:36px; flex:0 0 36px; border-radius:999px; border:1px solid rgba(1,16,21,.4);
   background:none; color:var(--lr-ink); cursor:pointer; font-family:var(--lr-sans); font-size:8.5px; font-weight:500; letter-spacing:.04em; padding:0; }
@@ -59,6 +68,8 @@
 #lrap.float .lrap-ai { display:none; }
 #lrap.float .lrap-lbl { font-size:9px; }
 @media (max-width:640px){ #lrap.float { bottom:10px; width:calc(100vw - 20px); padding:8px 10px; gap:8px; } #lrap.float .lrap-skip { display:none; } }
+/* phones (after every base rule so these win): tighter gaps and smaller skips give the label its whole line */
+@media (max-width:640px){ #lrap { column-gap:12px; } #lrap .lrap-skip { width:32px; height:32px; flex-basis:32px; } #lrap .lrap-lbl-x { display:inline; } #lrap .lrap-title { display:none; } #lrap .lrap-lbl { font-size:9.5px; letter-spacing:.1em; } }
 .lrft-ln { display:grid; grid-template-columns:44px minmax(0,1fr) 72px 64px; column-gap:16px; align-items:baseline; padding:13px 0; border-bottom:1px solid rgba(1,16,21,.08); }
 .lrft-ln .ln-no { font-family:var(--lr-sans); font-size:10px; font-weight:500; letter-spacing:.1em; color:var(--lr-or); }
 .lrft-ln .ln-t { min-width:0; font-family:var(--lr-sans); font-weight:500; letter-spacing:-.02rem; font-size:16.5px; line-height:1.25; }
@@ -279,7 +290,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
   var slug = location.pathname.replace(/\/+$/,'').split('/').pop();
   var box = document.getElementById('lrft');
   /* the player first, from the map inside this file: no wait for the footer data */
-  try { if (typeof AUDIO !== 'undefined' && AUDIO[slug]) player(AUDIO[slug][0], AUDIO[slug][1]); } catch (e) {}
+  try { if (typeof AUDIO !== 'undefined' && AUDIO[slug]) player(AUDIO[slug][0], AUDIO[slug][1], ((document.querySelector('h1') || {}).textContent || '').replace(/\s+/g, ' ').trim()); } catch (e) {}
   /* lr-selfplace: the footer belongs directly below the article body. If the Embed was
      dropped above it (or anywhere else), move the whole embed wrapper there before rendering. */
   (function(){
@@ -663,9 +674,9 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     document.head.appendChild(el);
   })();
 
-    if (me.au) { try { player(me.au[0], me.au[1]); } catch (e) { /* no player beats a broken page */ } }
+    if (me.au) { try { player(me.au[0], me.au[1], (data.arts && data.arts[slug] && data.arts[slug][2]) || ''); } catch (e) { /* no player beats a broken page */ } }
   }).catch(function(){ /* no footer beats a broken footer */ });
-  function player(url, secs) {
+  function player(url, secs, title) {
     var host = document.querySelector('.text-garamond');
     if (!host || document.getElementById('lrap')) return;
     var el = document.createElement('div'); el.id = 'lrap';
@@ -674,11 +685,12 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       + '<svg class="lrap-ic-play" viewBox="0 0 16 16"><path d="M3 1.5 14 8 3 14.5z"/></svg>'
       + '<svg class="lrap-ic-pause" viewBox="0 0 16 16"><path d="M3 1.5h3.6v13H3zM9.4 1.5H13v13H9.4z"/></svg></button>'
       + '<button class="lrap-skip lrap-f15" type="button" aria-label="Forward 15 seconds">+15</button>'
-      + '<span class="lrap-meta"><span class="lrap-lbl">Listen to this editorial &#183; ' + Math.round(secs / 60) + ' min</span>'
-      + '<span class="lrap-ai">AI-generated components &#183; LR Pod theme by Rami Awad</span>'
+      + '<span class="lrap-meta"><span class="lrap-lbl">Listen<span class="lrap-lbl-x"> to this editorial</span></span>'
+      + (title ? '<span class="lrap-title">' + String(title).replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</span>' : '')
       + '<span class="lrap-bar"><span class="lrap-fill"></span></span>'
       + '<span class="lrap-time">0:00 / ' + fmt(secs) + '</span></span>'
-      + '<button class="lrap-rate" type="button" aria-label="Playback speed">1&#215;</button>';
+      + '<button class="lrap-rate" type="button" aria-label="Playback speed">1&#215;</button>'
+      + '<span class="lrap-ai">AI generated audio | LR Pod theme by Rami Awad</span>';
     host.parentNode.insertBefore(el, host);
     var a = new Audio(); a.preload = 'none'; a.src = url;
     /* floating: the player's home is a box of constant height that stays in the article; the player
