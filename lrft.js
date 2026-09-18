@@ -103,6 +103,12 @@
 @font-face { font-family:'Rules'; src:url('https://cdn.prod.website-files.com/640f56f772eeb36cc6880d91/640f62c343c4c811e1a8e5c6_Rules-Regular.woff') format('woff'); font-weight:400; font-display:swap; }
 @font-face { font-family:'Rules'; src:url('https://cdn.prod.website-files.com/640f56f772eeb36cc6880d91/640f62c34eb91d0ed0988906_Rules-Medium.woff') format('woff'); font-weight:500; font-display:swap; }
 @font-face { font-family:'Rules'; src:url('https://cdn.prod.website-files.com/640f56f772eeb36cc6880d91/640f62c327b0745f3329c484_Rules-Bold.woff') format('woff'); font-weight:700; font-display:swap; }
+/* 18 Sep 2026 (Peter, repeatedly: "individual header is aligned incorrectly to the left"): the
+   editorials page carries --frame and --maxw on :root from the bundle and the article page does
+   not, so every rule here that read clamp(20px,4.4vw,80px) was invalid and silently dropped — that is why
+   the article bar sat at a flat 215px while the editorials bar sat at 254px, and why the brand
+   never took its matching shift. Declare the same two measurements, then the two bars agree. */
+:root { --frame:clamp(20px,4.4vw,80px); --maxw:1580px; }
 #lrtopbar *, #lrtopbar *::before, #lrtopbar *::after { margin:0; padding:0; box-sizing:border-box; }
 #lrtopbar { box-sizing:border-box; color:#011015; font-family:'Ebgaramond','Ebgaramond','EB Garamond',Garamond,Georgia,serif; font-size:18px;
   line-height:1.5; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
@@ -110,13 +116,19 @@
 #lrtopbar :focus-visible { outline:2px solid #FF4C00; outline-offset:3px; }
 #lrtopbar .wrap { max-width:1580px; margin:0 auto; padding-inline:clamp(20px,4.4vw,80px); }
 
+/* the editorials page nudges the Webflow brand by the same frame measure; without it the logo
+   sits 39px left of where it sits on the main page and the whole band reads misaligned */
+@media(min-width:1001px){ .w-nav-brand { margin-left:max(0px, calc(clamp(20px,4.4vw,80px) - 24px)); } }
+
 /* .topbar */
 #lrtopbar { position:sticky; top:var(--lrw-navh,0px); z-index:60; background:#EFE9D8;
   border-bottom:1px solid transparent; transition:border-color .25s ease, background .25s ease; }
 /* one bar: on wide screens the toolbar rises into the navbar band, between logo and burger */
 @media(min-width:1160px){
   #lrtopbar { position:fixed; top:0; left:0; right:0; height:var(--lrw-navh,70px); z-index:900;
-    display:flex; align-items:center; padding-left:215px; padding-right:64px; }
+    display:flex; align-items:center;
+    /* the same figure the editorials bar uses, so the nav starts on the same pixel */
+    padding-left:calc(215px + max(0px, calc(clamp(20px,4.4vw,80px) - 24px))); padding-right:64px; }
   #lrtopbar > * { flex:1 1 auto; min-width:0; }
   /* the Webflow navbar keeps only its two real controls; its invisible full-width
      hit plane must not sit over the merged toolbar */
