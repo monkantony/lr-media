@@ -30,7 +30,8 @@
 #lrft .lrft-pn a:hover .lrft-t { color:var(--lr-or); }
 @media (max-width:640px){ #lrft .lrft-rn { grid-template-columns:1fr; } #lrft .lrft-grp { flex-direction:column; gap:7px; } }
 #lrap { --lr-ink:#011015; --lr-ink40:rgba(1,16,21,.38); --lr-or:#FF4C00; --lr-sans:'Rules',Arial,sans-serif;
-  display:flex; flex-wrap:wrap; align-items:center; column-gap:16px; row-gap:10px; padding:15px 0; margin:26px 0 34px;
+  display:flex; flex-wrap:wrap; align-items:center; column-gap:16px; row-gap:10px; padding:15px 0;
+  margin:40px 0 34px;   /* clear air under the hero image (Peter, 20 Sep 2026) */
   border-top:1px solid var(--lr-ink); border-bottom:1px solid rgba(1,16,21,.17);
   font-family:var(--lr-sans); color:var(--lr-ink); }
 /* 17 Sep 2026 (Peter): no "N min" in the label (the time is right below); desktop reads "Listen" + the
@@ -48,11 +49,13 @@
 #lrap .lrap-bar { height:2px; background:rgba(1,16,21,.12); position:relative; cursor:pointer; }
 #lrap .lrap-bar::before { content:""; position:absolute; inset:-8px 0; }
 #lrap .lrap-fill { position:absolute; top:0; bottom:0; left:0; width:0%; background:var(--lr-or); }
-#lrap::after { content:""; flex:0 0 100%; order:1; height:1px; background:rgba(1,16,21,.12); }   /* the rule between the player and its credit */
-#lrap .lrap-ai { flex:0 0 100%; order:2; min-width:0; padding-left:164px; font-size:12px; letter-spacing:0; text-transform:none;
-  color:rgba(1,16,21,.62); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-/* phones: the speed pill joins the credit row so the label keeps its whole line beside the buttons */
-@media (max-width:640px){ #lrap .lrap-ai { flex:1 1 0; padding-left:0; font-size:10.5px; } #lrap .lrap-rate { order:3; flex-basis:48px; width:48px; padding:6px 6px; } #lrap.float .lrap-rate { order:0; flex-basis:58px; width:58px; padding:7px 11px; } }
+/* 20 Sep 2026: the credit rides on the label's line, greyed back, and the separating rule and the
+   whole third row go away with it ("it doesnt need it's own damn dedicated line"). */
+#lrap .lrap-top { display:flex; align-items:baseline; column-gap:12px; min-width:0; }
+#lrap .lrap-ai { min-width:0; font-size:11px; letter-spacing:0; text-transform:none;
+  color:rgba(1,16,21,.45); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+/* phones: the label keeps the room, the credit takes what is left and ellipsises rather than wrapping */
+@media (max-width:640px){ #lrap .lrap-ai { font-size:10px; } #lrap .lrap-rate { flex-basis:48px; width:48px; padding:6px 6px; } #lrap.float .lrap-rate { flex-basis:58px; width:58px; padding:7px 11px; } }
 #lrap.float::after { display:none; }
 #lrap .lrap-time { font-size:9.5px; letter-spacing:.08em; color:rgba(1,16,21,.38); font-variant-numeric:tabular-nums; }
 #lrap .lrap-skip { width:36px; height:36px; flex:0 0 36px; border-radius:999px; border:1px solid rgba(1,16,21,.4);
@@ -708,12 +711,15 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       + '<svg class="lrap-ic-play" viewBox="0 0 16 16"><path d="M3 1.5 14 8 3 14.5z"/></svg>'
       + '<svg class="lrap-ic-pause" viewBox="0 0 16 16"><path d="M3 1.5h3.6v13H3zM9.4 1.5H13v13H9.4z"/></svg></button>'
       + '<button class="lrap-skip lrap-f15" type="button" aria-label="Forward 15 seconds">+15</button>'
-      + '<span class="lrap-meta"><span class="lrap-lbl">Listen<span class="lrap-lbl-x"> to this editorial</span></span>'
+      /* 20 Sep 2026 (Peter): the credit sits BESIDE the label, quiet, and gives back the line and the
+         rule it used to occupy under the player. */
+      + '<span class="lrap-meta"><span class="lrap-top">'
+      + '<span class="lrap-lbl">Listen<span class="lrap-lbl-x"> to this editorial</span></span>'
+      + '<span class="lrap-ai">AI generated audio | LR Pod theme by Rami Awad</span></span>'
       + (title ? '<span class="lrap-title">' + String(title).replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</span>' : '')
       + '<span class="lrap-bar"><span class="lrap-fill"></span></span>'
       + '<span class="lrap-time">0:00 / ' + fmt(secs) + '</span></span>'
-      + '<button class="lrap-rate" type="button" aria-label="Playback speed">1&#215;</button>'
-      + '<span class="lrap-ai">AI generated audio | LR Pod theme by Rami Awad</span>';
+      + '<button class="lrap-rate" type="button" aria-label="Playback speed">1&#215;</button>';
     host.parentNode.insertBefore(el, host);
     var a = new Audio(); a.preload = 'none'; a.src = url;
     /* floating: the player's home is a box of constant height that stays in the article; the player
