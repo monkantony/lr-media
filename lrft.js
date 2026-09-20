@@ -310,73 +310,6 @@ a.read-next, .w-layout-grid.grid-16 { display:none !important; }
 `;document.head.appendChild(st);var TOPBAR = "<header class=\"topbar\" id=\"lrtopbar\"><span class=\"tb-prog\" aria-hidden=\"true\"></span> <div class=\"wrap util\"> <nav> <a href=\"/editorials#latest\">Latest</a> <a href=\"/editorials#calendar\">Calendar</a> <a href=\"/editorials#interviews\">Interviews</a> <a href=\"/editorials#essays\">Essays</a> <a href=\"/editorials#dossiers\">Sets</a> <a href=\"/editorials#register\">Archive</a> <a href=\"/editorials#subjects\">Subjects</a> <a href=\"/editorials#contributors\">Contributors</a> </nav> <div class=\"right\"> <label class=\"tb-search\"><input id=\"lrtb-q\" type=\"search\" placeholder=\"Search archive\" aria-label=\"Search the archive: editorials and episodes\"></label> <a class=\"die-btn js-die\" href=\"/editorials\" target=\"_blank\" rel=\"noopener\" aria-label=\"Open a random editorial\"><span class=\"die-wrap\"><svg class=\"die-svg\" width=\"26\" height=\"26\" viewBox=\"0 0 44 44\" aria-hidden=\"true\"> <rect class=\"die-body\" x=\"1\" y=\"1\" width=\"42\" height=\"42\" rx=\"9\"/> <g class=\"die-face\" data-f=\"1\"><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"2\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"3\"><circle class=\"die-pip\" cx=\"12\" cy=\"12\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"32\" cy=\"32\" r=\"3.7\"/></g> <g class=\"die-face\" data-f=\"4\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.7\"/></g> <g class=\"die-face is-on\" data-f=\"5\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.5\"/></g> <g class=\"die-face\" data-f=\"6\"><circle class=\"die-pip\" cx=\"13\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"33\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"33\" r=\"3.4\"/></g> </svg><span class=\"die-shadow\"></span></span><span class=\"die-lbl\">Roll for<br>editorial</span></a> </div> </div> </header>";
 var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/152.m4a",870],"a-mean-defense":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/083.m4a",750],"a-michael-noll-on-when-it-all-started":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/078.m4a",1035],"aa-cavia-on-summoning-worlds":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/104.m4a",933],"aaron-hertzmann-on-caring-about-people":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/131.m4a",956],"agh-on-glorifying-the-computer":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/024.m4a",1073],"agnieszka-kurant-on-alien-thoughts":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/155.m4a",872],"ana-maria-caballeros-paperwork":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/020.m4a",149],"analivia-cordeiro-on-perpetual-motion":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/053.m4a",826],"artificial-and-human-intelligence":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/048.m4a",594],"avery-singer-on-the-dopamine-blowout":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/136.m4a",987],"barbara-london-on-new-territory":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/074.m4a",1559],"beeple-on-infinite-creation-machines":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/087.m4a",1369],"beeple-on-robot-dogs-as-canvas":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/112.m4a",929],"bright-moments-on-prioritizing-the-personal":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/041.m4a",1188],"can-art-replace-religion":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/055.m4a",1175],"casey-reas-lauren-lee-mccarthy-chandler-mcwilliams-on-expanding-software":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/058.m4a",814],"casey-reas-on-the-history-of-generative-art-part-2":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/003.m4a",863],"christiane-paul-on-curating-cohens-aaron":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/029.m4a",1343],"christiane-paul-on-defining-ai-art":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/079.m4a",1026],"claudia-hart-on-land-of-the-dead":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/105.m4a",646],"cognitive-technologies":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/094.m4a",539],"colette-bangert-on-growing-visually":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/044.m4a",546],"commentary-by-mark-wilson":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/036.m4a",356],"concrete-to-generative-real-space-explorations-in-south-america":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/019.m4a",567],"copper-giloth-on-video-games-to-video-art":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/100.m4a",737],"deafbeef-on-impermanence":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/013.m4a",1029],"deafbeef-on-vernacular-in-a-standardized-age":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/090.m4a",536],"decoupling-generative-art-with-philip-galanter":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/009.m4a",658],"demystifying-generative-aesthetics":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/037.m4a",1599],"demystifying-generative-art":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/005.m4a",1241],"demystifying-generative-autonomy":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/070.m4a",1463],"demystifying-generative-systems":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/049.m4a",1471],"dmitri-cherniak-on-strictly-for-art":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/084.m4a",1090],"drifella-iii-room-for-complexity":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/102.m4a",1516],"dx-research-group-on-the-agent-arena":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/124.m4a",1346],"ed-fornieles-on-art-as-human-sacrifice":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/132.m4a",528],"eli-scheinman-on-amplifying-the-digital":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/111.m4a",666],"embodying-ai-at-neurips-2025-creative-ai-track":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/117.m4a",1091],"emily-xie-on-textile-as-personal-canvas":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/038.m4a",1064],"eva-and-franco-mattes-on-mega-eliza":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/146.m4a",542],"evil-biscuit-on-card-nft-2-destruction-rebirth":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/139.m4a",1151],"feels-like-home-a-curatorial-statement":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/002.m4a",189],"frieder-nake-on-machinic-miracles":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/052.m4a",1063],"gendering-systems":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/057.m4a",754],"generations-of-verse":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/004.m4a",651],"golan-levin-on-the-potentiality-of-blobs":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/026.m4a",1355],"gottfried-jager-on-a-new-kind-of-being":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/125.m4a",774],"hans-ulrich-obrist-on-exhibitions-as-living-organisms":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/097.m4a",848],"hito-steyerl-on-how-it-uses-us":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/091.m4a",442],"holly-herndon-mat-dryhurst-on-artificial-psychedelia":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/110.m4a",1215],"ian-cheng-on-composing-with-systems":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/118.m4a",836],"ian-goodfellow-on-inventing-gans":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/107.m4a",1420],"illuminating-marfa":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/017.m4a",542],"infinite-images-finite-control":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/092.m4a",783],"inside-qubibis-shinjuku-studio":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/071.m4a",1800],"jakob-kudsk-steensen-on-non-human-pathways":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/137.m4a",1102],"jane-veeder-on-loving-change":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/133.m4a",991],"jared-madere-and-fairybaby-on-vvv-and-the-world-as-material":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/149.m4a",1333],"jason-bailey-georg-bak-kate-vass-on-the-art-form-of-our-generation":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/046.m4a",896],"jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/045.m4a",831],"jess-tucker-on-longing-for-a-face":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/108.m4a",819],"joan-heemskerk-on-quantum-web4":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/059.m4a",1184],"john-gerrard-on-ecology-technology-power":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/140.m4a",906],"john-maeda-on-computational-evolution":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/054.m4a",652],"john-provencher-and-raster-on-generative-identity":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/154.m4a",589],"juan-rodriguez-garcia-on-inhabiting-the-moment":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/096.m4a",616],"julia-kaganskiy-on-generativitys-deeper-consideration":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/088.m4a",989],"justin-aversano-on-heart-and-light":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/144.m4a",662],"karl-sims-alexander-mordvintsev-on-merging-technology-and-biology":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/109.m4a",1085],"kate-vass-on-rethinking-art-collecting":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/008.m4a",795],"keiken-on-the-worldbuilding-lens":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/130.m4a",846],"kevin-mccoy-on-bridging-net-art-and-blockchain":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/043.m4a",993],"kim-asendorf-on-breaking-his-own-rules":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/126.m4a",912],"kim-asendorf-on-elegant-symbiosis":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/073.m4a",1149],"kyle-mcdonald-on-computer-softness":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/129.m4a",1123],"larry-cuba-on-choreographing-form":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/051.m4a",1209],"larva-labs-on-computations-strangeness":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/101.m4a",989],"lauren-lee-mccarthy-on-software-values":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/030.m4a",987],"lawrence-lek-on-ai-reinventing-place":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/069.m4a",1622],"le-random-an-origin-story":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/000.m4a",516],"let-the-barbarians-in":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/142.m4a",676],"linda-dounia-on-memory-machines":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/031.m4a",1010],"living-aesthetics-a-grammar-of-protocol-art-and-worldbuilding":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/151.m4a",1663],"london-digital-art-guide":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/103.m4a",1642],"lowbie-and-duc-de-berry-on-log-and-the-nft-to-zine-pipeline":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/153.m4a",736],"lu-yang-on-art-as-the-perfect-cloak":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/121.m4a",1530],"machine-reverie":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/032.m4a",730],"machinic-taste":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/143.m4a",337],"marina-abramovic-on-new-possibilities":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/085.m4a",356],"mario-klingemann-a-i-c-c-a-on-alien-perspective":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/076.m4a",1723],"marlene-wenger-on-bringing-magic-back":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/148.m4a",686],"mat-dryhurst-on-becoming-infinite":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/064.m4a",1032],"matt-deslauriers-on-a-generative-world":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/067.m4a",1384],"matt-deslauriers-on-challenging-the-image":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/040.m4a",924],"matt-hall-and-john-watkinson-on-beginning-a-movement":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/061.m4a",1360],"maya-lin-on-systematic-naturalism":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/027.m4a",686],"maya-man-on-generative-meaning":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/012.m4a",884],"meandering-with-ai":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/080.m4a",508],"memo-akten-on-rituals-as-algorithms":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/145.m4a",1147],"michael-kozlowski-on-exploration-as-practice":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/042.m4a",664],"micky-malka-becky-kleiner-on-the-birth-of-node":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/119.m4a",1230],"mika-ben-amar-brennan-wojtyla-on":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/113.m4a",1000],"minne-atairu-on-shaping-our-own-image":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/095.m4a",1034],"molnars-paris":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/033.m4a",441],"mona-lisa-to-monogrid":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/034.m4a",847],"neural-unconscious":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/075.m4a",679],"new-histories-previewing-autumn-2026-in-art-and-technology":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/156.m4a",834],"new-york-city-digital-art-guide":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/081.m4a",1429],"node-fast-art-slow-looking":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/120.m4a",799],"object-misrecognition":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/082.m4a",616],"on-craft-art-programming":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/015.m4a",449],"operator-human-unreadable":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/022.m4a",1143],"operator-profiles-rebecca-allen":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/056.m4a",1406],"parker-ito-and-evil-biscuit-on-possessed-spirits":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/106.m4a",630],"post-generative-language-games":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/123.m4a",664],"post-human--ai-art":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/093.m4a",988],"rafael-rozendaal-on-a-liquid-canvas":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/072.m4a",1449],"reas-history-1":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/001.m4a",556],"reprogramming-sensory-habits":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/086.m4a",1029],"rhea-myers-on-code-as-cultural-material":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/014.m4a",505],"robbie-fitzpatrick-on-basel-social-club-welcoming-the-barbarians":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/150.m4a",1050],"samia-halaby-on-different-brushes":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/065.m4a",494],"sarah-meyohas-on-irreducibly-human":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/089.m4a",471],"sasha-stiles-and-martha-joseph-on-language-as-technology":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/098.m4a",1248],"sasha-stiles-on-writing-poets":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/028.m4a",1085],"seams-and-synthesis-schizocollage-and-ai-aesthetics":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/122.m4a",781],"seeing-machines-luba-elliott-on-the-2026-cvpr-art-gallery":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/138.m4a",1623],"shohei-fujimoto-on-remembering-space":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/134.m4a",775],"simon-denny-on-society-technology-and-art":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/060.m4a",957],"snowfro-and-ciphrd-on-a-symbiotic-relationship":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/023.m4a",1773],"sougwen-chung-on-aggregated-abandon":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/128.m4a",474],"sougwen-chung-on-us-in-another-form":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/016.m4a",524],"sputniko-on-activism-multitasking":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/066.m4a",1206],"standout-artwork-of-2025":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/114.m4a",752],"suzanne-treister-on-critical-futurism":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/068.m4a",849],"ten-moments-in-south-american-generative-art-history":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/021.m4a",589],"the-algorithmic-gaze-representations-of-women-in-ai-art":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/047.m4a",727],"the-cerebral-samba-protocol-art-worldbuilding-our-two-brains":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/135.m4a",660],"the-evolving-platform-ecosystem":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/006.m4a",554],"the-memoir-of-a-net-art-memoir":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/039.m4a",1320],"the-people-are-in-the-computer--part-i":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/077.m4a",1707],"the-ultraintelligent-machine-and-gaberbocchus-common-room":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/099.m4a",354],"the-zach-lieberman-commission-2":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/010.m4a",654],"then-and-now":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/050.m4a",313],"thoma-foundation-on-collecting-curiosity-conversation":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/141.m4a",677],"timeline-chapter-1-ten-top-moments":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/011.m4a",774],"travess-smalley-profiles-mark-wilson":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/035.m4a",1722],"trevor-paglen-trevor-paglen-on-technological-points-of-view":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/062.m4a",568],"tyler-hobbs-on-algorithmic-aesthetics":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/025.m4a",1282],"val-ravaglia-on-electric-dreams":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/063.m4a",1351],"wendi-yan-karyn-nakamura-on-the-artifice-of-knowledge":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/127.m4a",1062],"what-was-the-ai-psychosis-summit":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/147.m4a",1191],"william-mapan-on-breaking-the-medium":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/018.m4a",874],"zach-lieberman":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/007.m4a",889],"zero-10-part-1-beeple-casts-a-spell":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/115.m4a",517],"zero-10-part-2-fair-transparency":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/116.m4a",524]};
 
-(function () {
-  var DATA_URL = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/') + 'footer_data.txt';
-  var GROUPS = [['p','People'],['w','Works'],['x','Exhibitions'],['o','Organisations'],['pl','Places'],['t','Techniques'],['th','Themes']];
-  var slug = location.pathname.replace(/\/+$/,'').split('/').pop();
-  var box = document.getElementById('lrft');
-  /* the player first, from the map inside this file: no wait for the footer data */
-  try { if (typeof AUDIO !== 'undefined' && AUDIO[slug]) player(AUDIO[slug][0], AUDIO[slug][1], ((document.querySelector('h1') || {}).textContent || '').replace(/\s+/g, ' ').trim()); } catch (e) {}
-  /* lr-selfplace: the footer belongs directly below the article body. If the Embed was
-     dropped above it (or anywhere else), move the whole embed wrapper there before rendering. */
-  (function(){
-    var b = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
-    if (!box || !b || !b.parentNode) return;
-    var n = box.parentNode && box.parentNode.classList && box.parentNode.classList.contains('w-embed') ? box.parentNode : box;
-    if (n === b || n.contains(b)) return;
-    var after = b.nextElementSibling;
-    if (after === n) return;                      /* already in place */
-    b.parentNode.insertBefore(n, b.nextSibling);
-  })();
-  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;'); }
-  function art(s){ return '/editorial/' + s; }
-  var SUBJ = '/editorials#subject={n}';
-  fetch(DATA_URL).then(function(r){ return r.text(); }).then(function(t){
-    var data = JSON.parse(t);
-    var me = data.foot[slug]; if (!me) return;
-    var A = data.arts, mine = A[slug];
-    var bySlugN = {}; for (var s in A) bySlugN[A[s][0]] = s;
-    var html = '';
-    var grps = '';
-    GROUPS.forEach(function(g){
-      var names = me.m[g[0]]; if (!names || !names.length) return;
-      grps += '<div class="lrft-grp"><b>' + g[1] + '</b><span class="lrft-chips">'
-        + names.map(function(n){ return n[1] ? '<a class="lrft-chip on" href="/editorials#subject=' + encodeURIComponent(String(n[0]).toLowerCase()) + '">' + esc(n[0]) + '</a>' : '<span class="lrft-chip">' + esc(n[0]) + '</span>'; }).join('')
-        + '</span></div>';
-    });
-    if (grps) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Mentioned in this editorial</h2>' + grps + '</section>';
-    var cards = me.rn.map(function(p){
-      var r = A[p[0]]; if (!r) return '';
-      var fig = r[5] ? '<figure><img src="' + esc(r[5]) + '" alt="' + esc(r[2]) + '" loading="lazy"></figure>' : '';
-      return '<a class="lrft-card" href="' + art(p[0]) + '">' + fig
-        + '<span class="lrft-meta"><em>' + ('000' + r[0]).slice(-3) + '</em>' + esc(r[1]) + ' · ' + esc(r[3]) + '</span>'
-        + '<h3>' + esc(r[2]) + '</h3><span class="lrft-by">By ' + esc(r[4]) + '</span>'
-        + '<span class="lrft-sh">Shared subjects: ' + esc(p[1].join(', ')) + '</span></a>';
-    }).join('');
-    if (cards) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Read next</h2><div class="lrft-rn">' + cards + '</div></section>';
-    var lnRows = (me.ln || []).map(function(l){
-      return '<a class="lrft-ln" href="/editorials#pod=' + l[0] + '">'
-        + '<span class="ln-no">' + ('0' + l[0]).slice(-2) + '</span>'
-        + '<span class="ln-t">' + esc(l[1]) + '</span>'
-        + '<span class="ln-badge">Listen</span>'
-        + '<span class="ln-len">' + Math.round((l[2] || 0) / 60) + ' min</span>'
-        + '<span class="ln-sh">Shared subjects: ' + esc((l[3] || []).join(', ')) + '</span></a>';
-    }).join('');
-    if (lnRows) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Listen next</h2>' + lnRows + '</section>';
-    var tlRows = (me.tl || []).map(function(m){
-      return '<a class="lrft-ln lrft-tl" href="https://timeline.lerandom.art/#/chapter-' + m[3] + '" target="_blank" rel="noopener">'
-        + '<span class="ln-no tl-y">' + esc(m[2]) + '</span>'
-        + '<span class="ln-t">' + esc(m[1]) + '</span>'
-        + '<span class="ln-badge">Timeline</span></a>';
-    }).join('');
-    if (tlRows) html += '<section class="lrft-zone"><h2 class="lrft-lbl">From the timeline</h2>' + tlRows + '</section>';
-    var prv = bySlugN[mine[0] - 1], nxt = bySlugN[mine[0] + 1];
-    html += '<nav class="lrft-pn">'
-      + (prv ? '<a href="' + art(prv) + '"><span class="lrft-dir">&#8592; Previous · ' + ('000' + A[prv][0]).slice(-3) + '</span><span class="lrft-t">' + esc(A[prv][2]) + '</span></a>' : '<span></span>')
-      + (nxt ? '<a href="' + art(nxt) + '"><span class="lrft-dir">Next · ' + ('000' + A[nxt][0]).slice(-3) + ' &#8594;</span><span class="lrft-t">' + esc(A[nxt][2]) + '</span></a>'
-             : '<a href="/editorials"><span class="lrft-dir">Next · the newest</span><span class="lrft-t">You are reading the latest editorial. Browse the archive</span></a>')
-      + '</nav>';
-    box.innerHTML = html;
   /* the editorials header, carried onto the article pages */
   (function(){
     if (document.getElementById('lrtopbar')) return;
@@ -467,10 +400,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     [].forEach.call(bar.querySelectorAll('.js-die'), function(el){
       var faces = [].slice.call(el.querySelectorAll('.die-face'));
       function face(n){ faces.forEach(function(g,i){ g.classList.toggle('is-on', i === n-1); }); }
-      function pick(){
-        var keys = Object.keys(data.arts);
-        if (keys.length) el.href = '/editorial/' + keys[Math.floor(Math.random()*keys.length)];
-      }
+      function pick(){ var arts = window.__lrftArts; if (!arts) { el.href = '/editorials'; return; } var keys = Object.keys(arts); if (keys.length) el.href = '/editorial/' + keys[Math.floor(Math.random()*keys.length)]; }
       face(5); pick();
       el.addEventListener('pointerdown', pick);
       el.addEventListener('click', function(){
@@ -486,6 +416,83 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     });
   })();
 
+
+(function () {
+  var DATA_URL = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/') + 'footer_data.txt';
+  var GROUPS = [['p','People'],['w','Works'],['x','Exhibitions'],['o','Organisations'],['pl','Places'],['t','Techniques'],['th','Themes']];
+  var slug = location.pathname.replace(/\/+$/,'').split('/').pop();
+  var box = document.getElementById('lrft');
+  /* the player first, from the map inside this file: no wait for the footer data */
+  try { if (typeof AUDIO !== 'undefined' && AUDIO[slug]) player(AUDIO[slug][0], AUDIO[slug][1], ((document.querySelector('h1') || {}).textContent || '').replace(/\s+/g, ' ').trim()); } catch (e) {}
+  /* lr-selfplace: the footer belongs directly below the article body. If the Embed was
+     dropped above it (or anywhere else), move the whole embed wrapper there before rendering. */
+  (function(){
+    var b = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
+    if (!box || !b || !b.parentNode) return;
+    var n = box.parentNode && box.parentNode.classList && box.parentNode.classList.contains('w-embed') ? box.parentNode : box;
+    if (n === b || n.contains(b)) return;
+    var after = b.nextElementSibling;
+    if (after === n) return;                      /* already in place */
+    b.parentNode.insertBefore(n, b.nextSibling);
+  })();
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;'); }
+  function art(s){ return '/editorial/' + s; }
+  var SUBJ = '/editorials#subject={n}';
+  /* 20 Sep 2026 audit: one un-fallback'd fetch carried the footer, the smart links and the audio
+     player. jsDelivr answers 403 for a moment after every fresh commit, and that was enough to lose
+     all three; the editorials bundle already retries from raw main, so this does the same. */
+  fetch(DATA_URL).then(function(r){ if (!r.ok) throw new Error('http ' + r.status); return r.text(); })
+    .catch(function(){
+      return fetch('https://raw.githubusercontent.com/monkantony/lr-media/main/footer_data.txt?t='
+                   + Math.floor(Date.now() / 60000)).then(function(r){ return r.text(); });
+    })
+    .then(function(t){
+    var data = JSON.parse(t);
+    window.__lrftArts = data.arts;          /* the header's die reads this; the header is built before this fetch */
+    var me = data.foot[slug]; if (!me) return;
+    var A = data.arts, mine = A[slug];
+    var bySlugN = {}; for (var s in A) bySlugN[A[s][0]] = s;
+    var html = '';
+    var grps = '';
+    GROUPS.forEach(function(g){
+      var names = me.m[g[0]]; if (!names || !names.length) return;
+      grps += '<div class="lrft-grp"><b>' + g[1] + '</b><span class="lrft-chips">'
+        + names.map(function(n){ return n[1] ? '<a class="lrft-chip on" href="/editorials#subject=' + encodeURIComponent(String(n[0]).toLowerCase()) + '">' + esc(n[0]) + '</a>' : '<span class="lrft-chip">' + esc(n[0]) + '</span>'; }).join('')
+        + '</span></div>';
+    });
+    if (grps) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Mentioned in this editorial</h2>' + grps + '</section>';
+    var cards = me.rn.map(function(p){
+      var r = A[p[0]]; if (!r) return '';
+      var fig = r[5] ? '<figure><img src="' + esc(r[5]) + '" alt="' + esc(r[2]) + '" loading="lazy"></figure>' : '';
+      return '<a class="lrft-card" href="' + art(p[0]) + '">' + fig
+        + '<span class="lrft-meta"><em>' + ('000' + r[0]).slice(-3) + '</em>' + esc(r[1]) + ' · ' + esc(r[3]) + '</span>'
+        + '<h3>' + esc(r[2]) + '</h3><span class="lrft-by">By ' + esc(r[4]) + '</span>'
+        + '<span class="lrft-sh">Shared subjects: ' + esc(p[1].join(', ')) + '</span></a>';
+    }).join('');
+    if (cards) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Read next</h2><div class="lrft-rn">' + cards + '</div></section>';
+    var lnRows = (me.ln || []).map(function(l){
+      return '<a class="lrft-ln" href="/editorials#pod=' + l[0] + '">'
+        + '<span class="ln-no">' + ('0' + l[0]).slice(-2) + '</span>'
+        + '<span class="ln-t">' + esc(l[1]) + '</span>'
+        + '<span class="ln-badge">Listen</span>'
+        + '<span class="ln-len">' + Math.round((l[2] || 0) / 60) + ' min</span>'
+        + '<span class="ln-sh">Shared subjects: ' + esc((l[3] || []).join(', ')) + '</span></a>';
+    }).join('');
+    if (lnRows) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Listen next</h2>' + lnRows + '</section>';
+    var tlRows = (me.tl || []).map(function(m){
+      return '<a class="lrft-ln lrft-tl" href="https://timeline.lerandom.art/#/chapter-' + m[3] + '" target="_blank" rel="noopener">'
+        + '<span class="ln-no tl-y">' + esc(m[2]) + '</span>'
+        + '<span class="ln-t">' + esc(m[1]) + '</span>'
+        + '<span class="ln-badge">Timeline</span></a>';
+    }).join('');
+    if (tlRows) html += '<section class="lrft-zone"><h2 class="lrft-lbl">From the timeline</h2>' + tlRows + '</section>';
+    var prv = bySlugN[mine[0] - 1], nxt = bySlugN[mine[0] + 1];
+    html += '<nav class="lrft-pn">'
+      + (prv ? '<a href="' + art(prv) + '"><span class="lrft-dir">&#8592; Previous · ' + ('000' + A[prv][0]).slice(-3) + '</span><span class="lrft-t">' + esc(A[prv][2]) + '</span></a>' : '<span></span>')
+      + (nxt ? '<a href="' + art(nxt) + '"><span class="lrft-dir">Next · ' + ('000' + A[nxt][0]).slice(-3) + ' &#8594;</span><span class="lrft-t">' + esc(A[nxt][2]) + '</span></a>'
+             : '<a href="/editorials"><span class="lrft-dir">Next · the newest</span><span class="lrft-t">You are reading the latest editorial. Browse the archive</span></a>')
+      + '</nav>';
+    box.innerHTML = html;
 
 
   /* ---------- marginalia: the archive whispers inside the column ---------- */
