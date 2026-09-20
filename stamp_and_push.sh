@@ -72,6 +72,26 @@ PY
 python3 -c "
 import json; open('/tmp/bc.js','w').write(json.load(open('$REPO/lrw_bundle.txt'))['js'])"
 node --check /tmp/bc.js
+# lrft.js ships the article header, footer and player, and it is a template literal: a single
+# stray backtick in the CSS ends the sheet and takes all three with it (20 Sep 2026).
+node --check lrft.js
+
+# ---- the publish gate: render what is about to ship, at five widths ------------
+# Peter, 20 Sep 2026: "Every fix this week was proved by a throwaway script I wrote and abandoned,
+# which is why the same class of bug kept coming back." The suite lives in ~/lr-harness and fails
+# this publish if the two floating headers have drifted, the window is opening on the wrong frame,
+# the calendar is painting the wrong rows red, search misses the archive, the page has lost its
+# title, or any module died. About 90 seconds. Full publishes only — the hourly pointer moves do
+# not re-render the site. LR_SKIP_GATE=1 to publish anyway; it says loudly that you did.
+GATE="${LR_GATE:-$HOME/lr-harness/publish_gate.js}"
+if [[ "$LR_SKIP_GATE" == 1 ]]; then
+  echo "!! publish gate SKIPPED (LR_SKIP_GATE=1)"
+elif [[ -f "$GATE" ]]; then
+  echo "-- publish gate"
+  node "$GATE" || { echo "REFUSING: the publish gate failed. Nothing was committed or pushed."; exit 1; }
+else
+  echo "!! publish gate not found at $GATE — publishing unchecked"
+fi
 
 # ---- stage only publish files; jsDelivr keeps commit-pinned files forever ------
 git add -u
