@@ -323,13 +323,18 @@ a.read-next, .w-layout-grid.grid-16 { display:none !important; }
    which the bundle sets unscoped and overrides at 761 and up — the same shape is kept here. */
 #lrtopbar { font-size:19px; }
 @media(max-width:760px){
-  #lrtopbar .util { flex-wrap:wrap; gap:0 14px; }
-  #lrtopbar .util nav { order:2; flex:1 1 100%; margin-top:8px; justify-content:flex-start; transform:none; }
-  /* with the nav on its own row, the search and die have to be pushed to the right edge or they
-     sit under the first nav link. This is the bundle's .topbar .util .right rule (order:1 plus an
-     auto left margin), which had no counterpart here at all. No backticks in this file: the CSS
-     ships inside a JS template literal and one backtick ends it mid-sheet. */
-  #lrtopbar .util .right { order:1; margin-left:auto; }
+  /* 21 Sep 2026 (Peter): one row on phones — the die and its label sit on the nav's row at the
+     right edge and the nav scrolls sideways behind a fade, so the second row is gone. This is the
+     bundle's lr-bar-onerow block (apply_bar_onerow.py), rule for rule. No backticks in this file:
+     the CSS ships inside a JS template literal and one backtick ends it mid-sheet. */
+  #lrtopbar .util { flex-wrap:nowrap; gap:14px; align-items:center; }
+  #lrtopbar .util nav { order:0; flex:1 1 auto; min-width:0; margin-top:0; transform:none; gap:12px;
+    justify-content:flex-start; overflow-x:auto; scrollbar-width:none; -ms-overflow-style:none;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent);
+    mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent); }
+  #lrtopbar .util nav::-webkit-scrollbar { display:none; }
+  #lrtopbar .util nav a { flex:0 0 auto; }
+  #lrtopbar .util .right { order:1; flex:0 0 auto; margin-left:0; gap:10px; }
   /* the winning width on the editorials bar at this size is #lrw .topbar .tb-search{width:96px};
      every narrower rule here loses to it there, so 96 is the number to match */
   #lrtopbar .tb-search { width:96px; }
