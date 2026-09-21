@@ -131,7 +131,14 @@ H=$(git rev-parse HEAD)
 print -r -- "$STAMP $H $HOSTS" > version.txt
 git add version.txt
 git commit -q -m "pointer -> ${H:0:12}" -- version.txt
-git push -q
+# 21 Sep 2026: GitHub answered a push with a 504 and the publish stopped here with the commits
+# made and the pointer unmoved. A transient gateway error gets three tries; a real failure says
+# plainly that the commits are local and nothing was published.
+for _try in 1 2 3; do
+  git push -q && break
+  if [[ $_try == 3 ]]; then echo "REFUSING: git push failed three times. The commits are local; nothing was published. Run again."; exit 1; fi
+  echo "push failed (attempt $_try); retrying in 20s"; sleep 20
+done
 
 # ---- purge the pointer at the CDN and prove the edge serves it ----------------
 WANT="$STAMP $H $HOSTS"
