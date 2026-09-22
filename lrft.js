@@ -413,6 +413,13 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     var back = document.querySelector('a.button.is-link.is-icon');
     document.documentElement.classList.add('lr-back');   /* lr-reserve: the head embed already lifted the button by 30px */
     if (back && back.getAttribute('href') === '/editorials') back.style.marginTop = '30px';
+    /* lr-hub-name (22 Sep 2026): the arrow is an icon-only link; it gets the hub's one name as hidden
+       link text, so every article points at /editorials with the word "Editorials" */
+    if (back && back.getAttribute('href') === '/editorials' && !back.querySelector('.lr-vh')) {
+      var vh = document.createElement('span'); vh.className = 'lr-vh'; vh.textContent = 'Editorials';
+      vh.style.cssText = 'position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap';
+      back.appendChild(vh); back.setAttribute('title', 'Editorials');
+    }
     /* the arrow returns the reader to the edition and position they left, like the browser's Back */
     if (back && back.getAttribute('href') === '/editorials') {
       try {
