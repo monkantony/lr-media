@@ -343,7 +343,7 @@ a.read-next, .w-layout-grid.grid-16 { display:none !important; }
   #lrtopbar .tb-search input::placeholder { opacity:.72; }
 }
 `;document.head.appendChild(st);var TOPBAR = "<header class=\"topbar\" id=\"lrtopbar\"><span class=\"tb-prog\" aria-hidden=\"true\"></span> <div class=\"wrap util\"> <nav> <a href=\"/editorials#latest\">Latest</a> <a href=\"/editorials#calendar\">Calendar</a> <a href=\"/editorials#interviews\">Interviews</a> <a href=\"/editorials#essays\">Essays</a> <a href=\"/editorials#dossiers\">Sets</a> <a href=\"/editorials#register\">Archive</a> <a href=\"/editorials#subjects\">Subjects</a> <a href=\"/editorials#contributors\">Contributors</a> </nav> <div class=\"right\"> <label class=\"tb-search\"><input id=\"lrtb-q\" type=\"search\" placeholder=\"Search archive\" aria-label=\"Search the archive: editorials and episodes\"></label> <a class=\"die-btn js-die\" href=\"/editorials\" target=\"_blank\" rel=\"noopener\" aria-label=\"Open a random editorial\"><span class=\"die-wrap\"><svg class=\"die-svg\" width=\"26\" height=\"26\" viewBox=\"0 0 44 44\" aria-hidden=\"true\"> <rect class=\"die-body\" x=\"1\" y=\"1\" width=\"42\" height=\"42\" rx=\"9\"/> <g class=\"die-face\" data-f=\"1\"><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"2\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"4\"/></g> <g class=\"die-face\" data-f=\"3\"><circle class=\"die-pip\" cx=\"12\" cy=\"12\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"32\" cy=\"32\" r=\"3.7\"/></g> <g class=\"die-face\" data-f=\"4\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.7\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.7\"/></g> <g class=\"die-face is-on\" data-f=\"5\"><circle class=\"die-pip\" cx=\"13\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"13\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"22\" cy=\"22\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"13\" cy=\"31\" r=\"3.5\"/><circle class=\"die-pip\" cx=\"31\" cy=\"31\" r=\"3.5\"/></g> <g class=\"die-face\" data-f=\"6\"><circle class=\"die-pip\" cx=\"13\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"11\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"22\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"13\" cy=\"33\" r=\"3.4\"/><circle class=\"die-pip\" cx=\"31\" cy=\"33\" r=\"3.4\"/></g> </svg><span class=\"die-shadow\"></span></span><span class=\"die-lbl\">Roll for<br>editorial</span></a> </div> </div> </header>";
-var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/152.m4a?v=fe3cc30f",870],"a-mean-defense":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/083.m4a?v=f1ed3cf4",750],"a-michael-noll-on-when-it-all-started":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/078.m4a?v=d523559b",1035],"aa-cavia-on-summoning-worlds":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/104.m4a?v=7a70e426",933],"aaron-hertzmann-on-caring-about-people":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/131.m4a?v=e793562d",958],"agh-on-glorifying-the-computer":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/024.m4a?v=8b14fadb",1073],"agnieszka-kurant-on-alien-thoughts":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/155.m4a?v=6bd52977",872],"ana-maria-caballeros-paperwork":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/020.m4a?v=f13369fb",149],"analivia-cordeiro-on-perpetual-motion":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/053.m4a?v=19ea824d",826],"artificial-and-human-intelligence":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/048.m4a?v=27bcda62",594],"avery-singer-on-the-dopamine-blowout":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/136.m4a?v=390bb2da",987],"barbara-london-on-new-territory":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/074.m4a?v=ee1ae7c4",1560],"beeple-on-infinite-creation-machines":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/087.m4a?v=12a918f2",1369],"beeple-on-robot-dogs-as-canvas":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/112.m4a?v=9bccd5f8",929],"bright-moments-on-prioritizing-the-personal":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/041.m4a?v=433febe1",1188],"can-art-replace-religion":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/055.m4a?v=ef8e79e5",1175],"casey-reas-lauren-lee-mccarthy-chandler-mcwilliams-on-expanding-software":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/058.m4a?v=0a441255",814],"casey-reas-on-the-history-of-generative-art-part-2":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/003.m4a?v=569efab0",863],"christiane-paul-on-curating-cohens-aaron":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/029.m4a?v=37f6c4b8",1343],"christiane-paul-on-defining-ai-art":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/079.m4a?v=9a6f66c3",1026],"claudia-hart-on-land-of-the-dead":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/105.m4a?v=946e194b",646],"cognitive-technologies":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/094.m4a?v=a8d3a1aa",539],"colette-bangert-on-growing-visually":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/044.m4a?v=def40c17",546],"commentary-by-mark-wilson":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/036.m4a?v=b1705d1b",356],"concrete-to-generative-real-space-explorations-in-south-america":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/019.m4a?v=56429921",567],"copper-giloth-on-video-games-to-video-art":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/100.m4a?v=6cbe0f56",737],"deafbeef-on-impermanence":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/013.m4a?v=23a9df2a",1029],"deafbeef-on-vernacular-in-a-standardized-age":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/090.m4a?v=223754b9",536],"decoupling-generative-art-with-philip-galanter":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/009.m4a?v=61f25bc4",658],"demystifying-generative-aesthetics":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/037.m4a?v=5feeea93",1612],"demystifying-generative-art":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/005.m4a?v=a0d185b3",1241],"demystifying-generative-autonomy":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/070.m4a?v=d52660e6",1463],"demystifying-generative-systems":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/049.m4a?v=135647ab",1471],"dmitri-cherniak-on-strictly-for-art":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/084.m4a?v=7392b913",1090],"drifella-iii-room-for-complexity":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/102.m4a?v=4bb512de",1516],"dx-research-group-on-the-agent-arena":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/124.m4a?v=058a17dd",1346],"ed-fornieles-on-art-as-human-sacrifice":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/132.m4a?v=20cb0752",529],"eli-scheinman-on-amplifying-the-digital":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/111.m4a?v=87445d61",667],"embodying-ai-at-neurips-2025-creative-ai-track":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/117.m4a?v=717cbfcd",1091],"emily-xie-on-textile-as-personal-canvas":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/038.m4a?v=78670986",1064],"eva-and-franco-mattes-on-mega-eliza":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/146.m4a?v=e85938f8",542],"evil-biscuit-on-card-nft-2-destruction-rebirth":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/139.m4a?v=6d3e67a1",1151],"feels-like-home-a-curatorial-statement":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/002.m4a?v=bc88a5c5",189],"frieder-nake-on-machinic-miracles":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/052.m4a?v=7c9e6cce",1063],"gendering-systems":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/057.m4a?v=09b337ea",754],"generations-of-verse":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/004.m4a?v=3dad388e",651],"golan-levin-on-the-potentiality-of-blobs":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/026.m4a?v=6b684908",1355],"gottfried-jager-on-a-new-kind-of-being":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/125.m4a?v=4535e03a",774],"hans-ulrich-obrist-on-exhibitions-as-living-organisms":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/097.m4a?v=9ccc2e36",848],"hito-steyerl-on-how-it-uses-us":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/091.m4a?v=14363856",442],"holly-herndon-mat-dryhurst-on-artificial-psychedelia":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/110.m4a?v=1b174624",1215],"ian-cheng-on-composing-with-systems":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/118.m4a?v=c9de265c",836],"ian-goodfellow-on-inventing-gans":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/107.m4a?v=7d517fcc",1420],"illuminating-marfa":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/017.m4a?v=9bf1b13d",542],"infinite-images-finite-control":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/092.m4a?v=07b3d868",783],"inside-qubibis-shinjuku-studio":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/071.m4a?v=c530840d",1800],"jakob-kudsk-steensen-on-non-human-pathways":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/137.m4a?v=f01ae35f",1102],"jane-veeder-on-loving-change":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/133.m4a?v=1be7769a",991],"jared-madere-and-fairybaby-on-vvv-and-the-world-as-material":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/149.m4a?v=be91a10d",1333],"jason-bailey-georg-bak-kate-vass-on-the-art-form-of-our-generation":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/046.m4a?v=d3aa81a6",896],"jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/045.m4a?v=4cf40cd0",831],"jess-tucker-on-longing-for-a-face":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/108.m4a?v=b86b411b",819],"joan-heemskerk-on-quantum-web4":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/059.m4a?v=34461618",1184],"john-gerrard-on-ecology-technology-power":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/140.m4a?v=27f941f5",906],"john-maeda-on-computational-evolution":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/054.m4a?v=1d713188",652],"john-provencher-and-raster-on-generative-identity":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/154.m4a?v=5e38a005",589],"juan-rodriguez-garcia-on-inhabiting-the-moment":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/096.m4a?v=71047c2e",616],"julia-kaganskiy-on-generativitys-deeper-consideration":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/088.m4a?v=5ae02de6",989],"justin-aversano-on-heart-and-light":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/144.m4a?v=9c0ab237",662],"karl-sims-alexander-mordvintsev-on-merging-technology-and-biology":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/109.m4a?v=51791278",1085],"kate-vass-on-rethinking-art-collecting":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/008.m4a?v=e854495d",795],"keiken-on-the-worldbuilding-lens":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/130.m4a?v=be4a55bf",846],"kevin-mccoy-on-bridging-net-art-and-blockchain":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/043.m4a?v=c551a4a4",993],"kim-asendorf-on-breaking-his-own-rules":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/126.m4a?v=e29fe45a",912],"kim-asendorf-on-elegant-symbiosis":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/073.m4a?v=81966161",1149],"kyle-mcdonald-on-computer-softness":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/129.m4a?v=69a96877",1123],"larry-cuba-on-choreographing-form":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/051.m4a?v=e003b466",1209],"larva-labs-on-computations-strangeness":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/101.m4a?v=56e8d2ab",989],"lauren-lee-mccarthy-on-software-values":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/030.m4a?v=1b3a09e7",987],"lawrence-lek-on-ai-reinventing-place":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/069.m4a?v=e6ce2136",1622],"le-random-an-origin-story":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/000.m4a?v=22075f3e",516],"let-the-barbarians-in":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/142.m4a?v=d15468a4",676],"linda-dounia-on-memory-machines":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/031.m4a?v=e0a06c58",1010],"living-aesthetics-a-grammar-of-protocol-art-and-worldbuilding":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/151.m4a?v=75bb01c3",2506],"london-digital-art-guide":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/103.m4a?v=783fc50e",1642],"lowbie-and-duc-de-berry-on-log-and-the-nft-to-zine-pipeline":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/153.m4a?v=a111eb3f",736],"lu-yang-on-art-as-the-perfect-cloak":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/121.m4a?v=7bb3b9a3",1530],"machine-reverie":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/032.m4a?v=fd959402",730],"machinic-taste":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/143.m4a?v=8d6163ef",337],"marina-abramovic-on-new-possibilities":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/085.m4a?v=fffcb4bd",356],"mario-klingemann-a-i-c-c-a-on-alien-perspective":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/076.m4a?v=63940dce",1723],"marlene-wenger-on-bringing-magic-back":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/148.m4a?v=d5118ff6",686],"mat-dryhurst-on-becoming-infinite":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/064.m4a?v=a4794f71",1032],"matt-deslauriers-on-a-generative-world":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/067.m4a?v=6d4712f6",1384],"matt-deslauriers-on-challenging-the-image":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/040.m4a?v=2a8d6843",924],"matt-hall-and-john-watkinson-on-beginning-a-movement":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/061.m4a?v=c9d3f9b0",1360],"maya-lin-on-systematic-naturalism":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/027.m4a?v=1b711628",686],"maya-man-on-generative-meaning":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/012.m4a?v=25c7b560",884],"meandering-with-ai":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/080.m4a?v=15659ee3",508],"memo-akten-on-rituals-as-algorithms":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/145.m4a?v=216d892c",1148],"michael-kozlowski-on-exploration-as-practice":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/042.m4a?v=925b6ec8",664],"micky-malka-becky-kleiner-on-the-birth-of-node":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/119.m4a?v=aa79304c",1230],"mika-ben-amar-brennan-wojtyla-on":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/113.m4a?v=11e6ef2a",1000],"minne-atairu-on-shaping-our-own-image":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/095.m4a?v=c65106c2",1034],"molnars-paris":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/033.m4a?v=19697353",441],"mona-lisa-to-monogrid":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/034.m4a?v=ba2b3d8d",863],"neural-unconscious":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/075.m4a?v=163a0c08",679],"new-histories-previewing-autumn-2026-in-art-and-technology":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/156.m4a?v=ca918a57",843],"new-york-city-digital-art-guide":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/081.m4a?v=d4fa7ec8",1429],"node-fast-art-slow-looking":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/120.m4a?v=14eb9d1f",799],"object-misrecognition":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/082.m4a?v=73c24339",616],"on-craft-art-programming":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/015.m4a?v=3d037c95",449],"operator-human-unreadable":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/022.m4a?v=7afc3d5e",1143],"operator-profiles-rebecca-allen":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/056.m4a?v=5d8b1d06",1406],"parker-ito-and-evil-biscuit-on-possessed-spirits":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/106.m4a?v=c8d15fcb",630],"post-generative-language-games":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/123.m4a?v=0b2dc5c0",664],"post-human--ai-art":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/093.m4a?v=f64f2799",988],"rafael-rozendaal-on-a-liquid-canvas":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/072.m4a?v=f1754288",1449],"reas-history-1":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/001.m4a?v=dd35417f",556],"reprogramming-sensory-habits":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/086.m4a?v=7110d137",1029],"rhea-myers-on-code-as-cultural-material":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/014.m4a?v=54ad0a6a",505],"robbie-fitzpatrick-on-basel-social-club-welcoming-the-barbarians":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/150.m4a?v=73456253",1050],"samia-halaby-on-different-brushes":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/065.m4a?v=1d76b903",494],"sarah-meyohas-on-irreducibly-human":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/089.m4a?v=e114f9d2",471],"sasha-stiles-and-martha-joseph-on-language-as-technology":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/098.m4a?v=47fe79e1",1248],"sasha-stiles-on-writing-poets":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/028.m4a?v=71ff9db0",1085],"seams-and-synthesis-schizocollage-and-ai-aesthetics":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/122.m4a?v=4c64767f",781],"seeing-machines-luba-elliott-on-the-2026-cvpr-art-gallery":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/138.m4a?v=c5c61c11",1623],"shohei-fujimoto-on-remembering-space":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/134.m4a?v=d8657ef8",775],"simon-denny-on-society-technology-and-art":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/060.m4a?v=cb76cf9a",957],"snowfro-and-ciphrd-on-a-symbiotic-relationship":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/023.m4a?v=ec9cdd80",1773],"sougwen-chung-on-aggregated-abandon":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/128.m4a?v=ef72c5f4",474],"sougwen-chung-on-us-in-another-form":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/016.m4a?v=bfa0a892",524],"sputniko-on-activism-multitasking":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/066.m4a?v=abde5e07",1206],"standout-artwork-of-2025":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/114.m4a?v=7df1bba5",753],"suzanne-treister-on-critical-futurism":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/068.m4a?v=3a1157ab",849],"ten-moments-in-south-american-generative-art-history":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/021.m4a?v=57385407",589],"the-algorithmic-gaze-representations-of-women-in-ai-art":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/047.m4a?v=22945dae",727],"the-cerebral-samba-protocol-art-worldbuilding-our-two-brains":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/135.m4a?v=2d225e47",660],"the-evolving-platform-ecosystem":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/006.m4a?v=f90ac62f",554],"the-memoir-of-a-net-art-memoir":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/039.m4a?v=543455bb",2106],"the-people-are-in-the-computer--part-i":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/077.m4a?v=ee82bcf9",1707],"the-ultraintelligent-machine-and-gaberbocchus-common-room":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/099.m4a?v=6c4a60ac",354],"the-zach-lieberman-commission-2":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/010.m4a?v=c723b8fe",654],"then-and-now":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/050.m4a?v=089115b2",313],"thoma-foundation-on-collecting-curiosity-conversation":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/141.m4a?v=2efe4217",677],"timeline-chapter-1-ten-top-moments":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/011.m4a?v=0fc0272c",774],"travess-smalley-profiles-mark-wilson":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/035.m4a?v=2c6edad8",1722],"trevor-paglen-trevor-paglen-on-technological-points-of-view":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/062.m4a?v=9bfce2ba",568],"tyler-hobbs-on-algorithmic-aesthetics":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/025.m4a?v=9546a752",1282],"val-ravaglia-on-electric-dreams":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/063.m4a?v=631f087b",1351],"wendi-yan-karyn-nakamura-on-the-artifice-of-knowledge":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/127.m4a?v=8cdec63d",1062],"what-was-the-ai-psychosis-summit":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/147.m4a?v=73ca3101",1191],"william-mapan-on-breaking-the-medium":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/018.m4a?v=bf9a707d",874],"zach-lieberman":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/007.m4a?v=c3a7cf1c",889],"zero-10-part-1-beeple-casts-a-spell":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/115.m4a?v=835f9117",517],"zero-10-part-2-fair-transparency":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/116.m4a?v=63aca3a0",524]};
+var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/152.m4a?v=fe3cc30f",870],"a-mean-defense":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/083.m4a?v=f1ed3cf4",750],"a-michael-noll-on-when-it-all-started":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/078.m4a?v=d523559b",1035],"aa-cavia-on-summoning-worlds":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/104.m4a?v=7a70e426",933],"aaron-hertzmann-on-caring-about-people":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/131.m4a?v=e793562d",958],"agh-on-glorifying-the-computer":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/024.m4a?v=8b14fadb",1073],"agnieszka-kurant-on-alien-thoughts":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/155.m4a?v=6bd52977",872],"ana-maria-caballeros-paperwork":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/020.m4a?v=f13369fb",149],"analivia-cordeiro-on-perpetual-motion":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/053.m4a?v=19ea824d",826],"artificial-and-human-intelligence":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/048.m4a?v=27bcda62",594],"avery-singer-on-the-dopamine-blowout":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/136.m4a?v=390bb2da",987],"barbara-london-on-new-territory":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/074.m4a?v=ee1ae7c4",1560],"beeple-on-infinite-creation-machines":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/087.m4a?v=12a918f2",1369],"beeple-on-robot-dogs-as-canvas":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/112.m4a?v=9bccd5f8",929],"bright-moments-on-prioritizing-the-personal":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/041.m4a?v=433febe1",1188],"can-art-replace-religion":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/055.m4a?v=ef8e79e5",1175],"casey-reas-lauren-lee-mccarthy-chandler-mcwilliams-on-expanding-software":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/058.m4a?v=0a441255",814],"casey-reas-on-the-history-of-generative-art-part-2":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/003.m4a?v=569efab0",863],"christiane-paul-on-curating-cohens-aaron":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/029.m4a?v=37f6c4b8",1343],"christiane-paul-on-defining-ai-art":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/079.m4a?v=9a6f66c3",1026],"claudia-hart-on-land-of-the-dead":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/105.m4a?v=946e194b",646],"cognitive-technologies":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/094.m4a?v=a8d3a1aa",539],"colette-bangert-on-growing-visually":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/044.m4a?v=def40c17",546],"commentary-by-mark-wilson":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/036.m4a?v=b1705d1b",356],"concrete-to-generative-real-space-explorations-in-south-america":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/019.m4a?v=56429921",567],"copper-giloth-on-video-games-to-video-art":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/100.m4a?v=6cbe0f56",737],"deafbeef-on-impermanence":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/013.m4a?v=23a9df2a",1029],"deafbeef-on-vernacular-in-a-standardized-age":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/090.m4a?v=223754b9",536],"decoupling-generative-art-with-philip-galanter":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/009.m4a?v=61f25bc4",658],"demystifying-generative-aesthetics":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/037.m4a?v=5feeea93",1612],"demystifying-generative-art":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/005.m4a?v=a0d185b3",1241],"demystifying-generative-autonomy":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/070.m4a?v=d52660e6",1463],"demystifying-generative-systems":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/049.m4a?v=135647ab",1471],"dmitri-cherniak-on-strictly-for-art":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/084.m4a?v=7392b913",1090],"drifella-iii-room-for-complexity":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/102.m4a?v=4bb512de",1516],"dx-research-group-on-the-agent-arena":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/124.m4a?v=058a17dd",1346],"ed-fornieles-on-art-as-human-sacrifice":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/132.m4a?v=20cb0752",529],"eli-scheinman-on-amplifying-the-digital":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/111.m4a?v=87445d61",667],"embodying-ai-at-neurips-2025-creative-ai-track":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/117.m4a?v=717cbfcd",1091],"emily-xie-on-textile-as-personal-canvas":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/038.m4a?v=78670986",1064],"eva-and-franco-mattes-on-mega-eliza":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/146.m4a?v=e85938f8",542],"evil-biscuit-on-card-nft-2-destruction-rebirth":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/139.m4a?v=6d3e67a1",1151],"feels-like-home-a-curatorial-statement":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/002.m4a?v=bc88a5c5",189],"frieder-nake-on-machinic-miracles":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/052.m4a?v=7c9e6cce",1063],"gendering-systems":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/057.m4a?v=09b337ea",754],"generations-of-verse":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/004.m4a?v=3dad388e",651],"golan-levin-on-the-potentiality-of-blobs":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/026.m4a?v=6b684908",1355],"gottfried-jager-on-a-new-kind-of-being":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/125.m4a?v=4535e03a",774],"hans-ulrich-obrist-on-exhibitions-as-living-organisms":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/097.m4a?v=9ccc2e36",848],"hito-steyerl-on-how-it-uses-us":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/091.m4a?v=14363856",442],"holly-herndon-mat-dryhurst-on-artificial-psychedelia":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/110.m4a?v=1b174624",1215],"ian-cheng-on-composing-with-systems":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/118.m4a?v=c9de265c",836],"ian-goodfellow-on-inventing-gans":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/107.m4a?v=7d517fcc",1420],"illuminating-marfa":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/017.m4a?v=9bf1b13d",542],"infinite-images-finite-control":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/092.m4a?v=07b3d868",783],"inside-qubibis-shinjuku-studio":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/071.m4a?v=c530840d",1800],"jakob-kudsk-steensen-on-non-human-pathways":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/137.m4a?v=f01ae35f",1102],"jane-veeder-on-loving-change":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/133.m4a?v=1be7769a",991],"jared-madere-and-fairybaby-on-vvv-and-the-world-as-material":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/149.m4a?v=be91a10d",1333],"jason-bailey-georg-bak-kate-vass-on-the-art-form-of-our-generation":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/046.m4a?v=d3aa81a6",896],"jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/045.m4a?v=4cf40cd0",831],"jess-tucker-on-longing-for-a-face":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/108.m4a?v=b86b411b",819],"joan-heemskerk-on-quantum-web4":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/059.m4a?v=34461618",1184],"john-gerrard-on-ecology-technology-power":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/140.m4a?v=27f941f5",906],"john-maeda-on-computational-evolution":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/054.m4a?v=1d713188",652],"john-provencher-and-raster-on-generative-identity":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/154.m4a?v=5e38a005",589],"juan-rodriguez-garcia-on-inhabiting-the-moment":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/096.m4a?v=71047c2e",616],"julia-kaganskiy-on-generativitys-deeper-consideration":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/088.m4a?v=5ae02de6",989],"justin-aversano-on-heart-and-light":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/144.m4a?v=9c0ab237",662],"karl-sims-alexander-mordvintsev-on-merging-technology-and-biology":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/109.m4a?v=51791278",1085],"kate-vass-on-rethinking-art-collecting":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/008.m4a?v=e854495d",795],"keiken-on-the-worldbuilding-lens":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/130.m4a?v=be4a55bf",846],"kevin-mccoy-on-bridging-net-art-and-blockchain":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/043.m4a?v=c551a4a4",993],"kim-asendorf-on-breaking-his-own-rules":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/126.m4a?v=e29fe45a",912],"kim-asendorf-on-elegant-symbiosis":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/073.m4a?v=81966161",1149],"kyle-mcdonald-on-computer-softness":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/129.m4a?v=69a96877",1123],"larry-cuba-on-choreographing-form":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/051.m4a?v=e003b466",1209],"larva-labs-on-computations-strangeness":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/101.m4a?v=56e8d2ab",989],"lauren-lee-mccarthy-on-software-values":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/030.m4a?v=1b3a09e7",987],"lawrence-lek-on-ai-reinventing-place":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/069.m4a?v=e6ce2136",1622],"le-random-an-origin-story":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/000.m4a?v=22075f3e",516],"let-the-barbarians-in":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/142.m4a?v=d15468a4",676],"linda-dounia-on-memory-machines":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/031.m4a?v=e0a06c58",1010],"living-aesthetics-a-grammar-of-protocol-art-and-worldbuilding":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/151.m4a?v=75bb01c3",2506],"london-digital-art-guide":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/103.m4a?v=783fc50e",1642],"lowbie-and-duc-de-berry-on-log-and-the-nft-to-zine-pipeline":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/153.m4a?v=a111eb3f",736],"lu-yang-on-art-as-the-perfect-cloak":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/121.m4a?v=7bb3b9a3",1530],"machine-reverie":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/032.m4a?v=fd959402",730],"machinic-taste":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/143.m4a?v=8d6163ef",337],"marina-abramovic-on-new-possibilities":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/085.m4a?v=fffcb4bd",356],"mario-klingemann-a-i-c-c-a-on-alien-perspective":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/076.m4a?v=63940dce",1723],"marlene-wenger-on-bringing-magic-back":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/148.m4a?v=d5118ff6",686],"mat-dryhurst-on-becoming-infinite":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/064.m4a?v=a4794f71",1032],"matt-deslauriers-on-a-generative-world":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/067.m4a?v=6d4712f6",1384],"matt-deslauriers-on-challenging-the-image":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/040.m4a?v=2a8d6843",924],"matt-hall-and-john-watkinson-on-beginning-a-movement":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/061.m4a?v=c9d3f9b0",1360],"maya-lin-on-systematic-naturalism":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/027.m4a?v=1b711628",686],"maya-man-on-generative-meaning":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/012.m4a?v=25c7b560",884],"meandering-with-ai":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/080.m4a?v=15659ee3",508],"memo-akten-on-rituals-as-algorithms":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/145.m4a?v=216d892c",1148],"michael-kozlowski-on-exploration-as-practice":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/042.m4a?v=925b6ec8",664],"micky-malka-becky-kleiner-on-the-birth-of-node":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/119.m4a?v=aa79304c",1230],"mika-ben-amar-brennan-wojtyla-on":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/113.m4a?v=11e6ef2a",1000],"minne-atairu-on-shaping-our-own-image":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/095.m4a?v=c65106c2",1034],"molnars-paris":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/033.m4a?v=19697353",441],"mona-lisa-to-monogrid":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/034.m4a?v=ba2b3d8d",863],"neural-unconscious":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/075.m4a?v=163a0c08",679],"new-histories-previewing-autumn-2026-in-art-and-technology":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/156.m4a?v=ca918a57",843],"new-york-city-digital-art-guide":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/081.m4a?v=d4fa7ec8",1429],"node-fast-art-slow-looking":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/120.m4a?v=14eb9d1f",799],"object-misrecognition":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/082.m4a?v=73c24339",616],"on-craft-art-programming":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/015.m4a?v=3d037c95",449],"operator-human-unreadable":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/022.m4a?v=7afc3d5e",1143],"operator-profiles-rebecca-allen":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/056.m4a?v=5d8b1d06",1406],"parker-ito-and-evil-biscuit-on-possessed-spirits":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/106.m4a?v=c8d15fcb",630],"post-generative-language-games":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/123.m4a?v=0b2dc5c0",664],"post-human--ai-art":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/093.m4a?v=f64f2799",988],"rafael-rozendaal-on-a-liquid-canvas":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/072.m4a?v=f1754288",1449],"reas-history-1":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/001.m4a?v=dd35417f",556],"reprogramming-sensory-habits":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/086.m4a?v=7110d137",1029],"rhea-myers-on-code-as-cultural-material":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/014.m4a?v=54ad0a6a",505],"robbie-fitzpatrick-on-basel-social-club-welcoming-the-barbarians":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/150.m4a?v=73456253",1050],"samia-halaby-on-different-brushes":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/065.m4a?v=1d76b903",494],"sarah-meyohas-on-irreducibly-human":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/089.m4a?v=e114f9d2",471],"sasha-stiles-and-martha-joseph-on-language-as-technology":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/098.m4a?v=47fe79e1",1248],"sasha-stiles-on-writing-poets":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/028.m4a?v=71ff9db0",1085],"seams-and-synthesis-schizocollage-and-ai-aesthetics":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/122.m4a?v=4c64767f",781],"seeing-machines-luba-elliott-on-the-2026-cvpr-art-gallery":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/138.m4a?v=c5c61c11",1623],"shohei-fujimoto-on-remembering-space":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/134.m4a?v=d8657ef8",775],"simon-denny-on-society-technology-and-art":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/060.m4a?v=cb76cf9a",957],"snowfro-and-ciphrd-on-a-symbiotic-relationship":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/023.m4a?v=ec9cdd80",1773],"sougwen-chung-on-aggregated-abandon":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/128.m4a?v=ef72c5f4",474],"sougwen-chung-on-us-in-another-form":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/016.m4a?v=bfa0a892",524],"sputniko-on-activism-multitasking":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/066.m4a?v=abde5e07",1206],"standout-artwork-of-2025":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/114.m4a?v=7df1bba5",753],"suzanne-treister-on-critical-futurism":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/068.m4a?v=3a1157ab",849],"ten-moments-in-south-american-generative-art-history":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/021.m4a?v=57385407",589],"the-algorithmic-gaze-representations-of-women-in-ai-art":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/047.m4a?v=22945dae",727],"the-cerebral-samba-protocol-art-worldbuilding-our-two-brains":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/135.m4a?v=2d225e47",660],"the-evolving-platform-ecosystem":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/006.m4a?v=f90ac62f",554],"the-memoir-of-a-net-art-memoir":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/039.m4a?v=543455bb",2106],"the-people-are-in-the-computer--part-i":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/077.m4a?v=ee82bcf9",1707],"the-ultraintelligent-machine-and-gaberbocchus-common-room":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/099.m4a?v=6c4a60ac",354],"the-zach-lieberman-commission-2":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/010.m4a?v=c723b8fe",654],"then-and-now":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/050.m4a?v=089115b2",313],"thoma-foundation-on-collecting-curiosity-conversation":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/141.m4a?v=2efe4217",677],"timeline-chapter-1-ten-top-moments":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/011.m4a?v=0fc0272c",774],"travess-smalley-profiles-mark-wilson":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/035.m4a?v=e912bffa",1722],"trevor-paglen-trevor-paglen-on-technological-points-of-view":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/062.m4a?v=9bfce2ba",568],"tyler-hobbs-on-algorithmic-aesthetics":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/025.m4a?v=9546a752",1282],"val-ravaglia-on-electric-dreams":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/063.m4a?v=631f087b",1351],"wendi-yan-karyn-nakamura-on-the-artifice-of-knowledge":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/127.m4a?v=8cdec63d",1062],"what-was-the-ai-psychosis-summit":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/147.m4a?v=73ca3101",1191],"william-mapan-on-breaking-the-medium":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/018.m4a?v=bf9a707d",874],"zach-lieberman":["https://raw.githubusercontent.com/monkantony/lr-audio-1/main/007.m4a?v=c3a7cf1c",889],"zero-10-part-1-beeple-casts-a-spell":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/115.m4a?v=835f9117",517],"zero-10-part-2-fair-transparency":["https://raw.githubusercontent.com/monkantony/lr-audio-2/main/116.m4a?v=63aca3a0",524]};
 
   /* the editorials header, carried onto the article pages */
   (function(){
@@ -889,4 +889,522 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     });
   }
 })();
+
+  /* ---------- staging-only features: column, paths, resume, lightbox, rail, book ---------- */
+  if (/(^|\.)webflow\.io$/.test(location.hostname.toLowerCase())||/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) (function(){
+  (function(){var gs=document.createElement('style');gs.id='lrft-staging';gs.textContent=`
+@media (min-width:992px) {
+  .blog-post5-header_title-wrapper-2 { max-height:calc(100vh - 96px); overflow-y:auto; overflow-x:hidden;
+    overscroll-behavior:contain; scrollbar-width:thin; scrollbar-color:rgba(1,16,21,.28) transparent; }
+  .blog-post5-header_title-wrapper-2::-webkit-scrollbar { width:6px; }
+  .blog-post5-header_title-wrapper-2::-webkit-scrollbar-thumb { background:rgba(1,16,21,.28); border-radius:3px; }
+}
+
+#lrft .lrft-path-h { font-family:var(--lr-sans); font-size:19px; font-weight:500; letter-spacing:-.01em; margin:0 0 4px; color:var(--lr-ink); }
+#lrft .lrft-path-h span { font-size:11px; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:var(--lr-ink70); margin-left:10px; }
+#lrft .lrft-path-sub { font-family:var(--lr-serif); font-style:italic; font-size:16px; color:var(--lr-ink70); margin:0 0 14px; }
+#lrft .lrft-path + .lrft-path { margin-top:-12px; }
+#lrft .lrft-path-all { font-family:var(--lr-sans); font-size:11px; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:var(--lr-ink); text-decoration:none; }
+#lrft .lrft-path-all:hover { color:var(--lr-or); }
+
+.lrt-toast { position:fixed; left:50%; bottom:22px; transform:translateX(-50%); z-index:70; display:flex; align-items:center; gap:14px;
+  background:#011015; color:#EFE9D8; padding:12px 16px; font:400 14px/1.3 'Rules',Arial,sans-serif; box-shadow:0 10px 30px rgba(1,16,21,.3); }
+.lrt-toast button { font:500 12px/1 'Rules',Arial,sans-serif; letter-spacing:.06em; text-transform:uppercase; color:#011015; background:#EFE9D8; border:0; padding:9px 12px; cursor:pointer; }
+.lrt-toast .x { background:transparent; color:#EFE9D8; padding:6px; }
+
+.text-garamond.w-richtext figure img.lrlb-on { cursor:zoom-in; }
+.lrlb { position:fixed; inset:0; z-index:9999; background:rgba(1,16,21,.96); display:none; flex-direction:column; align-items:center; justify-content:center; color:#EFE9D8; }
+.lrlb.on { display:flex; }
+.lrlb img { max-width:calc(100vw - 140px); max-height:calc(100vh - 170px); width:auto; height:auto; object-fit:contain; box-shadow:0 20px 60px rgba(0,0,0,.4); }
+.lrlb figcaption { max-width:min(900px, calc(100vw - 48px)); margin-top:16px; text-align:center; font:400 14px/1.45 'Rules',Arial,sans-serif; color:rgba(239,233,216,.85); }
+.lrlb .lrlb-n { position:absolute; top:22px; left:24px; font:500 12px/1 'Rules',Arial,sans-serif; letter-spacing:.13em; text-transform:uppercase; color:rgba(239,233,216,.7); }
+.lrlb button { position:absolute; background:transparent; border:1px solid rgba(239,233,216,.35); color:#EFE9D8; width:46px; height:46px; border-radius:50%;
+  font:400 20px/1 'Rules',Arial,sans-serif; cursor:pointer; }
+.lrlb button:hover { border-color:#EFE9D8; }
+.lrlb .lrlb-x { top:14px; right:18px; }
+.lrlb .lrlb-p { left:24px; top:50%; margin-top:-23px; }
+.lrlb .lrlb-q { right:24px; top:50%; margin-top:-23px; }
+@media (max-width:700px) { .lrlb img { max-width:calc(100vw - 24px); max-height:calc(100vh - 190px); } .lrlb .lrlb-p, .lrlb .lrlb-q { top:auto; bottom:22px; margin:0; } }
+html.lrlb-lock, html.lrlb-lock body { overflow:hidden; }
+
+.lrr { display:none; }
+html.lrr-on.lrr-folded .lrr { display:flex; flex-direction:column; gap:18px; margin-top:22px; animation:lrrIn .35s ease; }
+@keyframes lrrIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+html.lrr-on .lrr-fold { overflow:hidden; transition:max-height .45s cubic-bezier(.3,.1,.2,1), opacity .3s; }
+html.lrr-on.lrr-folded .lrr-fold { opacity:0; }
+.lrr { --lrr-ink:#011015; --lrr-i2:rgba(1,16,21,.62); --lrr-i3:rgba(1,16,21,.45); --lrr-rule:rgba(1,16,21,.14);
+  font-family:'Rules',Arial,sans-serif; color:var(--lrr-ink); }
+.lrr p { margin:0; }
+.lrr .lrr-lbl { font:500 11px/1.3 'Rules',Arial,sans-serif; letter-spacing:.13em; text-transform:uppercase; color:var(--lrr-i2); }
+.lrr .lrr-rail { display:flex; flex-direction:column; gap:10px; }
+.lrr .lrr-dots { display:flex; flex-wrap:wrap; gap:6px; }
+.lrr .lrr-dots a { display:grid; place-items:center; width:30px; height:30px; border-radius:50%; border:1px solid var(--lrr-rule);
+  font:500 12px/1 'Rules',Arial,sans-serif; text-decoration:none; color:var(--lrr-i2); }
+.lrr .lrr-dots a:hover { border-color:var(--lrr-ink); color:var(--lrr-ink); }
+.lrr .lrr-dots a.done { background:rgba(1,16,21,.07); color:var(--lrr-ink); }
+.lrr .lrr-dots a.on { background:var(--lrr-ink); border-color:var(--lrr-ink); color:#EFE9D8; }
+.lrr .lrr-cur { font:400 15px/1.45 'Rules',Arial,sans-serif; color:var(--lrr-ink); min-height:3em; }
+.lrr .lrr-note { border-top:1px solid var(--lrr-ink); padding-top:12px; display:flex; flex-direction:column; gap:6px; transition:opacity .25s; }
+.lrr .lrr-note.swap { opacity:0; }
+.lrr .lrr-note.gone { display:none; }
+.lrr .lrr-note .nm { font:500 22px/1.15 'Rules',Arial,sans-serif; letter-spacing:-.015em; text-decoration:none; color:var(--lrr-ink); }
+.lrr .lrr-note .nm:hover { text-decoration:underline; text-underline-offset:3px; }
+.lrr .lrr-note .ty { font:400 13px/1.4 'Rules',Arial,sans-serif; color:var(--lrr-i2); }
+.lrr .lrr-note .also { font:400 15px/1.45 'Ebgaramond','EB Garamond',Garamond,Georgia,serif; }
+.lrr .lrr-note .also a { color:inherit; text-decoration:underline; text-decoration-color:rgba(1,16,21,.3); text-underline-offset:2px; }
+.lrr .lrr-note .prev { font:400 13px/1.4 'Rules',Arial,sans-serif; color:var(--lrr-i3); }
+.lrr .lrr-note .prev a { color:var(--lrr-i2); }
+html.lrr-tight .lrr .lrr-note .also, html.lrr-tight .lrr .lrr-note .prev { display:none; }
+html.lrr-nonote .lrr .lrr-note { display:none; }
+html.lrr-on span.lr-fm.now { text-decoration:underline; text-decoration-color:#FF4C00; text-decoration-thickness:2px; text-underline-offset:3px; }
+html.lrr-on a.lr-sl.lr-fm.now { border-bottom:2px solid #FF4C00; }
+@media (max-width:1159px) { .lrr .lrr-note .also { display:none; } .lrr .lrr-dots a { width:26px; height:26px; font-size:11px; } }
+@media (max-width:991px) { .lrr { display:none !important; } .lrr-fold { max-height:none !important; opacity:1 !important; } }
+@media (prefers-reduced-motion:reduce) { html.lrr-on .lrr-fold { transition:none; } html.lrr-on.lrr-folded .lrr { animation:none; } }
+/* Book measure for the live article page (test lab, 23 Sep 2026), against the Webflow classes as measured
+   on the 8799 proxy. Everything is scoped under html.lrbk so it can ship behind a flag and be switched off.
+   The paper card (div.article) stays: it becomes the page. Its left padding is the book margin, computed in
+   CSS from the card's own width (padding percentages resolve against the grid area), so the text block
+   sits toward the outer edge with the note column in the card's outer margin.
+   Side notes from 1240 px; 992 to 1239 px: the text is centered in the card and notes stay in the sticky
+   column (lrr-note, as today); below 992 px nothing here applies. */
+html.lrbk {
+  --bk-L: clamp(232px, 21vw, 320px);     /* sticky title column (445 today) */
+  --bk-g1: 48px;                         /* grid gap, as today */
+  --bk-T: 576px;                         /* the measure: 64 to 71 characters at 21/32 in Ebgaramond */
+  --bk-g2: clamp(28px, 2.8vw, 44px);     /* text to notes */
+  --bk-S: clamp(200px, 15vw, 232px);     /* note column */
+  --bk-pR: clamp(28px, 3.2vw, 48px);     /* card padding right of the notes */
+  --bk-pL: 40px;                         /* the smallest left margin inside the card */
+}
+@media (min-width: 992px) {
+  html.lrbk .blog-post5-header_component { grid-template-columns: var(--bk-L) minmax(0, 1fr) !important; column-gap: var(--bk-g1) !important; }
+  html.lrbk div.article {
+    position: relative;
+    /* 992 to 1239: the measure centered in the card */
+    padding: 40px max(var(--bk-pL), calc((100% - var(--bk-T)) / 2)) 56px !important;
+  }
+  /* one measure for the player, the text and the end zones */
+  html.lrbk div.article > .lrap-home,
+  html.lrbk div.article > .text-garamond,
+  html.lrbk div.article > .w-embed.w-script { width: var(--bk-T) !important; max-width: 100% !important; align-self: flex-start; }
+  html.lrbk div.article > .lrap-home #lrap { width: 100% !important; }
+  html.lrbk div.article > .w-embed.w-script #lrft { width: 100% !important; }
+
+  /* the text: book size and leading, a little more air between paragraphs */
+  html.lrbk .text-garamond.padding-article { font-size: 21px !important; line-height: 32px !important; font-feature-settings: 'kern', 'liga', 'onum'; }
+  html.lrbk .text-garamond.padding-article p { margin-bottom: 14px; }
+  /* Webflow's own p rule sets 24px leading on the paragraphs themselves, so the container's 32px never reached
+     them (live measurement, 23 Sep 2026): the book leading is set on the text elements directly */
+  html.lrbk .text-garamond.padding-article p, html.lrbk .text-garamond.padding-article li,
+  html.lrbk .text-garamond.padding-article blockquote { line-height: 32px !important; }
+  html.lrbk .text-garamond.padding-article .lrmg-in { width: 100%; }
+
+  /* plates: JS marks each image figure lrbk-wide (ratio 1.25 or more) or lrbk-tall and sets --r.
+     Portraits and squares keep the measure and stop at 78% of the window height by WIDTH (never a
+     height cap: that is the stretch bug). Captions keep the measure. */
+  html.lrbk .text-garamond figure.lrbk-tall { width: min(100%, calc(78vh * var(--r, 1))) !important; max-width: 100% !important; }
+  html.lrbk .text-garamond figure figcaption { max-width: var(--bk-T); text-align: left; }   /* Webflow centers captions; under an 800 px plate a centered 576 px caption floats */
+}
+@media (min-width: 1240px) {
+  html.lrbk div.article {
+    /* the text block toward the outer edge; what is left of the card is the left margin */
+    padding-left: max(var(--bk-pL), calc(100% - var(--bk-T) - var(--bk-g2) - var(--bk-S) - var(--bk-pR))) !important;
+    padding-right: calc(var(--bk-g2) + var(--bk-S) + var(--bk-pR)) !important;
+  }
+  /* landscape plates run into the note column, up to 800 px */
+  html.lrbk .text-garamond figure.lrbk-wide { width: min(800px, calc(100% + var(--bk-g2) + var(--bk-S))) !important; max-width: none !important; }
+  /* the note leaves the sticky column: it lives beside its line */
+  html.lrbk .lrr .lrr-note { display: none !important; }
+}
+/* unfolded and still too tall (a long title, standfirst and bio): smaller title, bios to two lines, then
+   bios hidden and the standfirst clamped */
+html.lrbk.lrbk-ut .blog-post5-header_title-wrapper-2 h1 { font-size: 30px !important; line-height: 1.08 !important; }
+html.lrbk.lrbk-ut .blog-post5-header_title-wrapper-2 .author-about { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+html.lrbk.lrbk-ut2 .blog-post5-header_title-wrapper-2 .author-about { display: none; }
+html.lrbk.lrbk-ut2 .blog-post5-header_title-wrapper-2 .lrr-fold.text-size-regular { display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* side notes */
+.lrbk-side { position: absolute; top: 0; width: var(--bk-S); pointer-events: none; }
+.lrbk-sn { position: absolute; left: 0; right: 0; display: flex; flex-direction: column; gap: 3px; padding-top: 7px; border-top: 1px solid rgba(1,16,21,.16); pointer-events: auto; transition: border-color .25s, opacity .25s; }
+.lrbk-sn .nm { font: 500 16px/1.2 'Rules', Arial, sans-serif; letter-spacing: -.01em; color: #011015; text-decoration: none; }
+.lrbk-sn .nm:hover { text-decoration: underline; text-underline-offset: 3px; }
+.lrbk-sn .ty { font: 400 12px/1.35 'Rules', Arial, sans-serif; color: #4A5251; }
+.lrbk-sn .also { font: 400 14px/1.38 'Ebgaramond Regular', 'Ebgaramond', 'EB Garamond', Garamond, Georgia, serif; color: #011015; }
+.lrbk-sn .also a { color: inherit; text-decoration: underline; text-decoration-color: rgba(1,16,21,.28); text-underline-offset: 2px; }
+.lrbk-sn.compact .also { display: none; }
+.lrbk-sn.now, .lrbk-sn.hot { border-top: 2px solid #FF4C00; padding-top: 6px; }
+.lrbk-sn.past { opacity: .72; }
+html.lrbk span.lr-fm.hot { text-decoration: underline; text-decoration-color: #FF4C00; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+html.lrbk a.lr-sl.lr-fm.hot { border-bottom: 2px solid #FF4C00; }
+@media (max-width: 1239px) { .lrbk-side { display: none; } }
+`;document.head.appendChild(gs);})();
+
+
+
+  /* ---------- paths (23 Sep 2026): its place in any reading path, from the hub's own sets ---------- */
+  (function(){
+    var pslug = location.pathname.replace(/\/+$/, '').split('/').pop();
+    function pesc(s){ return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+    function href(p){ return /^pod:/.test(p[1]) ? '/editorials#pod=' + p[1].slice(4) : '/editorial/' + p[1]; }
+    fetch((window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/') + 'footer_data.txt')
+      .then(function(r){ return r.text(); }).then(function(t){
+        var d = JSON.parse(t), me = d.foot && d.foot[pslug]; if (!me || !me.st || !d.sets) return;
+        var html = me.st.slice(0, 2).map(function(x){
+          var s = d.sets[x[0]]; if (!s) return '';
+          var parts = s[2], i = x[1], pv = parts[i - 1], nx = parts[i + 1];
+          return '<section class="lrft-zone lrft-path"><h2 class="lrft-lbl">Reading path</h2>'
+            + '<p class="lrft-path-h">' + pesc(s[0]) + '<span>Part ' + (i + 1) + ' of ' + parts.length + '</span></p>'
+            + (s[1] ? '<p class="lrft-path-sub">' + pesc(s[1]) + '</p>' : '')
+            + '<nav class="lrft-pn">'
+            + (pv ? '<a href="' + href(pv) + '"><span class="lrft-dir">&#8592; Before this</span><span class="lrft-t">' + pesc(pv[0]) + '</span></a>' : '<span></span>')
+            + (nx ? '<a href="' + href(nx) + '"><span class="lrft-dir">After this &#8594;</span><span class="lrft-t">' + pesc(nx[0]) + '</span></a>'
+                  : '<a href="/editorials#dossiers"><span class="lrft-dir">The end of the path</span><span class="lrft-t">All reading paths</span></a>')
+            + '</nav></section>';
+        }).join('');
+        if (!html) return;
+        var t0 = Date.now();
+        (function place(){
+          var box = document.getElementById('lrft'), zones = box ? box.querySelectorAll('.lrft-zone') : [];
+          var rn = null; [].forEach.call(zones, function(z){ var h = z.querySelector('.lrft-lbl'); if (!rn && h && h.textContent === 'Read next') rn = z; });
+          if (box && box.querySelector('.lrft-path')) return;
+          if (rn) rn.insertAdjacentHTML('beforebegin', html);
+          else if (box && box.querySelector('.lrft-pn') && !box.querySelector('.lrft-path')) box.querySelector('.lrft-pn').insertAdjacentHTML('beforebegin', html);
+          else if (Date.now() - t0 < 10000) setTimeout(place, 200);
+        })();
+      }).catch(function(){});
+  })();
+
+
+  /* ---------- resume (23 Sep 2026): continue where you left off ---------- */
+  (function(){
+    var body = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
+    if (!body) return;
+    var tslug = location.pathname.replace(/\/+$/, '').split('/').pop();
+    function st(v){ try { if (v === undefined) return JSON.parse(localStorage.getItem('lr-read') || '{}'); localStorage.setItem('lr-read', JSON.stringify(v)); } catch (e) { return {}; } }
+    function frac(){ var r = body.getBoundingClientRect(); return Math.min(1, Math.max(0, (innerHeight * .35 - r.top) / Math.max(1, r.height - innerHeight * .3))); }
+    var tm = 0;
+    addEventListener('scroll', function(){ clearTimeout(tm); tm = setTimeout(function(){ var s = st() || {}; s.pos = s.pos || {}; s.pos[tslug] = Math.round(frac() * 1000) / 1000; st(s); }, 500); }, { passive: true });
+    var p = ((st() || {}).pos || {})[tslug];
+    if (p > .06 && p < .95 && !location.hash) {
+      var toast = document.createElement('div'); toast.className = 'lrt-toast'; toast.setAttribute('role', 'status');
+      toast.innerHTML = '<span>Continue where you left off, ' + Math.round(p * 100) + '% in</span><button type="button" class="go">Resume</button><button type="button" class="x" aria-label="Dismiss">&#10005;</button>';
+      document.body.appendChild(toast);
+      var gone = function(){ if (toast.parentNode) toast.parentNode.removeChild(toast); };
+      toast.querySelector('.go').addEventListener('click', function(){ var r = body.getBoundingClientRect(); scrollTo({ top: scrollY + r.top + r.height * p - innerHeight * .35, behavior: 'smooth' }); gone(); });
+      toast.querySelector('.x').addEventListener('click', gone);
+      setTimeout(gone, 12000);
+    }
+  })();
+
+
+  /* ---------- lightbox (23 Sep 2026): the body's images, full screen, in order ---------- */
+  (function(){
+    var body = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
+    if (!body) return;
+    var imgs = [].filter.call(body.querySelectorAll('figure img'), function(im){ return !im.closest('a') && !im.closest('.lrmg-in'); });
+    if (!imgs.length) return;
+    function big(im){   /* the smallest Webflow size that is sharp full screen on this display (originals run to 5760 px) */
+      var need = Math.min(2600, Math.round(Math.max(innerWidth, innerHeight * 1.5) * (window.devicePixelRatio || 1)));
+      var cs = String(im.getAttribute('srcset') || '').split(',').map(function(c){ var p = c.trim().split(/\s+/); return { u: p[0], w: parseInt(p[1], 10) || 0 }; })
+        .filter(function(c){ return c.u && c.w; }).sort(function(a, b){ return a.w - b.w; });
+      for (var i = 0; i < cs.length; i++) if (cs[i].w >= need) return cs[i].u;
+      return cs.length ? cs[cs.length - 1].u : (im.currentSrc || im.src);
+    }
+    var box = document.createElement('div'); box.className = 'lrlb'; box.setAttribute('role', 'dialog'); box.setAttribute('aria-modal', 'true'); box.setAttribute('aria-label', 'Image viewer');
+    box.innerHTML = '<span class="lrlb-n"></span><button type="button" class="lrlb-x" aria-label="Close">&#10005;</button>'
+      + '<button type="button" class="lrlb-p" aria-label="Previous image">&#8592;</button><button type="button" class="lrlb-q" aria-label="Next image">&#8594;</button>'
+      + '<img alt=""><figcaption></figcaption>';
+    document.body.appendChild(box);
+    var cur = 0, last = null, IM = box.querySelector('img'), CAP = box.querySelector('figcaption'), N = box.querySelector('.lrlb-n');
+    function show(i){
+      cur = (i + imgs.length) % imgs.length; var im = imgs[cur], fc = im.closest('figure') && im.closest('figure').querySelector('figcaption');
+      IM.src = big(im); IM.alt = im.alt || ''; CAP.textContent = fc ? fc.textContent.trim() : ''; CAP.style.display = fc ? '' : 'none';
+      N.textContent = imgs.length > 1 ? (cur + 1) + ' of ' + imgs.length : '';
+      box.querySelector('.lrlb-p').style.display = box.querySelector('.lrlb-q').style.display = imgs.length > 1 ? '' : 'none';
+    }
+    function open(i){ last = document.activeElement; show(i); box.classList.add('on'); document.documentElement.classList.add('lrlb-lock'); box.querySelector('.lrlb-x').focus(); }
+    function close(){ box.classList.remove('on'); document.documentElement.classList.remove('lrlb-lock'); IM.removeAttribute('src'); if (last && last.focus) last.focus(); }
+    imgs.forEach(function(im, i){
+      im.classList.add('lrlb-on'); im.setAttribute('tabindex', '0'); im.setAttribute('role', 'button'); im.setAttribute('aria-label', 'Open image full screen' + (im.alt ? ': ' + im.alt : ''));
+      im.addEventListener('click', function(){ open(i); });
+      im.addEventListener('keydown', function(ev){ if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); open(i); } });
+    });
+    box.querySelector('.lrlb-x').addEventListener('click', close);
+    box.querySelector('.lrlb-p').addEventListener('click', function(ev){ ev.stopPropagation(); show(cur - 1); });
+    box.querySelector('.lrlb-q').addEventListener('click', function(ev){ ev.stopPropagation(); show(cur + 1); });
+    box.addEventListener('click', function(ev){ if (ev.target === box) close(); });
+    addEventListener('keydown', function(ev){
+      if (!box.classList.contains('on')) return;
+      if (ev.key === 'Escape') close(); else if (ev.key === 'ArrowRight') show(cur + 1); else if (ev.key === 'ArrowLeft') show(cur - 1);
+    });
+    var x0 = null;
+    box.addEventListener('touchstart', function(ev){ x0 = ev.touches[0].clientX; }, { passive: true });
+    box.addEventListener('touchend', function(ev){ if (x0 == null) return; var dx = ev.changedTouches[0].clientX - x0; if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1)); x0 = null; });
+  })();
+
+
+  /* ---------- lr-rail (23 Sep 2026): questions and first-mention notes in the sticky title column ---------- */
+  (function(){
+    var W = document.querySelector('.blog-post5-header_title-wrapper-2');
+    var body = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
+    if (!W || !body || !window.fetch || !document.createTreeWalker) return;
+    var root = document.documentElement, MINW = 992, rslug = location.pathname.replace(/\/+$/, '').split('/').pop();
+    var HOUSE = { 'peter bauman': 1, 'monk antony': 1, 'conrad house': 1, 'le random': 1 };
+    var TYPE = { people: 'Person', works: 'Work', orgs: 'Organization', exhibitions: 'Exhibition' };
+    function esc(s){ return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+    function key(s){ return String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, ''); }
+    /* the mockup session's sentence tools, as ported: sentence ends ignore initialisms and titles */
+    function sentences(t){
+      t = String(t || '').trim();
+      var out = [], re = /[.?!]+["”’)]*\s+(?=[A-Z“"(])/g, last = 0, m;
+      while ((m = re.exec(t))) {
+        var before = t.slice(last, m.index + 1).trim();
+        if (/(?:^|[\s(])(?:[A-Z]\.){2,}$/.test(before) || /(?:^|\s)(?:Dr|Mr|Mrs|Ms|St|vs|Prof|No|Jr|Sr)\.$/.test(before)) continue;
+        var end = m.index + m[0].length; out.push(t.slice(last, end).trim()); last = end;
+      }
+      if (last < t.length) out.push(t.slice(last).trim());
+      return out.filter(Boolean);
+    }
+    function firstSentence(t){ var s = sentences(t); return s.length ? s[0] : String(t || '').trim(); }
+    function questionOf(t){ var s = sentences(t); for (var i = 0; i < s.length; i++) if (/\?["”’)]*$/.test(s[i])) return s[i]; return firstSentence(t); }
+
+    var BLOCKS = 'p, h1, h2, h3, h4, h5, h6, li, blockquote';
+    function skip(el){ return !!(el.closest && el.closest('.lrmg-in, figure, figcaption, #lrft')); }
+    /* the question's block in the live body: the first block at or after `from` whose letters contain the
+       locator's letters; a zero-size marker goes in front of the text node where it starts */
+    function locate(loc, blocks, from){
+      var lk = key(loc).slice(0, 30); if (lk.length < 8) return -1;
+      for (var i = from; i < blocks.length; i++) {
+        var b = blocks[i]; if (skip(b)) continue;
+        var bk = key(b.textContent); var at = bk.indexOf(lk); if (at < 0) continue;
+        var w = document.createTreeWalker(b, NodeFilter.SHOW_TEXT, null), n, acc = 0;
+        while ((n = w.nextNode())) {
+          var nk = key(n.nodeValue); if (acc + nk.length > at) break; acc += nk.length;
+        }
+        var mk = document.createElement('span'); mk.className = 'lrr-at'; mk.setAttribute('data-i', String(LOCI));
+        if (n && n.parentNode) n.parentNode.insertBefore(mk, n); else b.insertBefore(mk, b.firstChild);
+        return i;
+      }
+      return -1;
+    }
+
+    var D = null, marks = [], fms = [], box = null, folds = [], FOLDED = null, CURK = null, PREVK = null, NT = {}, FIRSTP = null, LOCI = 0;
+    /* ---- the book measure + side notes (test lab, 23 Sep 2026, feature "book") ---- */
+
+    var card = document.querySelector('div.article'), SIDEQ = matchMedia('(min-width:1240px)'), side = null, SN = [], lq = 0;
+    function bookOn(){ return root.classList.contains('lrbk') && !!card; }
+    function sideOn(){ return bookOn() && SIDEQ.matches; }
+    /* plates: landscape (ratio 1.25 or more) runs to 800 px into the note column; portraits and squares
+       keep the measure and stop at 78vh BY WIDTH (a height cap would stretch them) */
+    function plate(fig){
+      var im = fig.querySelector('img'); if (!im) return;
+      var set = function(){
+        var w = im.naturalWidth || +im.getAttribute('width') || 0, h = im.naturalHeight || +im.getAttribute('height') || 0; if (!w || !h) return;
+        var r = w / h; fig.classList.toggle('lrbk-wide', r >= 1.25); fig.classList.toggle('lrbk-tall', r < 1.25); fig.style.setProperty('--r', r.toFixed(4));
+        layoutSide();
+      };
+      if (im.complete && im.naturalWidth) set(); else im.addEventListener('load', set, { once: true });
+    }
+    function sideNoteHtml(k){   /* noteHtml with at most two "Also in" */
+      var e = NT[k]; if (!e) return '';
+      var also = (e[5] || []).slice(0, 2);
+      return '<a class="nm" href="/editorials#subject=' + encodeURIComponent(k) + '">' + esc(e[1]) + '</a>'
+        + '<span class="ty">' + TYPE[e[2]] + ' · in ' + e[3] + ' editorials' + (e[4] ? ', featured in ' + e[4] : '') + '</span>'
+        + (also.length ? '<span class="also">Also in ' + also.map(function(x){ return '<a href="/editorial/' + esc(x[1]) + '">' + esc(x[2]) + '</a>'; }).join('; ') + '</span>' : '');
+    }
+    function buildSide(){
+      if (!bookOn()) return;
+      [].forEach.call(body.querySelectorAll('figure.w-richtext-figure-type-image'), plate);
+      side = document.createElement('div'); side.className = 'lrbk-side'; side.setAttribute('aria-label', 'Notes');
+      card.appendChild(side); SN = [];
+      fms.forEach(function(el){
+        var k = el.getAttribute('data-k'); if (!NT[k]) return;
+        var sn = document.createElement('div'); sn.className = 'lrbk-sn'; sn.innerHTML = sideNoteHtml(k);
+        side.appendChild(sn); SN.push({ el: el, sn: sn });
+        var hot = function(on){ el.classList.toggle('hot', on); sn.classList.toggle('hot', on); };
+        [el, sn].forEach(function(x){ x.addEventListener('mouseenter', function(){ hot(true); }); x.addEventListener('mouseleave', function(){ hot(false); }); });
+      });
+      if (window.ResizeObserver) new ResizeObserver(layoutSide).observe(body);   /* lazy images, fonts, the player */
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(layoutSide);
+      SIDEQ.addEventListener('change', layoutSide);
+      addEventListener('resize', layoutSide, { passive: true });
+      layoutSide();
+    }
+    /* each note starts level with the line that names it (top minus 8 px); it never overlaps the note
+       above (16 px gap) or a plate that runs into the note column (it moves below); pushed more than
+       120 px, it drops its "Also in" and keeps name and count */
+    function layoutSide(){
+      if (!side) return;
+      cancelAnimationFrame(lq);
+      lq = requestAnimationFrame(function(){
+        if (!sideOn()) return;
+        var cr = card.getBoundingClientRect(), br = body.getBoundingClientRect();
+        var g2 = parseFloat(getComputedStyle(root).getPropertyValue('--bk-g2')) || 40, sl = br.right + g2, top0 = cr.top;
+        side.style.left = Math.round(br.right - cr.left + g2) + 'px';
+        var figs = [].map.call(body.querySelectorAll('figure'), function(f){ var r = f.getBoundingClientRect(); return r.right > sl + 2 ? { t: r.top - top0 - 10, b: r.bottom - top0 + 18 } : null; }).filter(Boolean);
+        var y = -1e9;
+        SN.forEach(function(o){
+          var lr = o.el.getClientRects()[0] || o.el.getBoundingClientRect();
+          var want = lr.top - top0 - 8, t = Math.max(want, y + 16);
+          o.sn.classList.remove('compact');
+          for (var pass = 0; pass < 2; pass++) {
+            var h = o.sn.offsetHeight, moved = true, guard = 0;
+            while (moved && guard++ < 12) { moved = false; figs.forEach(function(f){ if (t < f.b && t + h > f.t) { t = f.b; moved = true; } }); }
+            if (pass === 0 && t - want > 120) { o.sn.classList.add('compact'); t = Math.max(want, y + 16); } else break;
+          }
+          var top = Math.round(t) + 'px'; if (o.sn.style.top !== top) o.sn.style.top = top;   /* write only on change */
+          y = t + o.sn.offsetHeight;
+        });
+      });
+    }
+
+    function fold(on){
+      if (FOLDED === on) return; FOLDED = on;
+      folds.forEach(function(f){
+        if (on) { f.style.maxHeight = f.scrollHeight + 'px'; void f.offsetHeight; f.style.maxHeight = '0px'; }
+        else { f.style.maxHeight = f.scrollHeight + 'px'; setTimeout(function(){ if (!FOLDED) f.style.maxHeight = ''; }, 480); }
+      });
+      root.classList.toggle('lrr-folded', on);
+      setTimeout(fit, 500);
+    }
+    function fit(){
+      if (!box) return;
+      var over = function(){ return W.getBoundingClientRect().bottom > innerHeight - 12; };
+      if (!FOLDED) {
+        root.classList.remove('lrbk-ut', 'lrbk-ut2');
+        if (bookOn() && over()) { root.classList.add('lrbk-ut'); if (over()) root.classList.add('lrbk-ut2'); }
+        return;
+      }
+      root.classList.remove('lrr-tight', 'lrr-nonote', 'lrbk-ut', 'lrbk-ut2');
+      if (!over()) return;
+      root.classList.add('lrr-tight');
+      if (over()) root.classList.add('lrr-nonote');
+    }
+    function noteHtml(k){
+      var e = NT[k]; if (!e) return '';
+      return '<a class="nm" href="/editorials#subject=' + encodeURIComponent(k) + '">' + esc(e[1]) + '</a>'
+        + '<span class="ty">' + TYPE[e[2]] + ' · in ' + e[3] + ' editorials' + (e[4] ? ', featured in ' + e[4] : '') + '</span>'
+        + (e[5] && e[5].length ? '<span class="also">Also in ' + e[5].map(function(x){ return '<a href="/editorial/' + esc(x[1]) + '">' + esc(x[2]) + '</a>'; }).join('; ') + '</span>' : '');
+    }
+    var ticking = false;
+    function onScroll(){ if (!ticking) { ticking = true; requestAnimationFrame(function(){ ticking = false; tick(); }); } }
+    function tick(){
+      if (!box) return;
+      if (innerWidth < MINW) { root.classList.remove('lrr-on'); fold(false); return; }
+      root.classList.add('lrr-on');
+      /* the fold waits for the TEXT: the body opens with the hero image and the player (the mock lab's rule:
+         the first paragraph passing 20 px above the 42% reading line) */
+      var fp = FIRSTP || (FIRSTP = [].filter.call(body.querySelectorAll('p'), function(x){ return (x.textContent || '').trim().length > 40; })[0] || body);
+      var line = innerHeight * .42, y = fp.getBoundingClientRect().top;
+      if (y < line - 20) fold(true); else if (y > line + 80) fold(false);
+      if (marks.length) {
+        /* at the very bottom every head still on screen counts, so a short-tailed page can reach its last
+           question (mock lab, 23 Sep 2026: No. 154's last head stayed below the line at maximum scroll) */
+        var cur = 0, atEnd = scrollY + innerHeight >= document.documentElement.scrollHeight - 4;
+        marks.forEach(function(m, i){ var t = m.getBoundingClientRect().top; if (t < line || (atEnd && t < innerHeight - 40)) cur = i + 1; });
+        [].forEach.call(box.querySelectorAll('.lrr-dots a'), function(d){ var k = +d.getAttribute('data-q'); d.classList.toggle('on', k === cur); d.classList.toggle('done', k < cur); });
+        var qn = box.querySelector('.lrr-qn'), want = String(Math.max(1, cur));
+        if (qn && qn.textContent !== want) qn.textContent = want;
+        var qc = box.querySelector('.lrr-cur'), mk0 = marks[Math.max(0, cur - 1)], it = mk0 ? D.it[+mk0.getAttribute('data-i')] : null;
+        /* the editor's line when there is one (rail_lines.json), else the sentence that asks */
+        if (qc && it) { var s = it[2] || (D.k === 'q' ? questionOf(it[0]) : firstSentence(it[0])); if (qc.textContent !== s) qc.textContent = s; }
+      }
+      var now = null;
+      fms.forEach(function(el){ if (el.getBoundingClientRect().top < line) now = el; });
+      if (now && line - now.getBoundingClientRect().top > innerHeight) now = null;   /* the reader has moved on */
+      fms.forEach(function(el){ el.classList.toggle('now', el === now); });
+      if (SN.length) { var nowTop = now ? now.getBoundingClientRect().top : 0;
+        SN.forEach(function(o){ var on = o.el === now, past = !!now && !on && o.el.getBoundingClientRect().top < nowTop;
+          if (o.sn.classList.contains('now') !== on) o.sn.classList.toggle('now', on);
+          if (o.sn.classList.contains('past') !== past) o.sn.classList.toggle('past', past); }); }
+      if (sideOn()) { if (CURK !== null) { CURK = null; var nb0 = box.querySelector('.lrr-note'); if (nb0) { nb0.className = 'lrr-note gone'; nb0.innerHTML = ''; } } return; }
+
+      var k = now ? now.getAttribute('data-k') : null;
+      if (k !== CURK) {
+        PREVK = CURK; CURK = k;
+        var nb = box.querySelector('.lrr-note'); nb.classList.add('swap');
+        setTimeout(function(){
+          if (CURK !== k) return;
+          if (!k) { nb.className = 'lrr-note gone'; nb.innerHTML = ''; fit(); return; }
+          nb.className = 'lrr-note';
+          nb.innerHTML = '<p class="lrr-lbl">Just mentioned</p>' + noteHtml(k)
+            + (PREVK && NT[PREVK] ? '<span class="prev">Before that: <a href="#" data-back="' + esc(PREVK) + '">' + esc(NT[PREVK][1]) + '</a></span>' : '');
+          var bk = nb.querySelector('[data-back]');
+          if (bk) bk.addEventListener('click', function(ev){ ev.preventDefault(); var t = null; fms.forEach(function(el){ if (!t && el.getAttribute('data-k') === bk.getAttribute('data-back')) t = el; }); if (t) scrollTo({ top: scrollY + t.getBoundingClientRect().top - innerHeight * .4, behavior: 'smooth' }); });
+          fit();
+        }, 160);
+      }
+    }
+    function firstMentions(){
+      var cand = (D.nt || []).filter(function(e){ return !HOUSE[e[0]] && TYPE[e[2]] && e[1].length > 3 && e[3] >= 2; })
+        .sort(function(a, b){ return b[1].length - a[1].length; });
+      cand.forEach(function(e){ NT[e[0]] = e; });
+      var done = {}, count = 0, L = 'A-Za-z0-9À-ɏ';
+      [].forEach.call(body.querySelectorAll('p, li, blockquote'), function(p){
+        if (count >= 28 || skip(p)) return;
+        /* Webflow joins several visible paragraphs into one <p> with <br><br>: the two-notes cap is per visible paragraph */
+        var found = 0, cap = 2 * (1 + Math.floor(p.querySelectorAll('br').length / 2));
+        cand.forEach(function(e){
+          if (done[e[0]] || found >= cap || count >= 28) return;
+          var fs_ = (e[6] && e[6].length ? e[6] : [e[1]]).slice().sort(function(a, b){ return b.length - a.length; });
+          var re = new RegExp('(^|[^' + L + '])(' + fs_.map(function(f){ return f.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }).join('|') + ')(?![' + L + '])');
+          var w = document.createTreeWalker(p, NodeFilter.SHOW_TEXT, { acceptNode: function(nd){
+            var a = nd.parentNode.closest('a'); if (a && !a.classList.contains('lr-sl')) return NodeFilter.FILTER_REJECT;
+            var lb = nd.parentNode.closest('strong, b'); if (lb && lb.textContent.length <= 60 && /:\s*$/.test(lb.textContent)) return NodeFilter.FILTER_REJECT;   /* a speaker label: a SHORT bold run ending in a colon (Webflow often bolds a whole question together with the next label) */
+            if (nd.parentNode.closest('.lr-fm')) return NodeFilter.FILTER_REJECT;
+            return NodeFilter.FILTER_ACCEPT; } }), nd;
+          while ((nd = w.nextNode())) {
+            var m = re.exec(nd.nodeValue); if (!m) continue;
+            var sl = nd.parentNode.closest('a.lr-sl'), el;
+            if (sl) { el = sl; el.classList.add('lr-fm'); }
+            else {
+              var st = m.index + m[1].length, r = document.createRange(); r.setStart(nd, st); r.setEnd(nd, st + m[2].length);
+              el = document.createElement('span'); el.className = 'lr-fm'; r.surroundContents(el);
+            }
+            el.setAttribute('data-k', e[0]);
+            fms.push(el); done[e[0]] = 1; found++; count++; break;
+          }
+        });
+      });
+      fms.sort(function(a, b){ return a.compareDocumentPosition(b) & 4 ? -1 : 1; });
+    }
+    function build(){
+      /* the fold: the standfirst and the author box give their room to the rail once reading starts */
+      var auth = W.querySelector('.blog-post5-content_contributers');
+      var dek = [].filter.call(W.querySelectorAll('.text-size-regular'), function(el){ return !(auth && auth.contains(el)); })[0];
+      [dek, auth].forEach(function(el){ if (el) { el.classList.add('lrr-fold'); folds.push(el); } });
+      box = document.createElement('div'); box.className = 'lrr'; box.setAttribute('aria-label', 'Reading guide');
+      var html = '';
+      if (D.it && D.it.length) {
+        var blocks = [].slice.call(body.querySelectorAll(BLOCKS)), at = 0, ok = 0;
+        D.it.forEach(function(it, j){ LOCI = j; var i = locate(it[1], blocks, at); if (i >= 0) { at = i; ok++; } });
+        marks = [].slice.call(body.querySelectorAll('.lrr-at'));
+        if (ok >= Math.max(2, Math.ceil(D.it.length * .6)) && marks.length === ok) {
+          html += '<section class="lrr-rail"><p class="lrr-lbl">' + (D.k === 'q' ? 'The questions' : 'Sections') + ' · <span class="lrr-qn">1</span> of ' + marks.length + '</p>'
+            + '<div class="lrr-dots">' + marks.map(function(m, i){ return '<a href="#" data-q="' + (i + 1) + '" aria-label="' + (D.k === 'q' ? 'Question ' : 'Section ') + (i + 1) + '">' + (i + 1) + '</a>'; }).join('') + '</div>'
+            + '<p class="lrr-cur"></p></section>';
+        } else { marks.forEach(function(m){ m.remove(); }); marks = []; }
+      }
+      html += '<section class="lrr-note gone"></section>';
+      box.innerHTML = html;
+      W.appendChild(box);
+      [].forEach.call(box.querySelectorAll('.lrr-dots a'), function(d){ d.addEventListener('click', function(ev){ ev.preventDefault(); var t = marks[+d.getAttribute('data-q') - 1]; if (t) scrollTo({ top: scrollY + t.getBoundingClientRect().top - 120, behavior: 'smooth' }); }); });
+      addEventListener('scroll', onScroll, { passive: true });
+      addEventListener('resize', function(){ onScroll(); fit(); }, { passive: true });
+      tick();
+    }
+    function whenLinked(fn){   /* after the smart links have been drawn, or 2.5 s, whichever comes first */
+      var t0 = Date.now();
+      (function wait(){ if (body.querySelector('a.lr-sl') || Date.now() - t0 > 2500) fn(); else setTimeout(wait, 150); })();
+    }
+    if (innerWidth && innerWidth < MINW) return;   /* phones and small tablets: nothing is fetched (0 = not laid out yet: decide later) */
+    fetch((window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/') + 'rail/' + rslug + '.json')
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(d){ if (!d) return; D = d; root.classList.add('lrbk'); whenLinked(function(){ firstMentions(); build(); buildSide(); fit(); }); })
+      .catch(function(){});
+  })();
+
+
+  })();
 })();
