@@ -666,7 +666,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
                : t[0] === 'p' ? '/editorials#pod=' + t[1]
                : '/editorials#subject=' + encodeURIComponent(t[1]);
         }
-        var armed = {}, cyc = {}, blockIdx = 0, lastBlock = null;
+        var armed = {}, cyc = {}, blockIdx = 0, lastBlock = null, subjDone = {};
         var walker = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, { acceptNode: function(n){
           if (!n.nodeValue || n.nodeValue.length < 3) return NodeFilter.FILTER_REJECT;
           for (var el = n.parentElement; el && el !== body; el = el.parentElement){
@@ -696,10 +696,14 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
             if (armed[form] != null && blockIdx < armed[form]) continue;
             var ts = ent[2].filter(function(t){ return !(t[0] === 'a' && t[1] === slug); });
             if (!ts.length) continue;
+            /* 23 Sep 2026 (Peter): a subject page is linked ONCE per article, from its first mention in any
+               form ("Mark Zuckerberg" then "Zuckerberg" used to link twice) */
+            if (ts[0][0] === 's' && subjDone[key]) continue;
             cyc[key] = cyc[key] || 0;
             var tgt = ts[cyc[key] % ts.length]; cyc[key]++;
             /* a subject-page link fires once; article/episode links rest three blocks */
             armed[form] = tgt[0] === 's' ? 1e9 : blockIdx + 3;
+            if (tgt[0] === 's') subjDone[key] = 1;
             hits.push([s, e, hrefFor(tgt), SL[key][0]]);
           }
           if (!hits.length) return;
