@@ -427,6 +427,18 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
         if (lp && lp.seed && Date.now() - lp.t < 6 * 3600 * 1000) back.setAttribute('href', '/editorials#e=' + lp.seed);
       } catch (e) {}
     }
+    /* lr-authors (23 Sep 2026, Peter): Webflow's label above the author cards is a fixed string,
+       "About the Author", whatever the template lists beneath it. When two or more people are
+       listed it becomes "About the Authors"; written once, only on change (lre-observer rule). */
+    try {
+      var abox = document.querySelector('.blog-post5-content_contributers');
+      if (abox) {
+        var alab = null, als = abox.querySelectorAll('.text-size-small');
+        for (var ai = 0; ai < als.length; ai++) { if (/^\s*about the author\s*$/i.test(als[ai].textContent)) { alab = als[ai]; break; } }
+        var acount = abox.querySelectorAll('.blog-post5-content_author-wrapper [role="listitem"]').length;
+        if (alab && acount > 1) alab.textContent = alab.textContent.replace(/author/i, function(m){ return m + 's'; });
+      }
+    } catch (e) {}
     /* search: the editorials page filters in place, an article page hands the term over */
     var q = document.getElementById('lrtb-q');
     if (q) {
