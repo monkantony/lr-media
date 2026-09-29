@@ -390,7 +390,8 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
          0 while the bar's bottom edge is above the article text, 1 when it reaches the
          text's bottom. Both rects are read before any write, so it costs one layout per
          frame; the body is re-measured on viewport resize and whenever it changes size. */
-      var lrBody = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
+      /* 29 Sep 2026 (Peter): the episode pages (/episodes/) get the same reading bar, over the transcript */
+      var lrBody = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond') || document.querySelector('.ep-tr');
       var lrFill = bar.querySelector('.tb-prog');
       if (lrBody && lrFill) bar.classList.add('lr-prog');
       function lrProg(){
