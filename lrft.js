@@ -770,7 +770,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       el.setAttribute('role', 'link');
       el.setAttribute('tabindex', '0');
       el.setAttribute('aria-label', 'All editorials by ' + name);
-      function go(){ location.href = href; }
+      function go(){ location.href = window.__lrBridgeHref ? window.__lrBridgeHref(href) : href; }
       el.addEventListener('click', go);
       el.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
       el.addEventListener('mouseenter', function(){ el.style.opacity = '.72'; });
@@ -975,3 +975,60 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     box.addEventListener('touchend', function(ev){ if (x0 == null) return; var dx = ev.changedTouches[0].clientX - x0; if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1)); x0 = null; });
   })();
 })();
+
+/* ---------- the bridge (Peter, 29 Sep 2026): old in-page routes -> the real CMS pages ----------
+   "will all the links on main site be correct with the new links ... including the author links on all
+   the pages and contributor links". #pod=N -> /episodes/<slug>, #subject=<key> -> /subjects/<slug>,
+   #writer=<name> -> /subjects/<slug>, from bridge_map.json (built from the same data as the CMS import).
+   1. every <a> whose href is one of those routes gets the real URL (compare first, write only on change);
+   2. on /editorials, a route that would open an overlay is forwarded to the page instead (old bookmarks,
+      shared links, chips and buttons that set the hash). Anything without a page keeps its overlay. */
+(function(){
+  if (window.__lrBridge) return; window.__lrBridge = 1;
+  var BASE = window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/';
+  var RX = /(?:^|\/editorials\/?)#(pod|subject|writer)=([^&]+)$/;
+  var M = null;
+  function target(kind, val){
+    if (!M) return null;
+    try { val = decodeURIComponent(val); } catch (e) {}
+    if (kind === 'pod') { var s = M.p[String(parseInt(val, 10))]; return s ? '/episodes/' + s : null; }
+    if (kind === 'subject') { var k = M.s[val] || M.s[val.toLowerCase()]; return k ? '/subjects/' + k : null; }
+    var w = M.w[val.replace(/‍/g, '').trim().toLowerCase()]; return w ? '/subjects/' + w : null;
+  }
+  /* for code that navigates by script (lrft.js's author box): the page, or the old route while the map loads */
+  window.__lrBridgeHref = function(h){ return fromHref(h) || h; };
+  function fromHref(h){
+    var m = RX.exec(h || ''); return m ? target(m[1], m[2]) : null;
+  }
+  function rewrite(root){
+    var as = (root || document).querySelectorAll('a[href*="#pod="], a[href*="#subject="], a[href*="#writer="]');
+    for (var i = 0; i < as.length; i++) {
+      var t = fromHref(as[i].getAttribute('href'));
+      if (t && as[i].getAttribute('href') !== t) as[i].setAttribute('href', t);
+    }
+  }
+  function forward(){
+    if (!/^\/editorials\/?$/.test(location.pathname)) return;
+    var m = /^#(pod|subject|writer)=([^&]+)$/.exec(location.hash || '');
+    var t = m && target(m[1], m[2]);
+    if (t) location.replace(t);
+  }
+  /* elements that open a route by script instead of href (the author box: role=link + data-lr-writer) */
+  document.addEventListener('click', function(ev){
+    if (!M) return;
+    var a = ev.target.closest && ev.target.closest('a[href*="#pod="], a[href*="#subject="], a[href*="#writer="]');
+    if (a) { var t = fromHref(a.getAttribute('href')); if (t) { ev.preventDefault(); ev.stopImmediatePropagation(); location.assign(t); } }
+  }, true);
+  fetch(BASE + 'bridge_map.json').then(function(r){ return r.json(); }).then(function(map){
+    M = map;
+    forward();
+    addEventListener('hashchange', forward);
+    rewrite(document);
+    var queued = false;
+    new MutationObserver(function(){
+      if (queued) return; queued = true;
+      requestAnimationFrame(function(){ queued = false; rewrite(document); });
+    }).observe(document.body, { childList: true, subtree: true });
+  }).catch(function(){ /* no map: the old routes still work */ });
+})();
+
