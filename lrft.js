@@ -675,6 +675,9 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
   (function(){
     var body = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
     if (!body) return;
+    /* 29 Sep 2026: links baked into the CMS body (bake_editorial_smartlinks.py) lose their class on import;
+       subject and episode pages are only ever reached by smart links, so they get the smart-link look back */
+    [].forEach.call(body.querySelectorAll('a[href*="/subjects/"], a[href*="/episodes/"]'), function(a){ a.classList.add('lr-sl'); });
     fetch((window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/') + 'smartlinks.json')
       .then(function(r){ return r.json(); })
       .then(function(SL){
@@ -893,6 +896,11 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       var go = function () { a.currentTime = Math.min(dur(), Math.max(0, a.currentTime + d)); };
       if (a.readyState >= 1) { go(); } else { a.addEventListener('loadedmetadata', go, { once: true }); a.load(); }
     }
+    /* 29 Sep 2026: an episode page's chapter and quote times play from that moment */
+    window.__lrapSeek = function (t, play) {
+      var go = function () { a.currentTime = Math.min(dur(), Math.max(0, t)); if (play) a.play(); };
+      if (a.readyState >= 1) { go(); } else { a.addEventListener('loadedmetadata', go, { once: true }); a.load(); }
+    };
     el.querySelector('.lrap-b15').addEventListener('click', function () { seekBy(-15); });
     el.querySelector('.lrap-f15').addEventListener('click', function () { seekBy(15); });
     var RATES = [1, 1.25, 1.5, 1.75, 2], ri = 0, rateBtn = el.querySelector('.lrap-rate');
