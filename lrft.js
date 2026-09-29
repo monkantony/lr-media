@@ -980,14 +980,22 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
    "will all the links on main site be correct with the new links ... including the author links on all
    the pages and contributor links". #pod=N -> /episodes/<slug>, #subject=<key> -> /subjects/<slug>,
    #writer=<name> -> /subjects/<slug>, from bridge_map.json (built from the same data as the CMS import).
-   1. every <a> whose href is one of those routes gets the real URL (compare first, write only on change);
+   1. every <a> whose href is one of those routes gets the real URL (compare first, write only on change;
+      rotating cards reset their href, so href changes are watched too);
    2. on /editorials, a route that would open an overlay is forwarded to the page instead (old bookmarks,
-      shared links, chips and buttons that set the hash). Anything without a page keeps its overlay. */
+      shared links, chips and buttons that set the hash). Anything without a page keeps its overlay.
+   v2 (Peter: "the old pages flash before the new one loads"): this module runs FIRST in the bundle; while
+   a forwardable route is in the address the page stays hidden, and its hashchange handler runs before the
+   overlay's and stops it. A 2.5 s failsafe always shows the page again. */
 (function(){
   if (window.__lrBridge) return; window.__lrBridge = 1;
   var BASE = window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/';
   var RX = /(?:^|\/editorials\/?)#(pod|subject|writer)=([^&]+)$/;
-  var M = null;
+  var HX = /^#(pod|subject|writer)=([^&]+)$/;
+  var ON_ED = /^\/editorials\/?$/.test(location.pathname);
+  var M = null, root = document.documentElement, fail = 0;
+  function hide(){ root.style.visibility = 'hidden'; clearTimeout(fail); fail = setTimeout(show, 2500); }
+  function show(){ clearTimeout(fail); if (root.style.visibility === 'hidden') root.style.visibility = ''; }
   function target(kind, val){
     if (!M) return null;
     try { val = decodeURIComponent(val); } catch (e) {}
@@ -995,25 +1003,30 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     if (kind === 'subject') { var k = M.s[val] || M.s[val.toLowerCase()]; return k ? '/subjects/' + k : null; }
     var w = M.w[val.replace(/‍/g, '').trim().toLowerCase()]; return w ? '/subjects/' + w : null;
   }
+  function fromHref(h){ var m = RX.exec(h || ''); return m ? target(m[1], m[2]) : null; }
   /* for code that navigates by script (lrft.js's author box): the page, or the old route while the map loads */
   window.__lrBridgeHref = function(h){ return fromHref(h) || h; };
-  function fromHref(h){
-    var m = RX.exec(h || ''); return m ? target(m[1], m[2]) : null;
+  /* the answer for the current address: a URL, false (no page: let the overlay open), or null (map not here yet) */
+  function routeNow(){
+    var m = HX.exec(location.hash || ''); if (!m) return false;
+    if (!M) return null;
+    return target(m[1], m[2]) || false;
   }
-  function rewrite(root){
-    var as = (root || document).querySelectorAll('a[href*="#pod="], a[href*="#subject="], a[href*="#writer="]');
+  if (ON_ED && HX.test(location.hash || '')) hide();          /* before the overlay code reads the hash */
+  if (ON_ED) addEventListener('hashchange', function(ev){
+    var t = routeNow();
+    if (t === false) return show();
+    ev.stopImmediatePropagation();                           /* the overlay never opens */
+    hide();
+    if (t) location.replace(t);                              /* null: the map's arrival forwards it */
+  });
+  function rewrite(){
+    var as = document.querySelectorAll('a[href*="#pod="], a[href*="#subject="], a[href*="#writer="]');
     for (var i = 0; i < as.length; i++) {
       var t = fromHref(as[i].getAttribute('href'));
       if (t && as[i].getAttribute('href') !== t) as[i].setAttribute('href', t);
     }
   }
-  function forward(){
-    if (!/^\/editorials\/?$/.test(location.pathname)) return;
-    var m = /^#(pod|subject|writer)=([^&]+)$/.exec(location.hash || '');
-    var t = m && target(m[1], m[2]);
-    if (t) location.replace(t);
-  }
-  /* elements that open a route by script instead of href (the author box: role=link + data-lr-writer) */
   document.addEventListener('click', function(ev){
     if (!M) return;
     var a = ev.target.closest && ev.target.closest('a[href*="#pod="], a[href*="#subject="], a[href*="#writer="]');
@@ -1021,14 +1034,15 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
   }, true);
   fetch(BASE + 'bridge_map.json').then(function(r){ return r.json(); }).then(function(map){
     M = map;
-    forward();
-    addEventListener('hashchange', forward);
-    rewrite(document);
-    var queued = false;
-    new MutationObserver(function(){
-      if (queued) return; queued = true;
-      requestAnimationFrame(function(){ queued = false; rewrite(document); });
-    }).observe(document.body, { childList: true, subtree: true });
-  }).catch(function(){ /* no map: the old routes still work */ });
+    if (ON_ED) { var t = routeNow(); if (t) { location.replace(t); return; } show(); }
+    var start = function(){
+      rewrite();
+      var queued = false;
+      new MutationObserver(function(){
+        if (queued) return; queued = true;
+        requestAnimationFrame(function(){ queued = false; rewrite(); });
+      }).observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['href'] });
+    };
+    if (document.body) start(); else document.addEventListener('DOMContentLoaded', start);
+  }).catch(show);
 })();
-
