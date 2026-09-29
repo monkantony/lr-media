@@ -501,6 +501,13 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
   var slug = location.pathname.replace(/\/+$/,'').split('/').pop();
   var box = document.getElementById('lrft');
   /* the player first, from the map inside this file: no wait for the footer data */
+  /* 29 Sep 2026 (Peter): an episode page (/episodes/) plays its episode at the top, with the same player.
+     The page's Code Embed carries <div id="ep-player" data-audio data-min>; the player sits in it. */
+  try {
+    var epP = document.getElementById('ep-player');
+    if (epP && epP.getAttribute('data-audio')) player(epP.getAttribute('data-audio'), (parseFloat(epP.getAttribute('data-min')) || 0) * 60,
+      ((document.querySelector('h1') || {}).textContent || '').replace(/\s+/g, ' ').trim(), null, epP, 'Listen to this episode');
+  } catch (e) {}
   try { if (typeof AUDIO !== 'undefined' && AUDIO[slug]) player(AUDIO[slug][0], AUDIO[slug][1], ((document.querySelector('h1') || {}).textContent || '').replace(/\s+/g, ' ').trim(), AUDIO[slug][2]); } catch (e) {}
   /* a piece with no audio edition gets no player: give its reserved space back at once */
   if (!document.getElementById('lrap')) document.documentElement.classList.add('lr-player');
@@ -839,8 +846,8 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
 
     if (me.au) { try { player(me.au[0], me.au[1], (data.arts && data.arts[slug] && data.arts[slug][2]) || '', me.au[2]); } catch (e) { /* no player beats a broken page */ } }
   }).catch(function(){ /* no footer beats a broken footer */ });
-  function player(url, secs, title, credit) {
-    var host = document.querySelector('.text-garamond');
+  function player(url, secs, title, credit, slot, label) {
+    var host = slot ? slot.appendChild(document.createElement('div')) : document.querySelector('.text-garamond');
     if (!host || document.getElementById('lrap')) return;
     var el = document.createElement('div'); el.id = 'lrap';
     el.innerHTML = '<button class="lrap-skip lrap-b15" type="button" aria-label="Back 15 seconds">&#8722;15</button>'
@@ -851,8 +858,8 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       /* 20 Sep 2026 (Peter): the credit sits BESIDE the label, quiet, and gives back the line and the
          rule it used to occupy under the player. */
       + '<span class="lrap-meta"><span class="lrap-top">'
-      + '<span class="lrap-lbl">Listen<span class="lrap-lbl-x"> to this editorial</span></span>'
-      + '<span class="lrap-ai">' + String(credit || 'AI generated audio').replace(/&/g, '&amp;').replace(/</g, '&lt;') + ' | LR Pod theme by Rami Awad</span></span>'
+      + '<span class="lrap-lbl">Listen<span class="lrap-lbl-x">' + (label ? label.replace(/^Listen/, '') : ' to this editorial') + '</span></span>'
+      + (slot ? '' : '<span class="lrap-ai">' + String(credit || 'AI generated audio').replace(/&/g, '&amp;').replace(/</g, '&lt;') + ' | LR Pod theme by Rami Awad</span>') + '</span>'
       + (title ? '<span class="lrap-title">' + String(title).replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</span>' : '')
       + '<span class="lrap-bar"><span class="lrap-fill"></span></span>'
       + '<span class="lrap-time">0:00 / ' + fmt(secs) + '</span></span>'
