@@ -182,6 +182,8 @@
     '.tb-search .lrk-kbd,.hero-search .lrk-kbd,.lrk-kbd{font:400 10px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif !important;letter-spacing:.02em !important;text-transform:none !important;color:rgba(1,16,21,.42) !important;border:1px solid rgba(1,16,21,.2) !important;border-radius:3px !important;padding:2px 4px 1px !important;margin:0 0 0 6px !important;white-space:nowrap !important;pointer-events:none !important;flex:0 0 auto !important;width:auto !important;height:auto !important;background:none !important;}',
     '#tb-q,#hero-q,#lrtb-q,#tb-q::placeholder,#hero-q::placeholder,#lrtb-q::placeholder{font-family:\'Rules\',Arial,sans-serif !important;font-size:10.5px !important;font-weight:500 !important;font-style:normal !important;letter-spacing:.1em !important;text-transform:uppercase !important;cursor:pointer;}',
     '#tb-q::placeholder,#hero-q::placeholder,#lrtb-q::placeholder{color:rgba(1,16,21,.45) !important;}',
+    '.lrk-besideword{position:relative !important;}',
+    '.lrk-besideword .lrk-kbd{position:absolute !important;top:50% !important;transform:translateY(-50%) !important;margin:0 !important;}',
     '.lrk-btn{display:none;align-items:center;justify-content:center;width:34px;height:34px;border:0;background:none;color:inherit;cursor:pointer;padding:0;}',
     '.lrk-btn.lrk-need{display:flex;}'
   ].join('\n');
@@ -223,7 +225,7 @@
     if (!OPEN) return;
     OPEN = false; root.style.display = 'none'; scrim.style.display = 'none'; scrim.classList.remove('on'); root.classList.remove('on');
     document.documentElement.classList.remove('lrk-lock');
-    if (LASTFOCUS && LASTFOCUS.focus && !/^(tb-q|hero-q|lrtb-q)$/.test(LASTFOCUS.id || '')) try { LASTFOCUS.focus(); } catch (e) {}
+    if (LASTFOCUS && LASTFOCUS.focus && !/^(tb-q|hero-q|rg-q|lrtb-q)$/.test(LASTFOCUS.id || '')) try { LASTFOCUS.focus(); } catch (e) {}
   }
 
   function mark(t, qt) {
@@ -305,13 +307,18 @@
     else if (e.key === 'Tab') { e.preventDefault(); sel(SEL + (e.shiftKey ? -1 : 1)); }
   }
 
-  /* ---------- the header boxes open the panel instead of filtering the archive list ---------- */
+  /* ---------- every search box opens the panel: the two headers, the box under Latest and the Archive's own box
+     (Peter, 30 Sep 2026: the archive search "is not integrated"). The Archive's chips still filter its list. ---------- */
   function hook(el) {
     if (!el || el.__lrk) return; el.__lrk = 1;
     el.setAttribute('readonly', ''); el.setAttribute('aria-haspopup', 'dialog');
     el.setAttribute('placeholder', 'Search');
-    var lab = el.closest('label, .tb-search, .hero-search') || el.parentNode;
-    if (!TOUCH && lab && !lab.querySelector('.lrk-kbd')) { var k = document.createElement('span'); k.className = 'lrk-kbd'; k.textContent = MAC ? '⌘K' : 'Ctrl K'; k.setAttribute('aria-hidden', 'true'); lab.appendChild(k); }
+    var lab = el.closest('label, .tb-search, .hero-search, .rg-search') || el.parentNode;
+    if (!TOUCH && lab && !lab.querySelector('.lrk-kbd')) {
+      var k = document.createElement('span'); k.className = 'lrk-kbd'; k.textContent = MAC ? '⌘K' : 'Ctrl K'; k.setAttribute('aria-hidden', 'true'); lab.appendChild(k);
+      /* the wide box under Latest (Peter, 30 Sep 2026): the hint sits right after the word "Search", not at the far edge */
+      if (el.id === 'hero-q' || el.id === 'rg-q') { lab.classList.add('lrk-besideword'); besideWord(el, k); window.addEventListener('resize', function () { besideWord(el, k); }); }
+    }
     function fire(e) { e.preventDefault(); e.stopPropagation(); var v = el.value; if (v) { el.value = ''; } el.blur(); open(v); }
     el.addEventListener('mouseenter', function () { load().catch(function () {}); });   /* warm the index before the click */
     el.addEventListener('touchstart', function () { load().catch(function () {}); }, { passive: true });
@@ -319,6 +326,19 @@
     el.addEventListener('focus', fire, true);
     el.addEventListener('keydown', function (e) { if (e.key.length === 1) { e.preventDefault(); el.blur(); open(e.key); } }, true);
   }
+  function besideWord(el, k) {
+    /* measured by a hidden twin in the page's own fonts (a canvas misses web fonts such as the italic Garamond) */
+    var cs = getComputedStyle(el, '::placeholder'), m = document.createElement('span');
+    ['fontFamily', 'fontSize', 'fontStyle', 'fontWeight', 'letterSpacing', 'textTransform'].forEach(function (p) { m.style[p] = cs[p]; });
+    m.style.cssText += ';position:absolute;visibility:hidden;white-space:pre;left:-9999px;top:0;';
+    m.textContent = el.getAttribute('placeholder') || ''; document.body.appendChild(m);
+    var left = el.offsetLeft + (parseFloat(getComputedStyle(el).paddingLeft) || 0) + m.getBoundingClientRect().width + 10;
+    m.remove();
+    k.style.setProperty('left', Math.round(left) + 'px', 'important');
+  }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () {
+    ['hero-q', 'rg-q'].forEach(function (id) { var el = document.getElementById(id), lab = el && el.closest('.lrk-besideword'); if (lab) besideWord(el, lab.querySelector('.lrk-kbd')); });
+  });
   function phoneButton(bar) {
     if (!bar || bar.querySelector('.lrk-btn')) return;
     var right = bar.querySelector('.right') || bar;
@@ -337,12 +357,12 @@
   window.addEventListener('resize', function () { clearTimeout(glassNeeded.t); glassNeeded.t = setTimeout(glassNeeded, 120); });
   function hookAll() {
     if (!document.getElementById('lrk-css')) { var st = document.createElement('style'); st.id = 'lrk-css'; st.textContent = CSS; document.head.appendChild(st); }
-    ['tb-q', 'hero-q', 'lrtb-q'].forEach(function (id) { hook(document.getElementById(id)); });
+    ['tb-q', 'hero-q', 'rg-q', 'lrtb-q'].forEach(function (id) { hook(document.getElementById(id)); });
     phoneButton(document.getElementById('topbar')); phoneButton(document.getElementById('lrtopbar')); glassNeeded();
   }
   hookAll();
   new MutationObserver(function () {
-    if (document.getElementById('tb-q') && !document.getElementById('tb-q').__lrk || document.getElementById('lrtb-q') && !document.getElementById('lrtb-q').__lrk) hookAll();
+    if (document.getElementById('tb-q') && !document.getElementById('tb-q').__lrk || document.getElementById('rg-q') && !document.getElementById('rg-q').__lrk || document.getElementById('lrtb-q') && !document.getElementById('lrtb-q').__lrk) hookAll();
   }).observe(document.documentElement, { childList: true, subtree: true });
 
   document.addEventListener('keydown', function (e) {
