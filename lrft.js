@@ -1,3 +1,6 @@
+/* lr-cmdk loader begin */
+if (/(^|\.)webflow\.io$/.test(location.hostname.toLowerCase())||/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) (function(){if(window.__lrk)return;fetch((window.LRW_RAW||'https://raw.githubusercontent.com/monkantony/lr-media/main/')+'cmdk.js',{credentials:'omit'}).then(function(r){if(!r.ok)throw 0;return r.text();}).then(function(t){var s=document.createElement('script');s.textContent=t;document.head.appendChild(s);}).catch(function(){});})();
+/* lr-cmdk loader end */
 (function(){var st=document.createElement('style');st.textContent=`
 #lrft { --lr-ink:#011015; --lr-ink70:rgba(1,16,21,.62); --lr-ink40:rgba(1,16,21,.38);
   --lr-hair:rgba(1,16,21,.17); --lr-or:#FF4C00;
