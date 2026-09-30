@@ -283,6 +283,8 @@
     var lab = el.closest('label, .tb-search, .hero-search') || el.parentNode;
     if (!TOUCH && lab && !lab.querySelector('.lrk-kbd')) { var k = document.createElement('span'); k.className = 'lrk-kbd'; k.textContent = MAC ? '⌘K' : 'Ctrl K'; lab.appendChild(k); }
     function fire(e) { e.preventDefault(); e.stopPropagation(); var v = el.value; if (v) { el.value = ''; } el.blur(); open(v); }
+    el.addEventListener('mouseenter', function () { load().catch(function () {}); });   /* warm the index before the click */
+    el.addEventListener('touchstart', function () { load().catch(function () {}); }, { passive: true });
     el.addEventListener('mousedown', fire, true); el.addEventListener('touchend', fire, true);
     el.addEventListener('focus', fire, true);
     el.addEventListener('keydown', function (e) { if (e.key.length === 1) { e.preventDefault(); el.blur(); open(e.key); } }, true);
@@ -291,6 +293,7 @@
     if (!bar || bar.querySelector('.lrk-btn')) return;
     var right = bar.querySelector('.right') || bar;
     var b = document.createElement('button'); b.type = 'button'; b.className = 'lrk-btn'; b.setAttribute('aria-label', 'Search Le Random'); b.innerHTML = GLASS;
+    b.addEventListener('touchstart', function () { load().catch(function () {}); }, { passive: true });
     b.addEventListener('click', function () { open(''); });
     right.insertBefore(b, right.firstChild);
   }
@@ -304,6 +307,7 @@
   }).observe(document.documentElement, { childList: true, subtree: true });
 
   document.addEventListener('keydown', function (e) {
+    if (e.key === 'Meta' || e.key === 'Control') load().catch(function () {});
     if ((e.metaKey || e.ctrlKey) && !e.altKey && !e.shiftKey && (e.key === 'k' || e.key === 'K')) { e.preventDefault(); if (OPEN) close(); else open(''); }
     else if (OPEN && e.key === 'Escape') { e.preventDefault(); close(); }
   }, true);
