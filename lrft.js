@@ -333,6 +333,8 @@ a.read-next, .w-layout-grid.grid-16 { display:none !important; }
     -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent);
     mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent); }
   #lrtopbar .util nav::-webkit-scrollbar { display:none; }
+/* lr-rails-x (29 Sep 2026): the rail scrolls sideways only (the phone freeze) */
+#lrtopbar .util nav { overflow-y:hidden; overscroll-behavior-x:contain; touch-action:pan-x pan-y; }
   #lrtopbar .util nav a { flex:0 0 auto; }
   #lrtopbar .util .right { order:1; flex:0 0 auto; margin-left:0; gap:10px; }
   /* the winning width on the editorials bar at this size is #lrw .topbar .tb-search{width:96px};
@@ -678,7 +680,12 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     if (!body) return;
     /* 29 Sep 2026: links baked into the CMS body (bake_editorial_smartlinks.py) lose their class on import;
        subject and episode pages are only ever reached by smart links, so they get the smart-link look back */
-    [].forEach.call(body.querySelectorAll('a[href*="/subjects/"], a[href*="/episodes/"]'), function(a){ a.classList.add('lr-sl'); });
+    var baked = body.querySelectorAll('a[href*="/subjects/"], a[href*="/episodes/"]');
+    [].forEach.call(baked, function(a){ a.classList.add('lr-sl'); });
+    /* 30 Sep 2026: a body with baked links is already linked in full (bake_links2.py, a wider map than
+       smartlinks.json). Linking it again here put a second link on the next mention ("HyperCard ... HyperCard"),
+       because this pass cannot see which subjects the bake has used. Only unbaked bodies are linked here. */
+    if (baked.length) return;
     fetch((window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/') + 'smartlinks.json')
       .then(function(r){ return r.json(); })
       .then(function(SL){
