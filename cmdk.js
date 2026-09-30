@@ -8,7 +8,7 @@
   if (window.__lrk) return;
   window.__lrk = 1;
   var BASE = window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/';
-  var ROWS = Object.create(null), MX = -1, MY = -1;
+  var ROWS = Object.create(null), MX = -1, MY = -1, EVOCAB = [];
   var IDX = null, LOADING = null, ITEMS = [], SEL = 0, OPEN = false, LASTFOCUS = null, VOCAB = null;
   var TOUCH = window.matchMedia && matchMedia('(pointer:coarse)').matches;
   var MAC = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
@@ -49,14 +49,34 @@
   }
   /* body words: articles holding a word that starts with t; else holding a near miss of t */
   function lower(arr, t) { var lo = 0, hi = arr.length; while (lo < hi) { var m = (lo + hi) >> 1; if (arr[m] < t) lo = m + 1; else hi = m; } return lo; }
-  function bodyHits(t) {
-    var set = Object.create(null), n = 0, i = lower(VOCAB, t);
-    for (; i < VOCAB.length && VOCAB[i].indexOf(t) === 0 && n < 400; i++, n++) IDX.w[VOCAB[i]].forEach(function (a) { set[a] = 1; });
+  function bodyHits(t, map, vocab) {
+    map = map || IDX.w; vocab = vocab || VOCAB;
+    var set = Object.create(null), n = 0, i = lower(vocab, t);
+    for (; i < vocab.length && vocab[i].indexOf(t) === 0 && n < 400; i++, n++) map[vocab[i]].forEach(function (a) { set[a] = 1; });
     if (!n && cap(t)) {
       var c = cap(t);
-      VOCAB.forEach(function (w) { if (Math.abs(w.length - t.length) <= c && lev(t, w, c) <= c) IDX.w[w].forEach(function (a) { set[a] = 1; }); });
+      vocab.forEach(function (w) { if (Math.abs(w.length - t.length) <= c && lev(t, w, c) <= c) map[w].forEach(function (a) { set[a] = 1; }); });
     }
     return set;
+  }
+  /* episodes: the title first, then who speaks, then anything said in the transcript */
+  function searchEps(q, qt) {
+    var bodies = qt.map(function (t) { return bodyHits(t, IDX.ew, EVOCAB); }), fq = fold(q).trim(), out = [];
+    IDX.e.forEach(function (e) {
+      var score = 0, ok = true;
+      qt.forEach(function (t, i) {
+        var h = hit(t, e.T), s = 0;
+        if (h === 0) s = 10; else if (h === 1) s = 6;
+        else if ((h = hit(t, e.P)) >= 0) s = h ? 5 : 8;
+        else if (bodies[i][e[0]]) s = 1;
+        if (!s) ok = false; score += s;
+      });
+      if (!ok) return;
+      if (fq.length > 2 && e.F.indexOf(fq) >= 0) score += 15;
+      out.push([score, e]);
+    });
+    out.sort(function (x, y) { return y[0] - x[0] || y[1][0] - x[1][0]; });
+    return out.map(function (x) { return x[1]; });
   }
 
   /* ---------- data ---------- */
@@ -69,7 +89,8 @@
           a.T = toks(a[3]); a.P = toks((a[7] || []).join(' ') + ' ' + a[5]).concat([String(a[0]), ('00' + a[0]).slice(-3)]); a.N = toks((a[8] || []).join(' ')); a.F = fold(a[3]);
         });
         d.s.forEach(function (s) { s.T = toks(s[0]); s.F = fold(s[0]); });
-        d.e.forEach(function (e) { e.T = toks(e[1] + ' ' + e[3]).concat(['episode', 'ep', 'podcast', String(e[0]), ('0' + e[0]).slice(-2)]); });
+        d.e.forEach(function (e) { e.T = toks(e[1]).concat(['episode', 'ep', 'podcast', String(e[0]), ('0' + e[0]).slice(-2)]); if (/\bCh\b/.test(e[1])) e.T.push('chapter'); e.P = toks(e[3]); e.F = fold(e[1]); });
+        EVOCAB = Object.keys(d.ew || {}).sort(); d.ew = d.ew || {};
         d.t.forEach(function (t) { t.T = toks(t[0] + ' ' + t[1]); });
         VOCAB = Object.keys(d.w).sort();
         IDX = d; return d;
@@ -80,7 +101,7 @@
 
   /* ---------- search ---------- */
   function searchArts(q, qt) {
-    var fq = fold(q).trim(), bodies = qt.map(bodyHits), out = [];
+    var fq = fold(q).trim(), bodies = qt.map(function (t) { return bodyHits(t); }), out = [];
     IDX.a.forEach(function (a) {
       var score = 0, ok = true;
       qt.forEach(function (t, i) {
@@ -230,7 +251,7 @@
       /* one fixed order (Peter, 30 Sep 2026: "put people and subject first"); groups never swap while typing */
       groups.push(['People and subjects', searchList(IDX.s, qt, fq, true).slice(0, 5).map(subItem)]);
       groups.push(['Editorials', searchArts(q, qt).slice(0, 8).map(artItem)]);
-      groups.push(['Episodes', searchList(IDX.e, qt, fq).slice(0, 4).map(epItem)]);
+      groups.push(['Episodes', searchEps(q, qt).slice(0, 5).map(epItem)]);
       groups.push(['Sets', searchList(IDX.t, qt, fq).slice(0, 3).map(setItem)]);
       groups.push(['Pages', PAGES.filter(function (p) { return qt.every(function (t) { return hit(t, toks(p[0] + ' ' + p[1])) === 0; }); }).slice(0, 3).map(pageItem)]);
     }
