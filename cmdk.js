@@ -8,6 +8,7 @@
   if (window.__lrk) return;
   window.__lrk = 1;
   var BASE = window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/';
+  var ROWS = Object.create(null), MX = -1, MY = -1;
   var IDX = null, LOADING = null, ITEMS = [], SEL = 0, OPEN = false, LASTFOCUS = null, VOCAB = null;
   var TOUCH = window.matchMedia && matchMedia('(pointer:coarse)').matches;
   var MAC = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
@@ -112,7 +113,7 @@
   /* ---------- items ---------- */
   function artItem(a) {
     return { href: '/editorial/' + a[1], t: a[3], s: 'No. ' + ('00' + a[0]).slice(-3) + ' · ' + a[2] + ' · ' + a[4],
-      icon: a[6] ? '<span class="lrk-th" style="background-image:url(\'' + esc(a[6]).replace(/'/g, '%27') + '\')"></span>' : '<span class="lrk-ic">' + a[0] + '</span>' };
+      icon: a[6] ? '<img class="lrk-th" alt="" decoding="async" src="' + esc(a[6]) + '">' : '<span class="lrk-ic">' + a[0] + '</span>' };
   }
   function subItem(s) {
     var bits = []; if (s[2]) bits.push('in ' + s[2] + ' editorial' + (s[2] > 1 ? 's' : '')); if (s[3]) bits.push(s[3] + ' episode' + (s[3] > 1 ? 's' : ''));
@@ -126,6 +127,8 @@
   var CSS = [
     '#lrk-scrim{position:fixed;inset:0;z-index:2147483000;background:rgba(1,16,21,.42);opacity:0;transition:opacity .16s ease;}',
     '#lrk-scrim.on{opacity:1;}',
+    '#lrk{opacity:0;transition:opacity .14s ease,margin-top .14s ease;margin-top:8px;}',
+    '#lrk.on{opacity:1;margin-top:0;}',
     '#lrk{position:fixed;z-index:2147483001;left:50%;top:12vh;transform:translateX(-50%);width:min(680px,calc(100vw - 32px));max-height:72vh;display:flex;flex-direction:column;',
     ' background:#F7F4EA;color:#011015;border:1px solid #011015;box-shadow:0 24px 70px rgba(1,16,21,.28);font-family:\'Ebgaramond\',\'EB Garamond\',Garamond,Georgia,serif;}',
     '#lrk *{box-sizing:border-box;}',
@@ -139,6 +142,7 @@
     '#lrk .lrk-grp{font:500 10px/1 \'Rules\',Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#FF4C00;padding:14px 18px 6px;}',
     '#lrk a.lrk-it{display:flex;align-items:center;gap:14px;padding:8px 18px;text-decoration:none;color:#011015;border-left:3px solid transparent;}',
     '#lrk a.lrk-it[aria-selected=true]{background:#EFE9D8;border-left-color:#FF4C00;}',
+    '#lrk .lrk-th{object-fit:cover;padding:0;margin:0;}',
     '#lrk .lrk-th,#lrk .lrk-ic{flex:0 0 44px;width:44px;height:44px;background:#EFE9D8 center/cover no-repeat;display:flex;align-items:center;justify-content:center;',
     ' font:500 13px/1 \'Rules\',Arial,sans-serif;color:#011015;border:1px solid rgba(1,16,21,.12);}',
     '#lrk .lrk-ep{background:#011015;color:#F7F4EA;border-color:#011015;}',
@@ -154,16 +158,17 @@
     '@media (pointer:coarse){#lrk input{font-size:20px;} #lrk .lrk-foot{display:none;}}',
     'html.lrk-lock,html.lrk-lock body{overflow:hidden !important;}',
     '#lrk .lrk-foot b,.lrk-kbd{font-family:-apple-system,BlinkMacSystemFont,\'Rules\',Arial,sans-serif;}',
-    '.lrk-kbd{font:500 9px/1 -apple-system,BlinkMacSystemFont,\'Rules\',Arial,sans-serif;letter-spacing:.08em;border:1px solid rgba(1,16,21,.3);padding:3px 4px 2px;margin-left:6px;color:rgba(1,16,21,.6);white-space:nowrap;pointer-events:none;}',
+    '.tb-search .lrk-kbd,.hero-search .lrk-kbd,.lrk-kbd{font:400 10px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif !important;letter-spacing:.02em !important;text-transform:none !important;color:rgba(1,16,21,.42) !important;border:1px solid rgba(1,16,21,.2) !important;border-radius:3px !important;padding:2px 4px 1px !important;margin:0 0 0 6px !important;white-space:nowrap !important;pointer-events:none !important;flex:0 0 auto !important;width:auto !important;height:auto !important;background:none !important;}',
+    '#tb-q,#hero-q,#lrtb-q,#tb-q::placeholder,#hero-q::placeholder,#lrtb-q::placeholder{font-family:\'Rules\',Arial,sans-serif !important;font-size:10.5px !important;font-weight:500 !important;font-style:normal !important;letter-spacing:.1em !important;text-transform:uppercase !important;cursor:pointer;}',
+    '#tb-q::placeholder,#hero-q::placeholder,#lrtb-q::placeholder{color:rgba(1,16,21,.45) !important;}',
     '.lrk-btn{display:none;align-items:center;justify-content:center;width:34px;height:34px;border:0;background:none;color:inherit;cursor:pointer;padding:0;}',
-    '@media (max-width:640px){#lrtopbar .lrk-btn,#topbar .lrk-btn{display:flex;}}'
+    '.lrk-btn.lrk-need{display:flex;}'
   ].join('\n');
   var GLASS = '<svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l5 5" stroke="currentColor" stroke-width="1.6"/></svg>';
   var root, scrim, input, list;
 
   function build() {
     if (root) return;
-    var st = document.createElement('style'); st.id = 'lrk-css'; st.textContent = CSS; document.head.appendChild(st);
     scrim = document.createElement('div'); scrim.id = 'lrk-scrim';
     root = document.createElement('div'); root.id = 'lrk'; root.setAttribute('role', 'dialog'); root.setAttribute('aria-modal', 'true'); root.setAttribute('aria-label', 'Search Le Random');
     root.innerHTML = '<div class="lrk-top">' + GLASS + '<input type="search" autocomplete="off" spellcheck="false" placeholder="Search editorials, people, episodes" aria-label="Search Le Random" role="combobox" aria-expanded="true" aria-controls="lrk-list">' +
@@ -177,7 +182,7 @@
     input.addEventListener('keydown', key);
     scrim.addEventListener('click', close);
     root.querySelector('.lrk-esc').addEventListener('click', close);
-    list.addEventListener('mousemove', function (e) { var a = e.target.closest('a.lrk-it'); if (a) sel(+a.getAttribute('data-i'), true); });
+    list.addEventListener('mousemove', function (e) { if (e.clientX === MX && e.clientY === MY) return; MX = e.clientX; MY = e.clientY; var a = e.target.closest('a.lrk-it'); if (a) sel(+a.getAttribute('data-i'), true); });
     list.addEventListener('click', function (e) { var a = e.target.closest('a.lrk-it'); if (a && !(e.metaKey || e.ctrlKey || e.shiftKey || e.button)) { e.preventDefault(); go(+a.getAttribute('data-i'), false); } });
   }
 
@@ -186,7 +191,7 @@
     if (!OPEN) {
       LASTFOCUS = document.activeElement;
       root.style.display = ''; scrim.style.display = ''; OPEN = true;
-      requestAnimationFrame(function () { scrim.classList.add('on'); });
+      requestAnimationFrame(function () { scrim.classList.add('on'); root.classList.add('on'); });
       document.documentElement.classList.add('lrk-lock');
     }
     input.value = q || ''; draw();
@@ -195,7 +200,7 @@
   }
   function close() {
     if (!OPEN) return;
-    OPEN = false; root.style.display = 'none'; scrim.style.display = 'none'; scrim.classList.remove('on');
+    OPEN = false; root.style.display = 'none'; scrim.style.display = 'none'; scrim.classList.remove('on'); root.classList.remove('on');
     document.documentElement.classList.remove('lrk-lock');
     if (LASTFOCUS && LASTFOCUS.focus && !/^(tb-q|hero-q|lrtb-q)$/.test(LASTFOCUS.id || '')) try { LASTFOCUS.focus(); } catch (e) {}
   }
@@ -220,32 +225,36 @@
       if (IDX) groups.push(['Latest', IDX.a.slice(0, 5).map(artItem)]);
       groups.push(['Pages', PAGES.slice(0, 8).map(pageItem)]);
     } else if (!IDX) {
-      list.innerHTML = '<p class="lrk-msg">Opening the archive…</p>'; ITEMS = []; return;
+      ITEMS = []; clearTimeout(draw.t); draw.t = setTimeout(function () { if (!IDX && OPEN) list.innerHTML = '<p class="lrk-msg">Opening the archive…</p>'; }, 250); return;
     } else if (qt.length) {
-      var subs = searchList(IDX.s, qt, fq, true), arts = searchArts(q, qt), eps = searchList(IDX.e, qt, fq);
-      /* no editorial title or guest matched (only a mention or the text): the person, subject or episode leads;
-         a name typed in full ("vera molnar", "art blocks") leads too */
-      var mentionOnly = !arts.length || arts[0]._s <= 4 * qt.length;
-      var who = subs.length && (qt.length > 1 || /^(Person|Organisation)$/.test(subs[0][1]));
-      var named = who && (subs[0].F === fq || (fq.length > 3 && subs[0].F.indexOf(fq) === 0 && !arts.slice(0, 3).some(function (a) { return a.F.indexOf(fq) >= 0; })));
-      var gA = ['Editorials', arts.slice(0, 8).map(artItem)], gS = ['People and subjects', subs.slice(0, 6).map(subItem)], gE = ['Episodes', eps.slice(0, 4).map(epItem)];
-      if (mentionOnly) groups.push(eps.length && !subs.length ? gE : gS, eps.length && !subs.length ? gS : gE, gA);
-      else if (named) groups.push(gS, gA, gE);
-      else groups.push(gA, gS, gE);
+      /* one fixed order (Peter, 30 Sep 2026: "put people and subject first"); groups never swap while typing */
+      groups.push(['People and subjects', searchList(IDX.s, qt, fq, true).slice(0, 5).map(subItem)]);
+      groups.push(['Editorials', searchArts(q, qt).slice(0, 8).map(artItem)]);
+      groups.push(['Episodes', searchList(IDX.e, qt, fq).slice(0, 4).map(epItem)]);
       groups.push(['Sets', searchList(IDX.t, qt, fq).slice(0, 3).map(setItem)]);
       groups.push(['Pages', PAGES.filter(function (p) { return qt.every(function (t) { return hit(t, toks(p[0] + ' ' + p[1])) === 0; }); }).slice(0, 3).map(pageItem)]);
     }
-    ITEMS = []; var html = '';
+    ITEMS = [];
+    var frag = document.createDocumentFragment(), keep = Object.create(null);
     groups.forEach(function (g) {
       if (!g[1].length) return;
-      html += '<div class="lrk-grp" role="presentation">' + g[0] + '</div>';
+      var h = document.createElement('div'); h.className = 'lrk-grp'; h.setAttribute('role', 'presentation'); h.textContent = g[0]; frag.appendChild(h);
       g[1].forEach(function (x) {
         var i = ITEMS.length; ITEMS.push(x);
-        html += '<a class="lrk-it" role="option" id="lrk-o' + i + '" data-i="' + i + '" href="' + esc(x.href) + '" aria-selected="false">' + x.icon +
-          '<span class="lrk-tx"><span class="lrk-t">' + mark(x.t, qt) + '</span><span class="lrk-s">' + esc(x.s) + '</span></span></a>';
+        var key = x.href + (x.rnd ? '#rnd' : ''), a = ROWS[key];
+        if (!a) {
+          a = document.createElement('a'); a.className = 'lrk-it'; a.setAttribute('role', 'option'); a.href = x.href;
+          a.innerHTML = x.icon + '<span class="lrk-tx"><span class="lrk-t"></span><span class="lrk-s"></span></span>';
+          a.querySelector('.lrk-s').textContent = x.s; ROWS[key] = a;
+        }
+        a.id = 'lrk-o' + i; a.setAttribute('data-i', i); a.setAttribute('aria-selected', 'false');
+        var t = a.querySelector('.lrk-t'), m = mark(x.t, qt); if (t.innerHTML !== m) t.innerHTML = m;
+        keep[key] = 1; frag.appendChild(a);
       });
     });
-    list.innerHTML = html || '<p class="lrk-msg">Nothing matches “' + esc(q) + '”.</p>';
+    list.textContent = '';
+    if (ITEMS.length) list.appendChild(frag);
+    else list.innerHTML = q ? '<p class="lrk-msg">Nothing matches “' + esc(q) + '”.</p>' : '';
     list.scrollTop = 0; sel(0);
   }
   function sel(i, quiet) {
@@ -281,7 +290,7 @@
     el.setAttribute('readonly', ''); el.setAttribute('aria-haspopup', 'dialog');
     el.setAttribute('placeholder', 'Search');
     var lab = el.closest('label, .tb-search, .hero-search') || el.parentNode;
-    if (!TOUCH && lab && !lab.querySelector('.lrk-kbd')) { var k = document.createElement('span'); k.className = 'lrk-kbd'; k.textContent = MAC ? '⌘K' : 'Ctrl K'; lab.appendChild(k); }
+    if (!TOUCH && lab && !lab.querySelector('.lrk-kbd')) { var k = document.createElement('span'); k.className = 'lrk-kbd'; k.textContent = MAC ? '⌘K' : 'Ctrl K'; k.setAttribute('aria-hidden', 'true'); lab.appendChild(k); }
     function fire(e) { e.preventDefault(); e.stopPropagation(); var v = el.value; if (v) { el.value = ''; } el.blur(); open(v); }
     el.addEventListener('mouseenter', function () { load().catch(function () {}); });   /* warm the index before the click */
     el.addEventListener('touchstart', function () { load().catch(function () {}); }, { passive: true });
@@ -297,9 +306,18 @@
     b.addEventListener('click', function () { open(''); });
     right.insertBefore(b, right.firstChild);
   }
+  function glassNeeded() {
+    [].forEach.call(document.querySelectorAll('.lrk-btn'), function (b) {
+      var box = b.parentNode && b.parentNode.querySelector('.tb-search');
+      var hidden = !box || box.offsetWidth === 0 || getComputedStyle(box).display === 'none';
+      b.classList.toggle('lrk-need', hidden);
+    });
+  }
+  window.addEventListener('resize', function () { clearTimeout(glassNeeded.t); glassNeeded.t = setTimeout(glassNeeded, 120); });
   function hookAll() {
+    if (!document.getElementById('lrk-css')) { var st = document.createElement('style'); st.id = 'lrk-css'; st.textContent = CSS; document.head.appendChild(st); }
     ['tb-q', 'hero-q', 'lrtb-q'].forEach(function (id) { hook(document.getElementById(id)); });
-    phoneButton(document.getElementById('topbar')); phoneButton(document.getElementById('lrtopbar'));
+    phoneButton(document.getElementById('topbar')); phoneButton(document.getElementById('lrtopbar')); glassNeeded();
   }
   hookAll();
   new MutationObserver(function () {
