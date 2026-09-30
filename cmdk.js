@@ -317,7 +317,9 @@
     if (!TOUCH && lab && !lab.querySelector('.lrk-kbd')) {
       var k = document.createElement('span'); k.className = 'lrk-kbd'; k.textContent = MAC ? '⌘K' : 'Ctrl K'; k.setAttribute('aria-hidden', 'true'); lab.appendChild(k);
       /* the wide box under Latest (Peter, 30 Sep 2026): the hint sits right after the word "Search", not at the far edge */
-      if (el.id === 'hero-q' || el.id === 'rg-q') { lab.classList.add('lrk-besideword'); besideWord(el, k); window.addEventListener('resize', function () { besideWord(el, k); }); }
+      /* every box: the hint floats after the word and takes no room, so the two header bars keep identical
+         measurements (the publish gate compares them to the pixel) */
+      lab.classList.add('lrk-besideword'); besideWord(el, k); window.addEventListener('resize', function () { besideWord(el, k); });
     }
     function fire(e) { e.preventDefault(); e.stopPropagation(); var v = el.value; if (v) { el.value = ''; } el.blur(); open(v); }
     el.addEventListener('mouseenter', function () { load().catch(function () {}); });   /* warm the index before the click */
@@ -337,13 +339,14 @@
     k.style.setProperty('left', Math.round(left) + 'px', 'important');
   }
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () {
-    ['hero-q', 'rg-q'].forEach(function (id) { var el = document.getElementById(id), lab = el && el.closest('.lrk-besideword'); if (lab) besideWord(el, lab.querySelector('.lrk-kbd')); });
+    ['tb-q', 'hero-q', 'rg-q', 'lrtb-q'].forEach(function (id) { var el = document.getElementById(id), lab = el && el.closest('.lrk-besideword'); if (lab) besideWord(el, lab.querySelector('.lrk-kbd')); });
   });
   function phoneButton(bar) {
     if (!bar || bar.querySelector('.lrk-btn')) return;
     var right = bar.querySelector('.right') || bar;
     var b = document.createElement('button'); b.type = 'button'; b.className = 'lrk-btn'; b.setAttribute('aria-label', 'Search Le Random'); b.innerHTML = GLASS;
     b.addEventListener('touchstart', function () { load().catch(function () {}); }, { passive: true });
+    var box = right.querySelector('.tb-search'); if (RO && box) RO.observe(box);
     b.addEventListener('click', function () { open(''); });
     right.insertBefore(b, right.firstChild);
   }
@@ -355,6 +358,9 @@
     });
   }
   window.addEventListener('resize', function () { clearTimeout(glassNeeded.t); glassNeeded.t = setTimeout(glassNeeded, 120); });
+  /* the check must follow the layout: this code now runs before the header is laid out (inlined, 30 Sep 2026),
+     so a box that is still 0 px wide at that instant would wrongly show the glass on desktop */
+  var RO = window.ResizeObserver ? new ResizeObserver(function () { glassNeeded(); }) : null;
   function hookAll() {
     if (!document.getElementById('lrk-css')) { var st = document.createElement('style'); st.id = 'lrk-css'; st.textContent = CSS; document.head.appendChild(st); }
     ['tb-q', 'hero-q', 'rg-q', 'lrtb-q'].forEach(function (id) { hook(document.getElementById(id)); });
