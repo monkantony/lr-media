@@ -955,7 +955,10 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     GROUPS.forEach(function(g){
       var names = me.m[g[0]]; if (!names || !names.length) return;
       grps += '<div class="lrft-grp"><b>' + g[1] + '</b><span class="lrft-chips">'
-        + names.map(function(n){ return n[1] ? '<a class="lrft-chip on" href="/editorials#subject=' + encodeURIComponent(String(n[0]).toLowerCase()) + '">' + esc(n[0]) + '</a>' : '<span class="lrft-chip">' + esc(n[0]) + '</span>'; }).join('')
+        /* 1 Oct 2026 (Peter: "the links in the subjects section are not linking to the new subjects pages"): every
+           chip is a link now. n[1] marked only the subjects that had a page before 30 Sep; the bridge below turns
+           each #subject= link into its /subjects/ page (3,355 of them), and one without a page opens its index entry */
+        + names.map(function(n){ return '<a class="lrft-chip on" href="/editorials#subject=' + encodeURIComponent(String(n[0]).toLowerCase()) + '">' + esc(n[0]) + '</a>'; }).join('')
         + '</span></div>';
     });
     if (grps) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Mentioned in this editorial</h2>' + grps + '</section>';
@@ -1423,6 +1426,9 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     for (var i = 0; i < as.length; i++) {
       var t = fromHref(as[i].getAttribute('href'));
       if (t && as[i].getAttribute('href') !== t) as[i].setAttribute('href', t);
+      else if (!t && as[i].classList.contains('lrft-chip')) {     /* 1 Oct 2026: a subject with no page stays plain text */
+        var sp = document.createElement('span'); sp.className = 'lrft-chip'; sp.textContent = as[i].textContent; as[i].replaceWith(sp);
+      }
     }
   }
   document.addEventListener('click', function(ev){
@@ -1438,7 +1444,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       var queued = false;
       new MutationObserver(function(){
         if (queued) return; queued = true;
-        requestAnimationFrame(function(){ queued = false; rewrite(); });
+        setTimeout(function(){ queued = false; rewrite(); }, 30);   /* not rAF: a tab opened in the background pauses rAF and the queue stuck */
       }).observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['href'] });
     };
     if (document.body) start(); else document.addEventListener('DOMContentLoaded', start);
