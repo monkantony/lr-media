@@ -140,7 +140,7 @@
       icon: a[6] ? '<img class="lrk-th" alt="" decoding="async" src="' + esc(a[6]) + '">' : '<span class="lrk-ic">' + a[0] + '</span>' };
   }
   function subItem(s) {
-    var bits = []; if (s[2]) bits.push('in ' + s[2] + ' editorial' + (s[2] > 1 ? 's' : '')); if (s[3]) bits.push(s[3] + ' episode' + (s[3] > 1 ? 's' : ''));
+    var bits = []; if (s[2]) bits.push('in ' + s[2] + ' editorial' + (s[2] > 1 ? 's' : '')); if (s[3]) bits.push(s[3] + ' episode' + (s[3] > 1 ? 's' : '')); if (s[5]) bits.push(s[5] + ' Timeline moment' + (s[5] > 1 ? 's' : ''));
     return { href: '/subjects/' + s[4], t: s[0], s: s[1] + (bits.length ? ' · ' + bits.join(', ') : ''), icon: '<span class="lrk-ic">' + esc(s[0].charAt(0).toUpperCase()) + '</span>' };
   }
   function epItem(e) { return { href: '/episodes/' + e[4], t: e[1], s: 'Le Random Podcast · Episode ' + e[0] + ' · ' + e[2], icon: '<span class="lrk-ic lrk-ep">' + e[0] + '</span>' }; }
