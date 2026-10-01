@@ -10,6 +10,9 @@
   window.__lrk = 1;
   var BASE = window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/';
   var ROWS = Object.create(null), MX = -1, MY = -1, EVOCAB = [];
+  /* every search box on the site opens this one panel: the two headers, under Latest, the Archive, the Subjects
+     section (Peter, 1 Oct 2026: "the subject search also needs to integrated ... like the archive was") */
+  var BOXES = ['tb-q', 'hero-q', 'rg-q', 'sx-q', 'lrtb-q'];
   var IDX = null, LOADING = null, ITEMS = [], SEL = 0, OPEN = false, LASTFOCUS = null, VOCAB = null;
   var TOUCH = window.matchMedia && matchMedia('(pointer:coarse)').matches;
   var MAC = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
@@ -226,7 +229,7 @@
     if (!OPEN) return;
     OPEN = false; root.style.display = 'none'; scrim.style.display = 'none'; scrim.classList.remove('on'); root.classList.remove('on');
     document.documentElement.classList.remove('lrk-lock');
-    if (LASTFOCUS && LASTFOCUS.focus && !/^(tb-q|hero-q|rg-q|lrtb-q)$/.test(LASTFOCUS.id || '')) try { LASTFOCUS.focus(); } catch (e) {}
+    if (LASTFOCUS && LASTFOCUS.focus && BOXES.indexOf(LASTFOCUS.id || '') < 0) try { LASTFOCUS.focus(); } catch (e) {}
   }
 
   function mark(t, qt) {
@@ -314,7 +317,7 @@
     if (!el || el.__lrk) return; el.__lrk = 1;
     el.setAttribute('readonly', ''); el.setAttribute('aria-haspopup', 'dialog');
     el.setAttribute('placeholder', 'Search');
-    var lab = el.closest('label, .tb-search, .hero-search, .rg-search') || el.parentNode;
+    var lab = el.closest('label, .tb-search, .hero-search, .rg-search, .sx-search') || el.parentNode;
     if (!TOUCH && lab && !lab.querySelector('.lrk-kbd')) {
       var k = document.createElement('span'); k.className = 'lrk-kbd'; k.textContent = MAC ? '⌘K' : 'Ctrl K'; k.setAttribute('aria-hidden', 'true'); lab.appendChild(k);
       /* the wide box under Latest (Peter, 30 Sep 2026): the hint sits right after the word "Search", not at the far edge */
@@ -333,15 +336,21 @@
     /* measured by a hidden twin in the page's own fonts (a canvas misses web fonts such as the italic Garamond) */
     var cs = getComputedStyle(el, '::placeholder'), m = document.createElement('span');
     ['fontFamily', 'fontSize', 'fontStyle', 'fontWeight', 'letterSpacing', 'textTransform'].forEach(function (p) { m.style[p] = cs[p]; });
-    m.style.cssText += ';position:absolute;visibility:hidden;white-space:pre;left:-9999px;top:0;';
-    m.textContent = el.getAttribute('placeholder') || ''; document.body.appendChild(m);
+    m.style.cssText += ';position:absolute;visibility:hidden;white-space:pre;left:0;top:0;pointer-events:none;';
+    m.textContent = el.getAttribute('placeholder') || ''; (el.parentNode || document.body).appendChild(m);   /* measured in the box's own context */
     var left = el.offsetLeft + (parseFloat(getComputedStyle(el).paddingLeft) || 0) + m.getBoundingClientRect().width + 10;
     m.remove();
     k.style.setProperty('left', Math.round(left) + 'px', 'important');
   }
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () {
-    ['tb-q', 'hero-q', 'rg-q', 'lrtb-q'].forEach(function (id) { var el = document.getElementById(id), lab = el && el.closest('.lrk-besideword'); if (lab) besideWord(el, lab.querySelector('.lrk-kbd')); });
-  });
+  /* re-measure when a web font lands: this code runs before the Garamond loads, and the fallback is wider */
+  function remeasure() {
+    BOXES.forEach(function (id) { var el = document.getElementById(id), lab = el && el.closest('.lrk-besideword'); if (lab) besideWord(el, lab.querySelector('.lrk-kbd')); });
+  }
+  if (document.fonts) {
+    if (document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', remeasure);
+    if (document.fonts.ready) document.fonts.ready.then(remeasure);
+  }
+  window.addEventListener('load', function () { remeasure(); setTimeout(remeasure, 1500); });
   function phoneButton(bar) {
     if (!bar || bar.querySelector('.lrk-btn')) return;
     var right = bar.querySelector('.right') || bar;
@@ -364,12 +373,12 @@
   var RO = window.ResizeObserver ? new ResizeObserver(function () { glassNeeded(); }) : null;
   function hookAll() {
     if (!document.getElementById('lrk-css')) { var st = document.createElement('style'); st.id = 'lrk-css'; st.textContent = CSS; document.head.appendChild(st); }
-    ['tb-q', 'hero-q', 'rg-q', 'lrtb-q'].forEach(function (id) { hook(document.getElementById(id)); });
+    BOXES.forEach(function (id) { hook(document.getElementById(id)); });
     phoneButton(document.getElementById('topbar')); phoneButton(document.getElementById('lrtopbar')); glassNeeded();
   }
   hookAll();
   new MutationObserver(function () {
-    if (document.getElementById('tb-q') && !document.getElementById('tb-q').__lrk || document.getElementById('rg-q') && !document.getElementById('rg-q').__lrk || document.getElementById('lrtb-q') && !document.getElementById('lrtb-q').__lrk) hookAll();
+    if (BOXES.some(function (id) { var el = document.getElementById(id); return el && !el.__lrk; })) hookAll();
   }).observe(document.documentElement, { childList: true, subtree: true });
 
   document.addEventListener('keydown', function (e) {
