@@ -80,7 +80,7 @@
       out.push([score, e]);
     });
     out.sort(function (x, y) { return y[0] - x[0] || y[1][0] - x[1][0]; });
-    return out.map(function (x) { return x[1]; });
+    return out.map(function (x) { x[1]._s = x[0]; return x[1]; });
   }
 
   /* ---------- data ---------- */
@@ -254,10 +254,12 @@
     } else if (!IDX) {
       ITEMS = []; clearTimeout(draw.t); draw.t = setTimeout(function () { if (!IDX && OPEN) list.innerHTML = '<p class="lrk-msg">Opening the archive…</p>'; }, 250); return;
     } else if (qt.length) {
-      /* one fixed order (Peter, 30 Sep 2026: "put people and subject first"); groups never swap while typing */
+      /* people and subjects first (Peter, 30 Sep 2026); then Editorials and Episodes, whichever holds the more direct
+         match leads (Peter, 2 Oct 2026: episodes must not sit below editorials regardless of match); a tie keeps Editorials first */
       groups.push(['People and subjects', searchList(IDX.s, qt, fq, true).slice(0, 5).map(subItem)]);
-      groups.push(['Editorials', searchArts(q, qt).slice(0, 8).map(artItem)]);
-      groups.push(['Episodes', searchEps(q, qt).slice(0, 5).map(epItem)]);
+      var ar = searchArts(q, qt).slice(0, 8), ep = searchEps(q, qt).slice(0, 5),
+          ga = ['Editorials', ar.map(artItem)], ge = ['Episodes', ep.map(epItem)];
+      if (ep.length && (!ar.length || ep[0]._s > ar[0]._s)) groups.push(ge, ga); else groups.push(ga, ge);
       groups.push(['Sets', searchList(IDX.t, qt, fq).slice(0, 3).map(setItem)]);
       groups.push(['Pages', PAGES.filter(function (p) { return qt.every(function (t) { return hit(t, toks(p[0] + ' ' + p[1])) === 0; }); }).slice(0, 3).map(pageItem)]);
     }
