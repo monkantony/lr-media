@@ -1465,11 +1465,13 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     var css = document.createElement('style');
     css.textContent = '.sj-words{margin:0 0 22px;max-width:58ch;padding-left:16px;border-left:2px solid var(--orange,#FF4C00)}' +
       '.sj-words p{font-family:var(--serif,Georgia,serif);font-size:16px;line-height:1.45;color:var(--ink,#011015);margin:0}' +
-      '.sj-words a{display:inline-block;margin-top:8px;font-family:var(--sans,Arial,sans-serif);font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-40,rgba(1,16,21,.55));text-decoration:none}' +
+      '.sj-words .sj-src{margin-top:8px;font-family:var(--sans,Arial,sans-serif);font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-40,rgba(1,16,21,.55))}' +
+      '.sj-words .sj-src span{color:var(--ink,#011015)}.sj-words a{color:inherit;text-decoration:none}' +
       '.sj-words a:hover{color:var(--orange,#FF4C00)}';
     document.head.appendChild(css);
     var f = document.createElement('figure'); f.className = 'sj-words';
-    f.innerHTML = '<p>“' + esc(w.q) + '”</p><a href="' + esc(w.qu) + '">' + esc(w.qt) + ' →</a>';
+    f.innerHTML = '<p>“' + esc(w.q) + '”</p><div class="sj-src">' + (w.qs ? '<span>' + esc(w.qs) + '</span> · ' : '') +
+      '<a href="' + esc(w.qu) + '">' + esc(w.qt) + ' →</a></div>';   /* v2: who says it, then where (Peter, 2 Oct) */
     bio.parentNode.insertBefore(f, bio.nextSibling);
   }).catch(function () {});
 })();
