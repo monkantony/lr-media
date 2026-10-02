@@ -474,7 +474,7 @@
 .lrft-ln:hover .ln-t { color:var(--lr-or); }
 .lrft-ln .ln-len, .lrft-ln .ln-badge { font-family:var(--lr-sans); font-size:9.5px; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:rgba(1,16,21,.38); white-space:nowrap; }
 .lrft-ln .ln-badge { border:1px solid var(--lr-or); color:var(--lr-or); border-radius:999px; padding:2px 8px 1px; }
-.lrft-tl { grid-template-columns:84px minmax(0,1fr) 72px 64px; }
+.lrft-tl { grid-template-columns:44px minmax(0,1fr) 72px 64px; }   /* 2 Oct 2026 (Peter): timeline titles on the Listen next title edge; badges stay in one column */
 .lrmg-in { --lr-ink:#011015; --lr-or:#FF4C00; --lr-ink40:rgba(1,16,21,.38); --lr-sans:'Rules',Arial,sans-serif; --lr-serif:'Ebgaramond','EB Garamond',Garamond,Georgia,serif;
   display:block; width:100%; margin:34px 0; box-sizing:border-box;
   border:1px solid var(--lr-ink) !important; box-shadow:6px 7px 0 rgba(1,16,21,.1) !important;
