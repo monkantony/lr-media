@@ -511,6 +511,12 @@
    Give them back here so the menu matches the one in the /editorials header exactly. */
 #lrtopbar .lr-thm-menu { padding:6px; }
 #lrtopbar .lr-thm-it { padding:8px 10px; }
+/* 3 Oct 2026 (Peter: article text ran ~170 characters a line on wide screens; "it should be text (same width as this
+   text in claude) centered in the middle but the images can stay large and fill screen"): the article's words sit in
+   one centred reading column about as wide as Claude's (610px, the same as the episode transcripts; Peter 3 Oct: "make it 610 for eds too"); figures, video and embeds keep
+   the full column. Narrower screens are unaffected (the column is already narrower than this). */
+.article > .w-richtext > :not(figure):not(.w-embed):not(.w-richtext-figure-type-video) { max-width:610px; margin-left:auto; margin-right:auto; }
+.article > .lrap-home { width:100%; max-width:610px; margin-left:auto; margin-right:auto; }   /* the Listen player sits on the same column */
 #lrtopbar { box-sizing:border-box; color:#011015; font-family:'Ebgaramond','Ebgaramond','EB Garamond',Garamond,Georgia,serif; font-size:18px;
   line-height:1.5; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
 #lrtopbar a { color:inherit; text-decoration:none; }
@@ -968,6 +974,27 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
         + names.map(function(n){ return '<a class="lrft-chip on" href="/editorials#subject=' + encodeURIComponent(String(n[0]).toLowerCase()) + '">' + esc(n[0]) + '</a>'; }).join('')
         + '</span></div>';
     });
+    /* 3 Oct 2026 (Peter: "maximum static html to html links"): the Editorials Template now renders every subject
+       featured in or mentioned by the piece into #lrft-ssr (Webflow collection lists, hidden, kept in the HTML), so
+       crawlers get real /subjects/ links in the page source. When it is there, the chips ARE those anchors: they move
+       into the groups below, grouped by their data-kind, featured first, then A-Z. Without it, the old chips stay. */
+    var ssr = document.getElementById('lrft-ssr'), ssrGroups = null;
+    if (ssr) {
+      var KIND = {Person:'p', Work:'w', Exhibition:'x', Organisation:'o', Place:'pl', Technique:'t', Theme:'th'};
+      var lists = [].slice.call(ssr.querySelectorAll('.w-dyn-list')).reverse();      /* featured list sits second */
+      var seen = {}; ssrGroups = {};
+      lists.forEach(function(l, li){
+        var as = [].slice.call(l.querySelectorAll('a[href*="/subjects/"]'));
+        if (li > 0) as.sort(function(a, b){ return a.textContent.localeCompare(b.textContent); });
+        as.forEach(function(a){
+          var h = a.getAttribute('href'); if (seen[h]) return; seen[h] = 1;
+          var k = KIND[(a.getAttribute('data-kind') || '').trim()] || 'th';
+          (ssrGroups[k] = ssrGroups[k] || []).push(a);
+        });
+      });
+      if (!Object.keys(ssrGroups).length) ssrGroups = null;
+      else grps = GROUPS.map(function(g){ return ssrGroups[g[0]] ? '<div class="lrft-grp"><b>' + g[1] + '</b><span class="lrft-chips" data-ssr="' + g[0] + '"></span></div>' : ''; }).join('');
+    }
     if (grps) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Mentioned in this editorial</h2>' + grps + '</section>';
     var cards = me.rn.map(function(p){
       var r = A[p[0]]; if (!r) return '';
@@ -986,6 +1013,10 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
         + '<span class="ln-len">' + Math.round((l[2] || 0) / 60) + ' min</span>'
         + '<span class="ln-sh">Shared subjects: ' + esc((l[3] || []).join(', ')) + '</span></a>';
     }).join('');
+    /* 3 Oct 2026: episodes whose "Read next" holds this editorial are rendered into #lrft-ssr by the template (data-n,
+       data-min); when present they ARE the Listen next rows (real links in the page source), else the old rows stay */
+    var ssrEps = ssr ? [].slice.call(ssr.querySelectorAll('a[href*="/episodes/"]')) : [];
+    if (ssrEps.length) lnRows = '<div data-ssr-ln></div>';
     if (lnRows) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Listen next</h2>' + lnRows + '</section>';
     var tlRows = (me.tl || []).map(function(m){
       return '<a class="lrft-ln lrft-tl" href="https://timeline.lerandom.art/#/chapter-' + m[3] + '" target="_blank" rel="noopener">'
@@ -1001,6 +1032,43 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
              : '<a href="/editorials"><span class="lrft-dir">Next · the newest</span><span class="lrft-t">You are reading the latest editorial. Browse the archive</span></a>')
       + '</nav>';
     box.innerHTML = html;
+    var lnBox = box.querySelector('[data-ssr-ln]');
+    if (lnBox) {
+      var seenEp = {};
+      /* 3 Oct 2026 (Peter: "order relevance"): an episode whose title names a person FEATURED in this piece comes first
+         (Kate Vass's own Ch 2 episode on her interview), then by how many mentioned names its title carries */
+      var fold = function(t){ return String(t || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); };
+      var featNames = [], mentNames = [];
+      if (ssr) {
+        var wl = [].slice.call(ssr.querySelectorAll('.w-dyn-list'));
+        wl.forEach(function(l, i){ [].forEach.call(l.querySelectorAll('a[href*="/subjects/"]'), function(a){
+          var n = fold(a.textContent).trim(); if (n.length > 3) (i === 1 ? featNames : mentNames).push(n); }); });
+      }
+      var epScore = function(a){ var t = fold(a.textContent), sc = 0;
+        featNames.forEach(function(n){ if (t.indexOf(n) >= 0) sc += 10; });
+        mentNames.forEach(function(n){ if (t.indexOf(n) >= 0) sc += 1; });
+        return sc; };
+      ssrEps = ssrEps.map(function(a, i){ return { a: a, s: epScore(a), i: i }; })
+        .sort(function(x, y){ return (y.s - x.s) || (x.i - y.i); }).map(function(o){ return o.a; });
+      ssrEps.forEach(function(a){
+        var h = a.getAttribute('href'); if (seenEp[h]) return; seenEp[h] = 1;
+        var n = parseInt(a.getAttribute('data-n'), 10), mn = parseInt(a.getAttribute('data-min'), 10), t = a.textContent;
+        a.className = 'lrft-ln'; a.removeAttribute('data-n'); a.removeAttribute('data-min');
+        a.innerHTML = '<span class="ln-no">' + (isNaN(n) ? '' : ('0' + n).slice(-2)) + '</span>'
+          + '<span class="ln-t">' + esc(t) + '</span><span class="ln-badge">Listen</span>'
+          + '<span class="ln-len">' + (isNaN(mn) ? '' : mn + ' min') + '</span>';
+        lnBox.parentNode.insertBefore(a, lnBox);
+      });
+      lnBox.parentNode.removeChild(lnBox);
+    }
+    if (ssrGroups) {
+      [].forEach.call(box.querySelectorAll('[data-ssr]'), function(sp){
+        (ssrGroups[sp.getAttribute('data-ssr')] || []).forEach(function(a){
+          a.className = 'lrft-chip on'; a.removeAttribute('data-kind'); sp.appendChild(a);
+        });
+      });
+    }
+    if (ssr && ssr.parentNode && (ssrGroups || lnBox)) ssr.parentNode.removeChild(ssr);     /* only duplicates are left in it */
 
 
   /* ---------- marginalia: the archive whispers inside the column ---------- */
@@ -1479,4 +1547,25 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       '<a href="' + esc(w.qu) + '">' + esc(w.qt) + ' →</a></div>';   /* v2: who says it, then where (Peter, 2 Oct) */
     bio.parentNode.insertBefore(f, bio.nextSibling);
   }).catch(function () {});
+})();
+
+/* 3 Oct 2026 (SEO, Peter: "type each page"): subject pages ship WebPage JSON-LD whose "about" is a bare Thing. Give it
+   the subject's real type from its Kind line (Person / Organization / Place / CreativeWork / Event), and for people add
+   sameAs to their Le Random artist page when the template shows one. Search engines read rendered JSON-LD. */
+(function(){
+  try {
+    if (!/^\/subjects\//.test(location.pathname)) return;
+    var k = document.querySelector('.sj-kind'); if (!k) return;
+    var T = {Person:'Person', Organisation:'Organization', Place:'Place', Work:'CreativeWork', Exhibition:'ExhibitionEvent'};
+    var type = T[(k.textContent || '').trim()]; if (!type) return;
+    [].forEach.call(document.querySelectorAll('script[type="application/ld+json"]'), function(s){
+      var d; try { d = JSON.parse(s.textContent); } catch(e) { return; }
+      if (!d || d['@type'] !== 'WebPage' || !d.about) return;
+      d.about['@type'] = type;
+      var also = document.querySelector('a.sj-also[href]');
+      if (type === 'Person' && also && also.offsetParent !== null) d.about.sameAs = [also.href];
+      if (type === 'Person') d['@type'] = 'ProfilePage', d.mainEntity = d.about;
+      s.textContent = JSON.stringify(d);
+    });
+  } catch (e) {}
 })();
