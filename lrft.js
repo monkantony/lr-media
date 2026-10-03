@@ -506,6 +506,11 @@
    never took its matching shift. Declare the same two measurements, then the two bars agree. */
 :root { --frame:clamp(20px,4.4vw,80px); --maxw:1580px; }
 #lrtopbar *, #lrtopbar *::before, #lrtopbar *::after { margin:0; padding:0; box-sizing:border-box; }
+/* 3 Oct 2026 (Peter: the dark-mode button "looks shitty and cheap" on editorial, episode and subject pages): the reset
+   above outranks the theme menu's own class rules (site head lr_theme.js), so its frame and item padding fell to 0.
+   Give them back here so the menu matches the one in the /editorials header exactly. */
+#lrtopbar .lr-thm-menu { padding:6px; }
+#lrtopbar .lr-thm-it { padding:8px 10px; }
 #lrtopbar { box-sizing:border-box; color:#011015; font-family:'Ebgaramond','Ebgaramond','EB Garamond',Garamond,Georgia,serif; font-size:18px;
   line-height:1.5; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
 #lrtopbar a { color:inherit; text-decoration:none; }
