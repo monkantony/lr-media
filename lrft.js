@@ -414,7 +414,6 @@
 #lrft .lrft-card h3 { font-family:var(--lr-serif); font-weight:500; font-size:clamp(19px,2vw,25px); line-height:1.12; margin:7px 0 6px; }
 #lrft .lrft-card:hover h3 { text-decoration:underline; text-underline-offset:5px; }
 #lrft .lrft-by { font-family:var(--lr-sans); font-size:9.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--lr-ink70); display:block; }
-#lrft .lrft-sh { font-style:italic; font-size:13.5px; color:var(--lr-ink40); display:block; margin-top:7px; }
 #lrft .lrft-pn { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid var(--lr-ink); }
 #lrft .lrft-pn a { padding:18px 0 42px; }
 #lrft .lrft-pn a + a { text-align:right; border-left:1px solid var(--lr-hair); padding-left:18px; }
@@ -491,7 +490,6 @@
 .lrmg-in .lrmg-s::after { content:' →'; }
 .lrmg-in a:hover .lrmg-q, .lrmg-in a:hover .lrmg-s { color:#02B0F4; }
 
-.lrft-ln .ln-sh { grid-column:2 / -1; font-family:var(--lr-serif); font-style:italic; font-size:13.5px; color:rgba(1,16,21,.5); margin-top:2px; }
 .lrft-tl .tl-y { grid-column:1; }
 @media(max-width:640px){ .lrft-ln { grid-template-columns:44px minmax(0,1fr); } .lrft-ln .ln-badge, .lrft-ln .ln-len { grid-column:2; justify-self:start; } }
 
@@ -516,6 +514,10 @@
    one centred reading column about as wide as Claude's (610px, the same as the episode transcripts; Peter 3 Oct: "make it 610 for eds too"); figures, video and embeds keep
    the full column. Narrower screens are unaffected (the column is already narrower than this). */
 .article > .w-richtext > :not(figure):not(.w-embed):not(.w-richtext-figure-type-video) { max-width:610px; margin-left:auto; margin-right:auto; }
+/* 3 Oct 2026 (Peter): embeds sit centred in the column: tweets (before and after the widget renders), Instagram, TikTok, fixed-width iframes */
+.text-garamond.w-richtext .twitter-tweet, .text-garamond.w-richtext .twitter-tweet-rendered,
+.text-garamond.w-richtext .instagram-media, .text-garamond.w-richtext .tiktok-embed { margin-left:auto !important; margin-right:auto !important; }
+.text-garamond.w-richtext .w-embed > iframe, .text-garamond.w-richtext .w-embed > div > iframe { display:block; margin-left:auto; margin-right:auto; }
 .article > .lrap-home { width:100%; max-width:610px; margin-left:auto; margin-right:auto; }   /* the Listen player sits on the same column */
 #lrtopbar { box-sizing:border-box; color:#011015; font-family:'Ebgaramond','Ebgaramond','EB Garamond',Garamond,Georgia,serif; font-size:18px;
   line-height:1.5; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
@@ -1001,8 +1003,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       var fig = r[5] ? '<figure><img src="' + esc(r[5]) + '" alt="' + esc(r[2]) + '" loading="lazy"></figure>' : '';
       return '<a class="lrft-card" href="' + art(p[0]) + '">' + fig
         + '<span class="lrft-meta"><em>' + ('000' + r[0]).slice(-3) + '</em>' + esc(r[1]) + ' · ' + esc(r[3]) + '</span>'
-        + '<h3>' + esc(r[2]) + '</h3><span class="lrft-by">By ' + esc(r[4]) + '</span>'
-        + '<span class="lrft-sh">Shared subjects: ' + esc(p[1].join(', ')) + '</span></a>';
+        + '<h3>' + esc(r[2]) + '</h3><span class="lrft-by">By ' + esc(r[4]) + '</span></a>';   /* 3 Oct 2026 (Peter): no "Shared subjects" line */
     }).join('');
     if (cards) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Read next</h2><div class="lrft-rn">' + cards + '</div></section>';
     var lnRows = (me.ln || []).map(function(l){
@@ -1010,11 +1011,12 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
         + '<span class="ln-no">' + ('0' + l[0]).slice(-2) + '</span>'
         + '<span class="ln-t">' + esc(l[1]) + '</span>'
         + '<span class="ln-badge">Listen</span>'
-        + '<span class="ln-len">' + Math.round((l[2] || 0) / 60) + ' min</span>'
-        + '<span class="ln-sh">Shared subjects: ' + esc((l[3] || []).join(', ')) + '</span></a>';
+        + '<span class="ln-len">' + Math.round((l[2] || 0) / 60) + ' min</span></a>';
     }).join('');
     /* 3 Oct 2026: episodes whose "Read next" holds this editorial are rendered into #lrft-ssr by the template (data-n,
-       data-min); when present they ARE the Listen next rows (real links in the page source), else the old rows stay */
+       data-min); when present they ARE the Listen next rows (real links in the page source), else the old rows stay.
+       At most LN_MAX are shown (Peter, 3 Oct: the Autumn preview sat in 30 episodes' Read next and listed all 30) */
+    var LN_MAX = 3;
     var ssrEps = ssr ? [].slice.call(ssr.querySelectorAll('a[href*="/episodes/"]')) : [];
     if (ssrEps.length) lnRows = '<div data-ssr-ln></div>';
     if (lnRows) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Listen next</h2>' + lnRows + '</section>';
@@ -1050,8 +1052,9 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
         return sc; };
       ssrEps = ssrEps.map(function(a, i){ return { a: a, s: epScore(a), i: i }; })
         .sort(function(x, y){ return (y.s - x.s) || (x.i - y.i); }).map(function(o){ return o.a; });
+      var shown = 0;
       ssrEps.forEach(function(a){
-        var h = a.getAttribute('href'); if (seenEp[h]) return; seenEp[h] = 1;
+        var h = a.getAttribute('href'); if (seenEp[h] || shown >= LN_MAX) return; seenEp[h] = 1; shown++;
         var n = parseInt(a.getAttribute('data-n'), 10), mn = parseInt(a.getAttribute('data-min'), 10), t = a.textContent;
         a.className = 'lrft-ln'; a.removeAttribute('data-n'); a.removeAttribute('data-min');
         a.innerHTML = '<span class="ln-no">' + (isNaN(n) ? '' : ('0' + n).slice(-2)) + '</span>'
