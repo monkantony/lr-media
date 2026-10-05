@@ -72,7 +72,7 @@
   }
 
   const cache = {}, sync = {};   // sync: the same data once it has arrived, for code that cannot wait (the carry card below)
-  const json = path => cache[path] || (cache[path] = fetch((window.LR_DATA && path.indexOf('data/') === 0 ? window.LR_DATA : '') + path, { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error(path + ' ' + r.status); return r.json(); }));
+  const json = path => cache[path] || (cache[path] = fetch((window.LR_DATA && path.indexOf('data/') === 0 ? window.LR_DATA : '') + path, { cache: window.LR_DATA ? 'default' : 'no-cache' }).then(r => { if (!r.ok) throw new Error(path + ' ' + r.status); return r.json(); }));
   const data = {
     // titles arrive as HTML; a few carry a double-escaped entity ('&amp;amp;'), repaired here once for every view
     index: () => cache.__ix || (cache.__ix = json('data/index.json').then(ix => { ix.forEach(r => { if (r.th && r.th.indexOf('&amp;') >= 0) r.th = fixHtml(r.th); }); return (sync.ix = ix); })),

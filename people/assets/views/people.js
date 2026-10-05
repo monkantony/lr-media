@@ -63,8 +63,10 @@
   const TITLE = 'People · Le Random';
   /* LR-PEOPLE: the archive side of each person (editorials with the sentence naming them, episodes, nearest people,
      subjects), built by build_lr_people.py. The chart does not wait for it. */
-  let ARCH = null;
-  const archP = fetch((window.LR_DATA || '') + 'data/people-archive.json', { cache: 'no-cache' }).then(r => (r.ok ? r.json() : {})).catch(() => ({})).then(a => (ARCH = a));
+  const ARCH = {}, SHARDS = {}; let LAYOUT = null;
+  const shardOf = k => { let h = 0; for (let i = 0; i < k.length; i++) h = (h * 31 + k.charCodeAt(i)) >>> 0; return h % 64; };
+  const shard = (dir, k) => { const n = shardOf(k), key = dir + n; return SHARDS[key] || (SHARDS[key] = fetch((window.LR_DATA || '') + 'data/' + dir + '/' + n + '.json').then(r => (r.ok ? r.json() : {})).catch(() => ({}))); };
+  const archFor = k => shard('arch', k).then(a => { if (a[k]) ARCH[k] = a[k]; return ARCH; });
   const LRWEB = 'https://www.lerandom.art';
   function statsOf(p, detail) {
     const B = n => `<b>${fmt(n)}</b>`, pl = (n, a, b) => (n === 1 ? a : b), rc = p.rc;
@@ -109,8 +111,8 @@
   let uiRects = [];
 
   // ── load ─────────────────────────────────────────────────────────────────
-  Promise.all([S.data.index(), S.data.people(), S.data.chapters(), S.data.scenes(), S.data.latent(), S.data.editorials(), S.data.pods(), S.data.threads(), S.data.bySlug(), S.data.personProfiles()])
-    .then(init).catch(err => {
+  Promise.all([S.data.index(), S.data.people(), S.data.chapters(), S.data.scenes(), S.data.latent(), S.data.editorials(), S.data.pods(), S.data.threads(), S.data.bySlug(), S.data.personProfiles(), fetch((window.LR_DATA || '') + 'data/layout.json').then(r => (r.ok ? r.json() : null)).catch(() => null)])
+    .then(a => { LAYOUT = a[10]; return init(a); }).catch(err => {
       console.warn('people: data failed', err);
       $('#pp-loading').innerHTML = '<span class="lab">The people data could not be loaded.</span>';
     });
@@ -160,13 +162,13 @@
       // title does, the middle of every moment that names them. Leonardo sits in 1509, not among those who cite him.
       const nn = norm(raw.n), words = nn.split(/\s+/), sur = words[words.length - 1];
       const reFull = nn.length >= 4 ? wordRe(nn) : null, reSur = sur.length >= 4 && words.length > 1 ? wordRe(sur) : null;
-      let own = reFull ? ms.filter(m => reFull.test(norm(m.t))) : [];
-      if (!own.length && reSur) own = ms.filter(m => reSur.test(norm(m.t)));
+      let own = reFull ? ms.filter(m => reFull.test((m.nt || (m.nt = norm(m.t))))) : [];
+      if (!own.length && reSur) own = ms.filter(m => reSur.test((m.nt || (m.nt = norm(m.t)))));
       const anc = own.length ? own[Math.floor((own.length - 1) / 2)] : med;
       let cl = anc.cl, best = -1; clN.forEach((n, k) => { if (n > best || (n === best && k === anc.cl)) { best = n; cl = k; } });
       if (ctxAnc) { cl = raw.hcl != null ? raw.hcl : anc.cl; clN.set(cl, 1); }
       // moments flagged as women artists’ whose titles carry this full name (a fact about the moments, not a record of gender)
-      const wt = reFull ? ms.filter(m => m.f.includes('women') && reFull.test(norm(m.t))).length : 0;
+      const wt = reFull ? ms.filter(m => m.f.includes('women') && reFull.test((m.nt || (m.nt = norm(m.t))))).length : 0;
       const p = { i: 0, k: raw.k, n: raw.n, g: raw.g || '', wt, tok, nn, m: ms, cnt: ms.length, med, anc, own, c: anc.c, cl, chN, clN,
         first: ms[0] || anc, last: ms[ms.length - 1] || anc, co: new Map(), coW: new Map(), vis: 1, visT: 1,
         ad: raw.ad || [], pd: raw.pd || [], ctx: !!ctxAnc, yrs: raw.yrs || '', self: !!raw.self, rc: raw.rc || [0, 0, 0, 0, 0], coBy: { m: new Map(), a: new Map(), p: new Map() } };
@@ -204,9 +206,10 @@
     RANKED.forEach((p, i) => { p.rank = i; });
     BYSIZE = P.slice().sort((a, b) => a.tot - b.tot);
     P.forEach(p => {
-      p.coList = Array.from(p.co, ([q, n]) => ({ q, n })).sort((a, b) => b.n - a.n || a.q.rank - b.q.rank);
-      p.coSet = new Set(p.co.keys());
-      p.coTop = new Set(p.coList.slice(0, 28).map(x => x.q));
+      let L = null, T = null, S0 = null;
+      Object.defineProperty(p, 'coList', { configurable: true, get: () => L || (L = Array.from(p.co, ([q, n]) => ({ q, n })).sort((a, b) => b.n - a.n || a.q.rank - b.q.rank)) });
+      Object.defineProperty(p, 'coSet', { configurable: true, get: () => S0 || (S0 = new Set(p.co.keys())) });
+      Object.defineProperty(p, 'coTop', { configurable: true, get: () => T || (T = new Set(p.coList.slice(0, 28).map(x => x.q))) });
     });
   }
 
@@ -275,6 +278,7 @@
 
   // ── layout: a polar force simulation, deterministic ──────────────────────
   function runLayout() {
+    if (LAYOUT && LAYOUT.n === P.length && P.every(p => LAYOUT.xy[p.k])) { P.forEach(p => { const v = LAYOUT.xy[p.k]; p.x = v[0]; p.y = v[1]; p.r = Math.hypot(p.x, p.y); p.a = Math.atan2(p.x, -p.y); }); return; }
     const N = P.length, rnd = rng(1083);
     const X = new Float64Array(N), Y = new Float64Array(N), VX = new Float64Array(N), VY = new Float64Array(N);
     const RT = new Float64Array(N), LO = new Float64Array(N), HI = new Float64Array(N), RAD = new Float64Array(N), AC = new Float64Array(N), AH = new Float64Array(N), DEG = new Float64Array(N);
@@ -338,6 +342,7 @@
       for (let i = 0; i < N; i++) { const lim = SLOT + RAD[i] + 0.003; if (Y[i] > 0 && Math.abs(X[i]) < lim) { X[i] = (X[i] < 0 ? -1 : 1) * lim; VX[i] = 0; } }
     }
     P.forEach((p, i) => { p.x = X[i]; p.y = Y[i]; p.r = Math.hypot(X[i], Y[i]); p.a = Math.atan2(X[i], -Y[i]); });
+    window.__LR_LAYOUT_OUT = { n: P.length, xy: Object.fromEntries(P.map(p => [p.k, [+p.x.toFixed(5), +p.y.toFixed(5)]])) };
   }
 
   // polar quadratic: a curve that bends around the pupil instead of crossing it
@@ -372,7 +377,7 @@
     const reFull = full.length >= 4 ? wordRe(full) : null, reSur = sur.length >= 4 ? wordRe(sur) : null;
     const mid = (p.m.length - 1) / 2; let best = p.med, bs = -1e9;
     p.m.forEach((m, i) => {
-      const t = norm(m.t); let s = 0;
+      const t = (m.nt || (m.nt = norm(m.t))); let s = 0;
       if (reFull && reFull.test(t)) s += 4; else if (reSur && reSur.test(t)) s += 2.5;
       if (m.f.includes('allTime')) s += 2; if (m.f.includes('top')) s += 1;
       if (m.sf > 0) s += 0.3;
@@ -1403,7 +1408,7 @@
     if (st.sel && st.src !== (applyFilters.last || "")) {
       const p = st.sel, to = { m: '#pv-mom', a: '#pv-aeds', p: '#pv-apods' }[st.src];
       buildLife(p); st.selT0 = now(); renderPerson(p);
-      if (to) archP.then(() => requestAnimationFrame(() => { const el = $(to, scroller); if (el && st.sel === p) scroller.scrollTo({ top: Math.max(0, el.offsetTop - 64), behavior: RM ? 'auto' : 'smooth' }); }));
+      if (to) archFor(p.k).then(() => requestAnimationFrame(() => { const el = $(to, scroller); if (el && st.sel === p) scroller.scrollTo({ top: Math.max(0, el.offsetTop - 64), behavior: RM ? 'auto' : 'smooth' }); }));
     }
     applyFilters.last = st.src;
     measureUI(); kick();
@@ -1611,7 +1616,7 @@
 
   /* LR-PEOPLE: the archive side of the panel. Editorials each carry the sentence that names the person. */
   function fillArchive(p) {
-    archP.then(() => {
+    archFor(p.k).then(() => {
       if (st.sel !== p) return;
       const A = (ARCH && ARCH[p.k]) || { a: [], p: [], near: [] };
       const bio = $('#pv-bio'); if (bio && A.bio) { bio.textContent = A.bio; bio.hidden = false; }
@@ -1714,7 +1719,7 @@
   // tags, editorials and podcast episodes live in the chapter text files: fetch only the chapters this person touches
   function fillText(p) {
     const chs = Array.from(new Set(p.m.map(m => m.c)));
-    Promise.all(chs.map(c => S.data.text(c)).concat([archP])).then(ts => {
+    Promise.all([shard('ptext', p.k), archFor(p.k)]).then(([PT0]) => { const ts = chs.map(() => PT0);
       if (st.sel !== p) return;
       const tm = now();
       const T = new Map(chs.map((c, i) => [c, ts[i]]));
@@ -1972,6 +1977,7 @@
   // the chapter texts (editorials, episodes, subjects of a person's moments) are parsed ahead, one chapter per idle
   // moment once the chart and its scene have settled, so the first person someone picks opens without a hitch
   function warmText() {
+    if (window.LR_EMBED) return;
     const idle = window.requestIdleCallback || (f => setTimeout(() => f({ timeRemaining: () => 8 }), 60));
     let c = 0;
     const next = () => { if (++c > 10) return; S.data.text(c).then(() => idle(next, { timeout: 2500 }), () => idle(next, { timeout: 2500 })); };
