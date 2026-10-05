@@ -5,3 +5,12 @@
 @media (min-width:1400px){.pp{--panel-w:clamp(440px,32vw,780px)}}
 @media (min-width:1800px){.pp-scroll{zoom:1.12}}
 @media (min-width:2400px){.pp-scroll{zoom:1.25}}
+/* LR-DOCS: the pieces that talk about a moment, a piece's own panel, what is on view now */
+.pm-br{display:block;margin-top:4px;font:400 12.5px/1.4 var(--lr-sans);color:var(--lr-dim)}
+.pm-br a{color:var(--lr-ink);text-decoration:underline;text-decoration-color:rgba(255,76,0,.55);text-underline-offset:2px}
+.pm-br a:hover{text-decoration-color:#FF4C00}
+.pv-name.pv-doc-t{font-size:clamp(26px,2.3vw,32px);line-height:1.12;text-wrap:balance}
+.pv-ib.pv-cta{display:inline-flex;gap:6px;width:auto;margin:4px 0 6px;background:#011015;color:#FCFBF7;border-color:#011015}
+.pv-ib.pv-cta:hover{background:#FF4C00;border-color:#FF4C00;color:#FCFBF7}
+.pv-bar .pv-ib + .pv-ib{margin-left:8px}
+.t-br{color:#FF8A5C}

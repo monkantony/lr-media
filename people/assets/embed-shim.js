@@ -23,6 +23,7 @@
     if (!a || e.defaultPrevented || e.button > 0) return;
     var h = a.getAttribute('href') || '', pg = a.getAttribute('data-go') || '', mo = a.getAttribute('data-moment');
     if (a.hasAttribute('data-person')) return;                                   // people.js chooses them
+    if (a.hasAttribute('data-doc') && window.LR_DOC_OK && window.LR_DOC_OK(a.getAttribute('data-doc'))) return;   // a piece's constellation
     if (!mo && !pg && h.charAt(0) === '#') {                                     // an anchor in the panel
       e.preventDefault();
       var el = h.length > 1 && document.getElementById(h.slice(1));

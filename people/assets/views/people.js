@@ -597,6 +597,7 @@
     const I = t - st.introT0;
     if (!RM && I < 2600) busy = true;
     if (st.sel && t - st.selT0 < lifeDur(st.sel) + 900) busy = true;
+    if (st.subj && t - st.subj.t0 < 2400) busy = true;
     if (t - st.lensT0 < 1100) busy = true;
     if (busy) raf = requestAnimationFrame(frame);
   }
@@ -727,6 +728,7 @@
     }
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(buf, 0, 0); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     g = ctx;
+    drawDocs(K, ox, oy, fade); if (st.subj) drawSubj(t, I, K, ox, oy, fade, kz);
     if (st.sel && life) { drawCoLinks(t, K, ox, oy, fade); drawStars(I, K, ox, oy, fade, kz, life.stars, false); }
     drawHoverLinks(K, ox, oy, fade);
     drawThread(t, K, ox, oy, fade);
@@ -1203,6 +1205,7 @@
       const dx = ox + q.x * K - x, dy = oy + q.y * K - y, d = Math.sqrt(dx * dx + dy * dy), rr = (touch ? 13 : 7);
       if (d < rr && d / rr < bd) { bd = d / rr; best = { type: 'moment', m: q.m }; }
     });
+    if (!best) { const hd0 = hitDoc(x, y, touch); if (hd0) return hd0; }
     for (let i = 0; i < P.length; i++) {
       const p = P[i]; if (p.vis < 0.5) continue;
       const dx = ox + p.x * K - x, dy = oy + p.y * K - y, rr = p.sz * kz + tol, d2 = dx * dx + dy * dy;
@@ -1229,7 +1232,7 @@
     }
     return null;
   }
-  const sameHit = (a, b) => a === b || (a && b && a.type === b.type && a.p === b.p && a.m === b.m && a.c === b.c && a.s === b.s);
+  const sameHit = (a, b) => a === b || (a && b && a.type === b.type && a.p === b.p && a.d === b.d && a.m === b.m && a.c === b.c && a.s === b.s);
 
   function setHover(h, x, y) {
     if (!sameHit(h, st.hover)) { st.hover = h; kick(); }
@@ -1250,7 +1253,9 @@
       const m = h.m, ps = m.people.slice().sort((a, b) => a.rank - b.rank), nm = ps.slice(0, 4).map(q => esc(q.n));
       const names = !ps.length ? 'Names no one on the chart' : 'Names ' + (ps.length <= 4 ? (nm.length > 1 ? nm.slice(0, -1).join(', ') + ' and ' + nm[nm.length - 1] : nm[0]) : nm.join(', ') + ` and ${fmt(ps.length - 4)} more`);
       html = `<p class="t-k"><i style="background:${CH_HEX[m.c]}"></i><span class="lab">${esc(m.y)} &middot; ${esc(CH[m.c - 1].years)} ring</span></p><p class="t-n">${m.th}</p>
-        <p class="t-m">${names}</p><p class="t-a">Click to open the moment</p>`;
+        <p class="t-m">${names}</p>${bridgeTip(m)}<p class="t-a">Click to open the moment</p>`;
+    } else if (h.type === 'doc') {
+      html = docTip(h.d);
     } else if (h.type === 'pupil') {
       if (!win) return hideTip();
       html = `<p class="t-k"><span class="lab">In the window</span></p><p class="t-n">${esc(win.sc.title)}</p><p class="t-m">${esc(win.sc.blurb)}</p>
@@ -1278,6 +1283,7 @@
     const h = hit(x, y, touch); hideTip();
     if (!h) { if (st.sel) select(null); return; }
     if (h.type === 'star') { select(h.p === st.sel ? null : h.p); if (isPhone() && h.p) setSheet(false); }
+    else if (h.type === 'doc') enterDoc(h.d);
     else if (h.type === 'moment') S.go('moment', { slug: h.m.s });
     else if (h.type === 'pupil') { if (sceneOK) setThrough(true); }
     else if (h.type === 'ring') setEra(st.era === h.c ? 0 : h.c);
@@ -1553,7 +1559,7 @@
       const st2 = m.f.includes('allTime') ? '<span class="st">All-Time</span>' : m.f.includes('top') ? '<span class="st">Top</span>' : '';
       rows += `<li class="pm" data-slug="${esc(m.s)}" style="--c:${CH_INK[m.c]}">
         ${thumb(m)}
-        <span class="pm-tx"><span class="pm-y">${esc(m.y)}${st2}</span><a class="pm-t" href="${S.href('moment', { slug: m.s })}" data-moment="${esc(m.s)}">${m.th}</a></span>
+        <span class="pm-tx"><span class="pm-y">${esc(m.y)}${st2}</span><a class="pm-t" href="${S.href('moment', { slug: m.s })}" data-moment="${esc(m.s)}">${m.th}</a>${bridgeOf(m)}</span>
         <button class="pm-w${win && win.m === m ? ' is-on' : ''}" type="button" data-watch="${esc(m.s)}" aria-label="Show the live scene for ${esc(m.t)} in the window" title="Show its live scene in the window">${EYE}</button></li>`;
     });
       rows += '</ol></section>';
@@ -1763,7 +1769,7 @@
       if (rEl) {
         rEl.innerHTML = `<h2 class="lab">Related moments <small>linked and echoed</small></h2>${rels.length ? `<ol class="pv-ms">${rels.map(x => { const m = BY.get(x.s); return `<li class="pm" style="--c:${CH_INK[m.c]}">
           ${thumb(m)}
-          <span class="pm-tx"><span class="pm-y">${esc(m.y)} &middot; ${x.k === 'Linked' ? 'Linked from their moments' : 'Echo, Chapter ' + m.c}</span><a class="pm-t" href="${S.href('moment', { slug: m.s })}" data-moment="${esc(m.s)}">${m.th}</a></span>
+          <span class="pm-tx"><span class="pm-y">${esc(m.y)} &middot; ${x.k === 'Linked' ? 'Linked from their moments' : 'Echo, Chapter ' + m.c}</span><a class="pm-t" href="${S.href('moment', { slug: m.s })}" data-moment="${esc(m.s)}">${m.th}</a>${bridgeOf(m)}</span>
           <button class="pm-w${win && win.m === m ? ' is-on' : ''}" type="button" data-watch="${esc(m.s)}" aria-label="Show the live scene for ${esc(m.t)} in the window" title="Show its live scene in the window">${EYE}</button></li>`; }).join('')}</ol>
           <p class="pv-note" style="font-size:14px">Echoes are the nearest moments in idea space at least two chapters away.</p>` : '<p class="pv-empty">No related moments beyond their own.</p>'}`;
         thumbs(rEl);
@@ -1865,6 +1871,8 @@
     // delegated clicks for stage chips and the panel
     document.addEventListener('click', e => {
       const t = e.target; if (!t.closest) return;
+      const dc = t.closest('[data-doc]');
+      if (dc && !e.metaKey && !e.ctrlKey && !e.shiftKey) { const d = DOCS.by.get(dc.dataset.doc); if (d && d.hm) { e.preventDefault(); enterDoc(d); return; } }
       const pa = t.closest('[data-person]');
       if (pa && !e.metaKey && !e.ctrlKey && !e.shiftKey) { e.preventDefault(); const p = PT.get(pa.dataset.person); if (p) { if (p.visT < 1) { st.era = 0; st.region = -1; st.min = 1; st.src = ''; applyFilters(); } select(p); } return; }
       const tg = t.closest('[data-subject],[data-tag],[data-q]');
@@ -1886,6 +1894,7 @@
       const a = act.dataset.act;
       if (a === 'clear') { st.era = 0; st.region = -1; st.min = 1; st.src = ''; applyFilters(); }
       else if (a === 'all') select(null);
+      else if (a === 'docback') docBack();
       else if (a === 'lens') setLens(!st.lens);
       else if (a === 'through') setThrough(true);
       else if (a === 'more-subj') { const box = act.parentNode; box.classList.add('is-all'); act.remove(); }
@@ -1959,11 +1968,140 @@
   };
 
   // ── start: the chart assembles outward from the pupil, as history does ──
-  // ── LR-SUBJECTS: a subject's own view (places, works, exhibitions, organisations, themes, techniques) ──
+  // ── LR-SUBJECTS + LR-DOCS (5 Oct 2026), inserted into people.js by build_embed.py ──
+  // A subject page that is not a person opens the chart on its subject (places, works, exhibitions, organisations,
+  // themes, techniques). Editorials and podcast episodes are marks on the chart, set beside the moment they are about
+  // (data/docs.json, build_docs.py); a mark opens its own constellation. A Timeline moment lists the pieces that talk
+  // about it. Peter: "how can editorials and podcast be integrated into the view? after all, it's really about
+  // marrying those 3".
+  const ED_HEX = '#FF4C00', EP_HEX = '#02B0F4';
+  const DOCS = { list: [], by: new Map(), key: new Map(), byMoment: new Map(), ready: false };
+  function loadDocs() {
+    fetch((window.LR_DATA || '') + 'data/docs.json', { cache: 'default' }).then(r => (r.ok ? r.json() : null)).then(j => {
+      if (!j) return;
+      const at = new Map();
+      j.d.forEach(d => {
+        d.hm = BY.get(d.home) || null;
+        d.pp = (d.ppl || []).map(t => PT.get(t)).filter(Boolean);
+        d.gs = new Set((d.gu || []).map(t => PT.get(t)).filter(Boolean));
+        d.lkm = (d.lk || []).map(s => BY.get(s)).filter(Boolean);
+        const lk = new Set(d.lkm);
+        d.relm = (d.rel || []).map(s => BY.get(s)).filter(m => m && !lk.has(m));
+        d.ancm = (d.anc || []).map(s => BY.get(s)).filter(Boolean);
+        DOCS.list.push(d); DOCS.by.set(d.id, d); DOCS.key.set(d.k + ':' + (d.k === 'a' ? d.s : d.no), d);
+        if (d.hm) { const g = at.get(d.hm) || []; g.push(d); at.set(d.hm, g); }
+        // a moment is written about in a piece that sits beside it, or that links to it among its strongest moments
+        const strong = new Set([d.hm].concat(d.ancm.slice(0, 3).filter(m => lk.has(m))));
+        new Set(d.lkm.concat([...strong])).forEach(m => { if (!m) return; const l = DOCS.byMoment.get(m) || []; l.push({ d, w: strong.has(m) }); DOCS.byMoment.set(m, l); });
+      });
+      // pieces beside the same moment fan out around it
+      at.forEach((list, m) => list.forEach((d, i) => {
+        const a = (m.i * 2.39996 + i * 2.39996) % TAU, r = 0.0105 * (1 + 0.55 * Math.floor(i / 6));
+        d.x = m.px + r * Math.cos(a); d.y = m.py + r * Math.sin(a);
+      }));
+      DOCS.byMoment.forEach(l => l.sort((a, b) => (b.w - a.w) || (a.d.k < b.d.k ? -1 : a.d.k > b.d.k ? 1 : 0) || (b.d.no - a.d.no)));
+      DOCS.ready = true;
+      if (st.subj && !st.subj.doc) st.subj.docs = docsOfDef(st.subj.def);
+      if (st.subj) { if (st.subj.doc) renderDoc(); else renderSubject(); }
+      else if (st.sel) $$('.pm[data-slug]', scroller).forEach(addBridge);
+      kick();
+    }).catch(() => {});
+  }
+  const docName = d => (d.k === 'a' ? 'Editorial' : 'Podcast episode');
+  const docLink = d => `<a class="pm-doc" href="${LRWEB}/${d.k === 'a' ? 'editorial' : 'episodes'}/${esc(d.s)}" data-doc="${esc(d.id)}">${esc(d.t)}</a>`;
+  const andMore = (l, n) => l.slice(0, n).map(x => docLink(x.d)).join(', ') + (l.length > n ? ` and ${fmt(l.length - n)} more` : '');
+  function bridgeOf(m) {
+    const cur = st.subj && st.subj.doc, l = (DOCS.byMoment.get(m) || []).filter(x => x.d !== cur); if (!l.length) return '';
+    const wa = l.filter(x => x.w && x.d.k === 'a'), pod = l.filter(x => x.d.k === 'p'), ma = l.filter(x => !x.w && x.d.k === 'a'), out = [];
+    if (wa.length) out.push(`Written about in ${andMore(wa, 2)}`);
+    if (pod.length) out.push(`On the podcast: ${andMore(pod, 2)}`);
+    if (ma.length) out.push(`Mentioned in ${andMore(ma, 2)}`);
+    return `<span class="pm-br">${out.join('<br>')}</span>`;
+  }
+  function addBridge(row) {
+    if (row.querySelector('.pm-br')) return;
+    const m = BY.get(row.dataset.slug), tx = row.querySelector('.pm-tx'); if (!m || !tx) return;
+    const h = bridgeOf(m); if (h) tx.insertAdjacentHTML('beforeend', h);
+  }
+  function bridgeTip(m) {
+    const l = DOCS.byMoment.get(m); if (!l || !l.length) return '';
+    const a = l.filter(x => x.d.k === 'a').length, p = l.length - a;
+    return `<p class="t-m t-br">${[a ? `${fmt(a)} ${a === 1 ? 'editorial' : 'editorials'}` : '', p ? `${fmt(p)} podcast ${p === 1 ? 'episode' : 'episodes'}` : ''].filter(Boolean).join(' &middot; ')}</p>`;
+  }
+  // the marks that light with what is open: a piece, a subject's pieces, a person's pieces
+  function docsLit() {
+    const sj = st.subj;
+    if (sj && sj.doc) return new Set([sj.doc]);
+    if (sj) return sj.docs;
+    if (st.sel) { const p = st.sel, s = new Set(); p.ad.forEach(n => { const d = DOCS.by.get('a' + n); if (d) s.add(d); }); p.pd.forEach(n => { const d = DOCS.by.get('p' + n); if (d) s.add(d); }); return s; }
+    return null;
+  }
+  function markSize() { return clamp(3.1 * Math.pow(cam.k, 0.32) * starScale, 2.6, 7); }
+  function drawDocs(K, ox, oy, fade) {
+    if (!DOCS.ready || st.thP > 0) return;
+    const lit = docsLit(), s = markSize(), hd = st.hover && st.hover.type === 'doc' ? st.hover.d : null;
+    const one = (d, on) => {
+      const x = ox + d.x * K, y = oy + d.y * K; if (x < -8 || y < -8 || x > W + 8 || y > H + 8) return;
+      if (st.era && d.hm.c !== st.era && !on) g.globalAlpha = fade * 0.12;
+      else g.globalAlpha = fade * (lit ? (on ? 1 : 0.13) : 0.82);
+      g.fillStyle = d.k === 'a' ? ED_HEX : EP_HEX; g.strokeStyle = INK; g.lineWidth = 1;
+      g.beginPath(); if (d.k === 'a') g.rect(x - s, y - s, 2 * s, 2 * s); else g.arc(x, y, s * 1.12, 0, TAU);
+      g.fill(); g.stroke();
+      if (on && lit || d === hd) { g.globalAlpha *= d === hd ? 1 : 0.55; g.strokeStyle = '#FCFBF7'; g.lineWidth = 1; g.beginPath(); g.arc(x, y, s * 2.2, 0, TAU); g.stroke(); }
+    };
+    DOCS.list.forEach(d => { if (d.hm && !(lit && lit.has(d))) one(d, false); });
+    if (lit) lit.forEach(d => { if (d.hm) one(d, true); });
+    if (hd && !(st.subj && st.subj.doc === hd)) {      // a piece under the pointer: a light preview of what it names
+      const x = ox + hd.x * K, y = oy + hd.y * K; g.globalAlpha = fade * 0.9; g.lineCap = 'round';
+      g.beginPath(); hd.pp.forEach(q => { if (q.vis < 0.3) return; g.moveTo(x, y); g.lineTo(ox + q.x * K, oy + q.y * K); });
+      hd.lkm.forEach(m => { g.moveTo(x, y); g.lineTo(ox + m.px * K, oy + m.py * K); });
+      g.strokeStyle = 'rgba(1,16,21,.8)'; g.lineWidth = 2.6; g.stroke(); g.strokeStyle = 'rgba(252,251,247,.8)'; g.lineWidth = 0.9; g.stroke();
+      g.lineCap = 'butt';
+    }
+    g.globalAlpha = 1;
+  }
+  function hitDoc(x, y, touch) {
+    if (!DOCS.ready) return null;
+    const K = V.K, ox = V.ox, oy = V.oy, rr = markSize() + (touch ? 9 : 3), lit = docsLit();
+    let best = null, bd = rr * rr;
+    DOCS.list.forEach(d => {
+      if (!d.hm || (lit && !lit.has(d) && st.subj && st.subj.doc)) return;
+      const dx = ox + d.x * K - x, dy = oy + d.y * K - y, d2 = dx * dx + dy * dy;
+      if (d2 < bd) { bd = d2; best = d; }
+    });
+    return best ? { type: 'doc', d: best } : null;
+  }
+  function docTip(d) {
+    const m = d.hm, n = d.pp.length, k = d.lkm.length;
+    return `<p class="t-k"><i style="background:${d.k === 'a' ? ED_HEX : EP_HEX}"></i><span class="lab">${docName(d)} &middot; ${esc(d.d)}</span></p><p class="t-n">${esc(d.t)}</p>
+      <p class="t-m">${[n ? `Mentions ${fmt(n)} ${n === 1 ? 'person' : 'people'}` : '', k ? `${fmt(k)} Timeline ${k === 1 ? 'moment' : 'moments'}` : ''].filter(Boolean).join(' and ')}</p>
+      <p class="t-m">Beside ${m.th}, ${esc(m.y)}</p><p class="t-a">Click for its constellation</p>`;
+  }
+
+  function docsOfDef(def) {
+    const docs = new Set();
+    (def.a || []).forEach(x => { const d = DOCS.key.get('a:' + x[1]); if (d) docs.add(d); });
+    (def.p || []).forEach(x => { const d = DOCS.key.get('p:' + x[0]); if (d) docs.add(d); });
+    return docs;
+  }
+  window.LR_DOC_OK = id => { const d = DOCS.by.get(id); return !!(d && d.hm); };
+  // ── a subject ──
   function enterSubject(def) {
     const ms = (def.m || []).map(s => BY.get(s)).filter(Boolean).sort((a, b) => a.yn - b.yn || a.i - b.i);
     const cnt = new Map(); ms.forEach(m => (m.people || []).forEach(q => cnt.set(q, (cnt.get(q) || 0) + 1)));
-    st.subj = { def, ms, cnt, ps: ms.length ? new Set(cnt.keys()) : null };
+    // its constellation: the people it brings together, joined where they share one of its moments
+    // (a moment naming many people counts for less, or an exhibition list becomes a hairball)
+    const top = Array.from(cnt, ([q, n]) => ({ q, n })).sort((a, b) => b.n - a.n || a.q.rank - b.q.rank).slice(0, 24).map(x => x.q), topS = new Set(top), ew = new Map();
+    ms.forEach(m => {
+      const ps = (m.people || []).filter(q => topS.has(q)), w = 1 / Math.max(1, (m.people || []).length - 1);
+      for (let i = 0; i < ps.length; i++) for (let j = i + 1; j < ps.length; j++) {
+        const a = ps[i].i < ps[j].i ? ps[i] : ps[j], b = a === ps[i] ? ps[j] : ps[i], k = a.i + ':' + b.i, e = ew.get(k) || { a, b, w: 0 };
+        e.w += w; ew.set(k, e);
+      }
+    });
+    const edges = Array.from(ew.values()).sort((x, y) => y.w - x.w).slice(0, 48).map(e => { const c = ctrl(e.a.x, e.a.y, e.b.x, e.b.y); return Object.assign(e, { cx: c[0], cy: c[1] }); });
+    const docs = docsOfDef(def);
+    st.subj = { def, ms, cnt, ps: ms.length ? new Set(cnt.keys()) : null, edges, stars: top.slice().sort((a, b) => a.cnt - b.cnt), docs, t0: now() };
     st.sel = null; life = null; st.selT0 = now(); st.hoverMoment = null; st.hoverPerson = null;
     document.title = `${def.n} · ${TITLE}`;
     applyFilters();
@@ -1971,59 +2109,169 @@
     renderSubject();
     kick();
   }
-  function renderSubject() {
-    const sj = st.subj; if (!sj) return;
-    const d = sj.def, ms = sj.ms, A = d.a || [], Pd = d.p || [];
-    const people = Array.from(sj.cnt, ([q, n]) => ({ q, n })).sort((a, b) => b.n - a.n || a.q.rank - b.q.rank);
-    const B = n => `<b>${fmt(n)}</b>`, pl = (n, a, b) => (n === 1 ? a : b);
-    const yrs = ms.length ? (ms[0].y === ms[ms.length - 1].y ? esc(ms[0].y) : `${esc(ms[0].y)} to ${esc(ms[ms.length - 1].y)}`) : '';
-    const stats = [];
-    if (A.length) stats.push(`Mentioned in ${B(A.length)} ${pl(A.length, 'editorial', 'editorials')}.`);
-    if (Pd.length) stats.push(`Mentioned in ${B(Pd.length)} podcast ${pl(Pd.length, 'episode', 'episodes')}.`);
-    if (ms.length) stats.push(`Mentioned in ${B(ms.length)} Timeline ${pl(ms.length, 'moment', 'moments')} (${yrs}).`);
-    if (people.length) stats.push(`${B(people.length)} ${pl(people.length, 'person appears', 'people appear')} in its moments.`);
-    const strip = ms.length ? `<div class="pv-strip" aria-label="Its moments across the ten chapters">${CH.map((c, i) => `<div class="pv-strip-ch" style="left:${i * 10}%;width:10%"><span>${i === 0 ? '&lt;1850' : i === 1 ? '1850' : esc(c.years.replace('s', ''))}</span></div>`).join('')}<div class="pv-strip-axis"></div>
-      ${ms.map(m => `<a href="${S.href('moment', { slug: m.s })}" data-moment="${esc(m.s)}" data-slug="${esc(m.s)}" class="${m.f.includes('allTime') ? 'is-all' : ''}" style="left:${(m.c - 1) * 10 + 0.6 + 8.8 * m.q}%;--c:${CH_INK[m.c]}" title="${esc(m.y + ', ' + m.t)}" aria-label="${esc(m.y + ', ' + m.t)}"></a>`).join('')}</div>` : '';
+  // ── a piece (editorial or episode) ──
+  function enterDoc(d) {
+    const sj = st.subj, from = sj ? (sj.doc ? sj.from : { def: sj.def }) : st.sel ? { p: st.sel } : null;
+    const ms = d.lkm.concat(d.relm).sort((a, b) => a.yn - b.yn || a.i - b.i);
+    const cnt = new Map(); d.pp.forEach(q => cnt.set(q, d.gs.has(q) ? 2 : 1));
+    st.subj = { doc: d, def: { n: d.t }, ms, cnt, ps: new Set(d.pp), from, docs: new Set([d]), stars: d.pp.slice().sort((a, b) => a.cnt - b.cnt), t0: now() };
+    st.sel = null; life = null; st.selT0 = now(); st.hoverMoment = null; st.hoverPerson = null;
+    document.title = `${d.t} · ${TITLE}`;
+    applyFilters();
+    if (d.hm) showScene(d.hm);
+    renderDoc();
+    if (isPhone()) setSheet(false);
+    kick();
+  }
+  function docBack() {
+    const f = st.subj && st.subj.from;
+    if (f && f.def) enterSubject(f.def); else if (f && f.p) select(f.p); else select(null);
+  }
+  // the lines: a piece to everyone and every moment it names; a subject's people to each other
+  function drawSubj(t, I, K, ox, oy, fade, kz) {
+    const sj = st.subj; if (!sj || st.thP > 0) return;
+    const el = Math.max(0, t - sj.t0);
+    if (sj.doc && sj.doc.hm) {
+      const d = sj.doc, ax = ox + d.x * K, ay = oy + d.y * K, ends = d.pp.map(q => [q, d.gs.has(q) ? 2 : 1]).concat(d.lkm.map(m => [m, 1])).concat(d.relm.map(m => [m, 0]));
+      for (let tier = 0; tier < 3; tier++) {
+        g.beginPath(); let any = false;
+        ends.forEach(([o, tr], i) => {
+          if (tr !== tier) return;
+          const bx = o.px !== undefined ? o.px : o.x, by = o.px !== undefined ? o.py : o.y, c = ctrl(d.x, d.y, bx, by);
+          const gr = RM ? 1 : E.out3(clamp((el - 60 - Math.min(i, 40) * 14) / 520, 0, 1)); if (gr <= 0) return;
+          g.moveTo(ax, ay); quadTo(ax, ay, ox + c[0] * K, oy + c[1] * K, ox + bx * K, oy + by * K, gr); any = true;
+        });
+        if (!any) continue;
+        g.globalAlpha = fade * [0.32, 0.6, 0.9][tier]; g.strokeStyle = d.k === 'a' ? ED_HEX : EP_HEX; g.lineWidth = [0.7, 1.1, 1.8][tier];
+        g.stroke();
+      }
+    } else if (sj.edges && sj.edges.length) {
+      for (let tier = 0; tier < 3; tier++) {
+        g.beginPath(); let any = false;
+        sj.edges.forEach((e, i) => {
+          const tr = i < 8 ? 2 : i < 22 ? 1 : 0; if (tr !== tier) return;
+          const gr = RM ? 1 : E.out3(clamp((el - 200 - Math.min(i, 40) * 18) / 620, 0, 1)); if (gr <= 0) return;
+          const ax = ox + e.a.x * K, ay = oy + e.a.y * K;
+          g.moveTo(ax, ay); quadTo(ax, ay, ox + e.cx * K, oy + e.cy * K, ox + e.b.x * K, oy + e.b.y * K, gr); any = true;
+        });
+        if (!any) continue;
+        g.globalAlpha = fade * [0.2, 0.42, 0.8][tier]; g.strokeStyle = '#FF4C00'; g.lineWidth = [0.6, 1, 1.6][tier];
+        g.stroke();
+      }
+    }
+    g.globalAlpha = 1;
+    if (sj.stars && sj.stars.length) drawStars(I, K, ox, oy, fade, kz, sj.stars, false);
+  }
+
+  // ── panels ──
+  const moreList = (list, f, n) => `<ul class="pv-list">${list.slice(0, n).map(f).join('')}</ul>${list.length > n ? `<details class="pv-more"><summary class="pv-ib" style="display:inline-grid;list-style:none">${list.length - n} more</summary><ul class="pv-list">${list.slice(n).map(f).join('')}</ul></details>` : ''}`;
+  const edRow = x => { const d = DOCS.key.get('a:' + x[1]); return `<li class="pv-ed pv-aed"><a class="t" href="${LRWEB}/editorial/${esc(x[1])}" ${d ? `data-doc="${esc(d.id)}"` : 'target="_blank" rel="noopener"'}>${esc(x[2])}</a><p>${esc(x[3] || '')}</p></li>`; };
+  const podRow = x => { const d = DOCS.key.get('p:' + x[0]); return `<li class="pv-pod"><p class="t"><a href="${LRWEB}/episodes/${esc(x[1])}" ${d ? `data-doc="${esc(d.id)}"` : 'target="_blank" rel="noopener"'}>${esc(x[2])}</a></p><p class="m">${esc(x[3] || '')}</p></li>`; };
+  const yrsOf = ms => (ms.length ? (ms[0].y === ms[ms.length - 1].y ? esc(ms[0].y) : `${esc(ms[0].y)} to ${esc(ms[ms.length - 1].y)}`) : '');
+  const stripOf = ms => (ms.length ? `<div class="pv-strip" aria-label="Its moments across the ten chapters">${CH.map((c, i) => `<div class="pv-strip-ch" style="left:${i * 10}%;width:10%"><span>${i === 0 ? '&lt;1850' : i === 1 ? '1850' : esc(c.years.replace('s', ''))}</span></div>`).join('')}<div class="pv-strip-axis"></div>
+      ${ms.map(m => `<a href="${S.href('moment', { slug: m.s })}" data-moment="${esc(m.s)}" data-slug="${esc(m.s)}" class="${m.f.includes('allTime') ? 'is-all' : ''}" style="left:${(m.c - 1) * 10 + 0.6 + 8.8 * m.q}%;--c:${CH_INK[m.c]}" title="${esc(m.y + ', ' + m.t)}" aria-label="${esc(m.y + ', ' + m.t)}"></a>`).join('')}</div>` : '');
+  function momentRows(ms) {
     let rows = '', lastC = 0;
     ms.forEach(m => {
       if (m.c !== lastC) { if (lastC) rows += '</ol>'; lastC = m.c; const cc = ms.filter(x => x.c === m.c).length; rows += `<p class="lab pv-chh" data-ch="${m.c}" style="--c:${CH_INK[m.c]}"><i></i>Chapter ${m.c} &middot; ${esc(CH[m.c - 1].years)} &middot; ${esc(CH[m.c - 1].era)}${cc > 1 ? ` &middot; ${cc}` : ''}</p><ol class="pv-ms">`; }
       const st2 = m.f.includes('allTime') ? '<span class="st">All-Time</span>' : m.f.includes('top') ? '<span class="st">Top</span>' : '';
       rows += `<li class="pm" data-slug="${esc(m.s)}" style="--c:${CH_INK[m.c]}">
         ${thumb(m)}
-        <span class="pm-tx"><span class="pm-y">${esc(m.y)}${st2}</span><a class="pm-t" href="${S.href('moment', { slug: m.s })}" data-moment="${esc(m.s)}">${m.th}</a></span>
+        <span class="pm-tx"><span class="pm-y">${esc(m.y)}${st2}</span><a class="pm-t" href="${S.href('moment', { slug: m.s })}" data-moment="${esc(m.s)}">${m.th}</a>${bridgeOf(m)}</span>
         <button class="pm-w${win && win.m === m ? ' is-on' : ''}" type="button" data-watch="${esc(m.s)}" aria-label="Show the live scene for ${esc(m.t)} in the window" title="Show its live scene in the window">${EYE}</button></li>`;
     });
     if (lastC) rows += '</ol>';
-    const more = (list, f, n) => `<ul class="pv-list">${list.slice(0, n).map(f).join('')}</ul>${list.length > n ? `<details class="pv-more"><summary class="pv-ib" style="display:inline-grid;list-style:none">${list.length - n} more</summary><ul class="pv-list">${list.slice(n).map(f).join('')}</ul></details>` : ''}`;
-    const edRow = x => `<li class="pv-ed pv-aed"><a class="t" href="${LRWEB}/editorial/${esc(x[1])}" target="_blank" rel="noopener">${esc(x[2])}</a><p>${x[0] ? 'No. ' + x[0] + ' &middot; ' : ''}${esc(x[3] || '')}</p></li>`;
-    const podRow = x => `<li class="pv-pod"><p class="lab">Episode ${x[0]}</p><p class="t"><a href="${LRWEB}/episodes/${esc(x[1])}" target="_blank" rel="noopener">${esc(x[2])}</a></p><p class="m">${esc(x[3] || '')}</p></li>`;
-    const mid = ms.length ? ms[Math.floor((ms.length - 1) / 2)] : null;
+    return rows;
+  }
+  const subjChip = x => `<a class="pv-chip is-tag" href="${LRWEB}/subjects/${esc(x[0])}">${x[2] === 'Work' || x[2] === 'Exhibition' ? `<em>${esc(x[1])}</em>` : esc(x[1])}</a>`;
+  function finishPanel() {
+    scroller.scrollTop = 0;
+    thumbs(scroller);
+    $$('.pvw-eye canvas', scroller).forEach(drawEye);
+  }
+  function renderSubject() {
+    const sj = st.subj; if (!sj || sj.doc) return;
+    const d = sj.def, ms = sj.ms, A = d.a || [], Pd = d.p || [];
+    const people = Array.from(sj.cnt, ([q, n]) => ({ q, n })).sort((a, b) => b.n - a.n || a.q.rank - b.q.rank);
+    const B = n => `<b>${fmt(n)}</b>`, pl = (n, a, b) => (n === 1 ? a : b);
+    const stats = [];
+    if (A.length) stats.push(`Mentioned in ${B(A.length)} ${pl(A.length, 'editorial', 'editorials')}.`);
+    if (Pd.length) stats.push(`Mentioned in ${B(Pd.length)} podcast ${pl(Pd.length, 'episode', 'episodes')}.`);
+    if (ms.length) stats.push(`Mentioned in ${B(ms.length)} Timeline ${pl(ms.length, 'moment', 'moments')} (${yrsOf(ms)}).`);
+    if (people.length) stats.push(`${B(people.length)} ${pl(people.length, 'person appears', 'people appear')} in its moments.`);
+    const mid = ms.length ? ms[Math.floor((ms.length - 1) / 2)] : null, R = d.r || [];
     scroller.innerHTML = `<div class="pv pv-person pv-subject">
       <div class="pv-bar"><button class="pv-ib pv-all" type="button" data-act="all" aria-label="Back to everyone">${ALL}<span>Everyone</span></button></div>
       <p class="lab pv-kicker">${mid ? `<span class="dot" style="background:${CH_INK[mid.c]}"></span>` : ''}${esc(d.k || 'Subject')}</p>
       <h1 class="pv-name">${esc(d.n)}</h1>
       ${d.b ? `<p class="pv-bio">${esc(d.b)}</p>` : ''}
       <p class="pv-stats">${stats.join(' ')}</p>
-      ${strip}
-      ${A.length ? `<section class="pv-sec" id="pv-aeds"><h2 class="lab">In the editorials <small>${fmt(A.length)}</small></h2>${more(A, edRow, 6)}</section>` : ''}
-      ${Pd.length ? `<section class="pv-sec" id="pv-apods"><h2 class="lab">On the podcast <small>${fmt(Pd.length)}</small></h2>${more(Pd, podRow, 4)}</section>` : ''}
-      ${ms.length ? `<span id="pv-mom"></span><section class="pv-sec"><h2 class="lab">Timeline moments <small>${ms.length}</small></h2>${rows}</section>` : ''}
+      ${stripOf(ms)}
+      ${d.v ? '<section class="pv-sec" id="pv-onview" hidden></section>' : ''}
+      ${A.length ? `<section class="pv-sec" id="pv-aeds"><h2 class="lab">In the editorials <small>${fmt(A.length)}</small></h2>${moreList(A, edRow, 6)}</section>` : ''}
+      ${Pd.length ? `<section class="pv-sec" id="pv-apods"><h2 class="lab">On the podcast <small>${fmt(Pd.length)}</small></h2>${moreList(Pd, podRow, 4)}</section>` : ''}
+      ${ms.length ? `<span id="pv-mom"></span><section class="pv-sec"><h2 class="lab">Timeline moments <small>${ms.length}</small></h2>${momentRows(ms)}</section>` : ''}
       ${people.length ? `<section class="pv-sec" id="pv-cosec"><h2 class="lab">People in its moments <small>${fmt(people.length)}</small></h2>
         <div class="pv-chips">${people.slice(0, 40).map(({ q, n }) => personLink(q, n > 1 ? n : null)).join('')}</div>
         ${people.length > 40 ? `<details class="pv-more"><summary class="pv-ib" style="display:inline-grid;list-style:none">${people.length - 40} more</summary><div class="pv-chips">${people.slice(40).map(({ q, n }) => personLink(q, n > 1 ? n : null)).join('')}</div></details>` : ''}</section>` : ''}
+      ${R.length ? `<section class="pv-sec" id="pv-rel"><h2 class="lab">Related subjects</h2><div class="pv-chips">${R.map(subjChip).join('')}</div></section>` : ''}
       ${windowCard()}
       ${mid ? `<section class="pv-sec"><h2 class="lab">Keep exploring</h2><div class="pv-go">
         <a href="${S.href('chronology', { slug: ms[0].s })}" data-go="chronology" data-slug="${esc(ms[0].s)}"><span class="lab">Chronology</span><span>Start at its first moment, ${esc(ms[0].y)}</span></a>
         <a href="${S.href('ideas', { slug: mid.s })}" data-go="ideas" data-slug="${esc(mid.s)}"><span class="lab">Ideas</span><span>Find it on the map of ideas</span></a>
         <a href="${S.href('moment', { slug: mid.s })}" data-moment="${esc(mid.s)}"><span class="lab">Open the moment</span><span>${mid.th}</span></a></div></section>` : ''}
     </div>`;
-    scroller.scrollTop = 0;
-    thumbs(scroller);
-    $$('.pvw-eye canvas', scroller).forEach(drawEye);
+    finishPanel();
+    if (d.v) onView(d);
+  }
+  function renderDoc() {
+    const sj = st.subj; if (!sj || !sj.doc) return;
+    const d = sj.doc, f = sj.from, ms = sj.ms, B = n => `<b>${fmt(n)}</b>`, pl = (n, a, b) => (n === 1 ? a : b);
+    const ppl = d.pp.slice().sort((a, b) => (d.gs.has(b) - d.gs.has(a)) || a.rank - b.rank);
+    const stats = [];
+    if (ppl.length) stats.push(`Mentions ${B(ppl.length)} ${pl(ppl.length, 'person', 'people')}`);
+    if (d.lkm.length) stats.push(`${B(d.lkm.length)} Timeline ${pl(d.lkm.length, 'moment', 'moments')}`);
+    const back = f && (f.def || f.p) ? `<button class="pv-ib pv-all" type="button" data-act="docback"><span>&larr; ${esc(f.def ? f.def.n : f.p.n)}</span></button>` : '';
+    scroller.innerHTML = `<div class="pv pv-person pv-subject pv-doc">
+      <div class="pv-bar">${back}<button class="pv-ib pv-all" type="button" data-act="all" aria-label="Back to everyone">${ALL}<span>Everyone</span></button></div>
+      <p class="lab pv-kicker"><span class="dot" style="background:${d.k === 'a' ? ED_HEX : EP_HEX};${d.k === 'a' ? 'border-radius:1px' : ''}"></span>${docName(d)} &middot; ${esc(d.d)}</p>
+      <h1 class="pv-name pv-doc-t">${esc(d.t)}</h1>
+      ${d.by ? `<p class="pv-bio">By ${esc(d.by)}</p>` : ''}
+      ${stats.length ? `<p class="pv-stats">${stats.join(' and ')}.${d.hm ? ` It sits beside ${d.hm.th}, ${esc(d.hm.y)}.` : ''}</p>` : ''}
+      <p><a class="pv-ib pv-cta" href="${LRWEB}/${d.k === 'a' ? 'editorial' : 'episodes'}/${esc(d.s)}">${d.k === 'a' ? 'Read the editorial' : 'Listen to the episode'} &#8599;</a></p>
+      ${stripOf(ms)}
+      ${d.lkm.length ? `<span id="pv-mom"></span><section class="pv-sec"><h2 class="lab">Timeline moments it mentions <small>${d.lkm.length}</small></h2>${momentRows(d.lkm.slice().sort((a, b) => a.yn - b.yn || a.i - b.i))}</section>` : ''}
+      ${d.relm.length ? `<section class="pv-sec"><h2 class="lab">Related on the Timeline <small>${d.relm.length}</small></h2>${momentRows(d.relm.slice().sort((a, b) => a.yn - b.yn || a.i - b.i))}</section>` : ''}
+      ${ppl.length ? `<section class="pv-sec" id="pv-cosec"><h2 class="lab">People it mentions <small>${fmt(ppl.length)}</small></h2>
+        <div class="pv-chips">${ppl.map(q => personLink(q, null)).join('')}</div></section>` : ''}
+      ${d.sj && d.sj.length ? `<section class="pv-sec"><h2 class="lab">Subjects <small>${fmt(d.sj.length)}</small></h2><div class="pv-chips">${d.sj.map(subjChip).join('')}</div></section>` : ''}
+    </div>`;
+    finishPanel();
+  }
+  // on view now: the calendar's current shows in this place (its city) or at this organisation (its venue)
+  let CAL = null;
+  const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const untilOf = e => { const [y, m, d] = e.split('-').map(Number); return `${d} ${MON[m - 1]}${y !== new Date().getFullYear() ? ' ' + y : ''}`; };
+  function onView(d) {
+    const box = $('#pv-onview', scroller); if (!box) return;
+    (CAL || (CAL = fetch((window.LR_DATA || '') + '../calendar.json', { cache: 'default' }).then(r => (r.ok ? r.json() : { items: [] })).catch(() => ({ items: [] })))).then(c => {
+      if (!st.subj || st.subj.def !== d || !box.isConnected) return;
+      const nm = x => (x || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+      const today = new Date().toISOString().slice(0, 10), keys = d.v.n;
+      const hits = (c.items || []).filter(i => (i.k === 'exhibition' || i.k === 'event') && i.p && i.s && i.s <= today && (i.e || i.s) >= today).filter(i => {
+        const p = i.p, cut = p.lastIndexOf(', '), city = nm(cut > 0 ? p.slice(cut + 2) : p), venue = nm(cut > 0 ? p.slice(0, cut).split(', ')[0].replace(/\([^)]*\)/g, '') : '');
+        return keys.some(k => d.v.t === 'c' ? city === k || city.startsWith(k + ' ') : venue && (venue === k || (k.length >= 4 && venue.startsWith(k + ' ')) || (k.length >= 10 && (' ' + venue + ' ').includes(' ' + k + ' '))));
+      });
+      if (!hits.length) return;
+      hits.sort((a, b) => (a.e || '9') < (b.e || '9') ? -1 : 1);
+      box.innerHTML = `<h2 class="lab">On view now <small>${fmt(hits.length)}</small></h2><ul class="pv-list">${hits.slice(0, 8).map(i => `<li class="pv-ed pv-onv"><a class="t" href="${esc(i.u || LRWEB + '/editorials')}" target="_blank" rel="noopener">${esc(i.t).replace(/&lt;(\/?)i&gt;/g, '<$1i>')}</a><p>${esc(i.p)}${i.e ? ` &middot; Until ${untilOf(i.e)}` : ''}</p></li>`).join('')}</ul>`;
+      box.hidden = false;
+    });
   }
 
   function start() {
     window.LR_SUBJECT = def => enterSubject(def);
+    loadDocs();
     window.LR_SELECT = tok => { const p = PT.get(tok); if (p && p !== st.sel) select(p, { fromHash: true }); };
     root.classList.remove('is-loading');
     const mm = $('[data-n="mm"]', keyEl); if (mm) mm.textContent = fmt(IX.length);
