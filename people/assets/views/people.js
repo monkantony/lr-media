@@ -822,7 +822,7 @@
     const s = clamp(1.25 * Math.pow(cam.k, 0.35) * Math.sqrt(starScale), 0.9, 2.6), h = s / 2;
     const dim = 1 - 0.55 * st.selA;
     for (let c = 1; c <= 10; c++) {
-      const list = chMoments[c]; let a = 0.42;
+      const list = chMoments[c]; let a = st.subj && st.subj.ms.length ? 0.13 : 0.42;
       if (st.era) a = st.era === c ? 0.75 : 0.14; else if (hr === c) a = 0.7;
       g.globalAlpha = fade * a * dim; g.fillStyle = CH_HEX[c]; g.beginPath();
       for (let i = 0; i < list.length; i++) {
@@ -831,6 +831,11 @@
         g.rect(x - h, y - h, s, s);
       }
       g.fill();
+    }
+    if (st.subj && st.subj.ms.length) {           // LR-SUBJECTS: the subject's own moments, lit
+      const s2 = s * 2.6, h2 = s2 / 2; g.globalAlpha = fade;
+      st.subj.ms.forEach(m => { if (m.pr > wave) return; const x = ox + m.px * K, y = oy + m.py * K;
+        if (x < -6 || y < -6 || x > W + 6 || y > H + 6) return; g.fillStyle = CH_HEX[m.c]; g.fillRect(x - h2, y - h2, s2, s2); });
     }
   }
 
@@ -1351,6 +1356,7 @@
   // ── selection, filters, lens ─────────────────────────────────────────────
   function select(p, opts) {
     opts = opts || {};
+    if (st.subj) { st.subj = null; applyFilters(); }   // LR-SUBJECTS: choosing anyone leaves the subject
     if (p) {
       const destination = S.href('people', {token:p.tok});
       /* on www the chart is the subject page: no hand-off */
@@ -1387,7 +1393,7 @@
   function applyFilters() {
     filterVer++;
     const inSrc = p => !st.src || (st.src === 'm' ? p.m.length : st.src === 'a' ? p.ad.length : p.pd.length) > 0;
-    P.forEach(p => { p.visT = (p.tot >= st.min && inSrc(p) && (!st.era || p.chN[st.era - 1] > 0 || (p.ctx && p.c === st.era)) && (st.region < 0 || p.clN.has(st.region))) ? 1 : 0.1; });
+    P.forEach(p => { p.visT = (p.tot >= st.min && inSrc(p) && (!st.era || p.chN[st.era - 1] > 0 || (p.ctx && p.c === st.era)) && (st.region < 0 || p.clN.has(st.region)) && (!st.subj || !st.subj.ps || st.subj.ps.has(p))) ? 1 : 0.1; });
     const shown = P.filter(p => p.visT === 1).length, parts = [];
     if (st.era) parts.push(`${esc(CH[st.era - 1].years)} ring`);
     if (st.region >= 0) parts.push(esc(SECT.byId.get(st.region).label));
@@ -1953,7 +1959,71 @@
   };
 
   // ── start: the chart assembles outward from the pupil, as history does ──
+  // ── LR-SUBJECTS: a subject's own view (places, works, exhibitions, organisations, themes, techniques) ──
+  function enterSubject(def) {
+    const ms = (def.m || []).map(s => BY.get(s)).filter(Boolean).sort((a, b) => a.yn - b.yn || a.i - b.i);
+    const cnt = new Map(); ms.forEach(m => (m.people || []).forEach(q => cnt.set(q, (cnt.get(q) || 0) + 1)));
+    st.subj = { def, ms, cnt, ps: ms.length ? new Set(cnt.keys()) : null };
+    st.sel = null; life = null; st.selT0 = now(); st.hoverMoment = null; st.hoverPerson = null;
+    document.title = `${def.n} · ${TITLE}`;
+    applyFilters();
+    if (ms.length) showScene(ms[Math.floor((ms.length - 1) / 2)]);
+    renderSubject();
+    kick();
+  }
+  function renderSubject() {
+    const sj = st.subj; if (!sj) return;
+    const d = sj.def, ms = sj.ms, A = d.a || [], Pd = d.p || [];
+    const people = Array.from(sj.cnt, ([q, n]) => ({ q, n })).sort((a, b) => b.n - a.n || a.q.rank - b.q.rank);
+    const B = n => `<b>${fmt(n)}</b>`, pl = (n, a, b) => (n === 1 ? a : b);
+    const yrs = ms.length ? (ms[0].y === ms[ms.length - 1].y ? esc(ms[0].y) : `${esc(ms[0].y)} to ${esc(ms[ms.length - 1].y)}`) : '';
+    const stats = [];
+    if (A.length) stats.push(`Mentioned in ${B(A.length)} ${pl(A.length, 'editorial', 'editorials')}.`);
+    if (Pd.length) stats.push(`Mentioned in ${B(Pd.length)} podcast ${pl(Pd.length, 'episode', 'episodes')}.`);
+    if (ms.length) stats.push(`Mentioned in ${B(ms.length)} Timeline ${pl(ms.length, 'moment', 'moments')} (${yrs}).`);
+    if (people.length) stats.push(`${B(people.length)} ${pl(people.length, 'person appears', 'people appear')} in its moments.`);
+    const strip = ms.length ? `<div class="pv-strip" aria-label="Its moments across the ten chapters">${CH.map((c, i) => `<div class="pv-strip-ch" style="left:${i * 10}%;width:10%"><span>${i === 0 ? '&lt;1850' : i === 1 ? '1850' : esc(c.years.replace('s', ''))}</span></div>`).join('')}<div class="pv-strip-axis"></div>
+      ${ms.map(m => `<a href="${S.href('moment', { slug: m.s })}" data-moment="${esc(m.s)}" data-slug="${esc(m.s)}" class="${m.f.includes('allTime') ? 'is-all' : ''}" style="left:${(m.c - 1) * 10 + 0.6 + 8.8 * m.q}%;--c:${CH_INK[m.c]}" title="${esc(m.y + ', ' + m.t)}" aria-label="${esc(m.y + ', ' + m.t)}"></a>`).join('')}</div>` : '';
+    let rows = '', lastC = 0;
+    ms.forEach(m => {
+      if (m.c !== lastC) { if (lastC) rows += '</ol>'; lastC = m.c; const cc = ms.filter(x => x.c === m.c).length; rows += `<p class="lab pv-chh" data-ch="${m.c}" style="--c:${CH_INK[m.c]}"><i></i>Chapter ${m.c} &middot; ${esc(CH[m.c - 1].years)} &middot; ${esc(CH[m.c - 1].era)}${cc > 1 ? ` &middot; ${cc}` : ''}</p><ol class="pv-ms">`; }
+      const st2 = m.f.includes('allTime') ? '<span class="st">All-Time</span>' : m.f.includes('top') ? '<span class="st">Top</span>' : '';
+      rows += `<li class="pm" data-slug="${esc(m.s)}" style="--c:${CH_INK[m.c]}">
+        ${thumb(m)}
+        <span class="pm-tx"><span class="pm-y">${esc(m.y)}${st2}</span><a class="pm-t" href="${S.href('moment', { slug: m.s })}" data-moment="${esc(m.s)}">${m.th}</a></span>
+        <button class="pm-w${win && win.m === m ? ' is-on' : ''}" type="button" data-watch="${esc(m.s)}" aria-label="Show the live scene for ${esc(m.t)} in the window" title="Show its live scene in the window">${EYE}</button></li>`;
+    });
+    if (lastC) rows += '</ol>';
+    const more = (list, f, n) => `<ul class="pv-list">${list.slice(0, n).map(f).join('')}</ul>${list.length > n ? `<details class="pv-more"><summary class="pv-ib" style="display:inline-grid;list-style:none">${list.length - n} more</summary><ul class="pv-list">${list.slice(n).map(f).join('')}</ul></details>` : ''}`;
+    const edRow = x => `<li class="pv-ed pv-aed"><a class="t" href="${LRWEB}/editorial/${esc(x[1])}" target="_blank" rel="noopener">${esc(x[2])}</a><p>${x[0] ? 'No. ' + x[0] + ' &middot; ' : ''}${esc(x[3] || '')}</p></li>`;
+    const podRow = x => `<li class="pv-pod"><p class="lab">Episode ${x[0]}</p><p class="t"><a href="${LRWEB}/episodes/${esc(x[1])}" target="_blank" rel="noopener">${esc(x[2])}</a></p><p class="m">${esc(x[3] || '')}</p></li>`;
+    const mid = ms.length ? ms[Math.floor((ms.length - 1) / 2)] : null;
+    scroller.innerHTML = `<div class="pv pv-person pv-subject">
+      <div class="pv-bar"><button class="pv-ib pv-all" type="button" data-act="all" aria-label="Back to everyone">${ALL}<span>Everyone</span></button></div>
+      <p class="lab pv-kicker">${mid ? `<span class="dot" style="background:${CH_INK[mid.c]}"></span>` : ''}${esc(d.k || 'Subject')}</p>
+      <h1 class="pv-name">${esc(d.n)}</h1>
+      ${d.b ? `<p class="pv-bio">${esc(d.b)}</p>` : ''}
+      <p class="pv-stats">${stats.join(' ')}</p>
+      ${strip}
+      ${A.length ? `<section class="pv-sec" id="pv-aeds"><h2 class="lab">In the editorials <small>${fmt(A.length)}</small></h2>${more(A, edRow, 6)}</section>` : ''}
+      ${Pd.length ? `<section class="pv-sec" id="pv-apods"><h2 class="lab">On the podcast <small>${fmt(Pd.length)}</small></h2>${more(Pd, podRow, 4)}</section>` : ''}
+      ${ms.length ? `<span id="pv-mom"></span><section class="pv-sec"><h2 class="lab">Timeline moments <small>${ms.length}</small></h2>${rows}</section>` : ''}
+      ${people.length ? `<section class="pv-sec" id="pv-cosec"><h2 class="lab">People in its moments <small>${fmt(people.length)}</small></h2>
+        <div class="pv-chips">${people.slice(0, 40).map(({ q, n }) => personLink(q, n > 1 ? n : null)).join('')}</div>
+        ${people.length > 40 ? `<details class="pv-more"><summary class="pv-ib" style="display:inline-grid;list-style:none">${people.length - 40} more</summary><div class="pv-chips">${people.slice(40).map(({ q, n }) => personLink(q, n > 1 ? n : null)).join('')}</div></details>` : ''}</section>` : ''}
+      ${windowCard()}
+      ${mid ? `<section class="pv-sec"><h2 class="lab">Keep exploring</h2><div class="pv-go">
+        <a href="${S.href('chronology', { slug: ms[0].s })}" data-go="chronology" data-slug="${esc(ms[0].s)}"><span class="lab">Chronology</span><span>Start at its first moment, ${esc(ms[0].y)}</span></a>
+        <a href="${S.href('ideas', { slug: mid.s })}" data-go="ideas" data-slug="${esc(mid.s)}"><span class="lab">Ideas</span><span>Find it on the map of ideas</span></a>
+        <a href="${S.href('moment', { slug: mid.s })}" data-moment="${esc(mid.s)}"><span class="lab">Open the moment</span><span>${mid.th}</span></a></div></section>` : ''}
+    </div>`;
+    scroller.scrollTop = 0;
+    thumbs(scroller);
+    $$('.pvw-eye canvas', scroller).forEach(drawEye);
+  }
+
   function start() {
+    window.LR_SUBJECT = def => enterSubject(def);
     window.LR_SELECT = tok => { const p = PT.get(tok); if (p && p !== st.sel) select(p, { fromHash: true }); };
     root.classList.remove('is-loading');
     const mm = $('[data-n="mm"]', keyEl); if (mm) mm.textContent = fmt(IX.length);
@@ -1969,7 +2039,7 @@
     const asked = PT.get(tok); curTok = asked || tok === 'women' ? tok : null;
     if (!asked) { win = { m: m0, sc: sceneFor(m0) }; setGround(m0, win.sc); if (tok && tok !== 'women') showMissing(tok); else renderOverview(); }
     if (tok === 'women') setLens(true);
-    if (asked) { select(asked, { fromHash: true }); }
+    if (asked) { select(asked, { fromHash: true }); } else if (window.LR_SUBJ) { enterSubject(window.LR_SUBJ); }
     else showScene(m0);
     kick();
     warmText();

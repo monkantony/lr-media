@@ -21,13 +21,18 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', begin); else begin();
 
   function begin() {
-    var kind = document.querySelector('.sj-kind'); if (!kind || !/person/i.test(kind.textContent)) return;
+    var kind = document.querySelector('.sj-kind'); if (!kind) return;
+    var isPerson = /person/i.test(kind.textContent);
     var j = function (f) { return get(f, 'json'); };
     Promise.all([j('subject-slugs.json'), j('config.json')]).then(function (a) {
       var tok2sub = a[0], cfg = a[1], sub2tok = {};
       if (!cfg.enabled && !window.LR_PEOPLE_FORCE) return;
       for (var t in tok2sub) sub2tok[tok2sub[t]] = t;
       if (sub2tok[slug]) mount(sub2tok[slug], tok2sub, sub2tok, cfg);
+      // LR-SUBJECTS (5 Oct 2026): every other subject page opens the chart on its subject (config "subjects": true)
+      else if (!isPerson && cfg.subjects) get('data/subj/' + shardOf(slug) + '.json', 'json').then(function (sh) {
+        var d = sh && sh[slug]; if (d && (d.m.length || d.a.length || d.p.length)) { d.slug = slug; mount(null, tok2sub, sub2tok, cfg, d); }
+      }).catch(function () {});
     }).catch(function () {});
   }
 
@@ -59,7 +64,9 @@
     return Math.round(b);
   }
 
-  function mount(tok, tok2sub, sub2tok, cfg) {
+  function shardOf(k) { var h = 0; for (var i = 0; i < k.length; i++) h = (h * 31 + k.charCodeAt(i)) >>> 0; return h % 64; }
+
+  function mount(tok, tok2sub, sub2tok, cfg, subj) {
     var home = tok, homeTitle = document.title;
     var css = document.createElement('style');
     css.textContent = '.lr-pp{position:relative;width:100%;background:#011015;height:calc(100vh - var(--lr-pp-top,64px));height:calc(100svh - var(--lr-pp-top,64px));min-height:520px}' +
@@ -85,7 +92,8 @@
       var assets = cfg.assets_base || TL;
       var head = '<base href="' + assets + '"><script>window.LR_EMBED=1;window.LR_FRAMED=true;window.LR_PEOPLE_HOME="main";' +
         'window.LR_DATA=' + JSON.stringify(RAW) + ';window.LR_LEAD=' + JSON.stringify(cfg.lead || {}) + ';' +
-        'window.LR_PARAMS=' + JSON.stringify({ token: tok }) + ';<\/script>';
+        'window.LR_PARAMS=' + JSON.stringify({ token: tok || '' }) + ';' +
+        'window.LR_SUBJ=' + JSON.stringify(subj || null).replace(/</g, '\\u003c') + ';<\/script>';
       // the page's own code and styles come from lr-media, not from the Timeline the <base> points at
       h = h.replace('<!--LR-EMBED-HEAD-->', head).replace(/(href|src)="assets\//g, '$1="' + BASE + 'assets/');
       fr.srcdoc = h;
@@ -122,7 +130,12 @@
       }
     });
     addEventListener('popstate', function () {
-      var mm = location.pathname.match(/\/subjects\/([^\/?#]+)/), t = mm && sub2tok[decodeURIComponent(mm[1])];
+      var mm = location.pathname.match(/\/subjects\/([^\/?#]+)/);
+      if (subj && mm && decodeURIComponent(mm[1]) === subj.slug) {   // back to this subject page's own subject
+        document.documentElement.classList.remove('lr-pp-away'); document.title = homeTitle;
+        var ws = fr.contentWindow; if (ws && ws.LR_SUBJECT) ws.LR_SUBJECT(subj); return;
+      }
+      var t = mm && sub2tok[decodeURIComponent(mm[1])];
       if (!t) return;
       document.documentElement.classList.toggle('lr-pp-away', t !== home);
       if (t === home) document.title = homeTitle;
