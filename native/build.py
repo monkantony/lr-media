@@ -9,7 +9,9 @@ Rewriting that would fork it, so this file is generated from lrw_bundle.txt on e
 
   1. the edition seed: with no #e= in the URL, the page's own baked edition (".ed-mini" No.) is the seed,
      so the first deal reproduces exactly what is already painted. A re-roll deals a new one as on live.
-  2. the "live inside the site's own chrome" module does not move #lrw: the page already has it in place
+  2. elements the bundle CREATES and binds only on creation (the Re-roll stamp) are already baked: bind them;
+     the self-healing reload never runs (the native page has no stale bundle to refresh)
+  2b. the "live inside the site's own chrome" module does not move #lrw: the page already has it in place
      (moving it put the About text above the page).
   3. the Timeline moment of the day reads tl/daily/YYYY-MM.json (tl_daily.py): one moment a day for
      everyone from ALL the Timeline's moments, and "One of N moments" (Peter: "it's always fetter").
@@ -48,6 +50,13 @@ js = patch(js, "var s = m ? +m[1] : (1 + Math.floor(Math.random() * 999999));",
 js = patch(js, "var baked = [].map.call(grid.querySelectorAll('article.dz'), function(a){ return { html: a.outerHTML }; });",
            "var baked = window.__LRN_DZ ? window.__LRN_DZ.map(function(h){ return { html: h }; }) : [].map.call(grid.querySelectorAll('article.dz'), function(a){ return { html: a.outerHTML }; });",
            'Sets deck')
+js = patch(js, "if (host && !document.getElementById('ed-stamp')) {\n        var el = document.createElement('span');",
+           "if (host && (window.__LRN || !document.getElementById('ed-stamp'))) { if (!document.getElementById('ed-stamp')) {\n        var el = document.createElement('span');",
+           'Re-roll stamp (baked: bind it, do not skip it)')
+js = patch(js, "host.appendChild(el);\n        document.getElementById('ed-roll').addEventListener('click', function(){",
+           "host.appendChild(el); }\n        document.getElementById('ed-roll').addEventListener('click', function(){", 'Re-roll stamp close')
+js = patch(js, "(function(){\n  if (window.LRW_COMMIT) return;", "(function(){\n  if (window.LRW_COMMIT || window.__LRN) return;   /* native: never reload the page */",
+           'self-healing reload')
 js = patch(js, "if (lrw && foot && foot.parentNode && foot.parentNode !== lrw) foot.parentNode.insertBefore(lrw, foot);",
            "if (!window.__LRN && lrw && foot && foot.parentNode && foot.parentNode !== lrw) foot.parentNode.insertBefore(lrw, foot);",
            'chrome mover')

@@ -14,7 +14,7 @@ var LRW_BUILD = "20261005210948";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
-  if (window.LRW_COMMIT) return;
+  if (window.LRW_COMMIT || window.__LRN) return;   /* native: never reload the page */
   var V = 'https://cdn.jsdelivr.net/gh/monkantony/lr-media@main/version.txt';
   try {
     fetch(V, { cache: 'no-store' }).then(function(r){ return r.ok ? r.text() : ''; }).then(function(t){
@@ -2048,12 +2048,12 @@ try{
       POOLS = { ed: rs[0], rd: rs[1] };
       /* the stamp lives with the hero tools */
       var host = document.querySelector('.hero-tools');
-      if (host && !document.getElementById('ed-stamp')) {
+      if (host && (window.__LRN || !document.getElementById('ed-stamp'))) { if (!document.getElementById('ed-stamp')) {
         var el = document.createElement('span');
         el.className = 'ed-stamp'; el.id = 'ed-stamp';
         el.innerHTML = 'Edition <b id="ed-no"></b> '
           + '<button class="ed-roll" id="ed-roll" type="button" title="Deal a new edition">Re-roll</button>';
-        host.appendChild(el);
+        host.appendChild(el); }
         document.getElementById('ed-roll').addEventListener('click', function(){
           ED.seed = 1 + Math.floor(Math.random() * 999999);
           if (!location.hash || /^#e=\d+$/.test(location.hash))
