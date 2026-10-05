@@ -146,6 +146,10 @@ for _try in 1 2 3; do
   echo "push failed (attempt $_try); retrying in 20s"; sleep 20
 done
 
+# the native /editorials falls back to @main/native/lrn.js while jsDelivr still answers 403 for a just-pushed commit:
+# purge that one file every time so the fallback is never an old build (single-file purges are not throttled like the pointer)
+curl -s -m 20 'https://purge.jsdelivr.net/gh/monkantony/lr-media@main/native/lrn.js' >/dev/null 2>&1 || true
+
 # ---- purge the pointer at the CDN and prove the edge serves it ----------------
 WANT="$STAMP $H $HOSTS"
 POINTER="https://cdn.jsdelivr.net/gh/monkantony/lr-media@main/version.txt"
