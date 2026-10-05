@@ -72,6 +72,12 @@ PY
 python3 -c "
 import json; open('/tmp/bc.js','w').write(json.load(open('$REPO/lrw_bundle.txt'))['js'])"
 node --check /tmp/bc.js
+# the Webflow-native /editorials runs the same modules from native/lrn.js, generated from this bundle (5 Oct 2026).
+# A failure here never blocks the publish: live is unaffected; the native page keeps its last good lrn.js.
+if [[ -f native/build.py ]]; then
+  if python3 native/build.py && node --check native/lrn.js; then git add -- native 2>/dev/null || true
+  else echo "!! native/lrn.js NOT rebuilt: native/build.py failed (the native /editorials keeps the previous build)"; git checkout -q -- native/lrn.js 2>/dev/null || true; fi
+fi
 # lrft.js ships the article header, footer and player, and it is a template literal: a single
 # stray backtick in the CSS ends the sheet and takes all three with it (20 Sep 2026).
 node --check lrft.js
