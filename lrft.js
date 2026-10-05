@@ -948,6 +948,20 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
   var GROUPS = [['p','People'],['w','Works'],['x','Exhibitions'],['o','Organisations'],['pl','Places'],['t','Techniques'],['th','Themes']];
   var slug = location.pathname.replace(/\/+$/,'').split('/').pop();
   var box = document.getElementById('lrft');
+  /* 6 Oct 2026 (Peter: "all links (for seo's sake correct?) should be a static/webflow html link"): the Editorials
+     Template renders the footer itself, from CMS fields, into #lrft[data-static]. When that has content, the footer
+     drawn below goes into a detached box and never reaches the page. When the item's footer fields are still empty
+     (a new editorial before its footer import), the static block hides and the drawn footer stands in, as before. */
+  var lrStatic = document.querySelector('#lrft[data-static]');
+  var lrStaticFull = !!(lrStatic && lrStatic.querySelector('.lrft-chip, .lrft-card, .lrft-ln, .lrft-tlrt a'));
+  if (lrStatic) {
+    if (lrStaticFull) box = document.createElement('div');
+    else {
+      lrStatic.style.display = 'none';
+      box = document.querySelector('#lrft:not([data-static])');
+      if (!box) { box = document.createElement('div'); box.id = 'lrft'; lrStatic.parentNode.insertBefore(box, lrStatic.nextSibling); }
+    }
+  }
   /* the player first, from the map inside this file: no wait for the footer data */
   /* 29 Sep 2026 (Peter): an episode page (/episodes/) plays its episode at the top, with the same player.
      The page's Code Embed carries <div id="ep-player" data-audio data-min>; the player sits in it. */
@@ -963,7 +977,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
      dropped above it (or anywhere else), move the whole embed wrapper there before rendering. */
   (function(){
     var b = document.querySelector('.text-garamond.w-richtext') || document.querySelector('.text-garamond');
-    if (!box || !b || !b.parentNode) return;
+    if (!box || !b || !b.parentNode || lrStatic) return;        /* the static footer is placed by the template */
     var n = box.parentNode && box.parentNode.classList && box.parentNode.classList.contains('w-embed') ? box.parentNode : box;
     if (n === b || n.contains(b)) return;
     var after = b.nextElementSibling;
@@ -1004,6 +1018,14 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     var me = data.foot[slug]; if (!me) return;
     var A = data.arts, mine = A[slug];
     var bySlugN = {}; for (var s in A) bySlugN[A[s][0]] = s;
+    /* the static Next link is a CMS reference: until the newest piece's predecessor gets its Next editorial field,
+       it says "the newest". The data knows better, so the link is completed here. */
+    if (lrStaticFull && mine) (function(){
+      var nx = lrStatic.querySelector('.lrft-pn .nx'), nxt = bySlugN[mine[0] + 1];
+      if (!nx || !nxt || nx.getAttribute('href') !== '/editorial/') return;
+      nx.setAttribute('href', art(nxt));
+      nx.innerHTML = '<span class="lrft-dir">Next &#183; ' + ('000' + A[nxt][0]).slice(-3) + ' &#8594;</span><span class="lrft-t">' + esc(A[nxt][2]) + '</span>';
+    })();
     var html = '';
     var grps = '';
     GROUPS.forEach(function(g){
@@ -1197,6 +1219,9 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
        smartlinks.json). Linking it again here put a second link on the next mention ("HyperCard ... HyperCard"),
        because this pass cannot see which subjects the bake has used. Only unbaked bodies are linked here. */
     if (baked.length) return;
+    /* 6 Oct 2026 (Peter: "there shouldnt be any more smart links"): on the static template, links are only what the
+       CMS body carries */
+    if (lrStatic) return;
     fetch((window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/') + 'smartlinks.json')
       .then(function(r){ return r.json(); })
       .then(function(SL){
