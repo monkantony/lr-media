@@ -1,0 +1,66 @@
+<!doctype html><html lang="en" data-page="people"><head><meta charset="utf-8"><meta name="robots" content="noindex"><!--LR-EMBED-HEAD-->
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>People · Generative Art Timeline · Le Random</title>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="assets/lr.css"><link rel="stylesheet" href="assets/views/people.css"><link rel="stylesheet" href="assets/views/embed.css"><script src="assets/theme.js?v=20261002"></script><link rel="stylesheet" href="assets/theme.css?v=20261002"></head>
+<body>
+<main id="pp" class="pp is-loading">
+  <aside class="pp-panel" id="pp-panel" aria-label="People">
+    <button class="pp-handle" id="pp-handle" type="button" aria-label="Expand the panel" aria-expanded="false"><span></span></button>
+    <div class="pp-scroll" id="pp-scroll" tabindex="-1"><!-- people:directory --><!-- /people:directory --></div>
+  </aside>
+  <section class="pp-stage" id="pp-stage" aria-label="Star chart of the people of the Timeline">
+    <div class="pp-pupil" id="pp-pupil">
+      <div class="pp-ground" id="pp-ground"><canvas class="pp-plate" aria-hidden="true"></canvas><canvas class="pp-plate" aria-hidden="true"></canvas><div class="pp-ground-txt"><span class="pp-ground-y"></span><span class="lab pp-ground-e"></span><span class="lab pp-ground-go" aria-hidden="true">Tap to look</span></div></div>
+    </div>
+    <canvas id="pp-sky" role="img" aria-label="A circular star chart. Each star is a person named in the Timeline; rings are the ten chapters from the center outward; the window at the center shows a live scene."></canvas>
+    <p class="pp-loading" id="pp-loading"><span class="lab">Charting the people of the Timeline</span></p>
+
+    <div class="pp-tools" id="pp-tools">
+      <div class="pp-find">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12.6 12.6l4.4 4.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <input id="pp-q" type="search" placeholder="Find a person" autocomplete="off" spellcheck="false" aria-label="Find a person" aria-controls="pp-results" aria-expanded="false" role="combobox">
+        <ul id="pp-results" class="pp-results" role="listbox" hidden></ul>
+      </div>
+    </div>
+
+    <div class="pp-filter" id="pp-filter" hidden></div>
+
+    <div class="pp-zoom" id="pp-zoom" role="group" aria-label="Zoom">
+      <button type="button" data-zoom="in" aria-label="Zoom in">+</button>
+      <button type="button" data-zoom="out" aria-label="Zoom out">&minus;</button>
+      <button type="button" data-zoom="reset" aria-label="Show the whole chart"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="10" r="2" fill="currentColor"/></svg></button>
+    </div>
+
+    <div class="pp-key" id="pp-key">
+      <div class="pp-key-base">
+        <button class="pp-key-chip" id="pp-key-chip" type="button" aria-expanded="false" aria-controls="pp-key-body"><span class="q" aria-hidden="true">?</span>How to read it</button>
+        <div class="pp-key-body" id="pp-key-body">
+          <p class="lab">How to read it</p>
+          <p class="kr"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="3.2" fill="none" stroke="currentColor"/><circle cx="11" cy="11" r="6.4" fill="none" stroke="currentColor" opacity=".6"/><circle cx="11" cy="11" r="9.6" fill="none" stroke="currentColor" opacity=".35"/></svg><span><b>Rings</b> are the ten chapters: 71,000 BCE at the center, 2025 at the rim</span></p>
+          <p class="kr"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="8" cy="11" r="5" fill="#F2B233"/><circle cx="8" cy="11" r="1.7" fill="#FCFBF7"/><circle cx="17" cy="8" r="2" fill="#7C70DA"/><circle cx="17.5" cy="15" r="1.4" fill="#1FA8C8"/></svg><span><b>Stars</b> are people, sized by how many moments name them</span></p>
+          <p class="kr"><svg viewBox="0 0 22 22" aria-hidden="true"><rect x="4" y="6" width="2" height="2" fill="currentColor"/><rect x="10" y="10" width="2" height="2" fill="currentColor"/><rect x="15" y="5" width="2" height="2" fill="currentColor"/><rect x="7" y="15" width="2" height="2" fill="currentColor"/><rect x="16" y="14" width="2" height="2" fill="currentColor"/></svg><span><b>Dust</b> is the <span data-n="mm">1,087</span> moments, set by date and idea</span></p>
+          <p class="kr"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M3 17A10 10 0 0 1 19 17" fill="none" stroke="currentColor"/><path d="M5 9l-1.6-1.4M11 5.5V3.4M17 9l1.6-1.4" stroke="currentColor"/></svg><span><b>The rim</b> names the idea regions; <b>lines</b> join people who share a moment</span></p>
+          <p class="kr"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="8" fill="none" stroke="#FF4C00" stroke-width="1.6"/><circle cx="11" cy="11" r="4.5" fill="currentColor" opacity=".45"/></svg><span><b>The window</b> at the center is a live scene from the era in focus</span></p>
+        </div>
+      </div>
+    </div>
+    <p class="pp-hint" id="pp-hint">Pinch or <kbd>&#8984;</kbd> + scroll to zoom &middot; drag to pan</p>
+
+    <div class="pp-tip" id="pp-tip" aria-hidden="true" hidden></div>
+
+    <div class="pp-through" id="pp-through" hidden>
+      <div class="pp-through-card" role="group" aria-label="Looking through the window">
+        <div class="pp-through-tx">
+          <p class="pp-through-t"><span class="pp-live-dot" aria-hidden="true"></span><span class="lab" id="pp-th-k">Live scene</span><span id="pp-th-t"></span></p>
+          <p class="pp-through-m" id="pp-th-m"></p>
+        </div>
+        <div class="pp-through-a"><a class="pp-btn pp-btn-light" id="pp-th-open" href="moment.html">Open the moment</a><button class="pp-btn" type="button" id="pp-th-back">Back to the chart <kbd>Esc</kbd></button></div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+<script src="assets/site.js"></script><script src="assets/embed-shim.js"></script><script src="assets/views/people.js"></script></body></html>

@@ -1,0 +1,7 @@
+/* LR-EMBED: the Timeline's people view inside a subject page on www.lerandom.art; the page above carries Le Random's own nav */
+.pp{top:0!important}
+.pp-ground-go{display:none!important}
+/* 30 Sep 2026, Peter: the panel grows with the screen (a big iMac had a huge chart and a narrow panel) */
+@media (min-width:1400px){.pp{--panel-w:clamp(440px,32vw,780px)}}
+@media (min-width:1800px){.pp-scroll{zoom:1.12}}
+@media (min-width:2400px){.pp-scroll{zoom:1.25}}

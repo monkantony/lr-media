@@ -1,0 +1,3679 @@
+{
+  "blombos-cave-drawing": {
+    "body": [
+      "The earliest known drawing made by humans is generative. Ochre cross-hatching found at <a href=\"https://www.lerandom.art/subjects/blombos-cave\">Blombos Cave</a> in <a href=\"https://www.lerandom.art/subjects/south-africa\">South Africa</a> is the earliest known drawing yet found anywhere. “They qualify as generative because the placement of individual marks has not been decided by the artisan, but dictated by a manually executed symmetry‐based algorithm,” according to <a href=\"https://www.lerandom.art/subjects/philip-galanter\">Philip Galanter</a>.",
+      "<a href=\"https://www.lerandom.art/editorial/casey-reas-on-the-history-of-generative-art-part-2\" target=\"_blank\" rel=\"noopener\">Casey Reas has spoken</a> of how logical, systems thinking is “really essential for this medium.” What the Blombos cave art and many other similar, prehistoric tiling patterns reveal is the ancient, innate and unmistakably human origins of systems thinking in art.",
+      "Blombos Cave’s symmetry-based tiling system may not universally be considered autonomous and thus generative. <a href=\"https://www.lerandom.art/editorial/decoupling-generative-art-with-philip-galanter\" target=\"_blank\" rel=\"noopener\">As I argue</a>, the critical question to ask is: “Does the artist relinquish control to an external system at some point?” While a simple tiling system is deployed here, more complex versions will appear later in our story with Islamic tile art."
+    ],
+    "cite": [
+      {
+        "url": "",
+        "label": "Paul, Christiane. A Companion to Digital Art, 159. John Wiley & Sons Inc, 2019."
+      }
+    ],
+    "img": {
+      "src": "img/blombos-cave-drawing.jpg",
+      "cap": "Blombos Cave Drawing",
+      "credit": "",
+      "width": 640,
+      "height": 750
+    },
+    "tags": [
+      "Philip Galanter",
+      "Casey Reas",
+      "Blombos Cave Drawing",
+      "South Africa",
+      "Blombos Cave",
+      "ochre",
+      "algorithms",
+      "symmetry",
+      "systems thinking",
+      "autonomy",
+      "pattern",
+      "drawing",
+      "tiling"
+    ],
+    "people": [
+      "casey reas",
+      "philip galanter"
+    ],
+    "subjects": [
+      {
+        "k": "autonomy",
+        "n": "autonomy",
+        "t": "themes"
+      },
+      {
+        "k": "drawing",
+        "n": "drawing",
+        "t": "themes"
+      },
+      {
+        "k": "pattern",
+        "n": "pattern",
+        "t": "themes"
+      },
+      {
+        "k": "symmetry",
+        "n": "symmetry",
+        "t": "themes"
+      },
+      {
+        "k": "systems thinking",
+        "n": "systems thinking",
+        "t": "themes"
+      },
+      {
+        "k": "algorithms",
+        "n": "algorithms",
+        "t": "tech"
+      },
+      {
+        "k": "ochre",
+        "n": "ochre",
+        "t": "tech"
+      },
+      {
+        "k": "tiling",
+        "n": "tiling",
+        "t": "tech"
+      },
+      {
+        "k": "casey reas",
+        "n": "Casey Reas",
+        "t": "people"
+      },
+      {
+        "k": "philip galanter",
+        "n": "Philip Galanter",
+        "t": "people"
+      },
+      {
+        "k": "blombos cave drawing",
+        "n": "Blombos Cave Drawing",
+        "t": "works"
+      },
+      {
+        "k": "blombos cave",
+        "n": "Blombos Cave",
+        "t": "places"
+      },
+      {
+        "k": "south africa",
+        "n": "South Africa",
+        "t": "places"
+      }
+    ],
+    "linked": [
+      "galanter-defines-generative-art"
+    ],
+    "echoes": [
+      "karl-otto-gotz-manually-anticipates-digital-generative-art",
+      "generacion-automatica-de-formas-plasticas-exhibition-at-the-mathematical-institu",
+      "computer-graphic-exhibition-at-brno-house-of-arts"
+    ],
+    "eds": [
+      "timeline-chapter-1-ten-top-moments",
+      "julia-kaganskiy-on-generativitys-deeper-consideration",
+      "christiane-paul-on-curating-cohens-aaron",
+      "decoupling-generative-art-with-philip-galanter"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "occurred"
+  },
+  "oldest-evidence-of-basket-weaving": {
+    "body": [
+      "Oldest known evidence of basket weaving dates back to c. 24,000 BCE. Impressions of weaving on fired clay found in Moravia, Central <a href=\"https://www.lerandom.art/subjects/europe\">Europe</a>, predating settled life. Some studies suggest the practice could be much older and origins of the practice are unclear. This algorithmic process is widely considered a generative practice, for example, by <a href=\"https://www.lerandom.art/subjects/nettrice-gaskins\">Nettrice Gaskins</a>. This ancient practice continues to inspire artists to this day."
+    ],
+    "cite": [
+      {
+        "url": "http://pages.hmc.edu/beckman/indian/basketry/OriginsOfBasketry.html",
+        "label": "pages.hmc.edu"
+      },
+      {
+        "url": "https://nft.artsy.net/auctions/artists-who-code/",
+        "label": "nft.artsy.net"
+      }
+    ],
+    "img": {
+      "src": "img/oldest-evidence-of-basket-weaving.jpg",
+      "cap": "A coiled reed basket from New Kingdom Egypt — a contextual image of the coiling technique, not the Upper Palaeolithic evidence itself.",
+      "credit": "Basket, Egypt, ca. 1550–1300 BCE, coiled basketry. The Metropolitan Museum of Art, New York, Rogers Fund, 1925 (Open Access / CC0).",
+      "width": 999,
+      "height": 836
+    },
+    "tags": [
+      "weaving",
+      "Europe",
+      "basket weaving",
+      "Moravia",
+      "Nettrice Gaskins",
+      "algorithms",
+      "generative art",
+      "craft"
+    ],
+    "people": [
+      "nettrice gaskins"
+    ],
+    "subjects": [
+      {
+        "k": "craft",
+        "n": "craft",
+        "t": "themes"
+      },
+      {
+        "k": "generative art",
+        "n": "generative art",
+        "t": "themes"
+      },
+      {
+        "k": "algorithms",
+        "n": "algorithms",
+        "t": "tech"
+      },
+      {
+        "k": "basket weaving",
+        "n": "basket weaving",
+        "t": "tech"
+      },
+      {
+        "k": "weaving",
+        "n": "weaving",
+        "t": "tech"
+      },
+      {
+        "k": "nettrice gaskins",
+        "n": "Nettrice Gaskins",
+        "t": "people"
+      },
+      {
+        "k": "europe",
+        "n": "Europe",
+        "t": "places"
+      },
+      {
+        "k": "moravia",
+        "n": "Moravia",
+        "t": "places"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "red-ridge-by-karen-guzak",
+      "a-p-rich-writes-program-for-the-design-of-wave-patterns-for-textiles",
+      "on-the-path-to-computer-art-by-the-parallel-group"
+    ],
+    "eds": [
+      "timeline-chapter-1-ten-top-moments",
+      "ten-moments-in-south-american-generative-art-history"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "occurred"
+  },
+  "first-known-author-is-a-woman": {
+    "body": [
+      "The first author known by name was a woman: <a href=\"https://www.lerandom.art/subjects/enheduanna\">Enheduanna</a> (fl. ca. 2300 BCE), daughter of Akkadian king Sargon and high priestess at the temple of the moon god in Ur, southern Mesopotamia. Her collection of Temple Hymns bears an inscription that translates, roughly, to: “The compiler of this tablet is Enheduanna. That which I’ve created has never existed before.” -Sasha Stiles"
+    ],
+    "cite": [
+      {
+        "url": "https://www.themorgan.org/exhibitions/she-who-wrote",
+        "label": "themorgan.org"
+      }
+    ],
+    "img": {
+      "src": "img/first-known-author-is-a-woman.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 401,
+      "height": 720
+    },
+    "tags": [
+      "Computer Text",
+      "Generative Poetry",
+      "Enheduanna",
+      "Sargon of Akkad",
+      "Temple Hymns",
+      "Ur",
+      "Mesopotamia",
+      "authorship",
+      "poetry",
+      "Akkad"
+    ],
+    "people": [
+      "enheduanna",
+      "sargon of akkad",
+      "sasha stiles"
+    ],
+    "subjects": [
+      {
+        "k": "authorship",
+        "n": "authorship",
+        "t": "themes"
+      },
+      {
+        "k": "computer text",
+        "n": "Computer Text",
+        "t": "themes"
+      },
+      {
+        "k": "generative poetry",
+        "n": "Generative Poetry",
+        "t": "themes"
+      },
+      {
+        "k": "poetry",
+        "n": "poetry",
+        "t": "themes"
+      },
+      {
+        "k": "enheduanna",
+        "n": "Enheduanna",
+        "t": "people"
+      },
+      {
+        "k": "sargon of akkad",
+        "n": "Sargon of Akkad",
+        "t": "people"
+      },
+      {
+        "k": "sasha stiles",
+        "n": "Sasha Stiles",
+        "t": "people"
+      },
+      {
+        "k": "temple hymns",
+        "n": "Temple Hymns",
+        "t": "works"
+      },
+      {
+        "k": "akkad",
+        "n": "Akkad",
+        "t": "places"
+      },
+      {
+        "k": "mesopotamia",
+        "n": "Mesopotamia",
+        "t": "places"
+      },
+      {
+        "k": "ur",
+        "n": "Ur",
+        "t": "places"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "christian-bok-publishes-the-piecemeal-bard-is-deconstructed",
+      "oscar-scwartz-gives-a-tedx-talk-on-computational-poetics",
+      "the-policemans-beard-is-half-constructed-published"
+    ],
+    "eds": [
+      "standout-artwork-of-2025",
+      "sasha-stiles-and-martha-joseph-on-language-as-technology",
+      "new-york-city-digital-art-guide",
+      "sasha-stiles-on-writing-poets"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "babylonians-begin-visualizing-mathematics": {
+    "body": [
+      "Babylonians are first to understand applied geometry, using triangles to parcel farmland and track celestial bodies. The Greeks would build upon these concepts with roots in logic and eventually <a href=\"m/euclids-elements.html\" data-moment=\"euclids-elements\">Euclid’s Elements</a>."
+    ],
+    "cite": [
+      {
+        "url": "https://web.archive.org/web/20210126192034/https://www.math.tamu.edu/~don.allen/history/babylon/babylon.html",
+        "label": "web.archive.org"
+      }
+    ],
+    "img": {
+      "src": "img/babylonians-begin-visualizing-mathematics.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 1644,
+      "height": 2369
+    },
+    "tags": [
+      "Euclid",
+      "Babylon",
+      "geometry",
+      "astronomy",
+      "surveying"
+    ],
+    "people": [
+      "euclid"
+    ],
+    "subjects": [
+      {
+        "k": "astronomy",
+        "n": "astronomy",
+        "t": "themes"
+      },
+      {
+        "k": "geometry",
+        "n": "geometry",
+        "t": "themes"
+      },
+      {
+        "k": "surveying",
+        "n": "surveying",
+        "t": "tech"
+      },
+      {
+        "k": "euclid",
+        "n": "Euclid",
+        "t": "people"
+      },
+      {
+        "k": "elements",
+        "n": "Elements",
+        "t": "works"
+      },
+      {
+        "k": "babylon",
+        "n": "Babylon",
+        "t": "places"
+      }
+    ],
+    "linked": [
+      "euclids-elements"
+    ],
+    "echoes": [
+      "divisibility-i-by-manfred-mohr",
+      "frank-j-malina-publishes-visual-art-mathematics-and-computers",
+      "the-beauty-of-fractals-by-heinz-otto-peitgen-and-peter-richter"
+    ],
+    "eds": [
+      "timeline-chapter-1-ten-top-moments"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "i-ching-introduces-binary-concept": {
+    "body": [
+      "First written between 1,000 to 750 BCE, <a href=\"https://www.lerandom.art/subjects/i-ching\">I Ching</a>, also known as the Book of Changes, is an ancient Chinese divination text. Some interpret the complex text to have introduced the binary system, based on its two symbols, the broken (yin) and solid (yang) lines, representing darkness and light respectively. This Western interpretation of the I Ching as binary may not be consistent with the document’s original meaning yet has impacted mathematics, philosophy and—thousands of years later—modern technology. In that sense, the I Ching was later read as an early form of binary.",
+      "The formative figure and avid reader of Chinese texts, <a href=\"https://www.lerandom.art/subjects/gottfried-leibniz\">Gottfried Leibniz</a>, who is also discussed later in this chapter, would go on to document the binary system in his 1703 paper, “<a href=\"https://www.lerandom.art/subjects/explanation-of-binary-arithmetic\">Explanation of Binary Arithmetic</a>.” In the paper, through his <a href=\"https://www.jstor.org/stable/1397760\" target=\"_blank\" rel=\"noopener\">perhaps flawed interpretation</a> of the I Ching, Leibniz draws comparisons between his binary system and the <a href=\"https://www.lerandom.art/subjects/fuxi\">Fuxi</a> hexagram arrangement Bouvet sent him, citing it several times and employing its identifiable hexagrams.",
+      "<a href=\"https://www.researchgate.net/publication/237686998_Boolean_Algebra_and_the_Yijing\" target=\"_blank\" rel=\"noopener\">According to</a> Dr. <a href=\"https://www.lerandom.art/subjects/andreas-schoter\">Andreas Schöter</a>, I Ching’s system of symbols can be interpreted as binary representation. Schöter argues that the versatile system has inspired both historical and contemporary computational thinkers. Additionally, several prominent generative artists have been inspired by the I Ching throughout the previous decades, including <a href=\"https://www.lerandom.art/subjects/john-cage\">John Cage</a>, <a href=\"https://www.lerandom.art/subjects/manfred-mohr\">Manfred Mohr</a> and <a href=\"https://www.lerandom.art/subjects/marius-watz\">Marius Watz</a>."
+    ],
+    "cite": [
+      {
+        "url": "https://doi.org/10.7551/mitpress/14123.003.0036",
+        "label": "doi.org"
+      }
+    ],
+    "img": {
+      "src": "img/i-ching-introduces-binary-concept.jpeg",
+      "cap": "",
+      "credit": "",
+      "width": 1313,
+      "height": 1262
+    },
+    "tags": [
+      "Gottfried Leibniz",
+      "Manfred Mohr",
+      "Marius Watz",
+      "John Cage",
+      "Explanation of Binary Arithmetic",
+      "I Ching",
+      "binary system",
+      "computer art",
+      "digital art",
+      "Joachim Bouvet",
+      "Andreas Schöter",
+      "China",
+      "Fuxi hexagram arrangement",
+      "divination",
+      "mathematics",
+      "generative art",
+      "philosophy",
+      "yin and yang",
+      "Fuxi"
+    ],
+    "people": [
+      "andreas schöter",
+      "fuxi",
+      "gottfried leibniz",
+      "joachim bouvet",
+      "john cage",
+      "manfred mohr",
+      "marius watz"
+    ],
+    "subjects": [
+      {
+        "k": "digital art",
+        "n": "digital art",
+        "t": "themes"
+      },
+      {
+        "k": "divination",
+        "n": "divination",
+        "t": "themes"
+      },
+      {
+        "k": "generative art",
+        "n": "generative art",
+        "t": "themes"
+      },
+      {
+        "k": "mathematics",
+        "n": "mathematics",
+        "t": "themes"
+      },
+      {
+        "k": "philosophy",
+        "n": "philosophy",
+        "t": "themes"
+      },
+      {
+        "k": "yin and yang",
+        "n": "yin and yang",
+        "t": "themes"
+      },
+      {
+        "k": "binary",
+        "n": "binary",
+        "t": "tech"
+      },
+      {
+        "k": "binary system",
+        "n": "binary system",
+        "t": "tech"
+      },
+      {
+        "k": "computer art",
+        "n": "computer art",
+        "t": "tech"
+      },
+      {
+        "k": "andreas schöter",
+        "n": "Andreas Schöter",
+        "t": "people"
+      },
+      {
+        "k": "fuxi",
+        "n": "Fuxi",
+        "t": "people"
+      },
+      {
+        "k": "gottfried leibniz",
+        "n": "Gottfried Leibniz",
+        "t": "people"
+      },
+      {
+        "k": "joachim bouvet",
+        "n": "Joachim Bouvet",
+        "t": "people"
+      },
+      {
+        "k": "john cage",
+        "n": "John Cage",
+        "t": "people"
+      },
+      {
+        "k": "manfred mohr",
+        "n": "Manfred Mohr",
+        "t": "people"
+      },
+      {
+        "k": "marius watz",
+        "n": "Marius Watz",
+        "t": "people"
+      },
+      {
+        "k": "explanation of binary arithmetic",
+        "n": "Explanation of Binary Arithmetic",
+        "t": "works"
+      },
+      {
+        "k": "fuxi hexagram arrangement",
+        "n": "Fuxi hexagram arrangement",
+        "t": "works"
+      },
+      {
+        "k": "i ching",
+        "n": "I Ching",
+        "t": "works"
+      },
+      {
+        "k": "china",
+        "n": "China",
+        "t": "places"
+      }
+    ],
+    "linked": [
+      "gottfried-leibniz-pioneers-computational-thinking",
+      "euclids-elements"
+    ],
+    "echoes": [
+      "on-the-path-to-computer-art-by-the-parallel-group",
+      "divisibility-ii-iii-1984-1986",
+      "edmund-c-berkeley-begins-publishing-computers-and-automation"
+    ],
+    "eds": [
+      "timeline-chapter-1-ten-top-moments",
+      "casey-reas-on-the-history-of-generative-art-part-2",
+      "demystifying-generative-aesthetics",
+      "reas-history-1"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "ancient-andean-textiles-weave-legacy-of-identity": {
+    "body": [
+      "For millennia, reaching back to at least 4200 BCE, Andean textiles have woven together stories of identity and ancestral beliefs. Predating written languages, textiles served as the predominant medium for conveying images and concepts, often including striking geometric patterns. These intricate cloth creations continue to hold profound significance to the Andean worldview to this day."
+    ],
+    "cite": [
+      {
+        "url": "https://doi.org/10.1126/sciadv.1501623",
+        "label": "doi.org"
+      }
+    ],
+    "img": {
+      "src": "img/ancient-andean-textiles-weave-legacy-of-identity.jpg",
+      "cap": "An embroidered Paracas border fragment from the south coast of Peru, its repeating figural and geometric bands worked in camelid hair on cotton.",
+      "credit": "Border Fragment, Paracas, 450–175 BCE. The Metropolitan Museum of Art, New York, Bequest of Arthur M. Bullowa, 1993 (Open Access / CC0).",
+      "width": 1600,
+      "height": 312
+    },
+    "tags": [
+      "identity",
+      "Material Generative Art",
+      "textiles",
+      "Andes",
+      "weaving",
+      "pattern",
+      "geometry",
+      "belief",
+      "non Western cosmologies",
+      "tradition",
+      "language",
+      "South America"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "belief",
+        "n": "belief",
+        "t": "themes"
+      },
+      {
+        "k": "geometry",
+        "n": "geometry",
+        "t": "themes"
+      },
+      {
+        "k": "identity",
+        "n": "identity",
+        "t": "themes"
+      },
+      {
+        "k": "language",
+        "n": "language",
+        "t": "themes"
+      },
+      {
+        "k": "material generative art",
+        "n": "Material Generative Art",
+        "t": "themes"
+      },
+      {
+        "k": "non western cosmologies",
+        "n": "non Western cosmologies",
+        "t": "themes"
+      },
+      {
+        "k": "pattern",
+        "n": "pattern",
+        "t": "themes"
+      },
+      {
+        "k": "textiles",
+        "n": "textiles",
+        "t": "themes"
+      },
+      {
+        "k": "tradition",
+        "n": "tradition",
+        "t": "themes"
+      },
+      {
+        "k": "weaving",
+        "n": "weaving",
+        "t": "tech"
+      },
+      {
+        "k": "andes",
+        "n": "Andes",
+        "t": "places"
+      },
+      {
+        "k": "south america",
+        "n": "South America",
+        "t": "places"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "generativemasks-by-takawo",
+      "a-p-rich-writes-program-for-the-design-of-wave-patterns-for-textiles",
+      "manfred-mohr-begins-exploring-the-cube"
+    ],
+    "eds": [],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "oracle-at-delphi": {
+    "body": [
+      "Scholars and travelers flock to Delphi, the most important shrine in Ancient <a href=\"https://www.lerandom.art/subjects/greece\">Greece</a>, to ask questions about the future and await, in exchange for gold and gifts, enigmatic replies from the <a href=\"https://www.lerandom.art/subjects/pythia\">Pythia</a>, priestess of <a href=\"https://www.lerandom.art/subjects/apollo\">Apollo</a>. The deep-rooted impulse toward oracular dialogue, the intellectual exercise of deciphering the Pythia’s statements, and the cultural significance of such prophetic divinations lays a foundation for contemporary search engines and predictive text engines that tap into our collective consciousness, offering sometimes puzzling, sometimes profound answers. -Sasha Stiles"
+    ],
+    "cite": [
+      {
+        "url": "https://commons.wikimedia.org/w/index.php?curid=1077695",
+        "label": "commons.wikimedia.org"
+      }
+    ],
+    "img": {
+      "src": "img/oracle-at-delphi.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 345,
+      "height": 697
+    },
+    "tags": [
+      "Greece",
+      "Computer Text",
+      "Generative Poetry",
+      "Performance Art",
+      "Delphi",
+      "Pythia",
+      "Apollo",
+      "divination"
+    ],
+    "people": [
+      "apollo",
+      "pythia",
+      "sasha stiles"
+    ],
+    "subjects": [
+      {
+        "k": "computer text",
+        "n": "Computer Text",
+        "t": "themes"
+      },
+      {
+        "k": "divination",
+        "n": "divination",
+        "t": "themes"
+      },
+      {
+        "k": "generative poetry",
+        "n": "Generative Poetry",
+        "t": "themes"
+      },
+      {
+        "k": "performance art",
+        "n": "Performance Art",
+        "t": "themes"
+      },
+      {
+        "k": "apollo",
+        "n": "Apollo",
+        "t": "people"
+      },
+      {
+        "k": "pythia",
+        "n": "Pythia",
+        "t": "people"
+      },
+      {
+        "k": "sasha stiles",
+        "n": "Sasha Stiles",
+        "t": "people"
+      },
+      {
+        "k": "delphi",
+        "n": "Delphi",
+        "t": "places"
+      },
+      {
+        "k": "greece",
+        "n": "Greece",
+        "t": "places"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "oscar-scwartz-gives-a-tedx-talk-on-computational-poetics",
+      "christian-bok-publishes-the-piecemeal-bard-is-deconstructed",
+      "ray-kurzweils-cybernetic-poet"
+    ],
+    "eds": [
+      "standout-artwork-of-2025",
+      "sasha-stiles-and-martha-joseph-on-language-as-technology",
+      "new-york-city-digital-art-guide",
+      "sasha-stiles-on-writing-poets"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "pythagoras-popularizes-geometric-patterns": {
+    "body": [
+      "<a href=\"https://www.lerandom.art/subjects/pythagoras\">Pythagoras</a> credited with popularizing geometrical patterns, “the main feature of 1960s computer art. Computer artworks were frequently based on the golden section, Fibonacci numbers, and many other emblematic Pythagorean premises,” according to <a href=\"https://www.lerandom.art/subjects/grant-taylor\">Grant Taylor</a>."
+    ],
+    "cite": [
+      {
+        "url": "",
+        "label": "Taylor, Grant D. When the Machine Made Art: The Troubled History of Computer Art, 76. New York: Bloomsbury Academic, 2014."
+      }
+    ],
+    "img": {
+      "cap": "Euclid, Elements, Book I, Proposition 47 (the Pythagorean theorem). Ninth-century Greek manuscript, Vatican Library, Vat. gr. 190, folios 38v–39r. A later manuscript witness, not an artifact from Pythagoras’s lifetime.",
+      "credit": "Euclid; manuscript scribe and reproduction photographer unidentified. Biblioteca Apostolica Vaticana, Vat. gr. 190. Reproduction via Wikimedia Commons. <a href=\"https://www.loc.gov/exhibits/vatican/math.html\">Image source</a>.",
+      "alt": "Open parchment manuscript with Greek text, extensive marginal notes and geometric diagrams of squares on a triangle’s sides.",
+      "sourceUrl": "https://www.loc.gov/exhibits/vatican/math.html",
+      "creator": [
+        "Euclid"
+      ],
+      "width": 2200,
+      "height": 1351,
+      "src": "img/pythagoras-popularizes-geometric-patterns-6ac2c510a4.jpg"
+    },
+    "tags": [
+      "Grant Taylor",
+      "Pythagoras",
+      "computer art",
+      "geometry",
+      "pattern",
+      "golden ratio",
+      "Fibonacci numbers",
+      "mathematics"
+    ],
+    "people": [
+      "grant taylor",
+      "pythagoras"
+    ],
+    "subjects": [
+      {
+        "k": "geometry",
+        "n": "geometry",
+        "t": "themes"
+      },
+      {
+        "k": "golden ratio",
+        "n": "golden ratio",
+        "t": "themes"
+      },
+      {
+        "k": "mathematics",
+        "n": "mathematics",
+        "t": "themes"
+      },
+      {
+        "k": "pattern",
+        "n": "pattern",
+        "t": "themes"
+      },
+      {
+        "k": "computer art",
+        "n": "computer art",
+        "t": "tech"
+      },
+      {
+        "k": "fibonacci numbers",
+        "n": "Fibonacci numbers",
+        "t": "tech"
+      },
+      {
+        "k": "grant taylor",
+        "n": "Grant Taylor",
+        "t": "people"
+      },
+      {
+        "k": "pythagoras",
+        "n": "Pythagoras",
+        "t": "people"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "the-beauty-of-fractals-by-heinz-otto-peitgen-and-peter-richter",
+      "surface-substitution-on-36-plates-by-jennifer-bartlett",
+      "archetype-by-kjetil-golid"
+    ],
+    "eds": [
+      "demystifying-generative-art",
+      "casey-reas-on-the-history-of-generative-art-part-2"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "euclids-elements": {
+    "body": [
+      "Considered one of the most influential and long-used textbooks of all time, <a href=\"https://www.lerandom.art/subjects/elements\">Elements</a> remains a key work in geometry’s logical development. <a href=\"https://www.lerandom.art/subjects/euclid\">Euclid</a>’s ancient Greek text consists of thirteen books that demonstrate how to make logical proofs to ascertain certainty and investigate the unknown. The books also include some of the earliest known algorithms. The concepts Elements introduced would be critical in the development of algorithms by Islamic mathematicians and throughout the European Middle Ages. The text would again prove vital in early modern science, influencing <a href=\"https://www.lerandom.art/subjects/copernicus\">Copernicus</a>, <a href=\"https://www.lerandom.art/subjects/kepler\">Kepler</a> and <a href=\"https://www.lerandom.art/subjects/galileo\">Galileo</a> among countless others. Its legacy throughout the millennia is unquestioned. Like the seminal advancements in binary systems from <a href=\"m/i-ching-introduces-binary-concept.html\" data-moment=\"i-ching-introduces-binary-concept\">I Ching</a>, Elements played a critical role in moving the field of logic forward. Binary systems and logic would prove foundational to modern attempts to design computing machines, including by <a href=\"https://www.lerandom.art/subjects/gottfried-leibniz\">Gottfried Leibniz</a> later in this chapter."
+    ],
+    "cite": [
+      {
+        "url": "http://aleph0.clarku.edu/~djoyce/java/elements/elements.html",
+        "label": "aleph0.clarku.edu"
+      }
+    ],
+    "img": {
+      "src": "img/euclids-elements.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 1599,
+      "height": 974
+    },
+    "tags": [
+      "Gottfried Leibniz",
+      "Copernicus",
+      "Galileo",
+      "Euclid",
+      "Kepler",
+      "I Ching",
+      "Elements",
+      "Greece",
+      "geometry",
+      "algorithms",
+      "mathematics",
+      "logic",
+      "computation",
+      "binary system"
+    ],
+    "people": [
+      "copernicus",
+      "euclid",
+      "galileo",
+      "gottfried leibniz",
+      "kepler"
+    ],
+    "subjects": [
+      {
+        "k": "computation",
+        "n": "computation",
+        "t": "themes"
+      },
+      {
+        "k": "geometry",
+        "n": "geometry",
+        "t": "themes"
+      },
+      {
+        "k": "logic",
+        "n": "logic",
+        "t": "themes"
+      },
+      {
+        "k": "mathematics",
+        "n": "mathematics",
+        "t": "themes"
+      },
+      {
+        "k": "algorithms",
+        "n": "algorithms",
+        "t": "tech"
+      },
+      {
+        "k": "binary",
+        "n": "binary",
+        "t": "tech"
+      },
+      {
+        "k": "binary system",
+        "n": "binary system",
+        "t": "tech"
+      },
+      {
+        "k": "copernicus",
+        "n": "Copernicus",
+        "t": "people"
+      },
+      {
+        "k": "euclid",
+        "n": "Euclid",
+        "t": "people"
+      },
+      {
+        "k": "galileo",
+        "n": "Galileo",
+        "t": "people"
+      },
+      {
+        "k": "gottfried leibniz",
+        "n": "Gottfried Leibniz",
+        "t": "people"
+      },
+      {
+        "k": "kepler",
+        "n": "Kepler",
+        "t": "people"
+      },
+      {
+        "k": "elements",
+        "n": "Elements",
+        "t": "works"
+      },
+      {
+        "k": "i ching",
+        "n": "I Ching",
+        "t": "works"
+      },
+      {
+        "k": "greece",
+        "n": "Greece",
+        "t": "places"
+      }
+    ],
+    "linked": [
+      "babylonians-begin-visualizing-mathematics",
+      "gottfried-leibniz-builds-the-calculating-machine",
+      "i-ching-introduces-binary-concept"
+    ],
+    "echoes": [
+      "surface-substitution-on-36-plates-by-jennifer-bartlett",
+      "the-beauty-of-fractals-by-heinz-otto-peitgen-and-peter-richter",
+      "the-art-of-computer-programming-by-donald-e-knuth"
+    ],
+    "eds": [
+      "timeline-chapter-1-ten-top-moments",
+      "jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge",
+      "machinic-taste",
+      "val-ravaglia-on-electric-dreams"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "published"
+  },
+  "library-of-alexandria-established": {
+    "body": [
+      "Library of Alexandria is established around the mission of “holding in one place all of the knowledge ever accumulated by man,” the world’s “memory bank”; the Ptolemic dynasty grows the library by decreeing that any book brought into the city be immediately copied by scribes, and taking measures to preclude rivals from collecting books. -Sasha Stiles"
+    ],
+    "cite": [
+      {
+        "url": "https://doi.org/10.1163/9789047400554_005",
+        "label": "doi.org"
+      }
+    ],
+    "img": {
+      "src": "img/library-of-alexandria-established.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 708,
+      "height": 720
+    },
+    "tags": [
+      "collecting",
+      "memory",
+      "Computer Text",
+      "Generative Poetry",
+      "Library of Alexandria",
+      "Alexandria",
+      "Ptolemaic dynasty",
+      "preservation",
+      "knowledge systems",
+      "literature"
+    ],
+    "people": [
+      "sasha stiles"
+    ],
+    "subjects": [
+      {
+        "k": "collecting",
+        "n": "collecting",
+        "t": "themes"
+      },
+      {
+        "k": "computer text",
+        "n": "Computer Text",
+        "t": "themes"
+      },
+      {
+        "k": "generative poetry",
+        "n": "Generative Poetry",
+        "t": "themes"
+      },
+      {
+        "k": "knowledge systems",
+        "n": "knowledge systems",
+        "t": "themes"
+      },
+      {
+        "k": "literature",
+        "n": "literature",
+        "t": "themes"
+      },
+      {
+        "k": "memory",
+        "n": "memory",
+        "t": "themes"
+      },
+      {
+        "k": "preservation",
+        "n": "preservation",
+        "t": "themes"
+      },
+      {
+        "k": "sasha stiles",
+        "n": "Sasha Stiles",
+        "t": "people"
+      },
+      {
+        "k": "library of alexandria",
+        "n": "Library of Alexandria",
+        "t": "orgs"
+      },
+      {
+        "k": "ptolemaic dynasty",
+        "n": "Ptolemaic dynasty",
+        "t": "orgs"
+      },
+      {
+        "k": "alexandria",
+        "n": "Alexandria",
+        "t": "places"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "the-policemans-beard-is-half-constructed-published",
+      "documenta-done-by-vuk-cosic",
+      "16-etudes-sur-les-origines-de-blum-by-vera-molnar"
+    ],
+    "eds": [
+      "standout-artwork-of-2025",
+      "sasha-stiles-and-martha-joseph-on-language-as-technology",
+      "new-york-city-digital-art-guide",
+      "sasha-stiles-on-writing-poets"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "occurred"
+  },
+  "hero-of-alexandria-invents-automata": {
+    "body": [
+      "<a href=\"https://www.lerandom.art/subjects/hero-of-alexandria\">Hero of Alexandria</a>, Greek mathematician and engineer, created a number of automata, including the aeolipile, a steam turbine, a fountain, a wind-powered organ and a puppet theater. Some of the earliest known mechanical devices, Hero’s automata demonstrated advanced knowledge of physics and engineering, paving the way for future developments in automation and robotics."
+    ],
+    "cite": [
+      {
+        "url": "https://www.historyofinformation.com/detail.php?id=10",
+        "label": "historyofinformation.com"
+      }
+    ],
+    "img": {
+      "src": "img/hero-of-alexandria-invents-automata.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 1302,
+      "height": 1776
+    },
+    "tags": [
+      "robotics",
+      "Hero of Alexandria",
+      "Alexandria",
+      "aeolipile",
+      "automation",
+      "engineering",
+      "physics",
+      "steam power",
+      "puppetry"
+    ],
+    "people": [
+      "hero of alexandria"
+    ],
+    "subjects": [
+      {
+        "k": "automation",
+        "n": "automation",
+        "t": "themes"
+      },
+      {
+        "k": "engineering",
+        "n": "engineering",
+        "t": "themes"
+      },
+      {
+        "k": "physics",
+        "n": "physics",
+        "t": "themes"
+      },
+      {
+        "k": "puppetry",
+        "n": "puppetry",
+        "t": "themes"
+      },
+      {
+        "k": "aeolipile",
+        "n": "aeolipile",
+        "t": "tech"
+      },
+      {
+        "k": "robotics",
+        "n": "robotics",
+        "t": "tech"
+      },
+      {
+        "k": "steam power",
+        "n": "steam power",
+        "t": "tech"
+      },
+      {
+        "k": "hero of alexandria",
+        "n": "Hero of Alexandria",
+        "t": "people"
+      },
+      {
+        "k": "alexandria",
+        "n": "Alexandria",
+        "t": "places"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "cysp-1-by-nicolas-schoffer",
+      "beyond-modern-sculpture-the-effects-of-science-and-technology-on-the-sculpture-o",
+      "automat-und-mensch-kybernetische-tatsachen-und-hypothesen-by-karl-steinbuch"
+    ],
+    "eds": [
+      "hito-steyerl-on-how-it-uses-us",
+      "sougwen-chung-on-us-in-another-form",
+      "sougwen-chung-on-aggregated-abandon",
+      "embodying-ai-at-neurips-2025-creative-ai-track"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "emergence-of-islamic-geometric-art": {
+    "body": [
+      "Islamic geometric patterns, emerged in the 8th century during the Islamic Golden Age, influenced by Greek, Roman and Sasanian Persian mathematics and ornament. An example of a generative process predating the computer, Islamic artists used these complex geometric shapes to create intricate, symmetrical designs that were used to decorate buildings, manuscripts, textiles, and other objects."
+    ],
+    "cite": [
+      {
+        "url": "https://www.metmuseum.org/toah/hd/geom/hd_geom.htm",
+        "label": "metmuseum.org"
+      }
+    ],
+    "img": {
+      "src": "img/emergence-of-islamic-geometric-art.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 3000,
+      "height": 2250
+    },
+    "tags": [
+      "Islamic Golden Age",
+      "geometry",
+      "pattern",
+      "symmetry",
+      "mathematics",
+      "architecture",
+      "textiles",
+      "manuscripts"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "architecture",
+        "n": "architecture",
+        "t": "themes"
+      },
+      {
+        "k": "geometry",
+        "n": "geometry",
+        "t": "themes"
+      },
+      {
+        "k": "islamic golden age",
+        "n": "Islamic Golden Age",
+        "t": "themes"
+      },
+      {
+        "k": "manuscripts",
+        "n": "manuscripts",
+        "t": "themes"
+      },
+      {
+        "k": "mathematics",
+        "n": "mathematics",
+        "t": "themes"
+      },
+      {
+        "k": "pattern",
+        "n": "pattern",
+        "t": "themes"
+      },
+      {
+        "k": "symmetry",
+        "n": "symmetry",
+        "t": "themes"
+      },
+      {
+        "k": "textiles",
+        "n": "textiles",
+        "t": "themes"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "a-p-rich-writes-program-for-the-design-of-wave-patterns-for-textiles",
+      "larry-cuba-two-space",
+      "archetype-by-kjetil-golid"
+    ],
+    "eds": [],
+    "pods": [
+      1
+    ],
+    "dateType": "occurred"
+  },
+  "al-khwarizmis-writes-concerning-the-hindu-art-of-reckoning": {
+    "body": [
+      "The Persian <a href=\"https://www.lerandom.art/subjects/al-khwarizmi\">Al-Khwārizmī</a>'s <a href=\"https://www.lerandom.art/subjects/concerning-the-hindu-art-of-reckoning\">Concerning the Hindu Art of Reckoning</a> introduced zero, the decimal system and Hindu numerals to the Islamic and European world from <a href=\"https://www.lerandom.art/subjects/india\">India</a>. Preserved only in its Latin translation, <a href=\"https://www.ms.uky.edu/~carl/ma330/project2/al-khwa21.html\" target=\"_blank\" rel=\"noopener\">the text was likely based</a> on Arabic translations of the Indian mathematician <a href=\"https://www.lerandom.art/subjects/brahmagupta\">Brahmagupta</a>’s work. Al-Khwārizmī’s name, Algoritmi in Latin, later led to the term “algorithm\" when the text reached European readers through twelfth-century Latin translations.",
+      "It was also during this time of the Abbasid Caliphate, <a href=\"https://www.ames.cam.ac.uk/publications/books/great-caliphs-golden-age-abbasid-empire\" target=\"_blank\" rel=\"noopener\">considered</a> a “golden age,” that <a href=\"https://www.metmuseum.org/toah/hd/abba/hd_abba.htm\" target=\"_blank\" rel=\"noopener\">Islamic tiling and other abstract geometric forms flourished</a>."
+    ],
+    "cite": [
+      {
+        "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Khwarizmi/",
+        "label": "mathshistory.st-andrews.ac.uk"
+      }
+    ],
+    "img": {
+      "src": "img/al-khwarizmis-writes-concerning-the-hindu-art-of-reckoning.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 340,
+      "height": 491
+    },
+    "tags": [
+      "Al-Khwārizmī",
+      "Brahmagupta",
+      "Concerning the Hindu Art of Reckoning",
+      "India",
+      "Persia",
+      "Europe",
+      "Abbasid Caliphate",
+      "Islamic Golden Age",
+      "algorithms",
+      "Hindu numerals",
+      "decimal system",
+      "translation"
+    ],
+    "people": [
+      "al-khwārizmī",
+      "brahmagupta"
+    ],
+    "subjects": [
+      {
+        "k": "islamic golden age",
+        "n": "Islamic Golden Age",
+        "t": "themes"
+      },
+      {
+        "k": "translation",
+        "n": "translation",
+        "t": "themes"
+      },
+      {
+        "k": "algorithms",
+        "n": "algorithms",
+        "t": "tech"
+      },
+      {
+        "k": "decimal system",
+        "n": "decimal system",
+        "t": "tech"
+      },
+      {
+        "k": "hindu numerals",
+        "n": "Hindu numerals",
+        "t": "tech"
+      },
+      {
+        "k": "al-khwārizmī",
+        "n": "Al-Khwārizmī",
+        "t": "people"
+      },
+      {
+        "k": "brahmagupta",
+        "n": "Brahmagupta",
+        "t": "people"
+      },
+      {
+        "k": "concerning the hindu art of reckoning",
+        "n": "Concerning the Hindu Art of Reckoning",
+        "t": "works"
+      },
+      {
+        "k": "abbasid caliphate",
+        "n": "Abbasid Caliphate",
+        "t": "places"
+      },
+      {
+        "k": "europe",
+        "n": "Europe",
+        "t": "places"
+      },
+      {
+        "k": "india",
+        "n": "India",
+        "t": "places"
+      },
+      {
+        "k": "persia",
+        "n": "Persia",
+        "t": "places"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "surface-substitution-on-36-plates-by-jennifer-bartlett",
+      "gaussian-quadratic-by-a-michael-noll",
+      "ivan-moscovich-begins-experimenting-with-mathematical-forms"
+    ],
+    "eds": [
+      "timeline-chapter-1-ten-top-moments"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "published"
+  },
+  "ramon-llull-designs-the-logic-machine": {
+    "body": [
+      "<a href=\"https://www.lerandom.art/subjects/ramon-llull\">Ramón Llull</a>’s logic machine was a device used to generate new knowledge by mechanically combining concepts and ideas. It anticipated the concept of computation, inspiring later philosophers and scientists to explore the potential of machines for generating new knowledge. The logic machine also had practical applications in fields such as language translation and cryptography. This device was highlighted in <a href=\"m/cybernetic-serendipity-defines-a-movement.html\" data-moment=\"cybernetic-serendipity-defines-a-movement\">Cybernetic Serendipity</a> as an important development in the history of the digital computer."
+    ],
+    "cite": [
+      {
+        "url": "https://plato.stanford.edu/entries/llull/",
+        "label": "plato.stanford.edu"
+      }
+    ],
+    "img": {
+      "src": "img/ramon-llull-designs-the-logic-machine.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 443,
+      "height": 588
+    },
+    "tags": [
+      "Ramón Llull",
+      "Cybernetic Serendipity",
+      "cybernetics",
+      "logic machine",
+      "combinatorics",
+      "computation",
+      "knowledge systems",
+      "cryptography",
+      "translation"
+    ],
+    "people": [
+      "ramón llull"
+    ],
+    "subjects": [
+      {
+        "k": "combinatorics",
+        "n": "combinatorics",
+        "t": "themes"
+      },
+      {
+        "k": "computation",
+        "n": "computation",
+        "t": "themes"
+      },
+      {
+        "k": "cryptography",
+        "n": "cryptography",
+        "t": "themes"
+      },
+      {
+        "k": "knowledge systems",
+        "n": "knowledge systems",
+        "t": "themes"
+      },
+      {
+        "k": "translation",
+        "n": "translation",
+        "t": "themes"
+      },
+      {
+        "k": "cybernetics",
+        "n": "cybernetics",
+        "t": "tech"
+      },
+      {
+        "k": "logic machine",
+        "n": "logic machine",
+        "t": "tech"
+      },
+      {
+        "k": "ramón llull",
+        "n": "Ramón Llull",
+        "t": "people"
+      },
+      {
+        "k": "cybernetic serendipity",
+        "n": "Cybernetic Serendipity",
+        "t": "exhibitions"
+      }
+    ],
+    "linked": [
+      "cybernetic-serendipity-defines-a-movement"
+    ],
+    "echoes": [
+      "vera-molnar-develops-her-machine-imaginaire",
+      "generacion-automatica-de-formas-plasticas-exhibition-at-the-mathematical-institu",
+      "edmund-c-berkeley-begins-publishing-computers-and-automation"
+    ],
+    "eds": [
+      "demystifying-generative-autonomy",
+      "london-digital-art-guide",
+      "the-ultraintelligent-machine-and-gaberbocchus-common-room",
+      "reprogramming-sensory-habits"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "richard-of-wallingford-invents-clockwork-figures": {
+    "body": [
+      "Englishman <a href=\"https://www.lerandom.art/subjects/richard-of-wallingford\">Richard of Wallingford</a> designs the St Albans astronomical clock, an early clockwork machine. An example of a generative process predating the computer, the art of creating clockwork figures became more refined during the Renaissance period, from the 15th to the 17th century, when some of the most complex and intricate automata were created."
+    ],
+    "cite": [
+      {
+        "url": "https://doi.org/10.1017/9781805430650.030",
+        "label": "doi.org"
+      }
+    ],
+    "img": {
+      "src": "img/richard-of-wallingford-invents-clockwork-figures.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 708,
+      "height": 750
+    },
+    "tags": [
+      "Richard of Wallingford",
+      "St Albans Astronomical Clock",
+      "St Albans",
+      "England",
+      "clockwork",
+      "generative art",
+      "astronomy",
+      "timekeeping"
+    ],
+    "people": [
+      "richard of wallingford"
+    ],
+    "subjects": [
+      {
+        "k": "astronomy",
+        "n": "astronomy",
+        "t": "themes"
+      },
+      {
+        "k": "generative art",
+        "n": "generative art",
+        "t": "themes"
+      },
+      {
+        "k": "clockwork",
+        "n": "clockwork",
+        "t": "tech"
+      },
+      {
+        "k": "st albans astronomical clock",
+        "n": "St Albans Astronomical Clock",
+        "t": "tech"
+      },
+      {
+        "k": "timekeeping",
+        "n": "timekeeping",
+        "t": "tech"
+      },
+      {
+        "k": "richard of wallingford",
+        "n": "Richard of Wallingford",
+        "t": "people"
+      },
+      {
+        "k": "england",
+        "n": "England",
+        "t": "places"
+      },
+      {
+        "k": "st albans",
+        "n": "St Albans",
+        "t": "places"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "beyond-modern-sculpture-the-effects-of-science-and-technology-on-the-sculpture-o",
+      "on-the-path-to-computer-art-by-the-parallel-group",
+      "edmund-c-berkeley-begins-publishing-computers-and-automation"
+    ],
+    "eds": [],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "johannes-gutenberg-s-printing-press": {
+    "body": [
+      "<a href=\"https://www.lerandom.art/subjects/johannes-gutenberg\">Johannes Gutenberg</a> begins developing the mechanised moveable type printing press that would kick off <a href=\"https://www.lerandom.art/subjects/europe\">Europe</a>’s Printing Revolution, capable of producing up to 3600 pages per day and significantly reducing the cost of publishing and distributing literature. This innovation would lead to the era of mass communication, enabling information and ideas to circulate widely and transcend the elite’s monopoly on literacy. -Sasha Stiles"
+    ],
+    "cite": [
+      {
+        "url": "https://www.hrc.utexas.edu/gutenberg-bible/",
+        "label": "hrc.utexas.edu"
+      }
+    ],
+    "img": {
+      "src": "img/johannes-gutenberg-s-printing-press.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 952,
+      "height": 720
+    },
+    "tags": [
+      "Europe",
+      "Computer Text",
+      "Generative Poetry",
+      "Johannes Gutenberg",
+      "printing press",
+      "movable type",
+      "literature",
+      "mass communication",
+      "literacy"
+    ],
+    "people": [
+      "johannes gutenberg",
+      "sasha stiles"
+    ],
+    "subjects": [
+      {
+        "k": "computer text",
+        "n": "Computer Text",
+        "t": "themes"
+      },
+      {
+        "k": "generative poetry",
+        "n": "Generative Poetry",
+        "t": "themes"
+      },
+      {
+        "k": "literacy",
+        "n": "literacy",
+        "t": "themes"
+      },
+      {
+        "k": "literature",
+        "n": "literature",
+        "t": "themes"
+      },
+      {
+        "k": "mass communication",
+        "n": "mass communication",
+        "t": "themes"
+      },
+      {
+        "k": "movable type",
+        "n": "movable type",
+        "t": "tech"
+      },
+      {
+        "k": "printing press",
+        "n": "printing press",
+        "t": "tech"
+      },
+      {
+        "k": "johannes gutenberg",
+        "n": "Johannes Gutenberg",
+        "t": "people"
+      },
+      {
+        "k": "sasha stiles",
+        "n": "Sasha Stiles",
+        "t": "people"
+      },
+      {
+        "k": "europe",
+        "n": "Europe",
+        "t": "places"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "the-policemans-beard-is-half-constructed-published",
+      "theverseverse-founded",
+      "theo-lutz-produces-stochastic-texts"
+    ],
+    "eds": [
+      "standout-artwork-of-2025",
+      "sasha-stiles-and-martha-joseph-on-language-as-technology",
+      "new-york-city-digital-art-guide",
+      "sasha-stiles-on-writing-poets"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "da-vinci-illustrates-de-divina-proportione": {
+    "body": [
+      "<a href=\"https://www.lerandom.art/subjects/luca-pacioli\">Luca Pacioli</a>’s book, illustrated by Leonardo, helped popularize the principles of mathematical proportion and beauty, known as the Golden Ratio, in art and architecture."
+    ],
+    "cite": [
+      {
+        "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Pacioli/",
+        "label": "mathshistory.st-andrews.ac.uk"
+      }
+    ],
+    "img": {
+      "src": "img/da-vinci-illustrates-de-divina-proportione.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 429,
+      "height": 712
+    },
+    "tags": [
+      "Leonardo da Vinci",
+      "Luca Pacioli",
+      "De Divina Proportione",
+      "golden ratio",
+      "proportion",
+      "mathematics",
+      "architecture"
+    ],
+    "people": [
+      "leonardo da vinci",
+      "luca pacioli"
+    ],
+    "subjects": [
+      {
+        "k": "architecture",
+        "n": "architecture",
+        "t": "themes"
+      },
+      {
+        "k": "golden ratio",
+        "n": "golden ratio",
+        "t": "themes"
+      },
+      {
+        "k": "mathematics",
+        "n": "mathematics",
+        "t": "themes"
+      },
+      {
+        "k": "proportion",
+        "n": "proportion",
+        "t": "themes"
+      },
+      {
+        "k": "leonardo da vinci",
+        "n": "Leonardo da Vinci",
+        "t": "people"
+      },
+      {
+        "k": "luca pacioli",
+        "n": "Luca Pacioli",
+        "t": "people"
+      },
+      {
+        "k": "de divina proportione",
+        "n": "De Divina Proportione",
+        "t": "works"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "the-beauty-of-fractals-by-heinz-otto-peitgen-and-peter-richter",
+      "surface-substitution-on-36-plates-by-jennifer-bartlett",
+      "frank-j-malina-publishes-visual-art-mathematics-and-computers"
+    ],
+    "eds": [
+      "aaron-hertzmann-on-caring-about-people",
+      "barbara-london-on-new-territory",
+      "mona-lisa-to-monogrid"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "albrecht-durer-creates-engraving-melencolia-i": {
+    "body": [
+      "Packed with meaning and symbols, <a href=\"https://www.lerandom.art/subjects/melencolia-i\">Melencolia I</a> features a depiction of <a href=\"https://mathworld.wolfram.com/DuerersSolid.html\" target=\"_blank\" rel=\"noopener\">Dürer’s solid</a> (the eight-faced stone to the left) whose points form the Dürer graph. The solid is a geometric shape discovered by Dürer and used in his art. It was instrumental to the development of perspective and proportion in art history as well as these mathematical concepts in geometry. In the top right we see the “magic square” where the numbers in each row, column, diagonal and quadrant all add up to 34.",
+      "This work was highly influential to <a href=\"https://www.lerandom.art/subjects/vera-molnar\">Vera Molnár</a>. She developed systematic variations on the “magic square” from this piece. Molnár first encountered Dürer at the age of 14 or 15 and would <a href=\"https://vintage.hu/wp-content/uploads/2019/03/Molnar-Vera-HUO-interview.pdf\" target=\"_blank\" rel=\"noopener\">say this about her experience to Hans Ulrich Obrist</a>: “That was something very important to happen upon Dürer’s magic square in Melancholia. I was very young and was looking for a foundation, something that I could hold onto in making non-figurative painting.\" Here, Molnár reveals how Melencolia led her to abandon figurative work for good.",
+      "<a href=\"https://vintage.hu/wp-content/uploads/2019/03/Molnar-Vera-HUO-interview.pdf\" target=\"_blank\" rel=\"noopener\">Continuing</a>, Molnár explains how her experience with Dürer led her to focus on the abstract, beginning a life-long love affair with the square:",
+      "“I was looking for a rule, something hidden, a secret, and felt that I’d found it in the magic squares system.... The magic square was like that. I liked Dürer’s work very much. As I was courageous, hard-working and methodical, I said to myself that I would try with other magic squares.”"
+    ],
+    "cite": [
+      {
+        "url": "https://vintage.hu/wp-content/uploads/2019/03/Molnar-Vera-HUO-interview.pdf",
+        "label": "vintage.hu"
+      }
+    ],
+    "img": {
+      "src": "img/albrecht-durer-creates-engraving-melencolia-i.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 3062,
+      "height": 3869
+    },
+    "tags": [
+      "Hans Ulrich Obrist",
+      "Albrecht Dürer",
+      "Vera Molnár",
+      "Melencolia I",
+      "magic square",
+      "Dürer's solid",
+      "Dürer graph",
+      "engraving",
+      "geometry",
+      "perspective",
+      "proportion",
+      "abstraction",
+      "mathematics"
+    ],
+    "people": [
+      "albrecht dürer",
+      "hans ulrich obrist",
+      "vera molnár"
+    ],
+    "subjects": [
+      {
+        "k": "abstraction",
+        "n": "abstraction",
+        "t": "themes"
+      },
+      {
+        "k": "geometry",
+        "n": "geometry",
+        "t": "themes"
+      },
+      {
+        "k": "mathematics",
+        "n": "mathematics",
+        "t": "themes"
+      },
+      {
+        "k": "perspective",
+        "n": "perspective",
+        "t": "themes"
+      },
+      {
+        "k": "proportion",
+        "n": "proportion",
+        "t": "themes"
+      },
+      {
+        "k": "dürer graph",
+        "n": "Dürer graph",
+        "t": "tech"
+      },
+      {
+        "k": "dürer's solid",
+        "n": "Dürer's solid",
+        "t": "tech"
+      },
+      {
+        "k": "engraving",
+        "n": "engraving",
+        "t": "tech"
+      },
+      {
+        "k": "magic square",
+        "n": "magic square",
+        "t": "tech"
+      },
+      {
+        "k": "albrecht dürer",
+        "n": "Albrecht Dürer",
+        "t": "people"
+      },
+      {
+        "k": "hans ulrich obrist",
+        "n": "Hans Ulrich Obrist",
+        "t": "people"
+      },
+      {
+        "k": "vera molnár",
+        "n": "Vera Molnár",
+        "t": "people"
+      },
+      {
+        "k": "melencolia i",
+        "n": "Melencolia I",
+        "t": "works"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "the-beauty-of-fractals-by-heinz-otto-peitgen-and-peter-richter",
+      "surface-substitution-on-36-plates-by-jennifer-bartlett",
+      "vera-molnar-begins-her-iconic-des-ordres-series"
+    ],
+    "eds": [
+      "tyler-hobbs-on-algorithmic-aesthetics",
+      "timeline-chapter-1-ten-top-moments",
+      "molnars-paris",
+      "claudia-hart-on-land-of-the-dead"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "rene-descartes-poses-a-language-test-for-machines": {
+    "body": [
+      "Centuries before the <a href=\"m/alan-turing-proposes-the-turing-test.html\" data-moment=\"alan-turing-proposes-the-turing-test\">Turing test</a>, we have the Descartes test. In René Descartes' <em>Discourse on the Method</em> published originally in 1637, as the preface to three essays; an English translation followed in 1649.",
+      "In its fifth part he imagines machines built to look and move like humans and gives two tests that would still expose them, saying: \"For we may easily conceive a machine to be so constructed that it emits vocables, and even that it emits some correspondent to the action upon it of external objects which cause a change in its organs; for example, if touched in a particular place it may demand what we wish to say to it; if in another it may cry out that it is hurt, and such like; but not that it should arrange them variously so as appositely to reply to what is said in its presence, as men of the lowest grade of intellect can do.\"",
+      "So Descartes had two tests. The first is language. Such a machine might respond in human-like ways but Descartes was skeptical that such a machine could ever arrange their responses generally. The second is versatility across all of life's tasks. Natural language processing and conversational programs dating back to <a href=\"m/joseph-weizenbaum-publishes-eliza.html\" data-moment=\"joseph-weizenbaum-publishes-eliza\">Joseph Weizenbaum’s ELIZA</a> and including today’s LLMs still answer to Descartes bar: replying sensibly to whatever is said."
+    ],
+    "cite": [
+      {
+        "url": "https://www.gutenberg.org/ebooks/59",
+        "label": "gutenberg.org"
+      },
+      {
+        "url": "https://plato.stanford.edu/entries/turing-test/",
+        "label": "plato.stanford.edu"
+      }
+    ],
+    "img": {
+      "cap": "René Descartes, author of the 1637 Discourse on the Method, in a Netherlandish portrait after Frans Hals, dated 1625–1650 by the Louvre.",
+      "credit": "Netherlandish school, after Frans Hals, Portrait de René Descartes (1596–1650), philosophe, 1625–1650, oil on canvas. Musée du Louvre, Département des Peintures (INV 1317; MR 738). Photograph: © 2016 GrandPalaisRmn (musée du Louvre) / Tony Querrec. <a href=\"https://collections.louvre.fr/ark:/53355/cl010062106\">Image source</a>.",
+      "alt": "Painted portrait of René Descartes with shoulder-length dark hair, a moustache and a bright white collar, facing the viewer against a dark olive background.",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010062106",
+      "sourceImageUrl": "https://collections.louvre.fr/media/cache/large/0000000021/0000062106/0000601792_OG.JPG",
+      "creator": [
+        "Netherlandish school, after Frans Hals"
+      ],
+      "photographer": "Tony Querrec",
+      "rights": "Public-domain historical painting. Reproduction © 2016 GrandPalaisRmn (musée du Louvre) / Tony Querrec. No open reproduction license or separately obtained publication permission asserted.",
+      "width": 1324,
+      "height": 1500,
+      "src": "img/rene-descartes-poses-a-language-test-for-machines-9188081ae0.jpg"
+    },
+    "tags": [
+      "René Descartes",
+      "Discourse on the Method",
+      "automata",
+      "language",
+      "Turing test",
+      "ELIZA",
+      "large language model (LLM)",
+      "philosophy"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "language",
+        "n": "language",
+        "t": "themes"
+      },
+      {
+        "k": "philosophy",
+        "n": "philosophy",
+        "t": "themes"
+      },
+      {
+        "k": "automata",
+        "n": "Automata",
+        "t": "tech"
+      },
+      {
+        "k": "eliza",
+        "n": "Eliza",
+        "t": "tech"
+      },
+      {
+        "k": "large language model (llm)",
+        "n": "Large Language Model (LLM)",
+        "t": "tech"
+      },
+      {
+        "k": "turing test",
+        "n": "Turing test",
+        "t": "tech"
+      },
+      {
+        "k": "discourse on the method",
+        "n": "Discourse on the Method",
+        "t": "other"
+      },
+      {
+        "k": "rené descartes",
+        "n": "René Descartes",
+        "t": "other"
+      }
+    ],
+    "linked": [
+      "alan-turing-proposes-the-turing-test",
+      "joseph-weizenbaum-publishes-eliza"
+    ],
+    "echoes": [
+      "alan-turing-proposes-the-turing-test",
+      "syntactic-structures-by-noam-chomsky",
+      "joseph-weizenbaum-publishes-eliza"
+    ],
+    "eds": [],
+    "pods": [
+      1
+    ],
+    "dateType": "published"
+  },
+  "blaise-pascal-invents-mechanical-calculator": {
+    "body": [
+      "It was the first mechanical calculator made in quantity, performing addition and subtraction with an automatic carry between digits. Using a series of gears and wheels, the calculator revolutionized mathematics and engineering, paving the way for further development of machines that could perform more complex calculations. Pascal’s calculator was mentioned in the catalog of <a href=\"m/cybernetic-serendipity-defines-a-movement.html\" data-moment=\"cybernetic-serendipity-defines-a-movement\">Cybernetic Serendipity</a> as an important moment in the history of cybernetics."
+    ],
+    "cite": [
+      {
+        "url": "https://www.computerhistory.org/revolution/calculators/1/47",
+        "label": "computerhistory.org"
+      }
+    ],
+    "img": {
+      "src": "img/blaise-pascal-invents-mechanical-calculator.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 2461,
+      "height": 2061
+    },
+    "tags": [
+      "Cybernetic Serendipity",
+      "cybernetics",
+      "Blaise Pascal",
+      "Pascaline",
+      "mechanical calculator",
+      "computation",
+      "mathematics",
+      "engineering"
+    ],
+    "people": [
+      "blaise pascal"
+    ],
+    "subjects": [
+      {
+        "k": "computation",
+        "n": "computation",
+        "t": "themes"
+      },
+      {
+        "k": "engineering",
+        "n": "engineering",
+        "t": "themes"
+      },
+      {
+        "k": "mathematics",
+        "n": "mathematics",
+        "t": "themes"
+      },
+      {
+        "k": "cybernetics",
+        "n": "cybernetics",
+        "t": "tech"
+      },
+      {
+        "k": "mechanical calculator",
+        "n": "mechanical calculator",
+        "t": "tech"
+      },
+      {
+        "k": "pascaline",
+        "n": "Pascaline",
+        "t": "tech"
+      },
+      {
+        "k": "blaise pascal",
+        "n": "Blaise Pascal",
+        "t": "people"
+      },
+      {
+        "k": "cybernetic serendipity",
+        "n": "Cybernetic Serendipity",
+        "t": "exhibitions"
+      }
+    ],
+    "linked": [
+      "cybernetic-serendipity-defines-a-movement"
+    ],
+    "echoes": [
+      "the-ferranti-mark-i-is-the-first-commercially-available-electronic-computer",
+      "edmund-c-berkeley-begins-publishing-computers-and-automation",
+      "jack-st-clair-kilby-of-texas-instruments-and-robert-noycev-invent-integrated-cir"
+    ],
+    "eds": [
+      "london-digital-art-guide",
+      "the-ultraintelligent-machine-and-gaberbocchus-common-room",
+      "reprogramming-sensory-habits",
+      "a-michael-noll-on-when-it-all-started"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "gottfried-leibniz-pioneers-computational-thinking": {
+    "body": [
+      "Leibniz’s <a href=\"https://www.lerandom.art/subjects/dissertatio-de-arte-combinatoria\">Dissertatio de arte combinatoria</a> (“On the Combinatorial Art” 1666) was one of several cornerstone papers he would write throughout his life on concepts such as symbols, binary systems and formal logic. His voluminous writing and tinkering with machines would prove hugely influential to the development of computing.",
+      "“On the Combinatorial Art” expanded his habilitation thesis at Leipzig. In it, he proposed a system of using symbols and rules to combine ideas and discover new knowledge. His system for arranging and manipulating concepts to find answers sounds remarkably similar to what we call algorithms.",
+      "In addition to this seminal text, <a href=\"https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=1315&amp;context=tme\" target=\"_blank\" rel=\"noopener\">Leibniz decades later</a> published the paper, “<a href=\"https://www.lerandom.art/subjects/explanation-of-binary-arithmetic\">Explanation of Binary Arithmetic</a>,\" in which he is credited for inventing the binary system. Leibniz also made important contributions to the field of formal logic before inventing several mechanical computational devices. His ability to synthesize knowledge throughout the ages to contribute to modern computing make him a singular figure in our story."
+    ],
+    "cite": [
+      {
+        "url": "https://plato.stanford.edu/entries/leibniz/",
+        "label": "plato.stanford.edu"
+      }
+    ],
+    "img": {
+      "src": "img/gottfried-leibniz-pioneers-computational-thinking.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 1810,
+      "height": 1754
+    },
+    "tags": [
+      "Gottfried Leibniz",
+      "Dissertatio de arte combinatoria",
+      "Explanation of Binary Arithmetic",
+      "binary system",
+      "algorithms",
+      "combinatorics",
+      "formal logic",
+      "computation",
+      "Leipzig",
+      "mechanical calculator"
+    ],
+    "people": [
+      "gottfried leibniz"
+    ],
+    "subjects": [
+      {
+        "k": "combinatorics",
+        "n": "combinatorics",
+        "t": "themes"
+      },
+      {
+        "k": "computation",
+        "n": "computation",
+        "t": "themes"
+      },
+      {
+        "k": "algorithms",
+        "n": "algorithms",
+        "t": "tech"
+      },
+      {
+        "k": "binary",
+        "n": "binary",
+        "t": "tech"
+      },
+      {
+        "k": "binary system",
+        "n": "binary system",
+        "t": "tech"
+      },
+      {
+        "k": "formal logic",
+        "n": "formal logic",
+        "t": "tech"
+      },
+      {
+        "k": "mechanical calculator",
+        "n": "mechanical calculator",
+        "t": "tech"
+      },
+      {
+        "k": "gottfried leibniz",
+        "n": "Gottfried Leibniz",
+        "t": "people"
+      },
+      {
+        "k": "dissertatio de arte combinatoria",
+        "n": "Dissertatio de arte combinatoria",
+        "t": "works"
+      },
+      {
+        "k": "explanation of binary arithmetic",
+        "n": "Explanation of Binary Arithmetic",
+        "t": "works"
+      },
+      {
+        "k": "leipzig",
+        "n": "Leipzig",
+        "t": "places"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "on-the-path-to-computer-art-by-the-parallel-group",
+      "vera-molnar-develops-her-machine-imaginaire",
+      "cybernetic-symbiosis-berkeley-lawrence-hall-of-science"
+    ],
+    "eds": [
+      "timeline-chapter-1-ten-top-moments",
+      "machinic-taste",
+      "val-ravaglia-on-electric-dreams",
+      "joan-heemskerk-on-quantum-web4"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "published"
+  },
+  "gottfried-leibniz-builds-the-calculating-machine": {
+    "body": [
+      "Also known as the “stepped reckoner,” this was an early mechanical calculator, demonstrated in wooden model form to the Royal Society in 1673, designed to perform all four arithmetic operations. It was an important advancement in the field of computation, paving the way for further developments in the design and construction of calculating machines, including the development of digital computers."
+    ],
+    "cite": [
+      {
+        "url": "https://www.computerhistory.org/revolution/calculators/1/49",
+        "label": "computerhistory.org"
+      }
+    ],
+    "img": {
+      "src": "img/gottfried-leibniz-builds-the-calculating-machine.png",
+      "cap": "",
+      "credit": "",
+      "width": 775,
+      "height": 293
+    },
+    "tags": [
+      "Gottfried Leibniz",
+      "Stepped Reckoner",
+      "mechanical calculator",
+      "Royal Society",
+      "computation"
+    ],
+    "people": [
+      "gottfried leibniz"
+    ],
+    "subjects": [
+      {
+        "k": "computation",
+        "n": "computation",
+        "t": "themes"
+      },
+      {
+        "k": "mechanical calculator",
+        "n": "mechanical calculator",
+        "t": "tech"
+      },
+      {
+        "k": "stepped reckoner",
+        "n": "Stepped Reckoner",
+        "t": "tech"
+      },
+      {
+        "k": "gottfried leibniz",
+        "n": "Gottfried Leibniz",
+        "t": "people"
+      },
+      {
+        "k": "royal society",
+        "n": "Royal Society",
+        "t": "orgs"
+      }
+    ],
+    "linked": [
+      "euclids-elements"
+    ],
+    "echoes": [
+      "the-ferranti-mark-i-is-the-first-commercially-available-electronic-computer",
+      "jack-st-clair-kilby-of-texas-instruments-and-robert-noycev-invent-integrated-cir",
+      "divisibility-ii-iii-1984-1986"
+    ],
+    "eds": [
+      "timeline-chapter-1-ten-top-moments"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "artificial-versifying-by-john-peter": {
+    "body": [
+      "In <a href=\"https://digitalarchive.tpl.ca/objects/332679/artificial-versifying-or-the-schoolboys-recreation--a-n\" target=\"_blank\" rel=\"noopener\">John Peter’s book</a> <a href=\"https://digitalarchive.tpl.ca/objects/332679/artificial-versifying-or-the-schoolboys-recreation--a-n\" target=\"_blank\" rel=\"noopener\">Artificial Versifying</a>, the English mathematician describes a simple procedure that could be used to make generative poetry in Latin.",
+      "Meant as fun for children, the procedure involved selecting letters in a way to produce grammatically and metrically correct poems without any prior knowledge of the language. This system stands as one of the earliest examples of generativity used in a creative endeavor. <a href=\"https://www.lerandom.art/subjects/john-clark\">John Clark</a> would go on to build the <a href=\"m/eureka-exhibited-at-londons-egyptian-hall.html\" data-moment=\"eureka-exhibited-at-londons-egyptian-hall\">Eureka machine</a> between 1832 and 1845, based on Peter’s <a href=\"https://www.lerandom.art/subjects/artificial-versifying\">Artificial Versifying</a>."
+    ],
+    "cite": [
+      {
+        "url": "http://jeffreymbinder.net/304/artificial-versifying",
+        "label": "jeffreymbinder.net"
+      }
+    ],
+    "img": {
+      "cap": "John Peter, the six versifying tables from Artificial Versifying, first edition, London: John Sims, 1677.",
+      "credit": "John Peter / John Sims, 1677. Reproduction: Kaeden Berg, Henry Koelling and James Ryan, “English Versification for the Billion,” ELO 2021, figure 2, via ELMCIP. Original scan photographer not identified. <a href=\"https://elmcip.net/sites/default/files/media/critical_writing/attachments/kaeden_berg_henry_koelling_and_james_ryan_english_versification_for_the_billion_translating_the_early_latin_poetry_generator_artificial_versifying_1677_81.pdf\">Image source</a>.",
+      "alt": "Six numbered grids of Latin letters and dark stopping cells used to generate hexameter verse.",
+      "sourceUrl": "https://elmcip.net/sites/default/files/media/critical_writing/attachments/kaeden_berg_henry_koelling_and_james_ryan_english_versification_for_the_billion_translating_the_early_latin_poetry_generator_artificial_versifying_1677_81.pdf",
+      "creator": [
+        "John Peter"
+      ],
+      "width": 4000,
+      "height": 2250,
+      "src": "img/artificial-versifying-by-john-peter-1e60a9be56.webp"
+    },
+    "tags": [
+      "John Peter",
+      "Artificial Versifying",
+      "Computer Text",
+      "Generative Poetry",
+      "Material Generative Art",
+      "John Clark",
+      "Eureka",
+      "poetry",
+      "education",
+      "England"
+    ],
+    "people": [
+      "john clark",
+      "john peter"
+    ],
+    "subjects": [
+      {
+        "k": "computer text",
+        "n": "Computer Text",
+        "t": "themes"
+      },
+      {
+        "k": "education",
+        "n": "education",
+        "t": "themes"
+      },
+      {
+        "k": "generative poetry",
+        "n": "Generative Poetry",
+        "t": "themes"
+      },
+      {
+        "k": "material generative art",
+        "n": "Material Generative Art",
+        "t": "themes"
+      },
+      {
+        "k": "poetry",
+        "n": "poetry",
+        "t": "themes"
+      },
+      {
+        "k": "eureka",
+        "n": "Eureka",
+        "t": "tech"
+      },
+      {
+        "k": "john clark",
+        "n": "John Clark",
+        "t": "people"
+      },
+      {
+        "k": "john peter",
+        "n": "John Peter",
+        "t": "people"
+      },
+      {
+        "k": "artificial versifying",
+        "n": "Artificial Versifying",
+        "t": "works"
+      },
+      {
+        "k": "england",
+        "n": "England",
+        "t": "places"
+      }
+    ],
+    "linked": [
+      "eureka-exhibited-at-londons-egyptian-hall"
+    ],
+    "echoes": [
+      "oscar-scwartz-gives-a-tedx-talk-on-computational-poetics",
+      "christian-bok-publishes-the-piecemeal-bard-is-deconstructed",
+      "ray-kurzweils-cybernetic-poet"
+    ],
+    "eds": [
+      "generations-of-verse"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "published"
+  },
+  "jonathan-swift-publishes-gulliver-s-travels-and-includes-a-description-of-the-en": {
+    "body": [
+      "In Gulliver’s Travels, “the Engine” is a device that shuffles words into new combinations, essentially serving as a prototype for a mechanical text generator. “The Engine” is one of the earliest references to a device resembling the modern computer.",
+      "Benjamin Motte published the book in London in1726. The Engine appears in Part III, at the Academy of Lagado, where pupils turn iron handles to rearrange wooden blocks bearing words, so that “the most ignorant person” might write books. Sound Familiar?"
+    ],
+    "cite": [
+      {
+        "url": "https://www.gutenberg.org/files/829/829-h/829-h.htm",
+        "label": "gutenberg.org"
+      }
+    ],
+    "img": {
+      "src": "img/jonathan-swift-publishes-gulliver-s-travels-and-includes-a-description-of-the-en.png",
+      "cap": "",
+      "credit": "",
+      "width": 640,
+      "height": 675
+    },
+    "tags": [
+      "Jonathan Swift",
+      "Gulliver's Travels",
+      "the Engine (Gulliver's Travels)",
+      "combinatorics",
+      "generative literature",
+      "text generation"
+    ],
+    "people": [
+      "jonathan swift"
+    ],
+    "subjects": [
+      {
+        "k": "combinatorics",
+        "n": "combinatorics",
+        "t": "themes"
+      },
+      {
+        "k": "generative literature",
+        "n": "generative literature",
+        "t": "themes"
+      },
+      {
+        "k": "text generation",
+        "n": "text generation",
+        "t": "tech"
+      },
+      {
+        "k": "the engine (gulliver's travels)",
+        "n": "the Engine (Gulliver's Travels)",
+        "t": "tech"
+      },
+      {
+        "k": "jonathan swift",
+        "n": "Jonathan Swift",
+        "t": "people"
+      },
+      {
+        "k": "gulliver's travels",
+        "n": "Gulliver's Travels",
+        "t": "works"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "1-the-road-by-ross-goodwin",
+      "vera-molnar-develops-her-machine-imaginaire",
+      "theo-lutz-produces-stochastic-texts"
+    ],
+    "eds": [],
+    "pods": [
+      1
+    ],
+    "dateType": "published"
+  },
+  "johann-philip-kirnbergers-musical-dice-game": {
+    "body": [
+      "Known as <a href=\"https://www.lerandom.art/subjects/musikalisches-wurfelspiel\">Musikalisches Würfelspiel</a> (“musical dice game”), this method first published by Johann Philipp Kirnberger was a monumental event in the history of art and chance. The game was a musical composition technique in which pre-composed measures were selected by rolls of dice. Serving as one of the earliest examples of aleatoric (chance) music, it stands as one of the earliest examples generally of art generated randomly by chance. Many subsequent, famous composers would experiment with musikalisches würfelspiel, including <a href=\"https://www.lerandom.art/subjects/carl-philipp-emanuel-bach\">C.P.E. Bach</a> and, by attribution, Mozart, who is still the most known practitioner. Musikalisches würfelspiel also begin the tradition of generative music developing prior to graphics, which continued into the twentieth century with <a href=\"https://www.lerandom.art/subjects/max-mathews\">Max Mathews</a> at <a href=\"https://www.lerandom.art/subjects/bell-labs\">Bell Labs</a> developing <a href=\"m/max-mathews-develops-music-i.html\" data-moment=\"max-mathews-develops-music-i\">MUSIC I</a> nearly a decade before computer graphics were exhibited as art."
+    ],
+    "cite": [
+      {
+        "url": "https://rism.online/sources/990033647",
+        "label": "rism.online"
+      }
+    ],
+    "img": {
+      "cap": "Johann Philipp Kirnberger, Der allezeit fertige Polonoisen- und Menuettencomponist, title page of the 1767 printing, Berlin: George Ludewig Winter. The work was first published in 1757.",
+      "credit": "Johann Philipp Kirnberger / George Ludewig Winter. Bavarian State Library copy, reproduced via Wikimedia Commons; scan photographer unidentified. <a href=\"https://books.google.com/books/about/Der_allezeit_fertige_Polonoisen_und_Menu.html?id=Me1CAAAAcAAJ\">Image source</a>.",
+      "alt": "Sepia title page for Kirnberger’s dice-composition manual, with blackletter type and a small allegorical vignette.",
+      "sourceUrl": "https://books.google.com/books/about/Der_allezeit_fertige_Polonoisen_und_Menu.html?id=Me1CAAAAcAAJ",
+      "creator": [
+        "Johann Philipp Kirnberger"
+      ],
+      "width": 1800,
+      "height": 1400,
+      "src": "img/johann-philip-kirnbergers-musical-dice-game-c03f94fa49.jpg"
+    },
+    "tags": [
+      "Wolfgang Amadeus Mozart",
+      "Max Mathews",
+      "Bach",
+      "Musikalisches Würfelspiel",
+      "MUSIC I",
+      "Bell Labs",
+      "computer graphics",
+      "Chance Art",
+      "generative art",
+      "Video Game Art",
+      "Johann Philip Kirnberger",
+      "C.P.E. Bach",
+      "chance",
+      "chance procedures",
+      "randomness",
+      "aleatoric music",
+      "Generative Music"
+    ],
+    "people": [
+      "c.p.e. bach",
+      "johann philip kirnberger",
+      "max mathews",
+      "wolfgang amadeus mozart"
+    ],
+    "subjects": [
+      {
+        "k": "aleatoric music",
+        "n": "aleatoric music",
+        "t": "themes"
+      },
+      {
+        "k": "chance",
+        "n": "chance",
+        "t": "themes"
+      },
+      {
+        "k": "chance art",
+        "n": "Chance Art",
+        "t": "themes"
+      },
+      {
+        "k": "generative art",
+        "n": "generative art",
+        "t": "themes"
+      },
+      {
+        "k": "generative music",
+        "n": "Generative Music",
+        "t": "themes"
+      },
+      {
+        "k": "randomness",
+        "n": "randomness",
+        "t": "themes"
+      },
+      {
+        "k": "video game art",
+        "n": "Video Game Art",
+        "t": "themes"
+      },
+      {
+        "k": "chance procedures",
+        "n": "chance procedures",
+        "t": "tech"
+      },
+      {
+        "k": "computer graphics",
+        "n": "computer graphics",
+        "t": "tech"
+      },
+      {
+        "k": "c.p.e. bach",
+        "n": "C.P.E. Bach",
+        "t": "people"
+      },
+      {
+        "k": "johann philip kirnberger",
+        "n": "Johann Philip Kirnberger",
+        "t": "people"
+      },
+      {
+        "k": "max mathews",
+        "n": "Max Mathews",
+        "t": "people"
+      },
+      {
+        "k": "wolfgang amadeus mozart",
+        "n": "Wolfgang Amadeus Mozart",
+        "t": "people"
+      },
+      {
+        "k": "music i",
+        "n": "MUSIC I",
+        "t": "works"
+      },
+      {
+        "k": "musikalisches würfelspiel",
+        "n": "Musikalisches Würfelspiel",
+        "t": "works"
+      },
+      {
+        "k": "bell labs",
+        "n": "Bell Labs",
+        "t": "orgs"
+      },
+      {
+        "k": "bach",
+        "n": "Bach",
+        "t": "other"
+      }
+    ],
+    "linked": [
+      "max-mathews-develops-music-i"
+    ],
+    "echoes": [
+      "imaginary-landscape-no-4-by-john-cage",
+      "roman-verostko-debuts-the-magic-hand-of-chance-series",
+      "fontana-mix-john-cage"
+    ],
+    "eds": [
+      "holly-herndon-mat-dryhurst-on-artificial-psychedelia",
+      "timeline-chapter-1-ten-top-moments",
+      "joan-heemskerk-on-quantum-web4",
+      "kyle-mcdonald-on-computer-softness"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "thomas-bayes-develops-bayesian-inference": {
+    "body": [
+      "<a href=\"https://www.lerandom.art/subjects/thomas-bayes\">Thomas Bayes</a> developed this statistical framework, published posthumously by <a href=\"https://www.lerandom.art/subjects/richard-price\">Richard Price</a>, allowing for the quantification of uncertainty and the updating of probabilities based on new evidence. It has wide applications in fields such as artificial intelligence and data science. It contributed to the development of machine and deep learning when in 1964 <a href=\"https://www.lerandom.art/subjects/ray-solomonoff\">Ray Solomonoff</a> combined Bayesian probability-based reasoning and theoretical computer science to make predictions based on the past. Solomonoff and Andrej Kolmogorov would go on to expand upon information theory—discussed more in chapters 3 and 4—to develop Occam’s razor, a key concept to neural networks."
+    ],
+    "cite": [
+      {
+        "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Bayes/",
+        "label": "mathshistory.st-andrews.ac.uk"
+      }
+    ],
+    "img": {
+      "src": "img/thomas-bayes-develops-bayesian-inference.png",
+      "cap": "",
+      "credit": "",
+      "width": 1676,
+      "height": 1800
+    },
+    "tags": [
+      "artificial intelligence",
+      "neural networks",
+      "deep learning",
+      "information theory",
+      "Thomas Bayes",
+      "Richard Price",
+      "Ray Solomonoff",
+      "Andrey Kolmogorov",
+      "Bayesian inference",
+      "probability",
+      "statistics",
+      "Occam's razor",
+      "machine learning",
+      "data science",
+      "theoretical computer science"
+    ],
+    "people": [
+      "andrey kolmogorov",
+      "ray solomonoff",
+      "richard price",
+      "thomas bayes"
+    ],
+    "subjects": [
+      {
+        "k": "occam's razor",
+        "n": "Occam's razor",
+        "t": "themes"
+      },
+      {
+        "k": "probability",
+        "n": "probability",
+        "t": "themes"
+      },
+      {
+        "k": "statistics",
+        "n": "statistics",
+        "t": "themes"
+      },
+      {
+        "k": "artificial intelligence",
+        "n": "artificial intelligence",
+        "t": "tech"
+      },
+      {
+        "k": "bayesian inference",
+        "n": "Bayesian inference",
+        "t": "tech"
+      },
+      {
+        "k": "data science",
+        "n": "data science",
+        "t": "tech"
+      },
+      {
+        "k": "deep learning",
+        "n": "deep learning",
+        "t": "tech"
+      },
+      {
+        "k": "information theory",
+        "n": "information theory",
+        "t": "tech"
+      },
+      {
+        "k": "machine learning",
+        "n": "machine learning",
+        "t": "tech"
+      },
+      {
+        "k": "neural networks",
+        "n": "neural networks",
+        "t": "tech"
+      },
+      {
+        "k": "theoretical computer science",
+        "n": "theoretical computer science",
+        "t": "tech"
+      },
+      {
+        "k": "andrey kolmogorov",
+        "n": "Andrey Kolmogorov",
+        "t": "people"
+      },
+      {
+        "k": "ray solomonoff",
+        "n": "Ray Solomonoff",
+        "t": "people"
+      },
+      {
+        "k": "richard price",
+        "n": "Richard Price",
+        "t": "people"
+      },
+      {
+        "k": "thomas bayes",
+        "n": "Thomas Bayes",
+        "t": "people"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "paul-werbos-proposes-backpropagation-to-train-neural-networks",
+      "max-bense-begins-publishing-aesthetica",
+      "marvin-minsky-and-dean-edmunds-build-the-first-artificial-neural-network"
+    ],
+    "eds": [
+      "jess-tucker-on-longing-for-a-face",
+      "ian-goodfellow-on-inventing-gans",
+      "holly-herndon-mat-dryhurst-on-artificial-psychedelia",
+      "kyle-mcdonald-on-computer-softness"
+    ],
+    "pods": [
+      1,
+      31,
+      3
+    ],
+    "dateType": "made"
+  },
+  "karl-gottlieb-von-windisch-publishes-inanimate-reason": {
+    "body": [
+      "We've been trying to make human-like machines for centuries.",
+      "In 1783 Karl Gottlieb von Windisch published letters describing exactly such a thing: a chess-playing automaton built by his friend Wolfgang von Kempelen for the Habsburg court in the decade prior. The machine, a life-size figure in Turkish dress seated at a cabinet, beat many challengers across Europe. Windisch's book, issued in German and French immediately and in English the next year as <em>Inanimate Reason</em>, praised it without claiming to know how it worked: “'Tis a deception! granted; but such an one as does honor to human nature.”",
+      "The deception was apparently a strong human player hidden inside, which Edgar Allan Poe argued in his 1836 essay “Maelzel's Chess-Player.”"
+    ],
+    "cite": [
+      {
+        "url": "https://archive.org/details/bim_eighteenth-century_briefe-uber-den-schachs_windisch-carl-gottlieb-_1784",
+        "label": "archive.org"
+      }
+    ],
+    "img": {
+      "src": "img/karl-gottlieb-von-windisch-publishes-inanimate-reason.jpg",
+      "cap": "A copperplate engraving of Kempelen's chess-playing automaton, the Turk, seated at its cabinet.",
+      "credit": "Engraving of Wolfgang von Kempelen's chess player from Karl Gottlieb von Windisch, Briefe über den Schachspieler des Hrn. von Kempelen (1783). Wikimedia Commons.",
+      "width": 600,
+      "height": 523
+    },
+    "tags": [
+      "Karl Gottlieb von Windisch",
+      "Wolfgang von Kempelen",
+      "Mechanical Turk",
+      "chess automaton",
+      "automata",
+      "Edgar Allan Poe"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "automata",
+        "n": "Automata",
+        "t": "tech"
+      },
+      {
+        "k": "chess automaton",
+        "n": "chess automaton",
+        "t": "other"
+      },
+      {
+        "k": "edgar allan poe",
+        "n": "Edgar Allan Poe",
+        "t": "other"
+      },
+      {
+        "k": "karl gottlieb von windisch",
+        "n": "Karl Gottlieb von Windisch",
+        "t": "other"
+      },
+      {
+        "k": "mechanical turk",
+        "n": "Mechanical Turk",
+        "t": "other"
+      },
+      {
+        "k": "wolfgang von kempelen",
+        "n": "Wolfgang von Kempelen",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "alan-turing-proposes-the-turing-test",
+      "ray-kurzweils-cybernetic-poet",
+      "midjourney-launched"
+    ],
+    "eds": [],
+    "pods": [
+      1
+    ],
+    "dateType": "published"
+  },
+  "joseph-marie-jacquard-invents-the-jacquard-loom": {
+    "body": [
+      "The Jacquard loom used punch cards to control the weaving of patterns in fabric. It introduced the notion of a program stored outside the machine on punch cards, which would later result in generative weaving and modern computing. <a href=\"https://www.lerandom.art/subjects/charles-babbage\">Charles Babbage</a> would go on to utilize Jacquard’s method of punch card programming as one of computing’s earliest pioneers. “Computers did not pave the way for generative art; generative art helped to pave the way for computers,” according to Phil Galanter. Punch card programming would continue developing for the next century and a half before culminating in the use of mainframe computers and early languages such as <a href=\"m/john-backus-releases-fortran.html\" data-moment=\"john-backus-releases-fortran\">FORTRAN</a>. Additionally, textile design has continued to influence both fine art as well as generative art to this day. Examples include the <a href=\"m/bauhaus-weaving-workshop-initiated-by-gunta-stolzl.html\" data-moment=\"bauhaus-weaving-workshop-initiated-by-gunta-stolzl\">Bauhaus weaving workshop</a>’s <a href=\"https://www.lerandom.art/subjects/anni-albers\">Anni Albers</a> and <a href=\"https://www.lerandom.art/subjects/gunta-stolzl\">Gunta Stölzl</a>, the quilters of Gees Bend, <a href=\"https://www.lerandom.art/subjects/anna-lucia\">Anna Lucia</a>, Travess and <a href=\"https://www.lerandom.art/subjects/andreas-rau\">Andreas Rau</a>."
+    ],
+    "cite": [
+      {
+        "url": "",
+        "label": "Paul, Christiane. A Companion to Digital Art, 151. John Wiley & Sons Inc, 2019."
+      }
+    ],
+    "img": {
+      "src": "img/joseph-marie-jacquard-invents-the-jacquard-loom.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 3088,
+      "height": 2056
+    },
+    "tags": [
+      "Joseph-Marie Jacquard",
+      "Charles Babbage",
+      "Philip Galanter",
+      "Travess Smalley",
+      "Gunta Stölzl",
+      "Anni Albers",
+      "Andreas Rau",
+      "Anna Lucia",
+      "Bauhaus",
+      "mainframe computer",
+      "generative art",
+      "Gee's Bend, Alabama",
+      "Fortran",
+      "programming",
+      "textiles",
+      "computation",
+      "quilting",
+      "Material Generative Art"
+    ],
+    "people": [
+      "andreas rau",
+      "anna lucia",
+      "anni albers",
+      "charles babbage",
+      "gunta stölzl",
+      "joseph-marie jacquard",
+      "philip galanter",
+      "travess smalley"
+    ],
+    "subjects": [
+      {
+        "k": "computation",
+        "n": "computation",
+        "t": "themes"
+      },
+      {
+        "k": "generative art",
+        "n": "generative art",
+        "t": "themes"
+      },
+      {
+        "k": "material generative art",
+        "n": "Material Generative Art",
+        "t": "themes"
+      },
+      {
+        "k": "textiles",
+        "n": "textiles",
+        "t": "themes"
+      },
+      {
+        "k": "fortran",
+        "n": "Fortran",
+        "t": "tech"
+      },
+      {
+        "k": "jacquard loom",
+        "n": "Jacquard loom",
+        "t": "tech"
+      },
+      {
+        "k": "mainframe computer",
+        "n": "mainframe computer",
+        "t": "tech"
+      },
+      {
+        "k": "programming",
+        "n": "programming",
+        "t": "tech"
+      },
+      {
+        "k": "punch cards",
+        "n": "punch cards",
+        "t": "tech"
+      },
+      {
+        "k": "quilting",
+        "n": "quilting",
+        "t": "tech"
+      },
+      {
+        "k": "weaving",
+        "n": "weaving",
+        "t": "tech"
+      },
+      {
+        "k": "andreas rau",
+        "n": "Andreas Rau",
+        "t": "people"
+      },
+      {
+        "k": "anna lucia",
+        "n": "Anna Lucia",
+        "t": "people"
+      },
+      {
+        "k": "anni albers",
+        "n": "Anni Albers",
+        "t": "people"
+      },
+      {
+        "k": "charles babbage",
+        "n": "Charles Babbage",
+        "t": "people"
+      },
+      {
+        "k": "gunta stölzl",
+        "n": "Gunta Stölzl",
+        "t": "people"
+      },
+      {
+        "k": "joseph-marie jacquard",
+        "n": "Joseph-Marie Jacquard",
+        "t": "people"
+      },
+      {
+        "k": "philip galanter",
+        "n": "Philip Galanter",
+        "t": "people"
+      },
+      {
+        "k": "travess smalley",
+        "n": "Travess Smalley",
+        "t": "people"
+      },
+      {
+        "k": "bauhaus",
+        "n": "Bauhaus",
+        "t": "orgs"
+      },
+      {
+        "k": "gee's bend, alabama",
+        "n": "Gee's Bend, Alabama",
+        "t": "places"
+      }
+    ],
+    "linked": [
+      "charles-babbage-develops-his-analytical-engine",
+      "bauhaus-weaving-workshop-initiated-by-gunta-stolzl",
+      "john-backus-releases-fortran"
+    ],
+    "echoes": [
+      "john-backus-releases-fortran",
+      "a-michael-noll-creates-some-of-the-first-creative-graphics-with-a-digital-comput",
+      "generacion-automatica-de-formas-plasticas-exhibition-at-the-mathematical-institu"
+    ],
+    "eds": [
+      "matt-deslauriers-on-a-generative-world",
+      "emily-xie-on-textile-as-personal-canvas",
+      "timeline-chapter-1-ten-top-moments",
+      "decoupling-generative-art-with-philip-galanter"
+    ],
+    "pods": [
+      1,
+      42,
+      20
+    ],
+    "dateType": "made"
+  },
+  "mary-shelley-publishes-frankenstein": {
+    "body": [
+      "As mechanization rose throughout the globe in the nineteen century, much like AI is today, we faced similar fears of humanity's power to construct its own intelligent beings. Thankfully, in the twenty-first century, that fear has entirely disappeared. Oh. Isaac Asimov would go on to name the fear the novel dramatizes the “Frankenstein complex.”",
+      "We know about the fears of people two hundred years ago through their art and culture like, <em>Frankenstein; or, The Modern Prometheus</em> which was published anonymously in London in three volumes on January 1, 1818. Mary Wollstonecraft Shelley had begun it in the summer of 1816 near Geneva, when Lord Byron proposed that each member of his party, including Mary and her husband Percy Bysshe Shelley, write a ghost story.",
+      "The story itself if well known. Scientist, Victor Frankenstein, assembles a living being and ultimately their relationship sours. The \"monster\" learns language by listening in secret and turns on its maker.",
+      "Many further such stories have been told, including films like The Terminator and the Matrix. But humanity's ability to create its own destruction has been persistent fear in our psyche."
+    ],
+    "cite": [
+      {
+        "url": "http://shelleygodwinarchive.org/contents/frankenstein/",
+        "label": "shelleygodwinarchive.org"
+      }
+    ],
+    "img": {
+      "cap": "Richard Rothwell’s portrait of Mary Shelley, c.1831–1840, author of Frankenstein (1818).",
+      "credit": "Richard Rothwell, Mary Shelley, c.1831–1840. National Portrait Gallery, London (NPG 1235). Reproduction: scan of a print via Wikimedia Commons; digitizer not identified. Public-domain artwork. <a href=\"https://www.npg.org.uk/collections/search/portrait/mw05761/Mary-Shelley\">Collection record</a>. <a href=\"https://commons.wikimedia.org/wiki/File:RothwellMaryShelley.jpg\">Image source</a>.",
+      "alt": "Painted portrait of Mary Shelley in a dark dress with pale shoulders and dark curls, seated against a warm brown background.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RothwellMaryShelley.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/RothwellMaryShelley.jpg",
+      "creator": [
+        "Richard Rothwell"
+      ],
+      "rights": "Public-domain artwork; Wikimedia Commons identifies this file as a scan of a print and applies PD-art / PD-old. Not an NPG-supplied digital asset.",
+      "width": 1228,
+      "height": 1496,
+      "src": "img/mary-shelley-publishes-frankenstein-7e6e13634d.jpg"
+    },
+    "tags": [
+      "Mary Shelley",
+      "Frankenstein",
+      "artificial life",
+      "science fiction",
+      "Lord Byron",
+      "Isaac Asimov",
+      "Frankenstein complex"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "artificial life",
+        "n": "artificial life",
+        "t": "themes"
+      },
+      {
+        "k": "science fiction",
+        "n": "science fiction",
+        "t": "themes"
+      },
+      {
+        "k": "frankenstein",
+        "n": "Frankenstein",
+        "t": "other"
+      },
+      {
+        "k": "frankenstein complex",
+        "n": "Frankenstein complex",
+        "t": "other"
+      },
+      {
+        "k": "isaac asimov",
+        "n": "Isaac Asimov",
+        "t": "other"
+      },
+      {
+        "k": "lord byron",
+        "n": "Lord Byron",
+        "t": "other"
+      },
+      {
+        "k": "mary shelley",
+        "n": "Mary Shelley",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "bob-by-ian-cheng",
+      "primordial-dance-by-karl-sims",
+      "boids-by-craig-reynolds"
+    ],
+    "eds": [],
+    "pods": [
+      1
+    ],
+    "dateType": "published"
+  },
+  "nicephore-niepce-produces-first-permanent-photograph": {
+    "body": [
+      "‍Photography’s impact on modern art is well established but its impact on digital and computer art more specifically is less examined yet central to this story. According to <a href=\"https://www.lerandom.art/subjects/herbert-w-franke\">Herbert W. Franke</a>, \"The most significant stage on the path to the mechanization of the fine arts has been photography.” Further, art critic <a href=\"https://www.lerandom.art/subjects/frank-popper\">Frank Popper</a> includes photography as the first of seven influences on the development of digital art. <a href=\"https://www.jstor.org/stable/777112\" target=\"_blank\" rel=\"noopener\">Digital generative artists such as</a> <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>, <a href=\"https://www.lerandom.art/subjects/margot-lovejoy\">Margot Lovejoy</a> and <a href=\"https://www.lerandom.art/subjects/terry-gips\">Terry Gips</a> have all stressed the importance of photography to the development of computer art as well.",
+      "<a href=\"https://www.lerandom.art/subjects/nicephore-niepce\">Nicéphore Niépce</a> produced the earliest photograph made in a camera obscura that survives today, using a pewter plate coated with bitumen. This breakthrough served as the basis for the continuation of developments in photography to this day. The invention of photography stands as a paradigm shift in art history. The camera’s ability to capture representations of the visible world would lead to painters losing interest in strict realism and spur the gradual abstraction of modern art. Photography, in addition to becoming its own art form, would also lead to cinema and video art, as art expanded from a handmade practice to include capture practices."
+    ],
+    "cite": [
+      {
+        "url": "",
+        "label": "Franke, Herbert W. Computer Graphics, Computer Art, 93. Berlin: Springer, 1985."
+      }
+    ],
+    "img": {
+      "src": "img/nicephore-niepce-produces-first-permanent-photograph.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 2250,
+      "height": 1875
+    },
+    "tags": [
+      "Herbert W. Franke",
+      "Nicéphore Niépce",
+      "Margot Lovejoy",
+      "Frank Popper",
+      "Casey Reas",
+      "Terry Gips",
+      "camera obscura",
+      "generative art",
+      "bitumen",
+      "photography",
+      "computer art",
+      "digital art",
+      "video art",
+      "cinema",
+      "abstraction",
+      "mechanization"
+    ],
+    "people": [
+      "casey reas",
+      "frank popper",
+      "herbert w. franke",
+      "margot lovejoy",
+      "nicéphore niépce",
+      "terry gips"
+    ],
+    "subjects": [
+      {
+        "k": "abstraction",
+        "n": "abstraction",
+        "t": "themes"
+      },
+      {
+        "k": "cinema",
+        "n": "cinema",
+        "t": "themes"
+      },
+      {
+        "k": "digital art",
+        "n": "digital art",
+        "t": "themes"
+      },
+      {
+        "k": "generative art",
+        "n": "generative art",
+        "t": "themes"
+      },
+      {
+        "k": "mechanization",
+        "n": "mechanization",
+        "t": "themes"
+      },
+      {
+        "k": "photography",
+        "n": "photography",
+        "t": "themes"
+      },
+      {
+        "k": "video art",
+        "n": "video art",
+        "t": "themes"
+      },
+      {
+        "k": "bitumen",
+        "n": "bitumen",
+        "t": "tech"
+      },
+      {
+        "k": "camera obscura",
+        "n": "camera obscura",
+        "t": "tech"
+      },
+      {
+        "k": "computer art",
+        "n": "computer art",
+        "t": "tech"
+      },
+      {
+        "k": "casey reas",
+        "n": "Casey Reas",
+        "t": "people"
+      },
+      {
+        "k": "frank popper",
+        "n": "Frank Popper",
+        "t": "people"
+      },
+      {
+        "k": "herbert w. franke",
+        "n": "Herbert W. Franke",
+        "t": "people"
+      },
+      {
+        "k": "margot lovejoy",
+        "n": "Margot Lovejoy",
+        "t": "people"
+      },
+      {
+        "k": "nicéphore niépce",
+        "n": "Nicéphore Niépce",
+        "t": "people"
+      },
+      {
+        "k": "terry gips",
+        "n": "Terry Gips",
+        "t": "people"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "publications",
+      "generative-photography-at-bielefeld-kunsthaus",
+      "digital-photography-captured-images-volatile-memory-and-new-montage-san-francisc"
+    ],
+    "eds": [
+      "timeline-chapter-1-ten-top-moments",
+      "christiane-paul-on-curating-cohens-aaron",
+      "the-people-are-in-the-computer--part-i",
+      "claudia-hart-on-land-of-the-dead"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "charles-babbage-develops-his-analytical-engine": {
+    "body": [
+      "Foundational to the development of cybernetics, this unrealized mechanical computer aimed to use punch cards, inspired by the <a href=\"m/joseph-marie-jacquard-invents-the-jacquard-loom.html\" data-moment=\"joseph-marie-jacquard-invents-the-jacquard-loom\">Jacquard Loom</a>, to perform calculations.",
+      "One of the earliest designs for a programmable computer, it also had a significant impact on the development of modern computers and programming languages."
+    ],
+    "cite": [
+      {
+        "url": "https://www.computerhistory.org/babbage/engines/",
+        "label": "computerhistory.org"
+      }
+    ],
+    "img": {
+      "src": "img/charles-babbage-develops-his-analytical-engine.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 3796,
+      "height": 2557
+    },
+    "tags": [
+      "Charles Babbage",
+      "Analytical Engine",
+      "Jacquard loom",
+      "cybernetics",
+      "punch cards",
+      "programming",
+      "computation"
+    ],
+    "people": [
+      "charles babbage"
+    ],
+    "subjects": [
+      {
+        "k": "computation",
+        "n": "computation",
+        "t": "themes"
+      },
+      {
+        "k": "analytical engine",
+        "n": "Analytical Engine",
+        "t": "tech"
+      },
+      {
+        "k": "cybernetics",
+        "n": "cybernetics",
+        "t": "tech"
+      },
+      {
+        "k": "jacquard loom",
+        "n": "Jacquard loom",
+        "t": "tech"
+      },
+      {
+        "k": "programming",
+        "n": "programming",
+        "t": "tech"
+      },
+      {
+        "k": "punch cards",
+        "n": "punch cards",
+        "t": "tech"
+      },
+      {
+        "k": "charles babbage",
+        "n": "Charles Babbage",
+        "t": "people"
+      }
+    ],
+    "linked": [
+      "joseph-marie-jacquard-invents-the-jacquard-loom"
+    ],
+    "echoes": [
+      "john-backus-releases-fortran",
+      "the-art-of-computer-programming-by-donald-e-knuth",
+      "edmund-c-berkeley-begins-publishing-computers-and-automation"
+    ],
+    "eds": [
+      "rhea-myers-on-code-as-cultural-material",
+      "timeline-chapter-1-ten-top-moments",
+      "matt-deslauriers-on-a-generative-world",
+      "operator-profiles-rebecca-allen"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "lady-lovelace-s-objection": {
+    "body": [
+      "In her 1843 notes on <a href=\"m/charles-babbage-develops-his-analytical-engine.html\" data-moment=\"charles-babbage-develops-his-analytical-engine\">Babbage's Analytical Engine</a>, Lovelace wrote that the machine could originate nothing and only do what it was ordered to do. Turing answers the objections by name in 1950.",
+      "This prescient observation hints at the different paths computation would take from hard-programmed rules to learning models.",
+      "People: Ada Lovelace."
+    ],
+    "cite": [
+      {
+        "url": "https://archive.org/details/india.history.resource.53369",
+        "label": "archive.org"
+      },
+      {
+        "url": "https://doi.org/10.1093/mind/LIX.236.433",
+        "label": "doi.org"
+      }
+    ],
+    "img": {
+      "src": "img/lady-lovelace-s-objection.jpg",
+      "cap": "A watercolor portrait of Ada Lovelace by Alfred Edward Chalon, about 1840.",
+      "credit": "Alfred Edward Chalon, Ada King, Countess of Lovelace, c. 1840, watercolor. Science Museum Group, London, via Wikimedia Commons.",
+      "width": 2439,
+      "height": 3504
+    },
+    "tags": [],
+    "people": [],
+    "subjects": [],
+    "linked": [
+      "charles-babbage-develops-his-analytical-engine"
+    ],
+    "echoes": [
+      "alan-turing-proposes-the-turing-test",
+      "ray-kurzweils-cybernetic-poet",
+      "midjourney-launched"
+    ],
+    "eds": [],
+    "pods": [
+      1
+    ],
+    "dateType": ""
+  },
+  "ada-lovelace-becomes-first-computer-programmer": {
+    "body": [
+      "Computer programming is born, as <a href=\"https://www.lerandom.art/subjects/ada-lovelace\">Ada Lovelace</a>’s 1843 notes on <a href=\"m/charles-babbage-develops-his-analytical-engine.html\" data-moment=\"charles-babbage-develops-his-analytical-engine\">Charles Babbage’s Analytical Engine</a> set out a program for computing Bernoulli numbers, making her the first published computer programmer. Her work demonstrated the potential for computers to perform complex tasks, foreshadowing the development of modern programming languages. She even envisioned the computer’s ability to create programmed art. Inspired by the notion of combining science and art, Lovelace recognized the computer’s ability to extend beyond calculating numbers. She understood its potential to create complex images and music by translating basic rules into symbolic logic, carrying on the traditions of <a href=\"https://www.lerandom.art/subjects/euclid\">Euclid</a>, <a href=\"https://www.lerandom.art/subjects/al-khwarizmi\">Al-Khwārizmī</a> and Leibniz. Lovelace foresaw a future where computers could be programmed to create beautiful and imaginative works of art, envisioning a creative partnership between humans and machines. This concept anticipated the field of computer-generated art by over a century. Her prescient ideas have inspired generations of computer programmers and artists. Lovelace would inspire future women pioneers in the field of programming such as <a href=\"m/grace-murray-hopper-invents-general-programming-languages.html\" data-moment=\"grace-murray-hopper-invents-general-programming-languages\">Grace Hopper who introduced the use of natural language in programming in the 1950s</a>.",
+      "The \"notes\" accompany Lovelace's 1843 English translation of Luigi Federico Menabrea's French memoir on the Engine. However, the notes actually run about three times as long as the memoir."
+    ],
+    "cite": [
+      {
+        "url": "https://www.computerhistory.org/babbage/adalovelace/",
+        "label": "computerhistory.org"
+      }
+    ],
+    "img": {
+      "src": "img/ada-lovelace-becomes-first-computer-programmer.jpg",
+      "cap": "",
+      "credit": "",
+      "width": 2000,
+      "height": 1400
+    },
+    "tags": [
+      "Charles Babbage",
+      "Ada Lovelace",
+      "Al-Khwārizmī",
+      "Grace Hopper",
+      "Euclid",
+      "Programmed",
+      "Analytical Engine",
+      "symbolic logic",
+      "computer art",
+      "generative art",
+      "Bernoulli numbers",
+      "programming",
+      "algorithms",
+      "music"
+    ],
+    "people": [
+      "ada lovelace",
+      "al-khwārizmī",
+      "charles babbage",
+      "euclid",
+      "grace hopper"
+    ],
+    "subjects": [
+      {
+        "k": "generative art",
+        "n": "generative art",
+        "t": "themes"
+      },
+      {
+        "k": "music",
+        "n": "music",
+        "t": "themes"
+      },
+      {
+        "k": "algorithms",
+        "n": "algorithms",
+        "t": "tech"
+      },
+      {
+        "k": "analytical engine",
+        "n": "Analytical Engine",
+        "t": "tech"
+      },
+      {
+        "k": "bernoulli numbers",
+        "n": "Bernoulli numbers",
+        "t": "tech"
+      },
+      {
+        "k": "computer art",
+        "n": "computer art",
+        "t": "tech"
+      },
+      {
+        "k": "programming",
+        "n": "programming",
+        "t": "tech"
+      },
+      {
+        "k": "symbolic logic",
+        "n": "symbolic logic",
+        "t": "tech"
+      },
+      {
+        "k": "ada lovelace",
+        "n": "Ada Lovelace",
+        "t": "people"
+      },
+      {
+        "k": "al-khwārizmī",
+        "n": "Al-Khwārizmī",
+        "t": "people"
+      },
+      {
+        "k": "charles babbage",
+        "n": "Charles Babbage",
+        "t": "people"
+      },
+      {
+        "k": "euclid",
+        "n": "Euclid",
+        "t": "people"
+      },
+      {
+        "k": "grace hopper",
+        "n": "Grace Hopper",
+        "t": "people"
+      },
+      {
+        "k": "programmed",
+        "n": "Programmed",
+        "t": "exhibitions"
+      }
+    ],
+    "linked": [
+      "grace-murray-hopper-invents-general-programming-languages",
+      "charles-babbage-develops-his-analytical-engine"
+    ],
+    "echoes": [
+      "douglas-hofstadters-publishes-book-godel-escher-bach-an-eternal-golden-braid",
+      "grace-murray-hopper-invents-general-programming-languages",
+      "franke-the-program-is-the-art"
+    ],
+    "eds": [
+      "rhea-myers-on-code-as-cultural-material",
+      "timeline-chapter-1-ten-top-moments",
+      "dmitri-cherniak-on-strictly-for-art",
+      "samia-halaby-on-different-brushes"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "published"
+  },
+  "hugh-blackburn-describes-the-harmonograph": {
+    "body": [
+      "The Harmonograph, commonly agreed to be invented by <a href=\"https://www.lerandom.art/subjects/hugh-blackburn\">Hugh Blackburn</a>, is a mechanical apparatus that creates geometric drawings, typically Lissajous-type figures, through the use of pendulums. It stands as an early example of an autonomous system/machine that generates artistic forms, and as a precursor to later generative art and computer graphics."
+    ],
+    "cite": [],
+    "img": {
+      "src": "img/hugh-blackburn-describes-the-harmonograph.jpg",
+      "cap": "",
+      "credit": "Wikipedia. 2023. \"Harmonograph.\" Wikimedia Foundation. Last modified February 2, 2023. <a href=\"https://en.wikipedia.org/wiki/Harmonograph\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>.",
+      "width": 6106,
+      "height": 5617
+    },
+    "tags": [
+      "computer graphics",
+      "Hugh Blackburn",
+      "generative art",
+      "harmonographs",
+      "drawing machine",
+      "Lissajous figures",
+      "pendulum",
+      "autonomy",
+      "geometry"
+    ],
+    "people": [
+      "hugh blackburn"
+    ],
+    "subjects": [
+      {
+        "k": "autonomy",
+        "n": "autonomy",
+        "t": "themes"
+      },
+      {
+        "k": "generative art",
+        "n": "generative art",
+        "t": "themes"
+      },
+      {
+        "k": "geometry",
+        "n": "geometry",
+        "t": "themes"
+      },
+      {
+        "k": "computer graphics",
+        "n": "computer graphics",
+        "t": "tech"
+      },
+      {
+        "k": "drawing machine",
+        "n": "drawing machine",
+        "t": "tech"
+      },
+      {
+        "k": "harmonographs",
+        "n": "harmonographs",
+        "t": "tech"
+      },
+      {
+        "k": "lissajous figures",
+        "n": "Lissajous figures",
+        "t": "tech"
+      },
+      {
+        "k": "pendulum",
+        "n": "pendulum",
+        "t": "tech"
+      },
+      {
+        "k": "hugh blackburn",
+        "n": "Hugh Blackburn",
+        "t": "people"
+      }
+    ],
+    "linked": [],
+    "echoes": [
+      "harold-cohen-pioneers-ai-art-with-aaron",
+      "invention-of-the-zuse-graphomat-z-64",
+      "abstronic-by-mary-ellen-bute"
+    ],
+    "eds": [
+      "kate-vass-on-rethinking-art-collecting",
+      "jane-veeder-on-loving-change",
+      "gendering-systems",
+      "barbara-london-on-new-territory"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  },
+  "eureka-exhibited-at-londons-egyptian-hall": {
+    "body": [
+      "<a href=\"https://www.lerandom.art/subjects/john-clark\">John Clark</a>’s Latin verse generating machine, Eureka, was a full mechanized version of <a href=\"https://digitalarchive.tpl.ca/objects/332679/artificial-versifying-or-the-schoolboys-recreation--a-n\" target=\"_blank\" rel=\"noopener\">John Peter’s book,</a> <a href=\"https://digitalarchive.tpl.ca/objects/332679/artificial-versifying-or-the-schoolboys-recreation--a-n\" target=\"_blank\" rel=\"noopener\">Artificial Versifying</a>, <a href=\"m/artificial-versifying-by-john-peter.html\" data-moment=\"artificial-versifying-by-john-peter\">from 1677 and earlier in this Timeline</a>.",
+      "The machine generated Latin hexameter verse and stands as a precursor to the typewriter and other early mechanical devices. The inventor John Clark spent thirteen years building Eureka, from 1832 to 1845, which resembles a bookcase. This early automatic machine combined science, mechanization, computation, randomness and art in a way that is recognizable to contemporary digital generative art.",
+      "The device stands as another example of the roots of generative poetry often stretching back further than generative graphics."
+    ],
+    "cite": [
+      {
+        "url": "",
+        "label": "Sharples, Mike. \"John Clark's Latin Verse Machine: 19th Century Computational Creativity.\" IEEE Annals of the History of Computing 45, no. 1 (2023): 31-42."
+      }
+    ],
+    "img": {
+      "src": "img/eureka-exhibited-at-londons-egyptian-hall.jpg",
+      "cap": "",
+      "credit": "Wikipedia. 2023. \"The Eureka.\" Wikimedia Foundation. Last modified June 19, 2023. <a href=\"https://en.wikipedia.org/wiki/The_Eureka\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>.",
+      "width": 1145,
+      "height": 1514
+    },
+    "tags": [
+      "John Peter",
+      "Artificial Versifying",
+      "London",
+      "Computer Text",
+      "Generative Poetry",
+      "Material Generative Art",
+      "Eureka",
+      "John Clark",
+      "Egyptian Hall",
+      "randomness",
+      "poetry",
+      "Automata",
+      "art and science",
+      "England"
+    ],
+    "people": [
+      "john clark",
+      "john peter"
+    ],
+    "subjects": [
+      {
+        "k": "art and science",
+        "n": "art and science",
+        "t": "themes"
+      },
+      {
+        "k": "computer text",
+        "n": "Computer Text",
+        "t": "themes"
+      },
+      {
+        "k": "generative poetry",
+        "n": "Generative Poetry",
+        "t": "themes"
+      },
+      {
+        "k": "material generative art",
+        "n": "Material Generative Art",
+        "t": "themes"
+      },
+      {
+        "k": "poetry",
+        "n": "poetry",
+        "t": "themes"
+      },
+      {
+        "k": "randomness",
+        "n": "randomness",
+        "t": "themes"
+      },
+      {
+        "k": "automata",
+        "n": "Automata",
+        "t": "tech"
+      },
+      {
+        "k": "eureka",
+        "n": "Eureka",
+        "t": "tech"
+      },
+      {
+        "k": "john clark",
+        "n": "John Clark",
+        "t": "people"
+      },
+      {
+        "k": "john peter",
+        "n": "John Peter",
+        "t": "people"
+      },
+      {
+        "k": "artificial versifying",
+        "n": "Artificial Versifying",
+        "t": "works"
+      },
+      {
+        "k": "egyptian hall",
+        "n": "Egyptian Hall",
+        "t": "orgs"
+      },
+      {
+        "k": "england",
+        "n": "England",
+        "t": "places"
+      },
+      {
+        "k": "london",
+        "n": "London",
+        "t": "places"
+      }
+    ],
+    "linked": [
+      "artificial-versifying-by-john-peter"
+    ],
+    "echoes": [
+      "oscar-scwartz-gives-a-tedx-talk-on-computational-poetics",
+      "ray-kurzweils-cybernetic-poet",
+      "christian-bok-publishes-the-piecemeal-bard-is-deconstructed"
+    ],
+    "eds": [
+      "generations-of-verse"
+    ],
+    "pods": [
+      1
+    ],
+    "dateType": "made"
+  }
+}
