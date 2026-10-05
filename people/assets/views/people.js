@@ -1523,7 +1523,7 @@
     const ringY = esc(CH[p.c - 1].years);
     const place = p.own.length
       ? `Placed in the ${ringY} ring by ${p.own.length === 1 ? 'the moment whose title names them' : `the ${fmt(p.own.length)} moments whose titles name them`}${p.own.length < p.cnt ? ', marked with a dot' : ''}.`
-      : p.ctx ? (p.yrs ? `No Timeline moment names them. Placed in the ${ringY} ring by their dates (${esc(p.yrs)}); the idea region is that of the ideas nearest to them in Le Random’s pages.` : `No Timeline moment names them. Placed by context: the ${ringY} ring and this idea region are those of the people and ideas nearest to them in Le Random’s pages.`)
+      : p.ctx ? ''   /* 5 Oct 2026: no explanatory note of ours (Peter's standing rule) */
       : p.cnt > 1 ? `Placed in the ${ringY} ring, the middle of the moments that name or cite them.` : '';
     // barcode: chapters as ten equal columns, each moment at its place within its chapter
     const strip = `<div class="pv-strip" aria-label="Connected moments across the ten chapters">${CH.map((c, i) => `<div class="pv-strip-ch" style="left:${i * 10}%;width:10%"><span>${i === 0 ? '&lt;1850' : i === 1 ? '1850' : esc(c.years.replace('s', ''))}</span></div>`).join('')}<div class="pv-strip-axis"></div>

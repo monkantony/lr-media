@@ -1021,7 +1021,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     if (ssrEps.length) lnRows = '<div data-ssr-ln></div>';
     if (lnRows) html += '<section class="lrft-zone"><h2 class="lrft-lbl">Listen next</h2>' + lnRows + '</section>';
     var tlRows = (me.tl || []).map(function(m){
-      return '<a class="lrft-ln lrft-tl" href="https://timeline.lerandom.art/#/chapter-' + m[3] + '" target="_blank" rel="noopener">'
+      return '<a class="lrft-ln lrft-tl" href="https://timeline.lerandom.art/chapter/' + m[3] + '" target="_blank" rel="noopener">'
         + '<span class="ln-no tl-y">' + esc(m[2]) + '</span>'
         + '<span class="ln-t">' + esc(m[1]) + '</span>'
         + '<span class="ln-badge">Timeline</span></a>';
@@ -1097,7 +1097,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
             notes.push({ q: m[2], s: m[3] + ' \u00b7 ' + String(m[1] || '').split(' with ')[0], href: '/editorials#pod=' + m[0], lbl: 'Said on the podcast' }); }
         });
         (me.tl || []).slice(0, 1).forEach(function(m){
-          notes.push({ q: m[1], s: m[2] || 'The timeline', href: 'https://timeline.lerandom.art/#/chapter-' + m[3], lbl: 'Deep history', ext: 1 });
+          notes.push({ q: m[1], s: m[2] || 'The timeline', href: 'https://timeline.lerandom.art/chapter/' + m[3], lbl: 'Deep history', ext: 1 });
         });
         notes = notes.slice(0, 3);
         if (!notes.length) return;
