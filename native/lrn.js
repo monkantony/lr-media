@@ -10,7 +10,7 @@
   if (g) order.forEach(function(w){ [].forEach.call(g.querySelectorAll('article.reader'), function(a){
     var h = a.querySelector('.rd-word'); if (h && h.textContent.trim() === w) g.appendChild(a); }); });
 })();
-var LRW_BUILD = "20261005210948";
+var LRW_BUILD = "20261005215228";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -3767,7 +3767,7 @@ window.__lrwGlide = function(t, reduce, holdMs, onStable){
     var sec = document.getElementById('interviews');
     var img = document.getElementById('rc-img');
     if (!sec || !img) return;
-    var bg = document.createElement('div');
+    var bg = sec.querySelector('.rc-bg') || document.createElement('div');   /* native: the layer is baked; reuse it */
     bg.className = 'rc-bg';
     bg.setAttribute('aria-hidden', 'true');
     sec.insertBefore(bg, sec.firstChild);
@@ -4064,6 +4064,9 @@ try{
   var head = cal && cal.querySelector('.zone-head'); if (!cal || !pl || !head || document.getElementById('pl-map')) return;
   var B = LRWB + 'calmap/', css = document.createElement('link');
   css.rel = 'stylesheet'; css.href = B + 'lr-calmap.css'; document.head.appendChild(css);
+  var st = document.createElement('style');   /* the zone head orders its parts (title 1, tools 3): the switch is a tool, on the right */
+  st.textContent = '#lrw .zone-head.zh .lrcm-seg{order:3;flex:0 0 auto;margin:0;align-self:center}';
+  document.head.appendChild(st);
   var seg = document.createElement('div'); seg.className = 'lrcm-seg'; seg.setAttribute('role', 'group'); seg.setAttribute('aria-label', 'Calendar view');
   seg.innerHTML = '<button type="button" aria-pressed="true" data-v="list">List</button><button type="button" aria-pressed="false" data-v="map">Map</button>';
   var x = head.querySelector('.zh-x'); head.insertBefore(seg, x ? x.nextSibling : null);

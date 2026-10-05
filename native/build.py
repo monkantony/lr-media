@@ -62,6 +62,9 @@ js = patch(js, "if (!bar || bar.querySelector('.lrk-btn')) return;\n    var righ
            'phone search glass')
 js = patch(js, "b.addEventListener('click', function () { open(''); });\n    right.insertBefore(b, right.firstChild);",
            "b.addEventListener('click', function () { open(''); });\n    if (!b0) right.insertBefore(b, right.firstChild);", 'phone search glass insert')
+js = patch(js, "if (!sec || !img) return;\n    var bg = document.createElement('div');",
+           "if (!sec || !img) return;\n    var bg = sec.querySelector('.rc-bg') || document.createElement('div');   /* native: the layer is baked; reuse it */",
+           'interviews background layer')
 js = patch(js, "if (lrw && foot && foot.parentNode && foot.parentNode !== lrw) foot.parentNode.insertBefore(lrw, foot);",
            "if (!window.__LRN && lrw && foot && foot.parentNode && foot.parentNode !== lrw) foot.parentNode.insertBefore(lrw, foot);",
            'chrome mover')
@@ -105,6 +108,9 @@ EPILOGUE += r'''
   var head = cal && cal.querySelector('.zone-head'); if (!cal || !pl || !head || document.getElementById('pl-map')) return;
   var B = LRWB + 'calmap/', css = document.createElement('link');
   css.rel = 'stylesheet'; css.href = B + 'lr-calmap.css'; document.head.appendChild(css);
+  var st = document.createElement('style');   /* the zone head orders its parts (title 1, tools 3): the switch is a tool, on the right */
+  st.textContent = '#lrw .zone-head.zh .lrcm-seg{order:3;flex:0 0 auto;margin:0;align-self:center}';
+  document.head.appendChild(st);
   var seg = document.createElement('div'); seg.className = 'lrcm-seg'; seg.setAttribute('role', 'group'); seg.setAttribute('aria-label', 'Calendar view');
   seg.innerHTML = '<button type="button" aria-pressed="true" data-v="list">List</button><button type="button" aria-pressed="false" data-v="map">Map</button>';
   var x = head.querySelector('.zh-x'); head.insertBefore(seg, x ? x.nextSibling : null);
