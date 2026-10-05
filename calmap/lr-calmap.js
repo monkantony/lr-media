@@ -35,7 +35,9 @@
     Promise.all([get(opt.calendar), get(opt.venues), get(opt.land), get(opt.countries)]).then(([cal, ven, land, countries]) => {
       if (!alive) return;
       const today = new Date().toISOString().slice(0, 10);
-      const shows = (cal.items || []).filter(i => (i.k === 'exhibition' || i.k === 'event') && i.p && ven[i.p] && ven[i.p].lat != null && (i.e || i.s) >= today)
+      // a show the calendar gives no end date counts as on view for 60 days after it opens (NODE's, from 19 Sep)
+      const endOf = i => i.e || (i.k === 'exhibition' ? new Date(Date.parse(i.s) + 60 * 864e5).toISOString().slice(0, 10) : i.s);
+      const shows = (cal.items || []).filter(i => (i.k === 'exhibition' || i.k === 'event') && i.p && ven[i.p] && ven[i.p].lat != null && endOf(i) >= today)
         .map(i => Object.assign({}, i, { now: i.s <= today, at: ven[i.p] }));
       // venues (one dot each when zoomed in) and cities (one dot each at world scale)
       const vmap = new Map(), cmap = new Map();
@@ -65,33 +67,58 @@
       const gp = g.append('g').attr('class', 'lrcm-plate').style('opacity', 0);
       const gc = g.append('g'), gv = g.append('g');
       const credit = d3.select(root.querySelector('.lrcm-map')).append('p').attr('class', 'lrcm-credit').html('Map data &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors').style('opacity', 0);
-      const plates = new Map(), slugOf = c => c.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-      const dOf = (list, close) => list.map(r => r.map((p, i) => { const q = proj(p); return (i ? 'L' : 'M') + q[0].toFixed(3) + ' ' + q[1].toFixed(3); }).join('') + (close ? 'Z' : '')).join('');
+      const plates = new Map(), drawn = new Map(), base = opt.plates || 'plates/';
+      const slugOf = c => c.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      const dOf = (list, close) => (list || []).map(r => r.map((p, i) => { const q = proj(p); return (i ? 'L' : 'M') + q[0].toFixed(3) + ' ' + q[1].toFixed(3); }).join('') + (close ? 'Z' : '')).join('');
+      const getPlate = slug => { if (!plates.has(slug)) plates.set(slug, fetch(base + slug + '.json').then(r => (r.ok ? r.json() : null)).catch(() => null)); return plates.get(slug); };
+      // a city's own plate, or the region it belongs to (plates/san-jose.json = {"ref": "bay-area"})
+      const plateOf = c => getPlate(slugOf(c.name)).then(pl => (pl && pl.ref ? getPlate(pl.ref) : pl));
       function drawPlate(c) {
-        const base = opt.plates || 'plates/';
-        const pr = plates.get(c.name) || fetch(base + slugOf(c.name) + '.json').then(r => (r.ok ? r.json() : null)).catch(() => null);
-        plates.set(c.name, pr);
-        return pr.then(pl => {
-          if (!pl || focus !== c) return pl;
-          gp.selectAll('*').remove();
-          if (pl.land && pl.land.length) {        // a coastal city: the box is sea, its land drawn on top
-            gp.append('path').attr('class', 'lrcm-sea').attr('d', dOf([[[pl.bbox[0], pl.bbox[1]], [pl.bbox[2], pl.bbox[1]], [pl.bbox[2], pl.bbox[3]], [pl.bbox[0], pl.bbox[3]]]], true));
-            gp.append('path').attr('class', 'lrcm-cland').attr('d', dOf(pl.land, true));
+        return plateOf(c).then(pl => {
+          if (!pl || !alive) return pl;
+          const id = pl.city || c.name;
+          if (!drawn.has(id)) {
+            const gx = gp.append('g');
+            if (pl.land && pl.land.length) {        // a coastal city: the box is sea, its land drawn on top
+              gx.append('path').attr('class', 'lrcm-sea').attr('d', dOf([[[pl.bbox[0], pl.bbox[1]], [pl.bbox[2], pl.bbox[1]], [pl.bbox[2], pl.bbox[3]], [pl.bbox[0], pl.bbox[3]]]], true));
+              gx.append('path').attr('class', 'lrcm-cland').attr('d', dOf(pl.land, true));
+            }
+            gx.append('path').attr('class', 'lrcm-park').attr('d', dOf(pl.parks, true));
+            gx.append('path').attr('class', 'lrcm-water').attr('d', dOf(pl.water, true));
+            if (pl.holes && pl.holes.length) gx.append('path').attr('class', 'lrcm-cland').attr('d', dOf(pl.holes, true));
+            gx.append('path').attr('class', 'lrcm-river').attr('d', dOf(pl.rivers, false));
+            gx.append('path').attr('class', 'lrcm-coast').attr('d', dOf(pl.coast, false));
+            if (pl.buildings && pl.buildings.length) gx.append('path').attr('class', 'lrcm-bldg').attr('d', dOf(pl.buildings, true));
+            gx.append('path').attr('class', 'lrcm-road').attr('d', dOf(pl.minor, false));
+            gx.append('path').attr('class', 'lrcm-road lrcm-major').attr('d', dOf(pl.major, false));
+            if (pl.rail && pl.rail.length) gx.append('path').attr('class', 'lrcm-rail').attr('d', dOf(pl.rail, false));
+            const a = proj([pl.bbox[0], pl.bbox[3]]), b = proj([pl.bbox[2], pl.bbox[1]]);
+            gx.datum({ w: Math.max(b[0] - a[0], b[1] - a[1]) }).style('opacity', 0).style('transition', 'opacity .6s');
+            drawn.set(id, gx);
+            root.dataset.plates = [...drawn.keys()].join(' ');
           }
-          gp.append('path').attr('class', 'lrcm-park').attr('d', dOf(pl.parks, true));
-          gp.append('path').attr('class', 'lrcm-water').attr('d', dOf(pl.water, true));
-          if (pl.holes && pl.holes.length) gp.append('path').attr('class', 'lrcm-cland').attr('d', dOf(pl.holes, true));
-          gp.append('path').attr('class', 'lrcm-river').attr('d', dOf(pl.rivers, false));
-          gp.append('path').attr('class', 'lrcm-coast').attr('d', dOf(pl.coast, false));
-          gp.append('path').attr('class', 'lrcm-road').attr('d', dOf(pl.minor, false));
-          gp.append('path').attr('class', 'lrcm-road lrcm-major').attr('d', dOf(pl.major, false));
-          gp.datum(c); plateFade();
+          plateFade();
           return pl;
         });
       }
+      // each city's map fades in as it grows to fill the frame (a small patch at a regional zoom would look like a sticker)
       function plateFade() {
-        const on = focus && gp.datum() === focus && k > 20 ? 1 : 0;
-        gp.style('opacity', on); credit.style('opacity', on);
+        let any = 0; const fw = Math.min(W(), H());
+        drawn.forEach(gx => { const f = Math.max(0, Math.min(1, (gx.datum().w * k / fw - 0.25) / 0.25)); gx.style('opacity', f); any = Math.max(any, f); });
+        gp.style('opacity', 1); credit.style('opacity', any > 0.2 ? 1 : 0);
+      }
+      // 5 Oct 2026, Peter: "maps dont show up unless a place is clicked on from world view". Zoomed in by hand (scroll,
+      // pinch, drag, + and -), the cities in or near the frame load their maps too.
+      function platesInView() {
+        root.dataset.zoom = Math.round(k);
+        if (!alive || k < 12) return;
+        const t = d3.zoomTransform(svgEl), mx = W() * 0.25, my = H() * 0.25;
+        let n = 0;
+        cities.forEach(c => {
+          if (n >= 4) return;
+          const p = proj([c.lon, c.lat]), x = t.applyX(p[0]), y = t.applyY(p[1]);
+          if (x > -mx && x < W() + mx && y > -my && y < H() + my) { n++; drawPlate(c); }
+        });
       }
       let k = 1, focus = null;
 
@@ -147,7 +174,7 @@
         g.select('.lrcm-borders').style('stroke-width', 0.6 / k);
         g.select('.lrcm-land').style('stroke-width', 0.7 / k);
       }
-      const zoom = d3.zoom().scaleExtent([1, 6000]).on('zoom', e => { k = e.transform.k; g.attr('transform', e.transform); place(); hideTip(); });
+      const zoom = d3.zoom().scaleExtent([1, 6000]).on('zoom', e => { k = e.transform.k; g.attr('transform', e.transform); place(); hideTip(); }).on('end', platesInView);
       svg.call(zoom).on('dblclick.zoom', null);
       const slow = () => (matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 900);
       function zoomTo(lonlat, scale) {
@@ -168,7 +195,7 @@
         // with its plate: the city fills the frame (its venues are inside it by construction)
         drawPlate(c).then(pl => {
           if (focus !== c) return;
-          if (!pl) return byVenues();
+          if (!pl || pl.region) return byVenues();      // a region (the Bay Area): open on this city's own venues
           const a = proj([pl.bbox[0], pl.bbox[3]]), b = proj([pl.bbox[2], pl.bbox[1]]);
           const cover = Math.max(W() / (b[0] - a[0]), H() / (b[1] - a[1])), fitV = 0.8 * Math.min(W() / Math.max(1e-6, d3.max(xs) - d3.min(xs)), H() / Math.max(1e-6, d3.max(ys) - d3.min(ys)));
           zoomToXY(cx, cy, Math.min(4000, cover, fitV));
@@ -203,11 +230,18 @@
         if (z) { const a = z.dataset.z; if (a === 'world') world(); else svg.transition().duration(350).call(zoom.scaleBy, a === 'in' ? 2 : 0.5); }
         else if (c) { const city = cities.find(x => x.name === c.dataset.city); if (city) openCity(city); }
       });
-      let lastW = 0;
+      let lastW = svgEl.clientWidth || 0, W0 = W(), H0 = H();     // the first observation of an unchanged size does nothing
       ro = new ResizeObserver(() => {
         if (!alive || !svgEl.clientWidth) return;          // hidden: wait until it is shown
-        if (Math.abs(svgEl.clientWidth - lastW) < 2) return; lastW = svgEl.clientWidth;
-        fit(); svg.call(zoom.transform, d3.zoomIdentity); focus = null; overview();
+        if (Math.abs(svgEl.clientWidth - lastW) < 2) return;
+        const first = !lastW; lastW = svgEl.clientWidth;
+        // a resize keeps the place in view (the middle of the frame) at the same zoom; drawn plates are redrawn
+        const t0 = d3.zoomTransform(svgEl), mid = first || t0.k === 1 ? null : proj.invert(t0.invert([W0 / 2, H0 / 2])), k0 = t0.k;
+        fit(); W0 = W(); H0 = H();
+        drawn.forEach(gx => gx.remove()); drawn.clear();
+        if (!mid) { svg.call(zoom.transform, d3.zoomIdentity); if (first) { focus = null; overview(); } return; }
+        const p = proj(mid); svg.call(zoom.transform, d3.zoomIdentity.translate(W() / 2, H() / 2).scale(k0).translate(-p[0], -p[1]));
+        if (focus) drawPlate(focus); platesInView();
       });
       ro.observe(svgEl);
       fit(); overview();
