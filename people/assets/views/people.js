@@ -1574,7 +1574,7 @@
       ${detail.bio ? `<p class="pv-bio">${esc(detail.bio)}</p>` : '<p class="pv-bio" id="pv-bio" hidden></p>'}
       ${detail.portrait ? `<figure class="pv-portrait"><img src="${esc(detail.portrait)}" alt="Portrait of ${esc(p.n)}" width="160" height="180"><figcaption>Le Random subject archive</figcaption></figure>` : ''}
       <p class="pv-stats">${statsOf(p, detail)}
-        ${all || top || wo ? `<span class="pv-flags">${all ? `<span class="pv-flag">${all} All-Time</span>` : ''}${top ? `<span class="pv-flag">${top} Top</span>` : ''}${wo ? `<span class="pv-flag">${wo} women artists</span>` : ''}</span>` : ''}</p>
+        ${all || top ? `<span class="pv-flags">${all ? `<span class="pv-flag">${all} All-Time</span>` : ''}${top ? `<span class="pv-flag">${top} Top</span>` : ''}</span>` : ''}</p>
       ${p.m.length ? strip : ''}
       ${place ? `<p class="pv-place">${place}</p>` : ''}
       ${HOME === 'main' ? archSec + momSec : momSec + archSec}
