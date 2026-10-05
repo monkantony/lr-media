@@ -2734,6 +2734,7 @@ try{
   function edMini(seed){
     [].forEach.call(document.querySelectorAll('.zone-roll, .cur-roll'), function(btn){
       var tag = btn.previousElementSibling;
+      if (!tag || !tag.classList || !tag.classList.contains('ed-mini')) tag = btn.parentNode.querySelector(':scope > .ed-mini') || tag;   /* native: a baked label one step further left (Contributors: label, A-Z, die) */
       if (!tag || !tag.classList || !tag.classList.contains('ed-mini')){
         tag = document.createElement('span'); tag.className = 'ed-mini';
         btn.parentNode.insertBefore(tag, btn);
@@ -3908,8 +3909,9 @@ window.__lrwGlide = function(t, reduce, holdMs, onStable){
     var wrap = q('#contributors .contrib'), zh = q('#contributors .zone-head');
     if (wrap && zh) {
       var orig = null;
-      var b = document.createElement('button'); b.type = 'button'; b.className = 'rc-order cb-sort'; b.textContent = 'A–Z'; b.setAttribute('aria-pressed', 'false');
-      zh.insertBefore(b, q('.zone-roll', zh) || null);
+      var b = q('.cb-sort', zh);   /* native: the A-Z button is baked; bind it */
+      if (!b) { b = document.createElement('button'); b.type = 'button'; b.className = 'rc-order cb-sort'; b.textContent = 'A–Z'; b.setAttribute('aria-pressed', 'false');
+      zh.insertBefore(b, q('.zone-roll', zh) || null); }
       function surname(el){ var n = ((q('.cb-name', el) || {}).textContent || '').trim(); return [n.split(/\s+/).pop().toLowerCase(), n.toLowerCase()]; }
       b.addEventListener('click', function(){
         var on = b.getAttribute('aria-pressed') !== 'true';

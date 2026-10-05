@@ -65,6 +65,11 @@ js = patch(js, "b.addEventListener('click', function () { open(''); });\n    rig
 js = patch(js, "if (!sec || !img) return;\n    var bg = document.createElement('div');",
            "if (!sec || !img) return;\n    var bg = sec.querySelector('.rc-bg') || document.createElement('div');   /* native: the layer is baked; reuse it */",
            'interviews background layer')
+js = patch(js, "var tag = btn.previousElementSibling;\n      if (!tag || !tag.classList || !tag.classList.contains('ed-mini')){",
+           "var tag = btn.previousElementSibling;\n      if (!tag || !tag.classList || !tag.classList.contains('ed-mini')) tag = btn.parentNode.querySelector(':scope > .ed-mini') || tag;   /* native: a baked label one step further left (Contributors: label, A-Z, die) */\n      if (!tag || !tag.classList || !tag.classList.contains('ed-mini')){",
+           'edition label reuse')
+js = patch(js, "var b = document.createElement('button'); b.type = 'button'; b.className = 'rc-order cb-sort'; b.textContent = 'A–Z'; b.setAttribute('aria-pressed', 'false');\n      zh.insertBefore(b, q('.zone-roll', zh) || null);",
+           "var b = q('.cb-sort', zh);   /* native: the A-Z button is baked; bind it */\n      if (!b) { b = document.createElement('button'); b.type = 'button'; b.className = 'rc-order cb-sort'; b.textContent = 'A–Z'; b.setAttribute('aria-pressed', 'false');\n      zh.insertBefore(b, q('.zone-roll', zh) || null); }", 'Contributors A-Z button')
 js = patch(js, "if (lrw && foot && foot.parentNode && foot.parentNode !== lrw) foot.parentNode.insertBefore(lrw, foot);",
            "if (!window.__LRN && lrw && foot && foot.parentNode && foot.parentNode !== lrw) foot.parentNode.insertBefore(lrw, foot);",
            'chrome mover')
