@@ -385,13 +385,13 @@ var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-m
   }
   window.addEventListener('load', function () { remeasure(); setTimeout(remeasure, 1500); });
   function phoneButton(bar) {
-    if (!bar || bar.querySelector('.lrk-btn')) return;
+    if (!bar) return; var b0 = bar.querySelector('.lrk-btn'); if (b0 && (!window.__LRN || b0.__lrk)) return;   /* native: the phone glass is baked; bind it */
     var right = bar.querySelector('.right') || bar;
-    var b = document.createElement('button'); b.type = 'button'; b.className = 'lrk-btn'; b.setAttribute('aria-label', 'Search Le Random'); b.innerHTML = GLASS;
+    var b = b0 || document.createElement('button'); b.__lrk = 1; if (!b0) { b.type = 'button'; b.className = 'lrk-btn'; b.setAttribute('aria-label', 'Search Le Random'); b.innerHTML = GLASS; }
     b.addEventListener('touchstart', function () { load().catch(function () {}); }, { passive: true });
     var box = right.querySelector('.tb-search'); if (RO && box) RO.observe(box);
     b.addEventListener('click', function () { open(''); });
-    right.insertBefore(b, right.firstChild);
+    if (!b0) right.insertBefore(b, right.firstChild);
   }
   function glassNeeded() {
     [].forEach.call(document.querySelectorAll('.lrk-btn'), function (b) {

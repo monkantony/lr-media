@@ -57,6 +57,11 @@ js = patch(js, "host.appendChild(el);\n        document.getElementById('ed-roll'
            "host.appendChild(el); }\n        document.getElementById('ed-roll').addEventListener('click', function(){", 'Re-roll stamp close')
 js = patch(js, "(function(){\n  if (window.LRW_COMMIT) return;", "(function(){\n  if (window.LRW_COMMIT || window.__LRN) return;   /* native: never reload the page */",
            'self-healing reload')
+js = patch(js, "if (!bar || bar.querySelector('.lrk-btn')) return;\n    var right = bar.querySelector('.right') || bar;\n    var b = document.createElement('button'); b.type = 'button'; b.className = 'lrk-btn'; b.setAttribute('aria-label', 'Search Le Random'); b.innerHTML = GLASS;",
+           "if (!bar) return; var b0 = bar.querySelector('.lrk-btn'); if (b0 && (!window.__LRN || b0.__lrk)) return;   /* native: the phone glass is baked; bind it */\n    var right = bar.querySelector('.right') || bar;\n    var b = b0 || document.createElement('button'); b.__lrk = 1; if (!b0) { b.type = 'button'; b.className = 'lrk-btn'; b.setAttribute('aria-label', 'Search Le Random'); b.innerHTML = GLASS; }",
+           'phone search glass')
+js = patch(js, "b.addEventListener('click', function () { open(''); });\n    right.insertBefore(b, right.firstChild);",
+           "b.addEventListener('click', function () { open(''); });\n    if (!b0) right.insertBefore(b, right.firstChild);", 'phone search glass insert')
 js = patch(js, "if (lrw && foot && foot.parentNode && foot.parentNode !== lrw) foot.parentNode.insertBefore(lrw, foot);",
            "if (!window.__LRN && lrw && foot && foot.parentNode && foot.parentNode !== lrw) foot.parentNode.insertBefore(lrw, foot);",
            'chrome mover')
