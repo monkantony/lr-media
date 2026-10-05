@@ -9,17 +9,43 @@
   var me = document.currentScript, BASE = me && me.getAttribute('data-base');
   var m = location.pathname.match(/\/subjects\/([^\/?#]+)/); if (!BASE || !m) return;
   var slug = decodeURIComponent(m[1]), TL = 'https://timeline.lerandom.art/';
+  // 5 Oct 2026: lr-media is past jsDelivr's 50 MB limit for GitHub repos, so right after a push jsDelivr answers some
+  // of a new commit's files with 403/503 ("Package size exceeded") and the view hung on "Charting the people".
+  // GitHub's own file server has no size limit and a commit URL never changes: data and code are read from there
+  // (code inlined, since it is served as text/plain), with jsDelivr as the fallback.
+  var RAW = BASE.replace(/^https:\/\/cdn\.jsdelivr\.net\/gh\/([^@\/]+\/[^@\/]+)@([0-9a-f]{7,40})\//, 'https://raw.githubusercontent.com/$1/$2/');
+  function get(f, as) {
+    var one = function (b) { return fetch(b + f, { cache: 'force-cache' }).then(function (r) { if (!r.ok) throw f + ' ' + r.status; return as === 'json' ? r.json() : r.text(); }); };
+    return RAW !== BASE ? one(RAW).catch(function () { return one(BASE); }) : one(BASE);
+  }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', begin); else begin();
 
   function begin() {
     var kind = document.querySelector('.sj-kind'); if (!kind || !/person/i.test(kind.textContent)) return;
-    var j = function (f) { return fetch(BASE + f, { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw f; return r.json(); }); };
+    var j = function (f) { return get(f, 'json'); };
     Promise.all([j('subject-slugs.json'), j('config.json')]).then(function (a) {
       var tok2sub = a[0], cfg = a[1], sub2tok = {};
       if (!cfg.enabled && !window.LR_PEOPLE_FORCE) return;
       for (var t in tok2sub) sub2tok[tok2sub[t]] = t;
       if (sub2tok[slug]) mount(sub2tok[slug], tok2sub, sub2tok, cfg);
     }).catch(function () {});
+  }
+
+  // the frame's own code and styles, inlined from the same commit (a <script src> on the file server would be refused:
+  // it serves text/plain). Anything that cannot be fetched keeps its tag and loads from jsDelivr as before.
+  function inlineCode(h) {
+    h = h.replace(/<script src="assets\/theme\.js[^"]*"><\/script>|<link rel="stylesheet" href="assets\/theme\.css[^"]*">/g, '');   // never shipped (404)
+    var tags = [], re = /<script src="assets\/([^"?]+\.js)"><\/script>|<link rel="stylesheet" href="assets\/([^"?]+\.css)">/g, mm;
+    while ((mm = re.exec(h))) tags.push({ tag: mm[0], file: 'assets/' + (mm[1] || mm[2]), js: !!mm[1] });
+    return Promise.all(tags.map(function (t) {
+      return get(t.file).then(function (code) {
+        if (t.js) return '<script>' + code.replace(/<\/script/gi, '<\\/script') + '\n<\/script>';
+        return '<style>' + code.replace(/url\(\.\.\/fonts\//g, 'url(' + RAW + 'fonts/') + '</style>';
+      }).catch(function () { return null; });
+    })).then(function (out) {
+      tags.forEach(function (t, i) { if (out[i] != null) h = h.split(t.tag).join(out[i]); });
+      return h;
+    });
   }
 
   function headerBottom() {
@@ -55,10 +81,10 @@
     place(); setTimeout(place, 800); setTimeout(place, 2500); addEventListener('load', place); addEventListener('resize', place);
 
     var fr = document.createElement('iframe'); fr.title = 'People map'; fr.setAttribute('allow', 'fullscreen; autoplay');
-    fetch(BASE + 'embed.html', { cache: 'no-cache' }).then(function (r) { return r.text(); }).then(function (h) {
+    get('embed.html').then(inlineCode).then(function (h) {
       var assets = cfg.assets_base || TL;
       var head = '<base href="' + assets + '"><script>window.LR_EMBED=1;window.LR_FRAMED=true;window.LR_PEOPLE_HOME="main";' +
-        'window.LR_DATA=' + JSON.stringify(BASE) + ';window.LR_LEAD=' + JSON.stringify(cfg.lead || {}) + ';' +
+        'window.LR_DATA=' + JSON.stringify(RAW) + ';window.LR_LEAD=' + JSON.stringify(cfg.lead || {}) + ';' +
         'window.LR_PARAMS=' + JSON.stringify({ token: tok }) + ';<\/script>';
       // the page's own code and styles come from lr-media, not from the Timeline the <base> points at
       h = h.replace('<!--LR-EMBED-HEAD-->', head).replace(/(href|src)="assets\//g, '$1="' + BASE + 'assets/');
