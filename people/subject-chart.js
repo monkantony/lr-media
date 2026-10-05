@@ -102,7 +102,7 @@
     }
     function open(url, newtab) {
       url = url.replace(/^(https:\/\/timeline\.lerandom\.art\/m\/[a-z0-9-]+)\.html/, '$1');
-      if (newtab) window.open(url, '_blank', 'noopener'); else location.href = url;
+      if (newtab) { var w = window.open(url, '_blank'); if (w) { try { w.opener = null; } catch (e) {} } else location.href = url; } else location.href = url;
     }
     function at(t, title) {
       var s = tok2sub[t]; if (!s) return;
@@ -118,7 +118,7 @@
       else if (d.lrembed === 'open') open(d.url, d.newtab);
       else if (d.lrsite === 'go') {
         if (d.page === 'people' && (d.params && (d.params.token || d.params.slug))) { var w = fr.contentWindow; if (w.LR_SELECT) w.LR_SELECT(d.params.token || d.params.slug); }
-        else open(tlUrl(d.page, d.params), false);
+        else open(tlUrl(d.page, d.params), true);   // 5 Oct 2026, Peter: the Timeline opens in a new tab
       }
     });
     addEventListener('popstate', function () {
