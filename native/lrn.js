@@ -4092,3 +4092,24 @@ try{
   seg.addEventListener('click', function(e){ var b = e.target.closest('button'); if (b) show(b.dataset.v); });
   seg.addEventListener('pointerenter', function(){ if (window.d3) return; var l = document.createElement('link'); l.rel = 'prefetch'; l.href = B + 'd3.min.js'; document.head.appendChild(l); }, { once: true });
 })();
+
+/* ---------- native: films baked as data-src (the Featured trailer) start as they near the screen ----------
+   The page bakes below-the-fold films without a src so nothing downloads at load; this gives them one when they come
+   within a screen of view, plays them muted on loop, and pauses them off screen. Peter, 5 Oct 2026: the Goodfellow
+   trailer never played on the native page because nothing ever set its src. */
+(function(){
+  function arm(v){
+    if (v.__lrnFilm) return; v.__lrnFilm = 1;
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){
+      if (e.isIntersecting) {
+        if (!v.getAttribute('src') && v.dataset.src) { v.muted = true; v.loop = true; v.playsInline = true; v.preload = 'auto'; v.src = v.dataset.src; }
+        var p = v.play(); if (p && p.catch) p.catch(function(){});
+      } else if (!v.paused) v.pause();
+    }); }, { rootMargin: '100% 0px' });
+    io.observe(v);
+  }
+  function scan(){ [].forEach.call(document.querySelectorAll('#lrw video[data-src]'), arm); }
+  scan();
+  new MutationObserver(function(ms){ for (var i = 0; i < ms.length; i++) if (ms[i].addedNodes.length) { scan(); break; } })
+    .observe(document.getElementById('lrw') || document.body, { childList: true, subtree: true });
+})();
