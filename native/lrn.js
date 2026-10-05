@@ -4055,3 +4055,35 @@ try{
     if (meta && j.n) meta.textContent = 'One of ' + Number(j.n).toLocaleString('en-US') + ' moments across ten chapters, from 70,000 years ago to now, edited by Peter Bauman.';
   }).catch(function(){});
 })();
+
+/* ---------- native: the calendar MAP (calmap/, built by the people-view session, 5 Oct 2026): List · Map ----------
+   The switch sits in the Calendar head; nothing of the map (d3, topojson, the module, its data) loads until Map is
+   first chosen. The map draws in its own #pl-map after #pl; the list's refresh only ever replaces #pl's contents. */
+(function(){
+  var cal = document.getElementById('calendar'), pl = document.getElementById('pl');
+  var head = cal && cal.querySelector('.zone-head'); if (!cal || !pl || !head || document.getElementById('pl-map')) return;
+  var B = LRWB + 'calmap/', css = document.createElement('link');
+  css.rel = 'stylesheet'; css.href = B + 'lr-calmap.css'; document.head.appendChild(css);
+  var seg = document.createElement('div'); seg.className = 'lrcm-seg'; seg.setAttribute('role', 'group'); seg.setAttribute('aria-label', 'Calendar view');
+  seg.innerHTML = '<button type="button" aria-pressed="true" data-v="list">List</button><button type="button" aria-pressed="false" data-v="map">Map</button>';
+  var x = head.querySelector('.zh-x'); head.insertBefore(seg, x ? x.nextSibling : null);
+  var box = document.createElement('div'); box.id = 'pl-map'; box.hidden = true; pl.parentNode.insertBefore(box, pl.nextSibling);
+  var loading = null;
+  function script(src){ return new Promise(function(ok, no){ var s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = no; document.body.appendChild(s); }); }
+  function load(){
+    if (!loading) loading = (window.d3 ? Promise.resolve() : script(B + 'd3.min.js'))
+      .then(function(){ return window.topojson ? 0 : script(B + 'topojson-client.min.js'); })
+      .then(function(){ return window.LRCalMap ? 0 : script(B + 'lr-calmap.js'); })
+      .then(function(){ window.LRCalMap.mount(box, { calendar: LRWB + 'calendar.json', venues: B + 'venues.json',
+        land: B + 'land-50m.json', countries: B + 'countries-50m.json', plates: B + 'plates/' }); })
+      .catch(function(){ loading = null; box.textContent = 'The map could not load. The list has every date.'; });
+    return loading;
+  }
+  function show(v){
+    [].forEach.call(seg.querySelectorAll('button'), function(b){ b.setAttribute('aria-pressed', b.dataset.v === v ? 'true' : 'false'); });
+    pl.hidden = v === 'map'; box.hidden = v !== 'map';
+    if (v === 'map') load();
+  }
+  seg.addEventListener('click', function(e){ var b = e.target.closest('button'); if (b) show(b.dataset.v); });
+  seg.addEventListener('pointerenter', function(){ if (window.d3) return; var l = document.createElement('link'); l.rel = 'prefetch'; l.href = B + 'd3.min.js'; document.head.appendChild(l); }, { once: true });
+})();
