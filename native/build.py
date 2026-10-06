@@ -111,7 +111,7 @@ EPILOGUE = r'''
     y.textContent = e.y; t.textContent = e.t; b.textContent = e.b;
     var a = y.closest('a'); if (a && e.s) a.href = 'https://timeline.lerandom.art/m/' + e.s;
     var meta = document.querySelector('.tl-wrap .tl-meta');
-    if (meta && j.n) meta.textContent = 'One of ' + Number(j.n).toLocaleString('en-US') + ' moments across ten chapters, from 70,000 years ago to now, edited by Peter Bauman.';
+    if (meta && j.n) meta.textContent = 'One of ' + Number(j.n).toLocaleString('en-US') + ' moments across ten chapters, from 73,000 years ago to now, edited by Peter Bauman.';
   }).catch(function(){});
 })();
 '''
