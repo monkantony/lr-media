@@ -1219,9 +1219,9 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
        smartlinks.json). Linking it again here put a second link on the next mention ("HyperCard ... HyperCard"),
        because this pass cannot see which subjects the bake has used. Only unbaked bodies are linked here. */
     if (baked.length) return;
-    /* 6 Oct 2026 (Peter: "there shouldnt be any more smart links"): on the static template, links are only what the
-       CMS body carries */
-    if (lrStatic) return;
+    /* 6 Oct 2026 (Peter: "there shouldnt be any more smart links"): every body bake_links2.py could import is baked and
+       stops here. The 13 it left alone (bodies with embeds, video or tables, which the rich-text import could damage)
+       are still linked here until they are baked by hand. */
     fetch((window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/') + 'smartlinks.json')
       .then(function(r){ return r.json(); })
       .then(function(SL){
