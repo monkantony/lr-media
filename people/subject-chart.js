@@ -21,19 +21,23 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', begin); else begin();
 
   function begin() {
-    var kind = document.querySelector('.sj-kind'); if (!kind) return;
+    // 6 Oct 2026 (CLS): the Subjects template head reserves the chart's space from the first paint; a page that will get
+    // no chart says so at once (html.lr-pp-none), which releases the reserve
+    var none = function () { document.documentElement.classList.add('lr-pp-none'); };
+    var kind = document.querySelector('.sj-kind'); if (!kind) return none();
     var isPerson = /person/i.test(kind.textContent);
     var j = function (f) { return get(f, 'json'); };
     Promise.all([j('subject-slugs.json'), j('config.json')]).then(function (a) {
       var tok2sub = a[0], cfg = a[1], sub2tok = {};
-      if (!cfg.enabled && !window.LR_PEOPLE_FORCE) return;
+      if (!cfg.enabled && !window.LR_PEOPLE_FORCE) return none();
       for (var t in tok2sub) sub2tok[tok2sub[t]] = t;
       if (sub2tok[slug]) mount(sub2tok[slug], tok2sub, sub2tok, cfg);
       // LR-SUBJECTS (5 Oct 2026): every other subject page opens the chart on its subject (config "subjects": true)
       else if (!isPerson && cfg.subjects) get('data/subj/' + shardOf(slug) + '.json', 'json').then(function (sh) {
-        var d = sh && sh[slug]; if (d && (d.m.length || d.a.length || d.p.length)) { d.slug = slug; mount(null, tok2sub, sub2tok, cfg, d); }
-      }).catch(function () {});
-    }).catch(function () {});
+        var d = sh && sh[slug]; if (d && (d.m.length || d.a.length || d.p.length)) { d.slug = slug; mount(null, tok2sub, sub2tok, cfg, d); } else none();
+      }).catch(none);
+      else none();
+    }).catch(none);
   }
 
   // the frame's own code and styles, inlined from the same commit (a <script src> on the file server would be refused:
@@ -78,7 +82,7 @@
     document.head.appendChild(css);
     var box = document.createElement('section'); box.className = 'lr-pp'; box.setAttribute('aria-label', 'People map');
     box.innerHTML = '<p class="lr-pp-wait">Charting the people</p>';
-    var inner = document.querySelector('.ent-inner'); if (!inner) return;
+    var inner = document.querySelector('.ent-inner'); if (!inner) { document.documentElement.classList.add('lr-pp-none'); return; }
     // a real block of the header's height above the view (a margin would collapse through <body> and carry the
     // nav, whose top is auto, down with it)
     var pad = document.createElement('div'); pad.className = 'lr-pp-pad'; pad.setAttribute('aria-hidden', 'true');

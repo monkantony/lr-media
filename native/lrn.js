@@ -10,7 +10,7 @@
   if (g) order.forEach(function(w){ [].forEach.call(g.querySelectorAll('article.reader'), function(a){
     var h = a.querySelector('.rd-word'); if (h && h.textContent.trim() === w) g.appendChild(a); }); });
 })();
-var LRW_BUILD = "20261006125707";
+var LRW_BUILD = "20261006132518";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
