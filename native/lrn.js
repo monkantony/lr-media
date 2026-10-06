@@ -10,7 +10,7 @@
   if (g) order.forEach(function(w){ [].forEach.call(g.querySelectorAll('article.reader'), function(a){
     var h = a.querySelector('.rd-word'); if (h && h.textContent.trim() === w) g.appendChild(a); }); });
 })();
-var LRW_BUILD = "20261006181514";
+var LRW_BUILD = "20261006182821";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -41,7 +41,7 @@ var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-m
   if (window.__lrk) return;
   window.__lrk = 1;
   var BASE = window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/';
-  var ROWS = Object.create(null), MX = -1, MY = -1, EVOCAB = [];
+  var ROWS = Object.create(null), MX = -1, MY = -1, EVOCAB = [], MVOCAB = [];
   /* every search box on the site opens this one panel: the two headers, under Latest, the Archive, the Subjects
      section (Peter, 1 Oct 2026: "the subject search also needs to integrated ... like the archive was") */
   var BOXES = ['tb-q', 'hero-q', 'rg-q', 'sx-q', 'lrtb-q'];
@@ -116,6 +116,28 @@ var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-m
     return out.map(function (x) { x[1]._s = x[0]; return x[1]; });
   }
 
+  /* Timeline moments (6 Oct 2026, Peter: "ksearch must now be fully integrative of the TL and its new individual moments"):
+     the title and year first, then the people named in the moment, then anything the moment page says */
+  function searchMoms(q, qt) {
+    var bodies = qt.map(function (t) { return bodyHits(t, IDX.mw, MVOCAB); }), fq = fold(q).trim(), out = [];
+    IDX.m.forEach(function (m) {
+      var score = 0, ok = true, fz = false;
+      qt.forEach(function (t, i) {
+        var h = hit(t, m.T), s = 0;
+        if (h === 0) s = 10; else if (h === 1) { s = 6; fz = true; }
+        else if ((h = hit(t, m.P)) >= 0) { s = h ? 5 : 8; if (h) fz = true; }
+        else if (bodies[i][m.i]) s = 1;
+        if (!s) ok = false; score += s;
+      });
+      if (!ok) return;
+      if (fq.length > 2 && m.F.indexOf(fq) >= 0) score += 15;
+      out.push([score, m, fz]);
+    });
+    var exact = out.filter(function (x) { return !x[2]; }); if (exact.length) out = exact;   /* "bjorn" must not list "... Is Born" */
+    out.sort(function (x, y) { return y[0] - x[0] || x[1][6] - y[1][6]; });
+    return out.map(function (x) { x[1]._s = x[0]; return x[1]; });
+  }
+
   /* ---------- data ---------- */
   function load() {
     if (IDX) return Promise.resolve(IDX);
@@ -129,6 +151,8 @@ var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-m
         d.e.forEach(function (e) { e.T = toks(e[1]).concat(['episode', 'ep', 'podcast', String(e[0]), ('0' + e[0]).slice(-2)]); if (/\bCh\b/.test(e[1])) e.T.push('chapter'); e.P = toks(e[3]); e.F = fold(e[1]); });
         EVOCAB = Object.keys(d.ew || {}).sort(); d.ew = d.ew || {};
         d.t.forEach(function (t) { t.T = toks(t[0] + ' ' + t[1]); });
+        d.m = d.m || []; d.mw = d.mw || {}; MVOCAB = Object.keys(d.mw).sort();
+        d.m.forEach(function (m, i) { m.i = i; m.T = toks(m[1] + ' ' + m[2]); m.P = toks((m[5] || []).join(' ')); m.F = fold(m[1]); });
         VOCAB = Object.keys(d.w).sort();
         IDX = d; return d;
       });
@@ -178,6 +202,7 @@ var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-m
     return { href: '/subjects/' + s[4], t: s[0], s: s[1] + (bits.length ? ' · ' + bits.join(', ') : ''), icon: '<span class="lrk-ic">' + esc(s[0].charAt(0).toUpperCase()) + '</span>' };
   }
   function epItem(e) { return { href: '/episodes/' + e[4], t: e[1], s: 'Le Random Podcast · Episode ' + e[0] + ' · ' + e[2], icon: '<span class="lrk-ic lrk-ep">' + e[0] + '</span>' }; }
+  function momItem(m) { return { href: 'https://timeline.lerandom.art/m/' + m[0], t: m[1], s: 'Generative Art Timeline · ' + m[2] + (m[4] ? ' · ' + m[4] : ''), icon: '<span class="lrk-ic">◷</span>' }; }
   function setItem(t) { return { href: '/editorials#dossiers', t: t[0], s: t[1] + ' · ' + t[2].length + ' editorials', icon: '<span class="lrk-ic">≡</span>' }; }
   function pageItem(p) { return { href: '/editorials#' + p[2], t: p[0], s: p[1], icon: '<span class="lrk-ic">#</span>' }; }
 
@@ -231,7 +256,7 @@ var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-m
     if (root) return;
     scrim = document.createElement('div'); scrim.id = 'lrk-scrim';
     root = document.createElement('div'); root.id = 'lrk'; root.setAttribute('role', 'dialog'); root.setAttribute('aria-modal', 'true'); root.setAttribute('aria-label', 'Search Le Random');
-    root.innerHTML = '<div class="lrk-top">' + GLASS + '<input type="search" autocomplete="off" spellcheck="false" placeholder="Search editorials, people, episodes" aria-label="Search Le Random" role="combobox" aria-expanded="true" aria-controls="lrk-list">' +
+    root.innerHTML = '<div class="lrk-top">' + GLASS + '<input type="search" autocomplete="off" spellcheck="false" placeholder="Search editorials, episodes, people and the Timeline" aria-label="Search Le Random" role="combobox" aria-expanded="true" aria-controls="lrk-list">' +
       '<button type="button" class="lrk-esc" aria-label="Close search">' + (TOUCH ? 'Close' : 'Esc') + '</button></div>' +
       '<div class="lrk-list" id="lrk-list" role="listbox"></div>' +
       '<div class="lrk-foot"><span><b>↑↓</b> to move</span><span><b>Enter</b> to open</span><span><b>' + (MAC ? '⌘' : 'Ctrl') + ' Enter</b> new tab</span><span><b>Esc</b> to close</span></div>';
@@ -290,9 +315,11 @@ var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-m
       /* people and subjects first (Peter, 30 Sep 2026); then Editorials and Episodes, whichever holds the more direct
          match leads (Peter, 2 Oct 2026: episodes must not sit below editorials regardless of match); a tie keeps Editorials first */
       groups.push(['People and subjects', searchList(IDX.s, qt, fq, true).slice(0, 5).map(subItem)]);
-      var ar = searchArts(q, qt).slice(0, 8), ep = searchEps(q, qt).slice(0, 5),
-          ga = ['Editorials', ar.map(artItem)], ge = ['Episodes', ep.map(epItem)];
-      if (ep.length && (!ar.length || ep[0]._s > ar[0]._s)) groups.push(ge, ga); else groups.push(ga, ge);
+      var ar = searchArts(q, qt).slice(0, 8), ep = searchEps(q, qt).slice(0, 5), mo = IDX.m && IDX.m.length ? searchMoms(q, qt).slice(0, 6) : [],
+          cg = [[ar, ['Editorials', ar.map(artItem)]], [ep, ['Episodes', ep.map(epItem)]], [mo, ['Timeline', mo.map(momItem)]]];
+      /* 6 Oct 2026: Editorials, Episodes and Timeline lead by their best direct match; a tie keeps this order (stable sort) */
+      cg.sort(function (x, y) { return (y[0].length ? y[0][0]._s : -1) - (x[0].length ? x[0][0]._s : -1); });
+      cg.forEach(function (g) { groups.push(g[1]); });
       groups.push(['Sets', searchList(IDX.t, qt, fq).slice(0, 3).map(setItem)]);
       groups.push(['Pages', PAGES.filter(function (p) { return qt.every(function (t) { return hit(t, toks(p[0] + ' ' + p[1])) === 0; }); }).slice(0, 3).map(pageItem)]);
     }
