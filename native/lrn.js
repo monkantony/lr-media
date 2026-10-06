@@ -10,7 +10,7 @@
   if (g) order.forEach(function(w){ [].forEach.call(g.querySelectorAll('article.reader'), function(a){
     var h = a.querySelector('.rd-word'); if (h && h.textContent.trim() === w) g.appendChild(a); }); });
 })();
-var LRW_BUILD = "20261006015620";
+var LRW_BUILD = "20261006124600";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -4046,6 +4046,33 @@ try{
 })();
 }catch(__lrwErr){ try{ console.error('LRW DEAD MODULE [subject words]', __lrwErr); (window.__lrwDead=window.__lrwDead||[]).push('subject words'); }catch(_ee){} }
 /* lr-subject-words end */
+
+/* lr-navprops: copy the bar's site switcher into the navbar under the logo (shown on phones only, see CSS) */
+(function(){
+  /* the native /editorials page runs this JS (native/lrn.js) without the bundle's CSS, so it brings its own */
+  if (!document.getElementById('lr-navprops-css')) { var st = document.createElement('style'); st.id = 'lr-navprops-css';
+    st.textContent = "\n/* lr-navprops (6 Oct 2026, Peter): on phones the site switcher sits in the navbar under the logo, as on the Timeline,\n   and the bar below keeps one row. The links copy the bar's switcher, so the current site stays underlined. */\n.lr-navprops { display:none; }\n@media(max-width:600px){\n  html.lr-navprops-on .navbar_component .mobile-logo { transform:translateY(-7px); }\n  .lr-navprops { display:flex; position:absolute; z-index:2; align-items:center; gap:14px; margin:0; padding:0; line-height:1; }\n  .lr-navprops a { font-family:'Rules',Arial,sans-serif; font-size:10px; font-weight:500; letter-spacing:.1em;\n    text-transform:uppercase; white-space:nowrap; color:inherit; text-decoration:none; opacity:.55; padding:0 0 2px;\n    border-bottom:1px solid transparent; }\n  .lr-navprops a.on { opacity:1; border-bottom-color:#FF4C00; }\n  html.lr-navprops-on #topbar .tb-props, html.lr-navprops-on #lrtopbar .tb-props { display:none !important; }\n}\n"; document.head.appendChild(st); }
+  function place(c, logo){
+    var op = c.offsetParent; if (!op) return;
+    var r = logo.getBoundingClientRect(), o = op.getBoundingClientRect();
+    c.style.left = (r.left - o.left) + 'px'; c.style.top = (r.bottom - o.top + 7) + 'px';
+  }
+  function mount(){
+    var bar = document.querySelector('#topbar,#lrtopbar'), src = bar && bar.querySelector('.tb-props');
+    var nav = document.querySelector('.navbar_component'), logo = nav && nav.querySelector('.mobile-logo');
+    if (!src || !logo) return false;
+    if (nav.querySelector('.lr-navprops')) return true;
+    var c = src.cloneNode(true);
+    c.className = 'lr-navprops';
+    logo.parentNode.insertBefore(c, logo.nextSibling);
+    document.documentElement.classList.add('lr-navprops-on');
+    var go = function(){ place(c, logo); };
+    go(); requestAnimationFrame(go); addEventListener('resize', go, {passive:true});
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(go);
+    return true;
+  }
+  if (!mount()) { var n = 0, t = setInterval(function(){ if (mount() || ++n > 60) clearInterval(t); }, 250); }
+})();
 
 /* ---------- native: the Timeline moment of the day, from every moment (tl/daily, tl_daily.py) ---------- */
 (function(){
