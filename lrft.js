@@ -856,8 +856,8 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
         var nav = document.querySelector('.navbar_component'), logo = nav && nav.querySelector('.mobile-logo');
         if (!src || !logo) return false;
         if (nav.querySelector('.lr-navprops')) return true;
-        var c = src.cloneNode(true);
-        c.className = 'lr-navprops';
+        var c = document.querySelector('.lr-navprops-baked');   /* the native /editorials page bakes one for first paint: adopt it */
+        if (c) c.classList.remove('lr-navprops-baked'); else { c = src.cloneNode(true); c.className = 'lr-navprops'; }
         logo.parentNode.insertBefore(c, logo.nextSibling);
         document.documentElement.classList.add('lr-navprops-on');
         var go = function(){ place(c, logo); };

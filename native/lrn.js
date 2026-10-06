@@ -10,7 +10,7 @@
   if (g) order.forEach(function(w){ [].forEach.call(g.querySelectorAll('article.reader'), function(a){
     var h = a.querySelector('.rd-word'); if (h && h.textContent.trim() === w) g.appendChild(a); }); });
 })();
-var LRW_BUILD = "20261006124600";
+var LRW_BUILD = "20261006125707";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -4062,8 +4062,8 @@ try{
     var nav = document.querySelector('.navbar_component'), logo = nav && nav.querySelector('.mobile-logo');
     if (!src || !logo) return false;
     if (nav.querySelector('.lr-navprops')) return true;
-    var c = src.cloneNode(true);
-    c.className = 'lr-navprops';
+    var c = document.querySelector('.lr-navprops-baked');   /* the native /editorials page bakes one for first paint: adopt it */
+    if (c) c.classList.remove('lr-navprops-baked'); else { c = src.cloneNode(true); c.className = 'lr-navprops'; }
     logo.parentNode.insertBefore(c, logo.nextSibling);
     document.documentElement.classList.add('lr-navprops-on');
     var go = function(){ place(c, logo); };
