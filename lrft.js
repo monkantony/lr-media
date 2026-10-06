@@ -320,6 +320,9 @@
     el.setAttribute('readonly', ''); el.setAttribute('aria-haspopup', 'dialog');
     el.setAttribute('placeholder', 'Search');
     var lab = el.closest('label, .tb-search, .hero-search, .rg-search, .sx-search') || el.parentNode;
+    var k0 = lab && lab.querySelector('.lrk-kbd');   /* lr-bar-baked: a baked hint says ⌘K; off a Mac it says Ctrl K, on touch it goes */
+    if (k0 && TOUCH) k0.remove();
+    else if (k0 && !MAC) { k0.textContent = 'Ctrl K'; besideWord(el, k0); }
     if (!TOUCH && lab && !lab.querySelector('.lrk-kbd')) {
       var k = document.createElement('span'); k.className = 'lrk-kbd'; k.textContent = MAC ? '⌘K' : 'Ctrl K'; k.setAttribute('aria-hidden', 'true'); lab.appendChild(k);
       /* the wide box under Latest (Peter, 30 Sep 2026): the hint sits right after the word "Search", not at the far edge */
@@ -354,13 +357,13 @@
   }
   window.addEventListener('load', function () { remeasure(); setTimeout(remeasure, 1500); });
   function phoneButton(bar) {
-    if (!bar || bar.querySelector('.lrk-btn')) return;
+    if (!bar) return; var b0 = bar.querySelector('.lrk-btn'); if (b0 && b0.__lrk) return;   /* lr-bar-baked: a baked glass is bound, not skipped */
     var right = bar.querySelector('.right') || bar;
-    var b = document.createElement('button'); b.type = 'button'; b.className = 'lrk-btn'; b.setAttribute('aria-label', 'Search Le Random'); b.innerHTML = GLASS;
+    var b = b0 || document.createElement('button'); b.__lrk = 1; if (!b0) { b.type = 'button'; b.className = 'lrk-btn'; b.setAttribute('aria-label', 'Search Le Random'); b.innerHTML = GLASS; }
     b.addEventListener('touchstart', function () { load().catch(function () {}); }, { passive: true });
     var box = right.querySelector('.tb-search'); if (RO && box) RO.observe(box);
     b.addEventListener('click', function () { open(''); });
-    right.insertBefore(b, right.firstChild);
+    if (!b0) right.insertBefore(b, right.firstChild);
   }
   function glassNeeded() {
     [].forEach.call(document.querySelectorAll('.lrk-btn'), function (b) {
@@ -815,11 +818,14 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
 
   /* the editorials header, carried onto the article pages */
   (function(){
-    if (document.getElementById('lrtopbar')) return;
+    /* lr-bar-baked (6 Oct 2026, Peter: the header "native to webflow"): a template that bakes the bar keeps it; this only
+       binds it. Pages without one still get it built here. */
+    var bakedBar = document.getElementById('lrtopbar');
+    if (bakedBar && bakedBar.__lrBar) return;
     var host = document.querySelector('.navbar_component');
-    var bar = document.createElement('div');
-    bar.innerHTML = TOPBAR;
-    bar = bar.firstElementChild;
+    var bar = bakedBar;
+    if (!bar) { bar = document.createElement('div'); bar.innerHTML = TOPBAR; bar = bar.firstElementChild; }
+    bar.__lrBar = 1;
     /* lr-props: on /podcast and the episode pages the current site is Podcast and the tabs are its sections */
     (function(){
       var pth = location.pathname.replace(/\/+$/, '');
@@ -835,8 +841,10 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
         .map(function(t){ return '<a href="' + base + '#' + t[0] + '">' + t[1] + '</a>'; }).join(' ');
     })();
     document.documentElement.classList.add('lr-bar');   /* lr-reserve: releases the head embed's toolbar space */
-    if (host && host.parentNode) host.parentNode.insertBefore(bar, host.nextSibling);
-    else document.body.insertBefore(bar, document.body.firstChild);
+    if (!bakedBar) {
+      if (host && host.parentNode) host.parentNode.insertBefore(bar, host.nextSibling);
+      else document.body.insertBefore(bar, document.body.firstChild);
+    }
     var nav = document.querySelector('.navbar_component');
     function navh(){
       if (nav && getComputedStyle(nav).position === 'fixed')
