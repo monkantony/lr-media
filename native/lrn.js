@@ -10,7 +10,7 @@
   if (g) order.forEach(function(w){ [].forEach.call(g.querySelectorAll('article.reader'), function(a){
     var h = a.querySelector('.rd-word'); if (h && h.textContent.trim() === w) g.appendChild(a); }); });
 })();
-var LRW_BUILD = "20261006160912";
+var LRW_BUILD = "20261006181514";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -59,6 +59,7 @@ var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-m
   /* ---------- text ---------- */
   function fold(s) {
     return String(s == null ? '' : s).normalize('NFKD').replace(/[̀-ͯ]/g, '')
+      .replace(/[øØ]/g, 'o').replace(/[łŁ]/g, 'l').replace(/[đĐðÐ]/g, 'd').replace(/ı/g, 'i')
       .replace(/[‘’ʼ]/g, "'").toLowerCase();
   }
   function toks(s) { return fold(s).split(/[^a-z0-9']+/).map(function (t) { return t.replace(/^'+|'+$/g, ''); }).filter(Boolean); }

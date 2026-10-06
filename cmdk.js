@@ -26,6 +26,7 @@
   /* ---------- text ---------- */
   function fold(s) {
     return String(s == null ? '' : s).normalize('NFKD').replace(/[̀-ͯ]/g, '')
+      .replace(/[øØ]/g, 'o').replace(/[łŁ]/g, 'l').replace(/[đĐðÐ]/g, 'd').replace(/ı/g, 'i')
       .replace(/[‘’ʼ]/g, "'").toLowerCase();
   }
   function toks(s) { return fold(s).split(/[^a-z0-9']+/).map(function (t) { return t.replace(/^'+|'+$/g, ''); }).filter(Boolean); }
