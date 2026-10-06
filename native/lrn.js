@@ -10,7 +10,7 @@
   if (g) order.forEach(function(w){ [].forEach.call(g.querySelectorAll('article.reader'), function(a){
     var h = a.querySelector('.rd-word'); if (h && h.textContent.trim() === w) g.appendChild(a); }); });
 })();
-var LRW_BUILD = "20261006150715";
+var LRW_BUILD = "20261006152733";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -4094,7 +4094,12 @@ try{
 (function(){
   var cal = document.getElementById('calendar'), pl = document.getElementById('pl');
   var head = cal && cal.querySelector('.zone-head'); if (!cal || !pl || !head || document.getElementById('pl-map')) return;
-  var B = LRWB + 'calmap/', css = document.createElement('link');
+  /* 6 Oct 2026 (Peter: "the map view is not loading", "why does it take so long"): LRWB names the pointer's commit,
+     which moves ~40 times a day, so every move left the map's 1 MB cold at jsDelivr (1.6-3.2 s a file, three scripts in
+     a row: ~8 s) and a just-pushed commit can answer 403 (the map failed). The map files are read from the commit that
+     last CHANGED calmap/ (stamped by build.py): one URL across publishes, warm at the CDN and in the browser's cache.
+     LRWB's copy is the fallback. */
+  var B = 'https://cdn.jsdelivr.net/gh/monkantony/lr-media@4562e206e6e6662eb0492bf37699c661ae7bd0b1/calmap/' || LRWB + 'calmap/', B2 = LRWB + 'calmap/', css = document.createElement('link');
   css.rel = 'stylesheet'; css.href = B + 'lr-calmap.css'; document.head.appendChild(css);
   var st = document.createElement('style');   /* the zone head orders its parts (title 1, tools 3): the switch is a tool, on the right */
   st.textContent = '#lrw .zone-head.zh .lrcm-seg{order:3;flex:0 0 auto;margin:0;align-self:center}';
@@ -4103,24 +4108,38 @@ try{
   seg.innerHTML = '<button type="button" aria-pressed="true" data-v="list">List</button><button type="button" aria-pressed="false" data-v="map">Map</button>';
   var x = head.querySelector('.zh-x'); head.insertBefore(seg, x ? x.nextSibling : null);
   var box = document.createElement('div'); box.id = 'pl-map'; box.hidden = true; pl.parentNode.insertBefore(box, pl.nextSibling);
-  var loading = null;
-  function script(src){ return new Promise(function(ok, no){ var s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = no; document.body.appendChild(s); }); }
+  var loading = null, base = B;
+  /* the three scripts download together and run in order (async=false) */
+  function script(src){ return new Promise(function(ok, no){ var s = document.createElement('script'); s.src = src; s.async = false;
+    s.onload = ok; s.onerror = function(){ s.remove(); no(new Error('could not load ' + src)); }; document.body.appendChild(s); }); }
+  /* a failure says why in the console, tries LRWB's copy once, and otherwise leaves the next Map click to try again */
+  function fail(e){
+    if (window.console) console.warn('LR calendar map:', (e && e.message) || e, base);
+    loading = null;
+    if (base !== B2) { base = B2; if (!box.hidden) load(); return; }
+    if (box.dataset.state !== 'error') box.textContent = 'The map could not load. The list has every date.';
+  }
   function load(){
-    if (!loading) loading = (window.d3 ? Promise.resolve() : script(B + 'd3.min.js'))
-      .then(function(){ return window.topojson ? 0 : script(B + 'topojson-client.min.js'); })
-      .then(function(){ return window.LRCalMap ? 0 : script(B + 'lr-calmap.js'); })
-      .then(function(){ window.LRCalMap.mount(box, { calendar: LRWB + 'calendar.json', venues: B + 'venues.json',
-        land: B + 'land-50m.json', countries: B + 'countries-50m.json', plates: B + 'plates/' }); })
-      .catch(function(){ loading = null; box.textContent = 'The map could not load. The list has every date.'; });
+    if (!loading) loading = Promise.all([window.d3 ? 0 : script(base + 'd3.min.js'),
+        window.topojson ? 0 : script(base + 'topojson-client.min.js'), window.LRCalMap ? 0 : script(base + 'lr-calmap.js')])
+      .then(function(){ window.LRCalMap.mount(box, { calendar: LRWB + 'calendar.json', venues: base + 'venues.json',
+        land: base + 'land-50m.json', countries: base + 'countries-50m.json', plates: base + 'plates/' }); })
+      .catch(fail);
     return loading;
   }
+  /* the module reports a data failure as data-state="error" (its own message beside the map) */
+  new MutationObserver(function(){ if (box.dataset.state === 'error' && loading) fail(new Error('map data did not load')); })
+    .observe(box, { attributes: true, attributeFilter: ['data-state'] });
   function show(v){
     [].forEach.call(seg.querySelectorAll('button'), function(b){ b.setAttribute('aria-pressed', b.dataset.v === v ? 'true' : 'false'); });
     pl.hidden = v === 'map'; box.hidden = v !== 'map';
     if (v === 'map') load();
   }
   seg.addEventListener('click', function(e){ var b = e.target.closest('button'); if (b) show(b.dataset.v); });
-  seg.addEventListener('pointerenter', function(){ if (window.d3) return; var l = document.createElement('link'); l.rel = 'prefetch'; l.href = B + 'd3.min.js'; document.head.appendChild(l); }, { once: true });
+  /* pointing at the switch warms everything the first Map click needs */
+  seg.addEventListener('pointerenter', function(){ if (window.LRCalMap) return;
+    ['d3.min.js', 'topojson-client.min.js', 'lr-calmap.js', 'venues.json', 'land-50m.json', 'countries-50m.json'].forEach(function(f){
+      var l = document.createElement('link'); l.rel = 'prefetch'; l.href = B + f; document.head.appendChild(l); }); }, { once: true });
 })();
 
 /* ---------- native: dark-mode rules the baked CSS cannot carry (6 Oct 2026, Peter: "the dark image bug is back on 08
