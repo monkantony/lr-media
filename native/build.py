@@ -70,6 +70,18 @@ js = patch(js, "var tag = btn.previousElementSibling;\n      if (!tag || !tag.cl
            'edition label reuse')
 js = patch(js, "var b = document.createElement('button'); b.type = 'button'; b.className = 'rc-order cb-sort'; b.textContent = 'A–Z'; b.setAttribute('aria-pressed', 'false');\n      zh.insertBefore(b, q('.zone-roll', zh) || null);",
            "var b = q('.cb-sort', zh);   /* native: the A-Z button is baked; bind it */\n      if (!b) { b = document.createElement('button'); b.type = 'button'; b.className = 'rc-order cb-sort'; b.textContent = 'A–Z'; b.setAttribute('aria-pressed', 'false');\n      zh.insertBefore(b, q('.zone-roll', zh) || null); }", 'Contributors A-Z button')
+# 6 Oct 2026 (Peter: "the window title/links dont change when you skip around"): the native page bakes the masthead and
+# the headline (.win-mast, .win-piece) and has no .win-top, so the hero module returned before binding its sync. It now
+# reuses what is baked and only builds them on a page that lacks them.
+js = patch(js, "if (!top || !type || !title || !sub) return;\n\n    var mast = document.createElement('div'); mast.className = 'win-mast';\n    mast.appendChild(title); mast.appendChild(sub);\n    inner.insertBefore(mast, inner.firstChild);\n    top.remove();",
+           "var bakedPiece = type && type.querySelector('.win-piece');   /* native: masthead and headline are baked */\n    if (!bakedPiece) { if (!top || !type || !title || !sub) return;\n\n    var mast = document.createElement('div'); mast.className = 'win-mast';\n    mast.appendChild(title); mast.appendChild(sub);\n    inner.insertBefore(mast, inner.firstChild);\n    top.remove(); }",
+           'Window headline: baked masthead')
+js = patch(js, "var piece = document.createElement('div'); piece.className = 'win-piece';\n    piece.innerHTML =",
+           "var piece = bakedPiece; if (!piece) { piece = document.createElement('div'); piece.className = 'win-piece';\n    piece.innerHTML =",
+           'Window headline: baked piece')
+js = patch(js, "type.insertBefore(piece, type.firstChild);\n\n    var link = document.getElementById('win-link');",
+           "type.insertBefore(piece, type.firstChild); }\n\n    var link = document.getElementById('win-link');",
+           'Window headline: baked piece close')
 js = patch(js, "if (lrw && foot && foot.parentNode && foot.parentNode !== lrw) foot.parentNode.insertBefore(lrw, foot);",
            "if (!window.__LRN && lrw && foot && foot.parentNode && foot.parentNode !== lrw) foot.parentNode.insertBefore(lrw, foot);",
            'chrome mover')
@@ -140,6 +152,21 @@ EPILOGUE += r'''
   seg.addEventListener('pointerenter', function(){ if (window.d3) return; var l = document.createElement('link'); l.rel = 'prefetch'; l.href = B + 'd3.min.js'; document.head.appendChild(l); }, { once: true });
 })();
 '''
+DARK = ''.join(re.findall(r'html\.lr-dark[^{}]*\{[^}]*\}', b['css']))
+assert DARK, 'native build: no html.lr-dark rules in the bundle css'
+DARK += ('html.lr-dark #lrw #iss-jump{background-color:#0A1B21;color:#EFE9D8;border-color:rgba(239,233,216,.55);'
+         'background-image:url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'14\' height=\'9\' viewBox=\'0 0 14 9\'%3E%3Cpath d=\'M1 1l6 6 6-6\' fill=\'none\' stroke=\'%23EFE9D8\' stroke-width=\'1.4\'/%3E%3C/svg%3E")}'
+         'html.lr-dark #lrw #iss-jump option{background:#0A1B21;color:#EFE9D8}')
+EPILOGUE += r'''
+/* ---------- native: dark-mode rules the baked CSS cannot carry (6 Oct 2026, Peter: "the dark image bug is back on 08
+   popular", "the 13 issues dropdown is unreadable"). The pruner never sees html.lr-dark, so the bundle's dark rules are
+   added here; data-lr-dark keeps the theme engine from twinning them. The Issues select's shorthand
+   (background:var(--paper)url(...)) is one the engine cannot remap: its dark colours are set outright. ---------- */
+(function(){
+  var s = document.createElement('style'); s.setAttribute('data-lr-dark', ''); s.id = 'lrn-dark';
+  s.textContent = %s; document.head.appendChild(s);
+})();
+''' % json.dumps(DARK)
 EPILOGUE += r'''
 /* ---------- native: films baked as data-src (the Featured trailer) start as they near the screen ----------
    The page bakes below-the-fold films without a src so nothing downloads at load; this gives them one when they come

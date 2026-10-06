@@ -10,7 +10,7 @@
   if (g) order.forEach(function(w){ [].forEach.call(g.querySelectorAll('article.reader'), function(a){
     var h = a.querySelector('.rd-word'); if (h && h.textContent.trim() === w) g.appendChild(a); }); });
 })();
-var LRW_BUILD = "20261006010050";
+var LRW_BUILD = "20261006014341";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -624,7 +624,7 @@ try{
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---- The Window: rotating programme ---- */
-  var PROG = [{"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/ryan-murdock-on-hacking-ai.mp4?v=4d4b1857", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/ryan-murdock-on-hacking-ai.jpg?v=c8ea046d", "slug": "ryan-murdock-on-hacking-ai", "work": "Hacking AI", "artist": "Ryan Murdock", "credit": "Cover image · Le Random", "year": "2026"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/new-york-city-digital-art-guide.mp4?v=7ea9b533", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/new-york-city-digital-art-guide.jpg?v=67df9fb7", "slug": "new-york-city-digital-art-guide", "work": "New York City Digital Art Guide", "artist": "LoVid, Emily Edelman, Josh Yakov and Peter Bauman", "credit": "Cover image · Le Random", "year": "2025"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/new-histories-previewing-autumn-2026-in-art-and-technology.mp4?v=2cc90d48", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/new-histories-previewing-autumn-2026-in-art-and-technology.jpg?v=f83c9b3b", "slug": "new-histories-previewing-autumn-2026-in-art-and-technology", "work": "New Histories: Previewing Autumn 2026 in Art and Technology", "artist": "Peter Bauman", "credit": "Cover image · Le Random", "year": "2026"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window-lead.mp4", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/poster-lead.jpg", "slug": "eva-and-franco-mattes-on-mega-eliza", "work": "Mega Eliza", "artist": "Eva &amp; Franco Mattes", "credit": "Film by Silvia Dal Dosso · music by Pietro", "year": "2026"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/trailer-goodfellow.mp4", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/poster-goodfellow.jpg", "slug": "ian-goodfellow-on-inventing-gans", "work": "Inventing GANs", "artist": "Ian Goodfellow", "credit": "Trailer · Le Random", "year": "2025"}], cur = 0;   /* the window always opens on the latest (Peter, Aug 31) */
+  var PROG = [{"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/ryan-murdock-on-hacking-ai.mp4?v=4d4b1857", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/ryan-murdock-on-hacking-ai.jpg?v=c8ea046d", "slug": "ryan-murdock-on-hacking-ai", "work": "Hacking AI", "artist": "Ryan Murdock", "credit": "Cover image · Le Random", "year": "2026"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/new-york-city-digital-art-guide.mp4?v=7ea9b533", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/new-york-city-digital-art-guide.jpg?v=67df9fb7", "slug": "new-york-city-digital-art-guide", "work": "New York City Digital Art Guide", "artist": "LoVid, Emily Edelman, Josh Yakov and Peter Bauman", "credit": "Cover image · Le Random", "year": "2025"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/trailer-goodfellow.mp4", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/poster-goodfellow.jpg", "slug": "ian-goodfellow-on-inventing-gans", "work": "Inventing GANs", "artist": "Ian Goodfellow", "credit": "Trailer · Le Random", "year": "2025"}], cur = 0;   /* the window always opens on the latest (Peter, Aug 31) */
   var vid = document.getElementById('winvid');
   /* lr-window-films: a film that will not load leaves the poster on screen */
   vid.addEventListener('error', function(){
@@ -2607,6 +2607,7 @@ try{
     var body = lead.parentElement.querySelector('.es-body p');
     var e = ESSAYS[Math.floor(rng() * ESSAYS.length)];
     lead.href = '/editorial/' + e.s;
+    /* lr-essay-more */ var esMore = lead.parentNode && lead.parentNode.querySelector('.es-more'); if (esMore) esMore.setAttribute('href', lead.getAttribute('href'));
     var meta = lead.querySelector('.meta');
     if (meta) meta.innerHTML = '<span class="folio">' + parseInt(e.n, 10) + '</span> \u00b7 ' + byH(e.by) + ' \u00b7 ' + esc(e.d);
     var h = lead.querySelector('h3'); if (h) h.textContent = e.t;
@@ -2928,7 +2929,8 @@ try{
   document.addEventListener('click', function(e){
     var a = e.target && e.target.closest ? e.target.closest('#lrw a[href]') : null; if (!a) return;
     if (a.target === '_blank' || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
-    var h = a.getAttribute('href') || ''; if (h.charAt(0) === '#' || !/\/editorial\//.test(h)) return;
+    var h = a.getAttribute('href') || ''; if (h.charAt(0) === '#' || /^(mailto|tel|javascript):/i.test(h)) return;   /* lr-return-any */
+    if (a.hostname === location.hostname && a.pathname === location.pathname && a.hash) return;   /* an overlay on this page, not a departure */
     try {
       history.replaceState(null, '', '#e=' + ED.seed);
       var an = anchor();
@@ -3694,12 +3696,13 @@ window.__lrwGlide = function(t, reduce, holdMs, onStable){
     var top = inner.querySelector('.win-top'), type = inner.querySelector('.win-type');
     var title = inner.querySelector('.win-title'), sub = inner.querySelector('.win-sub');
     var idx = document.getElementById('win-idx'), bottom = inner.querySelector('.win-bottom');
-    if (!top || !type || !title || !sub) return;
+    var bakedPiece = type && type.querySelector('.win-piece');   /* native: masthead and headline are baked */
+    if (!bakedPiece) { if (!top || !type || !title || !sub) return;
 
     var mast = document.createElement('div'); mast.className = 'win-mast';
     mast.appendChild(title); mast.appendChild(sub);
     inner.insertBefore(mast, inner.firstChild);
-    top.remove();                                   /* its label is what the masthead now says */
+    top.remove(); }                                   /* its label is what the masthead now says */
     if (idx && bottom) bottom.appendChild(idx);     /* one baseline at the foot */
 
     /* the register is the one place holding every piece's number, kind, title, byline and date */
@@ -3726,13 +3729,13 @@ window.__lrwGlide = function(t, reduce, holdMs, onStable){
     }
     function esc(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
 
-    var piece = document.createElement('div'); piece.className = 'win-piece';
+    var piece = bakedPiece; if (!piece) { piece = document.createElement('div'); piece.className = 'win-piece';
     piece.innerHTML =
         '<span class="win-kick"><b class="win-kind"></b><span class="win-date"></span></span>'
       + '<a class="win-h" href="#"></a>'
       + '<span class="win-by"></span>'
       + '<a class="win-read" href="#"><span></span><i aria-hidden="true">\u2197</i></a>';
-    type.insertBefore(piece, type.firstChild);
+    type.insertBefore(piece, type.firstChild); }
 
     var link = document.getElementById('win-link');
     function sync(){
@@ -4091,6 +4094,15 @@ try{
   }
   seg.addEventListener('click', function(e){ var b = e.target.closest('button'); if (b) show(b.dataset.v); });
   seg.addEventListener('pointerenter', function(){ if (window.d3) return; var l = document.createElement('link'); l.rel = 'prefetch'; l.href = B + 'd3.min.js'; document.head.appendChild(l); }, { once: true });
+})();
+
+/* ---------- native: dark-mode rules the baked CSS cannot carry (6 Oct 2026, Peter: "the dark image bug is back on 08
+   popular", "the 13 issues dropdown is unreadable"). The pruner never sees html.lr-dark, so the bundle's dark rules are
+   added here; data-lr-dark keeps the theme engine from twinning them. The Issues select's shorthand
+   (background:var(--paper)url(...)) is one the engine cannot remap: its dark colours are set outright. ---------- */
+(function(){
+  var s = document.createElement('style'); s.setAttribute('data-lr-dark', ''); s.id = 'lrn-dark';
+  s.textContent = "html.lr-dark .mr-plate img { mix-blend-mode:normal; }html.lr-dark #lrw #iss-jump{background-color:#0A1B21;color:#EFE9D8;border-color:rgba(239,233,216,.55);background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%23EFE9D8' stroke-width='1.4'/%3E%3C/svg%3E\")}html.lr-dark #lrw #iss-jump option{background:#0A1B21;color:#EFE9D8}"; document.head.appendChild(s);
 })();
 
 /* ---------- native: films baked as data-src (the Featured trailer) start as they near the screen ----------
