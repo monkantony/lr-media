@@ -992,6 +992,9 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
   var DATA_URL = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/') + 'footer_data.txt';
   var GROUPS = [['p','People'],['w','Works'],['x','Exhibitions'],['o','Organisations'],['pl','Places'],['t','Techniques'],['th','Themes']];
   var slug = location.pathname.replace(/\/+$/,'').split('/').pop();
+  /* 6 Oct 2026: an episode can share its slug with an editorial (ian-goodfellow-on-inventing-gans); the editorial's footer,
+     audio and Article data belong on /editorial/ pages only */
+  var isEditorial = /^\/editorial\//.test(location.pathname);
   var box = document.getElementById('lrft');
   /* 6 Oct 2026 (Peter: "all links (for seo's sake correct?) should be a static/webflow html link"): the Editorials
      Template renders the footer itself, from CMS fields, into #lrft[data-static]. When that has content, the footer
@@ -1015,7 +1018,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     if (epP && epP.getAttribute('data-audio')) player(epP.getAttribute('data-audio'), (parseFloat(epP.getAttribute('data-min')) || 0) * 60,
       ((document.querySelector('h1') || {}).textContent || '').replace(/\s+/g, ' ').trim(), null, epP, 'Listen to this episode');
   } catch (e) {}
-  try { if (typeof AUDIO !== 'undefined' && AUDIO[slug]) player(AUDIO[slug][0], AUDIO[slug][1], ((document.querySelector('h1') || {}).textContent || '').replace(/\s+/g, ' ').trim(), AUDIO[slug][2]); } catch (e) {}
+  try { if (isEditorial && typeof AUDIO !== 'undefined' && AUDIO[slug]) player(AUDIO[slug][0], AUDIO[slug][1], ((document.querySelector('h1') || {}).textContent || '').replace(/\s+/g, ' ').trim(), AUDIO[slug][2]); } catch (e) {}
   /* a piece with no audio edition gets no player: give its reserved space back at once */
   if (!document.getElementById('lrap')) document.documentElement.classList.add('lr-player');
   /* lr-selfplace: the footer belongs directly below the article body. If the Embed was
@@ -1060,7 +1063,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     .then(function(t){
     var data = JSON.parse(t);
     window.__lrftArts = data.arts;          /* the header's die reads this; the header is built before this fetch */
-    var me = data.foot[slug]; if (!me) return;
+    var me = isEditorial && data.foot[slug]; if (!me) return;
     var A = data.arts, mine = A[slug];
     var bySlugN = {}; for (var s in A) bySlugN[A[s][0]] = s;
     /* the static Next link is a CMS reference: until the newest piece's predecessor gets its Next editorial field,
