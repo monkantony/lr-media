@@ -284,11 +284,16 @@ window.__lrnSxDeal = function(col, rng, lrN){
     if (out.length >= 5 && used + keyed[i].len > budget) break;
     used += keyed[i].len; out.push(keyed[i].it);
   }
-  var box = items[0].parentNode;
+  var box = items[0].parentNode, grid = col.parentNode;
+  /* the zone keeps the height the server-rendered top 10 gave it: the first deal records it, and a deal that would make
+     the zone taller drops its last picks (never below 5), so dealing can neither shrink nor grow it (peer review, M3) */
+  if (grid && !grid.__lrnH) { grid.__lrnH = grid.getBoundingClientRect().height; grid.style.minHeight = grid.__lrnH + 'px';
+    addEventListener('resize', function(){ grid.style.minHeight = ''; }, { once: true }); }
   items.forEach(function(it){ it.classList.remove('lrn-on'); });
   out.forEach(function(it){ it.classList.add('lrn-on'); box.appendChild(it); });
   items.forEach(function(it){ if (out.indexOf(it) < 0) box.appendChild(it); });
   col.classList.add('lrn-dealt');
+  while (grid && grid.style.minHeight && out.length > 5 && grid.getBoundingClientRect().height > grid.__lrnH + 0.5) out.pop().classList.remove('lrn-on');
   return true;
 };
 /* lrn-native M3: Contributors is a Webflow list (Contributor editorials desc, then Name). Lift the cards out of
