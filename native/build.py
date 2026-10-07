@@ -252,6 +252,23 @@ window.__lrnFeature = function(fz, slug){
 };
 """ + js
 
+EPILOGUE += r'''
+/* ---------- lrn-bylines (7 Oct 2026, native lists): names in Webflow-drawn bylines become the same writer links the
+   bundle draws (span[data-w], opened by its document-level click handler). The text is identical, checked before
+   writing, so nothing moves; only the names gain their link. ---------- */
+(function(){
+  function go(){
+    var B = window.LRW_BY; if (!B) return false;
+    [].forEach.call(document.querySelectorAll('#latest .w-dyn-item .tw-lead .by, #latest .w-dyn-item .tw-sec-body .meta, #featured .w-dyn-item .who .wn'), function(el){
+      if (el.querySelector('[data-w]')) return;
+      var t = el.textContent, h = B.line(t), d = document.createElement('span'); d.innerHTML = h;
+      if (d.textContent === t) el.innerHTML = h;
+    });
+    return true;
+  }
+  if (!go()) setTimeout(go, 0);
+})();
+'''
 out = PROLOGUE + js + EPILOGUE
 p = os.path.join(HERE, 'lrn.js')
 open(p, 'w', encoding='utf-8').write(out)

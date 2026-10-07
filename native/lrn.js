@@ -22,7 +22,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261007111049";
+var LRW_BUILD = "20261007112606";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -4220,4 +4220,20 @@ try{
   scan();
   new MutationObserver(function(ms){ for (var i = 0; i < ms.length; i++) if (ms[i].addedNodes.length) { scan(); break; } })
     .observe(document.getElementById('lrw') || document.body, { childList: true, subtree: true });
+})();
+
+/* ---------- lrn-bylines (7 Oct 2026, native lists): names in Webflow-drawn bylines become the same writer links the
+   bundle draws (span[data-w], opened by its document-level click handler). The text is identical, checked before
+   writing, so nothing moves; only the names gain their link. ---------- */
+(function(){
+  function go(){
+    var B = window.LRW_BY; if (!B) return false;
+    [].forEach.call(document.querySelectorAll('#latest .w-dyn-item .tw-lead .by, #latest .w-dyn-item .tw-sec-body .meta, #featured .w-dyn-item .who .wn'), function(el){
+      if (el.querySelector('[data-w]')) return;
+      var t = el.textContent, h = B.line(t), d = document.createElement('span'); d.innerHTML = h;
+      if (d.textContent === t) el.innerHTML = h;
+    });
+    return true;
+  }
+  if (!go()) setTimeout(go, 0);
 })();
