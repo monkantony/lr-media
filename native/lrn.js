@@ -15,12 +15,33 @@ window.__lrnHash0 = location.hash;
    Until a die is rolled (or a shared #e= link arrives) the painted lead stays; a roll deals one from the CMS pool. */
 window.__lrnEssays = function(rng){
   var box = document.querySelector('#essays .es-lead-col .w-dyn-items'); if (!box) return false;
-  if (!window.__lrnRolled && !/^#e=\d+$/.test(window.__lrnHash0 || '')) return true;
+  if (!window.__lrnRolled && !/^#e=\d+$/.test(window.__lrnHash0 || '')) { window.__lrnEssayList && window.__lrnEssayList(rng); return true; }
   var kids = [].slice.call(box.children); if (!kids.length) return true;
   var pick = kids[Math.floor(rng() * kids.length)];
   kids.forEach(function(k){ k.classList.toggle('lrn-on', k === pick); });
   box.classList.add('lrn-picked');
+  window.__lrnEssayList && window.__lrnEssayList(rng);
   return true;
+};
+/* Peter, 7 Oct 2026: the six beside the lead are random, never the lead itself, and always at least three different
+   writers (the first name in each byline). Dealt with the edition's seed on load and on every roll. */
+window.__lrnEssayList = function(rng){
+  var box = document.querySelector('#essays .es-list .w-dyn-items'); if (!box) return;
+  var on = document.querySelector('#essays .es-lead-col .w-dyn-items.lrn-picked > .lrn-on') || document.querySelector('#essays .es-lead-col .w-dyn-item');
+  var la = on && on.querySelector('a[href*="/editorial/"]'), lead = la ? la.getAttribute('href') : '';
+  var who = function(it){ var b = it.querySelector('.es-m .by'); return b ? b.textContent.split(/,| and | with /)[0].trim().toLowerCase() : ''; };
+  var pool = [].slice.call(box.children).filter(function(it){ var a = it.querySelector('a.es-item'); return a && a.getAttribute('href') !== lead; });
+  for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(rng() * (i + 1)), t = pool[i]; pool[i] = pool[j]; pool[j] = t; }
+  var picked = pool.slice(0, 6), rest = pool.slice(6);
+  var count = function(){ var m = {}; picked.forEach(function(it){ m[who(it)] = (m[who(it)] || 0) + 1; }); return m; };
+  for (var guard = 0; guard < 6 && Object.keys(count()).length < 3; guard++) {
+    var m = count(), k = rest.findIndex(function(it){ return !m[who(it)]; }); if (k < 0) break;
+    var top = Object.keys(m).sort(function(a, b){ return m[b] - m[a]; })[0];
+    for (var x = picked.length - 1; x >= 0; x--) if (who(picked[x]) === top) { picked[x] = rest.splice(k, 1)[0]; break; }
+  }
+  [].forEach.call(box.children, function(it){ it.classList.remove('lrn-on'); });
+  picked.forEach(function(it){ it.classList.add('lrn-on'); box.appendChild(it); });
+  box.classList.add('lrn-picked');
 };
 /* lrn-native M2: the Interviews roll call is drawn by Webflow (Category = Interview, two lists of up to 100). Each item
    carries its title, number, date and image as hidden bound children; the roll-call code reads data-*, so copy them first. */
@@ -61,7 +82,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261007141632";
+var LRW_BUILD = "20261007172354";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){

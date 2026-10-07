@@ -348,6 +348,9 @@
     el.setAttribute('readonly', ''); el.setAttribute('aria-haspopup', 'dialog');
     el.setAttribute('placeholder', 'Search');
     var lab = el.closest('label, .tb-search, .hero-search, .rg-search, .sx-search') || el.parentNode;
+    var k0 = lab && lab.querySelector('.lrk-kbd');   /* lr-bar-baked: a baked hint says ⌘K; off a Mac it says Ctrl K, on touch it goes */
+    if (k0 && TOUCH) k0.remove();
+    else if (k0 && !MAC) { k0.textContent = 'Ctrl K'; besideWord(el, k0); }
     if (!TOUCH && lab && !lab.querySelector('.lrk-kbd')) {
       var k = document.createElement('span'); k.className = 'lrk-kbd'; k.textContent = MAC ? '⌘K' : 'Ctrl K'; k.setAttribute('aria-hidden', 'true'); lab.appendChild(k);
       /* the wide box under Latest (Peter, 30 Sep 2026): the hint sits right after the word "Search", not at the far edge */
@@ -382,13 +385,13 @@
   }
   window.addEventListener('load', function () { remeasure(); setTimeout(remeasure, 1500); });
   function phoneButton(bar) {
-    if (!bar || bar.querySelector('.lrk-btn')) return;
+    if (!bar) return; var b0 = bar.querySelector('.lrk-btn'); if (b0 && b0.__lrk) return;   /* lr-bar-baked: a baked glass is bound, not skipped */
     var right = bar.querySelector('.right') || bar;
-    var b = document.createElement('button'); b.type = 'button'; b.className = 'lrk-btn'; b.setAttribute('aria-label', 'Search Le Random'); b.innerHTML = GLASS;
+    var b = b0 || document.createElement('button'); b.__lrk = 1; if (!b0) { b.type = 'button'; b.className = 'lrk-btn'; b.setAttribute('aria-label', 'Search Le Random'); b.innerHTML = GLASS; }
     b.addEventListener('touchstart', function () { load().catch(function () {}); }, { passive: true });
     var box = right.querySelector('.tb-search'); if (RO && box) RO.observe(box);
     b.addEventListener('click', function () { open(''); });
-    right.insertBefore(b, right.firstChild);
+    if (!b0) right.insertBefore(b, right.firstChild);
   }
   function glassNeeded() {
     [].forEach.call(document.querySelectorAll('.lrk-btn'), function (b) {
