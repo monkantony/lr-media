@@ -241,14 +241,15 @@ js = patch(js, "var cpool = POOLS.ed.picks.filter(function(x){ return CANON.inde
 js = patch(js, "var fz = document.getElementById('featured');\n    if (fz && p) {",
            "var fz = document.getElementById('featured');\n    if (fz && p && !(window.__lrnFeature && window.__lrnFeature(fz, p[0]))) {",
            'native Featured deal')
-js = r"""/* lrn-native: the deck's slugs are the cover pool (every piece with "Editorials featured" on) */
+js = r"""window.__lrnHash0 = location.hash;
+/* lrn-native: the deck's slugs are the cover pool (every piece with "Editorials featured" on) */
 window.__lrnDeck = function(){
   var box = document.querySelector('#featured .w-dyn-items'); if (!box) return null;
   var out = [].map.call(box.children, function(it){ var a = it.querySelector('a[href*="/editorial/"]');
     return [a ? ((a.getAttribute('href') || '').split('/editorial/')[1] || '').split(/[?#]/)[0] : '']; }).filter(function(x){ return x[0]; });
   if (!out.length) return null;
   /* until a die is rolled, deals keep the piece Webflow already painted (no swap after load); dice and shared #e= links deal the deck */
-  if (!window.__lrnRolled && !/^#e=\d+$/.test(location.hash)) return out.slice(0, 1);
+  if (!window.__lrnRolled && !/^#e=\d+$/.test(window.__lrnHash0 || '')) return out.slice(0, 1);   /* the hash as the visitor arrived: the bundle writes #e= itself */
   return out;
 };
 document.addEventListener('click', function(e){ if (e.target.closest && e.target.closest('#ed-roll, .zone-roll, .cur-roll, .zone-die, .die-hero')) window.__lrnRolled = 1; }, true);
