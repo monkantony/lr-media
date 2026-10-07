@@ -118,7 +118,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261007183730";
+var LRW_BUILD = "20261007185357";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -1297,6 +1297,10 @@ try{
   }
   var latest = DATA.issues[DATA.issues.length - 1][0];
   issueHero(latest);
+  (function(){ var sel = document.getElementById('iss-jump'); if (!sel) return;   /* native: the options follow the data, not the bake */
+    var opts = DATA.issues.slice().reverse().map(function(i){ return '<option value="' + i[0] + '">No. ' + ('0' + i[0]).slice(-2) + ' \u00b7 ' + i[1] + ' \u00b7 ' + i[3].length + ' piece' + (i[3].length === 1 ? '' : 's') + '</option>'; }).join('');
+    var div = document.createElement('div'); div.innerHTML = '<select>' + opts + '</select>';
+    if (div.firstChild.textContent !== sel.textContent) sel.innerHTML = opts; })();
   document.getElementById('iss-jump').value = String(latest);
   document.getElementById('iss-jump').addEventListener('change', function(){ issueHero(parseInt(this.value,10)); });
   var rack = DATA.issues.slice(-6, -1).reverse().map(function(i){

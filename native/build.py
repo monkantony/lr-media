@@ -250,6 +250,13 @@ js = patch(js, "q.innerHTML = EPS.map(function(e, i){",
 js = patch(js, "f.title = 'AI Psychosis Summit with Peter Bauman';",
            "f.title = (thumb && thumb.getAttribute('alt')) || 'Le Random on YouTube';",
            'native YouTube title')
+js = patch(js, "  document.getElementById('iss-jump').value = String(latest);",
+           "  (function(){ var sel = document.getElementById('iss-jump'); if (!sel) return;   /* native: the options follow the data, not the bake */\n"
+           "    var opts = DATA.issues.slice().reverse().map(function(i){ return '<option value=\"' + i[0] + '\">No. ' + ('0' + i[0]).slice(-2) + ' \\u00b7 ' + i[1] + ' \\u00b7 ' + i[3].length + ' piece' + (i[3].length === 1 ? '' : 's') + '</option>'; }).join('');\n"
+           "    var div = document.createElement('div'); div.innerHTML = '<select>' + opts + '</select>';\n"
+           "    if (div.firstChild.textContent !== sel.textContent) sel.innerHTML = opts; })();\n"
+           "  document.getElementById('iss-jump').value = String(latest);",
+           'native Issues jump options')
 js = r"""window.__lrnHash0 = location.hash;
 /* lrn-native M2: the podcast queue is Webflow's Episodes list (Episode number desc). Each row carries its number
    (Folio), title, duration and a hidden audio URL; hand them to the player as its episode list, then lift the rows out
