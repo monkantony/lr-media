@@ -11,6 +11,17 @@
     var h = a.querySelector('.rd-word'); if (h && h.textContent.trim() === w) g.appendChild(a); }); });
 })();
 window.__lrnHash0 = location.hash;
+/* lrn-native M2: the Essays lead is a Webflow list of every essay with an Excerpt (newest first, CSS shows the first).
+   Until a die is rolled (or a shared #e= link arrives) the painted lead stays; a roll deals one from the CMS pool. */
+window.__lrnEssays = function(rng){
+  var box = document.querySelector('#essays .es-lead-col .w-dyn-items'); if (!box) return false;
+  if (!window.__lrnRolled && !/^#e=\d+$/.test(window.__lrnHash0 || '')) return true;
+  var kids = [].slice.call(box.children); if (!kids.length) return true;
+  var pick = kids[Math.floor(rng() * kids.length)];
+  kids.forEach(function(k){ k.classList.toggle('lrn-on', k === pick); });
+  box.classList.add('lrn-picked');
+  return true;
+};
 /* lrn-native M2: the Interviews roll call is drawn by Webflow (Category = Interview, two lists of up to 100). Each item
    carries its title, number, date and image as hidden bound children; the roll-call code reads data-*, so copy them first. */
 (function(){ try {
@@ -50,7 +61,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261007131547";
+var LRW_BUILD = "20261007141632";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -2681,6 +2692,7 @@ try{
     kids.forEach(function(el){ parent.appendChild(el); });
   }
   function essaysDeal(rng){
+    if (window.__lrnEssays && window.__lrnEssays(rng)) return;   /* native: the CMS pool (Excerpt set) is the deck */
     var lead = document.querySelector('.es-lead'); if (!lead || !ESSAYS.length) return;
     var body = lead.parentElement.querySelector('.es-body p');
     var e = ESSAYS[Math.floor(rng() * ESSAYS.length)];
@@ -4257,7 +4269,7 @@ try{
 (function(){
   function go(){
     var B = window.LRW_BY; if (!B) return false;
-    [].forEach.call(document.querySelectorAll('#latest .w-dyn-item .tw-lead .by, #latest .w-dyn-item .tw-sec-body .meta, #featured .w-dyn-item .who .wn'), function(el){
+    [].forEach.call(document.querySelectorAll('#latest .w-dyn-item .tw-lead .by, #latest .w-dyn-item .tw-sec-body .meta, #featured .w-dyn-item .who .wn, #essays .w-dyn-item .es-lead .by'), function(el){
       if (el.querySelector('[data-w]')) return;
       var t = el.textContent, h = B.line(t), d = document.createElement('span'); d.innerHTML = h;
       if (d.textContent === t) el.innerHTML = h;
