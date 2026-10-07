@@ -257,7 +257,48 @@ js = patch(js, "  document.getElementById('iss-jump').value = String(latest);",
            "    if (div.firstChild.textContent !== sel.textContent) sel.innerHTML = opts; })();\n"
            "  document.getElementById('iss-jump').value = String(latest);",
            'native Issues jump options')
+js = patch(js, "  function sxDealCol(col, t, rng){\n    var pool = DATA.entities.filter(function(e){ return e[2] === t; });",
+           "  function sxDealCol(col, t, rng){\n    if (window.__lrnSxDeal && window.__lrnSxDeal(col, rng, __lrN)) return;   /* native: deal among Webflow's links */\n    var pool = DATA.entities.filter(function(e){ return e[2] === t; });",
+           'native Subjects deal')
+js = patch(js, "  (function(){ var mo = document.querySelector('#subjects .zh-x .more'); if (mo && window.__LRW_SP_K",
+           "  (function(){ var mo = document.querySelector('#subjects .zh-x .more'); if (mo && !document.querySelector('#subjects .w-dyn-item') && window.__LRW_SP_K",
+           'native Subjects kicker (the line is static copy)')
+js = patch(js, "    var b = e.target.closest('.sx-item');\n    if (b) {",
+           "    var b = e.target.closest('.sx-item');\n    if (b && b.tagName === 'A' && b.getAttribute('href')) return;   /* native: a real subject link is followed */\n    if (b) {",
+           'native Subjects links')
 js = r"""window.__lrnHash0 = location.hash;
+/* lrn-native M3: the Subjects zone is six Webflow lists (one per Kind, Robots without noindex, Editorials desc then
+   Name asc, 20 each); CSS shows the first 10. The edition deal picks up to 10 of the 20, weighted by mentions, with the
+   same text budget as before, and only toggles and reorders the server-rendered links: nothing is drawn. */
+window.__lrnSxDeal = function(col, rng, lrN){
+  var items = [].slice.call(col.querySelectorAll('.w-dyn-item')); if (!items.length) return false;
+  var D = window.LRW_DATA, by = {};
+  if (D && D.entities) D.entities.forEach(function(e){ by[e[0]] = e; });
+  var keyed = items.map(function(it){
+    var a = it.querySelector('a.sx-item'), k = a ? (a.getAttribute('data-k') || '') : '', e = by[k];
+    var w = (e && lrN ? lrN(e) : 0) || 1;
+    return { it: it, k: Math.pow(rng(), 1 / w), len: ((it.textContent || '').trim().length + 2) };
+  }).sort(function(a, b){ return b.k - a.k; });
+  var out = [], used = 0, budget = 240;
+  for (var i = 0; i < keyed.length && out.length < 10; i++) {
+    if (out.length >= 5 && used + keyed[i].len > budget) break;
+    used += keyed[i].len; out.push(keyed[i].it);
+  }
+  var box = items[0].parentNode;
+  items.forEach(function(it){ it.classList.remove('lrn-on'); });
+  out.forEach(function(it){ it.classList.add('lrn-on'); box.appendChild(it); });
+  items.forEach(function(it){ if (out.indexOf(it) < 0) box.appendChild(it); });
+  col.classList.add('lrn-dealt');
+  return true;
+};
+/* lrn-native M3: Contributors is a Webflow list (Contributor editorials desc, then Name). Lift the cards out of
+   Webflow's wrappers so the bundle's order, deal and A-Z (children of one grid) work unchanged. */
+(function(){ try {
+  var g = document.querySelector('#contributors .contrib'); if (!g || !g.querySelector('.w-dyn-item')) return;
+  var cards = [].slice.call(g.querySelectorAll('a.cb'));
+  cards.forEach(function(c){ g.appendChild(c); });
+  [].slice.call(g.children).forEach(function(c){ if (!(c.tagName === 'A' && c.classList.contains('cb'))) c.remove(); });
+} catch (e) {} })();
 /* lrn-native M2: the podcast queue is Webflow's Episodes list (Episode number desc). Each row carries its number
    (Folio), title, duration and a hidden audio URL; hand them to the player as its episode list, then lift the rows out
    of Webflow's wrappers so the player's own child logic (q.children) sees exactly the rows it used to draw. */

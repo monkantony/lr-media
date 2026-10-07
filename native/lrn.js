@@ -11,6 +11,38 @@
     var h = a.querySelector('.rd-word'); if (h && h.textContent.trim() === w) g.appendChild(a); }); });
 })();
 window.__lrnHash0 = location.hash;
+/* lrn-native M3: the Subjects zone is six Webflow lists (one per Kind, Robots without noindex, Editorials desc then
+   Name asc, 20 each); CSS shows the first 10. The edition deal picks up to 10 of the 20, weighted by mentions, with the
+   same text budget as before, and only toggles and reorders the server-rendered links: nothing is drawn. */
+window.__lrnSxDeal = function(col, rng, lrN){
+  var items = [].slice.call(col.querySelectorAll('.w-dyn-item')); if (!items.length) return false;
+  var D = window.LRW_DATA, by = {};
+  if (D && D.entities) D.entities.forEach(function(e){ by[e[0]] = e; });
+  var keyed = items.map(function(it){
+    var a = it.querySelector('a.sx-item'), k = a ? (a.getAttribute('data-k') || '') : '', e = by[k];
+    var w = (e && lrN ? lrN(e) : 0) || 1;
+    return { it: it, k: Math.pow(rng(), 1 / w), len: ((it.textContent || '').trim().length + 2) };
+  }).sort(function(a, b){ return b.k - a.k; });
+  var out = [], used = 0, budget = 240;
+  for (var i = 0; i < keyed.length && out.length < 10; i++) {
+    if (out.length >= 5 && used + keyed[i].len > budget) break;
+    used += keyed[i].len; out.push(keyed[i].it);
+  }
+  var box = items[0].parentNode;
+  items.forEach(function(it){ it.classList.remove('lrn-on'); });
+  out.forEach(function(it){ it.classList.add('lrn-on'); box.appendChild(it); });
+  items.forEach(function(it){ if (out.indexOf(it) < 0) box.appendChild(it); });
+  col.classList.add('lrn-dealt');
+  return true;
+};
+/* lrn-native M3: Contributors is a Webflow list (Contributor editorials desc, then Name). Lift the cards out of
+   Webflow's wrappers so the bundle's order, deal and A-Z (children of one grid) work unchanged. */
+(function(){ try {
+  var g = document.querySelector('#contributors .contrib'); if (!g || !g.querySelector('.w-dyn-item')) return;
+  var cards = [].slice.call(g.querySelectorAll('a.cb'));
+  cards.forEach(function(c){ g.appendChild(c); });
+  [].slice.call(g.children).forEach(function(c){ if (!(c.tagName === 'A' && c.classList.contains('cb'))) c.remove(); });
+} catch (e) {} })();
 /* lrn-native M2: the podcast queue is Webflow's Episodes list (Episode number desc). Each row carries its number
    (Folio), title, duration and a hidden audio URL; hand them to the player as its episode list, then lift the rows out
    of Webflow's wrappers so the player's own child logic (q.children) sees exactly the rows it used to draw. */
@@ -118,7 +150,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261007185357";
+var LRW_BUILD = "20261007200948";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -1264,6 +1296,7 @@ try{
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && ent.classList.contains('on')) goBack(); });
   document.addEventListener('click', function(e){
     var b = e.target.closest('.sx-item');
+    if (b && b.tagName === 'A' && b.getAttribute('href')) return;   /* native: a real subject link is followed */
     if (b) {
       /* route through the hash so Back closes the overlay instead of leaving the site */
             var h = '#subject=' + encodeURIComponent(b.dataset.k);
@@ -1917,6 +1950,7 @@ try{
     return null;
   }
   function sxDealCol(col, t, rng){
+    if (window.__lrnSxDeal && window.__lrnSxDeal(col, rng, __lrN)) return;   /* native: deal among Webflow's links */
     var pool = DATA.entities.filter(function(e){ return e[2] === t; });
     if (!pool.length) return;
     var keyed = pool.map(function(e){
@@ -1959,7 +1993,7 @@ try{
   }
   sxDeal((window.__LRW_ED || { seed: 42 }).seed);
   /* lr-sp-kicker: the counts line, also on the native page whose baked line can be older */
-  (function(){ var mo = document.querySelector('#subjects .zh-x .more'); if (mo && window.__LRW_SP_K && mo.textContent !== window.__LRW_SP_K) mo.textContent = window.__LRW_SP_K; })();
+  (function(){ var mo = document.querySelector('#subjects .zh-x .more'); if (mo && !document.querySelector('#subjects .w-dyn-item') && window.__LRW_SP_K && mo.textContent !== window.__LRW_SP_K) mo.textContent = window.__LRW_SP_K; })();
   addEventListener('lrw:redeal', function(e){ sxDeal((e.detail && e.detail.seed) || 0); });
 })();
 
