@@ -235,10 +235,20 @@ js = patch(js, "if (p.src) { vid.src = p.src; }",
 js = patch(js, "var h = q('#featured .cover-h'); if (!h || q('br', h)) return;",
            "var h = q('#featured .cover-h'); if (!h || q('br', h) || h.querySelector('.lr-tl')) return;   /* lrn-native: Title lines carries the break */",
            'native cover break')
+js = patch(js, "var cpool = POOLS.ed.picks.filter(function(x){ return CANON.indexOf(x[0]) >= 0; });",
+           "var cpool = window.__lrnDeck ? window.__lrnDeck() : POOLS.ed.picks.filter(function(x){ return CANON.indexOf(x[0]) >= 0; });   /* lrn-native: deal from the Featured deck Webflow renders */",
+           'native Featured pool')
 js = patch(js, "var fz = document.getElementById('featured');\n    if (fz && p) {",
            "var fz = document.getElementById('featured');\n    if (fz && p && !(window.__lrnFeature && window.__lrnFeature(fz, p[0]))) {",
            'native Featured deal')
-js = r"""/* lrn-native: Featured is a deck Webflow renders whole (Editorials featured = on); the edition only chooses which story shows */
+js = r"""/* lrn-native: the deck's slugs are the cover pool (every piece with "Editorials featured" on) */
+window.__lrnDeck = function(){
+  var box = document.querySelector('#featured .w-dyn-items'); if (!box) return null;
+  var out = [].map.call(box.children, function(it){ var a = it.querySelector('a[href*="/editorial/"]');
+    return [a ? ((a.getAttribute('href') || '').split('/editorial/')[1] || '').split(/[?#]/)[0] : '']; }).filter(function(x){ return x[0]; });
+  return out.length ? out : null;
+};
+/* lrn-native: Featured is a deck Webflow renders whole (Editorials featured = on); the edition only chooses which story shows */
 window.__lrnFeature = function(fz, slug){
   var box = fz.querySelector('.w-dyn-items'); if (!box) return false;
   var hit = null;

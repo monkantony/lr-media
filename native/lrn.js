@@ -10,6 +10,13 @@
   if (g) order.forEach(function(w){ [].forEach.call(g.querySelectorAll('article.reader'), function(a){
     var h = a.querySelector('.rd-word'); if (h && h.textContent.trim() === w) g.appendChild(a); }); });
 })();
+/* lrn-native: the deck's slugs are the cover pool (every piece with "Editorials featured" on) */
+window.__lrnDeck = function(){
+  var box = document.querySelector('#featured .w-dyn-items'); if (!box) return null;
+  var out = [].map.call(box.children, function(it){ var a = it.querySelector('a[href*="/editorial/"]');
+    return [a ? ((a.getAttribute('href') || '').split('/editorial/')[1] || '').split(/[?#]/)[0] : '']; }).filter(function(x){ return x[0]; });
+  return out.length ? out : null;
+};
 /* lrn-native: Featured is a deck Webflow renders whole (Editorials featured = on); the edition only chooses which story shows */
 window.__lrnFeature = function(fz, slug){
   var box = fz.querySelector('.w-dyn-items'); if (!box) return false;
@@ -22,7 +29,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261007112606";
+var LRW_BUILD = "20261007114116";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -2012,8 +2019,9 @@ try{
     var CANON = ['hans-ulrich-obrist-on-exhibitions-as-living-organisms','hito-steyerl-on-how-it-uses-us',
       'the-ultraintelligent-machine-and-gaberbocchus-common-room','then-and-now',
       'ian-goodfellow-on-inventing-gans','marina-abramovic-on-new-possibilities',
-      'reas-history-1','casey-reas-on-the-history-of-generative-art-part-2'];
-    var cpool = POOLS.ed.picks.filter(function(x){ return CANON.indexOf(x[0]) >= 0; });
+      'reas-history-1','casey-reas-on-the-history-of-generative-art-part-2',   /* lr-canon-15 (7 Oct 2026) */
+      'micky-malka-becky-kleiner-on-the-birth-of-node','holly-herndon-mat-dryhurst-on-artificial-psychedelia','karl-sims-alexander-mordvintsev-on-merging-technology-and-biology','beeple-on-infinite-creation-machines','christiane-paul-on-defining-ai-art','mario-klingemann-a-i-c-c-a-on-alien-perspective','zach-lieberman'];
+    var cpool = window.__lrnDeck ? window.__lrnDeck() : POOLS.ed.picks.filter(function(x){ return CANON.indexOf(x[0]) >= 0; });   /* lrn-native: deal from the Featured deck Webflow renders */
     if (!cpool.length) cpool = POOLS.ed.picks;
     var p = cpool[Math.floor(rnd() * cpool.length)];
     try { if (window.__lrwSetSlot3) window.__lrwSetSlot3(p[0]); } catch (_e) {}
