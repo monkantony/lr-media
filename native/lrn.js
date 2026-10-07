@@ -11,6 +11,24 @@
     var h = a.querySelector('.rd-word'); if (h && h.textContent.trim() === w) g.appendChild(a); }); });
 })();
 window.__lrnHash0 = location.hash;
+/* lrn-native M2: the podcast queue is Webflow's Episodes list (Episode number desc). Each row carries its number
+   (Folio), title, duration and a hidden audio URL; hand them to the player as its episode list, then lift the rows out
+   of Webflow's wrappers so the player's own child logic (q.children) sees exactly the rows it used to draw. */
+(function(){ try {
+  var q = document.getElementById('podQueue'); if (!q || !q.querySelector('.w-dyn-item')) return;
+  var rows = [].slice.call(q.querySelectorAll('.pod-ep'));
+  window.__lrnEPS = rows.map(function(r, i){
+    var t = function(c){ var e = r.querySelector('.' + c); return e ? e.textContent.trim() : ''; };
+    r.setAttribute('data-i', i); if (i === 0) r.classList.add('on');
+    var tx = r.querySelector('.pod-tx'); if (tx) tx.dataset.n = parseInt(t('pod-ep-n'), 10);
+    var u = r.querySelector('.pod-u'), url = u ? u.textContent.trim() : ''; if (u) u.remove();
+    return { n: t('pod-ep-n'), t: t('pod-ep-t'), u: url, d: t('pod-ep-d') };
+  });
+  rows.forEach(function(r){ q.appendChild(r); });
+  [].slice.call(q.children).forEach(function(c){ if (!c.classList.contains('pod-ep')) c.remove(); });
+  q.addEventListener('keydown', function(e){ var b = e.target.closest && e.target.closest('.pod-ep');
+    if (b && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); b.click(); } });
+} catch (e) {} })();
 /* lrn-native M2: the Essays lead is a Webflow list of every essay with an Excerpt (newest first, CSS shows the first).
    Until a die is rolled (or a shared #e= link arrives) the painted lead stays; a roll deals one from the CMS pool. */
 window.__lrnEssays = function(rng){
@@ -82,7 +100,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261007172354";
+var LRW_BUILD = "20261007180913";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -849,7 +867,8 @@ try{
     var lkEl = document.getElementById('podLk');
     var cur = 0;
     function fmt(s){ if (!isFinite(s)) return '0:00'; s = Math.floor(s); return Math.floor(s/60) + ':' + ('0'+(s%60)).slice(-2); }
-    q.innerHTML = EPS.map(function(e, i){
+    if (window.__lrnEPS) EPS = window.__lrnEPS;   /* native: the queue is Webflow's Episodes list */
+    else q.innerHTML = EPS.map(function(e, i){
       return '<button class="pod-ep' + (i === 0 ? ' on' : '') + '" type="button" data-i="' + i + '">'
         + '<span class="pod-ep-n">' + e.n + '</span>'
         + '<span class="pod-ep-t">' + e.t.replace(/&/g,'&amp;').replace(/</g,'&lt;') + '</span>'
@@ -955,7 +974,7 @@ try{
       if (location.protocol === 'http:' || location.protocol === 'https:') {
         var f = document.createElement('iframe');
         f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?rel=0&autoplay=1';
-        f.title = 'AI Psychosis Summit with Peter Bauman';
+        f.title = (thumb && thumb.getAttribute('alt')) || 'Le Random on YouTube';
         f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture';
         f.setAttribute('allowfullscreen', '');
         frame.innerHTML = '';

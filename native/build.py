@@ -244,7 +244,31 @@ js = patch(js, "var fz = document.getElementById('featured');\n    if (fz && p) 
 js = patch(js, "var lead = document.querySelector('.es-lead'); if (!lead || !ESSAYS.length) return;",
            "if (window.__lrnEssays && window.__lrnEssays(rng)) return;   /* native: the CMS pool (Excerpt set) is the deck */\n    var lead = document.querySelector('.es-lead'); if (!lead || !ESSAYS.length) return;",
            'native Essays deal')
+js = patch(js, "q.innerHTML = EPS.map(function(e, i){",
+           "if (window.__lrnEPS) EPS = window.__lrnEPS;   /* native: the queue is Webflow's Episodes list */\n    else q.innerHTML = EPS.map(function(e, i){",
+           'native podcast queue')
+js = patch(js, "f.title = 'AI Psychosis Summit with Peter Bauman';",
+           "f.title = (thumb && thumb.getAttribute('alt')) || 'Le Random on YouTube';",
+           'native YouTube title')
 js = r"""window.__lrnHash0 = location.hash;
+/* lrn-native M2: the podcast queue is Webflow's Episodes list (Episode number desc). Each row carries its number
+   (Folio), title, duration and a hidden audio URL; hand them to the player as its episode list, then lift the rows out
+   of Webflow's wrappers so the player's own child logic (q.children) sees exactly the rows it used to draw. */
+(function(){ try {
+  var q = document.getElementById('podQueue'); if (!q || !q.querySelector('.w-dyn-item')) return;
+  var rows = [].slice.call(q.querySelectorAll('.pod-ep'));
+  window.__lrnEPS = rows.map(function(r, i){
+    var t = function(c){ var e = r.querySelector('.' + c); return e ? e.textContent.trim() : ''; };
+    r.setAttribute('data-i', i); if (i === 0) r.classList.add('on');
+    var tx = r.querySelector('.pod-tx'); if (tx) tx.dataset.n = parseInt(t('pod-ep-n'), 10);
+    var u = r.querySelector('.pod-u'), url = u ? u.textContent.trim() : ''; if (u) u.remove();
+    return { n: t('pod-ep-n'), t: t('pod-ep-t'), u: url, d: t('pod-ep-d') };
+  });
+  rows.forEach(function(r){ q.appendChild(r); });
+  [].slice.call(q.children).forEach(function(c){ if (!c.classList.contains('pod-ep')) c.remove(); });
+  q.addEventListener('keydown', function(e){ var b = e.target.closest && e.target.closest('.pod-ep');
+    if (b && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); b.click(); } });
+} catch (e) {} })();
 /* lrn-native M2: the Essays lead is a Webflow list of every essay with an Excerpt (newest first, CSS shows the first).
    Until a die is rolled (or a shared #e= link arrives) the painted lead stays; a roll deals one from the CMS pool. */
 window.__lrnEssays = function(rng){
