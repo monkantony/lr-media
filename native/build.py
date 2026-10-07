@@ -271,26 +271,44 @@ js = r"""window.__lrnHash0 = location.hash;
 } catch (e) {} })();
 /* lrn-native M2: the Essays lead is a Webflow list of every essay with an Excerpt (newest first, CSS shows the first).
    Until a die is rolled (or a shared #e= link arrives) the painted lead stays; a roll deals one from the CMS pool. */
+/* lrn-native M2: the Essays lead and the six beside it are dealt from the CMS pool (every essay with an Excerpt) with
+   the edition's seed, at load and on every roll, like www. Never a piece Latest already shows, never the lead twice,
+   one piece per series (Zero 10 Part 1/2 ...), and at least three writers among the six (Peter, 7 Oct 2026).
+   Without JS the CSS shows the 7th-newest essay as lead and the 8th-13th beside it: none can be in Latest's six. */
+window.__lrnSeries = function(t){
+  t = (t || '').toLowerCase().replace(/\s+/g, ' ').trim();
+  if (/demystifying generative/.test(t)) return 'demystifying generative';
+  return t.replace(/\s*[-—:]?\s*(part|pt\.?)\s*[\divx]+\b.*$/, '').replace(/:.*$/, '').trim();
+};
+window.__lrnLatest = function(){
+  var s = {}; [].forEach.call(document.querySelectorAll('#latest a[href*="/editorial/"]'), function(a){ s[a.getAttribute('href')] = 1; }); return s;
+};
 window.__lrnEssays = function(rng){
   var box = document.querySelector('#essays .es-lead-col .w-dyn-items'); if (!box) return false;
-  if (!window.__lrnRolled && !/^#e=\d+$/.test(window.__lrnHash0 || '')) { window.__lrnEssayList && window.__lrnEssayList(rng); return true; }
-  var kids = [].slice.call(box.children); if (!kids.length) return true;
-  var pick = kids[Math.floor(rng() * kids.length)];
-  kids.forEach(function(k){ k.classList.toggle('lrn-on', k === pick); });
-  box.classList.add('lrn-picked');
+  var latest = window.__lrnLatest();
+  var all = [].slice.call(box.children), kids = all.filter(function(k){ var a = k.querySelector('a.es-lead'); return a && !latest[a.getAttribute('href')]; });
+  if (!kids.length) kids = all;
+  if (kids.length) {
+    var pick = kids[Math.floor(rng() * kids.length)];
+    all.forEach(function(k){ k.classList.toggle('lrn-on', k === pick); });
+    box.classList.add('lrn-picked');
+  }
   window.__lrnEssayList && window.__lrnEssayList(rng);
   return true;
 };
-/* Peter, 7 Oct 2026: the six beside the lead are random, never the lead itself, and always at least three different
-   writers (the first name in each byline). Dealt with the edition's seed on load and on every roll. */
 window.__lrnEssayList = function(rng){
   var box = document.querySelector('#essays .es-list .w-dyn-items'); if (!box) return;
-  var on = document.querySelector('#essays .es-lead-col .w-dyn-items.lrn-picked > .lrn-on') || document.querySelector('#essays .es-lead-col .w-dyn-item');
-  var la = on && on.querySelector('a[href*="/editorial/"]'), lead = la ? la.getAttribute('href') : '';
+  var latest = window.__lrnLatest(), S = window.__lrnSeries;
+  var on = document.querySelector('#essays .es-lead-col .w-dyn-items.lrn-picked > .lrn-on');
+  var la = on && on.querySelector('a.es-lead'), lead = la ? la.getAttribute('href') : '';
+  var leadSeries = on ? S((on.querySelector('.es-lead h3') || {}).textContent) : '';
   var who = function(it){ var b = it.querySelector('.es-m .by'); return b ? b.textContent.split(/,| and | with /)[0].trim().toLowerCase() : ''; };
-  var pool = [].slice.call(box.children).filter(function(it){ var a = it.querySelector('a.es-item'); return a && a.getAttribute('href') !== lead; });
+  var ser = function(it){ return S((it.querySelector('.es-t') || {}).textContent); };
+  var pool = [].slice.call(box.children).filter(function(it){ var a = it.querySelector('a.es-item'), h = a && a.getAttribute('href'); return h && h !== lead && !latest[h]; });
   for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(rng() * (i + 1)), t = pool[i]; pool[i] = pool[j]; pool[j] = t; }
-  var picked = pool.slice(0, 6), rest = pool.slice(6);
+  var picked = [], used = {}; used[leadSeries] = 1;
+  pool.forEach(function(it){ if (picked.length < 6 && !used[ser(it)]) { picked.push(it); used[ser(it)] = 1; } });
+  var rest = pool.filter(function(it){ return picked.indexOf(it) < 0 && !used[ser(it)]; });
   var count = function(){ var m = {}; picked.forEach(function(it){ m[who(it)] = (m[who(it)] || 0) + 1; }); return m; };
   for (var guard = 0; guard < 6 && Object.keys(count()).length < 3; guard++) {
     var m = count(), k = rest.findIndex(function(it){ return !m[who(it)]; }); if (k < 0) break;
