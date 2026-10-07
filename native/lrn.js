@@ -11,6 +11,22 @@
     var h = a.querySelector('.rd-word'); if (h && h.textContent.trim() === w) g.appendChild(a); }); });
 })();
 window.__lrnHash0 = location.hash;
+/* lrn-native M2: the Interviews roll call is drawn by Webflow (Category = Interview, two lists of up to 100). Each item
+   carries its title, number, date and image as hidden bound children; the roll-call code reads data-*, so copy them first. */
+(function(){ try {
+  [].forEach.call(document.querySelectorAll('#rc-list .w-dyn-item'), function(w){
+    var a = w.querySelector('a.rc-item'), d = w.querySelector('.rc-d'); if (!a || !d || a.dataset.t) return;
+    function t(c){ var e = d.querySelector('.' + c); return e ? e.textContent.trim() : ''; }
+    var im = d.querySelector('img'), src = '';
+    if (im) { (im.getAttribute('srcset') || '').split(',').forEach(function(p){ var m = p.trim().split(/\s+/); if (m[0] && parseInt(m[1], 10) <= 800) src = m[0]; }); src = src || im.getAttribute('src') || ''; }
+    a.dataset.img = src; a.dataset.t = t('rc-d-t'); a.dataset.n = t('rc-d-n'); a.dataset.d = t('rc-d-d');
+  });
+  /* the plate image is Webflow's responsive <img>: its srcset would outrank the src the hover sets, so pin what it shows first */
+  var ri = document.getElementById('rc-img'), rl = document.getElementById('rc-list');
+  if (ri && rl && ri.hasAttribute('srcset')) rl.addEventListener('mouseover', function(){
+    if (ri.currentSrc) ri.setAttribute('src', ri.currentSrc); ri.removeAttribute('srcset'); ri.removeAttribute('sizes');
+  }, { capture: true, once: true });
+} catch (e) {} })();
 /* lrn-native: the deck's slugs are the cover pool (every piece with "Editorials featured" on) */
 window.__lrnDeck = function(){
   var box = document.querySelector('#featured .w-dyn-items'); if (!box) return null;
@@ -34,7 +50,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261007123635";
+var LRW_BUILD = "20261007131547";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
