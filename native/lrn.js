@@ -16,10 +16,11 @@ window.__lrnDeck = function(){
   var out = [].map.call(box.children, function(it){ var a = it.querySelector('a[href*="/editorial/"]');
     return [a ? ((a.getAttribute('href') || '').split('/editorial/')[1] || '').split(/[?#]/)[0] : '']; }).filter(function(x){ return x[0]; });
   if (!out.length) return null;
-  /* the first deal of a visit keeps the piece Webflow already painted (no swap after load); dice and shared #e= links deal the deck */
-  if (!window.__lrnDeckInit) { window.__lrnDeckInit = 1; if (!/^#e=\d+$/.test(location.hash)) return out.slice(0, 1); }
+  /* until a die is rolled, deals keep the piece Webflow already painted (no swap after load); dice and shared #e= links deal the deck */
+  if (!window.__lrnRolled && !/^#e=\d+$/.test(location.hash)) return out.slice(0, 1);
   return out;
 };
+document.addEventListener('click', function(e){ if (e.target.closest && e.target.closest('#ed-roll, .zone-roll, .cur-roll, .zone-die, .die-hero')) window.__lrnRolled = 1; }, true);
 /* lrn-native: Featured is a deck Webflow renders whole (Editorials featured = on); the edition only chooses which story shows */
 window.__lrnFeature = function(fz, slug){
   var box = fz.querySelector('.w-dyn-items'); if (!box) return false;
@@ -32,7 +33,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261007115357";
+var LRW_BUILD = "20261007120353";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
