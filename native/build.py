@@ -215,6 +215,43 @@ EPILOGUE += r'''
     .observe(document.getElementById('lrw') || document.body, { childList: true, subtree: true });
 })();
 '''
+# ---------- lrn-native-lists (7 Oct 2026, the fully native /editorials, M1) ----------
+# On a page where Webflow Collection Lists draw a section (the noindex test page first), the script only enhances:
+# it never rewrites what the server rendered. Every guard is keyed to the native markup (.w-dyn-list/.w-dyn-item inside
+# the section), so the baked live page runs exactly as before.
+js = patch(js, "if (!lead || secs.length < 4) return;",
+           "if (!lead || secs.length < 4 || document.querySelector('#latest .w-dyn-list')) return;   /* lrn-native: Latest is drawn by Webflow */",
+           'native Latest deal')
+js = patch(js, "if (!lead || !window.fetch || !window.DOMParser) return;",
+           "if (!lead || !window.fetch || !window.DOMParser || document.querySelector('#latest .w-dyn-list')) return;   /* lrn-native: the CMS is the newest */",
+           'native live-newest')
+js = patch(js, "var link = document.getElementById('win-link');\n    function sync(){\n      var href = link ? (link.getAttribute('href') || '') : '';",
+           "var link = document.getElementById('win-link'); var lrnHome = link ? link.getAttribute('href') : '';\n    function sync(){\n      var href = link ? (link.getAttribute('href') || '') : '';\n"
+           "      if (piece.closest && piece.closest('.w-dyn-item') && !piece.__lrnMoved) { if (href === lrnHome) return; piece.__lrnMoved = 1; }   /* lrn-native: the first piece is server-rendered */",
+           'native Window piece')
+js = patch(js, "if (p.src) { vid.src = p.src; }",
+           "if (p.src) { if ((vid.getAttribute('src') || '').split('?')[0] !== p.src.split('?')[0]) vid.src = p.src; }   /* lrn-native: the same film does not reload */",
+           'native Window film')
+js = patch(js, "var h = q('#featured .cover-h'); if (!h || q('br', h)) return;",
+           "var h = q('#featured .cover-h'); if (!h || q('br', h) || h.querySelector('.lr-tl')) return;   /* lrn-native: Title lines carries the break */",
+           'native cover break')
+js = patch(js, "var fz = document.getElementById('featured');\n    if (fz && p) {",
+           "var fz = document.getElementById('featured');\n    if (fz && p && !(window.__lrnFeature && window.__lrnFeature(fz, p[0]))) {",
+           'native Featured deal')
+js = r"""/* lrn-native: Featured is a deck Webflow renders whole (Editorials featured = on); the edition only chooses which story shows */
+window.__lrnFeature = function(fz, slug){
+  var box = fz.querySelector('.w-dyn-items'); if (!box) return false;
+  var hit = null;
+  [].forEach.call(box.children, function(it){
+    var a = it.querySelector('a[href*="/editorial/"]');
+    var s = a ? ((a.getAttribute('href') || '').split('/editorial/')[1] || '').split(/[?#]/)[0] : '';
+    var on = s === slug; it.classList.toggle('lrn-on', on); if (on) hit = it;
+  });
+  box.classList.toggle('lrn-picked', !!hit);
+  return true;
+};
+""" + js
+
 out = PROLOGUE + js + EPILOGUE
 p = os.path.join(HERE, 'lrn.js')
 open(p, 'w', encoding='utf-8').write(out)
