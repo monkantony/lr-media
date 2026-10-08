@@ -34,6 +34,7 @@
       if (sub2tok[slug]) mount(sub2tok[slug], tok2sub, sub2tok, cfg);
       // LR-SUBJECTS (5 Oct 2026): every other subject page opens the chart on its subject (config "subjects": true)
       else if (!isPerson && cfg.subjects) get('data/subj/' + shardOf(slug) + '.json', 'json').then(function (sh) {
+        FOCUS = onHost(cfg.subjectsMap);
         var d = sh && sh[slug]; if (d && (d.m.length || d.a.length || d.p.length)) { d.slug = slug; mount(null, tok2sub, sub2tok, cfg, d); } else none();
       }).catch(none);
       else none();
@@ -42,12 +43,20 @@
 
   // the frame's own code and styles, inlined from the same commit (a <script src> on the file server would be refused:
   // it serves text/plain). Anything that cannot be fetched keeps its tag and loads from jsDelivr as before.
+  // 9 Oct 2026 (option A): a subject that is not a person opens on the Subjects index map, focused on it (its mark, its six
+  // nearest by shared pages, the people its moments name), with its own panel. The map's engine copy and data live in
+  // lr-media/subjects/ at the same commit; everything else is this folder's. Hosts listed in config "subjectsMap" only
+  // (staging first); person pages never take this path.
+  var FOCUS = false, SB = BASE.replace(/people\/$/, 'subjects/'), SRAW = RAW.replace(/people\/$/, 'subjects/');
+  var OWN = { 'assets/views/people.js': 1, 'assets/views/people.css': 1 };
+  function onHost(list) { var h = location.hostname.toLowerCase(); return (list || []).some(function (x) { return x === '*' || h === x || h.slice(-x.length - 1) === '.' + x; }); }
+  function getS(f) { var one = function (b) { return fetch(b + f, { cache: 'force-cache' }).then(function (r) { if (!r.ok) throw f + ' ' + r.status; return r.text(); }); }; return SRAW !== SB ? one(SRAW).catch(function () { return one(SB); }) : one(SB); }
   function inlineCode(h) {
     h = h.replace(/<script src="assets\/theme\.js[^"]*"><\/script>|<link rel="stylesheet" href="assets\/theme\.css[^"]*">/g, '');   // never shipped (404)
     var tags = [], re = /<script src="assets\/([^"?]+\.js)"><\/script>|<link rel="stylesheet" href="assets\/([^"?]+\.css)">/g, mm;
     while ((mm = re.exec(h))) tags.push({ tag: mm[0], file: 'assets/' + (mm[1] || mm[2]), js: !!mm[1] });
     return Promise.all(tags.map(function (t) {
-      return get(t.file).then(function (code) {
+      return (FOCUS && OWN[t.file] ? getS(t.file) : get(t.file)).then(function (code) {
         if (t.js) return '<script>' + code.replace(/<\/script/gi, '<\\/script') + '\n<\/script>';
         return '<style>' + code.replace(/url\(\.\.\/fonts\//g, 'url(' + RAW + 'fonts/') + '</style>';
       }).catch(function () { return null; });
@@ -97,7 +106,8 @@
       var head = '<base href="' + assets + '"><script>window.LR_EMBED=1;window.LR_FRAMED=true;window.LR_PEOPLE_HOME="main";' +
         'window.LR_DATA=' + JSON.stringify(RAW) + ';window.LR_LEAD=' + JSON.stringify(cfg.lead || {}) + ';' +
         'window.LR_PARAMS=' + JSON.stringify({ token: tok || '' }) + ';' +
-        'window.LR_SUBJ=' + JSON.stringify(subj || null).replace(/</g, '\\u003c') + ';<\/script>';
+        'window.LR_SUBJ=' + JSON.stringify(subj || null).replace(/</g, '\\u003c') + ';' +
+        (FOCUS ? 'window.LR_SUBJECTS_INDEX=1;window.LR_SL_FOCUS=1;window.LR_SL_DATA=' + JSON.stringify(SRAW) + ';' : '') + '<\/script>';
       // the page's own code and styles come from lr-media, not from the Timeline the <base> points at
       h = h.replace('<!--LR-EMBED-HEAD-->', head).replace(/(href|src)="assets\//g, '$1="' + BASE + 'assets/');
       fr.srcdoc = h;
