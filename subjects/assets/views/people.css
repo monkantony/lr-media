@@ -608,7 +608,13 @@ button.pv-chip.is-tag:hover{border-style:solid}
   .pp.sl-hero.sl-split .sl-az button{min-width:0;flex:1 1 0;padding:0}
   .pp.sl-hero.sl-split .sl-az button:hover{background:rgba(247,244,234,.1)}
   /* the index's kind chips filter the map, so the map side drops its own chip stack and the zoom buttons */
-  .pp.sl-hero.sl-split #sl-kinds,.pp.sl-hero.sl-split #pp-zoom{display:none!important}
+  .pp.sl-hero.sl-split #sl-kinds{display:none!important}
+  /* zoom stays in reach on the map itself: + / - / reset at its bottom right (pinch, ⌘/Ctrl + scroll, double-click and drag also work) */
+  .pp.sl-hero.sl-split #pp-zoom{display:flex!important;right:28px;bottom:14px;top:auto;left:auto}
+  #sl-zhint{position:absolute;z-index:8;left:calc(50% - 14px);top:50%;transform:translate(-50%,-50%);max-width:calc(100% - 80px);padding:10px 16px;
+    border-radius:20px;background:rgba(1,16,21,.86);border:1px solid rgba(247,244,234,.28);color:#F7F4EA;font:400 13px/1.35 Rules,Arial,sans-serif;
+    letter-spacing:.01em;text-align:center;pointer-events:none;opacity:0;transition:opacity .35s ease}
+  #sl-zhint.is-on{opacity:1}
   .pp.sl-hero.sl-split .pp-find{top:6px;left:0;right:auto;width:min(250px,40%)}
   .pp.sl-hero.sl-split #pp-key{top:6px;bottom:auto;right:28px;left:auto}
   /* the controls get their own strip under the map: Arrange by, then In history by at the map's full width */

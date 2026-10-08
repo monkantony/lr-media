@@ -1280,7 +1280,7 @@
       html = docTip(h.d);
     } else if (h.type === 'sl') {
       html = slTip(h.s); slWake();
-      if (!h.s.W) slW(h.s.slug).then(w => { h.s.W = w; if (st.hover && st.hover.s === h.s && !tip.hidden) { const t = tip.querySelector('.t-a'); if (t && w.w[0]) t.insertAdjacentHTML('beforebegin', slWhy(h.s)); } });
+      if (!h.s.W) slW(h.s.slug).then(w => { h.s.W = w; if (st.hover && st.hover.s === h.s && !tip.hidden) { const t = tip.querySelector('.t-a'); if (t && w.w[0]) { tip.querySelectorAll('.t-w').forEach(x => x.remove()); t.insertAdjacentHTML('beforebegin', slWhy(h.s)); } } });
     } else if (h.type === 'pupil') {
       if (!win) return hideTip();
       html = `<p class="t-k"><span class="lab">In the window</span></p><p class="t-n">${esc(win.sc.title)}</p><p class="t-m">${esc(win.sc.blurb)}</p>
@@ -1383,8 +1383,9 @@
     };
     cv.addEventListener('pointerup', end); cv.addEventListener('pointercancel', end);
     cv.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse' && !drag) { setHover(null); } });
+    cv.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse' && slSplit()) slHintOnce(); });
     cv.addEventListener('wheel', e => {
-      if (window.LR_EMBED && !e.ctrlKey && !e.metaKey) return;
+      if (window.LR_EMBED && !e.ctrlKey && !e.metaKey) { if (slSplit()) slZoomHint(SL_MAC ? '\u2318 + scroll to zoom' : 'Ctrl + scroll to zoom', 1400); return; }
       e.preventDefault();
       const p = pos(e); const dy = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaY;
       zoomAt(p.x, p.y, Math.exp(-dy * (e.ctrlKey ? 0.01 : 0.0022)), e.ctrlKey ? 40 : 110);
@@ -1983,7 +1984,9 @@
     addEventListener('keydown', e => {
       const t = e.target, field = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT' || t.isContentEditable);
       if (e.key === 'Escape' && !field) {
-        if (st.through) setThrough(false); else if (st.sel) select(null); else if (st.era || st.region >= 0 || st.min > 1 || st.src) { st.era = 0; st.region = -1; st.min = 1; st.src = ''; applyFilters(); }
+        if (st.through) setThrough(false); else if (st.sel) select(null);
+        else if (slSplit() && (st.slSel || cam.k > 1.01)) { slSelect(null); resetCam(); }
+        else if (st.era || st.region >= 0 || st.min > 1 || st.src) { st.era = 0; st.region = -1; st.min = 1; st.src = ''; applyFilters(); }
         return;
       }
       if (field || e.metaKey || e.ctrlKey || e.altKey) return;
@@ -2395,6 +2398,30 @@
     }
     return [Math.max(48, Math.min(W - 48, x)), Math.max(48, Math.min(H - 48, y))];
   }
+  // 9 Oct 2026 (Peter: zoom in the split view "more intuitive and easy"). A name in the index flies the map to its
+  // subject (zoomed in, centred, lit with its ties and card); the buttons, pinch, ⌘/Ctrl + scroll, double-click and drag
+  // all zoom or move; a one-time hint says so the first time the pointer enters the map
+  const SL_MAC = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
+  function slFly(q) {
+    if (!q || q.cx == null) return;
+    if (!SL.kinds.has(q.k)) { SL.kinds.add(q.k); slKindsSync(); slEmit('kinds', Array.from(SL.kinds)); }
+    slLCam = null; clearTimeout(slLT);
+    const k = Math.max(cam.k, 2.6), wx = (V.ox + q.cx * V.K - CX - cam.x) / (SC * cam.k), wy = (V.oy + q.cy * V.K - CY - cam.y) / (SC * cam.k);
+    camT.anchor = null; camT.tau = RM ? 1 : 420; camT.k = k; camT.x = -wx * SC * k; camT.y = -wy * SC * k; clampCam(camT); kick();
+    slSelect(q, CX + camT.x + wx * SC * k, CY + camT.y + wy * SC * k);
+  }
+  let slHintT = 0;
+  function slZoomHint(msg, ms) {
+    let el = $('#sl-zhint'); if (!el) { el = document.createElement('div'); el.id = 'sl-zhint'; el.setAttribute('role', 'status'); stage.appendChild(el); }
+    el.textContent = msg; el.classList.add('is-on'); clearTimeout(slHintT); slHintT = setTimeout(() => el.classList.remove('is-on'), ms);
+  }
+  function slHintOnce() {
+    try { if (localStorage.getItem('lr-sl-zoomhint')) return; localStorage.setItem('lr-sl-zoomhint', '1'); } catch (e) { if (slHintOnce.done) return; }
+    slHintOnce.done = true;
+    slZoomHint((SL_MAC ? '\u2318 + scroll' : 'Ctrl + scroll') + ' or pinch to zoom \u00b7 drag to move \u00b7 click a name to fly to it', 3000);
+    const off = () => { clearTimeout(slHintT); slHintT = setTimeout(() => { const el = $('#sl-zhint'); if (el) el.classList.remove('is-on'); }, 600); };
+    cv.addEventListener('pointerdown', off, { once: true }); cv.addEventListener('wheel', off, { once: true, passive: true });
+  }
   function slSelect(q, x, y) {
     if (q && (q.cx == null || !SL.kinds.has(q.k))) { if (q.cx == null) q = null; else { SL.kinds.add(q.k); slKindsSync(); } }
     st.slSel = q || null; slWake();
@@ -2537,8 +2564,9 @@
   }
   function slWhy(s) {
     const w = s.W && (s.W.w.find(x => x[1]) || s.W.w[0]), wq = w && SL.by.get(w[0]); if (!w) return '';
-    if (!w[1]) return `<p class="t-m"><span class="lab">Both in</span> ${esc(w[2])}${wq ? ' &middot; with ' + esc(wq.n) : ''}</p>`;
-    return `<p class="t-m t-why">&ldquo;${esc(w[1])}&rdquo;<br><span class="lab">${esc(w[2])}${wq ? ' &middot; with ' + esc(wq.n) : ''}</span></p>`;
+    // (.t-w: one line only; the card may be redrawn while the sentence loads, which used to stack it)
+    if (!w[1]) return `<p class="t-m t-w"><span class="lab">Both in</span> ${esc(w[2])}${wq ? ' &middot; with ' + esc(wq.n) : ''}</p>`;
+    return `<p class="t-m t-why t-w">&ldquo;${esc(w[1])}&rdquo;<br><span class="lab">${esc(w[2])}${wq ? ' &middot; with ' + esc(wq.n) : ''}</span></p>`;
   }
   function enterSL(s) {
     if (st.slMode) slMode(0);
@@ -2678,6 +2706,15 @@
       const a = e.target.closest('[data-sl]'); if (!a) return; const q = SL.by.get(a.dataset.sl); if (!q) return;
       e.preventDefault(); if (q.k === 0 && q.person) select(q.person); else enterSL(q);
     });
+    // 9 Oct 2026: in the split view a name in the index flies the map to it (a second click opens its page, ⌘/Ctrl-click
+    // a new tab). Caught at the window's capture phase, ahead of the embed's link bridge, which opens every site link.
+    addEventListener('click', e => {
+      if (!slSplit() || e.button > 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const a = e.target.closest && e.target.closest('.sl-list a[data-sl]'); if (!a || !scroller.contains(a)) return;
+      const q = SL.by.get(a.dataset.sl); if (!q) return;
+      e.preventDefault(); e.stopPropagation();
+      if (st.slSel === q) slOpen(q.slug); else slFly(q);
+    }, true);
     // 8 Oct 2026 (Peter): a name in the list lights its subject on the map exactly as hovering its mark does (its
     // neighbours, its ties, the card). A mark out of view is eased in and back on leaving (not with reduced motion).
     // Leaving waits 150 ms so running down the list does not flicker; a touch is a tap, never a hover.
