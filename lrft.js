@@ -887,22 +887,23 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       });
     })();
     /* lr-subjects-tabs (8 Oct 2026, Peter, design D): on the /subjects index the middle tabs are that page's own zones
-       (01 Index, 02 Paths, 03 By kind, 04 Every subject), the way /podcast has its own; /subjects/<slug> keeps the
-       editorials tabs for now. Swapped before the bar is inserted (no flash). The tab whose zone spans the line 210px
-       under the bar is underlined, the editorials rule; a zone not on the page yet is skipped and its link stays a plain
-       anchor. */
+       (#index, #paths, #by-kind, #every; Every subject also follows #every-subject if the zone takes that id), the way
+       /podcast has its own; /subjects/<slug> keeps the editorials tabs for now. Swapped before the bar is inserted (no
+       flash). The tab whose zone spans the line 210px under the bar is underlined, the editorials rule; a zone not on
+       the page yet is skipped and its link stays a plain anchor. */
     (function(){
       if (!(/(^|\.)webflow\.io$/.test(location.hostname.toLowerCase())||/^(localhost|127\.0\.0\.1)$/.test(location.hostname))) return;
       if (location.pathname.replace(/\/+$/, '') !== '/subjects') return;
       var nv = bar.querySelector('.util nav'); if (!nv) return;
-      nv.innerHTML = [['index', 'Index'], ['paths', 'Paths'], ['by-kind', 'By kind'], ['every-subject', 'Every subject']]
-        .map(function(t){ return '<a href="#' + t[0] + '">' + t[1] + '</a>'; }).join(' ');
+      nv.innerHTML = [['index', 'Index'], ['paths', 'Paths'], ['by-kind', 'By kind'], ['every', 'Every subject', 'every-subject']]
+        .map(function(t){ return '<a href="#' + t[0] + '"' + (t[2] ? ' data-alt="' + t[2] + '"' : '') + '>' + t[1] + '</a>'; }).join(' ');
       var links = [].slice.call(nv.querySelectorAll('a')), tick = false;
       function spy(){
         tick = false;
         var line = bar.getBoundingClientRect().bottom + 210, best = -1;
         links.forEach(function(a, i){
-          var s = document.getElementById(a.getAttribute('href').slice(1));
+          var s = document.getElementById(a.getAttribute('href').slice(1)), alt = a.getAttribute('data-alt');
+          if (!s && alt && (s = document.getElementById(alt))) a.setAttribute('href', '#' + alt);   /* the zone took the other id */
           if (!s || getComputedStyle(s).display === 'none') return;
           var r = s.getBoundingClientRect(); if (r.top <= line && r.bottom > line) best = i;
         });
