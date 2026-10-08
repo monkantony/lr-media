@@ -2532,7 +2532,9 @@
       <datalist id="sl-names">${SL.rank.slice(0, 1200).map(s => `<option value="${esc(s.n)}">`).join('')}</datalist>${res}</form>`;
   }
   // the panel at rest: the Subjects index (most-mentioned first, by kind)
-  st.slTab = 0;
+  st.slTab = Math.max(0, Math.min(6, +window.LR_SL_TAB || 0));
+  // the page's #people / #works … opens the index on that kind (subjects-index.js passes it in, on load and on change)
+  window.LR_SL_TAB_SET = k => { st.slTab = k; st.slLetter = ''; if (SL.ready && !st.sel && !st.subj) renderIndex(); };
   function renderIndex() {
     if (!SL.ready) { scroller.innerHTML = '<div class="pv pv-over"><p class="lab pv-kicker">Subjects</p><h1 class="pv-title">Subjects</h1></div>'; return; }
     const by = k => SL.list.filter(s => s.k === k && !(s.k === 0 && s.slug === 'peter-bauman')).sort((a, b) => b.e - a.e || b.tot - a.tot || a.n.localeCompare(b.n));

@@ -18,6 +18,9 @@
   }
   // the frame's code and styles inlined from the same commit (GitHub's file server sends text/plain: never <script src>
   // it); the people view's engine and styles from this folder, everything else from lr-media/people
+  // #people, #works … : the index opens on that kind
+  var KINDS = { people: 0, organisations: 1, organizations: 1, works: 2, exhibitions: 3, places: 4, techniques: 5, themes: 6 };
+  function kindOf() { var h = (location.hash || '').replace(/^#(subjects=)?/, '').toLowerCase(); return h in KINDS ? KINDS[h] : null; }
   var OWN = { 'assets/views/people.js': 1, 'assets/views/people.css': 1 };
   function inlineCode(h) {
     h = h.replace(/<script src="assets\/theme\.js[^"]*"><\/script>|<link rel="stylesheet" href="assets\/theme\.css[^"]*">/g, '');
@@ -50,12 +53,14 @@
     fr.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;display:block;opacity:0;transition:opacity .5s';
     get(P_BASE, P_RAW, 'embed.html').then(inlineCode).then(function (h) {
       var head = '<base href="' + TL + '"><script>window.LR_EMBED=1;window.LR_FRAMED=true;window.LR_PEOPLE_HOME="main";window.LR_SUBJECTS_INDEX=1;' +
-        'window.LR_DATA=' + JSON.stringify(P_RAW) + ';window.LR_SL_DATA=' + JSON.stringify(RAW) + ';window.LR_PARAMS={"token":""};<\/script>';
+        'window.LR_DATA=' + JSON.stringify(P_RAW) + ';window.LR_SL_DATA=' + JSON.stringify(RAW) + ';window.LR_PARAMS={"token":""};' +
+        (kindOf() != null ? 'window.LR_SL_TAB=' + kindOf() + ';' : '') + '<\/script>';
       h = h.replace('<!--LR-EMBED-HEAD-->', head).replace(/(href|src)="assets\//g, '$1="' + P_BASE + 'assets/');
       fr.srcdoc = h;
       box.appendChild(fr);
       fr.addEventListener('load', function () { fr.style.opacity = '1'; box.classList.add('is-live'); });
     }).catch(function () {});
+    addEventListener('hashchange', function () { var k = kindOf(), w = fr.contentWindow; if (k != null && w && w.LR_SL_TAB_SET) w.LR_SL_TAB_SET(k); });
     // a person stays on this page (their constellation opens in the map); links out open as on the subject pages
     addEventListener('message', function (e) {
       if (e.source !== fr.contentWindow || !e.data) return;
