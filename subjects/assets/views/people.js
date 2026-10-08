@@ -1986,7 +1986,7 @@
     // 8 Oct 2026: any subject on the Subjects index map by slug (its mark where it is drawn now, through the
     // Time / Meaning / Kind glide); null when it has no place or its kind is switched off
     sAt: slug => { const q = typeof SL !== 'undefined' && SL.ready && SL.by.get(slug), b = stage.getBoundingClientRect(); return q && q.cx != null && SL.kinds.has(q.k) ? [Math.round(b.left + V.ox + q.cx * V.K), Math.round(b.top + V.oy + q.cy * V.K)] : null; },
-    sl: () => (typeof SL !== 'undefined' && SL.ready ? { n: SL.list.length, calm: !!st.slCalm, mode: st.slMode, tab: st.slTab, sort: st.slSort, yr: yrOf(st.yrT), path: (st.slPath || []).map(x => x.slug) } : null),
+    sl: () => (typeof SL !== 'undefined' && SL.ready ? { K: +V.K.toFixed(3), ox: Math.round(V.ox), oy: Math.round(V.oy), n: SL.list.length, calm: !!st.slCalm, mode: st.slMode, tab: st.slTab, sort: st.slSort, yr: yrOf(st.yrT), path: (st.slPath || []).map(x => x.slug) } : null),
     center: () => { const b = stage.getBoundingClientRect(); return [Math.round(b.left + V.ox), Math.round(b.top + V.oy)]; },
     state: () => ({ sel: st.sel && st.sel.tok, lens: st.lens, era: st.era, region: st.region, min: st.min, through: st.through, k: +cam.k.toFixed(2), win: win && win.sc.id, layers: layers.length, live: liveNow(), sceneOK }),
   };
@@ -2333,6 +2333,8 @@
       SL.list.forEach(s => { s.nb = s.nbi.map(i => SL.list[i] && SL.list[i].slug).filter(Boolean); });
       slArrange(j.r || []);
       SL.da = j.da || null; SL.ready = true;
+      // the page shows this frame in place of its poster once the subjects are drawn on it (two frames on)
+      requestAnimationFrame(() => requestAnimationFrame(() => { try { if (window.parent !== window) window.parent.postMessage({ lrembed: 'ready' }, '*'); } catch (e) {} }));
       if (!st.sel && !st.subj) renderIndex();
       kick();
     }).catch(() => {});
@@ -2618,7 +2620,9 @@
     const tools = $('#pp-tools');
     if (tools && !$('#pp-src')) { const d = document.createElement('div'); d.id = 'pp-src'; d.className = 'pp-src'; d.setAttribute('role', 'group'); d.setAttribute('aria-label', 'Where they are named');
       d.innerHTML = [['m', 'Timeline'], ['a', 'Editorials'], ['p', 'Podcast']].map(x => `<button class="pp-chip" type="button" data-src="${x[0]}" aria-pressed="false">${x[1]}</button>`).join(''); tools.appendChild(d); measureUI(); }
-    st.started = true; st.introT0 = now();
+    // 8 Oct 2026: the Subjects index opens on its calm frame at once (no assembly from the pupil), so the page's poster,
+    // made from that same frame, hands over without a visible change (__people.replay() still plays the assembly)
+    st.started = true; st.introT0 = SLON ? now() - 1e6 : now();
     // the window opens on a chapter's own machine, chosen by chance, unless a person is asked for
     const c = SLON ? 10 : 1 + Math.floor(Math.random() * 10), sc = SC_BY.get(CH[c - 1].scene), m0 = (sc && BY.get(sc.home)) || IX[0];   // the index opens on the scrubber's year (2025)
     const tok = S.params.token || S.params.slug || '';
