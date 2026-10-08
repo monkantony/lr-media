@@ -1385,7 +1385,9 @@
     cv.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse' && !drag) { setHover(null); } });
     cv.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse' && slSplit()) slHintOnce(); });
     cv.addEventListener('wheel', e => {
-      if (window.LR_EMBED && !e.ctrlKey && !e.metaKey) { if (slSplit()) slZoomHint(SL_MAC ? '\u2318 + scroll to zoom' : 'Ctrl + scroll to zoom', 1400); return; }
+      // 9 Oct 2026 (Peter): in the split view a plain scroll over the map zooms it, as Google Maps does (the page
+      // scrolls from anywhere else); elsewhere an embedded map leaves a plain scroll to the page
+      if (window.LR_EMBED && !e.ctrlKey && !e.metaKey && !slSplit()) return;
       e.preventDefault();
       const p = pos(e); const dy = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaY;
       zoomAt(p.x, p.y, Math.exp(-dy * (e.ctrlKey ? 0.01 : 0.0022)), e.ctrlKey ? 40 : 110);
@@ -2400,8 +2402,7 @@
   }
   // 9 Oct 2026 (Peter: zoom in the split view "more intuitive and easy"). A name in the index flies the map to its
   // subject (zoomed in, centred, lit with its ties and card); the buttons, pinch, ⌘/Ctrl + scroll, double-click and drag
-  // all zoom or move; a one-time hint says so the first time the pointer enters the map
-  const SL_MAC = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
+  // all zoom or move (a plain scroll over the map zooms it); a one-time hint says so the first time the pointer enters
   function slFly(q) {
     if (!q || q.cx == null) return;
     if (!SL.kinds.has(q.k)) { SL.kinds.add(q.k); slKindsSync(); slEmit('kinds', Array.from(SL.kinds)); }
@@ -2418,7 +2419,7 @@
   function slHintOnce() {
     try { if (localStorage.getItem('lr-sl-zoomhint')) return; localStorage.setItem('lr-sl-zoomhint', '1'); } catch (e) { if (slHintOnce.done) return; }
     slHintOnce.done = true;
-    slZoomHint((SL_MAC ? '\u2318 + scroll' : 'Ctrl + scroll') + ' or pinch to zoom \u00b7 drag to move \u00b7 click a name to fly to it', 3000);
+    slZoomHint('Scroll or pinch to zoom \u00b7 drag to move \u00b7 click a name to fly to it', 3000);
     const off = () => { clearTimeout(slHintT); slHintT = setTimeout(() => { const el = $('#sl-zhint'); if (el) el.classList.remove('is-on'); }, 600); };
     cv.addEventListener('pointerdown', off, { once: true }); cv.addEventListener('wheel', off, { once: true, passive: true });
   }
