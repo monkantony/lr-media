@@ -889,8 +889,9 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     /* lr-subjects-tabs (8 Oct 2026, Peter, design D): on the /subjects index the middle tabs are that page's own zones
        (#index, #paths, #by-kind, #every; Every subject also follows #every-subject if the zone takes that id), the way
        /podcast has its own; /subjects/<slug> keeps the editorials tabs for now. Swapped before the bar is inserted (no
-       flash). The tab whose zone spans the line 210px under the bar is underlined, the editorials rule; a zone not on
-       the page yet is skipped and its link stays a plain anchor. */
+       flash). Underlined: the last zone whose top has crossed the line 210px under the bar (the editorials line; the
+       short Paths zone and the gaps between zones need "last crossed" rather than "spans"); a zone not on the page yet
+       is skipped and its link stays a plain anchor. */
     (function(){
       if (!(/(^|\.)webflow\.io$/.test(location.hostname.toLowerCase())||/^(localhost|127\.0\.0\.1)$/.test(location.hostname))) return;
       if (location.pathname.replace(/\/+$/, '') !== '/subjects') return;
@@ -900,12 +901,12 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       var links = [].slice.call(nv.querySelectorAll('a')), tick = false;
       function spy(){
         tick = false;
-        var line = bar.getBoundingClientRect().bottom + 210, best = -1;
+        var top = bar.getBoundingClientRect().bottom, line = top + 210, best = -1;
         links.forEach(function(a, i){
           var s = document.getElementById(a.getAttribute('href').slice(1)), alt = a.getAttribute('data-alt');
           if (!s && alt && (s = document.getElementById(alt))) a.setAttribute('href', '#' + alt);   /* the zone took the other id */
           if (!s || getComputedStyle(s).display === 'none') return;
-          var r = s.getBoundingClientRect(); if (r.top <= line && r.bottom > line) best = i;
+          var r = s.getBoundingClientRect(); if (r.top <= line && r.bottom > top) best = i;   /* the last zone to cross the line, so a short zone (Paths) and the gaps count */
         });
         links.forEach(function(a, i){ var on = i === best; if (a.classList.contains('on') !== on) a.classList.toggle('on', on); });
       }
