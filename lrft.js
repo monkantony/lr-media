@@ -900,7 +900,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       });
     })();
     /* lr-subjects-tabs (8 Oct 2026, Peter, design D): on the /subjects index the middle tabs are that page's own zones
-       (#index, #paths, #by-kind, #every; Every subject also follows #every-subject if the zone takes that id), the way
+       (#index, #paths, #by-kind, #every-subject; Every subject also follows #every, the zone's first id), the way
        /podcast has its own; /subjects/<slug> keeps the editorials tabs for now. Swapped before the bar is inserted (no
        flash). Underlined: the last zone whose top has crossed the line 210px under the bar (the editorials line; the
        short Paths zone and the gaps between zones need "last crossed" rather than "spans"); a zone not on the page yet
@@ -909,9 +909,13 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       if (!(/(^|\.)webflow\.io$/.test(location.hostname.toLowerCase())||/^(localhost|127\.0\.0\.1)$/.test(location.hostname))) return;
       if (location.pathname.replace(/\/+$/, '') !== '/subjects') return;
       var nv = bar.querySelector('.util nav'); if (!nv) return;
-      nv.innerHTML = [['index', 'Index'], ['paths', 'Paths'], ['by-kind', 'By kind'], ['every', 'Every subject', 'every-subject']]
+      nv.innerHTML = [['index', 'Index'], ['paths', 'Paths'], ['by-kind', 'By kind'], ['every-subject', 'Every subject', 'every']]
         .map(function(t){ return '<a href="#' + t[0] + '"' + (t[2] ? ' data-alt="' + t[2] + '"' : '') + '>' + t[1] + '</a>'; }).join(' ');
       var links = [].slice.call(nv.querySelectorAll('a')), tick = false;
+      nv.addEventListener('click', function(e){   /* a tab clicked before the first scroll still finds a zone under its other id */
+        var a = e.target.closest('a[data-alt]'); if (!a) return;
+        if (!document.getElementById(a.getAttribute('href').slice(1)) && document.getElementById(a.getAttribute('data-alt'))) a.setAttribute('href', '#' + a.getAttribute('data-alt'));
+      });
       function spy(){
         tick = false;
         var top = bar.getBoundingClientRect().bottom, line = top + 210, best = -1;
