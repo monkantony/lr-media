@@ -869,10 +869,10 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
         .map(function(t){ return '<a href="' + base + '#' + t[0] + '">' + t[1] + '</a>'; }).join(' ');
     })();
     /* lr-subjects-nav (8 Oct 2026, Peter): Subjects is the fourth site, a peer of Editorials, Podcast and Timeline.
-       Current on /subjects and /subjects/*; the editorials section tabs drop their own Subjects tab. STAGING ONLY until
-       /subjects launches on www (build_footer_embed.py SUBJECTS_NAV; flip the gate below to true at the launch). */
+       Current on /subjects and /subjects/*; the editorials section tabs drop their own Subjects tab. LIVE (launched with
+       /subjects on www, 8 Oct 2026; build_footer_embed.py SUBJECTS_NAV = "live"). */
     (function(){
-      if (!(/(^|\.)webflow\.io$/.test(location.hostname.toLowerCase())||/^(localhost|127\.0\.0\.1)$/.test(location.hostname))) return;
+      if (!(true)) return;   /* LIVE since the /subjects launch, 8 Oct 2026 */
       var props = bar.querySelector('.tb-props'); if (!props) return;
       var dup = bar.querySelector('.util nav a[href$="#subjects"]'); if (dup) dup.remove();
       var sub = /^\/subjects(\/|$)/.test(location.pathname);
