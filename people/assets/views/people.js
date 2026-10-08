@@ -280,6 +280,7 @@
   function runLayout() {
     if (LAYOUT && LAYOUT.n === P.length && P.every(p => LAYOUT.xy[p.k])) { P.forEach(p => { const v = LAYOUT.xy[p.k]; p.x = v[0]; p.y = v[1]; p.r = Math.hypot(p.x, p.y); p.a = Math.atan2(p.x, -p.y); }); return; }
     const N = P.length, rnd = rng(1083);
+    const PIN = new Uint8Array(N), PX = new Float64Array(N), PY = new Float64Array(N);
     const X = new Float64Array(N), Y = new Float64Array(N), VX = new Float64Array(N), VY = new Float64Array(N);
     const RT = new Float64Array(N), LO = new Float64Array(N), HI = new Float64Array(N), RAD = new Float64Array(N), AC = new Float64Array(N), AH = new Float64Array(N), DEG = new Float64Array(N);
     P.forEach((p, i) => {
@@ -290,13 +291,14 @@
       AC[i] = p.sect.ac; AH[i] = (p.sect.a1 - p.sect.a0) / 2;
       const a = p.sect.a0 + (p.sect.a1 - p.sect.a0) * (0.08 + 0.84 * rnd());
       X[i] = RT[i] * Math.sin(a); Y[i] = -RT[i] * Math.cos(a);
+      { const sd = window.__LR_LAYOUT_SEED && window.__LR_LAYOUT_SEED[p.k]; if (sd) { X[i] = PX[i] = sd[0]; Y[i] = PY[i] = sd[1]; PIN[i] = 1; } }
       DEG[i] = p.co.size || 1;
     });
     const LI = [], LJ = [], LS = [];
     P.forEach(p => p.coW.forEach((w, q) => { if (q.i > p.i) { LI.push(p.i); LJ.push(q.i); LS.push(Math.min(1, w * 1.4 / Math.min(DEG[p.i], DEG[q.i]))); } }));
     const L = LI.length;
     const CELL = 0.032, G = Math.ceil(2.2 / CELL), heads = new Int32Array(G * G), next = new Int32Array(N);
-    const ITER = 320;
+    const SEEDED = !!window.__LR_LAYOUT_SEED, ITER = SEEDED ? (PIN.every(Boolean) ? 0 : 160) : 320;
     for (let it = 0; it < ITER; it++) {
       const alpha = Math.max(0.03, Math.pow(1 - it / ITER, 1.6));
       for (let l = 0; l < L; l++) {
@@ -340,6 +342,7 @@
       }
       // the year slot stays empty
       for (let i = 0; i < N; i++) { const lim = SLOT + RAD[i] + 0.003; if (Y[i] > 0 && Math.abs(X[i]) < lim) { X[i] = (X[i] < 0 ? -1 : 1) * lim; VX[i] = 0; } }
+      if (SEEDED) for (let i = 0; i < N; i++) if (PIN[i]) { X[i] = PX[i]; Y[i] = PY[i]; VX[i] = 0; VY[i] = 0; }
     }
     P.forEach((p, i) => { p.x = X[i]; p.y = Y[i]; p.r = Math.hypot(X[i], Y[i]); p.a = Math.atan2(X[i], -Y[i]); });
     window.__LR_LAYOUT_OUT = { n: P.length, xy: Object.fromEntries(P.map(p => [p.k, [+p.x.toFixed(5), +p.y.toFixed(5)]])) };
