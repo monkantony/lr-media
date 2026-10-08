@@ -560,19 +560,20 @@ button.pv-chip.is-tag:hover{border-style:solid}
 .pp.sl-hero #pp-key .pp-key-chip::after{content:" \2197"}
 @media (max-width:860px){
   .pp.sl-hero{bottom:0}
-  .pp.sl-hero .pp-stage::before{background:linear-gradient(180deg,#011015 0,#011015 142px,rgba(1,16,21,0) 175px,rgba(1,16,21,0) calc(100% - 144px),#011015 calc(100% - 96px))}
-  .pp.sl-hero .pp-stage::after{left:20px;right:20px;bottom:56px}
+  .pp.sl-hero .pp-stage::before{background:linear-gradient(180deg,#011015 0,#011015 142px,rgba(1,16,21,0) 175px,rgba(1,16,21,0) calc(100% - 176px),#011015 calc(100% - 128px))}
+  .pp.sl-hero .pp-stage::after{left:20px;right:20px;bottom:88px}
   .pp.sl-hero #pp-zoom,.pp.sl-hero #pp-key,.pp.sl-hero .sl-hk{display:none!important}
   /* search stays in reach on a phone: under the dek, right-hand side of the masthead band */
   .pp.sl-hero .pp-find{top:96px;right:20px;width:min(46vw,190px)}
   .pp.sl-hero #pp-results{width:calc(100vw - 40px);max-width:none}
-  .pp.sl-hero #sl-kinds{left:20px;right:20px;bottom:66px;max-width:none;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:6px}
+  .pp.sl-hero #sl-kinds{left:20px;right:20px;bottom:98px;max-width:none;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:6px}
   .pp.sl-hero #sl-kinds .pp-chip{height:26px;padding:0 9px;font-size:9.5px;flex:none}
-  .pp.sl-hero #sl-mode{left:20px;bottom:14px;gap:4px}
+  .pp.sl-hero #sl-mode{left:20px;bottom:48px;gap:4px}
   .pp.sl-hero #sl-mode .lab{display:none}
   .pp.sl-hero #sl-mode .pp-chip{height:26px;padding:0 8px;font-size:9px;letter-spacing:.1em}
-  .pp.sl-hero .sl-time{left:auto;right:20px;transform:none;width:calc(100% - 244px);min-width:110px;bottom:14px;gap:6px}
-  .pp.sl-hero .sl-time .lab{font-size:0}.pp.sl-hero .sl-time .lab::before{content:"By";font-size:9.5px}
+  /* 9 Oct 2026: the year scrubber gets its own full-width row on a phone (beside the mode chips the slider was ~40px) */
+  .pp.sl-hero .sl-time{left:20px;right:20px;transform:none;width:auto;min-width:0;bottom:14px;gap:10px}
+  .pp.sl-hero .sl-time .lab{font-size:9.5px}
   .pp.sl-hero .sl-time b{font-size:14px}
 }
 .pp.sl-hero .pp-find{height:auto;padding:0;background:transparent;border:0;border-radius:0;-webkit-backdrop-filter:none;backdrop-filter:none}

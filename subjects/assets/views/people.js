@@ -54,6 +54,9 @@
 
   // ── DOM ──────────────────────────────────────────────────────────────────
   const root = $('#pp'), stage = $('#pp-stage'), cv = $('#pp-sky'), ctx = cv.getContext('2d');
+  // 9 Oct 2026: an eased radius can dip below 0 for a frame (arc() then throws); clamp it for every arc on our canvases
+  const arcSafe = c => { const A = c.arc; c.arc = function (x, y, r, s, e, cc) { return A.call(this, x, y, r > 0 ? r : 0, s, e, cc); }; return c; };
+  arcSafe(ctx);
   { const arc0 = ctx.arc.bind(ctx); ctx.arc = (x, y, r, a, b, ccw) => arc0(x, y, r > 0 ? r : 0, a, b, ccw); }
   const pupil = $('#pp-pupil'), ground = $('#pp-ground'), tip = $('#pp-tip'), panel = $('#pp-panel'), scroller = $('#pp-scroll');
   const qIn = $('#pp-q'), qRes = $('#pp-results'), filterEl = $('#pp-filter'), keyEl = $('#pp-key');
@@ -527,7 +530,7 @@
     if (window.LR_SL_HERO && isPhone()) {
       // 9 Oct 2026 (direction D): the Subjects page hero on a phone: no sheet; the chart sits between the masthead and the controls
       sheetTop = 0; root.style.removeProperty('--sheet-top');
-      const top = 150, bot = H - 104;
+      const top = 150, bot = H - 136;
       SC = Math.min(W / 2 - 4, (bot - top) / 2) / 1.075; CX = W / 2; CY = (top + bot) / 2;
     } else if (isPhone()) {
       // the sheet's handle always stays on screen, even on a phone held sideways
@@ -612,6 +615,7 @@
   // ── drawing ──────────────────────────────────────────────────────────────
   // g is the context being drawn: the cached static layer (ground, rings, rim, web, links, stars) or the screen (overlays)
   const buf = document.createElement('canvas'), bctx = buf.getContext('2d');
+  arcSafe(bctx);
   let g = ctx, bufKey = '';
   const charCache = new Map();
   function charW(ch) { const k = g.font + '|' + ch; let w = charCache.get(k); if (w === undefined) { w = g.measureText(ch).width; charCache.set(k, w); } return w; }
