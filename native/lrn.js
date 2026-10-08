@@ -171,7 +171,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261008104333";
+var LRW_BUILD = "20261008105456";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -1951,6 +1951,7 @@ try{
   grid.addEventListener('click', function(e){
     var more = e.target && e.target.closest ? e.target.closest('.sx-more') : null;
     if (!more || !grid.contains(more)) return;
+    if (more.tagName === 'A' && /^\//.test(more.getAttribute('href') || '')) return;   /* native: 'All people' is a real link to /subjects#people */
     var t = more.getAttribute('data-t');
     if (t) location.hash = '#subjects=' + t;
   });

@@ -275,6 +275,9 @@ js = patch(js, "<span class=\"gg-sub-c\">' + n + ' editorial' + (n === 1 ? '' : 
 js = patch(js, "var slug = el.getAttribute('data-slug') || '', m = window.__lrwMedia, src = (m && slug && m[slug]) || '';",
            "var slug = el.getAttribute('data-slug') || '', m = window.__lrwMedia, src = (m && slug && m[slug]) || '';\n          if (!m) return;   /* lrn-native M4: no media map yet: keep the painted image; lrw:media fills it (no has-img flip, no shift) */",
            'native quote image waits for the media map')
+js = patch(js, "if (!more || !grid.contains(more)) return;",
+           "if (!more || !grid.contains(more)) return;\n    if (more.tagName === 'A' && /^\\//.test(more.getAttribute('href') || '')) return;   /* native: 'All people' is a real link to /subjects#people */",
+           'native Subjects index links')
 js = r"""window.__lrnHash0 = location.hash;
 /* lrn-native M4: subject buttons the bundle draws (Timeline connections "Connected by" + its subject chips) become real
    <a href="/subjects/slug"> links once the subject map can name the page; a subject without a page keeps its button. */
