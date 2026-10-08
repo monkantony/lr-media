@@ -538,9 +538,6 @@
     } else {
       sheetTop = 0; root.style.removeProperty('--sheet-top');
       SC = Math.min(W / 2 - 18, H / 2 - 20) / 1.08; CX = W / 2; CY = H / 2 + 4;
-      // the Subjects page hero: the chart sits right of centre and a little low, so SUBJECTS reads clear of its dense
-      // rings (as the Window's title does over its image); the page's poster uses the same numbers
-      if (window.LR_SL_HERO) { SC *= 0.94; CX = W / 2 + Math.min(0.08 * W, 160); CY = H / 2 + 4 + 0.06 * H; }
     }
     starScale = clamp(SC / NOMINAL, 0.55, 1.25);
     labelScale = clamp(0.72 + 0.3 * starScale, 0.84, 1.05);
