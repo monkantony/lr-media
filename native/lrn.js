@@ -171,7 +171,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261008103324";
+var LRW_BUILD = "20261008104333";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -2274,6 +2274,7 @@ try{
         try {
           var box = el && el.querySelector('.edq-img'); if (!box) return;
           var slug = el.getAttribute('data-slug') || '', m = window.__lrwMedia, src = (m && slug && m[slug]) || '';
+          if (!m) return;   /* lrn-native M4: no media map yet: keep the painted image; lrw:media fills it (no has-img flip, no shift) */
           box.innerHTML = src ? '<img src="' + String(src).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }) + '" alt="" loading="lazy">' : '';
           el.classList.toggle('has-img', !!src);
         } catch (_i) {}

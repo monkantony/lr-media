@@ -272,6 +272,9 @@ js = patch(js, "'Connected by <button type=\"button\" class=\"sx-item gg-viab\" 
 js = patch(js, "<span class=\"gg-sub-c\">' + n + ' editorial' + (n === 1 ? '' : 's') + '</span></button>'; }).join('');",
            "<span class=\"gg-sub-c\">' + n + ' editorial' + (n === 1 ? '' : 's') + '</span></button>'; }).join(''); if (window.__lrnSubLinks) window.__lrnSubLinks(subs);",
            'native Timeline connections subjects')
+js = patch(js, "var slug = el.getAttribute('data-slug') || '', m = window.__lrwMedia, src = (m && slug && m[slug]) || '';",
+           "var slug = el.getAttribute('data-slug') || '', m = window.__lrwMedia, src = (m && slug && m[slug]) || '';\n          if (!m) return;   /* lrn-native M4: no media map yet: keep the painted image; lrw:media fills it (no has-img flip, no shift) */",
+           'native quote image waits for the media map')
 js = r"""window.__lrnHash0 = location.hash;
 /* lrn-native M4: subject buttons the bundle draws (Timeline connections "Connected by" + its subject chips) become real
    <a href="/subjects/slug"> links once the subject map can name the page; a subject without a page keeps its button. */
