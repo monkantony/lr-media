@@ -171,7 +171,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261008105456";
+var LRW_BUILD = "20261008111624";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -1282,6 +1282,7 @@ try{
   /* a card, or one name inside a byline (a span inside the piece's own anchor: stop the anchor) */
   document.addEventListener('click', function(e){
     var cb = e.target.closest('a.cb, [data-w]');
+    if (cb && cb.tagName === 'A' && /^\/subjects\//.test(cb.getAttribute('href') || '')) return;   /* a card with its subject page: follow it */
     if (cb) {
       e.preventDefault(); e.stopPropagation();
       goWriter(cb.dataset.w || cb.querySelector('.cb-name').textContent.trim().toLowerCase());
