@@ -106,7 +106,7 @@
     var fold = function (n) { return n.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/^(the|a|an) /, ''); };
     var L0 = function (n) { var c = fold(n).charAt(0); return /[a-z]/.test(c) ? c.toUpperCase() : '#'; };
     var href = function (s) { return '/subjects/' + encodeURIComponent(s.slug); };
-    var mentions = function (s) { return s.e || ''; };
+    var mentions = function (s) { return s.tot || ''; };   // every time Le Random names it, as the register shows
     var st = document.createElement('style'); st.textContent = SX_CSS; document.head.appendChild(st);
     var zone = function (id, no, h, more, body) { return '<section class="sx-zone" id="' + id + '"><div class="sx-zh"><span class="sx-no">' + no + '</span><div class="sx-x"><h2>' + h + '</h2><span class="sx-more">' + more + '</span></div></div>' + body + '</section>'; };
     var row = function (s, n, d) { return '<a class="sx-row" href="' + href(s) + '" data-sl="' + esc(s.slug) + '"><span class="n">' + (n || '') + '</span><span class="t">' + esc(s.n) + '</span><span class="d">' + (d || '') + '</span></a>'; };
@@ -123,7 +123,7 @@
     var pool = function (k, all) { return L.filter(function (s) { return inK(s, k) && (all || IX.yr == null || s.yr == null || s.yr <= IX.yr); }); };
     var dkey = function (k) { return k instanceof Set ? Array.from(k).sort().join(',') : String(k); };
     // Random weighs a subject by the count its row shows, at the map's one steepness ("w"; 9 Oct 2026, Peter)
-    var deal = function (k) { var A = DA.w || (typeof k === 'number' ? (DA[k] || 1.2) : (DA.o || 1.3)); return pool(k).filter(function (s) { return s.slug !== 'peter-bauman'; }).map(function (s) { return [Math.log(Math.random()) / Math.pow(DA.w ? Math.max(s.e || 0, 1) : Math.max(s.tot, 1), A), s]; }).sort(function (a, b) { return b[0] - a[0]; }).map(function (x) { return x[1]; }); };
+    var deal = function (k) { var A = DA.w || (typeof k === 'number' ? (DA[k] || 1.2) : (DA.o || 1.3)); return pool(k).filter(function (s) { return s.slug !== 'peter-bauman'; }).map(function (s) { return [Math.log(Math.random()) / Math.pow(Math.max(s.tot || 0, 1), A), s]; }).sort(function (a, b) { return b[0] - a[0]; }).map(function (x) { return x[1]; }); };
     var az = function (k, all) { return pool(k, all).slice().sort(function (a, b) { return fold(a.n).localeCompare(fold(b.n)) || a.n.localeCompare(b.n); }); };
     function ixRows() {
       var key = dkey(IX.k) + '|' + IX.yr, all = IX.sort === 'az' ? az(IX.k) : (IX.deal[key] || (IX.deal[key] = deal(IX.k))), rows = all.slice(0, IX.shown);

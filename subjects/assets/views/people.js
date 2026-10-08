@@ -2764,9 +2764,10 @@
   // per-kind exponent), so the most written-about are much more likely near the top; a filter change keeps the order
   function slSplitPool() { const Y = st.yrT >= 0.999 ? null : yrOf(st.yrT); return SL.list.filter(s => SL.kinds.has(s.k) && s.slug !== 'peter-bauman' && (Y == null || s.yr == null || s.yr <= Y)); }
   function slSplitKeys() { const K = new Map(); SL.list.forEach(s => K.set(s.slug, Math.log(Math.random()) / Math.pow(slW8(s), slA(s.k)))); return K; }
-  // 9 Oct 2026 (Peter): a Random list weighs each subject by the count its row shows (editorials naming it), at one
-  // steepness for every list ("w" in the data: about 2/3 of the first 20 rows from the 150 most-shown subjects)
-  function slW8(s) { return SL.da && SL.da.w ? Math.max(s.e || 0, 1) : Math.max(s.tot, 1); }
+  // 9 Oct 2026 (Peter): a Random list weighs each subject by the count its row shows (every time Le Random names it:
+  // editorials, episodes and Timeline moments), at one steepness for every list ("w" in the data: about 7/10 of the first
+  // 20 rows from the 150 most-named subjects)
+  function slW8(s) { return Math.max(s.tot || 0, 1); }
   function slA(k) { return (SL.da && (SL.da.w || SL.da[k])) || 1.2; }
   function renderIndex() {
     if (!SL.ready) { scroller.innerHTML = '<div class="pv pv-over"><p class="lab pv-kicker">Subjects</p><h1 class="pv-title">Subjects</h1></div>'; return; }
@@ -2789,7 +2790,7 @@
       <div class="pv-chips sl-tabs">${order.map(k => `<button class="pv-chip" type="button" data-sltab="${k}" aria-pressed="${SPL ? SL.kinds.has(k) : st.slTab === k}">${SLK_NAME[k]} <small>${fmt(cnt(k))}</small></button>`).join('')}</div>
       <div class="sl-sort" role="group" aria-label="Order"><button type="button" data-slsort="rand" aria-pressed="${st.slSort === 'rand'}">Random</button><button type="button" data-slsort="az" aria-pressed="${st.slSort === 'az'}">A&ndash;Z</button>${st.slSort === 'rand' ? '<button type="button" class="sl-shuf" data-slshuf>Shuffle</button>' : `<span class="lab sl-pos">${fmt(from)}&ndash;${fmt(to)} of ${fmt(az.length)}</span>`}</div>
       <div class="sl-az" role="group" aria-label="By letter">${'#ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(c => `<button type="button" data-slaz="${c}"${letters.has(c) ? '' : ' disabled'}>${c}</button>`).join('')}</div>
-      <ol class="sl-list">${rows.map(s => `<li><a href="${LRWEB}/subjects/${esc(s.slug)}" data-sl="${esc(s.slug)}"><span class="nm">${esc(s.n)}</span><span class="dots"></span><span class="c">${s.e || ''}</span></a></li>`).join('')}</ol>
+      <ol class="sl-list">${rows.map(s => `<li><a href="${LRWEB}/subjects/${esc(s.slug)}" data-sl="${esc(s.slug)}"><span class="nm">${esc(s.n)}</span><span class="dots"></span><span class="c">${s.tot || ''}</span></a></li>`).join('')}</ol>
       ${st.slSort === 'az' ? (az.length > SL_ROWS ? `<p class="sl-more sl-pager"><button type="button" data-slpg="-1"${st.slOff ? '' : ' disabled'}>&larr; Previous</button><button type="button" data-slpg="1"${st.slOff + SL_ROWS < az.length ? '' : ' disabled'}>Next &rarr;</button></p>` : '')
         : `<p class="sl-more"><button type="button" data-slsort="az">All ${fmt(SPL ? az.length : cnt(st.slTab))} ${SPL ? 'subjects' : name} A&ndash;Z &rarr;</button></p>`}
     </div>`;
