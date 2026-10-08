@@ -2126,6 +2126,7 @@
     const edges = Array.from(ew.values()).sort((x, y) => y.w - x.w).slice(0, 48).map(e => { const c = ctrl(e.a.x, e.a.y, e.b.x, e.b.y); return Object.assign(e, { cx: c[0], cy: c[1] }); });
     const docs = docsOfDef(def);
     st.subj = { def, ms, cnt, ps: ms.length ? new Set(cnt.keys()) : null, edges, stars: top.slice().sort((a, b) => a.cnt - b.cnt), docs, t0: now() };
+    if (SLON && def.slug && SL.ready) st.subj.sl = SL.by.get(def.slug) || null;
     st.sel = null; life = null; st.selT0 = now(); st.hoverMoment = null; st.hoverPerson = null;
     document.title = `${def.n} · ${TITLE}`;
     applyFilters();
@@ -2231,6 +2232,7 @@
       ${d.b ? `<p class="pv-bio">${esc(d.b)}</p>` : ''}
       <p class="pv-stats">${stats.join(' ')}</p>
       ${stripOf(ms)}
+      ${sj.sl ? slNearHTML(sj.sl) : ''}
       ${d.v ? '<section class="pv-sec" id="pv-onview" hidden></section>' : ''}
       ${A.length ? `<section class="pv-sec" id="pv-aeds"><h2 class="lab">In the editorials <small>${fmt(A.length)}</small></h2>${moreList(A, edRow, 6)}</section>` : ''}
       ${Pd.length ? `<section class="pv-sec" id="pv-apods"><h2 class="lab">On the podcast <small>${fmt(Pd.length)}</small></h2>${moreList(Pd, podRow, 4)}</section>` : ''}
@@ -2247,6 +2249,19 @@
     </div>`;
     finishPanel();
     if (d.v) onView(d);
+  }
+  // its six nearest subjects by shared pages, each with the archive sentence naming both (or the page they share);
+  // any filled in from the embedding say so
+  function slNearHTML(q) {
+    const nb = q.nb.map(k => SL.by.get(k)).filter(Boolean); if (!nb.length) return '';
+    if (!q.W) slW(q.slug).then(w => { q.W = w; const el = document.getElementById('pv-near'); if (el && st.subj && st.subj.sl === q) el.outerHTML = slNearHTML(q); });
+    const why = (n, i) => {
+      if (i >= q.nk) return '<p class="nr-w"><span class="lab">Related by meaning</span></p>';
+      const w = q.W && q.W.w.find(x => x[0] === n.slug); if (!w) return '';
+      return w[1] ? `<p class="nr-w">&ldquo;${esc(w[1])}&rdquo; <span class="lab">${esc(w[2])}</span></p>` : `<p class="nr-w"><span class="lab">Both in</span> ${esc(w[2])}</p>`;
+    };
+    return `<section class="pv-sec" id="pv-near"><h2 class="lab">Nearest <small>${nb.length}</small></h2><ol class="pv-near">${nb.map((n, i) =>
+      `<li><a href="${LRWEB}/subjects/${esc(n.slug)}" data-sl="${esc(n.slug)}"><i style="background:${SLK_HEX[n.k] || '#EFE9D8'}"></i><span class="nm">${esc(n.n)}</span><span class="lab">${SLK_ONE[n.k]}</span></a>${why(n, i)}</li>`).join('')}</ol></section>`;
   }
   function renderDoc() {
     const sj = st.subj; if (!sj || !sj.doc) return;
@@ -2357,6 +2372,7 @@
       SL.list.forEach(s => { s.nb = s.nbi.map(i => SL.list[i] && SL.list[i].slug).filter(Boolean); });
       slArrange(j.r || []);
       SL.da = j.da || null; SL.ready = true;
+      if (st.subj && !st.subj.doc && st.subj.def.slug && !st.subj.sl) { st.subj.sl = SL.by.get(st.subj.def.slug) || null; if (st.subj.sl) renderSubject(); }
       // the page shows this frame in place of its poster once the subjects are drawn on it (two frames on)
       requestAnimationFrame(() => requestAnimationFrame(() => { try { if (window.parent !== window) window.parent.postMessage({ lrembed: 'ready' }, '*'); } catch (e) {} }));
       if (!st.sel && !st.subj) renderIndex();
@@ -2381,14 +2397,14 @@
   function drawSL(K, ox, oy, fade) {
     if (!SL.ready || st.thP > 0) return;
     slStep();
-    const hs = st.hover && st.hover.type === 'sl' ? st.hover.s : null;
+    const hs = st.hover && st.hover.type === 'sl' ? st.hover.s : null, F = slFocus();
     if (slDim > 0.01) { g.globalAlpha = 0.9 * slDim; g.fillStyle = INK; g.fillRect(0, 0, W, H); g.globalAlpha = 1; }
     SL.list.forEach(s => {
       if (s.x == null || !SL.kinds.has(s.k)) return;
       if (s.k === 0) { if (slDim < 0.02) return; const x = ox + s.cx * K, y = oy + s.cy * K; if (x < -10 || y < -10 || x > W + 10 || y > H + 10) return;
         g.globalAlpha = fade * slDim * yrA(s.yr) * 0.9; g.fillStyle = '#EFE9D8'; g.beginPath(); g.arc(x, y, slSize(s) * 0.8, 0, TAU); g.fill(); return; }
       const x = ox + s.cx * K, y = oy + s.cy * K; if (x < -10 || y < -10 || x > W + 10 || y > H + 10) return;
-      const sz = slSize(s), a = yrA(s.yr) * (st.era && s.era && s.era !== st.era ? 0.15 : 1) * (st.sel || st.subj ? 0.25 : 1) * (st.slCalm && s !== hs ? 0.3 : 1);
+      const sz = slSize(s), a = yrA(s.yr) * (st.era && s.era && s.era !== st.era ? 0.15 : 1) * (st.sel || st.subj ? (F && F.has(s) ? 1 : 0.25) : 1) * (st.slCalm && s !== hs ? 0.3 : 1);
       g.globalAlpha = fade * a * (s === hs ? 1 : 0.85);
       const c = SLK_HEX[s.k];
       if (s.k === 6) { g.strokeStyle = c; g.lineWidth = 1.4; slShape(x, y, sz, s.k); g.stroke(); }
@@ -2396,13 +2412,8 @@
       else { g.fillStyle = c; g.strokeStyle = INK; g.lineWidth = 1; slShape(x, y, sz, s.k); g.fill(); g.stroke(); }
     });
     if (slDim > 0.01) slFrame(K, ox, oy, fade);
-    if (hs) {                                          // its nearest subjects in meaning
-      const x = ox + hs.cx * K, y = oy + hs.cy * K; g.globalAlpha = fade * 0.95; g.lineCap = 'round';
-      g.beginPath(); hs.nb.forEach(k => { const q = SL.by.get(k); if (!q || q.x == null) return; g.moveTo(x, y); g.lineTo(ox + q.cx * K, oy + q.cy * K); });
-      g.strokeStyle = 'rgba(1,16,21,.85)'; g.lineWidth = 2.8; g.stroke(); g.strokeStyle = 'rgba(252,251,247,.85)'; g.lineWidth = 1; g.stroke();
-      hs.nb.forEach(k => { const q = SL.by.get(k); if (!q || q.x == null) return; g.fillStyle = '#FCFBF7'; g.beginPath(); g.arc(ox + q.cx * K, oy + q.cy * K, 2.6, 0, TAU); g.fill(); });
-      g.lineCap = 'butt'; g.strokeStyle = '#FCFBF7'; g.lineWidth = 1.2; g.beginPath(); g.arc(x, y, slSize(hs) * 2.4, 0, TAU); g.stroke();
-    }
+    if (F) slRays(st.subj.sl, K, ox, oy, fade);      // a subject page: its subject and its nearest, always drawn
+    if (hs && (!F || hs !== st.subj.sl)) slRays(hs, K, ox, oy, fade);
     // the scrubber's edge: the ring of the year it stands on
     if (st.yrT < 0.999 && st.slMode !== 1) {
       const t = st.yrT * 10, c = Math.min(10, Math.floor(t) + 1), f = t - (c - 1), r = (ringIn[c] + (ringOut[c] - ringIn[c]) * f) * K;
@@ -2410,10 +2421,24 @@
     }
     g.globalAlpha = 1;
   }
+  // 9 Oct 2026 (option A): on a subject's own page the map holds that subject and its six nearest lit
+  function slFocus() { const q = SLON && st.subj && st.subj.sl; if (!q) return null; if (!q.F) q.F = new Set([q].concat(q.nb.map(k => SL.by.get(k)).filter(Boolean))); return q.F; }
+  function slRays(hs, K, ox, oy, fade) {             // a subject's lines to its nearest
+    {
+      const x = ox + hs.cx * K, y = oy + hs.cy * K; g.globalAlpha = fade * 0.95; g.lineCap = 'round';
+      g.beginPath(); hs.nb.forEach(k => { const q = SL.by.get(k); if (!q || q.x == null) return; g.moveTo(x, y); g.lineTo(ox + q.cx * K, oy + q.cy * K); });
+      g.strokeStyle = 'rgba(1,16,21,.85)'; g.lineWidth = 2.8; g.stroke(); g.strokeStyle = 'rgba(252,251,247,.85)'; g.lineWidth = 1; g.stroke();
+      hs.nb.forEach(k => { const q = SL.by.get(k); if (!q || q.x == null) return; g.fillStyle = '#FCFBF7'; g.beginPath(); g.arc(ox + q.cx * K, oy + q.cy * K, 2.6, 0, TAU); g.fill(); });
+      g.lineCap = 'butt'; g.strokeStyle = '#FCFBF7'; g.lineWidth = 1.2; g.beginPath(); g.arc(x, y, slSize(hs) * 2.4, 0, TAU); g.stroke();
+    }
+    g.globalAlpha = 1;
+  }
   function hitSL(x, y, touch) {
-    if (!SL.ready || st.sel || st.subj) return null;
+    const F = slFocus();
+    if (!SL.ready || st.sel || (st.subj && !F)) return null;
     const K = V.K, ox = V.ox, oy = V.oy; let best = null, bd = Infinity;
     SL.list.forEach(s => {
+      if (F && !F.has(s)) return;
       if ((s.k === 0 && slDim < 0.5) || s.x == null || !SL.kinds.has(s.k) || yrA(s.yr) < 1) return;
       const rr = slSize(s) * 1.3 + (touch ? 8 : 3), dx = ox + s.cx * K - x, dy = oy + s.cy * K - y, d2 = dx * dx + dy * dy;
       // nearest to the pointer; within a pixel of each other, a person first, then the more mentioned
@@ -2431,7 +2456,7 @@
       ${w ? slWhy(s) : ''}<p class="t-a">${s.k === 0 ? 'Click for their constellation' : 'Click to open it on the map'}</p>`;
   }
   function slWhy(s) {
-    const w = s.W && s.W.w[0], wq = w && SL.by.get(w[0]); if (!w) return '';
+    const w = s.W && (s.W.w.find(x => x[1]) || s.W.w[0]), wq = w && SL.by.get(w[0]); if (!w) return '';
     if (!w[1]) return `<p class="t-m"><span class="lab">Both in</span> ${esc(w[2])}${wq ? ' &middot; with ' + esc(wq.n) : ''}</p>`;
     return `<p class="t-m t-why">&ldquo;${esc(w[1])}&rdquo;<br><span class="lab">${esc(w[2])}${wq ? ' &middot; with ' + esc(wq.n) : ''}</span></p>`;
   }
@@ -2643,7 +2668,7 @@
 
   function start() {
     window.LR_SUBJECT = def => enterSubject(def);
-    loadDocs(); if (SLON) { root.classList.add('sl-on'); loadSL(); slTools(); }
+    loadDocs(); if (SLON) { root.classList.add('sl-on'); if (window.LR_SL_FOCUS) root.classList.add('sl-focus'); loadSL(); slTools(); }
     window.LR_SELECT = tok => { const p = PT.get(tok); if (p && p !== st.sel) select(p, { fromHash: true }); };
     root.classList.remove('is-loading');
     const mm = $('[data-n="mm"]', keyEl); if (mm) mm.textContent = fmt(IX.length);
