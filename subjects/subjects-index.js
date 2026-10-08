@@ -59,26 +59,28 @@
   }
   function mount() {
     var fr = document.createElement('iframe'); fr.title = 'Map of every subject'; fr.setAttribute('allow', 'fullscreen; autoplay');
-    // hidden until its calm frame is drawn, then shown at once over the poster made from that frame (no fade, no dip)
-    fr.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;display:block;opacity:0';
+    // hidden until its calm frame is drawn, then shown at once over the poster made from that frame (no fade, no dip).
+    // Only where the page's head paints that poster (its box defines --map); a page with the older head keeps the fade.
+    var CALM = !!getComputedStyle(box).getPropertyValue('--map').trim();
+    fr.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;display:block;opacity:0' + (CALM ? '' : ';transition:opacity .5s');
     var shown = false, show = function () { if (shown) return; shown = true; fr.style.opacity = '1'; box.classList.add('is-live'); };
     get(P_BASE, P_RAW, 'embed.html').then(inlineCode).then(function (h) {
       var head = '<base href="' + TL + '"><script>window.LR_EMBED=1;window.LR_FRAMED=true;window.LR_PEOPLE_HOME="main";window.LR_SUBJECTS_INDEX=1;' +
-        'window.LR_DATA=' + JSON.stringify(P_RAW) + ';window.LR_SL_DATA=' + JSON.stringify(RAW) + ';window.LR_PARAMS={"token":""};' +
+        (CALM ? 'window.LR_SL_CALM=1;' : '') + 'window.LR_DATA=' + JSON.stringify(P_RAW) + ';window.LR_SL_DATA=' + JSON.stringify(RAW) + ';window.LR_PARAMS={"token":""};' +
         (kindOf() != null ? 'window.LR_SL_TAB=' + kindOf() + ';' : '') + (sortOf() ? 'window.LR_SL_SORT="az";' : '') + '<\/script>';
       // the subjects layout from the frame's first paint (the engine would add it only once it starts)
-      h = h.replace('<main id="pp" class="pp ', '<main id="pp" class="pp sl-on ');
+      if (CALM) h = h.replace('<main id="pp" class="pp ', '<main id="pp" class="pp sl-on ');
       h = h.replace('<!--LR-EMBED-HEAD-->', head).replace(/(href|src)="assets\//g, '$1="' + P_BASE + 'assets/');
       fr.srcdoc = h;
       box.appendChild(fr);
-      fr.addEventListener('load', function () { setTimeout(show, 8000); });   // in case the frame never says it is ready
+      fr.addEventListener('load', function () { if (CALM) setTimeout(show, 8000); else show(); });   // (in case the frame never says it is ready)
     }).catch(function () {});
     addEventListener('hashchange', function () { var k = kindOf(), w = fr.contentWindow; if (k != null && w && w.LR_SL_TAB_SET) w.LR_SL_TAB_SET(k, sortOf() || 'rand'); });
     // a person stays on this page (their constellation opens in the map); links out open as on the subject pages
     addEventListener('message', function (e) {
       if (e.source !== fr.contentWindow || !e.data) return;
       var d = e.data;
-      if (d.lrembed === 'ready') show();
+      if (d.lrembed === 'ready') { if (CALM) show(); }
       else if (d.lrembed === 'open') open(d.url, d.newtab);
       else if (d.lrsite === 'go') {
         if (d.page === 'people' && d.params && (d.params.token || d.params.slug)) { var w = fr.contentWindow; if (w.LR_SELECT) w.LR_SELECT(d.params.token || d.params.slug); }

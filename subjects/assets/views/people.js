@@ -2622,7 +2622,7 @@
       d.innerHTML = [['m', 'Timeline'], ['a', 'Editorials'], ['p', 'Podcast']].map(x => `<button class="pp-chip" type="button" data-src="${x[0]}" aria-pressed="false">${x[1]}</button>`).join(''); tools.appendChild(d); measureUI(); }
     // 8 Oct 2026: the Subjects index opens on its calm frame at once (no assembly from the pupil), so the page's poster,
     // made from that same frame, hands over without a visible change (__people.replay() still plays the assembly)
-    st.started = true; st.introT0 = SLON ? now() - 1e6 : now();
+    st.started = true; st.introT0 = SLON && window.LR_SL_CALM ? now() - 1e6 : now();
     // the window opens on a chapter's own machine, chosen by chance, unless a person is asked for
     const c = SLON ? 10 : 1 + Math.floor(Math.random() * 10), sc = SC_BY.get(CH[c - 1].scene), m0 = (sc && BY.get(sc.home)) || IX[0];   // the index opens on the scrubber's year (2025)
     const tok = S.params.token || S.params.slug || '';
