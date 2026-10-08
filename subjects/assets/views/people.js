@@ -2310,6 +2310,30 @@
   // scrubs or rearranges (review, 8 Oct 2026)
   st.slCalm = true;
   function slWake() { if (st.slCalm) { st.slCalm = false; kick(); } }
+  let slLH = null, slLT = 0, slLCam = null;
+  function slListHover(slug) {
+    if (!window.LR_SL_CALM) return;
+    const q = slug && SL.ready && SL.by.get(slug);
+    if (!q || q.cx == null || st.sel || st.subj) return;
+    clearTimeout(slLT);
+    let x = V.ox + q.cx * V.K, y = V.oy + q.cy * V.K; const M = 48;
+    if (!RM && (x < M || y < M || x > W - M || y > H - M)) {
+      if (!slLCam) slLCam = { x: cam.x, y: cam.y, k: cam.k };
+      // take the camera as it is (a zoom still easing around its anchor would otherwise ignore the pan)
+      camT.anchor = null; camT.k = cam.k; camT.x = cam.x + CX - x; camT.y = cam.y + CY - y; clampCam(camT);
+      x += camT.x - cam.x; y += camT.y - cam.y; kick();   // where it will settle
+      x = Math.max(M, Math.min(W - M, x)); y = Math.max(M, Math.min(H - M, y));
+    }
+    slLH = q; setHover({ type: 'sl', s: q }, x, y);
+  }
+  function slListLeave() {
+    if (!slLH) return; clearTimeout(slLT);
+    slLT = setTimeout(() => {
+      if (st.hover && st.hover.s === slLH) setHover(null);
+      if (slLCam) { camT.anchor = null; camT.x = slLCam.x; camT.y = slLCam.y; slLCam = null; kick(); }
+      slLH = null;
+    }, 150);
+  }
   // the window in the middle shows the chapter the scrubber stands in
   let slWinC = 10;
   function slWindowFor(t) {
@@ -2547,8 +2571,16 @@
       const a = e.target.closest('[data-sl]'); if (!a) return; const q = SL.by.get(a.dataset.sl); if (!q) return;
       e.preventDefault(); if (q.k === 0 && q.person) select(q.person); else enterSL(q);
     });
-    scroller.addEventListener('mouseover', e => { const a = e.target.closest('[data-sl]'), q = a && SL.by.get(a.dataset.sl);
-      const h = q && q.k && q.x != null ? { type: 'sl', s: q } : null; if ((st.hover && st.hover.s) !== (h && h.s)) { st.hover = h; kick(); } });
+    // 8 Oct 2026 (Peter): a name in the list lights its subject on the map exactly as hovering its mark does (its
+    // neighbours, its ties, the card). A mark out of view is eased in and back on leaving (not with reduced motion).
+    // Leaving waits 150 ms so running down the list does not flicker; a touch is a tap, never a hover.
+    // (pages with the older head keep the earlier behaviour: a quiet highlight of non-person marks, no card)
+    scroller.addEventListener('pointerover', e => { if (e.pointerType === 'touch') return; const a = e.target.closest('[data-sl]');
+      if (!window.LR_SL_CALM) { const q = a && SL.by.get(a.dataset.sl), h = q && q.k && q.x != null ? { type: 'sl', s: q } : null; if ((st.hover && st.hover.s) !== (h && h.s)) { st.hover = h; kick(); } return; }
+      if (a) slListHover(a.dataset.sl); else slListLeave(); });
+    scroller.addEventListener('pointerleave', e => { if (e.pointerType !== 'touch') slListLeave(); });
+    scroller.addEventListener('focusin', e => { const a = e.target.closest('[data-sl]'); if (a) slListHover(a.dataset.sl); });
+    scroller.addEventListener('focusout', () => slListLeave());
     const sc = document.createElement('div'); sc.id = 'sl-time'; sc.className = 'sl-time';
     sc.innerHTML = `<span class="lab">In history by</span><input id="sl-yr" type="range" min="0" max="1000" value="1000" aria-label="Show subjects as they enter history"><b id="sl-yl">2025</b>`;
     stage.appendChild(sc);
