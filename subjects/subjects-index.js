@@ -122,7 +122,8 @@
     var inK = function (s, k) { return k === 'all' || (k instanceof Set ? k.has(s.k) : s.k === k); };
     var pool = function (k, all) { return L.filter(function (s) { return inK(s, k) && (all || IX.yr == null || s.yr == null || s.yr <= IX.yr); }); };
     var dkey = function (k) { return k instanceof Set ? Array.from(k).sort().join(',') : String(k); };
-    var deal = function (k) { var A = typeof k === 'number' ? (DA[k] || 1.2) : (DA.o || 1.3); return pool(k).filter(function (s) { return s.slug !== 'peter-bauman'; }).map(function (s) { return [Math.log(Math.random()) / Math.pow(Math.max(s.tot, 1), A), s]; }).sort(function (a, b) { return b[0] - a[0]; }).map(function (x) { return x[1]; }); };
+    // Random weighs a subject by the count its row shows, at the map's one steepness ("w"; 9 Oct 2026, Peter)
+    var deal = function (k) { var A = DA.w || (typeof k === 'number' ? (DA[k] || 1.2) : (DA.o || 1.3)); return pool(k).filter(function (s) { return s.slug !== 'peter-bauman'; }).map(function (s) { return [Math.log(Math.random()) / Math.pow(DA.w ? Math.max(s.e || 0, 1) : Math.max(s.tot, 1), A), s]; }).sort(function (a, b) { return b[0] - a[0]; }).map(function (x) { return x[1]; }); };
     var az = function (k, all) { return pool(k, all).slice().sort(function (a, b) { return fold(a.n).localeCompare(fold(b.n)) || a.n.localeCompare(b.n); }); };
     function ixRows() {
       var key = dkey(IX.k) + '|' + IX.yr, all = IX.sort === 'az' ? az(IX.k) : (IX.deal[key] || (IX.deal[key] = deal(IX.k))), rows = all.slice(0, IX.shown);

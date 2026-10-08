@@ -2717,8 +2717,8 @@
   window.LR_SL_TAB_SET = (k, sort) => { st.slTab = k; st.slLetter = ''; st.slOff = 0; if (sort) st.slSort = sort === 'az' ? 'az' : 'rand'; if (SL.ready && !st.sel && !st.subj) renderIndex(); };
   const SL_ROWS = 40;
   function slDeal(k) {
-    const A = (SL.da && SL.da[k]) || 1.2;
-    return SL.list.filter(s => s.k === k && s.slug !== 'peter-bauman').map(s => [Math.log(Math.random()) / Math.pow(Math.max(s.tot, 1), A), s])
+    const A = slA(k);
+    return SL.list.filter(s => s.k === k && s.slug !== 'peter-bauman').map(s => [Math.log(Math.random()) / Math.pow(slW8(s), A), s])
       .sort((a, b) => b[0] - a[0]).slice(0, SL_ROWS).map(x => x[1]);
   }
   // the page keeps the kind and order in its address (#works&sort=az), so a shared link opens the same list
@@ -2726,7 +2726,11 @@
   // split view: the index follows the map's kinds and year; Random = one stable key per subject, log(u) / mentions^a (the
   // per-kind exponent), so the most written-about are much more likely near the top; a filter change keeps the order
   function slSplitPool() { const Y = st.yrT >= 0.999 ? null : yrOf(st.yrT); return SL.list.filter(s => SL.kinds.has(s.k) && s.slug !== 'peter-bauman' && (Y == null || s.yr == null || s.yr <= Y)); }
-  function slSplitKeys() { const K = new Map(); SL.list.forEach(s => K.set(s.slug, Math.log(Math.random()) / Math.pow(Math.max(s.tot, 1), (SL.da && SL.da[s.k]) || 1.2))); return K; }
+  function slSplitKeys() { const K = new Map(); SL.list.forEach(s => K.set(s.slug, Math.log(Math.random()) / Math.pow(slW8(s), slA(s.k)))); return K; }
+  // 9 Oct 2026 (Peter): a Random list weighs each subject by the count its row shows (editorials naming it), at one
+  // steepness for every list ("w" in the data: about 2/3 of the first 20 rows from the 150 most-shown subjects)
+  function slW8(s) { return SL.da && SL.da.w ? Math.max(s.e || 0, 1) : Math.max(s.tot, 1); }
+  function slA(k) { return (SL.da && (SL.da.w || SL.da[k])) || 1.2; }
   function renderIndex() {
     if (!SL.ready) { scroller.innerHTML = '<div class="pv pv-over"><p class="lab pv-kicker">Subjects</p><h1 class="pv-title">Subjects</h1></div>'; return; }
     const cnt = k => SL.list.filter(s => s.k === k).length, SPL = slSplit();
