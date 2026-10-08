@@ -583,20 +583,36 @@ button.pv-chip.is-tag:hover{border-style:solid}
 .pp.sl-hero #pp-results li{display:flex;align-items:center;gap:8px}
 .pp.sl-hero #pp-results .r-go{margin-left:6px;color:inherit;opacity:.55;text-decoration:none;padding:0 4px}
 .pp.sl-hero #pp-results .r-go:hover{opacity:1;color:#FF4C00}
-/* 9 Oct 2026 (Peter): the Subjects hero's split view on wide screens. The masthead and every map control sit in a left
-   column (the page inset + min(42vw,700px)); the ring alone fills the right at full height, centred on its own side
-   (the stage starts at --col, so CX = its width / 2). The page head turns it on (html.sx-split -> .pp.sl-split). */
+/* 9 Oct 2026 (Peter): the Subjects hero's split view on wide screens, so the map and the index are seen together. The
+   masthead stays full width (as /editorials and /podcast); under its hairline the map sits centred in the left part of
+   the content column and the subjects index (kind chips that drive the map, Random weighted by mentions / A to Z, the
+   letters, the list) fills the right 52% and scrolls on its own. The page head turns it on (html.sx-split -> .sl-split). */
 @media (min-width:1100px){
-  .pp.sl-hero.sl-split{--Lw:min(42vw,700px);--col:calc(var(--L) + var(--Lw) + clamp(32px,3vw,56px));--off:calc(var(--L) - var(--col));
-    --mb:calc(clamp(16px,2vw,30px) + clamp(30px,7.4vw,124px) * .86 + 14px + clamp(11px,1.02vw,14.7px) * 4.35 + clamp(12px,1.3vw,19px))}
-  .pp.sl-hero.sl-split .pp-stage{margin-left:var(--col);flex:1 1 auto;overflow:visible}
+  .pp.sl-hero.sl-split{--panel-w:calc((100vw - 2 * var(--L)) * .52)}
+  .pp.sl-hero.sl-split .pp-stage{margin:calc(var(--mb) + 10px) 0 96px var(--L);overflow:visible}
   .pp.sl-hero.sl-split .pp-stage::before{background:none}
-  .pp.sl-hero.sl-split .pp-stage::after{display:none}
-  .pp.sl-hero.sl-split::after{content:"";position:absolute;z-index:7;top:0;bottom:0;left:var(--col);border-left:1px solid rgba(247,244,234,.14);pointer-events:none}
-  .pp.sl-hero.sl-split .pp-find{left:var(--off);right:auto;width:var(--Lw);top:calc(var(--mb) + 34px)}
-  .pp.sl-hero.sl-split #sl-kinds{left:var(--off);max-width:var(--Lw);bottom:auto;top:calc(var(--mb) + 104px)}
-  .pp.sl-hero.sl-split #pp-key{left:var(--off);right:auto;bottom:150px}
-  .pp.sl-hero.sl-split #sl-mode{left:var(--off);bottom:84px}
-  .pp.sl-hero.sl-split .sl-time{left:var(--off);transform:none;width:var(--Lw);bottom:30px}
-  .pp.sl-hero.sl-split #pp-zoom{right:28px;bottom:28px}
+  .pp.sl-hero.sl-split .pp-stage::after{left:0;right:28px;bottom:0}
+  .pp.sl-hero.sl-split .pp-panel{display:flex!important;background:transparent;border-left:0;margin:calc(var(--mb) + 30px) var(--L) 0 28px}
+  .pp.sl-hero.sl-split .pp-handle,.pp.sl-hero.sl-split .pv-bar,.pp.sl-hero.sl-split .pv-kicker,.pp.sl-hero.sl-split .pv-title,
+  .pp.sl-hero.sl-split .sl-pathf,.pp.sl-hero.sl-split .pv-window{display:none!important}
+  .pp.sl-hero.sl-split .pp-scroll{padding-bottom:28px;scrollbar-width:thin;scrollbar-color:rgba(247,244,234,.25) transparent}
+  .pp.sl-hero.sl-split .pv{background:transparent;padding:0}
+  .pp.sl-hero.sl-split .pp-panel{--lr-ink:#EFE9D8;--paper:#011015;color:#EFE9D8}
+  .pp.sl-hero.sl-split .pp-panel *{border-color:rgba(247,244,234,.2)}
+  /* kind chips: selected = the kind is on the map (all seven at first); off = dimmed, as the map's own chips */
+  .pp.sl-hero.sl-split .sl-tabs .pv-chip{color:#EFE9D8;background:transparent;border-color:rgba(247,244,234,.3)}
+  .pp.sl-hero.sl-split .sl-tabs .pv-chip[aria-pressed="true"]{background:rgba(247,244,234,.08);border-color:rgba(247,244,234,.75);color:#F7F4EA}
+  .pp.sl-hero.sl-split .sl-tabs .pv-chip[aria-pressed="false"]{opacity:.45}
+  .pp.sl-hero.sl-split .sl-tabs .pv-chip small{color:rgba(239,233,216,.62)}
+  .pp.sl-hero.sl-split .sl-az{flex-wrap:nowrap;justify-content:space-between;gap:0}
+  .pp.sl-hero.sl-split .sl-az button{min-width:0;flex:1 1 0;padding:0}
+  .pp.sl-hero.sl-split .sl-az button:hover{background:rgba(247,244,234,.1)}
+  /* the index's kind chips filter the map, so the map side drops its own chip stack and the zoom buttons */
+  .pp.sl-hero.sl-split #sl-kinds,.pp.sl-hero.sl-split #pp-zoom{display:none!important}
+  .pp.sl-hero.sl-split .pp-find{top:6px;left:0;right:auto;width:min(250px,40%)}
+  .pp.sl-hero.sl-split #pp-key{top:6px;bottom:auto;right:28px;left:auto}
+  /* the controls get their own strip under the map: Arrange by, then In history by at the map's full width */
+  .pp.sl-hero.sl-split #sl-mode{left:0;bottom:-46px}
+  .pp.sl-hero.sl-split .sl-time{left:0;transform:none;width:calc(100% - 28px);bottom:-86px;gap:14px}
+  .pp.sl-hero.sl-split .sl-time b{min-width:4.2ch}
 }

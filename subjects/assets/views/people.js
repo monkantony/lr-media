@@ -393,7 +393,10 @@
   // the pupil: at most one live scene, crossfaded by overlaying a second layer only while it arrives
   let sceneOK = null, layers = [], mountSeq = 0, mountTimer = 0, win = null;
   const sceneProbe = fetch('moment.html', { cache: 'no-cache' }).then(r => r.ok).catch(() => false).then(ok => { sceneOK = ok; root.classList.toggle('can-look', !!ok); if (st.started) { renderWindowCards(); kick(); } return ok; });
-  function wantsLive() { return sceneOK && (!isPhone() || st.through); }
+  // 9 Oct 2026 (Peter): the Subjects split view (map + index side by side, wide screens). Its pupil keeps the era's still
+  // plate: no live scene (the on-chain scene's simulated mint bar) next to the index
+  function slSplit() { return !!window.LR_SL_HERO && root.classList.contains('sl-split') && window.matchMedia('(min-width:1100px)').matches; }
+  function wantsLive() { return sceneOK && !slSplit() && (!isPhone() || st.through); }
   function showScene(m, opts) {
     opts = opts || {};
     const sc = sceneFor(m); if (!sc) return;
@@ -2370,7 +2373,7 @@
     on: (n, f) => { (SLEV[n] || (SLEV[n] = [])).push(f); },
     select: slug => slSelect(slug ? SL.by.get(slug) || null : null), selected: () => st.slSel ? st.slSel.slug : null,
     kindsOn: () => Array.from(SL.kinds),
-    setKinds: ks => { SL.kinds = new Set(ks); slKindsSync(); slWake(); },
+    setKinds: ks => { SL.kinds = new Set(ks); slKindsSync(); slWake(); if (slSplit() && !st.sel && !st.subj) renderIndex(); },
     year: () => (st.yrT >= 0.999 ? null : Math.round(yrOf(st.yrT))),
     da: () => SL.da,
     hover: slug => slListHover(slug), leave: () => slListLeave(),
@@ -2664,11 +2667,13 @@
       st.slPathQ = [f.a.value, f.b.value]; const a = by(f.a.value), b = by(f.b.value); st.slPath = a && b ? slFindPath(a, b) : [];
       Promise.all((st.slPath || []).map(x => x.W ? 0 : slW(x.slug).then(w => { x.W = w; }))).then(() => { renderIndex(); kick(); }); });
     scroller.addEventListener('click', e => {
-      const t = e.target.closest('[data-sltab]'); if (t) { st.slTab = +t.dataset.sltab; st.slLetter = ''; st.slOff = 0; renderIndex(); return; }
+      const t = e.target.closest('[data-sltab]');
+      if (t && slSplit()) { const k = +t.dataset.sltab; if (SL.kinds.has(k)) SL.kinds.delete(k); else SL.kinds.add(k); st.slOff = 0; slKindsSync(); slWake(); kick(); slEmit('kinds', Array.from(SL.kinds)); renderIndex(); return; }
+      if (t) { st.slTab = +t.dataset.sltab; st.slLetter = ''; st.slOff = 0; renderIndex(); return; }
       // a letter opens A-Z on the page where that letter starts
       const z = e.target.closest('[data-slaz]'); if (z) { st.slSort = 'az'; st.slLetter = z.dataset.slaz; renderIndex(); return; }
       const so = e.target.closest('[data-slsort]'); if (so) { st.slSort = so.dataset.slsort; st.slOff = 0; renderIndex(); return; }
-      if (e.target.closest('[data-slshuf]')) { st.slDeal[st.slTab] = slDeal(st.slTab); renderIndex(); return; }
+      if (e.target.closest('[data-slshuf]')) { if (slSplit()) st.slKeys = slSplitKeys(); else st.slDeal[st.slTab] = slDeal(st.slTab); renderIndex(); return; }
       const pg = e.target.closest('[data-slpg]'); if (pg) { st.slOff = Math.max(0, st.slOff + +pg.dataset.slpg * SL_ROWS); renderIndex(); return; }
       const a = e.target.closest('[data-sl]'); if (!a) return; const q = SL.by.get(a.dataset.sl); if (!q) return;
       e.preventDefault(); if (q.k === 0 && q.person) select(q.person); else enterSL(q);
@@ -2686,7 +2691,8 @@
     const sc = document.createElement('div'); sc.id = 'sl-time'; sc.className = 'sl-time';
     sc.innerHTML = `<span class="lab">In history by</span><input id="sl-yr" type="range" min="0" max="1000" value="1000" aria-label="Show subjects as they enter history"><b id="sl-yl">2025</b>`;
     stage.appendChild(sc);
-    $('#sl-yr').addEventListener('input', e => { st.yrT = +e.target.value / 1000; $('#sl-yl').textContent = yrLab(yrOf(st.yrT)); slWake(); slWindowFor(st.yrT); kick(); slEmit('year', st.yrT >= 0.999 ? null : Math.round(yrOf(st.yrT))); });
+    $('#sl-yr').addEventListener('input', e => { st.yrT = +e.target.value / 1000; $('#sl-yl').textContent = yrLab(yrOf(st.yrT)); slWake(); slWindowFor(st.yrT); kick(); slEmit('year', st.yrT >= 0.999 ? null : Math.round(yrOf(st.yrT)));
+      if (slSplit() && !st.sel && !st.subj) { cancelAnimationFrame(st.slIxRaf); st.slIxRaf = requestAnimationFrame(renderIndex); } });
     d.addEventListener('click', e => { const b = e.target.closest('[data-slk]'); if (!b) return; const k = +b.dataset.slk;
       if (SL.kinds.has(k)) SL.kinds.delete(k); else SL.kinds.add(k); b.setAttribute('aria-pressed', String(SL.kinds.has(k))); slWake(); kick(); slEmit('kinds', Array.from(SL.kinds)); });
   }
@@ -2717,15 +2723,21 @@
   }
   // the page keeps the kind and order in its address (#works&sort=az), so a shared link opens the same list
   function slState() { if (HERO) return; try { if (window.parent !== window && window.parent.__lrSlState) window.parent.__lrSlState(st.slTab, st.slSort); } catch (e) {} }
+  // split view: the index follows the map's kinds and year; Random = one stable key per subject, log(u) / mentions^a (the
+  // per-kind exponent), so the most written-about are much more likely near the top; a filter change keeps the order
+  function slSplitPool() { const Y = st.yrT >= 0.999 ? null : yrOf(st.yrT); return SL.list.filter(s => SL.kinds.has(s.k) && s.slug !== 'peter-bauman' && (Y == null || s.yr == null || s.yr <= Y)); }
+  function slSplitKeys() { const K = new Map(); SL.list.forEach(s => K.set(s.slug, Math.log(Math.random()) / Math.pow(Math.max(s.tot, 1), (SL.da && SL.da[s.k]) || 1.2))); return K; }
   function renderIndex() {
     if (!SL.ready) { scroller.innerHTML = '<div class="pv pv-over"><p class="lab pv-kicker">Subjects</p><h1 class="pv-title">Subjects</h1></div>'; return; }
-    const cnt = k => SL.list.filter(s => s.k === k).length;
+    const cnt = k => SL.list.filter(s => s.k === k).length, SPL = slSplit();
     const order = [0, 2, 1, 4, 3, 6, 5], fold = n => norm(n).replace(/^(the|a|an) /, ''), L0 = n => { const c = fold(n).charAt(0); return /[a-z]/.test(c) ? c.toUpperCase() : '#'; };
-    const az = SL.list.filter(s => s.k === st.slTab).sort((a, b) => fold(a.n).localeCompare(fold(b.n)) || a.n.localeCompare(b.n)), letters = new Set(az.map(s => L0(s.n)));
+    const az = (SPL ? slSplitPool() : SL.list.filter(s => s.k === st.slTab)).sort((a, b) => fold(a.n).localeCompare(fold(b.n)) || a.n.localeCompare(b.n)), letters = new Set(az.map(s => L0(s.n)));
     // A-Z pages 40 at a time from st.slOff; a letter starts the page at its first name
     if (st.slSort === 'az' && st.slLetter) { const i = az.findIndex(s => L0(s.n) === st.slLetter); if (i >= 0) st.slOff = i; st.slLetter = ''; }
     st.slOff = Math.max(0, Math.min(Math.max(0, az.length - 1), st.slOff));
-    const rows = st.slSort === 'az' ? az.slice(st.slOff, st.slOff + SL_ROWS) : (st.slDeal[st.slTab] || (st.slDeal[st.slTab] = slDeal(st.slTab)));
+    if (SPL && !st.slKeys) st.slKeys = slSplitKeys();
+    const rows = st.slSort === 'az' ? az.slice(st.slOff, st.slOff + SL_ROWS) : SPL ? az.slice().sort((a, b) => st.slKeys.get(b.slug) - st.slKeys.get(a.slug)).slice(0, SL_ROWS)
+      : (st.slDeal[st.slTab] || (st.slDeal[st.slTab] = slDeal(st.slTab)));
     const from = st.slOff + 1, to = Math.min(az.length, from + SL_ROWS - 1), name = SLK_NAME[st.slTab].toLowerCase();
     slState();
     scroller.innerHTML = `<div class="pv pv-over sl-index">
@@ -2733,12 +2745,12 @@
       <p class="lab pv-kicker"><span class="dot"></span>Le Random subject archive</p>
       <h1 class="pv-title">Subjects</h1>
       ${slPathHTML()}
-      <div class="pv-chips sl-tabs">${order.map(k => `<button class="pv-chip" type="button" data-sltab="${k}" aria-pressed="${st.slTab === k}">${SLK_NAME[k]} <small>${fmt(cnt(k))}</small></button>`).join('')}</div>
+      <div class="pv-chips sl-tabs">${order.map(k => `<button class="pv-chip" type="button" data-sltab="${k}" aria-pressed="${SPL ? SL.kinds.has(k) : st.slTab === k}">${SLK_NAME[k]} <small>${fmt(cnt(k))}</small></button>`).join('')}</div>
       <div class="sl-sort" role="group" aria-label="Order"><button type="button" data-slsort="rand" aria-pressed="${st.slSort === 'rand'}">Random</button><button type="button" data-slsort="az" aria-pressed="${st.slSort === 'az'}">A&ndash;Z</button>${st.slSort === 'rand' ? '<button type="button" class="sl-shuf" data-slshuf>Shuffle</button>' : `<span class="lab sl-pos">${fmt(from)}&ndash;${fmt(to)} of ${fmt(az.length)}</span>`}</div>
       <div class="sl-az" role="group" aria-label="By letter">${'#ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(c => `<button type="button" data-slaz="${c}"${letters.has(c) ? '' : ' disabled'}>${c}</button>`).join('')}</div>
       <ol class="sl-list">${rows.map(s => `<li><a href="${LRWEB}/subjects/${esc(s.slug)}" data-sl="${esc(s.slug)}"><span class="nm">${esc(s.n)}</span><span class="dots"></span><span class="c">${s.e || ''}</span></a></li>`).join('')}</ol>
       ${st.slSort === 'az' ? (az.length > SL_ROWS ? `<p class="sl-more sl-pager"><button type="button" data-slpg="-1"${st.slOff ? '' : ' disabled'}>&larr; Previous</button><button type="button" data-slpg="1"${st.slOff + SL_ROWS < az.length ? '' : ' disabled'}>Next &rarr;</button></p>` : '')
-        : `<p class="sl-more"><button type="button" data-slsort="az">All ${fmt(cnt(st.slTab))} ${name} A&ndash;Z &rarr;</button></p>`}
+        : `<p class="sl-more"><button type="button" data-slsort="az">All ${fmt(SPL ? az.length : cnt(st.slTab))} ${SPL ? 'subjects' : name} A&ndash;Z &rarr;</button></p>`}
     </div>`;
     scroller.scrollTop = 0;
   }
