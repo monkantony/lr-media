@@ -2789,12 +2789,13 @@
       ${slPathHTML()}
       <div class="pv-chips sl-tabs">${order.map(k => `<button class="pv-chip" type="button" data-sltab="${k}" aria-pressed="${SPL ? SL.kinds.has(k) : st.slTab === k}">${SLK_NAME[k]} <small>${fmt(cnt(k))}</small></button>`).join('')}</div>
       <div class="sl-sort" role="group" aria-label="Order"><button type="button" data-slsort="rand" aria-pressed="${st.slSort === 'rand'}">Random</button><button type="button" data-slsort="az" aria-pressed="${st.slSort === 'az'}">A&ndash;Z</button>${st.slSort === 'rand' ? '<button type="button" class="sl-shuf" data-slshuf>Shuffle</button>' : `<span class="lab sl-pos">${fmt(from)}&ndash;${fmt(to)} of ${fmt(az.length)}</span>`}</div>
-      <div class="sl-az" role="group" aria-label="By letter">${'#ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(c => `<button type="button" data-slaz="${c}"${letters.has(c) ? '' : ' disabled'}>${c}</button>`).join('')}</div>
+      ${SPL && st.slSort !== 'az' ? '' : `<div class="sl-az" role="group" aria-label="By letter">`}${SPL && st.slSort !== 'az' ? '' : `${'#ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(c => `<button type="button" data-slaz="${c}"${letters.has(c) ? '' : ' disabled'}>${c}</button>`).join('')}</div>`}
       <ol class="sl-list">${rows.map(s => `<li><a href="${LRWEB}/subjects/${esc(s.slug)}" data-sl="${esc(s.slug)}"><span class="nm">${esc(s.n)}</span><span class="dots"></span><span class="c">${s.tot || ''}</span></a></li>`).join('')}</ol>
       ${st.slSort === 'az' ? (az.length > SL_ROWS ? `<p class="sl-more sl-pager"><button type="button" data-slpg="-1"${st.slOff ? '' : ' disabled'}>&larr; Previous</button><button type="button" data-slpg="1"${st.slOff + SL_ROWS < az.length ? '' : ' disabled'}>Next &rarr;</button></p>` : '')
         : `<p class="sl-more"><button type="button" data-slsort="az">All ${fmt(SPL ? az.length : cnt(st.slTab))} ${SPL ? 'subjects' : name} A&ndash;Z &rarr;</button></p>`}
     </div>`;
     scroller.scrollTop = 0;
+    if (SPL) { const tb = $('.sl-tabs', scroller); if (tb) tb.classList.toggle('is-over', tb.scrollWidth > tb.clientWidth + 1); }
   }
 
   function start() {
