@@ -11,6 +11,22 @@
     var h = a.querySelector('.rd-word'); if (h && h.textContent.trim() === w) g.appendChild(a); }); });
 })();
 window.__lrnHash0 = location.hash;
+/* lrn-native M4: subject buttons the bundle draws (Timeline connections "Connected by" + its subject chips) become real
+   <a href="/subjects/slug"> links once the subject map can name the page; a subject without a page keeps its button. */
+window.__lrnSubLinks = function(root){
+  if (!root || !window.__lrBridgeHref) return 0; var n = 0;
+  [].forEach.call(root.querySelectorAll('button.sx-item[data-k]'), function(b){
+    var h = window.__lrBridgeHref('#subject=' + encodeURIComponent(b.getAttribute('data-k')));
+    if (!h || h.indexOf('/subjects/') !== 0) return;
+    var a = document.createElement('a'); a.href = h; a.className = b.className; a.setAttribute('data-k', b.getAttribute('data-k'));
+    a.innerHTML = b.innerHTML; b.parentNode.replaceChild(a, b); n++;
+  });
+  return n;
+};
+(function(){ var tries = 0, iv = setInterval(function(){   /* the subject map loads after the grid is drawn: upgrade then */
+  var c = document.getElementById('curation'); if (c) window.__lrnSubLinks(c);
+  if (++tries > 40 || (c && !c.querySelector('button.sx-item[data-k]'))) clearInterval(iv);
+}, 500); })();
 /* lrn-native M3: the Subjects zone is six Webflow lists (one per Kind, Robots without noindex, Editorials desc then
    Name asc, 20 each); CSS shows the first 10. The edition deal picks up to 10 of the 20, weighted by mentions, with the
    same text budget as before, and only toggles and reorders the server-rendered links: nothing is drawn. */
@@ -155,7 +171,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261007204802";
+var LRW_BUILD = "20261008103324";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -3778,7 +3794,7 @@ window.__lrwGlide = function(t, reduce, holdMs, onStable){
         var c = pick(rng, cands), e = c.e, t = pick(rng, c.tl), a = pick(rng, c.feat.length ? c.feat : c.arts), p = pick(rng, c.pods), ep = (PODS.eps || {})[String(p)] || ['Episode ' + p, ''];
         var slug = slugOf(a), img = MEDIA[slug] || '';
         var tlink = t.m ? 'https://timeline.lerandom.art/m/' + t.m : 'https://timeline.lerandom.art/chapter/' + (t.ch || 1);
-        via.innerHTML = 'Connected by <button type="button" class="sx-item gg-viab" data-k="' + esc(e[0]) + '">' + esc(e[1]) + '</button>';
+        via.innerHTML = 'Connected by <button type="button" class="sx-item gg-viab" data-k="' + esc(e[0]) + '">' + esc(e[1]) + '</button>'; if (window.__lrnSubLinks) window.__lrnSubLinks(via);
         tri.innerHTML =
           '<a class="gg-card gg-ed" href="' + esc(ROWS[a].href) + '"><figure>' + (img ? '<img src="' + esc(img) + '" alt="" loading="lazy">' : '') + '</figure><div class="gg-body"><span class="gg-k">Editorial · №' + ('000' + a).slice(-3) + '</span><h4>' + esc(ROWS[a].title) + '</h4><span class="gg-m">' + esc(ROWS[a].date) + '</span></div></a>'
           + '<span class="gg-link"><b>' + esc(e[1]) + '</b></span>'
@@ -3799,7 +3815,7 @@ window.__lrwGlide = function(t, reduce, holdMs, onStable){
       /* row 3: three subjects of three kinds */
       var pool = DATA.entities.filter(function(e){ return __lrN(e) >= 6 && !GENERIC[e[0]]; }), out = [], types = {};
       for (var j = 0; j < 80 && out.length < 3 && pool.length; j++) { var s = pick(rng, pool); if (types[s[2]] || out.indexOf(s) > -1) continue; types[s[2]] = 1; out.push(s); }
-      subs.innerHTML = out.map(function(s){ var n = __lrN(s); return '<button type="button" class="gg-sub sx-item" data-k="' + esc(s[0]) + '"><span class="gg-sub-t">' + (TYPE[s[2]] || 'Subject') + '</span><span class="gg-sub-n">' + esc(s[1]) + '</span><span class="gg-sub-c">' + n + ' editorial' + (n === 1 ? '' : 's') + '</span></button>'; }).join('');
+      subs.innerHTML = out.map(function(s){ var n = __lrN(s); return '<button type="button" class="gg-sub sx-item" data-k="' + esc(s[0]) + '"><span class="gg-sub-t">' + (TYPE[s[2]] || 'Subject') + '</span><span class="gg-sub-n">' + esc(s[1]) + '</span><span class="gg-sub-c">' + n + ' editorial' + (n === 1 ? '' : 's') + '</span></button>'; }).join(''); if (window.__lrnSubLinks) window.__lrnSubLinks(subs);
     }
     var booted = false;
     function boot(){ if (booted) return; booted = true; ready.then(function(){ deal((window.__LRW_ED || { seed: 42 }).seed); }); }
