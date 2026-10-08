@@ -868,6 +868,24 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       if (nv) nv.innerHTML = [['latest', 'Latest'], ['dossiers', 'Sets'], ['history', 'Timeline Talks'], ['register', 'Every episode']]
         .map(function(t){ return '<a href="' + base + '#' + t[0] + '">' + t[1] + '</a>'; }).join(' ');
     })();
+    /* lr-subjects-nav (8 Oct 2026, Peter): Subjects is the fourth site, a peer of Editorials, Podcast and Timeline.
+       Current on /subjects and /subjects/*; the editorials section tabs drop their own Subjects tab. STAGING ONLY until
+       /subjects launches on www (build_footer_embed.py SUBJECTS_NAV; flip the gate below to true at the launch). */
+    (function(){
+      if (!(/(^|\.)webflow\.io$/.test(location.hostname.toLowerCase())||/^(localhost|127\.0\.0\.1)$/.test(location.hostname))) return;
+      var props = bar.querySelector('.tb-props'); if (!props) return;
+      var dup = bar.querySelector('.util nav a[href$="#subjects"]'); if (dup) dup.remove();
+      var sub = /^\/subjects(\/|$)/.test(location.pathname);
+      [props, document.querySelector('.lr-navprops-baked')].forEach(function(box){   /* + the phone switcher a template bakes */
+        if (!box) return;
+        var t = box.querySelector('a[href="/subjects"]');
+        if (!t) { t = document.createElement('a'); t.href = '/subjects'; t.textContent = 'Subjects'; box.appendChild(t); }
+        if (sub) [].forEach.call(box.querySelectorAll('a'), function(a){
+          var on = a === t; a.classList.toggle('on', on);
+          if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+        });
+      });
+    })();
     document.documentElement.classList.add('lr-bar');   /* lr-reserve: releases the head embed's toolbar space */
     if (!bakedBar) {
       if (host && host.parentNode) host.parentNode.insertBefore(bar, host.nextSibling);
