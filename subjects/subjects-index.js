@@ -70,7 +70,8 @@
         (CALM ? 'window.LR_SL_CALM=1;' : '') + (HERO ? 'window.LR_SL_HERO=1;' : '') + 'window.LR_DATA=' + JSON.stringify(P_RAW) + ';window.LR_SL_DATA=' + JSON.stringify(RAW) + ';window.LR_PARAMS={"token":""};' +
         (kindOf() != null ? 'window.LR_SL_TAB=' + kindOf() + ';' : '') + (sortOf() ? 'window.LR_SL_SORT="az";' : '') + '<\/script>';
       // the subjects layout from the frame's first paint (the engine would add it only once it starts)
-      if (CALM) h = h.replace('<main id="pp" class="pp ', '<main id="pp" class="pp sl-on ' + (HERO ? 'sl-hero ' : ''));
+      // 9 Oct 2026 (Peter): wide-screen split view; the page head switches it on (html.sx-split), so the frame matches from its first paint
+      if (CALM) h = h.replace('<main id="pp" class="pp ', '<main id="pp" class="pp sl-on ' + (HERO ? 'sl-hero ' : '') + (HERO && document.documentElement.classList.contains('sx-split') ? 'sl-split ' : ''));
       h = h.replace('<!--LR-EMBED-HEAD-->', head).replace(/(href|src)="assets\//g, '$1="' + P_BASE + 'assets/');
       fr.srcdoc = h;
       box.appendChild(fr);
