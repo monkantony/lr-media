@@ -890,7 +890,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
        phone row a template bakes, reads Editorials · Timeline · Podcast · Subjects. Runs before the bar is inserted; a
        baked bar already in this order is left untouched (compare first), so nothing moves on screen. */
     (function(){
-      if (!(/(^|\.)webflow\.io$/.test(location.hostname.toLowerCase())||/^(localhost|127\.0\.0\.1)$/.test(location.hostname))) return;
+      /* LIVE on www 9 Oct 2026 (Peter's go): was webflow.io/localhost only */
       var ORDER = ['/editorials', 'https://timeline.lerandom.art', '/podcast', '/subjects'];
       function rank(a){ var i = ORDER.indexOf(a.getAttribute('href')); return i < 0 ? 99 : i; }
       [bar.querySelector('.tb-props'), document.querySelector('.lr-navprops-baked')].forEach(function(box){
@@ -906,7 +906,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
        short Paths zone and the gaps between zones need "last crossed" rather than "spans"); a zone not on the page yet
        is skipped and its link stays a plain anchor. */
     (function(){
-      if (!(/(^|\.)webflow\.io$/.test(location.hostname.toLowerCase())||/^(localhost|127\.0\.0\.1)$/.test(location.hostname))) return;
+      /* LIVE on www 9 Oct 2026 (Peter's go): was webflow.io/localhost only */
       if (location.pathname.replace(/\/+$/, '') !== '/subjects') return;
       var nv = bar.querySelector('.util nav'); if (!nv) return;
       nv.innerHTML = [['index', 'Index'], ['paths', 'Paths'], ['by-kind', 'By kind'], ['every-subject', 'Every subject', 'every']]
