@@ -538,6 +538,9 @@
     } else {
       sheetTop = 0; root.style.removeProperty('--sheet-top');
       SC = Math.min(W / 2 - 18, H / 2 - 20) / 1.08; CX = W / 2; CY = H / 2 + 4;
+      // the Subjects page hero: the chart sits right of centre and a little low, so SUBJECTS reads clear of its dense
+      // rings (as the Window's title does over its image); the page's poster uses the same numbers
+      if (window.LR_SL_HERO) { SC *= 0.94; CX = W / 2 + Math.min(0.08 * W, 160); CY = H / 2 + 4 + 0.06 * H; }
     }
     starScale = clamp(SC / NOMINAL, 0.55, 1.25);
     labelScale = clamp(0.72 + 0.3 * starScale, 0.84, 1.05);
@@ -1299,9 +1302,11 @@
 
   function onTap(x, y, touch) {
     const h = hit(x, y, touch); hideTip();
+    if (HERO && !h && st.slSel) return slSelect(null);
     if (HERO && h) {                                    // the hero opens pages; the page below holds the reading
-      if (h.type === 'sl') return slOpen(h.s.slug);
-      if (h.type === 'star') return slOpen(SL.p2s && SL.p2s.get(h.p));
+      // one shared selection with the page below: a first click selects (and lights its row), a second opens the page
+      if (h.type === 'sl') return st.slSel === h.s ? slOpen(h.s.slug) : slSelect(h.s, x, y);
+      if (h.type === 'star') { const q = SL.p2s && SL.by.get(SL.p2s.get(h.p)); if (q) return st.slSel === q ? slOpen(q.slug) : slSelect(q, x, y); return; }
       if (h.type === 'doc') { const u = h.d.u || (h.d.k === 'a' && h.d.s ? LRWEB + '/editorial/' + h.d.s : ''); if (u) try { window.parent.postMessage({ lrembed: 'open', url: u }, '*'); } catch (e) {} return; }
       if (h.type === 'moment') { try { window.parent.postMessage({ lrsite: 'go', page: 'moment', params: { slug: h.m.s } }, '*'); } catch (e) {} return; }
     }
@@ -1859,7 +1864,7 @@
     if (HERO && SL.ready) {                           // the hero finds any subject and opens its page
       results = SL.list.map(q => { if (!q.nn) q.nn = norm(q.n); return [q, score(q)]; }).filter(x => x[1] < 9).sort((a, b) => a[1] - b[1] || b[0].tot - a[0].tot).slice(0, 8).map(x => x[0]);
       active = 0;
-      qRes.innerHTML = results.length ? results.map((q, i) => `<li role="option" id="pp-r${i}" aria-selected="${i === 0}" data-i="${i}"><span class="r-dot" style="background:${SLK_HEX[q.k] || '#EFE9D8'}"></span><span class="r-n">${esc(q.n)}</span><span class="r-c">${SLK_ONE[q.k]}</span></li>`).join('')
+      qRes.innerHTML = results.length ? results.map((q, i) => `<li role="option" id="pp-r${i}" aria-selected="${i === 0}" data-i="${i}"><span class="r-dot" style="background:${SLK_HEX[q.k] || '#EFE9D8'}"></span><span class="r-n">${esc(q.n)}</span><span class="r-c">${SLK_ONE[q.k]}${q.tot ? ' &middot; ' + fmt(q.tot) : ''}</span><a class="r-go" href="${LRWEB}/subjects/${esc(q.slug)}" target="_top" aria-label="Open ${esc(q.n)}">&#8599;</a></li>`).join('')
         : '<li class="r-none" aria-disabled="true">No subject by that name</li>';
       qRes.hidden = false; qIn.setAttribute('aria-expanded', 'true'); return;
     }
@@ -1871,7 +1876,7 @@
   }
   function pickResult(i) {
     const p = results[i]; if (!p) return;
-    if (HERO && p.slug) { qIn.value = ''; qRes.hidden = true; return slOpen(p.slug); }
+    if (HERO && p.slug) { qRes.hidden = true; qIn.setAttribute('aria-expanded', 'false'); if (st.slSel === p) return slOpen(p.slug); qIn.value = p.n; slSelect(p); return; }
     qIn.value = ''; qRes.hidden = true; qIn.setAttribute('aria-expanded', 'false'); qIn.blur();
     if (p.visT < 1) { st.era = 0; st.region = -1; st.min = 1; st.src = ''; applyFilters(); }
     select(p);
@@ -1968,7 +1973,7 @@
       } else if (e.key === 'Enter') { e.preventDefault(); pickResult(active); }
       else if (e.key === 'Escape') { qIn.value = ''; runSearch(); qIn.blur(); }
     });
-    qRes.addEventListener('pointerdown', e => { const li = e.target.closest('li[data-i]'); if (li) { e.preventDefault(); pickResult(+li.dataset.i); } });
+    qRes.addEventListener('pointerdown', e => { if (e.target.closest('.r-go')) return; const li = e.target.closest('li[data-i]'); if (li) { e.preventDefault(); pickResult(+li.dataset.i); } });
     qIn.addEventListener('blur', () => setTimeout(() => { qRes.hidden = true; qIn.setAttribute('aria-expanded', 'false'); }, 150));
     // keyboard
     addEventListener('keydown', e => {
@@ -2360,7 +2365,12 @@
   window.LR_SL_API = {
     ready: () => !!SL.ready,
     kinds: () => SLK_NAME.slice(),
-    list: () => SL.list.map(s => ({ slug: s.slug, n: s.n, k: s.k, e: s.e, p: s.p, t: s.t, tot: s.tot })),
+    list: () => SL.list.map(s => ({ slug: s.slug, n: s.n, k: s.k, e: s.e, p: s.p, t: s.t, tot: s.tot, yr: s.yr })),
+    on: (n, f) => { (SLEV[n] || (SLEV[n] = [])).push(f); },
+    select: slug => slSelect(slug ? SL.by.get(slug) || null : null), selected: () => st.slSel ? st.slSel.slug : null,
+    kindsOn: () => Array.from(SL.kinds),
+    setKinds: ks => { SL.kinds = new Set(ks); slKindsSync(); slWake(); },
+    year: () => (st.yrT >= 0.999 ? null : Math.round(yrOf(st.yrT))),
     da: () => SL.da,
     hover: slug => slListHover(slug), leave: () => slListLeave(),
     // a path through shared pages: route() only reads it, path() also draws it on the map
@@ -2370,6 +2380,24 @@
     sky: () => cv, ground: () => $('#pp-ground'), view: () => ({ K: V.K, ox: V.ox, oy: V.oy, W, H, hole: V.hole }),
     pos: slug => { const q = SL.by.get(slug); return q && q.cx != null ? [V.ox + q.cx * V.K, V.oy + q.cy * V.K] : null; },
   };
+  // the Subjects page shares one state between this map and its index: kinds, selection, year (events out, setters in)
+  const SLEV = {};
+  function slEmit(n, v) { (SLEV[n] || []).forEach(f => { try { f(v); } catch (e) {} }); }
+  function slReveal(q) {                             // where q sits now, easing it into view first if it is outside
+    let x = V.ox + q.cx * V.K, y = V.oy + q.cy * V.K; const M = 48;
+    if (!RM && (x < M || y < M || x > W - M || y > H - M)) {
+      camT.anchor = null; camT.k = cam.k; camT.x = cam.x + CX - x; camT.y = cam.y + CY - y; clampCam(camT);
+      x += camT.x - cam.x; y += camT.y - cam.y; kick();
+    }
+    return [Math.max(48, Math.min(W - 48, x)), Math.max(48, Math.min(H - 48, y))];
+  }
+  function slSelect(q, x, y) {
+    if (q && (q.cx == null || !SL.kinds.has(q.k))) { if (q.cx == null) q = null; else { SL.kinds.add(q.k); slKindsSync(); } }
+    st.slSel = q || null; slWake();
+    if (q) { const p = x == null ? slReveal(q) : [x, y]; setHover({ type: 'sl', s: q }, p[0], p[1]); } else setHover(null);
+    kick(); slEmit('select', q ? q.slug : null);
+  }
+  function slKindsSync() { $$('#sl-kinds [data-slk]').forEach(b => b.setAttribute('aria-pressed', String(SL.kinds.has(+b.dataset.slk)))); kick(); }
   let slLH = null, slLT = 0, slLCam = null;
   function slListHover(slug) {
     if (!window.LR_SL_CALM) return;
@@ -2390,6 +2418,7 @@
     if (!slLH) return; clearTimeout(slLT);
     slLT = setTimeout(() => {
       if (st.hover && st.hover.s === slLH) setHover(null);
+      if (HERO && st.slSel) { const p = [V.ox + st.slSel.cx * V.K, V.oy + st.slSel.cy * V.K]; setHover({ type: 'sl', s: st.slSel }, p[0], p[1]); }   // back to the selection's card
       if (slLCam) { camT.anchor = null; camT.x = slLCam.x; camT.y = slLCam.y; slLCam = null; kick(); }
       slLH = null;
     }, 150);
@@ -2450,7 +2479,7 @@
       if (s.k === 0) { if (slDim < 0.02) return; const x = ox + s.cx * K, y = oy + s.cy * K; if (x < -10 || y < -10 || x > W + 10 || y > H + 10) return;
         g.globalAlpha = fade * slDim * yrA(s.yr) * 0.9; g.fillStyle = '#EFE9D8'; g.beginPath(); g.arc(x, y, slSize(s) * 0.8, 0, TAU); g.fill(); return; }
       const x = ox + s.cx * K, y = oy + s.cy * K; if (x < -10 || y < -10 || x > W + 10 || y > H + 10) return;
-      const sz = slSize(s), a = yrA(s.yr) * (st.era && s.era && s.era !== st.era ? 0.15 : 1) * (st.sel || st.subj ? (F && F.has(s) ? 1 : 0.25) : 1) * (st.slCalm && s !== hs ? 0.3 : 1);
+      const sz = slSize(s), a = yrA(s.yr) * (st.era && s.era && s.era !== st.era ? 0.15 : 1) * (st.sel || st.subj ? (F && F.has(s) ? 1 : 0.25) : 1) * (st.slCalm && s !== hs && s !== st.slSel ? 0.3 : 1);
       g.globalAlpha = fade * a * (s === hs ? 1 : 0.85);
       const c = SLK_HEX[s.k];
       if (s.k === 6) { g.strokeStyle = c; g.lineWidth = 1.4; slShape(x, y, sz, s.k); g.stroke(); }
@@ -2459,6 +2488,7 @@
     });
     if (slDim > 0.01) slFrame(K, ox, oy, fade);
     if (F) slRays(st.subj.sl, K, ox, oy, fade);      // a subject page: its subject and its nearest, always drawn
+    if (HERO && st.slSel && st.slSel !== hs) slRays(st.slSel, K, ox, oy, fade);   // the Subjects page's selected subject
     if (hs && (!F || hs !== st.subj.sl)) slRays(hs, K, ox, oy, fade);
     // the scrubber's edge: the ring of the year it stands on
     if (st.yrT < 0.999 && st.slMode !== 1) {
@@ -2655,9 +2685,9 @@
     const sc = document.createElement('div'); sc.id = 'sl-time'; sc.className = 'sl-time';
     sc.innerHTML = `<span class="lab">In history by</span><input id="sl-yr" type="range" min="0" max="1000" value="1000" aria-label="Show subjects as they enter history"><b id="sl-yl">2025</b>`;
     stage.appendChild(sc);
-    $('#sl-yr').addEventListener('input', e => { st.yrT = +e.target.value / 1000; $('#sl-yl').textContent = yrLab(yrOf(st.yrT)); slWake(); slWindowFor(st.yrT); kick(); });
+    $('#sl-yr').addEventListener('input', e => { st.yrT = +e.target.value / 1000; $('#sl-yl').textContent = yrLab(yrOf(st.yrT)); slWake(); slWindowFor(st.yrT); kick(); slEmit('year', st.yrT >= 0.999 ? null : Math.round(yrOf(st.yrT))); });
     d.addEventListener('click', e => { const b = e.target.closest('[data-slk]'); if (!b) return; const k = +b.dataset.slk;
-      if (SL.kinds.has(k)) SL.kinds.delete(k); else SL.kinds.add(k); b.setAttribute('aria-pressed', String(SL.kinds.has(k))); slWake(); kick(); });
+      if (SL.kinds.has(k)) SL.kinds.delete(k); else SL.kinds.add(k); b.setAttribute('aria-pressed', String(SL.kinds.has(k))); slWake(); kick(); slEmit('kinds', Array.from(SL.kinds)); });
   }
   function slPathHTML() {
     const q = st.slPathQ || ['', ''], P2 = st.slPath;

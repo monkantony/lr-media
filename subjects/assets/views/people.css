@@ -562,7 +562,10 @@ button.pv-chip.is-tag:hover{border-style:solid}
   .pp.sl-hero{bottom:0}
   .pp.sl-hero .pp-stage::before{background:linear-gradient(180deg,#011015 0,#011015 142px,rgba(1,16,21,0) 175px,rgba(1,16,21,0) calc(100% - 144px),#011015 calc(100% - 96px))}
   .pp.sl-hero .pp-stage::after{left:20px;right:20px;bottom:56px}
-  .pp.sl-hero .pp-find,.pp.sl-hero #pp-zoom,.pp.sl-hero #pp-key,.pp.sl-hero .sl-hk{display:none!important}
+  .pp.sl-hero #pp-zoom,.pp.sl-hero #pp-key,.pp.sl-hero .sl-hk{display:none!important}
+  /* search stays in reach on a phone: under the dek, right-hand side of the masthead band */
+  .pp.sl-hero .pp-find{top:96px;right:20px;width:min(46vw,190px)}
+  .pp.sl-hero #pp-results{width:calc(100vw - 40px);max-width:none}
   .pp.sl-hero #sl-kinds{left:20px;right:20px;bottom:66px;max-width:none;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:6px}
   .pp.sl-hero #sl-kinds .pp-chip{height:26px;padding:0 9px;font-size:9.5px;flex:none}
   .pp.sl-hero #sl-mode{left:20px;bottom:14px;gap:4px}
@@ -574,3 +577,8 @@ button.pv-chip.is-tag:hover{border-style:solid}
 }
 .pp.sl-hero .pp-find{height:auto;padding:0;background:transparent;border:0;border-radius:0;-webkit-backdrop-filter:none;backdrop-filter:none}
 .pp.sl-hero .pp-find:focus-within #pp-q{border-bottom-color:#FF4C00}
+
+/* hero search results: name, kind and mentions, and a way straight to the page */
+.pp.sl-hero #pp-results li{display:flex;align-items:center;gap:8px}
+.pp.sl-hero #pp-results .r-go{margin-left:6px;color:inherit;opacity:.55;text-decoration:none;padding:0 4px}
+.pp.sl-hero #pp-results .r-go:hover{opacity:1;color:#FF4C00}
