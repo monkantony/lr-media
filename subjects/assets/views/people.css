@@ -501,3 +501,12 @@ button.pv-chip.is-tag:hover{border-style:solid}
 .sl-az button[aria-pressed=true]{background:var(--lr-ink);color:var(--paper)}
 .sl-az button:disabled{opacity:.25;cursor:default}
 @media (max-width:760px){.pp.sl-on .pp-ground-e{display:none}}
+/* 8 Oct 2026: the index's order (Random, A-Z), Shuffle and the A-Z pager */
+.sl-sort{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin:4px 0 2px}
+.sl-sort button,.sl-pager button,.sl-more button{font:500 11px/1 var(--lr-sans);letter-spacing:.08em;text-transform:uppercase;height:28px;padding:0 10px;border:1px solid rgba(1,16,21,.18);background:transparent;color:var(--lr-ink);cursor:pointer;border-radius:14px}
+.sl-sort button:hover,.sl-pager button:hover:not(:disabled),.sl-more button:hover{background:rgba(1,16,21,.08)}
+.sl-sort button[aria-pressed=true]{background:var(--lr-ink);color:var(--paper);border-color:var(--lr-ink)}
+.sl-sort .sl-shuf{margin-left:auto}
+.sl-sort .sl-pos{margin-left:auto;opacity:.6;font-variant-numeric:tabular-nums}
+.sl-pager{display:flex;gap:6px}
+.sl-pager button:disabled{opacity:.3;cursor:default}

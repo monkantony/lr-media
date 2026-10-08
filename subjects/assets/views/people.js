@@ -2311,14 +2311,14 @@
     fetch(SLB() + 'data/slc.json', { cache: 'default' }).then(r => (r.ok ? r.json() : null)).then(j => {
       if (!j) return;
       j.s.forEach(r => {
-        const s = { slug: r[0], n: r[1], k: r[2], e: r[3], p: r[4], t: r[5], yr: r[6], x: r[7], y: r[8], ux: r[9], uy: r[10], era: r[11], nbi: r[12], ti: r[13] };
+        const s = { slug: r[0], n: r[1], k: r[2], e: r[3], p: r[4], t: r[5], yr: r[6], x: r[7], y: r[8], ux: r[9], uy: r[10], era: r[11], nbi: r[12], ti: r[13], nk: r[14] == null ? r[12].length : r[14] };
         s.tot = s.e + s.p + s.t; s.person = s.k === 0 ? PK.get(norm(s.n)) || PK.get(s.n.toLowerCase()) || PT.get(s.slug) || null : null;
         if (s.person) { s.x = s.person.x; s.y = s.person.y; }
         SL.list.push(s); SL.by.set(s.slug, s);
       });
       SL.list.forEach(s => { s.nb = s.nbi.map(i => SL.list[i] && SL.list[i].slug).filter(Boolean); });
       slArrange(j.r || []);
-      SL.ready = true;
+      SL.da = j.da || null; SL.ready = true;
       if (!st.sel && !st.subj) renderIndex();
       kick();
     }).catch(() => {});
@@ -2381,14 +2381,17 @@
     return best ? { type: 'sl', s: best } : null;
   }
   function slTip(s) {
-    const nb = s.nb.slice(0, 4).map(k => SL.by.get(k)).filter(Boolean).map(q => esc(q.n)), w = s.W && s.W.w[0];
+    // the first nk neighbours share pages with s; any after them are the embedding's, shown as related by meaning
+    const nb = [], mb = [], w = s.W && s.W.w[0];
+    s.nb.slice(0, 4).forEach((k, i) => { const q = SL.by.get(k); if (q) (i < s.nk ? nb : mb).push(esc(q.n)); });
     const counts = [s.e ? `${fmt(s.e)} ${s.e === 1 ? 'editorial' : 'editorials'}` : '', s.p ? `${fmt(s.p)} ${s.p === 1 ? 'episode' : 'episodes'}` : '', s.t ? `${fmt(s.t)} Timeline ${s.t === 1 ? 'moment' : 'moments'}` : ''].filter(Boolean).join(' &middot; ');
     return `<p class="t-k"><i style="background:${SLK_HEX[s.k]}"></i><span class="lab">${SLK_ONE[s.k]}${s.yr != null ? ' &middot; ' + yrLab(s.yr) : ''}</span></p><p class="t-n">${esc(s.n)}</p>
-      <p class="t-m">${counts}</p>${nb.length ? `<p class="t-m">Nearest: ${nb.join(', ')}</p>` : ''}
+      <p class="t-m">${counts}</p>${nb.length ? `<p class="t-m">Nearest: ${nb.join(', ')}</p>` : ''}${mb.length ? `<p class="t-m">Related by meaning: ${mb.join(', ')}</p>` : ''}
       ${w ? slWhy(s) : ''}<p class="t-a">${s.k === 0 ? 'Click for their constellation' : 'Click to open it on the map'}</p>`;
   }
   function slWhy(s) {
     const w = s.W && s.W.w[0], wq = w && SL.by.get(w[0]); if (!w) return '';
+    if (!w[1]) return `<p class="t-m"><span class="lab">Both in</span> ${esc(w[2])}${wq ? ' &middot; with ' + esc(wq.n) : ''}</p>`;
     return `<p class="t-m t-why">&ldquo;${esc(w[1])}&rdquo;<br><span class="lab">${esc(w[2])}${wq ? ' &middot; with ' + esc(wq.n) : ''}</span></p>`;
   }
   function enterSL(s) {
@@ -2518,8 +2521,12 @@
       st.slPathQ = [f.a.value, f.b.value]; const a = by(f.a.value), b = by(f.b.value); st.slPath = a && b ? slFindPath(a, b) : [];
       Promise.all((st.slPath || []).map(x => x.W ? 0 : slW(x.slug).then(w => { x.W = w; }))).then(() => { renderIndex(); kick(); }); });
     scroller.addEventListener('click', e => {
-      const t = e.target.closest('[data-sltab]'); if (t) { st.slTab = +t.dataset.sltab; st.slLetter = ''; renderIndex(); return; }
-      const z = e.target.closest('[data-slaz]'); if (z) { st.slLetter = st.slLetter === z.dataset.slaz ? '' : z.dataset.slaz; renderIndex(); return; }
+      const t = e.target.closest('[data-sltab]'); if (t) { st.slTab = +t.dataset.sltab; st.slLetter = ''; st.slOff = 0; renderIndex(); return; }
+      // a letter opens A-Z on the page where that letter starts
+      const z = e.target.closest('[data-slaz]'); if (z) { st.slSort = 'az'; st.slLetter = z.dataset.slaz; renderIndex(); return; }
+      const so = e.target.closest('[data-slsort]'); if (so) { st.slSort = so.dataset.slsort; st.slOff = 0; renderIndex(); return; }
+      if (e.target.closest('[data-slshuf]')) { st.slDeal[st.slTab] = slDeal(st.slTab); renderIndex(); return; }
+      const pg = e.target.closest('[data-slpg]'); if (pg) { st.slOff = Math.max(0, st.slOff + +pg.dataset.slpg * SL_ROWS); renderIndex(); return; }
       const a = e.target.closest('[data-sl]'); if (!a) return; const q = SL.by.get(a.dataset.sl); if (!q) return;
       e.preventDefault(); if (q.k === 0 && q.person) select(q.person); else enterSL(q);
     });
@@ -2544,26 +2551,43 @@
       <div class="sl-pin"><input name="a" list="sl-names" value="${esc(q[0])}" aria-label="From"><span aria-hidden="true">&rarr;</span><input name="b" list="sl-names" value="${esc(q[1])}" aria-label="To"><button class="pv-chip" type="submit">Find</button></div>
       <datalist id="sl-names">${SL.rank.slice(0, 1200).map(s => `<option value="${esc(s.n)}">`).join('')}</datalist>${res}</form>`;
   }
-  // the panel at rest: the Subjects index (most-mentioned first, by kind)
-  st.slTab = Math.max(0, Math.min(6, +window.LR_SL_TAB || 0));
-  // the page's #people / #works … opens the index on that kind (subjects-index.js passes it in, on load and on change)
-  window.LR_SL_TAB_SET = k => { st.slTab = k; st.slLetter = ''; if (SL.ready && !st.sel && !st.subj) renderIndex(); };
+  // the panel at rest: the Subjects index, by kind. 8 Oct 2026 (Peter): it opens on a random deal, not the most mentioned:
+  // weighted sampling without replacement (Efraimidis-Spirakis, key = u^(1/w), the top 40), w = mentions^A with A set per
+  // kind by build_ship.py so the most-mentioned lands about 90% of the time. Shuffle deals again; A-Z lists every one.
+  // The host is in the counts and A-Z, never in the deal.
+  st.slTab = Math.max(0, Math.min(6, +window.LR_SL_TAB || 0)); st.slSort = window.LR_SL_SORT === 'az' ? 'az' : 'rand'; st.slOff = 0; st.slDeal = {};
+  // the page's #people / #works … (&sort=az) opens the index on that kind and order (subjects-index.js, on load and on change)
+  window.LR_SL_TAB_SET = (k, sort) => { st.slTab = k; st.slLetter = ''; st.slOff = 0; if (sort) st.slSort = sort === 'az' ? 'az' : 'rand'; if (SL.ready && !st.sel && !st.subj) renderIndex(); };
+  const SL_ROWS = 40;
+  function slDeal(k) {
+    const A = (SL.da && SL.da[k]) || 1.2;
+    return SL.list.filter(s => s.k === k && s.slug !== 'peter-bauman').map(s => [Math.log(Math.random()) / Math.pow(Math.max(s.tot, 1), A), s])
+      .sort((a, b) => b[0] - a[0]).slice(0, SL_ROWS).map(x => x[1]);
+  }
+  // the page keeps the kind and order in its address (#works&sort=az), so a shared link opens the same list
+  function slState() { try { if (window.parent !== window && window.parent.__lrSlState) window.parent.__lrSlState(st.slTab, st.slSort); } catch (e) {} }
   function renderIndex() {
     if (!SL.ready) { scroller.innerHTML = '<div class="pv pv-over"><p class="lab pv-kicker">Subjects</p><h1 class="pv-title">Subjects</h1></div>'; return; }
-    const by = k => SL.list.filter(s => s.k === k && !(s.k === 0 && s.slug === 'peter-bauman')).sort((a, b) => b.e - a.e || b.tot - a.tot || a.n.localeCompare(b.n));
     const cnt = k => SL.list.filter(s => s.k === k).length;
     const order = [0, 2, 1, 4, 3, 6, 5], fold = n => norm(n).replace(/^(the|a|an) /, ''), L0 = n => { const c = fold(n).charAt(0); return /[a-z]/.test(c) ? c.toUpperCase() : '#'; };
-    const all = by(st.slTab), letters = new Set(all.map(s => L0(s.n)));
-    const rows = st.slLetter ? all.filter(s => L0(s.n) === st.slLetter).sort((a, b) => fold(a.n).localeCompare(fold(b.n))) : all.slice(0, 40);
+    const az = SL.list.filter(s => s.k === st.slTab).sort((a, b) => fold(a.n).localeCompare(fold(b.n)) || a.n.localeCompare(b.n)), letters = new Set(az.map(s => L0(s.n)));
+    // A-Z pages 40 at a time from st.slOff; a letter starts the page at its first name
+    if (st.slSort === 'az' && st.slLetter) { const i = az.findIndex(s => L0(s.n) === st.slLetter); if (i >= 0) st.slOff = i; st.slLetter = ''; }
+    st.slOff = Math.max(0, Math.min(Math.max(0, az.length - 1), st.slOff));
+    const rows = st.slSort === 'az' ? az.slice(st.slOff, st.slOff + SL_ROWS) : (st.slDeal[st.slTab] || (st.slDeal[st.slTab] = slDeal(st.slTab)));
+    const from = st.slOff + 1, to = Math.min(az.length, from + SL_ROWS - 1), name = SLK_NAME[st.slTab].toLowerCase();
+    slState();
     scroller.innerHTML = `<div class="pv pv-over sl-index">
       <div class="pv-bar sl-bar"><span class="pv-ib sl-all">&#10035; All subjects</span><span class="lab sl-nof">${fmt(SL.list.length)} subjects</span></div>
       <p class="lab pv-kicker"><span class="dot"></span>Le Random subject archive</p>
       <h1 class="pv-title">Subjects</h1>
       ${slPathHTML()}
       <div class="pv-chips sl-tabs">${order.map(k => `<button class="pv-chip" type="button" data-sltab="${k}" aria-pressed="${st.slTab === k}">${SLK_NAME[k]} <small>${fmt(cnt(k))}</small></button>`).join('')}</div>
-      <div class="sl-az" role="group" aria-label="By letter">${'#ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(c => `<button type="button" data-slaz="${c}" aria-pressed="${st.slLetter === c}"${letters.has(c) ? '' : ' disabled'}>${c}</button>`).join('')}</div>
-      <ol class="sl-list">${rows.map(s => `<li><a href="${LRWEB}/subjects/${esc(s.slug)}" data-sl="${esc(s.slug)}"><span class="nm">${esc(s.n)}</span><span class="dots"></span><span class="c">${s.e}</span></a></li>`).join('')}</ol>
-      ${st.slLetter ? '' : `<p class="sl-more"><a href="${LRWEB}/subjects-index#all">All ${fmt(cnt(st.slTab))} ${SLK_NAME[st.slTab].toLowerCase()} &rarr;</a></p>`}
+      <div class="sl-sort" role="group" aria-label="Order"><button type="button" data-slsort="rand" aria-pressed="${st.slSort === 'rand'}">Random</button><button type="button" data-slsort="az" aria-pressed="${st.slSort === 'az'}">A&ndash;Z</button>${st.slSort === 'rand' ? '<button type="button" class="sl-shuf" data-slshuf>Shuffle</button>' : `<span class="lab sl-pos">${fmt(from)}&ndash;${fmt(to)} of ${fmt(az.length)}</span>`}</div>
+      <div class="sl-az" role="group" aria-label="By letter">${'#ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(c => `<button type="button" data-slaz="${c}"${letters.has(c) ? '' : ' disabled'}>${c}</button>`).join('')}</div>
+      <ol class="sl-list">${rows.map(s => `<li><a href="${LRWEB}/subjects/${esc(s.slug)}" data-sl="${esc(s.slug)}"><span class="nm">${esc(s.n)}</span><span class="dots"></span><span class="c">${s.e || ''}</span></a></li>`).join('')}</ol>
+      ${st.slSort === 'az' ? (az.length > SL_ROWS ? `<p class="sl-more sl-pager"><button type="button" data-slpg="-1"${st.slOff ? '' : ' disabled'}>&larr; Previous</button><button type="button" data-slpg="1"${st.slOff + SL_ROWS < az.length ? '' : ' disabled'}>Next &rarr;</button></p>` : '')
+        : `<p class="sl-more"><button type="button" data-slsort="az">All ${fmt(cnt(st.slTab))} ${name} A&ndash;Z &rarr;</button></p>`}
     </div>`;
     scroller.scrollTop = 0;
   }
