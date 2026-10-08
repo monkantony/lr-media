@@ -886,6 +886,19 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
         });
       });
     })();
+    /* lr-switch-order (8 Oct 2026, Peter: "Editorials Timeline Podcast Subjects"): the site switcher, here and in the
+       phone row a template bakes, reads Editorials · Timeline · Podcast · Subjects. Runs before the bar is inserted; a
+       baked bar already in this order is left untouched (compare first), so nothing moves on screen. */
+    (function(){
+      if (!(/(^|\.)webflow\.io$/.test(location.hostname.toLowerCase())||/^(localhost|127\.0\.0\.1)$/.test(location.hostname))) return;
+      var ORDER = ['/editorials', 'https://timeline.lerandom.art', '/podcast', '/subjects'];
+      function rank(a){ var i = ORDER.indexOf(a.getAttribute('href')); return i < 0 ? 99 : i; }
+      [bar.querySelector('.tb-props'), document.querySelector('.lr-navprops-baked')].forEach(function(box){
+        if (!box) return;
+        var as = [].slice.call(box.querySelectorAll(':scope > a')), want = as.slice().sort(function(x, y){ return rank(x) - rank(y); });
+        if (want.some(function(a, i){ return a !== as[i]; })) want.forEach(function(a){ box.appendChild(a); });
+      });
+    })();
     /* lr-subjects-tabs (8 Oct 2026, Peter, design D): on the /subjects index the middle tabs are that page's own zones
        (#index, #paths, #by-kind, #every; Every subject also follows #every-subject if the zone takes that id), the way
        /podcast has its own; /subjects/<slug> keeps the editorials tabs for now. Swapped before the bar is inserted (no
