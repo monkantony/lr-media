@@ -1209,13 +1209,18 @@
       const dx = ox + q.x * K - x, dy = oy + q.y * K - y, d = Math.sqrt(dx * dx + dy * dy), rr = (touch ? 13 : 7);
       if (d < rr && d / rr < bd) { bd = d / rr; best = { type: 'moment', m: q.m }; }
     });
-    if (!best) { const hd0 = hitDoc(x, y, touch); if (hd0) return hd0; const hs0 = hitSL(x, y, touch); if (hs0) return hs0; }
+    // 8 Oct 2026: an editorial mark, a subject and a person's star under the pointer: the nearest to the pointer wins
+    // (editorial marks used to come first, so Holly Herndon's star could open Discord); within a pixel, the person,
+    // then the subject, then the editorial
+    if (best) return best;
+    const hd0 = hitDoc(x, y, touch), hs0 = hitSL(x, y, touch); let sd2 = Infinity;
     for (let i = 0; i < P.length; i++) {
       const p = P[i]; if (p.vis < 0.5 || slDim > 0.5) continue;
       const dx = ox + p.x * K - x, dy = oy + p.y * K - y, rr = p.sz * kz + tol, d2 = dx * dx + dy * dy;
-      if (d2 < rr * rr) { const s = Math.sqrt(d2) / rr - (p === st.sel ? 0.1 : 0) - Math.min(0.2, p.cnt * 0.004); if (s < bd) { bd = s; best = { type: 'star', p }; } }
+      if (d2 < rr * rr) { const s = Math.sqrt(d2) / rr - (p === st.sel ? 0.1 : 0) - Math.min(0.2, p.cnt * 0.004); if (s < bd) { bd = s; best = { type: 'star', p }; sd2 = d2; } }
     }
-    if (best) return best;
+    const near = [best && [sd2, 0, best], hs0 && [hs0.d2, 1, hs0], hd0 && [hd0.d2, 2, hd0]].filter(Boolean).sort((a, b) => (Math.abs(a[0] - b[0]) <= 1 ? a[1] - b[1] : a[0] - b[0]));
+    if (near.length) return near[0][2];
     if (slDim > 0.5) return null;
     const dx = x - ox, dy = y - oy, dr = Math.hypot(dx, dy);
     if (dr < V.hole) return { type: 'pupil' };
@@ -1865,6 +1870,11 @@
   function bindUI() {
     bindPointer();
     addEventListener('resize', () => { resize(); });
+    // 8 Oct 2026: the stage can change size while the window does not (on the Subjects index the panel takes its width
+    // after the first measure), which left the chart drawn 0.74x across while the pointer read it at full width.
+    // Re-measure whenever the stage's box or the screen's pixel ratio changes (browser zoom, a move between screens).
+    if (window.ResizeObserver) new ResizeObserver(() => { const r = stage.getBoundingClientRect(); if (Math.round(r.width) !== W || Math.round(r.height) !== H) resize(); }).observe(stage);
+    (function watchDpr() { if (!window.matchMedia) return; const mq = matchMedia('(resolution: ' + (window.devicePixelRatio || 1) + 'dppx)'); if (mq.addEventListener) mq.addEventListener('change', () => { resize(); watchDpr(); }, { once: true }); })();
     phoneMQ.addEventListener && phoneMQ.addEventListener('change', () => { resize(); if (!isPhone() && !layers.length && win) showScene(win.m, { now: true }); if (isPhone() && !st.through) killAll(); });
 
     // the key: a chip that opens into the legend (hover or focus on a desktop, a tap anywhere)
@@ -2083,7 +2093,7 @@
       const dx = ox + d.x * K - x, dy = oy + d.y * K - y, d2 = dx * dx + dy * dy;
       if (d2 < bd) { bd = d2; best = d; }
     });
-    return best ? { type: 'doc', d: best } : null;
+    return best ? { type: 'doc', d: best, d2: bd } : null;
   }
   function docTip(d) {
     const m = d.hm, n = d.pp.length, k = d.lkm.length;
@@ -2380,9 +2390,10 @@
     SL.list.forEach(s => {
       if ((s.k === 0 && slDim < 0.5) || s.x == null || !SL.kinds.has(s.k) || yrA(s.yr) < 1) return;
       const rr = slSize(s) * 1.3 + (touch ? 8 : 3), dx = ox + s.cx * K - x, dy = oy + s.cy * K - y, d2 = dx * dx + dy * dy;
-      if (d2 < rr * rr && d2 < bd) { bd = d2; best = s; }
+      // nearest to the pointer; within a pixel of each other, a person first, then the more mentioned
+      if (d2 < rr * rr && (d2 < bd - 1 || (d2 <= bd + 1 && best && ((s.k === 0) - (best.k === 0) || s.tot - best.tot) > 0))) { bd = Math.min(bd, d2); best = s; }
     });
-    return best ? { type: 'sl', s: best } : null;
+    return best ? { type: 'sl', s: best, d2: bd } : null;
   }
   function slTip(s) {
     // the first nk neighbours share pages with s; any after them are the embedding's, shown as related by meaning
