@@ -524,7 +524,12 @@
     dpr = Math.min(window.devicePixelRatio || 1, 2);
     cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
     railH = Math.round(parseFloat(getComputedStyle(root).getPropertyValue('--rail-h')) || 0);
-    if (isPhone()) {
+    if (window.LR_SL_HERO && isPhone()) {
+      // 9 Oct 2026 (direction D): the Subjects page hero on a phone: no sheet; the chart sits between the masthead and the controls
+      sheetTop = 0; root.style.removeProperty('--sheet-top');
+      const top = 150, bot = H - 104;
+      SC = Math.min(W / 2 - 4, (bot - top) / 2) / 1.075; CX = W / 2; CY = (top + bot) / 2;
+    } else if (isPhone()) {
       // the sheet's handle always stays on screen, even on a phone held sideways
       sheetTop = Math.round(Math.min(H - 120, Math.max(280, Math.min(H * 0.6, W + 60))));
       root.style.setProperty('--sheet-top', sheetTop + 'px');
@@ -1294,6 +1299,12 @@
 
   function onTap(x, y, touch) {
     const h = hit(x, y, touch); hideTip();
+    if (HERO && h) {                                    // the hero opens pages; the page below holds the reading
+      if (h.type === 'sl') return slOpen(h.s.slug);
+      if (h.type === 'star') return slOpen(SL.p2s && SL.p2s.get(h.p));
+      if (h.type === 'doc') { const u = h.d.u || (h.d.k === 'a' && h.d.s ? LRWEB + '/editorial/' + h.d.s : ''); if (u) try { window.parent.postMessage({ lrembed: 'open', url: u }, '*'); } catch (e) {} return; }
+      if (h.type === 'moment') { try { window.parent.postMessage({ lrsite: 'go', page: 'moment', params: { slug: h.m.s } }, '*'); } catch (e) {} return; }
+    }
     if (!h) { if (st.sel) select(null); return; }
     if (h.type === 'star') { select(h.p === st.sel ? null : h.p); if (isPhone() && h.p) setSheet(false); }
     else if (h.type === 'doc') enterDoc(h.d);
@@ -1845,6 +1856,13 @@
     const qw = v.split(/[\s.-]+/).filter(Boolean);
     const score = p => { if (p.nn.startsWith(v)) return 0; const ws = p.nn.split(/[\s.-]+/); if (ws.some(w => w.startsWith(v))) return 1; if (p.nn.includes(v)) return 2;
       return qw.length > 1 && qw.every(q => ws.some(w => w.startsWith(q))) ? 3 : 9; };
+    if (HERO && SL.ready) {                           // the hero finds any subject and opens its page
+      results = SL.list.map(q => { if (!q.nn) q.nn = norm(q.n); return [q, score(q)]; }).filter(x => x[1] < 9).sort((a, b) => a[1] - b[1] || b[0].tot - a[0].tot).slice(0, 8).map(x => x[0]);
+      active = 0;
+      qRes.innerHTML = results.length ? results.map((q, i) => `<li role="option" id="pp-r${i}" aria-selected="${i === 0}" data-i="${i}"><span class="r-dot" style="background:${SLK_HEX[q.k] || '#EFE9D8'}"></span><span class="r-n">${esc(q.n)}</span><span class="r-c">${SLK_ONE[q.k]}</span></li>`).join('')
+        : '<li class="r-none" aria-disabled="true">No subject by that name</li>';
+      qRes.hidden = false; qIn.setAttribute('aria-expanded', 'true'); return;
+    }
     results = P.map(p => [p, score(p)]).filter(x => x[1] < 9).sort((a, b) => a[1] - b[1] || a[0].rank - b[0].rank).slice(0, 8).map(x => x[0]);
     active = 0;
     qRes.innerHTML = results.length ? results.map((p, i) => `<li role="option" id="pp-r${i}" aria-selected="${i === 0}" data-i="${i}"><span class="r-dot" style="background:${CH_HEX[p.c]}"></span><span class="r-n">${esc(p.n)}</span><span class="r-c">${p.tot}</span></li>`).join('')
@@ -1853,6 +1871,7 @@
   }
   function pickResult(i) {
     const p = results[i]; if (!p) return;
+    if (HERO && p.slug) { qIn.value = ''; qRes.hidden = true; return slOpen(p.slug); }
     qIn.value = ''; qRes.hidden = true; qIn.setAttribute('aria-expanded', 'false'); qIn.blur();
     if (p.visT < 1) { st.era = 0; st.region = -1; st.min = 1; st.src = ''; applyFilters(); }
     select(p);
@@ -2318,6 +2337,10 @@
   const SLK_ONE = ['Person', 'Organisation', 'Work', 'Exhibition', 'Place', 'Technique', 'Theme'];
   // inert unless the Subjects index page asks for it (its loader sets LR_SUBJECTS_INDEX; ?subjects=1 locally)
   const SLON = !!(window.LR_SUBJECTS_INDEX || /[?&]subjects=1\b/.test(location.search));
+  // 9 Oct 2026 (direction D): the Subjects page's hero: the map alone, full width in the Window's box; the index, paths and
+  // lists live on the page below and drive the map through window.LR_SL_API
+  const HERO = SLON && !!window.LR_SL_HERO;
+  function slOpen(slug) { if (slug) try { window.parent.postMessage({ lrembed: 'open', url: LRWEB + '/subjects/' + slug }, '*'); } catch (e) {} }
   const SL = { list: [], by: new Map(), ready: false, kinds: new Set([0, 1, 2, 3, 4, 5, 6]) };
   const YB = [-71000, 1850, 1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020, 2025];
   st.yrT = 1;                                          // scrubber position, 0 (71,000 BCE) to 1 (2025)
@@ -2325,6 +2348,28 @@
   // scrubs or rearranges (review, 8 Oct 2026)
   st.slCalm = true;
   function slWake() { if (st.slCalm) { st.slCalm = false; kick(); } }
+  function slChain(ch) {
+    return Promise.all(ch.map(x => x.W ? 0 : slW(x.slug).then(w => { x.W = w; }))).then(() => ch.map((x, i) => { const nx = ch[i + 1], w = nx && x.W && x.W.t && x.W.t[nx.slug]; return { slug: x.slug, n: x.n, k: x.k, why: w ? (w[1] || '') : '', src: w ? w[2] : '' }; }));
+  }
+  function slHeroLabel() {
+    const d = $('#sl-kinds'); if (!d || $('#sl-hk')) return;
+    const p = document.createElement('p'); p.id = 'sl-hk'; p.className = 'lab sl-hk'; p.textContent = `Seven kinds \u00b7 ${fmt(SL.list.length)} subjects`; d.insertBefore(p, d.firstChild);
+    const kc = $('#pp-key .pp-key-chip'); if (kc) { const q = kc.querySelector('.q'); kc.textContent = 'How to read the map'; if (q) kc.prepend(q); }
+  }
+  // the page below the hero reads the subjects and drives the map: hover and leave a name, find and draw a path
+  window.LR_SL_API = {
+    ready: () => !!SL.ready,
+    kinds: () => SLK_NAME.slice(),
+    list: () => SL.list.map(s => ({ slug: s.slug, n: s.n, k: s.k, e: s.e, p: s.p, t: s.t, tot: s.tot })),
+    da: () => SL.da,
+    hover: slug => slListHover(slug), leave: () => slListLeave(),
+    // a path through shared pages: route() only reads it, path() also draws it on the map
+    route: (a, b) => { const A = SL.by.get(a), B = SL.by.get(b), ch = A && B ? slFindPath(A, B) || [] : []; return slChain(ch); },
+    path: (a, b) => { const A = SL.by.get(a), B = SL.by.get(b); st.slPath = A && B ? slFindPath(A, B) || [] : []; slWake(); kick(); return slChain(st.slPath); },
+    clearPath: () => { st.slPath = []; kick(); },
+    sky: () => cv, ground: () => $('#pp-ground'), view: () => ({ K: V.K, ox: V.ox, oy: V.oy, W, H, hole: V.hole }),
+    pos: slug => { const q = SL.by.get(slug); return q && q.cx != null ? [V.ox + q.cx * V.K, V.oy + q.cy * V.K] : null; },
+  };
   let slLH = null, slLT = 0, slLCam = null;
   function slListHover(slug) {
     if (!window.LR_SL_CALM) return;
@@ -2371,7 +2416,8 @@
       });
       SL.list.forEach(s => { s.nb = s.nbi.map(i => SL.list[i] && SL.list[i].slug).filter(Boolean); });
       slArrange(j.r || []);
-      SL.da = j.da || null; SL.ready = true;
+      SL.da = j.da || null; SL.p2s = new Map(SL.list.filter(s => s.person).map(s => [s.person, s.slug])); SL.ready = true;
+      if (HERO) slHeroLabel();
       if (st.subj && !st.subj.doc && st.subj.def.slug && !st.subj.sl) { st.subj.sl = SL.by.get(st.subj.def.slug) || null; if (st.subj.sl) renderSubject(); }
       // the page shows this frame in place of its poster once the subjects are drawn on it (two frames on)
       requestAnimationFrame(() => requestAnimationFrame(() => { try { if (window.parent !== window) window.parent.postMessage({ lrembed: 'ready' }, '*'); } catch (e) {} }));
@@ -2639,7 +2685,7 @@
       .sort((a, b) => b[0] - a[0]).slice(0, SL_ROWS).map(x => x[1]);
   }
   // the page keeps the kind and order in its address (#works&sort=az), so a shared link opens the same list
-  function slState() { try { if (window.parent !== window && window.parent.__lrSlState) window.parent.__lrSlState(st.slTab, st.slSort); } catch (e) {} }
+  function slState() { if (HERO) return; try { if (window.parent !== window && window.parent.__lrSlState) window.parent.__lrSlState(st.slTab, st.slSort); } catch (e) {} }
   function renderIndex() {
     if (!SL.ready) { scroller.innerHTML = '<div class="pv pv-over"><p class="lab pv-kicker">Subjects</p><h1 class="pv-title">Subjects</h1></div>'; return; }
     const cnt = k => SL.list.filter(s => s.k === k).length;
@@ -2668,7 +2714,7 @@
 
   function start() {
     window.LR_SUBJECT = def => enterSubject(def);
-    loadDocs(); if (SLON) { root.classList.add('sl-on'); if (window.LR_SL_FOCUS) root.classList.add('sl-focus'); loadSL(); slTools(); }
+    loadDocs(); if (SLON) { root.classList.add('sl-on'); if (window.LR_SL_FOCUS) root.classList.add('sl-focus'); if (HERO) { root.classList.add('sl-hero'); qIn.placeholder = 'Find a subject'; qIn.setAttribute('aria-label', 'Find a subject'); } loadSL(); slTools(); }
     window.LR_SELECT = tok => { const p = PT.get(tok); if (p && p !== st.sel) select(p, { fromHash: true }); };
     root.classList.remove('is-loading');
     const mm = $('[data-n="mm"]', keyEl); if (mm) mm.textContent = fmt(IX.length);

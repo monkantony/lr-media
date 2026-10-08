@@ -523,3 +523,54 @@ button.pv-chip.is-tag:hover{border-style:solid}
 /* a subject page keeps the person pages' layout (panel 440px), with the map's kinds and arrangements */
 .pp.sl-on.sl-focus{--panel-w:440px}
 .pv-near i{box-shadow:inset 0 0 0 1px rgba(1,16,21,.4)}
+/* 9 Oct 2026 (direction D): the Subjects page hero. The map alone, full width in the /editorials Window's box; the page sets
+   SUBJECTS and its dek over the top (outside this frame); the controls take the Window's slots. Measures are the Window's:
+   frame clamp(20px,4.4vw,80px) inside a 1580px column, mast padding clamp(16px,2vw,30px), title clamp(30px,7.4vw,124px) x .86,
+   rule after clamp(12px,1.3vw,19px), 26px at the foot. */
+.pp.sl-hero{--panel-w:0px;--fr:clamp(20px,4.4vw,80px);--L:max(var(--fr),calc((100vw - 1580px) / 2 + var(--fr)));
+  --mb:calc(clamp(16px,2vw,30px) + clamp(30px,7.4vw,124px) * .86 + clamp(12px,1.3vw,19px))}
+.pp.sl-hero .pp-panel,.pp.sl-hero #pp-hint,.pp.sl-hero #pp-src{display:none!important}
+.pp.sl-hero .pp-stage{flex:1 1 100%}
+.pp.sl-hero .pp-stage::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:3;
+  background:linear-gradient(180deg,rgba(1,16,21,.92) 0,rgba(1,16,21,.55) calc(var(--mb) + 10px),rgba(1,16,21,0) calc(var(--mb) + 110px),rgba(1,16,21,0) calc(100% - 196px),rgba(1,16,21,.55) calc(100% - 106px),rgba(1,16,21,.9) 100%)}
+.pp.sl-hero .pp-stage::after{content:"";position:absolute;left:var(--L);right:var(--L);bottom:74px;border-top:1px solid rgba(247,244,234,.22);pointer-events:none;z-index:4}
+.pp.sl-hero #pp-tools{display:contents}
+.pp.sl-hero .pp-find{position:absolute;z-index:6;right:var(--L);top:calc(var(--mb) + 20px);width:250px;left:auto;bottom:auto}
+.pp.sl-hero #pp-q{height:auto;background:transparent;border:0;border-bottom:1px solid rgba(247,244,234,.4);border-radius:0;padding:4px 30px 7px 0;
+  font:500 10.5px/1.2 Rules,Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:#F7F4EA;box-shadow:none}
+.pp.sl-hero #pp-q::placeholder{color:rgba(247,244,234,.6)}
+.pp.sl-hero .pp-find svg,.pp.sl-hero .pp-find .pp-find-i{display:none}
+.pp.sl-hero .pp-find::after{content:"\2318K";position:absolute;right:0;top:3px;border:1px solid rgba(247,244,234,.3);padding:1px 4px;font:500 9px/1.2 Rules,Arial,sans-serif;letter-spacing:.05em;color:rgba(247,244,234,.6);pointer-events:none}
+.pp.sl-hero #pp-results{left:auto;right:0;top:calc(100% + 8px);width:300px}
+.pp.sl-hero .sl-hk{flex:0 0 100%;margin:0 0 8px;font:500 11px/1 Rules,Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:#FF4C00}
+.pp.sl-hero #sl-kinds{position:absolute;z-index:6;left:var(--L);bottom:104px;max-width:330px;display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.pp.sl-hero #sl-kinds .pp-chip{height:30px;padding:0 12px;border-radius:15px;font-size:10.5px;letter-spacing:.13em;background:rgba(1,16,21,.55)}
+.pp.sl-hero #sl-mode{position:absolute;z-index:6;left:var(--L);bottom:26px;display:flex;gap:6px;align-items:center;margin:0}
+.pp.sl-hero #sl-mode .lab{margin-right:8px;color:rgba(247,244,234,.62)}
+.pp.sl-hero #sl-mode .pp-chip{height:28px;padding:0 12px;border-radius:14px}
+.pp.sl-hero .sl-time{position:absolute;z-index:6;left:50%;right:auto;top:auto;bottom:24px;width:min(520px,36vw);transform:translateX(-50%);
+  border:0;background:transparent;padding:0;display:flex;align-items:center;gap:14px}
+.pp.sl-hero .sl-time .lab{white-space:nowrap;color:rgba(247,244,234,.62)}
+.pp.sl-hero .sl-time b{font:500 20px/1 Rules,Arial,sans-serif;letter-spacing:.06em}
+.pp.sl-hero #pp-zoom{position:absolute;z-index:6;right:var(--L);top:auto;bottom:26px;left:auto;flex-direction:row;gap:9px;background:transparent;border:0;border-radius:0;box-shadow:none}
+.pp.sl-hero #pp-zoom button{width:34px;height:34px;border:1px solid rgba(247,244,234,.55);border-radius:0;background:transparent}
+.pp.sl-hero #pp-key{position:absolute;z-index:6;right:var(--L);left:auto;bottom:104px;top:auto;max-width:330px;background:transparent;border:0;padding:0}
+.pp.sl-hero #pp-key .pp-key-chip{background:transparent;border:0;border-bottom:1px solid rgba(247,244,234,.55);border-radius:0;padding:0 0 9px;font:400 16px/1 Rules,Arial,sans-serif;letter-spacing:0;text-transform:none;color:#F7F4EA}
+.pp.sl-hero #pp-key .pp-key-chip .q{display:none}
+.pp.sl-hero #pp-key .pp-key-chip::after{content:" \2197"}
+@media (max-width:860px){
+  .pp.sl-hero{bottom:0}
+  .pp.sl-hero .pp-stage::before{background:linear-gradient(180deg,#011015 0,#011015 142px,rgba(1,16,21,0) 175px,rgba(1,16,21,0) calc(100% - 144px),#011015 calc(100% - 96px))}
+  .pp.sl-hero .pp-stage::after{left:20px;right:20px;bottom:56px}
+  .pp.sl-hero .pp-find,.pp.sl-hero #pp-zoom,.pp.sl-hero #pp-key,.pp.sl-hero .sl-hk{display:none!important}
+  .pp.sl-hero #sl-kinds{left:20px;right:20px;bottom:66px;max-width:none;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:6px}
+  .pp.sl-hero #sl-kinds .pp-chip{height:26px;padding:0 9px;font-size:9.5px;flex:none}
+  .pp.sl-hero #sl-mode{left:20px;bottom:14px;gap:4px}
+  .pp.sl-hero #sl-mode .lab{display:none}
+  .pp.sl-hero #sl-mode .pp-chip{height:26px;padding:0 8px;font-size:9px;letter-spacing:.1em}
+  .pp.sl-hero .sl-time{left:auto;right:20px;transform:none;width:calc(100% - 244px);min-width:110px;bottom:14px;gap:6px}
+  .pp.sl-hero .sl-time .lab{font-size:0}.pp.sl-hero .sl-time .lab::before{content:"By";font-size:9.5px}
+  .pp.sl-hero .sl-time b{font-size:14px}
+}
+.pp.sl-hero .pp-find{height:auto;padding:0;background:transparent;border:0;border-radius:0;-webkit-backdrop-filter:none;backdrop-filter:none}
+.pp.sl-hero .pp-find:focus-within #pp-q{border-bottom-color:#FF4C00}
