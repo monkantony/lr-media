@@ -500,3 +500,4 @@ button.pv-chip.is-tag:hover{border-style:solid}
 .sl-az button:hover{background:rgba(1,16,21,.08)}
 .sl-az button[aria-pressed=true]{background:var(--lr-ink);color:var(--paper)}
 .sl-az button:disabled{opacity:.25;cursor:default}
+@media (max-width:760px){.pp.sl-on .pp-ground-e{display:none}}

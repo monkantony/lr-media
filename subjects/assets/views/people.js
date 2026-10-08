@@ -1262,7 +1262,7 @@
     } else if (h.type === 'doc') {
       html = docTip(h.d);
     } else if (h.type === 'sl') {
-      html = slTip(h.s);
+      html = slTip(h.s); slWake();
       if (!h.s.W) slW(h.s.slug).then(w => { h.s.W = w; if (st.hover && st.hover.s === h.s && !tip.hidden) { const t = tip.querySelector('.t-a'); if (t && w.w[0]) t.insertAdjacentHTML('beforebegin', slWhy(h.s)); } });
     } else if (h.type === 'pupil') {
       if (!win) return hideTip();
@@ -2292,6 +2292,17 @@
   const SL = { list: [], by: new Map(), ready: false, kinds: new Set([0, 1, 2, 3, 4, 5, 6]) };
   const YB = [-71000, 1850, 1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020, 2025];
   st.yrT = 1;                                          // scrubber position, 0 (71,000 BCE) to 1 (2025)
+  // the index opens calm, like the people view: subjects dimmed and unlabelled until someone hovers one, picks a kind,
+  // scrubs or rearranges (review, 8 Oct 2026)
+  st.slCalm = true;
+  function slWake() { if (st.slCalm) { st.slCalm = false; kick(); } }
+  // the window in the middle shows the chapter the scrubber stands in
+  let slWinC = 10;
+  function slWindowFor(t) {
+    const y = yrOf(t); let c = 1; while (c < 10 && y > YB[c]) c++;
+    if (c === slWinC || st.sel || st.subj) return; slWinC = c;
+    const sc = SC_BY.get(CH[c - 1].scene), m0 = (sc && BY.get(sc.home)) || IX[0]; if (m0) showScene(m0);
+  }
   const yrOf = t => { const c = Math.min(9, Math.floor(t * 10)), f = t * 10 - c; return YB[c] + (YB[c + 1] - YB[c]) * f; };
   const yrLab = y => (y < 0 ? fmt(Math.round(-y)) + ' BCE' : String(Math.round(y)));
   function yrA(y) { return st.yrT >= 0.999 || y == null || y <= yrOf(st.yrT) ? 1 : 0.06; }
@@ -2337,7 +2348,7 @@
       if (s.k === 0) { if (slDim < 0.02) return; const x = ox + s.cx * K, y = oy + s.cy * K; if (x < -10 || y < -10 || x > W + 10 || y > H + 10) return;
         g.globalAlpha = fade * slDim * yrA(s.yr) * 0.9; g.fillStyle = '#EFE9D8'; g.beginPath(); g.arc(x, y, slSize(s) * 0.8, 0, TAU); g.fill(); return; }
       const x = ox + s.cx * K, y = oy + s.cy * K; if (x < -10 || y < -10 || x > W + 10 || y > H + 10) return;
-      const sz = slSize(s), a = yrA(s.yr) * (st.era && s.era && s.era !== st.era ? 0.15 : 1) * (st.sel || st.subj ? 0.25 : 1);
+      const sz = slSize(s), a = yrA(s.yr) * (st.era && s.era && s.era !== st.era ? 0.15 : 1) * (st.sel || st.subj ? 0.25 : 1) * (st.slCalm && s !== hs ? 0.3 : 1);
       g.globalAlpha = fade * a * (s === hs ? 1 : 0.85);
       const c = SLK_HEX[s.k];
       if (s.k === 6) { g.strokeStyle = c; g.lineWidth = 1.4; slShape(x, y, sz, s.k); g.stroke(); }
@@ -2442,6 +2453,7 @@
   }
   // semantic zoom: the closer you look, the more subjects carry their names (the most-mentioned first)
   function slLabels(K, ox, oy, fade) {
+    if (st.slCalm && st.slMode === 0 && cam.k < 1.6) return;
     const n = clamp(Math.round((st.slMode ? 22 : 9) * Math.pow(cam.k, 1.7)), 6, 220), boxes = st.slMode === 1 && SL.rbox ? SL.rbox.slice() : [], pathSet = new Set(st.slPath || []);
     let shown = 0; g.save(); g.font = 'italic 13px "EB Garamond", Georgia, serif'; g.textBaseline = 'middle'; g.lineJoin = 'round';
     for (const s of SL.rank) {
@@ -2487,6 +2499,7 @@
     g.restore();
   }
   function slMode(m) {
+    if (m) slWake();
     st.slMode = m; $$('#sl-mode [data-slm]').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.slm === m)));
     root.classList.toggle('sl-arranged', m !== 0); slMoving = true; kick();
   }
@@ -2515,9 +2528,9 @@
     const sc = document.createElement('div'); sc.id = 'sl-time'; sc.className = 'sl-time';
     sc.innerHTML = `<span class="lab">In history by</span><input id="sl-yr" type="range" min="0" max="1000" value="1000" aria-label="Show subjects as they enter history"><b id="sl-yl">2025</b>`;
     stage.appendChild(sc);
-    $('#sl-yr').addEventListener('input', e => { st.yrT = +e.target.value / 1000; $('#sl-yl').textContent = yrLab(yrOf(st.yrT)); kick(); });
+    $('#sl-yr').addEventListener('input', e => { st.yrT = +e.target.value / 1000; $('#sl-yl').textContent = yrLab(yrOf(st.yrT)); slWake(); slWindowFor(st.yrT); kick(); });
     d.addEventListener('click', e => { const b = e.target.closest('[data-slk]'); if (!b) return; const k = +b.dataset.slk;
-      if (SL.kinds.has(k)) SL.kinds.delete(k); else SL.kinds.add(k); b.setAttribute('aria-pressed', String(SL.kinds.has(k))); kick(); });
+      if (SL.kinds.has(k)) SL.kinds.delete(k); else SL.kinds.add(k); b.setAttribute('aria-pressed', String(SL.kinds.has(k))); slWake(); kick(); });
   }
   function slPathHTML() {
     const q = st.slPathQ || ['', ''], P2 = st.slPath;
@@ -2568,7 +2581,7 @@
       d.innerHTML = [['m', 'Timeline'], ['a', 'Editorials'], ['p', 'Podcast']].map(x => `<button class="pp-chip" type="button" data-src="${x[0]}" aria-pressed="false">${x[1]}</button>`).join(''); tools.appendChild(d); measureUI(); }
     st.started = true; st.introT0 = now();
     // the window opens on a chapter's own machine, chosen by chance, unless a person is asked for
-    const c = 1 + Math.floor(Math.random() * 10), sc = SC_BY.get(CH[c - 1].scene), m0 = (sc && BY.get(sc.home)) || IX[0];
+    const c = SLON ? 10 : 1 + Math.floor(Math.random() * 10), sc = SC_BY.get(CH[c - 1].scene), m0 = (sc && BY.get(sc.home)) || IX[0];   // the index opens on the scrubber's year (2025)
     const tok = S.params.token || S.params.slug || '';
     const asked = PT.get(tok); curTok = asked || tok === 'women' ? tok : null;
     if (!asked) { win = { m: m0, sc: sceneFor(m0) }; setGround(m0, win.sc); if (tok && tok !== 'women') showMissing(tok); else renderOverview(); }
