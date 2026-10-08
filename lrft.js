@@ -366,6 +366,7 @@
     el.addEventListener('keydown', function (e) { if (e.key.length === 1) { e.preventDefault(); el.blur(); open(e.key); } }, true);
   }
   function besideWord(el, k) {
+    if (!k) return;   /* touch screens build no ⌘K hint, but the label keeps .lrk-besideword (9 Oct 2026: the null k threw on every phone view) */
     /* measured by a hidden twin in the page's own fonts (a canvas misses web fonts such as the italic Garamond) */
     var cs = getComputedStyle(el, '::placeholder'), m = document.createElement('span');
     ['fontFamily', 'fontSize', 'fontStyle', 'fontWeight', 'letterSpacing', 'textTransform'].forEach(function (p) { m.style[p] = cs[p]; });
