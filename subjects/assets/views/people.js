@@ -1973,6 +1973,10 @@
     boxes: () => ({ ruler: rulerBoxes.map(b => b.map(Math.round)), placed: placed.filter(b => b[2] - b[0] > 40).map(b => b.map(Math.round)), ui: uiRects.map(b => b.map(Math.round)) }),
     counts: () => ({ people: P.length, edges: EDGES.length, moments: IX.length }),
     mAt: slug => { const m = BY && BY.get(slug), b = stage.getBoundingClientRect(); return m ? [Math.round(b.left + V.ox + m.px * V.K), Math.round(b.top + V.oy + m.py * V.K)] : null; },
+    // 8 Oct 2026: any subject on the Subjects index map by slug (its mark where it is drawn now, through the
+    // Time / Meaning / Kind glide); null when it has no place or its kind is switched off
+    sAt: slug => { const q = typeof SL !== 'undefined' && SL.ready && SL.by.get(slug), b = stage.getBoundingClientRect(); return q && q.cx != null && SL.kinds.has(q.k) ? [Math.round(b.left + V.ox + q.cx * V.K), Math.round(b.top + V.oy + q.cy * V.K)] : null; },
+    sl: () => (typeof SL !== 'undefined' && SL.ready ? { n: SL.list.length, calm: !!st.slCalm, mode: st.slMode, tab: st.slTab, sort: st.slSort, yr: yrOf(st.yrT), path: (st.slPath || []).map(x => x.slug) } : null),
     center: () => { const b = stage.getBoundingClientRect(); return [Math.round(b.left + V.ox), Math.round(b.top + V.oy)]; },
     state: () => ({ sel: st.sel && st.sel.tok, lens: st.lens, era: st.era, region: st.region, min: st.min, through: st.through, k: +cam.k.toFixed(2), win: win && win.sc.id, layers: layers.length, live: liveNow(), sceneOK }),
   };
