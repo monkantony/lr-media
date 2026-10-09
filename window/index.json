@@ -6,6 +6,13 @@
   "fv": "9b5895a3",
   "pv": "70fdb9ab"
  },
+ "london-digital-art-guide": {
+  "at": "2026-10-09T18:33:50Z",
+  "bytes": 1371166,
+  "credit": "London Digital Art Guide · Le Random",
+  "fv": "86bb9165",
+  "pv": "66b25edc"
+ },
  "new-histories-previewing-autumn-2026-in-art-and-technology": {
   "at": "2026-09-14T17:49:18Z",
   "bytes": 2969304,
@@ -26,5 +33,12 @@
   "credit": "Ryan Murdock · Le Random",
   "fv": "4d4b1857",
   "pv": "c8ea046d"
+ },
+ "the-living-timeline": {
+  "at": "2026-10-09T19:05:11Z",
+  "bytes": 936458,
+  "credit": "The Living Timeline · Le Random",
+  "fv": "8966e6c6",
+  "pv": "1112345b"
  }
 }

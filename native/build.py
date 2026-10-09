@@ -74,7 +74,7 @@ js = patch(js, "var b = document.createElement('button'); b.type = 'button'; b.c
 # the headline (.win-mast, .win-piece) and has no .win-top, so the hero module returned before binding its sync. It now
 # reuses what is baked and only builds them on a page that lacks them.
 js = patch(js, "if (!top || !type || !title || !sub) return;\n\n    var mast = document.createElement('div'); mast.className = 'win-mast';\n    mast.appendChild(title); mast.appendChild(sub);\n    inner.insertBefore(mast, inner.firstChild);\n    top.remove();",
-           "var bakedPiece = type && type.querySelector('.win-piece');   /* native: masthead and headline are baked */\n    if (!bakedPiece) { if (!top || !type || !title || !sub) return;\n\n    var mast = document.createElement('div'); mast.className = 'win-mast';\n    mast.appendChild(title); mast.appendChild(sub);\n    inner.insertBefore(mast, inner.firstChild);\n    top.remove(); }",
+           "var bakedPiece = type && (type.querySelector('.win-piece.win-pin') || type.querySelector('.win-piece'));   /* native: masthead and headline are baked; lr-window-href: a static first-frame piece (.win-pin) wins */\n    if (!bakedPiece) { if (!top || !type || !title || !sub) return;\n\n    var mast = document.createElement('div'); mast.className = 'win-mast';\n    mast.appendChild(title); mast.appendChild(sub);\n    inner.insertBefore(mast, inner.firstChild);\n    top.remove(); }",
            'Window headline: baked masthead')
 js = patch(js, "var piece = document.createElement('div'); piece.className = 'win-piece';\n    piece.innerHTML =",
            "var piece = bakedPiece; if (!piece) { piece = document.createElement('div'); piece.className = 'win-piece';\n    piece.innerHTML =",

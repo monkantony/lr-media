@@ -171,7 +171,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261009142446";
+var LRW_BUILD = "20261009200621";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -815,7 +815,11 @@ try{
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---- The Window: rotating programme ---- */
-  var PROG = [{"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/ryan-murdock-on-hacking-ai.mp4?v=4d4b1857", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/ryan-murdock-on-hacking-ai.jpg?v=c8ea046d", "slug": "ryan-murdock-on-hacking-ai", "work": "Hacking AI", "artist": "Ryan Murdock", "credit": "Cover image · Le Random", "year": "2026"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/new-york-city-digital-art-guide.mp4?v=7ea9b533", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/new-york-city-digital-art-guide.jpg?v=67df9fb7", "slug": "new-york-city-digital-art-guide", "work": "New York City Digital Art Guide", "artist": "LoVid, Emily Edelman, Josh Yakov and Peter Bauman", "credit": "Cover image · Le Random", "year": "2025"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/trailer-goodfellow.mp4", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/poster-goodfellow.jpg", "slug": "ian-goodfellow-on-inventing-gans", "work": "Inventing GANs", "artist": "Ian Goodfellow", "credit": "Trailer · Le Random", "year": "2025"}], cur = 0;   /* the window always opens on the latest (Peter, Aug 31) */
+  var PROG = [{"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/the-living-timeline.mp4?v=8966e6c6", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/the-living-timeline.jpg?v=1112345b", "slug": "the-living-timeline", "href": "https://timeline.lerandom.art/", "work": "The Living Timeline", "artist": "The Living Timeline", "credit": "The Living Timeline · Le Random", "year": "2026", "pin": "pinned 2026-10-09 (Peter): the Living Timeline leads the Window; holds until a brand-new editorial is published", "piece": {"t": "The Living Timeline", "kind": "Timeline", "d": "71,000 BCE – 2025", "byline": "1,147 moments of generative art history and 35 playable machines", "read": "Enter the timeline"}}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/london-digital-art-guide.mp4?v=86bb9165", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/london-digital-art-guide.jpg?v=66b25edc", "slug": "london-digital-art-guide", "work": "London Digital Art Guide", "artist": "Corinna Gardner, Melanie Lenz, Hannah Redler-Hawes, Alex Estorick, Clara Che Wei Peh, Robert Alice, Abigail Miller and Peter Bauman", "credit": "London Digital Art Guide · Le Random", "year": "2025", "pin": "pinned 2026-10-09 (Peter): slot 2 after the Timeline; holds until a brand-new editorial is published"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/ryan-murdock-on-hacking-ai.mp4?v=4d4b1857", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/ryan-murdock-on-hacking-ai.jpg?v=c8ea046d", "slug": "ryan-murdock-on-hacking-ai", "work": "Hacking AI", "artist": "Ryan Murdock", "credit": "Cover image · Le Random", "year": "2026", "keep": "slot 3 held 2026-10-09 (Peter)"}], cur = 0;   /* the window always opens on the latest (Peter, Aug 31) */
+  /* lr-window-gate (9 Oct 2026): the Timeline-first programme needs the page's static first frame (.win-pin);
+     a page without it (www until Peter's go) keeps the previous programme */
+  var LRW_PROG_PREV = [{"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/ryan-murdock-on-hacking-ai.mp4?v=4d4b1857", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/ryan-murdock-on-hacking-ai.jpg?v=c8ea046d", "slug": "ryan-murdock-on-hacking-ai", "work": "Hacking AI", "artist": "Ryan Murdock", "credit": "Cover image · Le Random", "year": "2026"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/new-york-city-digital-art-guide.mp4?v=7ea9b533", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/new-york-city-digital-art-guide.jpg?v=67df9fb7", "slug": "new-york-city-digital-art-guide", "work": "New York City Digital Art Guide", "artist": "LoVid, Emily Edelman, Josh Yakov and Peter Bauman", "credit": "Cover image · Le Random", "year": "2025"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/trailer-goodfellow.mp4", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/poster-goodfellow.jpg", "slug": "ian-goodfellow-on-inventing-gans", "work": "Inventing GANs", "artist": "Ian Goodfellow", "credit": "Trailer · Le Random", "year": "2025"}];
+  if (!document.querySelector('#window .win-pin')) PROG = LRW_PROG_PREV;
   var vid = document.getElementById('winvid');
   /* lr-window-films: a film that will not load leaves the poster on screen */
   vid.addEventListener('error', function(){
@@ -835,7 +839,7 @@ try{
     document.getElementById('win-work').textContent = p.work;
     document.getElementById('win-year').textContent = p.year;
     document.getElementById('win-cred').textContent = p.credit;
-    document.getElementById('win-link').setAttribute('href', '/editorial/' + p.slug);
+    document.getElementById('win-link').setAttribute('href', p.href || ('/editorial/' + p.slug));   /* lr-window-href: a slot may link anywhere (the Living Timeline) */
     document.getElementById('win-idx').textContent = 'Programme ' + ('0'+(cur+1)).slice(-2) + ' / ' + ('0'+PROG.length).slice(-2);
     [].forEach.call(document.querySelectorAll('#win-dots i'), function(d,j){ d.classList.toggle('on', j===cur); });
     if (autoplay !== false && !reduce && p.src) { userPaused = false; playBtn.innerHTML = ICON_PAUSE;
@@ -849,6 +853,7 @@ try{
   };
   window.__lrwSetSlot3 = function(slug){
     var v = FEATVID[slug]; if (!v) return;
+    if (PROG[2] && PROG[2].keep) return;   /* lr-window-keep: a held slot 3 is not the Featured mirror */
     PROG[2] = { src: v[0], poster: v[1], slug: slug, work: v[2], artist: v[3], credit: v[4], year: v[5] };
     if (cur === 2) show(2, false);
   };
@@ -862,6 +867,8 @@ try{
       if (cur === i) show(i, false);
     }
   };
+  /* lr-window-href: the hero reads a non-editorial slot's own words */
+  window.__lrwWindowPiece = function(href){ for (var i = 0; i < PROG.length; i++) { if (PROG[i].href && PROG[i].href === href) return PROG[i].piece || null; } return null; };
   window.__lrwWindowSlugs = function(){ return PROG.map(function(p){ return p.slug; }); };
   /* lr-live-newest: the feed module puts a brand-new editorial in front of the programme */
   window.__lrwWindowPromote = function(rec){
@@ -3907,7 +3914,7 @@ window.__lrwGlide = function(t, reduce, holdMs, onStable){
     var top = inner.querySelector('.win-top'), type = inner.querySelector('.win-type');
     var title = inner.querySelector('.win-title'), sub = inner.querySelector('.win-sub');
     var idx = document.getElementById('win-idx'), bottom = inner.querySelector('.win-bottom');
-    var bakedPiece = type && type.querySelector('.win-piece');   /* native: masthead and headline are baked */
+    var bakedPiece = type && (type.querySelector('.win-piece.win-pin') || type.querySelector('.win-piece'));   /* native: masthead and headline are baked; lr-window-href: a static first-frame piece (.win-pin) wins */
     if (!bakedPiece) { if (!top || !type || !title || !sub) return;
 
     var mast = document.createElement('div'); mast.className = 'win-mast';
@@ -3952,7 +3959,7 @@ window.__lrwGlide = function(t, reduce, holdMs, onStable){
     function sync(){
       var href = link ? (link.getAttribute('href') || '') : '';
       if (piece.closest && piece.closest('.w-dyn-item') && !piece.__lrnMoved) { if (href === lrnHome) return; piece.__lrnMoved = 1; }   /* lrn-native: the first piece is server-rendered */
-      var r = REG[href.split('/editorial/')[1] || ''];
+      var r = REG[href.split('/editorial/')[1] || ''] || (window.__lrwWindowPiece && window.__lrwWindowPiece(href));   /* lr-window-href */
       if (!r || !r.t) { piece.style.display = 'none'; return; }
       piece.style.display = '';
       var k = (r.kind || '').toLowerCase();
@@ -3962,11 +3969,11 @@ window.__lrwGlide = function(t, reduce, holdMs, onStable){
       h.setAttribute('href', href);
       h.innerHTML = broken(r.t).map(function(l){ return '<span>' + esc(l) + '</span>'; }).join('');
       piece.querySelector('.win-by').textContent =
-        r.by ? (k === 'interview' ? 'In conversation with ' + r.by : 'By ' + r.by) : '';
+        r.byline ? r.byline : r.by ? (k === 'interview' ? 'In conversation with ' + r.by : 'By ' + r.by) : '';
       var read = piece.querySelector('.win-read');
       read.setAttribute('href', href);
       read.querySelector('span').textContent =
-        'Read the ' + (k === 'interview' ? 'interview' : k === 'essay' ? 'essay' : k === 'guide' ? 'guide' : 'article');
+        r.read ? r.read : 'Read the ' + (k === 'interview' ? 'interview' : k === 'essay' ? 'essay' : k === 'guide' ? 'guide' : 'article');
     }
     sync();
     if (link && window.MutationObserver)
