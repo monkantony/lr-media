@@ -608,18 +608,18 @@ button.pv-chip.is-tag:hover{border-style:solid}
   .pp.sl-hero.sl-split .sl-tabs .pv-chip small{color:rgba(239,233,216,.62)}
   /* compact index: one row of kind toggles (scrolling with a fade when they do not fit), the order under them, one
      column of rows: name, count, one line each */
-  .pp.sl-hero.sl-split .sl-tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:3px;margin:0 0 8px -3px}
+  .pp.sl-hero.sl-split .sl-tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:1px;margin:0 0 8px -2px}
   .pp.sl-hero.sl-split .sl-tabs::-webkit-scrollbar{display:none}
   .pp.sl-hero.sl-split .sl-tabs.is-over{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 32px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 32px),transparent)}
-  .pp.sl-hero.sl-split .sl-tabs .pv-chip{flex:none;min-height:24px;padding:2px 3px;gap:2px;font:400 10.5px/1.1 Rules,Arial,sans-serif;letter-spacing:-.005em;border:0!important;border-radius:3px;background:transparent!important}
-  .pp.sl-hero.sl-split .sl-tabs .pv-chip small{margin-left:0;font:500 8.5px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:-.02em}
+  .pp.sl-hero.sl-split .sl-tabs .pv-chip{flex:none;min-height:24px;padding:2px 2px;gap:2px;font:400 10.25px/1.1 Rules,Arial,sans-serif;letter-spacing:-.005em;border:0!important;border-radius:3px;background:transparent!important}
+  .pp.sl-hero.sl-split .sl-tabs .pv-chip small{margin-left:0;font:400 9px/1 Rules,Arial,sans-serif;font-variant-numeric:tabular-nums;letter-spacing:0;color:rgba(239,233,216,.78);opacity:1}
   .pp.sl-hero.sl-split .sl-sort{margin:0 0 8px}
   .pp.sl-hero.sl-split .sl-sort button{height:24px;padding:0 9px;font-size:10px}
   .pp.sl-hero.sl-split .sl-list{columns:1}
   .pp.sl-hero.sl-split .sl-list a{box-sizing:border-box;height:34px;align-items:center;gap:10px;padding:0;font:400 clamp(14px,.84vw,16px)/1.2 Rules,Arial,sans-serif;border-bottom-color:rgba(247,244,234,.14)}
   .pp.sl-hero.sl-split .sl-list .nm{flex:0 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .pp.sl-hero.sl-split .sl-list .dots{flex:1 1 8px}
-  .pp.sl-hero.sl-split .sl-list .c{flex:none;font:500 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;opacity:.62}
+  .pp.sl-hero.sl-split .sl-list .c{flex:none;font:400 clamp(12px,.72vw,13.6px)/1 Rules,Arial,sans-serif;font-variant-numeric:tabular-nums;color:rgba(239,233,216,.78);opacity:1}
   .pp.sl-hero.sl-split .sl-more{margin-top:12px}
   .pp.sl-hero.sl-split .sl-az{flex-wrap:nowrap;justify-content:space-between;gap:0}
   .pp.sl-hero.sl-split .sl-az button{min-width:0;flex:1 1 0;padding:0}
@@ -642,6 +642,8 @@ button.pv-chip.is-tag:hover{border-style:solid}
 /* 9 Oct 2026: from 1280px the split's controls share one row under the map (Arrange by, then In history by), so the
    map gets the height (at 1440 it is the height that limits the ring) */
 @media (min-width:1280px){
+  /* Peter: "use two columns. too much empty space still on right side" */
+  .pp.sl-hero.sl-split .sl-list{columns:2;column-gap:22px}
   .pp.sl-hero.sl-split .pp-stage{margin-bottom:52px}
   .pp.sl-hero.sl-split #sl-mode{bottom:-40px}
   .pp.sl-hero.sl-split .sl-time{left:350px;width:calc(100% - 378px);bottom:-36px}

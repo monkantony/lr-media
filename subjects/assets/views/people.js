@@ -1389,7 +1389,9 @@
       // scrolls from anywhere else); elsewhere an embedded map leaves a plain scroll to the page
       if (window.LR_EMBED && !e.ctrlKey && !e.metaKey && !slSplit()) return;
       e.preventDefault();
-      const p = pos(e); const dy = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaY;
+      const p = pos(e); let dy = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaY;
+      // 9 Oct 2026: in the split, where a plain scroll zooms, half the rate and a cap per event, so a flick zooms gradually
+      if (slSplit()) { dy = clamp(dy, -80, 80); zoomAt(p.x, p.y, Math.exp(-dy * (e.ctrlKey ? 0.006 : 0.0011)), e.ctrlKey ? 40 : 140); hideTip(); return; }
       zoomAt(p.x, p.y, Math.exp(-dy * (e.ctrlKey ? 0.01 : 0.0022)), e.ctrlKey ? 40 : 110);
       hideTip();
     }, { passive: false });
