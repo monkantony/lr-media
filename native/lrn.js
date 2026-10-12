@@ -171,7 +171,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261012142509";
+var LRW_BUILD = "20261012143818";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -3942,7 +3942,7 @@ window.__lrwGlide = function(t, reduce, holdMs, onStable){
     function broken(t){
       /* the authored break: the title turns on its " on ", which is how these titles are built */
       var i = t.toLowerCase().lastIndexOf(' on ');
-      if (i > 8 && t.length - i > 6) return [t.slice(0, i), t.slice(i + 1)];
+      if (i > 8 && t.length - i > 6) { var tb = t.slice(i + 1), tc = tb.indexOf(': '); return tc > 0 ? [t.slice(0, i), tb.slice(0, tc + 1), tb.slice(tc + 2)] : [t.slice(0, i), tb]; }   /* 12 Oct 2026 (Peter): a subtitle after the colon takes its own line */
       return [t];
     }
     function esc(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
