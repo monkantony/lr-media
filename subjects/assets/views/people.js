@@ -2259,7 +2259,11 @@
     const AF = A.filter(x => x[4] === 'f'), AM = A.filter(x => x[4] !== 'f');
     if (AF.length) stats.push(`Featured in ${B(AF.length)} ${pl(AF.length, 'editorial', 'editorials')}${AM.length ? ` and mentioned in ${B(AM.length)} more` : ''}.`);
     else if (AM.length) stats.push(`Mentioned in ${B(AM.length)} ${pl(AM.length, 'editorial', 'editorials')}.`);
-    if (Pd.length) stats.push(`Mentioned in ${B(Pd.length)} podcast ${pl(Pd.length, 'episode', 'episodes')}.`);
+    // 12 Oct 2026: the episodes are the page's own (host, guest, mentioned), worded as the page words them
+    const PH = Pd.filter(x => x[4] === 'h').length, PG = Pd.filter(x => x[4] === 'g').length, PM = Pd.length - PH - PG;
+    if (PH) stats.push(`Hosts the podcast, ${B(PH)} ${pl(PH, 'episode', 'episodes')}${PG + PM ? ` and named in ${B(PG + PM)} more` : ''}.`);
+    else if (PG) stats.push(`A guest on ${B(PG)} podcast ${pl(PG, 'episode', 'episodes')}${PM ? ` and mentioned in ${B(PM)} more` : ''}.`);
+    else if (PM) stats.push(`Mentioned in ${B(PM)} podcast ${pl(PM, 'episode', 'episodes')}.`);
     if (ms.length) stats.push(`Mentioned in ${B(ms.length)} Timeline ${pl(ms.length, 'moment', 'moments')} (${yrsOf(ms)}).`);
     if (people.length) stats.push(`${B(people.length)} ${pl(people.length, 'person appears', 'people appear')} in its moments.`);
     const mid = ms.length ? ms[Math.floor((ms.length - 1) / 2)] : null, R = d.r || [];
