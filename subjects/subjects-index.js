@@ -157,6 +157,7 @@
       [['paths', 2], ['by-kind', 3], ['every-subject', 4]].forEach(function (z) { var n = document.querySelector('#' + z[0] + ' .sx-no'); if (n) n.textContent = '0' + (z[1] - (on ? 1 : 0)); });
     }
     if (splitMQ.addEventListener) splitMQ.addEventListener('change', syncSplit);
+    window.addEventListener('resize', syncSplit, { passive: true });
 
     // 04 Every subject: the page's own lists (two Webflow Collection Lists, what search engines read) drawn as one register
     si.classList.add('sx', 'sx-every'); si.id = 'every-subject';
