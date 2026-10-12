@@ -226,7 +226,7 @@ js = patch(js, "if (!lead || !window.fetch || !window.DOMParser) return;",
            "if (!lead || !window.fetch || !window.DOMParser || document.querySelector('#latest .w-dyn-list')) return;   /* lrn-native: the CMS is the newest */",
            'native live-newest')
 js = patch(js, "var link = document.getElementById('win-link');\n    function sync(){\n      var href = link ? (link.getAttribute('href') || '') : '';",
-           "var link = document.getElementById('win-link'); var lrnHome = link ? link.getAttribute('href') : '';\n    function sync(){\n      var href = link ? (link.getAttribute('href') || '') : '';\n"
+           "var link = document.getElementById('win-link'); var lrnBakedH = piece.querySelector('.win-h'); var lrnHome = lrnBakedH ? lrnBakedH.getAttribute('href') : (link ? link.getAttribute('href') : '');   /* 12 Oct 2026: the baked piece's OWN link, not slot 1's: a baked Timeline frame under a Phil Mohun slot 1 kept the Timeline headline until paging */\n    function sync(){\n      var href = link ? (link.getAttribute('href') || '') : '';\n"
            "      if (piece.closest && piece.closest('.w-dyn-item') && !piece.__lrnMoved) { if (href === lrnHome) return; piece.__lrnMoved = 1; }   /* lrn-native: the first piece is server-rendered */",
            'native Window piece')
 js = patch(js, "if (p.src) { vid.src = p.src; }",

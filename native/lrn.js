@@ -171,7 +171,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261012141823";
+var LRW_BUILD = "20261012142509";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -3955,7 +3955,7 @@ window.__lrwGlide = function(t, reduce, holdMs, onStable){
       + '<a class="win-read" href="#"><span></span><i aria-hidden="true">\u2197</i></a>';
     type.insertBefore(piece, type.firstChild); }
 
-    var link = document.getElementById('win-link'); var lrnHome = link ? link.getAttribute('href') : '';
+    var link = document.getElementById('win-link'); var lrnBakedH = piece.querySelector('.win-h'); var lrnHome = lrnBakedH ? lrnBakedH.getAttribute('href') : (link ? link.getAttribute('href') : '');   /* 12 Oct 2026: the baked piece's OWN link, not slot 1's: a baked Timeline frame under a Phil Mohun slot 1 kept the Timeline headline until paging */
     function sync(){
       var href = link ? (link.getAttribute('href') || '') : '';
       if (piece.closest && piece.closest('.w-dyn-item') && !piece.__lrnMoved) { if (href === lrnHome) return; piece.__lrnMoved = 1; }   /* lrn-native: the first piece is server-rendered */
