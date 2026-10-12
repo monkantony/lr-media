@@ -2197,7 +2197,10 @@
     const people = Array.from(sj.cnt, ([q, n]) => ({ q, n })).sort((a, b) => b.n - a.n || a.q.rank - b.q.rank);
     const B = n => `<b>${fmt(n)}</b>`, pl = (n, a, b) => (n === 1 ? a : b);
     const stats = [];
-    if (A.length) stats.push(`Mentioned in ${B(A.length)} ${pl(A.length, 'editorial', 'editorials')}.`);
+    // 12 Oct 2026 (Peter): featured pieces are counted as featured, as on the subject's own page
+    const AF = A.filter(x => x[4] === 'f'), AM = A.filter(x => x[4] !== 'f');
+    if (AF.length) stats.push(`Featured in ${B(AF.length)} ${pl(AF.length, 'editorial', 'editorials')}${AM.length ? ` and mentioned in ${B(AM.length)} more` : ''}.`);
+    else if (AM.length) stats.push(`Mentioned in ${B(AM.length)} ${pl(AM.length, 'editorial', 'editorials')}.`);
     if (Pd.length) stats.push(`Mentioned in ${B(Pd.length)} podcast ${pl(Pd.length, 'episode', 'episodes')}.`);
     if (ms.length) stats.push(`Mentioned in ${B(ms.length)} Timeline ${pl(ms.length, 'moment', 'moments')} (${yrsOf(ms)}).`);
     if (people.length) stats.push(`${B(people.length)} ${pl(people.length, 'person appears', 'people appear')} in its moments.`);
@@ -2210,7 +2213,8 @@
       <p class="pv-stats">${stats.join(' ')}</p>
       ${stripOf(ms)}
       ${d.v ? '<section class="pv-sec" id="pv-onview" hidden></section>' : ''}
-      ${A.length ? `<section class="pv-sec" id="pv-aeds"><h2 class="lab">In the editorials <small>${fmt(A.length)}</small></h2>${moreList(A, edRow, 6)}</section>` : ''}
+      ${AF.length ? `<section class="pv-sec" id="pv-aeds"><h2 class="lab">Featured in <small>${fmt(AF.length)}</small></h2>${moreList(AF, edRow, 6)}</section>` : ''}
+      ${AM.length ? `<section class="pv-sec"${AF.length ? '' : ' id="pv-aeds"'}><h2 class="lab">${AF.length ? 'Mentioned in' : 'In the editorials'} <small>${fmt(AM.length)}</small></h2>${moreList(AM, edRow, 6)}</section>` : ''}
       ${Pd.length ? `<section class="pv-sec" id="pv-apods"><h2 class="lab">On the podcast <small>${fmt(Pd.length)}</small></h2>${moreList(Pd, podRow, 4)}</section>` : ''}
       ${ms.length ? `<span id="pv-mom"></span><section class="pv-sec"><h2 class="lab">Timeline moments <small>${ms.length}</small></h2>${momentRows(ms)}</section>` : ''}
       ${people.length ? `<section class="pv-sec" id="pv-cosec"><h2 class="lab">People in its moments <small>${fmt(people.length)}</small></h2>
