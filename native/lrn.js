@@ -171,7 +171,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261012143818";
+var LRW_BUILD = "20261012145754";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -819,7 +819,7 @@ try{
   /* lr-window-gate (9 Oct 2026): the Timeline-first programme needs the page's static first frame (.win-pin);
      a page without it (www until Peter's go) keeps the previous programme */
   var LRW_PROG_PREV = [{"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/ryan-murdock-on-hacking-ai.mp4?v=4d4b1857", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/ryan-murdock-on-hacking-ai.jpg?v=c8ea046d", "slug": "ryan-murdock-on-hacking-ai", "work": "Hacking AI", "artist": "Ryan Murdock", "credit": "Cover image · Le Random", "year": "2026"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/new-york-city-digital-art-guide.mp4?v=7ea9b533", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/new-york-city-digital-art-guide.jpg?v=67df9fb7", "slug": "new-york-city-digital-art-guide", "work": "New York City Digital Art Guide", "artist": "LoVid, Emily Edelman, Josh Yakov and Peter Bauman", "credit": "Cover image · Le Random", "year": "2025"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/trailer-goodfellow.mp4", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/poster-goodfellow.jpg", "slug": "ian-goodfellow-on-inventing-gans", "work": "Inventing GANs", "artist": "Ian Goodfellow", "credit": "Trailer · Le Random", "year": "2025"}];
-  if (!document.querySelector('#window .win-pin')) PROG = LRW_PROG_PREV;
+  /* 12 Oct 2026: gate removed. The first frame is the CMS's newest editorial again (no static .win-pin), and PROG is the programme everywhere */
   var vid = document.getElementById('winvid');
   /* lr-window-films: a film that will not load leaves the poster on screen */
   vid.addEventListener('error', function(){
