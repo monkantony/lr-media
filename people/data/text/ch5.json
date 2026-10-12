@@ -13638,12 +13638,12 @@
   },
   "thomas-defanti-develops-zgrass": {
     "body": [
-      "An extension of <a href=\"m/thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system.html\" data-moment=\"thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system\">Defanti’s GRASS</a>, ZGRASS was used for generating 3D imagery and developed to be used on smaller, personal computers and gaming devices. In an effort to better control images and make electronic visualization easier, Thomas DeFanti developed ZGRASS with <a href=\"https://www.lerandom.art/subjects/jay-fenton\">Jay Fenton</a> and <a href=\"https://www.lerandom.art/subjects/nola-donato\">Nola Donato</a> for the Bally Home Library Computer. It would go on to be used as a programming language for artists and educators in the 1980s. For example, pioneering animation artist <a href=\"https://www.lerandom.art/subjects/larry-cuba\">Larry Cuba</a> completed his film <a href=\"m/calculated-movements-by-larry-cuba.html\" data-moment=\"calculated-movements-by-larry-cuba\">Calculated Movements</a> on ZGRASS. <a href=\"https://www.lerandom.art/subjects/victor-acevedo\">Victor Acevedo</a> would use it for his experiments in the mid ’80s he told Peter Bauman via a call 11 July 2023. <a href=\"https://www.lerandom.art/subjects/copper-giloth\">Copper Giloth</a> was the first artist to work with ZGRASS."
+      "An extension of <a href=\"m/thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system.html\" data-moment=\"thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system\">Defanti’s GRASS</a>, ZGRASS was used for generating 3D imagery and developed to be used on smaller, personal computers and gaming devices. In an effort to better control images and make electronic visualization easier, Thomas DeFanti developed ZGRASS with <a href=\"https://www.lerandom.art/subjects/jamie-fenton\">Jamie Fenton</a> and <a href=\"https://www.lerandom.art/subjects/nola-donato\">Nola Donato</a> for the Bally Home Library Computer. It would go on to be used as a programming language for artists and educators in the 1980s. For example, pioneering animation artist <a href=\"https://www.lerandom.art/subjects/larry-cuba\">Larry Cuba</a> completed his film <a href=\"m/calculated-movements-by-larry-cuba.html\" data-moment=\"calculated-movements-by-larry-cuba\">Calculated Movements</a> on ZGRASS. <a href=\"https://www.lerandom.art/subjects/victor-acevedo\">Victor Acevedo</a> would use it for his experiments in the mid ’80s he told Peter Bauman via a call 11 July 2023. <a href=\"https://www.lerandom.art/subjects/copper-giloth\">Copper Giloth</a> was the first artist to work with ZGRASS."
     ],
     "cite": [
       {
         "url": "",
-        "label": "DeFanti, Tom, Jay Fenton and Nola Donato. \"BASIC Zgrass: A Sophisticated Graphics Language for the Bally Home Library Computer.\" ACM SIGGRAPH Computer Graphics 12, no. 3 (1978): 33-37. https://doi.org/10.1145/965139.807366"
+        "label": "DeFanti, Tom, Jamie Fenton and Nola Donato. \"BASIC Zgrass: A Sophisticated Graphics Language for the Bally Home Library Computer.\" ACM SIGGRAPH Computer Graphics 12, no. 3 (1978): 33-37. https://doi.org/10.1145/965139.807366"
       }
     ],
     "img": {
@@ -13666,7 +13666,7 @@
       "3D Graphics",
       "programming",
       "Tom DeFanti",
-      "Jay Fenton",
+      "Jamie Fenton",
       "Nola Donato",
       "Victor Acevedo",
       "education",
@@ -13674,7 +13674,7 @@
     ],
     "people": [
       "copper giloth",
-      "jay fenton",
+      "jamie fenton",
       "larry cuba",
       "nola donato",
       "tom defanti",
@@ -13737,8 +13737,8 @@
         "t": "people"
       },
       {
-        "k": "jay fenton",
-        "n": "Jay Fenton",
+        "k": "jamie fenton",
+        "n": "Jamie Fenton",
         "t": "people"
       },
       {
