@@ -1,0 +1,133 @@
+[
+  {
+    "n": 1,
+    "years": "Pre-1850",
+    "era": "Pre-Modern Era",
+    "desc": "Spanning tens of thousands of years, we begin by surveying the advancements in art, mathematics, science and computing history that led to the modern era of generative art.",
+    "count": 35,
+    "first": "71,000 BCE",
+    "last": "1845",
+    "pods": [
+      1
+    ],
+    "scene": "loom"
+  },
+  {
+    "n": 2,
+    "years": "1850–1949",
+    "era": "Modern Era",
+    "desc": "We start the modern story of generative art about a decade earlier than the traditional art world with industrialization kicking into gear in London, introducing technology to art. We then cover the rise of modern art, the foundational roots of digital generative art.",
+    "count": 145,
+    "first": "1851",
+    "last": "1949",
+    "pods": [
+      2
+    ],
+    "scene": "dada"
+  },
+  {
+    "n": 3,
+    "years": "1950s",
+    "era": "Analog Era",
+    "desc": "Here we cover the rise of computing and the first artworks made with analog electronic equipment, including the pioneering oscilloscope work of Mary Ellen Bute and Ben Laposky. We also cover the rise of cybernetic, conceptual and kinetic art, three profoundly influential developments in the rise of digital generative art.",
+    "count": 84,
+    "first": "1950",
+    "last": "1959",
+    "pods": [
+      3
+    ],
+    "scene": "oscilloscope"
+  },
+  {
+    "n": 4,
+    "years": "1960s",
+    "era": "Digital Era",
+    "desc": "The densest chapter in this story, the ’60s sees the birth of digital generative art, the work of the first computer artists and a golden age of technology and art. It also tells the story of how cybernetic, conceptual and kinetic art combined in shows like Cybernetic Serendipity, perhaps the most significant event in our story.",
+    "count": 176,
+    "first": "1960",
+    "last": "1969",
+    "pods": [
+      4,
+      5
+    ],
+    "scene": "plotter"
+  },
+  {
+    "n": 5,
+    "years": "1970s",
+    "era": "Artist-Programmer Era",
+    "desc": "As the accessibility of computers improves, we see more trained artists beginning to work with code directly and the rise of AI in art with Harold Cohen’s AARON.",
+    "count": 137,
+    "first": "1970",
+    "last": "1979",
+    "pods": [
+      6
+    ],
+    "scene": "videosynth"
+  },
+  {
+    "n": 6,
+    "years": "1980s",
+    "era": "Personal Computer Era",
+    "desc": "The ’80s sees the fragmentation of computer-based art as the personal computer significantly impacts the availability of computers.",
+    "count": 147,
+    "first": "1980",
+    "last": "1989",
+    "pods": [
+      8
+    ],
+    "scene": "c64"
+  },
+  {
+    "n": 7,
+    "years": "1990s",
+    "era": "Net Era",
+    "desc": "The rise of the Internet propelled mass media art, the demoscene and net art as well as early practitioners of Flash like LIA and Joshua Davis.",
+    "count": 93,
+    "first": "1990",
+    "last": "1999",
+    "pods": [
+      10
+    ],
+    "scene": "netart"
+  },
+  {
+    "n": 8,
+    "years": "2000s",
+    "era": "Tooling Era",
+    "desc": "Casey Reas and Ben Fry develop Processing at the MIT Media Lab under the direction of John Maeda. Processing enables anyone in the world to learn creative coding, educating and inspiring a new generation of artist-coders.",
+    "count": 75,
+    "first": "2000",
+    "last": "2009",
+    "pods": [
+      11
+    ],
+    "scene": "sketchbook"
+  },
+  {
+    "n": 9,
+    "years": "2010s",
+    "era": "AI Era",
+    "desc": "",
+    "count": 115,
+    "first": "2010",
+    "last": "2019",
+    "pods": [
+      13
+    ],
+    "scene": "gan"
+  },
+  {
+    "n": 10,
+    "years": "2020s",
+    "era": "On-Chain Era",
+    "desc": "The advent of long form generative art platforms Art Blocks and fxhash spark renewed interest in generative art and cultivate the thriving scene of today.",
+    "count": 140,
+    "first": "2020",
+    "last": "2025",
+    "pods": [
+      14
+    ],
+    "scene": "chain"
+  }
+]
