@@ -148,6 +148,15 @@
     var box = document.createElement('div'); box.id = 'sx-zones'; box.className = 'sx';
     box.innerHTML = zone('index', '01', 'Index', 'Every subject, at random or A to Z', idx) + zone('paths', '02', 'Paths', 'From any subject to any other, through the archive', paths) + zone('by-kind', '03', 'By kind', 'Seven kinds, most written about first', kinds);
     si.parentNode.insertBefore(box, si);
+    // 12 Oct 2026 (Peter: the index under the split view is redundant): on wide screens the hero's split already is the
+    // index, so 01 steps aside and the rest renumber (Paths 01, By kind 02, Every subject 03). Narrower screens keep it
+    var splitMQ = window.matchMedia('(min-width:1100px)');
+    var isSplit = function () { return document.documentElement.classList.contains('sx-split') && splitMQ.matches; };
+    function syncSplit() {
+      var on = isSplit(), ix = document.getElementById('index'); if (ix) ix.style.display = on ? 'none' : '';
+      [['paths', 2], ['by-kind', 3], ['every-subject', 4]].forEach(function (z) { var n = document.querySelector('#' + z[0] + ' .sx-no'); if (n) n.textContent = '0' + (z[1] - (on ? 1 : 0)); });
+    }
+    if (splitMQ.addEventListener) splitMQ.addEventListener('change', syncSplit);
 
     // 04 Every subject: the page's own lists (two Webflow Collection Lists, what search engines read) drawn as one register
     si.classList.add('sx', 'sx-every'); si.id = 'every-subject';
@@ -164,7 +173,7 @@
     }
     var ev = document.createElement('div'); ev.className = 'sx-evbody';
     var head = document.createElement('div'); head.innerHTML = '<div class="sx-zh"><span class="sx-no">04</span><div class="sx-x"><span class="sx-h2">Every subject</span><span class="sx-more">All ' + fmt(N) + ', A to Z</span></div></div>';
-    si.insertBefore(head.firstChild, si.firstChild); si.appendChild(ev); ev.innerHTML = everyHTML();
+    si.insertBefore(head.firstChild, si.firstChild); si.appendChild(ev); ev.innerHTML = everyHTML(); syncSplit();
     Array.prototype.forEach.call(si.querySelectorAll('.w-dyn-list'), function (l) { l.hidden = true; });   // still in the page for crawlers
     var oldh = si.querySelector('.lr-si-h'); if (oldh) oldh.classList.add('sx-sr');
 
@@ -218,7 +227,7 @@
     box.addEventListener('click', function (e) {
       var t = e.target.closest('[data-ixk],[data-ixsort],[data-ixshuf],[data-ixmore],[data-ixgo],[data-top]'); if (!t) return;
       if (t.hasAttribute('data-top')) { e.preventDefault(); window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); return; }
-      if (t.hasAttribute('data-ixgo')) { e.preventDefault(); IX.k = +t.getAttribute('data-ixgo'); IX.sort = 'rand'; IX.shown = 28; api.setKinds([IX.k]); redrawIx(); document.getElementById('index').scrollIntoView({ behavior: 'smooth' }); return; }
+      if (t.hasAttribute('data-ixgo')) { e.preventDefault(); IX.k = +t.getAttribute('data-ixgo'); IX.sort = 'rand'; IX.shown = 28; api.setKinds([IX.k]); redrawIx(); if (isSplit()) window.scrollTo({ top: 0, behavior: 'smooth' }); else document.getElementById('index').scrollIntoView({ behavior: 'smooth' }); return; }
       if (t.hasAttribute('data-ixk')) { var v = t.getAttribute('data-ixk'); IX.k = v === 'all' ? 'all' : +v; IX.shown = 28; api.setKinds(v === 'all' ? [0, 1, 2, 3, 4, 5, 6] : [+v]); }
       if (t.hasAttribute('data-ixsort')) { IX.sort = t.getAttribute('data-ixsort'); IX.shown = 28; }
       if (t.hasAttribute('data-ixshuf')) IX.deal[IX.k] = deal(IX.k);
