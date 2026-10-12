@@ -1353,10 +1353,9 @@
     cv.addEventListener('pointerup', end); cv.addEventListener('pointercancel', end);
     cv.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse' && !drag) { setHover(null); } });
     cv.addEventListener('wheel', e => {
-      if (window.LR_EMBED && !e.ctrlKey && !e.metaKey) return;
       e.preventDefault();
-      const p = pos(e); const dy = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaY;
-      zoomAt(p.x, p.y, Math.exp(-dy * (e.ctrlKey ? 0.01 : 0.0022)), e.ctrlKey ? 40 : 110);
+      const p = pos(e); let dy = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaY; dy = Math.max(-200, Math.min(200, dy));
+      zoomAt(p.x, p.y, Math.exp(-dy * (e.ctrlKey ? 0.006 : 0.0011)), e.ctrlKey ? 40 : 140);
       hideTip();
     }, { passive: false });
     cv.addEventListener('dblclick', e => { const p = pos(e); if (!hit(p.x, p.y) || hit(p.x, p.y).type === 'ring') zoomAt(p.x, p.y, 2, 200); });
