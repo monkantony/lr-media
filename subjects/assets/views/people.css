@@ -527,7 +527,9 @@ button.pv-chip.is-tag:hover{border-style:solid}
    SUBJECTS and its dek over the top (outside this frame); the controls take the Window's slots. Measures are the Window's:
    frame clamp(20px,4.4vw,80px) inside a 1580px column, mast padding clamp(16px,2vw,30px), title clamp(30px,7.4vw,124px) x .86,
    rule after clamp(12px,1.3vw,19px), 26px at the foot. */
-.pp.sl-hero{--panel-w:0px;--fr:clamp(20px,4.4vw,80px);--L:max(var(--fr),calc((100vw - 1580px) / 2 + var(--fr)));
+.pp.sl-hero{--panel-w:0px;--fr:clamp(20px,4.4vw,80px);--L:max(var(--fr),calc((100vw - var(--sbw,0px) - 1580px) / 2 + var(--fr)));
+  /* 14 Oct 2026: --sbw (set on <html> by the /subjects page head) is the page scrollbar's width; www draws an 8px
+     one, so 100vw alone centred the map 4px right of the masthead. Unset elsewhere, so 0px and nothing moves. */
   --mb:calc(clamp(16px,2vw,30px) + clamp(30px,7.4vw,124px) * .86 + clamp(12px,1.3vw,19px))}
 .pp.sl-hero .pp-panel,.pp.sl-hero #pp-hint,.pp.sl-hero #pp-src{display:none!important}
 .pp.sl-hero .pp-stage{flex:1 1 100%}
@@ -589,7 +591,7 @@ button.pv-chip.is-tag:hover{border-style:solid}
    letters, the list) fills the right 52% and scrolls on its own. The page head turns it on (html.sx-split -> .sl-split). */
 @media (min-width:1100px){
   /* 9 Oct 2026 (Peter: "save space on the right so the map can be bigger"): the index takes 38% of the column */
-  .pp.sl-hero.sl-split{--panel-w:clamp(380px,calc((100vw - 2 * var(--L)) * .38),540px)}
+  .pp.sl-hero.sl-split{--panel-w:clamp(380px,calc((100vw - var(--sbw,0px) - 2 * var(--L)) * .38),540px)}
   .pp.sl-hero.sl-split .pp-stage{margin:calc(var(--mb) + 10px) 0 96px var(--L);overflow:visible}
   .pp.sl-hero.sl-split .pp-stage::before{background:none}
   .pp.sl-hero.sl-split .pp-stage::after{left:0;right:28px;bottom:0}

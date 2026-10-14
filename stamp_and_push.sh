@@ -133,7 +133,57 @@ if [[ -f version.txt ]]; then
   if [[ $MODE == pointer && -n "$R_STAMP" ]]; then STAMP="$R_STAMP"; fi
   [[ "$HOSTS" =~ '^(\*|[a-z0-9.-]+(,[a-z0-9.-]+)*)$' ]] || { echo "REFUSING after rebase: hosts token '$HOSTS' is invalid"; exit 1; }
 fi
-H=$(git rev-parse HEAD)
+# ---- content first, pointer last (14 Oct 2026) ---------------------------------
+# At ~18:15 the pointer reached jsDelivr before the commit's files did: jsDelivr cached a 404 for
+# search_index.json at the new SHA and www ⌘K hung on "Opening the archive…" until it was purged.
+# So: push the content alone, fetch EVERY file changed since the commit the pointer names at the
+# new SHA until jsDelivr and raw both answer 200 (purging any 404), and only then move the pointer.
+# Same rule as ~/lr-people/lrm_publish.sh. Files over jsDelivr's 20 MB limit are checked on raw only.
+REPO_GH=monkantony/lr-media
+served() {   # $1 = path at $H; 0 when the CDNs serve it, otherwise purges a jsDelivr miss
+  local j r sz
+  sz=$(git cat-file -s "$H:$1" 2>/dev/null || echo 0)
+  r=$(curl -s -o /dev/null -w '%{http_code}' -m 60 "https://raw.githubusercontent.com/$REPO_GH/$H/$1")
+  (( sz > 20000000 )) && { [[ $r == 200 ]]; return; }
+  j=$(curl -s -o /dev/null -w '%{http_code}' -m 60 "https://cdn.jsdelivr.net/gh/$REPO_GH@$H/$1")
+  [[ $j == 200 && $r == 200 ]] && return 0
+  [[ $j != 200 ]] && curl -s -o /dev/null -m 20 "https://purge.jsdelivr.net/gh/$REPO_GH@$H/$1"
+  return 1
+}
+for _sync in 1 2 3; do
+  H=$(git rev-parse HEAD)
+  if [[ -n "$(git rev-list origin/main..HEAD 2>/dev/null)" ]]; then
+    for _try in 1 2 3; do
+      git push -q origin HEAD:main && break
+      if [[ $_try == 3 ]]; then echo "REFUSING: git push failed three times. The commits are local; nothing was published. Run again."; exit 1; fi
+      echo "content push failed (attempt $_try); retrying in 20s"; sleep 20
+    done
+  fi
+  read -r _B_STAMP BASE _B_HOSTS < version.txt || true
+  git cat-file -e "${BASE}^{commit}" 2>/dev/null || BASE="HEAD~1"
+  FILES=(${(f)"$(git diff --name-only --diff-filter=d "$BASE" "$H" -- . ':!version.txt')"})
+  pending=($FILES)
+  (( ${#pending} )) && echo "content ${H:0:12}: waiting until the CDNs serve ${#pending} changed files"
+  for round in {1..24}; do
+    (( ${#pending} == 0 )) && break
+    left=()
+    for f in $pending; do served "$f" || left+=("$f"); done
+    pending=($left)
+    (( ${#pending} == 0 )) && break
+    echo "  round $round: ${#pending} not served yet (e.g. ${pending[1]}); retrying in 15s"
+    sleep 15
+  done
+  (( ${#pending} == 0 )) || { echo "REFUSING: ${#pending} files still not served at ${H:0:12} (e.g. ${pending[1]}). The content is pushed; the POINTER WAS NOT MOVED. Re-run: ./stamp_and_push.sh --pointer-only"; exit 1; }
+  # the other writer may have pushed while we waited: fold it in and warm its files too
+  git pull -q --rebase --autostash origin main
+  [[ "$(git rev-parse HEAD)" == "$H" ]] && break
+  echo "origin moved while warming; checking the new commits too"
+  read -r R_STAMP R_COMMIT R_HOSTS < version.txt || true
+  if [[ -z "$LRW_HOSTS" && -n "$R_HOSTS" ]]; then HOSTS="${R_HOSTS//[[:space:]]/}"; HOSTS="${HOSTS:l}"; fi
+  if [[ $MODE == pointer && -n "$R_STAMP" ]]; then STAMP="$R_STAMP"; fi
+  [[ "$HOSTS" =~ '^(\*|[a-z0-9.-]+(,[a-z0-9.-]+)*)$' ]] || { echo "REFUSING after rebase: hosts token '$HOSTS' is invalid"; exit 1; }
+  [[ $_sync == 3 ]] && { echo "REFUSING: origin kept moving; content is pushed, pointer not moved. Re-run: ./stamp_and_push.sh --pointer-only"; exit 1; }
+done
 print -r -- "$STAMP $H $HOSTS" > version.txt
 git add version.txt
 git commit -q -m "pointer -> ${H:0:12}" -- version.txt
@@ -142,8 +192,8 @@ git commit -q -m "pointer -> ${H:0:12}" -- version.txt
 # plainly that the commits are local and nothing was published.
 for _try in 1 2 3; do
   git push -q && break
-  if [[ $_try == 3 ]]; then echo "REFUSING: git push failed three times. The commits are local; nothing was published. Run again."; exit 1; fi
-  echo "push failed (attempt $_try); retrying in 20s"; sleep 20
+  if [[ $_try == 3 ]]; then echo "REFUSING: git push failed three times. The content is served; only the pointer commit is local. Run again: ./stamp_and_push.sh --pointer-only"; exit 1; fi
+  echo "pointer push failed (attempt $_try); retrying in 20s"; sleep 20
 done
 
 # the native /editorials falls back to @main/native/lrn.js while jsDelivr still answers 403 for a just-pushed commit:
