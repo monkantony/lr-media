@@ -892,10 +892,14 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
        baked bar already in this order is left untouched (compare first), so nothing moves on screen. */
     (function(){
       /* LIVE on www 9 Oct 2026 (Peter's go): was webflow.io/localhost only */
-      var ORDER = ['/editorials', 'https://timeline.lerandom.art', '/podcast', '/subjects'];
+      /* lr-askii-tab (14 Oct 2026, Peter: "editorials timeline askii podcast subjects"): Askii joins the switcher, third. */
+      var ORDER = ['/editorials', 'https://timeline.lerandom.art', 'https://askii.lerandom.art/', '/podcast', '/subjects'];
       function rank(a){ var i = ORDER.indexOf(a.getAttribute('href')); return i < 0 ? 99 : i; }
       [bar.querySelector('.tb-props'), document.querySelector('.lr-navprops-baked')].forEach(function(box){
         if (!box) return;
+        if (!box.querySelector('a[href*="askii.lerandom.art"]')) { var src = box.querySelector(':scope > a:not(.on)') || box.querySelector(':scope > a');
+          if (src) { var k = src.cloneNode(false); k.className = ''; k.removeAttribute('aria-current'); k.removeAttribute('data-w-id'); k.removeAttribute('target');
+            k.setAttribute('href', 'https://askii.lerandom.art/'); k.textContent = 'Askii'; box.appendChild(k); } }
         var as = [].slice.call(box.querySelectorAll(':scope > a')), want = as.slice().sort(function(x, y){ return rank(x) - rank(y); });
         if (want.some(function(a, i){ return a !== as[i]; })) want.forEach(function(a){ box.appendChild(a); });
       });

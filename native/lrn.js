@@ -4276,10 +4276,22 @@ try{
     var r = logo.getBoundingClientRect(), o = op.getBoundingClientRect();
     c.style.left = (r.left - o.left) + 'px'; c.style.top = (r.bottom - o.top + 7) + 'px';
   }
+  /* lr-askii-tab (14 Oct 2026, Peter: "editorials timeline askii podcast subjects"): Askii joins the switcher, third */
+  function askii(box){
+    if (!box || box.querySelector('a[href*="askii.lerandom.art"]')) return;
+    var as = [].slice.call(box.querySelectorAll(':scope > a')), src = as.filter(function(a){ return !a.classList.contains('on'); })[0] || as[0];
+    if (!src) return;
+    var k = src.cloneNode(false); k.className = ''; k.removeAttribute('aria-current'); k.removeAttribute('data-w-id'); k.removeAttribute('target');
+    k.setAttribute('href', 'https://askii.lerandom.art/'); k.textContent = 'Askii';
+    var tl = as.filter(function(a){ return /timeline\.lerandom\.art/.test(a.getAttribute('href') || ''); })[0];
+    box.insertBefore(k, tl ? tl.nextSibling : null);
+  }
+  askii(document.querySelector('#topbar .tb-props')); askii(document.querySelector('#lrtopbar .tb-props')); askii(document.querySelector('.lr-navprops-baked'));
   function mount(){
     var bar = document.querySelector('#topbar,#lrtopbar'), src = bar && bar.querySelector('.tb-props');
     var nav = document.querySelector('.navbar_component'), logo = nav && nav.querySelector('.mobile-logo');
     if (!src || !logo) return false;
+    askii(src); askii(document.querySelector('.lr-navprops-baked'));
     if (nav.querySelector('.lr-navprops')) return true;
     var c = document.querySelector('.lr-navprops-baked');   /* the native /editorials page bakes one for first paint: adopt it */
     if (c) c.classList.remove('lr-navprops-baked'); else { c = src.cloneNode(true); c.className = 'lr-navprops'; }
