@@ -14,9 +14,10 @@
     "img": {
       "src": "img/blombos-cave-drawing.jpg",
       "cap": "Blombos Cave Drawing",
-      "credit": "",
+      "credit": "Ochre stone with cross-hatched pattern, Blombos Cave, South Africa, ca. 70,000 years ago. Image by Chris S. Henshilwood, via Wikimedia Commons (CC BY-SA 4.0). <a href=\"https://commons.wikimedia.org/wiki/File:Blombo.jpg\">Image source</a>",
       "width": 640,
-      "height": 750
+      "height": 750,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blombo.jpg"
     },
     "tags": [
       "Philip Galanter",
@@ -227,9 +228,10 @@
     "img": {
       "src": "img/first-known-author-is-a-woman.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Enheduanna, detail of the Disk of Enheduanna, Ur, ca. 2300 BCE, limestone/calcite. University of Pennsylvania Museum of Archaeology and Anthropology, Philadelphia, B16665; British Museum/University Museum Expedition to Ur, 1926. Photograph by Mefman00, via Wikimedia Commons (CC0). <a href=\"https://commons.wikimedia.org/wiki/File:Enheduanna,_daughter_of_Sargon_of_Akkad.jpg\">Image source</a>",
       "width": 401,
-      "height": 720
+      "height": 720,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Enheduanna,_daughter_of_Sargon_of_Akkad.jpg"
     },
     "tags": [
       "Computer Text",
@@ -335,9 +337,10 @@
     "img": {
       "src": "img/babylonians-begin-visualizing-mathematics.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Clay tablet IM 67118, geometric-algebraic problem text, from Tell al-Dhabba'i, Iraq, Old Babylonian period. Iraq Museum, Baghdad. Photograph by Osama Shukir Muhammed Amin FRCP(Glasg), 2019, via Wikimedia Commons (CC BY-SA 4.0). <a href=\"https://commons.wikimedia.org/wiki/File:Clay_tablet,_mathematical,_geometric-algebraic,_similar_to_the_Pythagorean_theorem._From_Tell_al-Dhabba'i,_Iraq._2003-1595_BCE._Iraq_Museum.jpg\">Image source</a>",
       "width": 1644,
-      "height": 2369
+      "height": 2369,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clay_tablet,_mathematical,_geometric-algebraic,_similar_to_the_Pythagorean_theorem._From_Tell_al-Dhabba'i,_Iraq._2003-1595_BCE._Iraq_Museum.jpg"
     },
     "tags": [
       "Euclid",
@@ -369,11 +372,6 @@
         "k": "euclid",
         "n": "Euclid",
         "t": "people"
-      },
-      {
-        "k": "elements",
-        "n": "Elements",
-        "t": "works"
       },
       {
         "k": "babylon",
@@ -412,9 +410,10 @@
     "img": {
       "src": "img/i-ching-introduces-binary-concept.jpeg",
       "cap": "",
-      "credit": "",
+      "credit": "Diagram of I Ching hexagrams sent by Joachim Bouvet to Gottfried Wilhelm Leibniz, 1701; the Arabic numerals were added by Leibniz. Leibniz Archive, Niedersächsische Landesbibliothek, Hannover. Reproduced in Franklin Perkins, Leibniz and China (Cambridge University Press, 2004), p. 117, via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz,_1701.jpg\">Image source</a>",
       "width": 1313,
-      "height": 1262
+      "height": 1262,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz,_1701.jpg"
     },
     "tags": [
       "Gottfried Leibniz",
@@ -676,7 +675,7 @@
   },
   "oracle-at-delphi": {
     "body": [
-      "Scholars and travelers flock to Delphi, the most important shrine in Ancient <a href=\"https://www.lerandom.art/subjects/greece\">Greece</a>, to ask questions about the future and await, in exchange for gold and gifts, enigmatic replies from the <a href=\"https://www.lerandom.art/subjects/pythia\">Pythia</a>, priestess of <a href=\"https://www.lerandom.art/subjects/apollo\">Apollo</a>. The deep-rooted impulse toward oracular dialogue, the intellectual exercise of deciphering the Pythia’s statements, and the cultural significance of such prophetic divinations lays a foundation for contemporary search engines and predictive text engines that tap into our collective consciousness, offering sometimes puzzling, sometimes profound answers. -Sasha Stiles"
+      "Scholars and travelers flock to Delphi, the most important shrine in Ancient <a href=\"https://www.lerandom.art/subjects/greece\">Greece</a>, to ask questions about the future and await, in exchange for gold and gifts, enigmatic replies from the <a href=\"https://www.lerandom.art/subjects/pythia\">Pythia</a>, priestess of Apollo. The deep-rooted impulse toward oracular dialogue, the intellectual exercise of deciphering the Pythia’s statements, and the cultural significance of such prophetic divinations lays a foundation for contemporary search engines and predictive text engines that tap into our collective consciousness, offering sometimes puzzling, sometimes profound answers. -Sasha Stiles"
     ],
     "cite": [
       {
@@ -687,9 +686,10 @@
     "img": {
       "src": "img/oracle-at-delphi.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "John Collier, Priestess of Delphi, 1891. Oil on canvas. Art Gallery of South Australia, Adelaide; Gift of the Rt. Honourable, the Earl of Kintore 1893. Accession 0.108. <a href=\"https://www.agsa.sa.gov.au/collection-publications/collection/works/_/25000/\">Image source</a>",
       "width": 345,
-      "height": 697
+      "height": 697,
+      "sourceUrl": "https://www.agsa.sa.gov.au/collection-publications/collection/works/_/25000/"
     },
     "tags": [
       "Greece",
@@ -698,11 +698,9 @@
       "Performance Art",
       "Delphi",
       "Pythia",
-      "Apollo",
       "divination"
     ],
     "people": [
-      "apollo",
       "pythia",
       "sasha stiles"
     ],
@@ -726,11 +724,6 @@
         "k": "performance art",
         "n": "Performance Art",
         "t": "themes"
-      },
-      {
-        "k": "apollo",
-        "n": "Apollo",
-        "t": "people"
       },
       {
         "k": "pythia",
@@ -876,9 +869,10 @@
     "img": {
       "src": "img/euclids-elements.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Papyrus fragment of Euclid's Elements, Book II, Proposition 5, from Oxyrhynchus, Egypt (P.Oxy. I 29). University of Pennsylvania Museum of Archaeology and Anthropology, Philadelphia, inv. E02748. Via Wikimedia Commons (public domain). <a href=\"https://openn.library.upenn.edu/Data/0016/html/e2748.html\">Image source</a>",
       "width": 1599,
-      "height": 974
+      "height": 974,
+      "sourceUrl": "https://openn.library.upenn.edu/Data/0016/html/e2748.html"
     },
     "tags": [
       "Gottfried Leibniz",
@@ -1014,9 +1008,10 @@
     "img": {
       "src": "img/library-of-alexandria-established.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "The Great Library of Alexandria, illustration by O. Von Corven, 19th century. Reproduced in Don Heinrich Tolzmann, Alfred Hessel and Reuben Peiss, The Memory of Mankind (Oak Knoll Press, 2001), via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Ancientlibraryalex.jpg\">Image source</a>",
       "width": 708,
-      "height": 720
+      "height": 720,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ancientlibraryalex.jpg"
     },
     "tags": [
       "collecting",
@@ -1120,9 +1115,10 @@
     "img": {
       "src": "img/hero-of-alexandria-invents-automata.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Hero of Alexandria, Automata, diagram of an automaton of Bacchus dispensing wine and milk in a small temple (Automata 13). Early 14th-century copy, Venice, Biblioteca Nazionale Marciana, Gr. 516, fol. 202r. Via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Hero_of_Alexandria,_Automata,_Venice,_Gr._516.jpg\">Image source</a>",
       "width": 1302,
-      "height": 1776
+      "height": 1776,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hero_of_Alexandria,_Automata,_Venice,_Gr._516.jpg"
     },
     "tags": [
       "robotics",
@@ -1215,9 +1211,10 @@
     "img": {
       "src": "img/emergence-of-islamic-geometric-art.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Lustre tiles around the mihrab, Great Mosque of Kairouan, Tunisia, 9th century. Photograph by tai_mab, 2009, via Wikimedia Commons (CC BY-SA 2.0). <a href=\"https://commons.wikimedia.org/wiki/File:Grande_Mosquée_de_Kairouan,_carreaux_lustrés_-_Kairouan's_Great_Mosque,_luster_tiles.jpg\">Image source</a>",
       "width": 3000,
-      "height": 2250
+      "height": 2250,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grande_Mosquée_de_Kairouan,_carreaux_lustrés_-_Kairouan's_Great_Mosque,_luster_tiles.jpg"
     },
     "tags": [
       "Islamic Golden Age",
@@ -1298,9 +1295,10 @@
     "img": {
       "src": "img/al-khwarizmis-writes-concerning-the-hindu-art-of-reckoning.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Imaginary portrait of al-Khwarizmi, adapted by Michel Bakni from a 1983 Soviet postage stamp, via Wikimedia Commons (CC BY-SA 4.0). No contemporary likeness is known. <a href=\"https://commons.wikimedia.org/wiki/File:Al-Khwarizmi_portrait.jpg\">Image source</a>",
       "width": 340,
-      "height": 491
+      "height": 491,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Al-Khwarizmi_portrait.jpg"
     },
     "tags": [
       "Al-Khwārizmī",
@@ -1506,9 +1504,10 @@
     "img": {
       "src": "img/richard-of-wallingford-invents-clockwork-figures.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Richard of Wallingford measuring with compasses, miniature from Thomas Walsingham, History of the Abbots of St Albans, 14th century. British Library, Cotton MS Claudius E. IV, f. 201. Via Wikimedia Commons (public domain; image cropped and colour adjusted). <a href=\"https://commons.wikimedia.org/wiki/File:Richard_of_Wallingford.jpg\">Image source</a>",
       "width": 708,
-      "height": 750
+      "height": 750,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richard_of_Wallingford.jpg"
     },
     "tags": [
       "Richard of Wallingford",
@@ -1590,9 +1589,10 @@
     "img": {
       "src": "img/johannes-gutenberg-s-printing-press.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Daniel Chodowiecki, The Printing House (Die Buchdruckerei), Tab. XXI c, drawing for Johann Bernhard Basedow's Elementarwerk, ca. 1770. Reproduced in Daniel Chodowiecki: 62 bisher unveröffentlichte Handzeichnungen zu dem Elementarwerk von Johann Bernhard Basedow (Frankfurt am Main: Voigtländer-Tetzner, 1922), via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Chodowiecki_Basedow_Tafel_21_c_Z.jpg\">Image source</a>",
       "width": 952,
-      "height": 720
+      "height": 720,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chodowiecki_Basedow_Tafel_21_c_Z.jpg"
     },
     "tags": [
       "Europe",
@@ -1691,9 +1691,10 @@
     "img": {
       "src": "img/da-vinci-illustrates-de-divina-proportione.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Proportions of the human head, woodcut from Luca Pacioli, De divina proportione (Venice: Paganino Paganini, 1509), p. 70. Via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Pacioli_De_Divina_Proportione_Head_Equilateral_Triangle_1509.jpg\">Image source</a>",
       "width": 429,
-      "height": 712
+      "height": 712,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pacioli_De_Divina_Proportione_Head_Equilateral_Triangle_1509.jpg"
     },
     "tags": [
       "Leonardo da Vinci",
@@ -1777,9 +1778,10 @@
     "img": {
       "src": "img/albrecht-durer-creates-engraving-melencolia-i.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Albrecht Dürer, Melencolia I, 1514. Engraving. Minneapolis Institute of Art, 2012.16; acquired through the Ethel Morrison Van Derlip Fund and other funds and gifts. Via Google Arts & Culture and Wikimedia Commons (public domain). <a href=\"https://artsandculture.google.com/asset/melencolia-i/_AGDdr3EHmNGyA\">Image source</a>",
       "width": 3062,
-      "height": 3869
+      "height": 3869,
+      "sourceUrl": "https://artsandculture.google.com/asset/melencolia-i/_AGDdr3EHmNGyA"
     },
     "tags": [
       "Hans Ulrich Obrist",
@@ -1986,7 +1988,7 @@
   },
   "blaise-pascal-invents-mechanical-calculator": {
     "body": [
-      "It was the first mechanical calculator made in quantity, performing addition and subtraction with an automatic carry between digits. Using a series of gears and wheels, the calculator revolutionized mathematics and engineering, paving the way for further development of machines that could perform more complex calculations. Pascal’s calculator was mentioned in the catalog of <a href=\"m/cybernetic-serendipity-defines-a-movement.html\" data-moment=\"cybernetic-serendipity-defines-a-movement\">Cybernetic Serendipity</a> as an important moment in the history of cybernetics."
+      "It was one of the first working mechanical calculators, performing addition and subtraction with an automatic carry between digits. Using a series of gears and wheels, the calculator revolutionized mathematics and engineering, paving the way for further development of machines that could perform more complex calculations. Pascal’s calculator was mentioned in the catalog of <a href=\"m/cybernetic-serendipity-defines-a-movement.html\" data-moment=\"cybernetic-serendipity-defines-a-movement\">Cybernetic Serendipity</a> as an important moment in the history of cybernetics."
     ],
     "cite": [
       {
@@ -1997,9 +1999,10 @@
     "img": {
       "src": "img/blaise-pascal-invents-mechanical-calculator.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Machine arithmétique (the Pascaline), Plate I, engraved by P. B. Bradel, from Oeuvres de Blaise Pascal, vol. IV (La Haye: Detune, 1779). Via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Pascaline_-_top_view_and_mechanism.jpg\">Image source</a>",
       "width": 2461,
-      "height": 2061
+      "height": 2061,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pascaline_-_top_view_and_mechanism.jpg"
     },
     "tags": [
       "Cybernetic Serendipity",
@@ -2090,9 +2093,10 @@
     "img": {
       "src": "img/gottfried-leibniz-pioneers-computational-thinking.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Leibniz, diagram of the four elements and their qualities, from Dissertatio de arte combinatoria, 1666. Via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Leibniz_four_elements.jpg\">Image source</a>",
       "width": 1810,
-      "height": 1754
+      "height": 1754,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leibniz_four_elements.jpg"
     },
     "tags": [
       "Gottfried Leibniz",
@@ -2196,9 +2200,10 @@
     "img": {
       "src": "img/gottfried-leibniz-builds-the-calculating-machine.png",
       "cap": "",
-      "credit": "",
+      "credit": "Mechanism of Leibniz's stepped reckoner, halftone photograph in Wilhelm Franz Meyer, Encyklopädie der mathematischen Wissenschaften, vol. 2 (Leipzig: Teubner, 1904), p. 964, fig. 11. Via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Leibniz_Stepped_Reckoner_mechanism.png\">Image source</a>",
       "width": 775,
-      "height": 293
+      "height": 293,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leibniz_Stepped_Reckoner_mechanism.png"
     },
     "tags": [
       "Gottfried Leibniz",
@@ -2374,9 +2379,10 @@
     "img": {
       "src": "img/jonathan-swift-publishes-gulliver-s-travels-and-includes-a-description-of-the-en.png",
       "cap": "",
-      "credit": "",
+      "credit": "The Engine, illustration from Jonathan Swift, Gulliver's Travels, 1726. Via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:The_Engine_(Gulliver).png\">Image source</a>",
       "width": 640,
-      "height": 675
+      "height": 675,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Engine_(Gulliver).png"
     },
     "tags": [
       "Jonathan Swift",
@@ -2467,7 +2473,7 @@
       "generative art",
       "Video Game Art",
       "Johann Philip Kirnberger",
-      "C.P.E. Bach",
+      "Carl Philipp Emanuel Bach",
       "chance",
       "chance procedures",
       "randomness",
@@ -2475,7 +2481,7 @@
       "Generative Music"
     ],
     "people": [
-      "c.p.e. bach",
+      "carl philipp emanuel bach",
       "johann philip kirnberger",
       "max mathews",
       "wolfgang amadeus mozart"
@@ -2527,8 +2533,8 @@
         "t": "tech"
       },
       {
-        "k": "c.p.e. bach",
-        "n": "C.P.E. Bach",
+        "k": "carl philipp emanuel bach",
+        "n": "Carl Philipp Emanuel Bach",
         "t": "people"
       },
       {
@@ -2599,9 +2605,10 @@
     "img": {
       "src": "img/thomas-bayes-develops-bayesian-inference.png",
       "cap": "",
-      "credit": "",
+      "credit": "Portrait traditionally captioned as Thomas Bayes; the identification is doubtful. Reproduced in Terence O'Donnell, History of Life Insurance in Its Formative Years (Chicago: American Conservation Co., 1936), p. 335, via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Thomas_Bayes.gif\">Image source</a>",
       "width": 1676,
-      "height": 1800
+      "height": 1800,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thomas_Bayes.gif"
     },
     "tags": [
       "artificial intelligence",
@@ -2807,9 +2814,10 @@
     "img": {
       "src": "img/joseph-marie-jacquard-invents-the-jacquard-loom.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Jacquard loom with punched cards, National Museum of Scotland, Edinburgh. Photograph by Stephencdickson, 2019, via Wikimedia Commons (CC BY-SA 4.0). <a href=\"https://commons.wikimedia.org/wiki/File:A_Jacquard_loom_showing_information_punchcards,_National_Museum_of_Scotland.jpg\">Image source</a>",
       "width": 3088,
-      "height": 2056
+      "height": 2056,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Jacquard_loom_showing_information_punchcards,_National_Museum_of_Scotland.jpg"
     },
     "tags": [
       "Joseph-Marie Jacquard",
@@ -3071,9 +3079,10 @@
     "img": {
       "src": "img/nicephore-niepce-produces-first-permanent-photograph.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Joseph Nicéphore Niépce, View from the Window at Le Gras, 1827. Heliograph on pewter, 16.7 x 20.3 cm. Gernsheim Collection, Harry Ransom Center, The University of Texas at Austin. <a href=\"https://www.hrc.utexas.edu/niepce-heliograph/\">Image source</a>",
       "width": 2250,
-      "height": 1875
+      "height": 1875,
+      "sourceUrl": "https://www.hrc.utexas.edu/niepce-heliograph/"
     },
     "tags": [
       "Herbert W. Franke",
@@ -3214,9 +3223,10 @@
     "img": {
       "src": "img/charles-babbage-develops-his-analytical-engine.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Charles Babbage, General plan of the Analytical Engine (Plan 25), 6 August 1840, as displayed at the Computer History Museum. Photograph by Arnold Reinhold, 2018, via Wikimedia Commons (CC BY 4.0). <a href=\"https://commons.wikimedia.org/wiki/File:Babbage_Analytical_Engine_Plan_1840_CHM.agr.jpg\">Image source</a>",
       "width": 3796,
-      "height": 2557
+      "height": 2557,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Babbage_Analytical_Engine_Plan_1840_CHM.agr.jpg"
     },
     "tags": [
       "Charles Babbage",
@@ -3288,9 +3298,9 @@
   },
   "lady-lovelace-s-objection": {
     "body": [
-      "In her 1843 notes on <a href=\"m/charles-babbage-develops-his-analytical-engine.html\" data-moment=\"charles-babbage-develops-his-analytical-engine\">Babbage's Analytical Engine</a>, Lovelace wrote that the machine could originate nothing and only do what it was ordered to do. Turing answers the objections by name in 1950.",
+      "In her 1843 notes on <a href=\"m/charles-babbage-develops-his-analytical-engine.html\" data-moment=\"charles-babbage-develops-his-analytical-engine\">Babbage's Analytical Engine</a>, Lovelace wrote that the machine could originate nothing and only do what it was ordered to do. <a href=\"https://www.lerandom.art/subjects/alan-turing\">Turing</a> answers the objections by name in 1950.",
       "This prescient observation hints at the different paths computation would take from hard-programmed rules to learning models.",
-      "People: Ada Lovelace."
+      "People: <a href=\"https://www.lerandom.art/subjects/ada-lovelace\">Ada Lovelace</a>."
     ],
     "cite": [
       {
@@ -3340,9 +3350,10 @@
     "img": {
       "src": "img/ada-lovelace-becomes-first-computer-programmer.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Diagram for the computation by the Engine of the Numbers of Bernoulli (Note G), from Ada Lovelace's translation and notes to L. F. Menabrea, Sketch of the Analytical Engine invented by Charles Babbage, Taylor's Scientific Memoirs, vol. 3, 1843. Via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Diagram_for_the_computation_of_Bernoulli_numbers.jpg\">Image source</a>",
       "width": 2000,
-      "height": 1400
+      "height": 1400,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diagram_for_the_computation_of_Bernoulli_numbers.jpg"
     },
     "tags": [
       "Charles Babbage",
@@ -3463,7 +3474,20 @@
     "body": [
       "The Harmonograph, commonly agreed to be invented by <a href=\"https://www.lerandom.art/subjects/hugh-blackburn\">Hugh Blackburn</a>, is a mechanical apparatus that creates geometric drawings, typically Lissajous-type figures, through the use of pendulums. It stands as an early example of an autonomous system/machine that generates artistic forms, and as a precursor to later generative art and computer graphics."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://collection.sciencemuseumgroup.org.uk/objects/co60268/donkins-harmonograph",
+        "label": "collection.sciencemuseumgroup.org.uk"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Harmonograph",
+        "label": "en.wikipedia.org"
+      },
+      {
+        "url": "https://mathshistory.st-andrews.ac.uk/DNB/Blackburn.html",
+        "label": "mathshistory.st-andrews.ac.uk"
+      }
+    ],
     "img": {
       "src": "img/hugh-blackburn-describes-the-harmonograph.jpg",
       "cap": "",

@@ -2,7 +2,7 @@
   "trained-artists-intervene-with-computers": {
     "body": [
       "As the accessibility of computers improves, more trained artists begin directly intervening with the machines and code, such as <a href=\"https://www.lerandom.art/subjects/joan-truckenbrod\">Joan Truckenbrod</a> and <a href=\"https://www.lerandom.art/subjects/colette-bangert\">Colette Bangert</a>.",
-      "By the late 1960s, a highly established British painter in the <a href=\"https://www.lerandom.art/subjects/london\">London</a> art scene, who had only recently represented Great <a href=\"https://www.lerandom.art/subjects/britain\">Britain</a> in the 1966 <a href=\"https://www.lerandom.art/subjects/venice-biennale\">Venice Biennale</a>, became interested in computers. He left London in 1968 to teach art in <a href=\"https://www.lerandom.art/subjects/california\">California</a>, where he gained access to a CDC 3200 mainframe computer, becoming fascinated with artificial intelligence. By 1971 <a href=\"https://www.lerandom.art/subjects/harold-cohen\">Harold Cohen</a> had built a computer-controlled drawing machine, which he showed at the Fall Joint Computer Conference. In 1972, early drawings from this system were shown at <a href=\"https://www.lerandom.art/subjects/lacma\">LACMA</a> in <a href=\"m/harold-cohens-early-work-exhibited-at-lacma.html\" data-moment=\"harold-cohens-early-work-exhibited-at-lacma\">Three Behaviors for the Partitioning of Space</a> and by 1973 he had dubbed the system <a href=\"m/harold-cohen-pioneers-ai-art-with-aaron.html\" data-moment=\"harold-cohen-pioneers-ai-art-with-aaron\">AARON</a>. This special decade thus saw the rise of AI in art from a trained painter.",
+      "By the late 1960s, a highly established British painter in the <a href=\"https://www.lerandom.art/subjects/london\">London</a> art scene, who had only recently represented Great <a href=\"https://www.lerandom.art/subjects/uk\">Britain</a> in the 1966 <a href=\"https://www.lerandom.art/subjects/venice-biennale\">Venice Biennale</a>, became interested in computers. He left London in 1968 to teach art in <a href=\"https://www.lerandom.art/subjects/california\">California</a>, where he gained access to a CDC 3200 mainframe computer, becoming fascinated with artificial intelligence. By 1971 <a href=\"https://www.lerandom.art/subjects/harold-cohen\">Harold Cohen</a> had built a computer-controlled drawing machine, which he showed at the Fall Joint Computer Conference. In 1972, early drawings from this system were shown at <a href=\"https://www.lerandom.art/subjects/lacma\">LACMA</a> in <a href=\"m/harold-cohens-early-work-exhibited-at-lacma.html\" data-moment=\"harold-cohens-early-work-exhibited-at-lacma\">Three Behaviors for the Partitioning of Space</a> and by 1973 he had dubbed the system <a href=\"m/harold-cohen-pioneers-ai-art-with-aaron.html\" data-moment=\"harold-cohen-pioneers-ai-art-with-aaron\">AARON</a>. This special decade thus saw the rise of AI in art from a trained painter.",
       "The ’70s also saw <a href=\"https://www.lerandom.art/subjects/chicago\">Chicago</a> become the center of the generative art universe with <a href=\"https://www.lerandom.art/subjects/sonia-landy-sheridan\">Sonia Landy Sheridan</a> at <a href=\"https://www.lerandom.art/subjects/school-of-the-art-institute-of-chicago\">School of the Art Institute of Chicago</a> <a href=\"m/sonia-landy-sheridan-founds-generative-systems-at-the-school-of-the-art-institut.html\" data-moment=\"sonia-landy-sheridan-founds-generative-systems-at-the-school-of-the-art-institut\">founding Generative Systems</a>. This experimental art and technology lab had access to the latest emerging devices, enabling them to explore their creative potential.",
       "Also in Chicago, <a href=\"https://www.lerandom.art/subjects/tom-defanti\">Tom DeFanti</a> at the <a href=\"https://www.lerandom.art/subjects/university-of-illinois-chicago\">University of Illinois Chicago</a> developed <a href=\"m/thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system.html\" data-moment=\"thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system\">GRASS</a> at the legendary <a href=\"m/thomas-defanti-founds-electronic-visualization-lab-evl.html\" data-moment=\"thomas-defanti-founds-electronic-visualization-lab-evl\">Electronic Visualization Lab</a> that <a href=\"https://x.com/LarryTwitCuba\" target=\"_blank\" rel=\"noopener\">Larry Cuba</a> used on <a href=\"https://www.lerandom.art/subjects/star-wars\">Star Wars</a>.",
       "For more context, we suggest <a href=\"https://www.youtube.com/watch?v=kAaQLvv9Jq4&amp;t=33s\" target=\"_blank\" rel=\"noopener\">watching</a> or <a href=\"https://open.spotify.com/episode/3WRifaZUtJiwjRnxsCqRae?si=6e959cb0dc5148e2\" target=\"_blank\" rel=\"noopener\">listening</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-5-artist-programmer-era-1970s\">transcript</a>)</span> to our Ch 5 Artist Discussion with Joan Truckenbrod and <a href=\"https://www.lerandom.art/subjects/hans-dehlinger\">Hans Dehlinger</a>, featuring special guest host <a href=\"https://www.lerandom.art/subjects/anika-meier\">Anika Meier</a>."
@@ -46,7 +46,7 @@
       "Chicago",
       "London",
       "California",
-      "Britain",
+      "UK",
       "accessibility",
       "Technology and Art",
       "programming",
@@ -151,7 +151,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "star wars",
@@ -199,8 +199,8 @@
         "t": "orgs"
       },
       {
-        "k": "britain",
-        "n": "Britain",
+        "k": "uk",
+        "n": "UK",
         "t": "places"
       },
       {
@@ -257,7 +257,7 @@
     "img": {
       "src": "img/information-exhibition-at-the-museum-of-modern-art.jpg",
       "cap": "https://monoskop.org/Information_(1970_exhibition)",
-      "credit": "",
+      "credit": "Cover of the exhibition catalogue Information, edited by Kynaston McShine (New York: The Museum of Modern Art, 1970).",
       "width": 467,
       "height": 600
     },
@@ -828,11 +828,6 @@
         "t": "people"
       },
       {
-        "k": "david",
-        "n": "David",
-        "t": "works"
-      },
-      {
         "k": "information",
         "n": "Information",
         "t": "exhibitions"
@@ -1135,7 +1130,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "pepsi pavilion",
@@ -1197,7 +1192,7 @@
       "This marked a transition away from the more rigid and precise symmetrical grids of the ’60s.",
       "Emblematic of this move were two foundational works in 1970:",
       "Grace C. Hertlein’s The Field and Colette and Charles Bangert’s Large Landscape: Ochre and Black.",
-      "<a href=\"https://spalterdigital.com/artworks/untitled-42/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Frieder Nake and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artworks/untitled-42/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by </a><a href=\"https://www.lerandom.art/subjects/frieder-nake\">Frieder Nake</a><a href=\"https://spalterdigital.com/artworks/untitled-42/\" target=\"_blank\" rel=\"noopener\"> and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artworks/untitled-42/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -1286,11 +1281,6 @@
       {
         "k": "the field",
         "n": "The Field",
-        "t": "works"
-      },
-      {
-        "k": "untitled",
-        "n": "untitled",
         "t": "works"
       }
     ],
@@ -1425,9 +1415,10 @@
     "img": {
       "src": "img/sonia-landy-sheridan-founds-generative-systems-at-the-school-of-the-art-institut.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Sonia Sheridan with Marisa González at the opening of Procesos: Cultura y Nuevas Tecnologías, Centro de Arte Reina Sofía, Madrid, 26 May 1986. Photograph by Marisa González, via Wikimedia Commons, CC BY-SA 4.0.",
       "width": 902,
-      "height": 827
+      "height": 827,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sonia_Sheridan_con_Marisa_Gonzalez_en_la_inauguraci%C3%B3n_de_Procesos_en_el_Centro_de_Arte_Reina_Sofia_en_Madrid_1986.tif"
     },
     "tags": [
       "Sonia Landy Sheridan",
@@ -1842,7 +1833,20 @@
     "body": [
       "These two books had a significant impact on views towards technology in the 1970s, challenging prevailing notions that technological progress was inherently positive and beneficial. The books encouraged a reevaluation of the relationship between humans and technology. The books marked a shift in the optimism that the art world felt in the ’60s about the future potential of art and technology. Indicative of the ’60s optimism were shows such as <a href=\"m/cybernetic-serendipity-defines-a-movement.html\" data-moment=\"cybernetic-serendipity-defines-a-movement\">Cybernetic Serendipity</a> and <a href=\"m/the-machine-as-seen-at-the-end-of-the-mechanical-age-at-moma.html\" data-moment=\"the-machine-as-seen-at-the-end-of-the-mechanical-age-at-moma\">The Machine</a>. With public sentiment turning against technology, the art world turned with it, and Conceptualism moved further away from the machine, as the <a href=\"m/information-exhibition-at-the-museum-of-modern-art.html\" data-moment=\"information-exhibition-at-the-museum-of-modern-art\">show Information</a> demonstrated."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Myth_of_the_Machine",
+        "label": "en.wikipedia.org"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Future_Shock",
+        "label": "en.wikipedia.org"
+      },
+      {
+        "url": "https://www.monoskop.org/Information_(1970_exhibition)",
+        "label": "monoskop.org"
+      }
+    ],
     "img": {
       "cap": "Alvin Toffler, Future Shock, first published in 1970; cover shown is Ballantine’s 2022 paperback edition.",
       "credit": "Alvin Toffler; Ballantine Books / Penguin Random House. Cover designer not identified by publisher. <a href=\"https://www.penguinrandomhouse.com/books/179096/future-shock-by-alvin-toffler/\">Image source</a>.",
@@ -1854,7 +1858,6 @@
     },
     "tags": [
       "Art and Technology",
-      "Future Shock",
       "Cybernetic Serendipity",
       "computer art",
       "cybernetics",
@@ -1916,12 +1919,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
-      },
-      {
-        "k": "future shock",
-        "n": "Future Shock",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "the pentagon of power",
@@ -1967,7 +1965,7 @@
   },
   "georg-nees-computergrafik-computerplastik-computer-graphics-computer-sculpture-p": {
     "body": [
-      "This portfolio of lithographs based on Nees’s plotted and sculptural work from the ’60s were based on the Information Aesthetics of <a href=\"https://www.lerandom.art/subjects/max-bense\">Max Bense</a>, whom Nees studied under at the University of <a href=\"https://www.lerandom.art/subjects/stuttgart\">Stuttgart</a>. Image is copyrighted by The Artist and courtesy of The Anne and Michael <a href=\"https://www.lerandom.art/subjects/spalter-digital\">Spalter Digital</a> Art Collection."
+      "This portfolio of lithographs based on Nees’s plotted and sculptural work from the ’60s were based on the Information Aesthetics of <a href=\"https://www.lerandom.art/subjects/max-bense\">Max Bense</a>, whom Nees studied under at the University of <a href=\"https://www.lerandom.art/subjects/stuttgart\">Stuttgart</a>. Image is copyrighted by The Artist and courtesy of The Anne and <a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://www.lerandom.art/subjects/spalter-digital\"> Digital</a> Art Collection."
     ],
     "cite": [
       {
@@ -2166,9 +2164,10 @@
     "img": {
       "src": "img/city-painting-by-grace-c-hertlein.png",
       "cap": "",
-      "credit": "",
+      "credit": "Grace C. Hertlein, City Painting, c. 1970–72, computer-generated print. ZKM | Center for Art and Media Karlsruhe.",
       "width": 988,
-      "height": 1252
+      "height": 1252,
+      "sourceUrl": "https://zkm.de/en/artworks/city-painting"
     },
     "tags": [
       "Grace C. Hertlein",
@@ -2360,7 +2359,7 @@
     "img": {
       "src": "img/art-et-ordinateur-by-abraham-moles.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Cover of Abraham A. Moles, Art et ordinateur (Blusson edition). First published by Casterman, 1971, with the collaboration of Marie-Luce André.",
       "width": 340,
       "height": 340
     },
@@ -2444,7 +2443,7 @@
   },
   "howard-wise-gallery-closes": {
     "body": [
-      "The gallery, which had served as a, if not the, key supporter of technology and art-based practices, closed in 1971 after eleven years in operation. The gallery hosted the <a href=\"m/computer-generated-pictures-howard-wise-gallery.html\" data-moment=\"computer-generated-pictures-howard-wise-gallery\">first exhibition of computer art in the United States</a> and was critical to the development of the movement. Originally opened in Cleveland (1957-1961), the gallery run by the kinetic, light and video art lover, Howard <a href=\"https://www.lerandom.art/subjects/earl\">Earl</a> Wise, was instrumental in bridging the world of lumino-kinetic art to digital art."
+      "The gallery, which had served as a, if not the, key supporter of technology and art-based practices, closed in 1971 after eleven years in operation. The gallery hosted the <a href=\"m/computer-generated-pictures-howard-wise-gallery.html\" data-moment=\"computer-generated-pictures-howard-wise-gallery\">first exhibition of computer art in the United States</a> and was critical to the development of the movement. Originally opened in Cleveland (1957-1961), the gallery run by the kinetic, light and video art lover, Howard Earl Wise, was instrumental in bridging the world of lumino-kinetic art to digital art."
     ],
     "cite": [
       {
@@ -2461,7 +2460,6 @@
     },
     "tags": [
       "Howard Wise",
-      "Earl",
       "United States",
       "computer art",
       "digital art",
@@ -2475,7 +2473,6 @@
       "Technology and Art"
     ],
     "people": [
-      "earl",
       "howard wise"
     ],
     "subjects": [
@@ -2518,11 +2515,6 @@
         "k": "kinetic art",
         "n": "kinetic art",
         "t": "tech"
-      },
-      {
-        "k": "earl",
-        "n": "Earl",
-        "t": "people"
       },
       {
         "k": "howard wise",
@@ -3270,7 +3262,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "the multimillion dollar art boondoggle",
@@ -3324,7 +3316,7 @@
   },
   "manfred-mohrs-first-solo-exhibition": {
     "body": [
-      "Mohr’s show, Computer Graphics—Une Esthétique Programmée, was held at the ARC, Musée d’Art Moderne de la Ville de <a href=\"https://www.lerandom.art/subjects/paris\">Paris</a>, curated by <a href=\"https://www.lerandom.art/subjects/pierre-gaudibert\">Pierre Gaudibert</a>. According to <a href=\"https://www.lerandom.art/subjects/margit-rosen\">Margit Rosen</a>, Mohr “made history with the solo exhibition.” Mohr describes the show himself: “I showed 20+ drawings, demonstrated some of the drawings on a large Benson high-resolution flatbed plotter (installed by the company), and hung a large white panel, a sort of guest book, asking what the visitors thought about art and the computer. This banner has become a survey of opinions of the time (on permanent loan at ZKM, Karlsruhe). Though I made hundreds of drawings at that time, the show and catalog emphasised the different algorithms that I wrote and not the multitude of drawings I made from each algorithm.” Image is copyrighted by The Artist and courtesy of The Anne and Michael <a href=\"https://www.lerandom.art/subjects/spalter-digital\">Spalter Digital</a> Art Collection."
+      "Mohr’s show, Computer Graphics—Une Esthétique Programmée, was held at the ARC, Musée d’Art Moderne de la Ville de <a href=\"https://www.lerandom.art/subjects/paris\">Paris</a>, curated by <a href=\"https://www.lerandom.art/subjects/pierre-gaudibert\">Pierre Gaudibert</a>. According to <a href=\"https://www.lerandom.art/subjects/margit-rosen\">Margit Rosen</a>, Mohr “made history with the solo exhibition.” Mohr describes the show himself: “I showed 20+ drawings, demonstrated some of the drawings on a large Benson high-resolution flatbed plotter (installed by the company), and hung a large white panel, a sort of guest book, asking what the visitors thought about art and the computer. This banner has become a survey of opinions of the time (on permanent loan at ZKM, Karlsruhe). Though I made hundreds of drawings at that time, the show and catalog emphasised the different algorithms that I wrote and not the multitude of drawings I made from each algorithm.” Image is copyrighted by The Artist and courtesy of The Anne and <a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://www.lerandom.art/subjects/spalter-digital\"> Digital</a> Art Collection."
     ],
     "cite": [
       {
@@ -3858,7 +3850,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "psychic space",
@@ -3957,7 +3949,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "umbrella",
@@ -5156,7 +5148,7 @@
   },
   "robert-e-mueller-pans-computer-art": {
     "body": [
-      "Writing in Art in <a href=\"https://www.lerandom.art/subjects/america\">America</a> and one of the few times computer art is mentioned by a major mainstream art publication, Mueller describes visual outputs from computers as “exceedingly poor and uninspiring.” This sentiment reflects the growing skepticism of the times regarding technology and art."
+      "Writing in Art in America and one of the few times computer art is mentioned by a major mainstream art publication, Mueller describes visual outputs from computers as “exceedingly poor and uninspiring.” This sentiment reflects the growing skepticism of the times regarding technology and art."
     ],
     "cite": [
       {
@@ -5181,7 +5173,6 @@
       "src": "img/robert-e-mueller-pans-computer-art-6e7c1f0d8c.webp"
     },
     "tags": [
-      "America",
       "computer art",
       "Robert E. Mueller",
       "Art in America",
@@ -5216,11 +5207,6 @@
         "k": "art in america",
         "n": "Art in America",
         "t": "orgs"
-      },
-      {
-        "k": "america",
-        "n": "America",
-        "t": "places"
       }
     ],
     "linked": [],
@@ -5505,12 +5491,12 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "pong",
@@ -5653,7 +5639,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "m 3x3",
@@ -5716,7 +5702,16 @@
     "body": [
       "Held at the Sony Building in <a href=\"https://www.lerandom.art/subjects/tokyo\">Tokyo</a>, this notable Japanese computer art exhibit famously featured <a href=\"https://www.lerandom.art/subjects/shiro-takahashi\">Shiro Takahashi</a>’s inflatable faces and hands that were computer controlled. It also featured international artists such as <a href=\"https://www.lerandom.art/subjects/ruth-leavitt\">Ruth Leavitt</a> and <a href=\"https://www.lerandom.art/subjects/miljenko-horvat\">Miljenko Horvat</a>. The exhibition also featured the work of pioneer <a href=\"https://www.lerandom.art/subjects/hiroshi-kawano\">Hiroshi Kawano</a>."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://zkm.de/en/person/hiroshi-kawano",
+        "label": "zkm.de"
+      },
+      {
+        "url": "https://cyberneticzoo.com/?p=6743",
+        "label": "cyberneticzoo.com"
+      }
+    ],
     "img": {
       "src": "img/cybernetic-artrip-in-tokyo.jpg",
       "cap": "Passers-by outside the Sony Building in Ginza in October 1973, looking up at Shiro Takahashi's giant black inflatable hand beside the exhibition sign reading 'Cybernetic ARTRIP — International Computer Art Exhibition'.",
@@ -5823,7 +5818,7 @@
   },
   "thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system": {
     "body": [
-      "GRASS (Graphics Symbiosis System) is simply put one of the most important advancements in computer graphics, well, ever, but especially of the 1970s. Combined with <a href=\"m/dan-sandin-creates-sandin-ip-image-processsor.html\" data-moment=\"dan-sandin-creates-sandin-ip-image-processsor\">Dan Sandin's Image Processor</a> and others, it transformed the capabilities of computers. It gave them the ability to animate in real time on a screen, something dreamed of since the days of oscillographs.",
+      "GRASS (Graphics Symbiosis System) is simply put one of the most important advancements in computer graphics, well, ever, but especially of the 1970s. Combined with <a href=\"https://www.lerandom.art/subjects/dan-sandin\">Dan Sandin</a><a href=\"m/dan-sandin-creates-sandin-ip-image-processsor.html\" data-moment=\"dan-sandin-creates-sandin-ip-image-processsor\">'s Image Processor</a> and others, it transformed the capabilities of computers. It gave them the ability to animate in real time on a screen, something dreamed of since the days of oscillographs.",
       "Completed as DeFanti’s doctoral work at <a href=\"https://www.lerandom.art/subjects/ohio\">Ohio</a> State University, this landmark early computer animation language that was used by <a href=\"m/larry-cuba-two-space.html\" data-moment=\"larry-cuba-two-space\">Larry Cuba</a> to produce the graphics for the training sequence for the Rebel attack on the Death Star in <a href=\"https://www.lerandom.art/subjects/star-wars\">Star Wars</a>. Cuba would work on GRASS with DeFanti at the <a href=\"m/thomas-defanti-founds-electronic-visualization-lab-evl.html\" data-moment=\"thomas-defanti-founds-electronic-visualization-lab-evl\">University of Illinois Chicago</a> beginning in 1975. <a href=\"https://www.lerandom.art/subjects/copper-giloth\">Copper Giloth</a> worked on GRASS doing simulations of water sculptures for a friend experimentally.",
       "DeFanti wrote GRASS in <a href=\"m/charles-csuri-founds-the-computer-graphics-research-group.html\" data-moment=\"charles-csuri-founds-the-computer-graphics-research-group\">Charles Csuri’s Computer Graphics Research Group</a>, supported by Csuri’s 1971 National Science Foundation grant for real-time film animation. It ran on the group’s PDP-11/45 with a Vector General display."
     ],
@@ -5955,7 +5950,7 @@
   },
   "harold-cohen-pioneers-ai-art-with-aaron": {
     "body": [
-      "<a href=\"https://www.lerandom.art/subjects/aaron\">AARON</a>, the autonomous drawing machine Cohen named at Stanford in 1973, pioneered the use of AI to create art. With his seminal 1973 essay “Parallel to Perception: Some Notes on the Problem of Machine-Generated Art,” <a href=\"https://www.lerandom.art/subjects/harold-cohen\">Harold Cohen</a> articulated his efforts to develop “autonomous art-making behavior” that was inventive and could “conjure meaning.” Cohen differentiated this “autonomous art-making” from computer art, which he did not highly regard, claiming that “'computer art' can barely claim consideration as art at all.” Cohen’s collaboration with AARON as a human-machine collaboration lasted 40 years and demonstrated a machine’s ability to make creative choices. His ideas and concepts for these coming decades can be found in this paper. Image is copyrighted by The Artist and courtesy of The Anne and Michael <a href=\"https://www.lerandom.art/subjects/spalter-digital\">Spalter Digital</a> Art Collection."
+      "<a href=\"https://www.lerandom.art/subjects/aaron\">AARON</a>, the autonomous drawing machine Cohen named at Stanford in 1973, pioneered the use of AI to create art. With his seminal 1973 essay “Parallel to Perception: Some Notes on the Problem of Machine-Generated Art,” <a href=\"https://www.lerandom.art/subjects/harold-cohen\">Harold Cohen</a> articulated his efforts to develop “autonomous art-making behavior” that was inventive and could “conjure meaning.” Cohen differentiated this “autonomous art-making” from computer art, which he did not highly regard, claiming that “'computer art' can barely claim consideration as art at all.” Cohen’s collaboration with AARON as a human-machine collaboration lasted 40 years and demonstrated a machine’s ability to make creative choices. His ideas and concepts for these coming decades can be found in this paper. Image is copyrighted by The Artist and courtesy of The Anne and <a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://www.lerandom.art/subjects/spalter-digital\"> Digital</a> Art Collection."
     ],
     "cite": [
       {
@@ -7856,12 +7851,12 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "national science foundation",
@@ -7910,7 +7905,7 @@
     "body": [
       "One of Molnár’s most recognizable series of works, (Des)Ordres consists of a grid of concentric squares with random distortions that highlight the distinction between order and chaos.",
       "According to the Digital Art Museum, “The title suggests a word play in French between two meanings: “désordres” (disorders) and “des ordres” (some orders), which implies that within the apparent dissarray one can find an underlying logic.”",
-      "<a href=\"https://spalterdigital.com/artworks/untitled-42/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by the artist and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artworks/untitled-42/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by the artist and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artworks/untitled-42/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -7973,11 +7968,6 @@
       {
         "k": "(dés)ordres",
         "n": "(Dés)Ordres",
-        "t": "works"
-      },
-      {
-        "k": "untitled",
-        "n": "untitled",
         "t": "works"
       },
       {
@@ -8987,7 +8977,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "noisefields",
@@ -9279,9 +9269,10 @@
     "img": {
       "src": "img/science-and-technology-in-the-arts-a-tour-through-the-realm-of-science-art-by-st.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Title page of Stewart Kranz, Science and Technology in the Arts: A Tour through the Realm of Science/Art (New York: Van Nostrand Reinhold, 1974).",
       "width": 180,
-      "height": 252
+      "height": 252,
+      "sourceUrl": "https://openlibrary.org/books/OL4770438M"
     },
     "tags": [
       "Stewart Kranz",
@@ -9358,7 +9349,7 @@
   },
   "muriel-cooper-founds-the-visible-language-workshop": {
     "body": [
-      "Derived from a course taught by Cooper at MIT, “Messages and Means,” the Visible Language Workshop (VLW) took a multi-disciplinary approach to design. It specifically examined interactive design, photography, typesetting and platemaking. The VLW would prove to be highly influential to both <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> and <a href=\"https://www.lerandom.art/subjects/zach-lieberman\">Zach Lieberman</a> in their creations of <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a> and <a href=\"m/zach-lieberman-releases-openframeworks-v0-01.html\" data-moment=\"zach-lieberman-releases-openframeworks-v0-01\">openFrameworks</a> respectively. “The VLW was well-connected to both the Center for Advanced Visual <a href=\"https://www.lerandom.art/subjects/studies\">Studies</a> and the Architecture Machine Group; and it was one of the original research groups of the <a href=\"m/mit-media-lab-opened-by-nicholas-negroponte.html\" data-moment=\"mit-media-lab-opened-by-nicholas-negroponte\">Media Lab at its founding in 1985</a>.”"
+      "Derived from a course taught by Cooper at MIT, “Messages and Means,” the Visible Language Workshop (VLW) took a multi-disciplinary approach to design. It specifically examined interactive design, photography, typesetting and platemaking. The VLW would prove to be highly influential to both <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> and <a href=\"https://www.lerandom.art/subjects/zach-lieberman\">Zach Lieberman</a> in their creations of <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a> and <a href=\"m/zach-lieberman-releases-openframeworks-v0-01.html\" data-moment=\"zach-lieberman-releases-openframeworks-v0-01\">openFrameworks</a> respectively. “The VLW was well-connected to both the Center for Advanced Visual Studies and the Architecture Machine Group; and it was one of the original research groups of the <a href=\"m/mit-media-lab-opened-by-nicholas-negroponte.html\" data-moment=\"mit-media-lab-opened-by-nicholas-negroponte\">Media Lab at its founding in 1985</a>.”"
     ],
     "cite": [
       {
@@ -9474,11 +9465,6 @@
       {
         "k": "messages and means",
         "n": "Messages and Means",
-        "t": "works"
-      },
-      {
-        "k": "studies",
-        "n": "Studies",
         "t": "works"
       },
       {
@@ -9916,7 +9902,7 @@
     "img": {
       "src": "img/computer-graphics-by-melvin-l-prueitt.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Cover of Melvin L. Prueitt, Computer Graphics: 118 Computer-Generated Designs (New York: Dover Publications, 1975).",
       "width": 734,
       "height": 1000
     },
@@ -10411,11 +10397,6 @@
         "k": "yoichiro kawaguchi",
         "n": "Yoichiro Kawaguchi",
         "t": "people"
-      },
-      {
-        "k": "cybernetic serendipity",
-        "n": "Cybernetic Serendipity",
-        "t": "exhibitions"
       },
       {
         "k": "acm siggraph distinguished artist award",
@@ -11562,7 +11543,7 @@
   },
   "p-196-a-and-p-197-a-by-manfred-mohr": {
     "body": [
-      "Mohr produced this series of computer-generated drawings from 1977, within the Cubic Limit II phase. The series consisted of images of deconstructed single cubes. Dissected, the cubes were not symmetrical. This concept of broken symmetry has roots in the work of Renaissance artist, <a href=\"https://www.lerandom.art/subjects/leonardo-da-vinci\">Leonardo da Vinci</a>, who was hugely influential in this decade as the embodiment of the artist-scientist. <a href=\"https://www.lerandom.art/subjects/lillian-schwartz\">Lillian Schwartz</a> a decade later would explore this topic more explicity in her <a href=\"m/mona-leo-by-lillian-schwartz.html\" data-moment=\"mona-leo-by-lillian-schwartz\">Mona/Leo</a>, which bisects the face of the <a href=\"https://www.lerandom.art/subjects/mona-lisa\">Mona Lisa</a> and combines it with the visage of da Vinci. Image is copyrighted by The Artist and courtesy of The Anne and Michael <a href=\"https://www.lerandom.art/subjects/spalter-digital\">Spalter Digital</a> Art Collection."
+      "Mohr produced this series of computer-generated drawings from 1977, within the Cubic Limit II phase. The series consisted of images of deconstructed single cubes. Dissected, the cubes were not symmetrical. This concept of broken symmetry has roots in the work of Renaissance artist, <a href=\"https://www.lerandom.art/subjects/leonardo-da-vinci\">Leonardo da Vinci</a>, who was hugely influential in this decade as the embodiment of the artist-scientist. <a href=\"https://www.lerandom.art/subjects/lillian-schwartz\">Lillian Schwartz</a> a decade later would explore this topic more explicity in her <a href=\"m/mona-leo-by-lillian-schwartz.html\" data-moment=\"mona-leo-by-lillian-schwartz\">Mona/Leo</a>, which bisects the face of the <a href=\"https://www.lerandom.art/subjects/mona-lisa\">Mona Lisa</a> and combines it with the visage of da Vinci. Image is copyrighted by The Artist and courtesy of The Anne and <a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://www.lerandom.art/subjects/spalter-digital\"> Digital</a> Art Collection."
     ],
     "cite": [
       {
@@ -12223,11 +12204,6 @@
         "t": "works"
       },
       {
-        "k": "refresh",
-        "n": "refresh",
-        "t": "works"
-      },
-      {
         "k": "siggraph",
         "n": "SIGGRAPH",
         "t": "orgs"
@@ -12392,7 +12368,7 @@
     "linked": [
       "xerox-parc-founded",
       "xerox-parc-develops-alto-personal-computer",
-      "adope-illustrator-developed",
+      "adobe-illustrator-developed",
       "casey-reas-and-ben-fry-initiate-processing-project",
       "postscript-released"
     ],
@@ -13638,12 +13614,22 @@
   },
   "thomas-defanti-develops-zgrass": {
     "body": [
-      "An extension of <a href=\"m/thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system.html\" data-moment=\"thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system\">Defanti’s GRASS</a>, ZGRASS was used for generating 3D imagery and developed to be used on smaller, personal computers and gaming devices. In an effort to better control images and make electronic visualization easier, Thomas DeFanti developed ZGRASS with <a href=\"https://www.lerandom.art/subjects/jamie-fenton\">Jamie Fenton</a> and <a href=\"https://www.lerandom.art/subjects/nola-donato\">Nola Donato</a> for the Bally Home Library Computer. It would go on to be used as a programming language for artists and educators in the 1980s. For example, pioneering animation artist <a href=\"https://www.lerandom.art/subjects/larry-cuba\">Larry Cuba</a> completed his film <a href=\"m/calculated-movements-by-larry-cuba.html\" data-moment=\"calculated-movements-by-larry-cuba\">Calculated Movements</a> on ZGRASS. <a href=\"https://www.lerandom.art/subjects/victor-acevedo\">Victor Acevedo</a> would use it for his experiments in the mid ’80s he told Peter Bauman via a call 11 July 2023. <a href=\"https://www.lerandom.art/subjects/copper-giloth\">Copper Giloth</a> was the first artist to work with ZGRASS."
+      "An extension of <a href=\"m/thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system.html\" data-moment=\"thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system\">Defanti’s GRASS</a>, ZGRASS was used for generating 3D imagery and developed to be used on smaller, personal computers and gaming devices. In an effort to better control images and make electronic visualization easier, Thomas DeFanti developed ZGRASS with <a href=\"https://www.lerandom.art/subjects/jamie-fenton\">Jamie Fenton</a> and <a href=\"https://www.lerandom.art/subjects/nola-donato\">Nola Donato</a> for the Bally Home Library Computer.",
+      "Fenton is herself a legendary artist, computer and video game programmer. Fenton is widely credited for creating an early instance of glitch art, the legendary <a href=\"https://mediaburn.org/videos/electronic-visualization-event-3/\"><em>Digital TV Dinner</em></a> (1978) that came out of <a href=\"m/thomas-defanti-founds-electronic-visualization-lab-evl.html\" data-moment=\"thomas-defanti-founds-electronic-visualization-lab-evl\">EVL</a> in Chicago. Fenton is less known, but this researcher believes, for making perhaps some of the first video game art, as <em><a href=\"m/digital-tv-dinner-by-jamie-fenton-and-raul-zaritsky.html\" data-moment=\"digital-tv-dinner-by-jamie-fenton-and-raul-zaritsky\">Digital TV Dinner</a></em> was made by distressing video game equipment. Fenton was also known for programming in essentially <a href=\"m/kathleen-booth-writes-an-early-assembly-language.html\" data-moment=\"kathleen-booth-writes-an-early-assembly-language\">Assembly Language</a> and programmed <a href=\"m/director-1-0-released.html\" data-moment=\"director-1-0-released\">Macromedia Director</a>, an important tool for creatives in the coming decades. She is a powerhouse of a legend, who is painfully under-recognized, especially for her contributions to art.",
+      "But, back to ZGRASS. It would go on to be used as a programming language for artists and educators in the 1980s. For example, pioneering animation artist <a href=\"https://www.lerandom.art/subjects/larry-cuba\">Larry Cuba</a> completed his film <a href=\"m/calculated-movements-by-larry-cuba.html\" data-moment=\"calculated-movements-by-larry-cuba\">Calculated Movements</a> on ZGRASS. <a href=\"https://www.lerandom.art/subjects/victor-acevedo\">Victor Acevedo</a> would use it for his experiments in the mid ’80s he told <a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a> via a call 11 July 2023. <a href=\"https://www.lerandom.art/subjects/copper-giloth\">Copper Giloth</a> was the first artist to work with ZGRASS."
     ],
     "cite": [
       {
-        "url": "",
+        "url": "https://doi.org/10.1145/965139.807366",
         "label": "DeFanti, Tom, Jamie Fenton and Nola Donato. \"BASIC Zgrass: A Sophisticated Graphics Language for the Bally Home Library Computer.\" ACM SIGGRAPH Computer Graphics 12, no. 3 (1978): 33-37. https://doi.org/10.1145/965139.807366"
+      },
+      {
+        "url": "https://mediaburn.org/videos/electronic-visualization-event-3/",
+        "label": "Media Burn Archive. Electronic Visualization Event #3. Digital TV Dinner appears at 27:11."
+      },
+      {
+        "url": "https://www.artic.edu/digital-publications/36/perspectives-on-instability/16/stability-isnt-everything-its-glitched-up-to-be-an-interview-with-jamie-fenton",
+        "label": "Art Institute of Chicago. Stability Isn’t Everything It’s Glitched Up to Be: An Interview with Jamie Fenton. Perspectives on Instability."
       }
     ],
     "img": {
@@ -13670,7 +13656,15 @@
       "Nola Donato",
       "Victor Acevedo",
       "education",
-      "computer animation"
+      "computer animation",
+      "glitch",
+      "assembly language",
+      "Director",
+      "Macromedia",
+      "Electronic Visualization Laboratory (EVL)",
+      "Chicago",
+      "video games",
+      "Digital TV Dinner"
     ],
     "people": [
       "copper giloth",
@@ -13739,7 +13733,8 @@
       {
         "k": "jamie fenton",
         "n": "Jamie Fenton",
-        "t": "people"
+        "t": "people",
+        "subjectUrl": "https://www.lerandom.art/subjects/jamie-fenton"
       },
       {
         "k": "larry cuba",
@@ -13765,12 +13760,55 @@
         "k": "calculated movements",
         "n": "Calculated Movements",
         "t": "works"
+      },
+      {
+        "k": "glitch",
+        "n": "glitch",
+        "t": "tech"
+      },
+      {
+        "k": "assembly language",
+        "n": "assembly language",
+        "t": "tech"
+      },
+      {
+        "k": "director",
+        "n": "Director",
+        "t": "tech"
+      },
+      {
+        "k": "macromedia",
+        "n": "Macromedia",
+        "t": "orgs"
+      },
+      {
+        "k": "electronic visualization laboratory (evl)",
+        "n": "Electronic Visualization Laboratory (EVL)",
+        "t": "orgs"
+      },
+      {
+        "k": "chicago",
+        "n": "Chicago",
+        "t": "places"
+      },
+      {
+        "k": "video games",
+        "n": "video games",
+        "t": "themes"
+      },
+      {
+        "k": "digital tv dinner",
+        "n": "Digital TV Dinner",
+        "t": "works"
       }
     ],
     "linked": [
       "video-art-the-electronic-medium-at-the-chicago-museum-of-contemporary-art",
       "calculated-movements-by-larry-cuba",
-      "thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system"
+      "thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system",
+      "thomas-defanti-founds-electronic-visualization-lab-evl",
+      "kathleen-booth-writes-an-early-assembly-language",
+      "director-1-0-released"
     ],
     "echoes": [
       "garden-monoliths-by-zancan",
@@ -14187,7 +14225,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "ars electronica",
@@ -14448,7 +14486,7 @@
     ],
     "cite": [
       {
-        "url": "https://dam.org/archive/zajec/1970-96-smf-infomatrix.htm",
+        "url": "https://digitalartmuseum.org/zajec/1970-96-smf-infomatrix.html",
         "label": "dam.org"
       }
     ],
@@ -14726,11 +14764,6 @@
         "k": "jim blinn",
         "n": "Jim Blinn",
         "t": "people"
-      },
-      {
-        "k": "david",
-        "n": "David",
-        "t": "works"
       },
       {
         "k": "dr. jim, number 1",
@@ -15123,7 +15156,7 @@
       "The history of AI is a story of disillusionment. The reasons to get excited (and afraid) are easy enough to predict and see coming. The problem is time frame and so often theory and ideas had to wait (decades typically) for other fields to advance while their ideas were considered dead and disproven. History praises the true believers like Geoff Hinton who stuck with it through thick and thin. What about the field's apostates?",
       "Perhaps no figure in this story represents disillusionment and renunciation as precisely as Terry Winograd.",
       "His story overlaps with an early goal of the AI field: a machine that genuinely understood natural language the way people do. Why should humans spend so much time learning machine languages? Shouldn't <em>they</em> learn <em>ours</em> instead?",
-      "Well, the issue is there are different ways of going about this task and two tracks had already settled by early 1970s, learning and rules. But since the incredibly damaging blow to the learning side of <a href=\"m/the-split-neural-networks-fall-from-favor-after-perceptrons.html\" data-moment=\"the-split-neural-networks-fall-from-favor-after-perceptrons\">Minsky's Perceptrons in the previous year</a>, the rules side (symbolic, expert systems AI) was having a moment.",
+      "Well, the issue is there are different ways of going about this task and two tracks had already settled by early 1970s, learning and rules. But since the incredibly damaging blow to the learning side of <a href=\"https://www.lerandom.art/subjects/marvin-minsky\">Minsky</a><a href=\"m/the-split-neural-networks-fall-from-favor-after-perceptrons.html\" data-moment=\"the-split-neural-networks-fall-from-favor-after-perceptrons\">'s Perceptrons in the previous year</a>, the rules side (symbolic, expert systems AI) was having a moment.",
       "Emblematic of that moment for expert systems was Winograd's SHRDLU. Between 1968 and 1970, Terry Winograd wrote SHRDLU at the <a href=\"m/john-mccarthy-and-marvin-minsky-found-the-mit-artificial-intelligence-project.html\" data-moment=\"john-mccarthy-and-marvin-minsky-found-the-mit-artificial-intelligence-project\">MIT Artificial Intelligence Laboratory</a>. A user typed English on a teletype, while the program could \"reply\" in a very limited way. It was a simple robot with only a hand and an eye that could move blocks, pyramids and a box shown on a display screen. But that was about it. It was an expert system after all. Every outcome and scenario and answer had to be anticipated and baked in.",
       "There was a lot of confusion. It asked which pyramid was meant when an order was unclear and even tried to account for its actions. Pressed on why it had stacked three blocks, it answered, “BECAUSE YOU ASKED ME TO.”",
       "The name you ask? It spells the second column of keys on a Linotype typesetting machine.",
@@ -15339,7 +15372,7 @@
       "As readers of this timeline know, the man is a bit of a hero, certainly a legend. He was the cybernetic lone wolf who was right all along, <a href=\"m/the-split-neural-networks-fall-from-favor-after-perceptrons.html\" data-moment=\"the-split-neural-networks-fall-from-favor-after-perceptrons\">the unjustly accused</a>.",
       "He was the inventor of the first working neural network. In 1958, at the Cornell Aeronautical Laboratory, he <a href=\"m/frank-rosenblatt-introduces-the-perceptron.html\" data-moment=\"frank-rosenblatt-introduces-the-perceptron\">described the Perceptron</a>, an electronic device built on biological principles that could learn. He extended the approach in <a href=\"m/frank-rosenblatt-publishes-principles-of-neurodynamics.html\" data-moment=\"frank-rosenblatt-publishes-principles-of-neurodynamics\"><em>Principles of Neurodynamics</em></a>.",
       "The man certainly had ideas. He was experimental and from 1966, in Cornell’s Section of Neurobiology and Behavior. There he tested whether learned behavior could pass from trained rats to untrained ones through injections of brain extract. Umm.",
-      "He is so revered to this day, as the IEEE established an award named after him in 2004, the Frank Rosenblatt Award. It is awarded annually for \"computational intelligence\" and has since gone to another generation of legends, like <a href=\"m/teuvo-kohonen-kaoru-nakano-and-james-anderson-publish-associative-memory-network.html\" data-moment=\"teuvo-kohonen-kaoru-nakano-and-james-anderson-publish-associative-memory-network\">Teuvo Kohonen</a>, John Hopfield, Geoffrey Hinton and <a href=\"m/paul-werbos-proposes-backpropagation-to-train-neural-networks.html\" data-moment=\"paul-werbos-proposes-backpropagation-to-train-neural-networks\">Paul Werbos</a>."
+      "He is so revered to this day, as the IEEE established an award named after him in 2004, the Frank Rosenblatt Award. It is awarded annually for \"computational intelligence\" and has since gone to another generation of legends, like <a href=\"m/teuvo-kohonen-kaoru-nakano-and-james-anderson-publish-associative-memory-network.html\" data-moment=\"teuvo-kohonen-kaoru-nakano-and-james-anderson-publish-associative-memory-network\">Teuvo Kohonen</a>, John Hopfield, <a href=\"https://www.lerandom.art/subjects/geoffrey-hinton\">Geoffrey Hinton</a> and <a href=\"https://www.lerandom.art/subjects/paul-werbos\">Paul Werbos</a>."
     ],
     "cite": [
       {
@@ -15575,7 +15608,7 @@
   },
   "vladimir-vapnik-and-alexey-chervonenkis-publish-a-theory-of-learning-from-exampl": {
     "body": [
-      "<a href=\"m/the-split-neural-networks-fall-from-favor-after-perceptrons.html\" data-moment=\"the-split-neural-networks-fall-from-favor-after-perceptrons\">After Minsky's Perceptrons</a>, terms like \"neural network\" had become akin to rude words in the \"West,\" particularly for funding. They were more accepted, however, in places like <a href=\"m/alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks.html\" data-moment=\"alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks\">U.S.S.R.</a> and <a href=\"m/shun-ichi-amari-publishes-learning-rules-for-neural-networks.html\" data-moment=\"shun-ichi-amari-publishes-learning-rules-for-neural-networks\">Japan</a>. Those areas would contribute in fundamental ways to the connectionist tradition in the '70s, often only to have their work rediscovered (and reattributed) in the '80s and '90s as the West paid closer attention.",
+      "<a href=\"m/the-split-neural-networks-fall-from-favor-after-perceptrons.html\" data-moment=\"the-split-neural-networks-fall-from-favor-after-perceptrons\">After </a><a href=\"https://www.lerandom.art/subjects/marvin-minsky\">Minsky</a><a href=\"m/the-split-neural-networks-fall-from-favor-after-perceptrons.html\" data-moment=\"the-split-neural-networks-fall-from-favor-after-perceptrons\">'s Perceptrons</a>, terms like \"neural network\" had become akin to rude words in the \"West,\" particularly for funding. They were more accepted, however, in places like <a href=\"m/alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks.html\" data-moment=\"alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks\">U.S.S.R.</a> and <a href=\"m/shun-ichi-amari-publishes-learning-rules-for-neural-networks.html\" data-moment=\"shun-ichi-amari-publishes-learning-rules-for-neural-networks\">Japan</a>. Those areas would contribute in fundamental ways to the connectionist tradition in the '70s, often only to have their work rediscovered (and reattributed) in the '80s and '90s as the West paid closer attention.",
       "Here is one such example of the U.S.S.R. keeping the learning torch lit in a time of otherwise darkness.",
       "In 1971 Vladimir Vapnik and Alexey Chervonenkis of Moscow’s Institute of Control Sciences published in <em>Theory of Probability and Its Applications</em> the full proofs of a result they had announced in 1968.",
       "It set out when the frequencies observed in one sample converge to the true probabilities across a whole class of events at once, generalizing the law of large numbers. For learning, that tells when a rule chosen for making the fewest errors on training examples will also hold on new cases. Vapnik and Chervonenkis's proofs rested on a measure of a model class's capacity, now known as the VC dimension. Their theory became a popular way to analyze neural networks moving forward."
@@ -15683,7 +15716,7 @@
   "charles-csuri-founds-the-computer-graphics-research-group": {
     "body": [
       "What this timeline (and history generally) teaches again and again is that nothing is the beginning. Everything has a predecessor and context. But some events participate in \"beginning-ness\" more than others we can say. And in many ways <a href=\"https://www.lerandom.art/subjects/charles-csuri\">Charles Csuri</a>'s Computer Graphics Research Group (CGRG) kicked off the field of computer graphics and animation as disciplines.",
-      "Even other \"beginnings\" like <a href=\"m/thomas-defanti-founds-electronic-visualization-lab-evl.html\" data-moment=\"thomas-defanti-founds-electronic-visualization-lab-evl\">Tom DeFanti and Dan Sandin in Chicago's EVL</a> point back to this beginning. But of course <a href=\"m/charles-csuri-begins-experimenting-with-computers-and-art.html\" data-moment=\"charles-csuri-begins-experimenting-with-computers-and-art\">this isn't quite the actual beginning</a>.",
+      "Even other \"beginnings\" like <a href=\"m/thomas-defanti-founds-electronic-visualization-lab-evl.html\" data-moment=\"thomas-defanti-founds-electronic-visualization-lab-evl\">Tom DeFanti and </a><a href=\"https://www.lerandom.art/subjects/dan-sandin\">Dan Sandin</a><a href=\"m/thomas-defanti-founds-electronic-visualization-lab-evl.html\" data-moment=\"thomas-defanti-founds-electronic-visualization-lab-evl\"> in Chicago's EVL</a> point back to this beginning. But of course <a href=\"m/charles-csuri-begins-experimenting-with-computers-and-art.html\" data-moment=\"charles-csuri-begins-experimenting-with-computers-and-art\">this isn't quite the actual beginning</a>.",
       "In 1969 Charles Csuri received a National Science Foundation grant to study the computer’s role in research and education in the visual arts. Not such an easy award for an artist to receive smack in the middle of the Space Race, Cold War and Vietnam War. But Csuri got it.",
       "In 1971 he proposed the CGRG at <a href=\"https://www.lerandom.art/subjects/ohio\">Ohio</a> State, joining faculty and graduate students from art, industrial design, photography and cinema, computer science and mathematics. Starting on an IBM 1130 programmed in FORTRAN, the group worked on hidden-line and shading algorithms and on real-time animation languages. The program seeded two of the prominent real-time computer graphics languages of the next decade, including <a href=\"m/thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system.html\" data-moment=\"thomas-defanti-develops-animation-language-grass-graphics-symbiosis-system\">DeFanti’s GRASS</a> and Manfred Knemeyer’s ANIMA.",
       "An internal NSF report would go on to attribute the greatest impact on computer animation in part to CGRG."
@@ -15813,7 +15846,7 @@
     "body": [
       "Following the seminal <a href=\"m/lillian-schwartz-and-ken-knowlton-make-pixillation.html\" data-moment=\"lillian-schwartz-and-ken-knowlton-make-pixillation\"><em>Pixillation</em></a> (1970), in 1971 <a href=\"https://www.lerandom.art/subjects/lillian-schwartz\">Lillian Schwartz</a> and <a href=\"https://www.lerandom.art/subjects/ken-knowlton\">Ken Knowlton</a> made <em>UFOs</em> at <a href=\"https://www.lerandom.art/subjects/bell-labs\">Bell Labs</a>.",
       "It was another film of computer-generated shapes that raced and pulsed across the screen in saturated color, set to a score by Emmanuel Ghent. Like Pixillation, Schwartz again worked the computer output through color filters and an optical printer. The film's rapid alternation of frames was strong enough that viewers reported afterimages of colors that were not on the screen.",
-      "With <em>UFOs</em> Schwartz pushed computer film toward perception itself, echoing later work by artists like Kurt Hentschlager. Schwartz went on to make <a href=\"m/lillian-schwartz-begins-her-computer-art-career.html\" data-moment=\"lillian-schwartz-begins-her-computer-art-career\">more than thirty films at Bell Labs</a> over the next two productive decades."
+      "With <em>UFOs</em> Schwartz pushed computer film toward perception itself, echoing later work by artists like <a href=\"https://www.lerandom.art/subjects/kurt-hentschlager\">Kurt Hentschlager</a>. Schwartz went on to make <a href=\"m/lillian-schwartz-begins-her-computer-art-career.html\" data-moment=\"lillian-schwartz-begins-her-computer-art-career\">more than thirty films at Bell Labs</a> over the next two productive decades."
     ],
     "cite": [
       {
@@ -15926,7 +15959,6 @@
       "cognition",
       "pattern recognition",
       "learning",
-      "recognition",
       "cognitive science"
     ],
     "people": [],
@@ -15985,11 +16017,6 @@
         "k": "pattern recognition",
         "n": "pattern recognition",
         "t": "tech"
-      },
-      {
-        "k": "recognition",
-        "n": "Recognition",
-        "t": "works"
       }
     ],
     "linked": [],
@@ -16131,7 +16158,7 @@
       "Today, as the power of these tools has flipped more to, \"Uh oh, maybe we should actually be slowing this down,\" it seems harder to make this point.",
       "But in 1972, it fell on more receptive and convincible ears. <a href=\"m/the-split-neural-networks-fall-from-favor-after-perceptrons.html\" data-moment=\"the-split-neural-networks-fall-from-favor-after-perceptrons\">Learning and neural nets were \"disproven\"</a> and <a href=\"m/terry-winograd-builds-shrdlu-at-mit.html\" data-moment=\"terry-winograd-builds-shrdlu-at-mit\">expert systems were showing their obvious limitations</a>. The field was vulnerable, even at its very core.",
       "Enter philosopher Hubert L. Dreyfus and his book <em>What Computers Can't Do: A Critique of Artificial Reason</em>.",
-      "Dreyfus is like today's Gary Marcus, someone with a long and consistent track record of AI skepticism, regardless of developments. He couldn't be dissuaded because his opposition came from somewhere deep and unmovable.",
+      "Dreyfus is like today's <a href=\"https://www.lerandom.art/subjects/gary-marcus\">Gary Marcus</a>, someone with a long and consistent track record of AI skepticism, regardless of developments. He couldn't be dissuaded because his opposition came from somewhere deep and unmovable.",
       "Marcus (I mean Dreyfus) had begun his attack seven years prior in 1965's “Alchemy and Artificial Intelligence,” a paper for the RAND Corporation. His argument is familiar and persists to this day: That embodiment and experience are fundamental to intelligence.",
       "Drawing on Martin Heidegger and Maurice Merleau-Ponty, he argued that human intelligence depends on bodies, situations and tacit skills that cannot be written down as rules, so the symbolic programs of the day would stall. To be fair, they were correct in predicting <a href=\"m/the-first-ai-winter.html\" data-moment=\"the-first-ai-winter\">the fall of expert systems</a>. But they were less imaginative about the potential of other technologies to be more successful where expert systems failed (hello deep learning and <a href=\"m/paul-werbos-proposes-backpropagation-to-train-neural-networks.html\" data-moment=\"paul-werbos-proposes-backpropagation-to-train-neural-networks\">its roots next decade</a>).",
       "So was this the end of AI? As you probably read an AI summary of this text instead of the real thing, obviously not. AI researchers largely dismissed Dreyfus. The guy didn't quit. He doubled down and revised the book as <em>What Computers Still Can't Do</em> in 1992.",
@@ -16321,7 +16348,7 @@
     "body": [
       "This infamous report is blamed for essentially single-handedly beginning the first AI winter, especially in the UK. It's the best-known example of a direct link to funding drying up (the early robot FREDDY) due to outside skepticism.",
       "By this time in parts of the UK AI funding was growing and fast. But was it really worthwhile? Did any of this computer alchemy even work? There were levels of concern about AI from a very fundamental base at this time.",
-      "In early 1973, <a href=\"https://www.lerandom.art/subjects/britain\">Britain</a>’s Science Research Council published James Lighthill’s “Artificial Intelligence: A General Survey,” dated July 1972. The council had asked Lighthill, Cambridge’s Lucasian Professor of Applied Mathematics, for a personal review due to his outsider and supposedly unbiased status. He divided the field into advanced automation, computer-based studies of the central nervous system and robot building.",
+      "In early 1973, <a href=\"https://www.lerandom.art/subjects/uk\">Britain</a>’s Science Research Council published James Lighthill’s “Artificial Intelligence: A General Survey,” dated July 1972. The council had asked Lighthill, Cambridge’s Lucasian Professor of Applied Mathematics, for a personal review due to his outsider and supposedly unbiased status. He divided the field into advanced automation, computer-based studies of the central nervous system and robot building.",
       "His influential report backed the first two fields, but rejected general robotics. His reasons were issues of scale (sound familiar?) He blamed a failure to recognize the “combinatorial explosion” that swamps search as problems grow. In June 1973 he debated it on BBC television with AI proponents Donald Michie, <a href=\"m/john-mccarthy-introduces-lisp.html\" data-moment=\"john-mccarthy-introduces-lisp\">John McCarthy</a> and Richard Gregory. But the researchers lost the public's and funder's imaginations, as the report spread beyond the UK to places like DARPA, causing a world-wide AI winter (<a href=\"m/the-first-ai-winter.html\" data-moment=\"the-first-ai-winter\">the first AI winter</a>)."
     ],
     "cite": [
@@ -16346,7 +16373,7 @@
       "criticism",
       "robotics",
       "combinatorics",
-      "britain",
+      "UK",
       "university of cambridge",
       "university of edinburgh",
       "television",
@@ -16416,8 +16443,8 @@
         "t": "orgs"
       },
       {
-        "k": "britain",
-        "n": "Britain",
+        "k": "uk",
+        "n": "UK",
         "t": "places"
       },
       {
@@ -16673,5 +16700,701 @@
       6
     ],
     "dateType": "occurred"
+  },
+  "james-baker-and-fred-jelinek-bring-hidden-markov-models-to-speech-recognition": {
+    "body": [
+      "The 1970s is known as a \"<a href=\"m/the-first-ai-winter.html\" data-moment=\"the-first-ai-winter\">winter</a>\" for the learning tradition of AI in the West. But even brutal winters have the occasional bearable day.",
+      "Learning research in these early days was still disjointed (and would be for decades). In speech recognition, Markov models and neural nets were first rivals, then partners. By around 2012 systems started using them both. But back in the 1970s, they were sub-rivals within the learning tradition. You must remember that \"neural nets\" were widely discredited still at this time, largely thanks to Marvin Minsky's <a href=\"m/the-split-neural-networks-fall-from-favor-after-perceptrons.html\" data-moment=\"the-split-neural-networks-fall-from-favor-after-perceptrons\"><em>Perceptrons</em></a>.",
+      "But what are these things? A Markov model is a simple rule that what comes next depends only on what came just before. The odds are taken from counting real examples. But the catch is they can’t see far back and don't understand anything. Neural nets are the smarty pants that can understand. They learn their own patterns from data, so they can find much richer relationships and use much longer context.",
+      "Hidden Markov models taught machines from piles of recordings to predict what most likely came next. Jelinek’s IBM team carried that approach into statistical translation and next-word prediction. Today’s large language models still do the same basic job of predicting the next word from probabilities learned from data, only over far longer stretches of text, to put it lightly.",
+      "The disjointed nature of AI research in these days meant this breakthrough came from researchers in three places and took years. First, James Baker at Carnegie Mellon described DRAGON, a speech recognizer built on “a probabilistic function of a Markov process.” Then, in 1976 Fred Jelinek of IBM Research published statistical methods for recognizing continuous speech. Both built on theory from Leonard Baum and colleagues at the Institute for Defense Analyses. Yes, military funding always seems just around the corner from AI research.",
+      "In this further blow to our poor neural nets, Markov models would remain the learning field’s preferred method until the early 1990s. Minsky, you devil."
+    ],
+    "cite": [
+      {
+        "url": "https://www.cs.ubc.ca/~murphyk/Bayes/rabiner.pdf",
+        "label": "cs.ubc.ca"
+      },
+      {
+        "url": "https://doi.org/10.1109/TASSP.1975.1162650",
+        "label": "doi.org"
+      },
+      {
+        "url": "https://doi.org/10.1109/PROC.1976.10159",
+        "label": "doi.org"
+      }
+    ],
+    "img": {
+      "src": "img/james-baker-and-fred-jelinek-bring-hidden-markov-models-to-speech-recognition-59896956f7.jpg",
+      "cap": "A hidden Markov model: hidden states, the odds of moving between them and the observations each one produces.",
+      "credit": "Hidden Markov model diagram by Terencehonles, public domain, via <a href=\"https://commons.wikimedia.org/wiki/File:HMMGraph.svg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>."
+    },
+    "tags": [
+      "speech",
+      "natural language processing",
+      "statistics",
+      "probability",
+      "machine learning",
+      "ai history",
+      "artificial intelligence",
+      "ibm",
+      "pattern recognition",
+      "training data",
+      "language",
+      "data science"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "ai history",
+        "n": "ai history",
+        "t": "themes"
+      },
+      {
+        "k": "language",
+        "n": "language",
+        "t": "themes"
+      },
+      {
+        "k": "probability",
+        "n": "probability",
+        "t": "themes"
+      },
+      {
+        "k": "speech",
+        "n": "speech",
+        "t": "themes"
+      },
+      {
+        "k": "statistics",
+        "n": "statistics",
+        "t": "themes"
+      },
+      {
+        "k": "artificial intelligence",
+        "n": "artificial intelligence",
+        "t": "tech"
+      },
+      {
+        "k": "data science",
+        "n": "data science",
+        "t": "tech"
+      },
+      {
+        "k": "machine learning",
+        "n": "machine learning",
+        "t": "tech"
+      },
+      {
+        "k": "natural language processing",
+        "n": "natural language processing",
+        "t": "tech"
+      },
+      {
+        "k": "pattern recognition",
+        "n": "pattern recognition",
+        "t": "tech"
+      },
+      {
+        "k": "training data",
+        "n": "training data",
+        "t": "tech"
+      },
+      {
+        "k": "ibm",
+        "n": "IBM",
+        "t": "orgs"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      6
+    ],
+    "dateType": ""
+  },
+  "joan-truckenbrod-makes-coded-algorithmic-drawings": {
+    "body": [
+      "Friend of the Le Random Podcast, Joan Truckenbrod began her <a href=\"m/john-backus-releases-fortran.html\" data-moment=\"john-backus-releases-fortran\">FORTRAN</a> series <em>Coded Algorithmic Drawings</em> as an artist teaching at Northern Illinois University.",
+      "This work is indicative of the decade's deliberate turn away from hard-edged abstraction toward more natural computer-made work. This was possible because of the growing interest in computers of artists like Truckenbrod and <a href=\"m/grace-hertlein-begins-publishing-journal-computer-graphics-and-art.html\" data-moment=\"grace-hertlein-begins-publishing-journal-computer-graphics-and-art\">Grace Hertlein</a>, as well as an improving technical environment, especially in plotters. It's also indicative because it takes place in Chicago, probably art and tech's epicenter for the 1970s with <a href=\"m/thomas-defanti-founds-electronic-visualization-lab-evl.html\" data-moment=\"thomas-defanti-founds-electronic-visualization-lab-evl\">EVL</a>, <a href=\"m/sonia-landy-sheridan-founds-generative-systems-at-the-school-of-the-art-institut.html\" data-moment=\"sonia-landy-sheridan-founds-generative-systems-at-the-school-of-the-art-institut\">Sonia Sheridan's Generative Systems</a> and Truckenbrod.",
+      "Truckenbrod wrote FORTRAN programs on a university mainframe to model invisible natural phenomena, like the way light reflects off a surface. The artist then plotted the results. She wrote the code by hand on punched cards, one of a small number of artists programming directly in the 1970s.",
+      "Truckenbrod later taught at the School of the Art Institute of Chicago, where she helped build its art and technology program. Her drawings today are held by the Victoria and Albert Museum. Listen to <a href=\"https://www.lerandom.art/episodes/timeline-chapter-5-artist-programmer-era-1970s\" target=\"_blank\" rel=\"noopener\">our conversation with Truckenbrod</a>."
+    ],
+    "cite": [
+      {
+        "url": "https://collections.vam.ac.uk/item/O1465721/",
+        "label": "collections.vam.ac.uk"
+      },
+      {
+        "url": "https://collections.vam.ac.uk/item/O1465720/",
+        "label": "collections.vam.ac.uk"
+      },
+      {
+        "url": "https://joantruckenbrod.com/joan-truckenbrod.html",
+        "label": "joantruckenbrod.com"
+      },
+      {
+        "url": "https://sma.sou.edu/?p=3442",
+        "label": "sma.sou.edu"
+      }
+    ],
+    "img": {
+      "src": "img/joan-truckenbrod-makes-coded-algorithmic-drawings-bc73355c33.jpg",
+      "cap": "Joan Truckenbrod, untitled plotter drawing, 1975.",
+      "credit": "Joan Truckenbrod, Untitled plotter drawing, 1975. Victoria and Albert Museum, London, E.699-2019, given by Black Box Gallery, Copenhagen. Image © Victoria and Albert Museum, London. <a href=\"https://collections.vam.ac.uk/item/O1465721/\" target=\"_blank\" rel=\"noopener\">Image source</a>."
+    },
+    "tags": [
+      "Joan Truckenbrod",
+      "Coded Algorithmic Drawings",
+      "FORTRAN",
+      "plotter",
+      "computer art",
+      "Northern Illinois University",
+      "V&A",
+      "women artists"
+    ],
+    "people": [
+      "joan truckenbrod"
+    ],
+    "subjects": [
+      {
+        "k": "women artists",
+        "n": "women artists",
+        "t": "themes"
+      },
+      {
+        "k": "computer art",
+        "n": "computer art",
+        "t": "tech"
+      },
+      {
+        "k": "fortran",
+        "n": "Fortran",
+        "t": "tech"
+      },
+      {
+        "k": "plotter",
+        "n": "plotter",
+        "t": "tech"
+      },
+      {
+        "k": "joan truckenbrod",
+        "n": "Joan Truckenbrod",
+        "t": "people"
+      },
+      {
+        "k": "coded algorithmic drawings",
+        "n": "Coded Algorithmic Drawings",
+        "t": "other"
+      },
+      {
+        "k": "northern illinois university",
+        "n": "Northern Illinois University",
+        "t": "other"
+      },
+      {
+        "k": "v&a",
+        "n": "V&A",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      6
+    ],
+    "dateType": ""
+  },
+  "bertram-raphael-publishes-the-thinking-computer": {
+    "body": [
+      "Bertram Raphael’s book was one of the first to explain to ordinary readers how AI actually worked, written by someone who helped build <a href=\"m/stanford-research-institute-builds-shakey-the-robot.html\" data-moment=\"stanford-research-institute-builds-shakey-the-robot\">Shakey</a> (remember him?), the first robot that could plan its own actions. The skills it covers, searching for answers, storing knowledge, understanding English and planning steps, are still the core jobs of today’s AI.",
+      "But not the process of today because Raphael’s book described symbolic, rules-based AI and not the learning kind.",
+      "Raphael was a computer scientist at the Stanford Research Institute when he published <em>The Thinking Computer: Mind Inside Matter</em>. Written for general readers, it explained how programs of the time searched for solutions, represented knowledge, understood simple English and planned the actions of robots, with examples from SRI and other laboratories.",
+      "Raphael also wrote SIR, a 1964 program at MIT that answered questions by storing facts as relations between words.",
+      "Raphael with this book, SIR and Shakey was the epitome of symbolic AI, nearing its peak in the 1970s."
+    ],
+    "cite": [
+      {
+        "url": "https://openlibrary.org/works/OL163029W",
+        "label": "openlibrary.org"
+      },
+      {
+        "url": "https://archive.org/details/thinkingcomputer00raph",
+        "label": "archive.org"
+      },
+      {
+        "url": "https://dspace.mit.edu/handle/1721.1/6904",
+        "label": "dspace.mit.edu"
+      },
+      {
+        "url": "https://ieeemilestones.ethw.org/Milestones:Shakey:_The_World%E2%80%99s_First_Mobile,_Intelligent_Robot,_1972",
+        "label": "ieeemilestones.ethw.org"
+      }
+    ],
+    "img": {
+      "src": "img/bertram-raphael-publishes-the-thinking-computer-e364a790fb.jpg",
+      "cap": "Bertram Raphael, The Thinking Computer: Mind Inside Matter (W. H. Freeman, 1976).",
+      "credit": "Cover of The Thinking Computer: Mind Inside Matter by Bertram Raphael, W. H. Freeman, 1976. Publisher’s cover via <a href=\"https://openlibrary.org/works/OL163029W\" target=\"_blank\" rel=\"noopener\">Open Library</a>."
+    },
+    "tags": [
+      "Bertram Raphael",
+      "The Thinking Computer",
+      "SRI",
+      "Shakey",
+      "symbolic AI",
+      "knowledge representation"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "symbolic ai",
+        "n": "symbolic AI",
+        "t": "tech"
+      },
+      {
+        "k": "bertram raphael",
+        "n": "Bertram Raphael",
+        "t": "other"
+      },
+      {
+        "k": "knowledge representation",
+        "n": "knowledge representation",
+        "t": "other"
+      },
+      {
+        "k": "shakey",
+        "n": "Shakey",
+        "t": "other"
+      },
+      {
+        "k": "sri",
+        "n": "sri",
+        "t": "other"
+      },
+      {
+        "k": "the thinking computer",
+        "n": "The Thinking Computer",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      6
+    ],
+    "dateType": ""
+  },
+  "joseph-weizenbaum-publishes-computer-power-and-human-reason": {
+    "body": [
+      "Weizenbaum was the legendary creator of the <a href=\"m/joseph-weizenbaum-publishes-eliza.html\" data-moment=\"joseph-weizenbaum-publishes-eliza\">ELIZA</a> chatbot, which to this day remains relevant to the discussion around trusting relationships with AI and ascribing personhood to AIs. Weizenbaum saw people fall into this trap in the 1960s of trusting a simple chatbot as if it understood them. This book demonstrates his warning that some jobs, like therapy and judging, should never go to machines, which sounds eerily familiar to contemporary debates with (hundreds of?) millions of people confiding in ChatGPT and Claude.",
+      "Since ELIZA, Weizenbaum was disturbed to see people confide in his chatbot as if it actually understood them, with some psychiatrists at the time even proposing it for therapy. The book sought to lay out why precisely we shouldn't be trusting these machines.",
+      "It distinguished deciding, which computers can be programmed to do, from choosing, which requires judgment. Weizenbaum saw where this was all headed and used his deciding-vs-choosing position to argue against giving machines certain jobs (cough, cough in the future), whatever they become capable of.",
+      "It made Weizenbaum one of the first critics of AI from within computer science. He's still celebrated as such today by artists like Eva and Franco Mattes."
+    ],
+    "cite": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Computer_Power_and_Human_Reason",
+        "label": "wikipedia.org"
+      },
+      {
+        "url": "https://news.mit.edu/2008/obit-weizenbaum-0310",
+        "label": "news.mit.edu"
+      },
+      {
+        "url": "",
+        "label": "Weizenbaum, Joseph. Computer Power and Human Reason: From Judgment to Calculation. San Francisco: W. H. Freeman, 1976."
+      }
+    ],
+    "img": {
+      "src": "img/joseph-weizenbaum-publishes-computer-power-and-human-reason-81ac8dda74.jpg",
+      "cap": "Joseph Weizenbaum in Berlin, 2006.",
+      "credit": "Photo: Andreas Schepers, CC BY 2.0 (cropped), via <a href=\"https://commons.wikimedia.org/wiki/File:Hans_Uszkoreit,_Joseph_Weizenbaum_(238430262\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>.jpg)."
+    },
+    "tags": [
+      "Joseph Weizenbaum",
+      "Computer Power and Human Reason",
+      "ELIZA",
+      "AI ethics",
+      "MIT",
+      "judgment"
+    ],
+    "people": [
+      "joseph weizenbaum"
+    ],
+    "subjects": [
+      {
+        "k": "ai ethics",
+        "n": "ai ethics",
+        "t": "themes"
+      },
+      {
+        "k": "eliza",
+        "n": "Eliza",
+        "t": "tech"
+      },
+      {
+        "k": "joseph weizenbaum",
+        "n": "Joseph Weizenbaum",
+        "t": "people"
+      },
+      {
+        "k": "mit",
+        "n": "MIT",
+        "t": "orgs"
+      },
+      {
+        "k": "computer power and human reason",
+        "n": "Computer Power and Human Reason",
+        "t": "other"
+      },
+      {
+        "k": "judgment",
+        "n": "judgment",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      6
+    ],
+    "dateType": ""
+  },
+  "kenneth-m-sayre-publishes-cybernetics-and-the-philosophy-of-mind": {
+    "body": [
+      "Can machines be conscious? Can AI? Can AI ever have something like a mind? Our friends, perhaps the heroes of the AI myth, the cyberneticists, have long been asking these questions.",
+      "Kenneth M. Sayre, a philosopher at the University of Notre Dame, published <em>Cybernetics and the Philosophy of Mind</em>, proposing that mental states can be explained through cybernetics: information and feedback, the concepts of Claude Shannon's <a href=\"m/claude-shannon-develops-information-theory-with-a-mathematical-theory-of-communi.html\" data-moment=\"claude-shannon-develops-information-theory-with-a-mathematical-theory-of-communi\">information theory</a> and Norbert Wiener's <a href=\"m/cybernetics-is-born.html\" data-moment=\"cybernetics-is-born\">cybernetics</a>, without either reducing mind to mechanism or placing it outside nature.",
+      "In other words, Sayre argued that thinking is a kind of information processing that any self-correcting system could do, be it man or machine. His foundational ideas still sit under today’s question of AI and machine consciousness."
+    ],
+    "cite": [
+      {
+        "url": "https://www.routledge.com/link/link/p/book/9781138825468",
+        "label": "routledge.com"
+      },
+      {
+        "url": "https://www.cambridge.org/core/journals/philosophy-of-science/article/kenneth-sayre-cybernetics-and-the-philosophy-of-mind-atlantic-highlands-humanities-press-1976-xiii-265-pp-1576/841F7FB8B0F0F25B5D3AEE2042001962",
+        "label": "cambridge.org"
+      },
+      {
+        "url": "https://dailynous.com/2022/10/13/kenneth-sayre-1928-2022/",
+        "label": "dailynous.com"
+      },
+      {
+        "url": "",
+        "label": "Sayre, Kenneth M. Cybernetics and the Philosophy of Mind. London: Routledge and Kegan Paul; Atlantic Highlands, N.J.: Humanities Press, 1976."
+      }
+    ],
+    "img": {
+      "src": "img/kenneth-m-sayre-publishes-cybernetics-and-the-philosophy-of-mind-e65a7acc16.jpg",
+      "cap": "Kenneth Sayre, Cybernetics and the Philosophy of Mind (Routledge and Kegan Paul, 1976).",
+      "credit": "Cover of Kenneth Sayre, Cybernetics and the Philosophy of Mind, International Library of Philosophy and Scientific Method, Routledge and Kegan Paul, 1976. Publisher’s cover via the <a href=\"https://archive.org/details/cyberneticsphilo0000sayr_i4k2\" target=\"_blank\" rel=\"noopener\">Internet Archive</a>."
+    },
+    "tags": [
+      "Kenneth Sayre",
+      "cybernetics",
+      "philosophy of mind",
+      "information theory",
+      "Notre Dame",
+      "consciousness"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "consciousness",
+        "n": "consciousness",
+        "t": "themes"
+      },
+      {
+        "k": "cybernetics",
+        "n": "cybernetics",
+        "t": "tech"
+      },
+      {
+        "k": "information theory",
+        "n": "information theory",
+        "t": "tech"
+      },
+      {
+        "k": "kenneth sayre",
+        "n": "Kenneth Sayre",
+        "t": "other"
+      },
+      {
+        "k": "notre dame",
+        "n": "Notre Dame",
+        "t": "other"
+      },
+      {
+        "k": "philosophy of mind",
+        "n": "philosophy of mind",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      6
+    ],
+    "dateType": ""
+  },
+  "stephen-grossberg-introduces-adaptive-resonance-theory": {
+    "body": [
+      "All the way back in 1976 in a brutally fiendish <a href=\"m/the-first-ai-winter.html\" data-moment=\"the-first-ai-winter\">AI learning winter</a>, Stephen Grossberg asked a question still mostly unsolved today: how a machine can keep learning without forgetting what it already knows. Models like ChatGPT stop learning once training ends, and teaching them new things can even damage old skills.",
+      "Grossberg's solution was feedback and his theory was adaptive resonance theory (ART), which he introduced in two 1976 papers in <em>Biological Cybernetics</em>. ART understood the power of feedback: a learned top-down expectation is matched against each bottom-up input. ART's memory changed only when the two agreed closely enough or when something completely new appeared.",
+      "In Grossberg and Gail Carpenter’s words from 2003, “ART matching leads either to a resonant state, which persists long enough to permit learning, or to a parallel memory search.” Carpenter and Grossberg later built ART networks such as ART 1 but the system never became mainstream.",
+      "While Grossberg and later Carpenter were not necessarily solving these problems, they were at least working on the right ones. It was hard to say that about most AI research of this time of symbolic AI's heyday."
+    ],
+    "cite": [
+      {
+        "url": "https://sites.bu.edu/steveg/files/2016/06/CarGro2003HBTNN2.pdf",
+        "label": "sites.bu.edu"
+      },
+      {
+        "url": "https://link.springer.com/article/10.1007/BF00340335",
+        "label": "link.springer.com"
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/963125/",
+        "label": "pubmed.ncbi.nlm.nih.gov"
+      },
+      {
+        "url": "https://doi.org/10.1007/BF00344744",
+        "label": "doi.org"
+      }
+    ],
+    "img": {
+      "src": "img/stephen-grossberg-introduces-adaptive-resonance-theory-1f992a6d2e.jpg",
+      "cap": "Stephen Grossberg, 2016.",
+      "credit": "Photo: Stephen Grossberg, CC BY-SA 4.0, via <a href=\"https://commons.wikimedia.org/wiki/File:Stephen_Grossberg_in_July,_2016.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>."
+    },
+    "tags": [
+      "artificial intelligence",
+      "neural networks",
+      "connectionism",
+      "machine learning",
+      "learning",
+      "memory",
+      "neuroscience",
+      "cognitive science",
+      "pattern recognition",
+      "perception",
+      "ai history",
+      "stephen grossberg",
+      "gail carpenter",
+      "adaptive resonance theory",
+      "united states"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "ai history",
+        "n": "ai history",
+        "t": "themes"
+      },
+      {
+        "k": "cognitive science",
+        "n": "cognitive science",
+        "t": "themes"
+      },
+      {
+        "k": "learning",
+        "n": "learning",
+        "t": "themes"
+      },
+      {
+        "k": "memory",
+        "n": "memory",
+        "t": "themes"
+      },
+      {
+        "k": "neuroscience",
+        "n": "neuroscience",
+        "t": "themes"
+      },
+      {
+        "k": "perception",
+        "n": "perception",
+        "t": "themes"
+      },
+      {
+        "k": "artificial intelligence",
+        "n": "artificial intelligence",
+        "t": "tech"
+      },
+      {
+        "k": "connectionism",
+        "n": "connectionism",
+        "t": "tech"
+      },
+      {
+        "k": "machine learning",
+        "n": "machine learning",
+        "t": "tech"
+      },
+      {
+        "k": "neural networks",
+        "n": "neural networks",
+        "t": "tech"
+      },
+      {
+        "k": "pattern recognition",
+        "n": "pattern recognition",
+        "t": "tech"
+      },
+      {
+        "k": "united states",
+        "n": "United States",
+        "t": "places"
+      },
+      {
+        "k": "adaptive resonance theory",
+        "n": "adaptive resonance theory",
+        "t": "other"
+      },
+      {
+        "k": "gail carpenter",
+        "n": "gail carpenter",
+        "t": "other"
+      },
+      {
+        "k": "stephen grossberg",
+        "n": "stephen grossberg",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      6
+    ],
+    "dateType": ""
+  },
+  "digital-tv-dinner-by-jamie-fenton-and-raul-zaritsky": {
+    "body": [
+      "This may be one of the most under-appreciated works in media art history. It's one of the first instances of video game art, normally dated to the '90s by institutions like Rhizome. Yet, here in 1978, Jamie Fenton and Raul Zaritsky were distressing video game consoles to make art. So let's rightly place it in that bucket of art history, a bucket growing in importance by the day, by the way.",
+      "Then, it's also widely recognized and cited as one of the first glitch videos; it was shown again in <em>Chicago New Media 1973–1992</em> in 2018, noted as a work of glitch art <em>not</em> as a work of video game art. So we're talking about one of the practically pre-historical works of video game art, by an absolute legend in Fenton, as well as its cemented place in glitch art history. That makes this piece and Fenton pretty important I'd say.",
+      "Fenton and Zaritsky made the three-minute video <em>Digital TV Dinner</em> for the legendary <a href=\"m/thomas-defanti-founds-electronic-visualization-lab-evl.html\" data-moment=\"thomas-defanti-founds-electronic-visualization-lab-evl\">EVL</a>'s (oft mentioned in this timeline) Electronic Visualization Event 3 in Chicago.",
+      "How are we pretty sure about Fenton's place as one of the earliest video game artists ever? Because she was the lead programmer on the Bally Astrocade home game console, which she used for this work. They made its images by ejecting the game cartridge from the running machine and striking the console, which broke the picture into bursts of color and pattern. They recorded the results on video with Dick Ainsworth making the music.",
+      "A second version of the famed piece aired on WTTW Chicago in 1979."
+    ],
+    "cite": [
+      {
+        "url": "https://www.artic.edu/digital-publications/36/perspectives-on-instability/16/stability-isnt-everything-its-glitched-up-to-be-an-interview-with-jamie-fenton",
+        "label": "artic.edu"
+      },
+      {
+        "url": "https://mediaburn.org/videos/3rd-electronic-visualization-event-may-25-1978/",
+        "label": "mediaburn.org"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Ad9zdlaRvdM",
+        "label": "youtube.com"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Jamie_Fenton",
+        "label": "en.wikipedia.org"
+      }
+    ],
+    "img": {
+      "src": "img/digital-tv-dinner-by-jamie-fenton-and-raul-zaritsky-9d05d5e3aa.jpg",
+      "cap": "A frame from Digital TV Dinner, 1978: the Bally Astrocade’s picture breaking into bands of color.",
+      "credit": "Jamie Fenton and Raul Zaritsky, Digital TV Dinner, 1978. Frame from Jamie Fenton’s upload on <a href=\"https://www.youtube.com/watch?v=Ad9zdlaRvdM\" target=\"_blank\" rel=\"noopener\">YouTube</a>."
+    },
+    "tags": [
+      "Jamie Fenton",
+      "Raul Zaritsky",
+      "Dick Ainsworth",
+      "Digital TV Dinner",
+      "Bally Astrocade",
+      "glitch",
+      "glitch art",
+      "video art",
+      "video game art",
+      "Electronic Visualization Laboratory (EVL)",
+      "Electronic Visualization Event",
+      "WTTW",
+      "Chicago"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "video art",
+        "n": "video art",
+        "t": "themes"
+      },
+      {
+        "k": "video game art",
+        "n": "Video Game Art",
+        "t": "themes"
+      },
+      {
+        "k": "glitch",
+        "n": "glitch",
+        "t": "tech"
+      },
+      {
+        "k": "digital tv dinner",
+        "n": "Digital TV Dinner",
+        "t": "works"
+      },
+      {
+        "k": "electronic visualization laboratory (evl)",
+        "n": "Electronic Visualization Laboratory (EVL)",
+        "t": "orgs"
+      },
+      {
+        "k": "chicago",
+        "n": "Chicago",
+        "t": "places"
+      },
+      {
+        "k": "bally astrocade",
+        "n": "Bally Astrocade",
+        "t": "other"
+      },
+      {
+        "k": "dick ainsworth",
+        "n": "Dick Ainsworth",
+        "t": "other"
+      },
+      {
+        "k": "electronic visualization event",
+        "n": "Electronic Visualization Event",
+        "t": "other"
+      },
+      {
+        "k": "glitch art",
+        "n": "glitch art",
+        "t": "other"
+      },
+      {
+        "k": "jamie fenton",
+        "n": "Jamie Fenton",
+        "t": "other"
+      },
+      {
+        "k": "raul zaritsky",
+        "n": "Raul Zaritsky",
+        "t": "other"
+      },
+      {
+        "k": "wttw",
+        "n": "WTTW",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      6
+    ],
+    "dateType": ""
   }
 }

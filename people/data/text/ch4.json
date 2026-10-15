@@ -12,9 +12,10 @@
     "img": {
       "src": "img/kurd-alsleben-and-cord-passow-make-analog-computer-drawings.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "EAI PACE 231R analog computer, NASA Glenn Research Center (then Lewis), 1960, NASA image C-1960-53675. Public domain.",
       "width": 480,
-      "height": 600
+      "height": 600,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:PACE_231R_-_EAI.jpg"
     },
     "tags": [
       "collaboration",
@@ -375,7 +376,7 @@
       "Molnar’s time with GRAV also had an impact on her aesthetic sensibilities, influencing her interest in the use of repetitive forms, simple shapes and bold colors. She continued to explore these themes in her later computer-generated artworks, creating intricate and mesmerizing geometric patterns that play with the viewer’s perception, beginning in 1968.",
       "Overall, Molnar’s time with GRAV helped to shape her approach to art and technology, which along with her concept of the <a href=\"m/vera-molnar-develops-her-machine-imaginaire.html\" data-moment=\"vera-molnar-develops-her-machine-imaginaire\">“Machine Imaginaire” (Imaginary Computer)</a> led to her becoming one of the great pioneers of computer-generated art.",
       "From the <a href=\"https://www.lerandom.art/subjects/bright-moments\">Bright Moments</a> Buenos Aires Timeline Poster:",
-      "Argentine painters Horacio García Rossi and Julio Le Parc, alongside luminaries like François Morellet and Vera Molnár, founded the Centre de Recherche d’Art Visuel, renamed GRAV in 1961, the profoundly important collective that helped bridge the analog and digital art worlds as part of the <a href=\"https://www.lerandom.art/subjects/new-tendencies\">New Tendencies</a> movement. Initially, the group was rooted in op and kinetic art, two critical predecessors of electronic art. Like Mac Entyre’s Pintura Generativa, the group aimed to liberate art from the static canvas."
+      "Argentine painters Horacio García Rossi and Julio Le Parc, alongside luminaries like François Morellet and Vera Molnár, founded the Centre de Recherche d’Art Visuel, renamed GRAV in 1961, the profoundly important collective that helped bridge the analog and digital art worlds as part of the <a href=\"https://www.lerandom.art/subjects/new-tendencies\">New Tendencies</a> movement. Initially, the group was rooted in op and kinetic art, two critical predecessors of electronic art. Like <a href=\"m/eduardo-mac-entyre-founds-the-pintura-generativa-group.html\" data-moment=\"eduardo-mac-entyre-founds-the-pintura-generativa-group\">Mac Entyre’s Pintura Generativa</a>, the group aimed to liberate art from the static canvas."
     ],
     "cite": [
       {
@@ -605,12 +606,12 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "yellow manifesto",
@@ -683,7 +684,16 @@
       "“While not the first person to make sound with a computer, Max was the first one to do so with a replicable combination of hardware and software that allowed the user to specify what tones he wanted to hear.”",
       "The Times article goes on to add how Mathews’s early attempts to create computer-generated music, “laid the groundwork for a revolutionary advancement in music, the reverberations of which are felt everywhere today.”"
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "http://www.computinghistory.org.uk/det/54775/Music-from-Mathematics",
+        "label": "computinghistory.org.uk"
+      },
+      {
+        "url": "https://languagelog.ldc.upenn.edu/nll/?p=3187",
+        "label": "languagelog.ldc.upenn.edu"
+      }
+    ],
     "img": {
       "cap": "Music from Mathematics, Bell Telephone Laboratories album cover, dated 1961 by Morven Museum & Garden.",
       "credit": "Bell Telephone Laboratories. Album-cover image: Morven Museum & Garden, Ma Bell exhibition. Cover artist and photographer not identified. <a href=\"https://sale.morven.org/online/ma-bell/gallery5/digital-age\">Image source</a>.",
@@ -1463,7 +1473,20 @@
     "body": [
       "The Lithuanian-American artist and curator, Maciunas founded and organized the <a href=\"https://www.lerandom.art/subjects/fluxus\">Fluxus</a> (“flowing” in English) movement’s first event. The event, which would be the first of a brilliant, art-chaning series, included readings by poet <a href=\"https://www.lerandom.art/subjects/frank-kuenstler\">Frank Kuenstler</a>. Fluxus, an international avant-garde movement, rejected traditional artistic mediums and emphasized performance, humor and experimentation. The movement has strong ties to Dada’s anti-art sentiment and is considered to be part of a broader Neo-Dada movement that emerged around this time. Fluxus has strong ties to both computer and generative art, particularly regarding the dematerialization of art and the rise of conceptual art which the movement propels. Fluxus also often features elements of rules-based practice. Additionally, it is multi-disciplinary with collaboration and audience participation encouraged, two further hallmarks of the rise of electronic art. Chance and randomness also play an important role in Fluxus performances. The focus was on process and concept rather than a unified finished art object, a tradition that continues today in many circles of digital generative art, particularly within academia. Like GRAV, Fluxus artists sought to diminish distinctions between art and everyday life with Deleuzian work often incorporating non-traditional materials and methods."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://www.tate.org.uk/art/art-terms/f/fluxus",
+        "label": "tate.org.uk"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/George_Maciunas",
+        "label": "en.wikipedia.org"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Fluxus",
+        "label": "en.wikipedia.org"
+      }
+    ],
     "img": {
       "src": "img/george-maciunass-bread-ag-opens-in-new-york-the-first-fluxus-event.jpg",
       "cap": "",
@@ -1588,7 +1611,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "fluxus",
@@ -1635,7 +1658,16 @@
     "body": [
       "Dissatisfied with 1960 <a href=\"https://www.lerandom.art/subjects/venice-biennale\">Venice Biennale</a>, Brazilian artist <a href=\"https://www.lerandom.art/subjects/almir-mavignier\">Almir Mavignier</a> and art critic <a href=\"https://www.lerandom.art/subjects/matko-mestrovic\">Matko Meštrović</a> sought to organize a new exhibition that showcased “new tendencies” in art not yet supported by the establishment. The exhibition was held at the Gallery for Contemporary Art, <a href=\"https://www.lerandom.art/subjects/zagreb\">Zagreb</a>. The <a href=\"https://www.lerandom.art/subjects/new-tendencies\">New Tendencies</a> movement was hugely important for the development of computer and digital art. Technology was central to the movement’s goals: “Many followers of the NT [New Tendencies] have tried to give their work the habit of the machine or else they have based their procedures on the use of mechanical or electrical devices; they have all dreamt of the machines—and now the machines have arrived,” said critic <a href=\"https://www.lerandom.art/subjects/radoslav-putar\">Radoslav Putar</a>. Nove tendencije, the exhibition, featured work of Concrete Art that blurred the lines between painting and sculpture. GRAV member <a href=\"https://www.lerandom.art/subjects/francois-morellet\">François Morellet</a>’s work was described as “programmed painting.” Artists from the Zero Group also presented work in their Lumino-Kinetic style. These exhibitions and groups serve as the extension in the genealogy of generative art of the lumino-kinetic tradition, which leads ultimately later in the decade to the development of electronic art."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://www.monoskop.org/New_Tendencies",
+        "label": "monoskop.org"
+      },
+      {
+        "url": "https://Monoskop.org/images/a/a6/Fritz_Darko_2008_New_Tendencies_Nove_tendencije.pdf",
+        "label": "monoskop.org"
+      }
+    ],
     "img": {
       "src": "img/nove-tendencije-the-first-new-tendencies-exhibition-opens-at-the-gallery-for-con.jpg",
       "cap": "",
@@ -1725,7 +1757,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "programmed",
@@ -1934,9 +1966,10 @@
     "img": {
       "src": "img/symbols-signals-and-noise-by-john-r-pierce.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Cover of John R. Pierce, An Introduction to Information Theory: Symbols, Signals and Noise, 2nd revised edition (New York: Dover Publications, 1980), a reissue of Symbols, Signals, and Noise (Harper and Brothers, 1961).",
       "width": 634,
-      "height": 1022
+      "height": 1022,
+      "sourceUrl": "https://openlibrary.org/books/OL4121028M"
     },
     "tags": [
       "Abraham Moles",
@@ -2484,8 +2517,8 @@
       "In the Technical Memorandum, Noll speculated that with greater study, “the programmer-artist might be better prepared to produce not just haphazard patterns, but ‘true art.’”",
       "Thus, these experiments paved the way for further exploration, particularly at Bell Labs.",
       "Noll would go on to display the work publicly three years later, at the <a href=\"m/computer-generated-pictures-howard-wise-gallery.html\" data-moment=\"computer-generated-pictures-howard-wise-gallery\">Howard Wise Gallery in April 1965</a>.",
-      "Le Random’s Monk Antony has interviewed Dr. Noll about this series and the decade of the ’60s. Listen to <a href=\"https://open.spotify.com/episode/4rLDRFTOcFEPaYcq4CipHy?si=tQtRkya8S6uBWhTxIpsdNQ\" target=\"_blank\" rel=\"noopener\">Peter Bauman’s interview with A. Michael Noll</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-4-digital-era-pt-i-1960s-with-dr-a-michael-noll\">transcript</a>)</span>.",
-      "<a href=\"https://spalterdigital.com/artists/a-michael-noll/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by A. Michael Noll and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "Le Random’s <a href=\"https://www.lerandom.art/subjects/peter-bauman\">Monk Antony</a> has interviewed Dr. Noll about this series and the decade of the ’60s. Listen to <a href=\"https://open.spotify.com/episode/4rLDRFTOcFEPaYcq4CipHy?si=tQtRkya8S6uBWhTxIpsdNQ\" target=\"_blank\" rel=\"noopener\">Peter Bauman’s interview with A. Michael Noll</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-4-digital-era-pt-i-1960s-with-dr-a-michael-noll\">transcript</a>)</span>.",
+      "<a href=\"https://spalterdigital.com/artists/a-michael-noll/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by A. Michael Noll and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artists/a-michael-noll/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -2847,7 +2880,20 @@
     "body": [
       "With no prior personal relationships and independently from one another, American Pop Art exploded in 1962 with four monumental exhibitions. <a href=\"https://www.lerandom.art/subjects/roy-lichtenstein\">Roy Lichtenstein</a> had his first show of paintings based on comic-book panels at the Castelli Gallery (<a href=\"https://www.lerandom.art/subjects/new-york\">New York</a> City) in February. <a href=\"https://www.lerandom.art/subjects/andy-warhol\">Andy Warhol</a> had his first solo Pop art show, 32 Campbell’s Soup Cans at the Ferus Gallery (<a href=\"https://www.lerandom.art/subjects/los-angeles\">Los Angeles</a>) in July. <a href=\"https://www.lerandom.art/subjects/james-rosenquist\">James Rosenquist</a> had his first solo show at the Green Gallery (New York City). Lichtenstein, Warhol, <a href=\"https://www.lerandom.art/subjects/ed-ruscha\">Ed Ruscha</a> and <a href=\"https://www.lerandom.art/subjects/wayne-thiebaud\">Wayne Thiebaud</a> opened the group exhibition New Painting of Common Objects at the Pasadena Art Museum in September. Pop Art played an important role in the development of digital generative art with its emphasis on collaboration, process and mass production. Warhol’s prints also have much in common with digital generative art collections with a unified theme but individual random variation. <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> has spoken of the importance of the mass production of art as a prerequisite for NFTs. This is a monumental step in that direction."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://lichtensteinfoundation.org/biography/",
+        "label": "lichtensteinfoundation.org"
+      },
+      {
+        "url": "https://jamesrosenquiststudio.com/artist/chronology/1960s",
+        "label": "jamesrosenquiststudio.com"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/New_Painting_of_Common_Objects",
+        "label": "en.wikipedia.org"
+      }
+    ],
     "img": {
       "src": "img/american-pop-art-bursts-onto-the-scene.jpg",
       "cap": "",
@@ -2859,7 +2905,6 @@
       "Andy Warhol",
       "Casey Reas",
       "Ed Ruscha",
-      "Solo Show",
       "NFTs",
       "Los Angeles",
       "New York",
@@ -2982,11 +3027,6 @@
       {
         "k": "pasadena art museum",
         "n": "Pasadena Art Museum",
-        "t": "orgs"
-      },
-      {
-        "k": "solo show",
-        "n": "Solo Show",
         "t": "orgs"
       },
       {
@@ -4280,7 +4320,7 @@
       "“Ninety-nine lines connect 100 points whose horizontal coordinates are Gaussian. Vertical coordinates increase according to a quadratic equation. As a point reaches the top, it is reflected to the bottom to continue its rise. The exact proportions of this pattern were chosen from many other examples. This particular proportion is vaguely similar to the painting <a href=\"https://www.lerandom.art/subjects/ma-jolie\">Ma Jolie</a> by Picasso.”",
       "Derived from Noll’s 1962 experiments, the piece today is in the collection of the V&amp;A Museum as well as <a href=\"https://www.lerandom.art/subjects/spalter-digital\">Spalter Digital</a>. The piece would go on to be displayed at the first public exhibition of computer art in the <a href=\"https://www.lerandom.art/subjects/united-states\">United States</a>, at <a href=\"m/computer-generated-pictures-howard-wise-gallery.html\" data-moment=\"computer-generated-pictures-howard-wise-gallery\">New York’s Howard Wise Gallery in 1965</a> as well as <a href=\"m/cybernetic-serendipity-defines-a-movement.html\" data-moment=\"cybernetic-serendipity-defines-a-movement\">Cybernetic Serendipity (1968)</a>.",
       "Listen to <a href=\"https://open.spotify.com/episode/4rLDRFTOcFEPaYcq4CipHy?si=tQtRkya8S6uBWhTxIpsdNQ\" target=\"_blank\" rel=\"noopener\">Peter Bauman’s interview with A. Michael Noll</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-4-digital-era-pt-i-1960s-with-dr-a-michael-noll\">transcript</a>)</span> where he mentions Gaussian Quadratic as his personal favorite piece.",
-      "<a href=\"https://spalterdigital.com/artworks/gaussian-quadratic-1963/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by A. Michael Noll and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artworks/gaussian-quadratic-1963/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by A. Michael Noll and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artworks/gaussian-quadratic-1963/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -4623,11 +4663,6 @@
         "k": "random polygon move",
         "n": "Random Polygon Move",
         "t": "works"
-      },
-      {
-        "k": "entrance",
-        "n": "Entrance",
-        "t": "orgs"
       }
     ],
     "linked": [
@@ -4888,7 +4923,7 @@
   },
   "ascii-adopted-as-standard": {
     "body": [
-      "ASCII (American <a href=\"https://www.lerandom.art/subjects/standard\">Standard</a> Code for Information Interchange) was adopted as a standard in 1963. This code is a character encoding system that assigns unique numbers to represent each letter and character of the alphabet. ASCII has played a significant role in both computer and digital art. In computer art, ASCII characters have been used to create images, designs, and animations, with artists utilizing the unique visual properties of ASCII characters to create often abstract works. Well known examples include Kenneth Knowlton and <a href=\"https://www.lerandom.art/subjects/leon-harmon\">Leon Harmon</a>’s <a href=\"m/computer-nude-studies-in-perception-i-by-leon-harmon-and-ken-knowlton.html\" data-moment=\"computer-nude-studies-in-perception-i-by-leon-harmon-and-ken-knowlton\">Computer Nude (Studies in Perception I)</a> (1966) and <a href=\"https://www.lerandom.art/subjects/vuk-cosic\">Vuk Ćosić</a>’s <a href=\"m/raging-bull-and-deep-ascii-by-vuk-cosic.html\" data-moment=\"raging-bull-and-deep-ascii-by-vuk-cosic\">Deep ASCII (1998)</a>. In digital art, ASCII has been used as a tool for text-based art with artists using characters to create intricate typographic compositions and designs. Overall, ASCII has provided artists with a powerful tool for creating digital works that are both visually unique and highly flexible. In terms of its importance at the time, ASCII allowed computers to communicate with each other in a standardized way, regardless of manufacturer or operating system. This meant that data could be easily transferred between different computers and devices, which helped to facilitate the growth of the digital age."
+      "ASCII (American Standard Code for Information Interchange) was adopted as a standard in 1963. This code is a character encoding system that assigns unique numbers to represent each letter and character of the alphabet. ASCII has played a significant role in both computer and digital art. In computer art, ASCII characters have been used to create images, designs, and animations, with artists utilizing the unique visual properties of ASCII characters to create often abstract works. Well known examples include <a href=\"https://www.lerandom.art/subjects/vuk-cosic\">Vuk Ćosić</a>’s <a href=\"m/raging-bull-and-deep-ascii-by-vuk-cosic.html\" data-moment=\"raging-bull-and-deep-ascii-by-vuk-cosic\">Deep ASCII (1998)</a>. Kenneth Knowlton and <a href=\"https://www.lerandom.art/subjects/leon-harmon\">Leon Harmon</a>’s <a href=\"m/computer-nude-studies-in-perception-i-by-leon-harmon-and-ken-knowlton.html\" data-moment=\"computer-nude-studies-in-perception-i-by-leon-harmon-and-ken-knowlton\">Computer Nude (Studies in Perception I)</a> (1966) is an often-cited forerunner, built from small symbols standing for shades of grey rather than ASCII characters. In digital art, ASCII has been used as a tool for text-based art with artists using characters to create intricate typographic compositions and designs. Overall, ASCII has provided artists with a powerful tool for creating digital works that are both visually unique and highly flexible. In terms of its importance at the time, ASCII allowed computers to communicate with each other in a standardized way, regardless of manufacturer or operating system. This meant that data could be easily transferred between different computers and devices, which helped to facilitate the growth of the digital age."
     ],
     "cite": [
       {
@@ -4988,16 +5023,6 @@
       {
         "k": "deep ascii",
         "n": "Deep ASCII",
-        "t": "works"
-      },
-      {
-        "k": "standard",
-        "n": "Standard",
-        "t": "works"
-      },
-      {
-        "k": "studies",
-        "n": "Studies",
         "t": "works"
       },
       {
@@ -5221,7 +5246,7 @@
       "Knowlton, a pioneer of computer art and animation, at <a href=\"https://www.lerandom.art/subjects/bell-labs\">Bell Labs</a> developed BEFLIX, the first general-purpose programming language for computer animation.",
       "BEFLIX is short for “Bell Flicks” and was written in macro FAP, the Fortran Assembly Program.",
       "BEFLIX was used by artists, including Stan Vanderbeek to make some of the earliest experimental, abstract films in collaboration with Knowlton.",
-      "<a href=\"https://spalterdigital.com/artworks/nude-3/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Ken and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artworks/nude-3/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Ken and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artworks/nude-3/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -5411,7 +5436,7 @@
     "body": [
       "Kawano, an information aesthetics scholar and one of the earliest pioneers in using computer algorithms to create artistic compositions, placed the computer at the center of artistic generation.",
       "He engaged with computer art on a philosophical level, believing artists created the “art computer” which had its own “artificial creativity.” He published his first computer-generated images in September 1964, going on to computer-generated literature and music.",
-      "<a href=\"https://spalterdigital.com/artists/hiroshi-kawano/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Hiroshi Kawano and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artists/hiroshi-kawano/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Hiroshi Kawano and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artists/hiroshi-kawano/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -6002,11 +6027,6 @@
         "t": "works"
       },
       {
-        "k": "david",
-        "n": "David",
-        "t": "works"
-      },
-      {
         "k": "artscanada",
         "n": "ArtsCanada",
         "t": "orgs"
@@ -6401,7 +6421,7 @@
   },
   "first-version-of-basic-released": {
     "body": [
-      "John Kemeny and Thomas Kurtz released version 1 of the programming language, BASIC (Beginner’s All-Purpose Symbolic <a href=\"https://www.lerandom.art/subjects/instruction\">Instruction</a> Code). Designed for beginners, BASIC made computer programming accessible and increased its overall use, including in the arts."
+      "John Kemeny and Thomas Kurtz released version 1 of the programming language, BASIC (Beginner’s All-Purpose Symbolic Instruction Code). Designed for beginners, BASIC made computer programming accessible and increased its overall use, including in the arts."
     ],
     "cite": [
       {
@@ -6463,11 +6483,6 @@
         "k": "thomas e. kurtz",
         "n": "Thomas E. Kurtz",
         "t": "people"
-      },
-      {
-        "k": "instruction",
-        "n": "Instruction",
-        "t": "works"
       }
     ],
     "linked": [
@@ -6667,7 +6682,7 @@
       "Most famously, Noll used the piece in his Mondrian experiment, seeking to pit a machine’s creative power against a human artist’s. He placed his own Computer Composition with Lines alongside <a href=\"m/composition-with-lines-by-piet-mondrian.html\" data-moment=\"composition-with-lines-by-piet-mondrian\">Mondrian’s Composition with Lines</a> and asked his colleagues which they preferred between the two. <a href=\"http://noll.uscannenberg.org/\" target=\"_blank\" rel=\"noopener\">According to Noll himself</a>:",
       "“The conclusion of these investigations of computer-generated two-dimensional pictures is that the exciting potential of computers in art consists in their capability of producing mixtures of random elements with mathematically specified formulae for order.”",
       "Listen to <a href=\"https://open.spotify.com/episode/4rLDRFTOcFEPaYcq4CipHy?si=tQtRkya8S6uBWhTxIpsdNQ\" target=\"_blank\" rel=\"noopener\">Peter Bauman’s interview with A. Michael Noll</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-4-digital-era-pt-i-1960s-with-dr-a-michael-noll\">transcript</a>)</span>.",
-      "<a href=\"https://spalterdigital.com/artists/hiroshi-kawano/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by A. Michael Noll and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artists/hiroshi-kawano/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by A. Michael Noll and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artists/hiroshi-kawano/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -7091,7 +7106,7 @@
       "<a href=\"m/a-michael-noll-creates-some-of-the-first-creative-graphics-with-a-digital-comput.html\" data-moment=\"a-michael-noll-creates-some-of-the-first-creative-graphics-with-a-digital-comput\">Patterns by 7090</a> <a href=\"m/gaussian-quadratic-by-a-michael-noll.html\" data-moment=\"gaussian-quadratic-by-a-michael-noll\">Gaussian-Quadratic</a> <a href=\"m/computer-composition-with-lines-by-a-michael-noll.html\" data-moment=\"computer-composition-with-lines-by-a-michael-noll\">Computer Composition With Lines</a> Vertical-Horizontal Number Three Ninety Parallel Sinusoids",
       "Famously, not a single work sold; the public reception was cold to indifferent. The show was another example in art history of a visionary exhibition too far ahead of its time to be recognized or understood by contemporaries. Computer-Generated Pictures was a landmark development in the gradual acceptance of the computer’s role in art-making.",
       "Listen to <a href=\"https://open.spotify.com/episode/4rLDRFTOcFEPaYcq4CipHy?si=tQtRkya8S6uBWhTxIpsdNQ\" target=\"_blank\" rel=\"noopener\">Peter Bauman’s interview with A. Michael Noll</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-4-digital-era-pt-i-1960s-with-dr-a-michael-noll\">transcript</a>)</span>.",
-      "<a href=\"https://spalterdigital.com/artworks/howard-wise-gallery-nyc-exhibition-announcements/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by The Artists and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artworks/howard-wise-gallery-nyc-exhibition-announcements/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by The Artists and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artworks/howard-wise-gallery-nyc-exhibition-announcements/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -7296,7 +7311,7 @@
       "Nees took his doctorate under Bense, writing his thesis on computer art, and Nake sat in on Bense’s lectures.",
       "The exhibition was extremely optimistic about the creative possibilities of computers and art. It asked questions about technology and art, as well as artificial intelligence, envisioning the out-sized creative possibilities that programmed art promised.",
       "While some of these works actually sold for very small prices, public sentiment was muted at best.",
-      "<a href=\"https://www.lerandom.art/editorial/frieder-nake-on-machinic-miracles\" target=\"_blank\" rel=\"noopener\">This author, Peter Bauman spoke to Frieder Nake about the beginnings of computer art and more in “Frieder Nake on “Machinic” Miracles” at Le Random Editorials.</a>"
+      "<a href=\"https://www.lerandom.art/editorial/frieder-nake-on-machinic-miracles\" target=\"_blank\" rel=\"noopener\">This author, </a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://www.lerandom.art/editorial/frieder-nake-on-machinic-miracles\" target=\"_blank\" rel=\"noopener\"> spoke to Frieder Nake about the beginnings of computer art and more in “Frieder Nake on “Machinic” Miracles” at Le Random Editorials.</a>"
     ],
     "cite": [
       {
@@ -7748,8 +7763,8 @@
   },
   "13-9-65-nr-2-hommage-a-paul-klee-by-frieder-nake": {
     "body": [
-      "One of the most cited and recognized works among the earliest computer art, <a href=\"https://www.lerandom.art/subjects/homage\">Homage</a> to <a href=\"https://www.lerandom.art/subjects/paul-klee\">Paul Klee</a> (in English) draws inspiration from <a href=\"m/highway-and-byways-by-paul-klee.html\" data-moment=\"highway-and-byways-by-paul-klee\">Klee’s Hauptweg und Nebenwege (1929)</a> without Nake directly attempting to reproduce it algorithmically.",
-      "<a href=\"https://spalterdigital.com/artworks/er56-z64-2/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Frieder Nake and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "One of the most cited and recognized works among the earliest computer art, Homage to <a href=\"https://www.lerandom.art/subjects/paul-klee\">Paul Klee</a> (in English) draws inspiration from <a href=\"m/highway-and-byways-by-paul-klee.html\" data-moment=\"highway-and-byways-by-paul-klee\">Klee’s Hauptweg und Nebenwege (1929)</a> without Nake directly attempting to reproduce it algorithmically.",
+      "<a href=\"https://spalterdigital.com/artworks/er56-z64-2/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Frieder Nake and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artworks/er56-z64-2/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -7818,11 +7833,6 @@
       {
         "k": "hauptweg und nebenwege",
         "n": "Hauptweg und Nebenwege",
-        "t": "works"
-      },
-      {
-        "k": "homage",
-        "n": "Homage",
         "t": "works"
       },
       {
@@ -7969,7 +7979,7 @@
   },
   "portrait-of-the-machine-as-a-young-artist-by-john-r-pierce-in-playboy-one-of-the": {
     "body": [
-      "This landmark essay in the popular magazine for men helped nudge computer art into mainstream culture. Written by <a href=\"https://www.lerandom.art/subjects/bell-labs\">Bell Labs</a>’s <a href=\"https://www.lerandom.art/subjects/john-r-pierce\">John R. Pierce</a>, the title refers to the James Joyce novel, alluding to the computer as a maturing artist. The article encouraged the use of artistic experimentation with computers and technology with a staunchly pro-technology argument."
+      "This landmark essay in the popular magazine for men helped nudge computer art into mainstream culture. Written by <a href=\"https://www.lerandom.art/subjects/bell-labs\">Bell Labs</a>’s <a href=\"https://www.lerandom.art/subjects/john-r-pierce\">John R. Pierce</a>, the title refers to the <a href=\"https://www.lerandom.art/subjects/james-joyce\">James Joyce</a> novel, alluding to the computer as a maturing artist. The article encouraged the use of artistic experimentation with computers and technology with a staunchly pro-technology argument."
     ],
     "cite": [
       {
@@ -8131,7 +8141,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "magnet tv",
@@ -8536,7 +8546,7 @@
       "The article in which Knowlton explains <a href=\"m/kenneth-c-knowlton-develops-beflix.html\" data-moment=\"kenneth-c-knowlton-develops-beflix\">BEFLIX</a> and his early computer animation techniques, which he developed at <a href=\"https://www.lerandom.art/subjects/bell-labs\">Bell Labs</a>.",
       "Knowlton writes in the article:",
       "“An automatic, electronic microfilm recorder can plot points and draw lines many orders of magnitude faster than a human draftsman can. This machine and the electronic computer which controls it promise to facilitate the production of animated movies for a wide range educational and research purposes.”",
-      "Listen to <a href=\"https://open.spotify.com/episode/4rLDRFTOcFEPaYcq4CipHy?si=tQtRkya8S6uBWhTxIpsdNQ\" target=\"_blank\" rel=\"noopener\">Peter Bauman’s interview with A. Michael Noll</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-4-digital-era-pt-i-1960s-with-dr-a-michael-noll\">transcript</a>)</span>, where he discusses Knowlton, BEFLIX and the early days at Bell Labs."
+      "Listen to <a href=\"https://open.spotify.com/episode/4rLDRFTOcFEPaYcq4CipHy?si=tQtRkya8S6uBWhTxIpsdNQ\" target=\"_blank\" rel=\"noopener\">Peter Bauman’s interview with </a><a href=\"https://www.lerandom.art/subjects/a-michael-noll\">A. Michael Noll</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-4-digital-era-pt-i-1960s-with-dr-a-michael-noll\">transcript</a>)</span>, where he discusses Knowlton, BEFLIX and the early days at Bell Labs."
     ],
     "cite": [
       {
@@ -8819,7 +8829,7 @@
       "“CTG is an active think tank that takes advantage of well developed electronic computer systems and makes them serve the needs of human beings. We, the post-war generation, have been exploring our place in machine society for all our born days. Living without machines is attractive in its own way in our dreadful age but it is regressive evolution back towards apes, and is different from the creative evolution we are aiming for.",
       "We will tame the computer’s appealing transcendental charm and restrain it from serving established power. This stance is the way to solve complicated problems in the machine society. We do not praise machine civilization, nor do we criticise it. By a strategic collaboration with artists, scientists and other creative people from a wide variety of backgrounds, we will deliberate carefully the relationships between human beings and machines, and how we should live in the computer age.\"",
       "Besides these lofty ambitions, CTG would go on to introduce the concept of the artist as system creator. These systems could produce unlimited complex forms and patterns rather than just individual works, an immensely influential concept now ubiquitous in today’s generative art.",
-      "<a href=\"https://spalterdigital.com/artworks/return-to-square/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by The Artists and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artworks/return-to-square/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by The Artists and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artworks/return-to-square/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -8940,7 +8950,7 @@
   },
   "9-evenings-theatre-and-engineering-at-the-69th-regiment-armory": {
     "body": [
-      "The event that legitimized the use of technology in art, Artist <a href=\"https://www.lerandom.art/subjects/robert-rauschenberg\">Robert Rauschenberg</a> and engineer <a href=\"https://www.lerandom.art/subjects/billy-kluver\">Billy Klüver</a> (<a href=\"https://www.lerandom.art/subjects/bell-labs\">Bell Labs</a>) organized 9 Evenings to promote artist-engineer collaboration. In just eighteen months, Bell Labs engineers went from experimenting with computer art and showcasing their results in a small gallery without much fanfare (<a href=\"m/computer-generated-pictures-howard-wise-gallery.html\" data-moment=\"computer-generated-pictures-howard-wise-gallery\">Howard Wise</a>) to this large-scale event at one of <a href=\"https://www.lerandom.art/subjects/new-york\">New York</a>’s most prestigious spaces. In fact, New York City’s 69th Regiment Armory was home to one of the most famous exhibition in North American history, the 1913 Armory Show, which first introduced modern art to <a href=\"https://www.lerandom.art/subjects/america\">America</a>. It was the first large-scale collaboration between artists, engineers and scientists. 30 engineers and 10 artists staged a series of elaborate interdisciplinary performances. They realized work that would have been unachievable on their own. The artists used state-of-the-art technology such as computers, video cameras, and projectors to create their works. This marked a significant departure from traditional forms of art-making and opened up future possibilities for artists to experiment with technology. The show featured some of the most intrepid artists of the day including <a href=\"https://www.lerandom.art/subjects/deborah-hay\">Deborah Hay</a>, <a href=\"https://www.lerandom.art/subjects/lucinda-childs\">Lucinda Childs</a> and <a href=\"https://www.lerandom.art/subjects/john-cage\">John Cage</a>. It also increased the awareness of technology’s use in art in the broader artist community. Besides the immense legacy of the show itself, 9 Evenings also directly led to Rauschenberg and Klüver forming <a href=\"m/experiments-in-art-and-technology-founded-with-eat-news.html\" data-moment=\"experiments-in-art-and-technology-founded-with-eat-news\">Experiments in Art and Technology (EAT)</a>. EAT, further promoting artist-engineer collaboration, would change the use of technology to make art irrevocably."
+      "The event that legitimized the use of technology in art, Artist <a href=\"https://www.lerandom.art/subjects/robert-rauschenberg\">Robert Rauschenberg</a> and engineer <a href=\"https://www.lerandom.art/subjects/billy-kluver\">Billy Klüver</a> (<a href=\"https://www.lerandom.art/subjects/bell-labs\">Bell Labs</a>) organized 9 Evenings to promote artist-engineer collaboration. In just eighteen months, Bell Labs engineers went from experimenting with computer art and showcasing their results in a small gallery without much fanfare (<a href=\"m/computer-generated-pictures-howard-wise-gallery.html\" data-moment=\"computer-generated-pictures-howard-wise-gallery\">Howard Wise</a>) to this large-scale event at one of <a href=\"https://www.lerandom.art/subjects/new-york\">New York</a>’s most prestigious spaces. In fact, New York City’s 69th Regiment Armory was home to one of the most famous exhibition in North American history, the 1913 Armory Show, which first introduced modern art to <a href=\"https://www.lerandom.art/subjects/united-states\">America</a>. It was the first large-scale collaboration between artists, engineers and scientists. 30 engineers and 10 artists staged a series of elaborate interdisciplinary performances. They realized work that would have been unachievable on their own. The artists used state-of-the-art technology such as computers, video cameras, and projectors to create their works. This marked a significant departure from traditional forms of art-making and opened up future possibilities for artists to experiment with technology. The show featured some of the most intrepid artists of the day including <a href=\"https://www.lerandom.art/subjects/deborah-hay\">Deborah Hay</a>, <a href=\"https://www.lerandom.art/subjects/lucinda-childs\">Lucinda Childs</a> and <a href=\"https://www.lerandom.art/subjects/john-cage\">John Cage</a>. It also increased the awareness of technology’s use in art in the broader artist community. Besides the immense legacy of the show itself, 9 Evenings also directly led to Rauschenberg and Klüver forming <a href=\"m/experiments-in-art-and-technology-founded-with-eat-news.html\" data-moment=\"experiments-in-art-and-technology-founded-with-eat-news\">Experiments in Art and Technology (EAT)</a>. EAT, further promoting artist-engineer collaboration, would change the use of technology to make art irrevocably."
     ],
     "cite": [
       {
@@ -8965,7 +8975,7 @@
       "9 Evenings: Theatre and Engineering",
       "Bell Labs",
       "New York",
-      "America",
+      "United States",
       "Chance Dance",
       "Experiments in Art and Technology (E.A.T.)",
       "generative art",
@@ -8975,7 +8985,6 @@
       "Performance Art",
       "Technology and Art",
       "Deborah Hay",
-      "The Armory Show",
       "69th Regiment Armory",
       "collaboration",
       "art science collaboration",
@@ -9079,7 +9088,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "9 evenings: theatre and engineering",
@@ -9102,13 +9111,8 @@
         "t": "orgs"
       },
       {
-        "k": "the armory show",
-        "n": "The Armory Show",
-        "t": "orgs"
-      },
-      {
-        "k": "america",
-        "n": "America",
+        "k": "united states",
+        "n": "United States",
         "t": "places"
       },
       {
@@ -9144,7 +9148,7 @@
       "Arranged by the Western Association of Art Museums, the show featured Mason’s analog computer work, much of it would later be included in <a href=\"m/cybernetic-serendipity-defines-a-movement.html\" data-moment=\"cybernetic-serendipity-defines-a-movement\">Cybernetic Serendipity</a>.",
       "The American Mason had a background in the military as well as computer science, working at IBM in <a href=\"https://www.lerandom.art/subjects/silicon-valley\">Silicon Valley</a> for decades.",
       "His contributions to computer art are less often noted today but a deeper dive into the mercurial artist’s work remains rewarding.",
-      "<a href=\"https://spalterdigital.com/artworks/untitled-42/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Maughan S. Mason and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artworks/untitled-42/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Maughan S. Mason and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artworks/untitled-42/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -9207,11 +9211,6 @@
         "t": "people"
       },
       {
-        "k": "untitled",
-        "n": "untitled",
-        "t": "works"
-      },
-      {
         "k": "cybernetic serendipity",
         "n": "Cybernetic Serendipity",
         "t": "exhibitions"
@@ -9270,9 +9269,10 @@
     "img": {
       "src": "img/joseph-weizenbaum-publishes-eliza.png",
       "cap": "",
-      "credit": "",
+      "credit": "Screenshot of a conversation with ELIZA in Norbert Landsteiner's 2005 implementation of Joseph Weizenbaum's 1966 program. Via Wikimedia Commons.",
       "width": 751,
-      "height": 487
+      "height": 487,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ELIZA_conversation.png"
     },
     "tags": [
       "Joseph Weizenbaum",
@@ -9371,7 +9371,7 @@
       "Having studied with the poet <a href=\"https://www.lerandom.art/subjects/mary-caroline-richards\">M.C. Richards</a> and composer <a href=\"https://www.lerandom.art/subjects/john-cage\">John Cage</a> at <a href=\"https://www.lerandom.art/subjects/black-mountain-college\">Black Mountain College</a>, artist <a href=\"https://www.lerandom.art/subjects/stan-vanderbeek\">Stan VanDerBeek</a> begins developing Poemfields, a series of eight computer-generated films that introduce his “image-based poetry language.” In collaboration with computer scientist <a href=\"https://www.lerandom.art/subjects/ken-knowlton\">Ken Knowlton</a> at <a href=\"https://www.lerandom.art/subjects/bell-labs\">Bell Labs</a>, VanDerBeek uses Knowlton’s <a href=\"m/kenneth-c-knowlton-develops-beflix.html\" data-moment=\"kenneth-c-knowlton-develops-beflix\">BEFLIX</a> and an IBM 7094 from 1966-1971.",
       "-Sasha Stiles",
       "<a href=\"https://www.lerandom.art/editorial/reas-history-1\" target=\"_blank\" rel=\"noopener\">Casey Reas also mentions</a> <a href=\"https://www.lerandom.art/editorial/reas-history-1\" target=\"_blank\" rel=\"noopener\">Poemfields</a> <a href=\"https://www.lerandom.art/editorial/reas-history-1\" target=\"_blank\" rel=\"noopener\">to Le Random</a> as an important early generative film that played a role dematerializing art.",
-      "Listen to <a href=\"https://open.spotify.com/episode/4rLDRFTOcFEPaYcq4CipHy?si=tQtRkya8S6uBWhTxIpsdNQ\" target=\"_blank\" rel=\"noopener\">Peter Bauman’s interview with A. Michael Noll</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-4-digital-era-pt-i-1960s-with-dr-a-michael-noll\">transcript</a>)</span> where he discusses Knowlton, BEFLIX and the early days at Bell Labs.",
+      "Listen to <a href=\"https://open.spotify.com/episode/4rLDRFTOcFEPaYcq4CipHy?si=tQtRkya8S6uBWhTxIpsdNQ\" target=\"_blank\" rel=\"noopener\">Peter Bauman’s interview with </a><a href=\"https://www.lerandom.art/subjects/a-michael-noll\">A. Michael Noll</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-4-digital-era-pt-i-1960s-with-dr-a-michael-noll\">transcript</a>)</span> where he discusses Knowlton, BEFLIX and the early days at Bell Labs.",
       "*Image credit: <a href=\"https://www.stanvanderbeekarchive.com/artists/tFzRGnN/stan-vanderbeek/\" target=\"_blank\" rel=\"noopener\">The Stan VanDerBeek Archive</a>. Courtesy of the artist"
     ],
     "cite": [
@@ -9400,7 +9400,7 @@
       "Poem Field",
       "BEFLIX",
       "IBM 7094",
-      "M.C. Richards",
+      "Mary Caroline Richards",
       "poetry",
       "dematerialization",
       "Computer Film"
@@ -9409,7 +9409,7 @@
       "casey reas",
       "john cage",
       "ken knowlton",
-      "m.c. richards",
+      "mary caroline richards",
       "sasha stiles",
       "stan vanderbeek"
     ],
@@ -9470,8 +9470,8 @@
         "t": "people"
       },
       {
-        "k": "m.c. richards",
-        "n": "M.C. Richards",
+        "k": "mary caroline richards",
+        "n": "Mary Caroline Richards",
         "t": "people"
       },
       {
@@ -9640,11 +9640,6 @@
       {
         "k": "abraham",
         "n": "Abraham",
-        "t": "works"
-      },
-      {
-        "k": "david",
-        "n": "David",
         "t": "works"
       },
       {
@@ -10215,7 +10210,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "kunst-licht-kunst",
@@ -10541,7 +10536,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "9 evenings: theatre and engineering",
@@ -10966,12 +10961,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
-      },
-      {
-        "k": "meeting",
-        "n": "Meeting",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "9 evenings: theatre and engineering",
@@ -11103,9 +11093,9 @@
   "charles-csuri-enters-the-computer-art-scene-with-series-of-important-works": {
     "body": [
       "After a decade in painting and then years at The Ohio State University making analogue computer drawings, <a href=\"https://www.lerandom.art/subjects/charles-csuri\">Charles Csuri</a> finally got his hands on a digital computer for art making in 1967. His practice exploded onto the computer art scene that year with several key works.",
-      "First was his piece with <a href=\"https://www.lerandom.art/subjects/james-shaffer\">James Shaffer</a>, <em>Sine Curve Man</em>, which was the Computers and Automation first prize winner for 1967. Csuri would also produce the seminal plotter drawings <em>Random War</em> and <em>Aging Process</em> in 1967. <em>Random War</em> would go on to be shown at Jasia Reichardt's <em>Cybernetic Serendipity</em> the following year.",
+      "First was his piece with <a href=\"https://www.lerandom.art/subjects/james-shaffer\">James Shaffer</a>, <em>Sine Curve Man</em>, which was the Computers and Automation first prize winner for 1967. Csuri would also produce the seminal plotter drawings <em>Random War</em> and <em>Aging Process</em> in 1967. <em>Random War</em> would go on to be shown at <a href=\"https://www.lerandom.art/subjects/jasia-reichardt\">Jasia Reichardt</a>'s <em><a href=\"https://www.lerandom.art/subjects/cybernetic-serendipity\">Cybernetic Serendipity</a></em> the following year.",
       "<em>Sine Curve Man</em> began as a line drawing of a man. Csuri and Shaffer, of Ohio State’s mathematics department, reshaped it with a sine curve function on an IBM mainframe and drew the stages on a plotter, since they had no way yet to record it as animation.",
-      "Csuri's experience reminds me of many people who already had a creative dam filling that was ready to burst once they got access to the right tooling. A contemporary example would be Ryan Murdock, who explained to me how his work with CLIP and GANs was already anticipated by his prior work. He just needed the CLIP part. Csuri, like Molnár around this same time, just needed access to digital computation."
+      "Csuri's experience reminds me of many people who already had a creative dam filling that was ready to burst once they got access to the right tooling. A contemporary example would be <a href=\"https://www.lerandom.art/subjects/ryan-murdock\">Ryan Murdock</a>, who explained to me how his work with CLIP and GANs was already anticipated by his prior work. He just needed the CLIP part. Csuri, like Molnár around this same time, just needed access to digital computation."
     ],
     "cite": [
       {
@@ -11213,7 +11203,7 @@
       "One of the earliest computer animations, Csuri moved away from the geometric abstraction of his European computer art peers, introducing figuration to computer art.",
       "Csuri generated more than 14,000 frames in which the bird is exploded, scattered and put back together, outputting them to 16mm film.",
       "Csuri’s figurative work highlights the breadth of computer art’s capabilities, showing the world a computer could produce more than the abstract visualization of mathematical formulae. This piece is in the <a href=\"https://www.lerandom.art/subjects/moma\">MoMA</a> permanent collection and is one of the earliest computer-generated works to enter its collection.",
-      "<a href=\"https://spalterdigital.com/artworks/hummingbird-1/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Charles Csuri and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artworks/hummingbird-1/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Charles Csuri and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artworks/hummingbird-1/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -11294,7 +11284,7 @@
     "body": [
       "This work, from Nees’s series exploring the polygon from 1965-1968, investigates the relationship between “order and complexity” and \"aesthetic measure.”",
       "These concepts were developed by <a href=\"https://www.lerandom.art/subjects/abraham-moles\">Abraham Moles</a> and <a href=\"https://www.lerandom.art/subjects/max-bense\">Max Bense</a> in <a href=\"https://www.lerandom.art/subjects/europe\">Europe</a>, drawing on <a href=\"m/george-david-birkhoff-proposes-the-aesthetic-measure.html\" data-moment=\"george-david-birkhoff-proposes-the-aesthetic-measure\">George David Birkhoff’s aesthetic measure</a> and on <a href=\"m/claude-shannon-develops-information-theory-with-a-mathematical-theory-of-communi.html\" data-moment=\"claude-shannon-develops-information-theory-with-a-mathematical-theory-of-communi\">Claude Shannon’s information theory</a> at <a href=\"https://www.lerandom.art/subjects/bell-labs\">Bell Labs</a>.",
-      "<a href=\"https://spalterdigital.com/artworks/bild-6/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Georg Nees and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artworks/bild-6/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Georg Nees and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artworks/bild-6/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -11540,7 +11530,7 @@
     "body": [
       "This colored plotter drawing features four squares with algorithmically assigned colors. An edition of this series is included in the Victoria and Albert Museum.",
       "Nake produced the series on a Telefunken TR 4 computer between 1967 and 1968.",
-      "<a href=\"https://spalterdigital.com/artworks/matrizenmultiplikation-matrix-multiplication/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Frieder Nake and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artworks/matrizenmultiplikation-matrix-multiplication/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Frieder Nake and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artworks/matrizenmultiplikation-matrix-multiplication/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -11649,10 +11639,10 @@
   "computer-nude-studies-in-perception-i-by-leon-harmon-and-ken-knowlton": {
     "body": [
       "Created by Harmon and Knowlton at <a href=\"https://www.lerandom.art/subjects/bell-labs\">Bell Labs</a>, this computer generated photomural of a reclining nude, twelve feet long, was made entirely of abstract symbols.",
-      "Consisting of bitmapped <a href=\"m/ascii-adopted-as-standard.html\" data-moment=\"ascii-adopted-as-standard\">ASCII</a> characters, Computer Nude is one of the most famous and recognizable of the early computer artworks and is one of the first ASCII artworks. Harmon and Knowlton had been introduced by <a href=\"m/experiments-in-art-and-technology-founded-with-eat-news.html\" data-moment=\"experiments-in-art-and-technology-founded-with-eat-news\">Experiments in Art and Technology (EAT)</a>.",
+      "Consisting of small symbols standing for shades of grey rather than <a href=\"m/ascii-adopted-as-standard.html\" data-moment=\"ascii-adopted-as-standard\">ASCII</a> characters, Computer Nude is one of the most famous and recognizable of the early computer artworks and is an often-cited forerunner of ASCII art. Harmon and Knowlton had been introduced by <a href=\"m/experiments-in-art-and-technology-founded-with-eat-news.html\" data-moment=\"experiments-in-art-and-technology-founded-with-eat-news\">Experiments in Art and Technology (EAT)</a>.",
       "In the collection of the <a href=\"https://www.lerandom.art/subjects/buffalo-akg\">Buffalo AKG</a> Art Museum, the piece “demonstrates the unique capacity of the viewer’s brain to interpret a composition of abstract symbols grouped to emulate areas of tonal value as a human figure.” The piece would be exhibited the following year at the legendary <a href=\"m/the-machine-as-seen-at-the-end-of-the-mechanical-age-at-moma.html\" data-moment=\"the-machine-as-seen-at-the-end-of-the-mechanical-age-at-moma\">The machine, as seen at the end of the mechanical age</a>.",
-      "Listen to <a href=\"https://open.spotify.com/episode/4rLDRFTOcFEPaYcq4CipHy?si=tQtRkya8S6uBWhTxIpsdNQ\" target=\"_blank\" rel=\"noopener\">Peter Bauman’s interview with A. Michael Noll</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-4-digital-era-pt-i-1960s-with-dr-a-michael-noll\">transcript</a>)</span>.",
-      "Image is copyrighted by The Artists and courtesy of The Anne and Michael <a href=\"https://www.lerandom.art/subjects/spalter-digital\">Spalter Digital</a> Art Collection."
+      "Listen to <a href=\"https://open.spotify.com/episode/4rLDRFTOcFEPaYcq4CipHy?si=tQtRkya8S6uBWhTxIpsdNQ\" target=\"_blank\" rel=\"noopener\">Peter Bauman’s interview with </a><a href=\"https://www.lerandom.art/subjects/a-michael-noll\">A. Michael Noll</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-4-digital-era-pt-i-1960s-with-dr-a-michael-noll\">transcript</a>)</span>.",
+      "Image is copyrighted by The Artists and courtesy of The Anne and <a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://www.lerandom.art/subjects/spalter-digital\"> Digital</a> Art Collection."
     ],
     "cite": [
       {
@@ -11731,16 +11721,11 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "computer nude (studies in perception i)",
         "n": "Computer Nude (Studies in Perception I)",
-        "t": "works"
-      },
-      {
-        "k": "studies",
-        "n": "Studies",
         "t": "works"
       },
       {
@@ -11796,7 +11781,7 @@
     "body": [
       "This iconic plotter drawing, exhibited at <a href=\"m/cybernetic-serendipity-defines-a-movement.html\" data-moment=\"cybernetic-serendipity-defines-a-movement\">Cybernetic Serendipity</a>, was created in 1967 and 1968 by CTG at the IBM Scientific Data Centre in <a href=\"https://www.lerandom.art/subjects/tokyo\">Tokyo</a>.",
       "The work is described in the <a href=\"https://www.lerandom.art/subjects/cybernetic-serendipity\">Cybernetic Serendipity</a> catalog as follows: “A computer algorithm converts a running man into a bottle of cola, which in turn is converted into the map of Africa.” <a href=\"https://www.lerandom.art/subjects/masao-kohmura\">Masao Kohmura</a>, CTG co-founder, was credited with the concept.",
-      "<a href=\"https://spalterdigital.com/artworks/running-cola-is-africa/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by The Artists and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artworks/running-cola-is-africa/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by The Artists and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artworks/running-cola-is-africa/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -12108,7 +12093,7 @@
     ],
     "cite": [
       {
-        "url": "http://act.mit.edu/cavs/about#:~:text=The%20Center%20for%20Advanced%20Visual,the%20broader%20community%20at%20the",
+        "url": "https://act.mit.edu/special-collections/cavs-special-collection/",
         "label": "act.mit.edu"
       }
     ],
@@ -12175,11 +12160,6 @@
         "t": "people"
       },
       {
-        "k": "studies",
-        "n": "Studies",
-        "t": "works"
-      },
-      {
         "k": "center for advanced visual studies (cavs)",
         "n": "Center for Advanced Visual Studies (CAVS)",
         "t": "orgs"
@@ -12217,7 +12197,7 @@
     ],
     "dateType": "occurred"
   },
-  "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html": {
+  "logo-language-developed": {
     "body": [
       "Designed by <a href=\"https://www.lerandom.art/subjects/wally-feurzeig\">Wally Feurzeig</a>, <a href=\"https://www.lerandom.art/subjects/seymour-papert\">Seymour Papert</a> and <a href=\"https://www.lerandom.art/subjects/cynthia-solomon\">Cynthia Solomon</a>, Logo was a general purpose programming language that was hugely important to the development of computer art. It’s main innovation for computer graphics was the concept of “turtle graphics,” allowing a programmer to manipulate the movement of a robotic turtle sitting on the floor. After being further developed at MIT in the 1970s, Logo would play an instrumental role in the development of generative art again in the 1980s as the language was taught in public schools, influencing a new generation of creative coders and artists, such as <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>."
     ],
@@ -12440,7 +12420,7 @@
   },
   "cybernetic-serendipity-defines-a-movement": {
     "body": [
-      "<a href=\"https://www.lerandom.art/subjects/cybernetic-serendipity\">Cybernetic Serendipity</a>, <a href=\"https://www.lerandom.art/subjects/jasia-reichardt\">Jasia Reichardt</a>’s landmark international exhibition at the Institute of Contemporary Arts, <a href=\"https://www.lerandom.art/subjects/london\">London</a>, ran from 2 August to 20 October 1968 and was computer art’s first international exhibition. But it was also so much more than that.",
+      "<a href=\"https://www.lerandom.art/subjects/cybernetic-serendipity\">Cybernetic Serendipity</a>, <a href=\"https://www.lerandom.art/subjects/jasia-reichardt\">Jasia Reichardt</a>’s landmark international exhibition at the <a href=\"https://www.lerandom.art/subjects/institute-of-contemporary-arts-ica\">Institute of Contemporary Arts</a>, <a href=\"https://www.lerandom.art/subjects/london\">London</a>, ran from 2 August to 20 October 1968 and was computer art’s first international exhibition. But it was also so much more than that.",
       "With cybernetic theory (<a href=\"m/cybernetics-is-born.html\" data-moment=\"cybernetics-is-born\">Cybernetics Is Born</a>) as an overarching theme, the exhibition probed the relationship between creativity and technology. It “aroused world-wide interest for computer art and especially for computer graphics,” according to Herbert Franke. It accomplished this by comprehensively showcasing the various movements’ pioneers.",
       "The show featured pioneers in a staggering variety of digital arts, including <a href=\"https://www.lerandom.art/subjects/a-michael-noll\">A. Michael Noll</a>, <a href=\"https://www.lerandom.art/subjects/frieder-nake\">Frieder Nake</a>, <a href=\"https://www.lerandom.art/subjects/georg-nees\">Georg Nees</a>, CTG and <a href=\"https://www.lerandom.art/subjects/charles-csuri\">Charles Csuri</a> (computer graphics), <a href=\"https://www.lerandom.art/subjects/nam-june-paik\">Nam June Paik</a> (video art), <a href=\"https://www.lerandom.art/subjects/jean-tinguely\">Jean Tinguely</a> (kinetic art), <a href=\"https://www.lerandom.art/subjects/john-cage\">John Cage</a> (generative music), <a href=\"https://www.lerandom.art/subjects/jeanne-beaman\">Jeanne Beaman</a> (generative choreography), <a href=\"https://www.lerandom.art/subjects/john-whitney\">John Whitney</a> (computer film), <a href=\"https://www.lerandom.art/subjects/ken-knowlton\">Ken Knowlton</a> (computer animation) and many others.",
       "Cybernetic Serendipity was forward looking, it “deal[t] with possibilities rather than achievements,” according to Reichardt. The genius of the exhibition is that several decades later the collective achievements of the artists at the exhibition are innumerable.",
@@ -12917,7 +12897,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "computer nude (studies in perception i)",
@@ -14057,7 +14037,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "cybernetic serendipity",
@@ -14325,7 +14305,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "proxima centauri",
@@ -14372,7 +14352,16 @@
     "body": [
       "Return to Square A, Computer Technique Group Return to Square B, Computer Technique Group Shot Kennedy No. 1, Computer Technique Group Christmas Wreath—Computer Style, <a href=\"https://www.lerandom.art/subjects/maughan-s-mason\">Maughan S. Mason</a> Intuitively Yours, <a href=\"https://www.lerandom.art/subjects/lloyd-sumner\">Lloyd Sumner</a> Self-Portrait, Lloyd Sumner <a href=\"https://spalterdigital.com/artworks/return-to-square/\" target=\"_blank\" rel=\"noopener\">spalterdigital.com</a>"
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "http://bitsavers.org/magazines/Computers_And_Automation/196808.pdf",
+        "label": "bitsavers.org"
+      },
+      {
+        "url": "https://collections.vam.ac.uk/item/O1034087/",
+        "label": "collections.vam.ac.uk"
+      }
+    ],
     "img": {
       "src": "img/notable-computer-artworks.jpg",
       "cap": "",
@@ -14471,7 +14460,7 @@
     "body": [
       "The Snail by <a href=\"https://www.lerandom.art/subjects/kerry-strand\">Kerry Strand</a>, and Symplexity by Kerry Strand and <a href=\"https://www.lerandom.art/subjects/larry-jenkins\">Larry Jenkins</a>, were important early computer-generated drawings for their curvilinear forms.",
       "These more organic forms were in contrast to the mostly rectilinear compositions of the time. <a href=\"https://www.lerandom.art/subjects/grant-taylor\">Grant Taylor</a> explains: “The Snail and other curvilinear figures completed by technologists became precursors to the later 1980s computer art of <a href=\"https://www.lerandom.art/subjects/william-latham\">William Latham</a> and others who abstracted nature’s morphogenetic process and created strange biomorphic forms.”",
-      "<a href=\"https://spalterdigital.com/artworks/the-snail/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by The Artists and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artworks/the-snail/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by The Artists and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artworks/the-snail/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -14713,7 +14702,7 @@
       "“The real, actual computer was in 1968. That I remember really well. In 1968 we thought that everything was possible and all you have to do is knock on the doors and the doors open. So, armed with this certainty, I went and knocked at the door of the <a href=\"https://www.lerandom.art/subjects/paris\">Paris</a> University computing centre, which was in Orsay, and I explained to the head of the centre that I wanted to try to make art with a computer.",
       "He gave me a look and I had the feeling that he was considering whether he should call for a nurse to sedate me or lock me up or something. Later, when I got to know this man, he told me: ‘I said yes to you because I thought of a famous quote by Voltaire, the one where he says: ‘I completely disagree with everything that you are saying but will defend until my death your right to do or say or write what you have in mind’’, and so he said yes.",
       "That was easily said, it was an honour for me, but I had no privileges whatsoever because it was for scientists and researchers: I was nothing in all that. Back then, it was very expensive, we had to rent computers by the minute, so I sort of shrunk in a corner, the last in line, but I was still there.”",
-      "<a href=\"https://spalterdigital.com/artworks/interruptions1/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Vera Molnár and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artworks/interruptions1/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Vera Molnár and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artworks/interruptions1/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -14812,11 +14801,6 @@
       {
         "k": "interruptions",
         "n": "Interruptions",
-        "t": "works"
-      },
-      {
-        "k": "untitled",
-        "n": "untitled",
         "t": "works"
       },
       {
@@ -14957,7 +14941,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "artforum",
@@ -15186,7 +15170,7 @@
   },
   "stroud-cornock-and-ernest-edmonds-meet-in-leicester": {
     "body": [
-      "Leicester-based artists <a href=\"https://www.lerandom.art/subjects/stroud-cornock\">Stroud Cornock</a> and <a href=\"https://www.lerandom.art/subjects/ernest-edmonds\">Ernest Edmonds</a>, working at Leicester School of Art and Leicester Technical College, recognize the potential of interactive computer-based art. The two begin working together and by 1970 <a href=\"m/leicester-polytechnic-is-formed.html\" data-moment=\"leicester-polytechnic-is-formed\">the colleges merged to form Leicester Polytechnic</a>. Leicester Polytechnic would for nearly a decade and a half become one of the most important centers of computer art in <a href=\"https://www.lerandom.art/subjects/britain\">Britain</a> and the world."
+      "Leicester-based artists <a href=\"https://www.lerandom.art/subjects/stroud-cornock\">Stroud Cornock</a> and <a href=\"https://www.lerandom.art/subjects/ernest-edmonds\">Ernest Edmonds</a>, working at Leicester School of Art and Leicester Technical College, recognize the potential of interactive computer-based art. The two begin working together and by 1970 <a href=\"m/leicester-polytechnic-is-formed.html\" data-moment=\"leicester-polytechnic-is-formed\">the colleges merged to form Leicester Polytechnic</a>. Leicester Polytechnic would for nearly a decade and a half become one of the most important centers of computer art in <a href=\"https://www.lerandom.art/subjects/uk\">Britain</a> and the world."
     ],
     "cite": [
       {
@@ -15211,7 +15195,7 @@
       "Leicester Technical College",
       "Leicester Polytechnic",
       "Leicester",
-      "Britain",
+      "UK",
       "Interactive Art",
       "collaboration"
     ],
@@ -15261,8 +15245,8 @@
         "t": "orgs"
       },
       {
-        "k": "britain",
-        "n": "Britain",
+        "k": "uk",
+        "n": "UK",
         "t": "places"
       },
       {
@@ -15461,7 +15445,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "pénétrables",
@@ -15568,7 +15552,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "sound activated mobile",
@@ -15897,7 +15881,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "some more beginnings",
@@ -16548,7 +16532,7 @@
       "mathematics",
       "kinetic art",
       "Japan",
-      "Britain",
+      "UK",
       "United States"
     ],
     "people": [
@@ -16616,8 +16600,8 @@
         "t": "places"
       },
       {
-        "k": "britain",
-        "n": "Britain",
+        "k": "uk",
+        "n": "UK",
         "t": "places"
       },
       {
@@ -16659,7 +16643,7 @@
   "slant-one-by-auro-lecci": {
     "body": [
       "The Italian artist and self-taught programmer, Lecci used <a href=\"m/john-backus-releases-fortran.html\" data-moment=\"john-backus-releases-fortran\">Fortran</a> and a pseudo-random number scheme to generate exact, linear forms inspired by Constructivism’s “machine aesthetic.”",
-      "<a href=\"https://spalterdigital.com/artists/auro-lecci/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Auro Lecci and courtesy of The Anne and Michael Spalter Digital Art Collection.</a>"
+      "<a href=\"https://spalterdigital.com/artists/auro-lecci/\" target=\"_blank\" rel=\"noopener\">Image is copyrighted by Auro Lecci and courtesy of The Anne and </a><a href=\"https://www.lerandom.art/subjects/michael-spalter\">Michael Spalter</a><a href=\"https://spalterdigital.com/artists/auro-lecci/\" target=\"_blank\" rel=\"noopener\"> Digital Art Collection.</a>"
     ],
     "cite": [
       {
@@ -18294,7 +18278,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "cross talk intermedia",
@@ -18349,7 +18333,7 @@
   },
   "square-tops-by-wen-ying-tsai": {
     "body": [
-      "The Chinese born <a href=\"https://www.lerandom.art/subjects/wen-ying-tsai\">Wen-Ying Tsai</a> was a pioneer of cybernetic and kinetic sculpture. His 1969 works, Harmonic Sculpture and Square Tops exemplify his critical contributions to the development of electronic art from kinetic sculpture."
+      "The Chinese born <a href=\"https://www.lerandom.art/subjects/tsai-wen-ying\">Wen-Ying Tsai</a> was a pioneer of cybernetic and kinetic sculpture. His 1969 works, Harmonic Sculpture and Square Tops exemplify his critical contributions to the development of electronic art from kinetic sculpture."
     ],
     "cite": [
       {
@@ -18375,7 +18359,7 @@
       "kinetic sculpture",
       "cybernetics",
       "kinetic art",
-      "Wen-Ying Tsai",
+      "Tsai Wen-Ying",
       "Square Tops",
       "Harmonic Sculpture",
       "Cybernetic Art",
@@ -18383,7 +18367,7 @@
       "China"
     ],
     "people": [
-      "wen-ying tsai"
+      "tsai wen-ying"
     ],
     "subjects": [
       {
@@ -18412,14 +18396,14 @@
         "t": "tech"
       },
       {
-        "k": "wen-ying tsai",
-        "n": "Wen-Ying Tsai",
+        "k": "tsai wen-ying",
+        "n": "Tsai Wen-Ying",
         "t": "people"
       },
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "harmonic sculpture",
@@ -18929,7 +18913,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "computer arts society",
@@ -19586,10 +19570,10 @@
   },
   "i-j-good-predicts-an-intelligence-explosion": {
     "body": [
-      "For ages, it was easy to imagine and fear but impossibly difficult to concretely understand the capabilities of an \"ultraintelligent machine\" or what the ramifications would be for humanity, if we did indeed make one. Back in the 1950s and '60s, statistician I. J. Good all too presciently did the imagining part.",
+      "For ages, it was easy to imagine and fear but impossibly difficult to concretely understand the capabilities of an \"ultraintelligent machine\" or what the ramifications would be for humanity, if we did indeed make one. Back in the 1950s and '60s, statistician <a href=\"https://www.lerandom.art/subjects/i-j-good\">I. J. Good</a> all too presciently did the imagining part.",
       "In 1965, Good, who had worked with <a href=\"https://www.lerandom.art/subjects/alan-turing\">Alan Turing</a> at Bletchley Park, published “Speculations Concerning the First Ultraintelligent Machine” in <em>Advances in Computers</em>. Such a machine, able to far surpass the intellectual activities of any person, could also design better machines, setting off what Good called an intelligence explosion. “The first ultraintelligent machine is the last invention that man need ever make,” he wrote, provided it told humans how to keep it under control.",
       "Good also consulted on Stanley Kubrick’s <em>2001: A Space Odyssey</em>, whose shipboard computer HAL kills most of the crew. Personally, I find it comforting to find contemporary fears perfectly mirrored in decades past. It defangs our current fears a bit, or perhaps only confirms them.",
-      "Jasia Reichardt, writing for Le Random, wrote about Good and the ultraintelligent machine: <a href=\"https://www.lerandom.art/editorial/the-ultraintelligent-machine-and-gaberbocchus-common-room\" target=\"_blank\" rel=\"noopener\">“The Ultraintelligent Machine and Gaberbocchus Common Room”</a>."
+      "<a href=\"https://www.lerandom.art/subjects/jasia-reichardt\">Jasia Reichardt</a>, writing for Le Random, wrote about Good and the ultraintelligent machine: <a href=\"https://www.lerandom.art/editorial/the-ultraintelligent-machine-and-gaberbocchus-common-room\" target=\"_blank\" rel=\"noopener\">“The Ultraintelligent Machine and </a><a href=\"https://www.lerandom.art/subjects/gaberbocchus-common-room\">Gaberbocchus Common Room</a><a href=\"https://www.lerandom.art/editorial/the-ultraintelligent-machine-and-gaberbocchus-common-room\" target=\"_blank\" rel=\"noopener\">”</a>."
     ],
     "cite": [
       {
@@ -19831,7 +19815,7 @@
     "body": [
       "In October 1966, a pattern recognition committee of the Institute of Electrical and Electronics Engineers (IEEE) held the first Pattern Recognition Workshop in Dorado, Puerto Rico. A second met in Delft, the <a href=\"https://www.lerandom.art/subjects/netherlands\">Netherlands</a>, in August 1968.",
       "The workshops served researchers applying neural networks and statistical methods to pattern recognition, speech and computer vision, approaches that Nils Nilsson notes came to be called “nonsymbolic” to set them apart from symbol-processing (expert system) AI. Later, this \"nonsymbolic\" or learning approach would be called connectionism; finally, it would be called deep learning.",
-      "The committee became the IEEE’s Technical Committee on Pattern Analysis and Machine Intelligence, which now sponsors the CVPR computer vision conference. Read about Luba Elliott's curation of the CVPR 2026 Art Gallery in <a href=\"https://www.lerandom.art/editorial/seeing-machines-luba-elliott-on-the-2026-cvpr-art-gallery\" target=\"_blank\" rel=\"noopener\">“Seeing Machines: Luba Elliott on the 2026 CVPR Art Gallery”</a>."
+      "The committee became the IEEE’s Technical Committee on Pattern Analysis and Machine Intelligence, which now sponsors the CVPR computer vision conference. Read about <a href=\"https://www.lerandom.art/subjects/luba-elliott\">Luba Elliott</a>'s curation of the CVPR 2026 Art Gallery in <a href=\"https://www.lerandom.art/editorial/seeing-machines-luba-elliott-on-the-2026-cvpr-art-gallery\" target=\"_blank\" rel=\"noopener\">“Seeing Machines: Luba Elliott on the 2026 CVPR Art Gallery”</a>."
     ],
     "cite": [
       {
@@ -20204,8 +20188,8 @@
   },
   "i-j-good-edits-the-scientist-speculates": {
     "body": [
-      "In 1962 the British mathematician I. J. Good, who had worked with Alan Turing at Bletchley Park, edited <em>The Scientist Speculates: An Anthology of Partly-Baked Ideas</em> for Heinemann in London.",
-      "It collected short speculative pieces by scientists on questions they could not yet test, from the nature of mind and consciousness to machine intelligence and life elsewhere in the universe. Good's interest in machines that could improve themselves led three years later to his essay on an “ultraintelligent machine,” an early statement of what is now called the intelligence explosion. The seminal Jasia Reichardt describes the ultraintelligent machine and its story in our Editorials: <a href=\"https://www.lerandom.art/editorial/the-ultraintelligent-machine-and-gaberbocchus-common-room\" target=\"_blank\" rel=\"noopener\">“The Ultraintelligent Machine and Gaberbocchus Common Room”</a>."
+      "In 1962 the British mathematician <a href=\"https://www.lerandom.art/subjects/i-j-good\">I. J. Good</a>, who had worked with <a href=\"https://www.lerandom.art/subjects/alan-turing\">Alan Turing</a> at Bletchley Park, edited <em>The Scientist Speculates: An Anthology of Partly-Baked Ideas</em> for Heinemann in London.",
+      "It collected short speculative pieces by scientists on questions they could not yet test, from the nature of mind and consciousness to machine intelligence and life elsewhere in the universe. Good's interest in machines that could improve themselves led three years later to his essay on an “ultraintelligent machine,” an early statement of what is now called the intelligence explosion. The seminal <a href=\"https://www.lerandom.art/subjects/jasia-reichardt\">Jasia Reichardt</a> describes the ultraintelligent machine and its story in our Editorials: <a href=\"https://www.lerandom.art/editorial/the-ultraintelligent-machine-and-gaberbocchus-common-room\" target=\"_blank\" rel=\"noopener\">“The Ultraintelligent Machine and </a><a href=\"https://www.lerandom.art/subjects/gaberbocchus-common-room\">Gaberbocchus Common Room</a><a href=\"https://www.lerandom.art/editorial/the-ultraintelligent-machine-and-gaberbocchus-common-room\" target=\"_blank\" rel=\"noopener\">”</a>."
     ],
     "cite": [
       {
@@ -20279,7 +20263,7 @@
       "Ah, the perceptron, one of the most (in)famous words in AI history. As <a href=\"m/frank-rosenblatt-introduces-the-perceptron.html\" data-moment=\"frank-rosenblatt-introduces-the-perceptron\">mentioned previously in this timeline</a>, <a href=\"https://www.lerandom.art/subjects/frank-rosenblatt\">Frank Rosenblatt</a> first described the Perceptron in 1958.",
       "In 1962 Spartan Books in Washington published Frank Rosenblatt's <em>Principles of Neurodynamics: Perceptrons and the Theory of Brain Mechanisms</em>. This 616-page tome was an account of the perceptron research he had begun at the Cornell Aeronautical Laboratory in 1957.",
       "The book set out the theory and experiments behind networks of simple neuron-like units that learn to classify patterns by adjusting their connections after each error, and it proved that such learning succeeds whenever a solution exists. Rosenblatt also discussed networks with more than one layer of adjustable units, which he could not yet train reliably.",
-      "Due to this unreliability in multi-layer perceptrons especially, seven years later in 1969 Minsky and Papert's <em>Perceptrons</em> supposedly disproved the effectiveness of perceptrons and thus neural networks. The impact of this cannot be overstated, as it essentially split the field into connectionism, favoring neural nets and Rosenblatt's perceptron, and symbolism, favoring hard-coded expert systems.",
+      "Due to this unreliability in multi-layer perceptrons especially, seven years later in 1969 <a href=\"https://www.lerandom.art/subjects/marvin-minsky\">Minsky</a> and Papert's <em>Perceptrons</em> supposedly disproved the effectiveness of perceptrons and thus neural networks. The impact of this cannot be overstated, as it essentially split the field into connectionism, favoring neural nets and Rosenblatt's perceptron, and symbolism, favoring hard-coded expert systems.",
       "It was the learning versus rules AI split that wouldn't really resolve until around 2010. For decades, neural networks were disavowed and denied funding, largely because \"Oh, hadn't they already been disproven by Minsky?\"",
       "They weren't and, of course, as you know. The connectionist/perceptron/neural net/Rosenblatt \"side\" would end up \"winning\" and is known today as deep learning."
     ],
@@ -20354,7 +20338,7 @@
   },
   "warren-s-mcculloch-publishes-embodiments-of-mind": {
     "body": [
-      "<em>Embodiments of Mind</em> is a collection of essays and lectures by Warren S. McCulloch and <a href=\"https://www.lerandom.art/subjects/walter-pitts\">Walter Pitts</a>, the inventors of the neural network (on paper) in 1943.",
+      "<em>Embodiments of Mind</em> is a collection of essays and lectures by <a href=\"https://www.lerandom.art/subjects/warren-s-mcculloch\">Warren S. McCulloch</a> and <a href=\"https://www.lerandom.art/subjects/walter-pitts\">Walter Pitts</a>, the inventors of the neural network (on paper) in 1943.",
       "The book includes that neural network founding paper itself, “A Logical Calculus of the Ideas Immanent in Nervous Activity” (1943), which provided the first mathematical blueprint for artificial neural networks and modern deep learning.",
       "It also includes a 1947 paper on how nervous circuits might recognize the same shape at any size or position. Twenty years after these astronomically important ideas were first formulated, this book helped repopularize the idea of neural networks and perceptrons in AI. This was the era pre-split, before neural networks were disdainfully prejudged (and underfunded) for nearly two decades."
     ],
@@ -20441,7 +20425,7 @@
   },
   "stanislaw-lem-publishes-the-cyberiad": {
     "body": [
-      "Karel Čapek gave us the word \"robot\" in <a href=\"m/karel-capek-s-play-r-u-r-names-the-robot.html\" data-moment=\"karel-capek-s-play-r-u-r-names-the-robot\"><em>R.U.R.</em></a>, previously mentioned in this timeline. In 1965 Stanisław Lem published a new book of dire warnings (er, I mean fables).",
+      "<a href=\"https://www.lerandom.art/subjects/karel-capek\">Karel Čapek</a> gave us the word \"robot\" in <a href=\"m/karel-capek-s-play-r-u-r-names-the-robot.html\" data-moment=\"karel-capek-s-play-r-u-r-names-the-robot\"><em>R.U.R.</em></a>, previously mentioned in this timeline. In 1965 Stanisław Lem published a new book of dire warnings (er, I mean fables).",
       "The book was <em>Cyberiada</em> and its heroes, Trurl and Klapaucius, are rival robot constructors who can build almost anything. In one story Trurl builds the Electronic Bard, a machine that writes poetry on command; asked for a love poem in the language of pure mathematics, it obliges, and its verse drives the kingdom's poets to despair.",
       "These fears have never been hard to imagine. What took sixty years was for fable to connect with theory, technology, data and compute to start turning into reality."
     ],
@@ -20614,7 +20598,7 @@
   "charles-csuri-carves-a-computer-defined-surface-in-wood": {
     "body": [
       "One of the earliest instances of a digitally modeled sculpture and something approaching 3D printing resulted from <a href=\"https://www.lerandom.art/subjects/charles-csuri\">Charles Csuri</a> testing a computer's outputs beyond the plotter and film.",
-      "For Numeric Milling (1968) one of his collaborators at Ohio State wrote a tool for defining a mathematical surface, the form later known as the Ferguson patch. Csuri had that surface carved in wood on a milling machine in the university’s engineering department. Robert Mallary's <a href=\"m/quad-iii-by-robert-mallary.html\" data-moment=\"quad-iii-by-robert-mallary\"><em>Quad III</em></a>, shown at Cybernetic Serendipity, is another example from this time of computer-generated sculpture."
+      "For Numeric Milling (1968) one of his collaborators at Ohio State wrote a tool for defining a mathematical surface, the form later known as the Ferguson patch. Csuri had that surface carved in wood on a milling machine in the university’s engineering department. <a href=\"https://www.lerandom.art/subjects/robert-mallary\">Robert Mallary</a>'s <a href=\"m/quad-iii-by-robert-mallary.html\" data-moment=\"quad-iii-by-robert-mallary\"><em>Quad III</em></a>, shown at <a href=\"https://www.lerandom.art/subjects/cybernetic-serendipity\">Cybernetic Serendipity</a>, is another example from this time of computer-generated sculpture."
     ],
     "cite": [
       {
@@ -20709,7 +20693,7 @@
   },
   "anni-albers-publishes-on-weaving": {
     "body": [
-      "Who is the most referenced historical artist to the code-based generation of today? It may very well be <a href=\"https://www.lerandom.art/subjects/anni-albers\">Anni Albers</a>. To this author alone, several artists have mentioned her, including Emily Xie, Tyler Hobbs, Snowfro and Travess. Many likely have a copy of this book on their shelves.",
+      "Who is the most referenced historical artist to the code-based generation of today? It may very well be <a href=\"https://www.lerandom.art/subjects/anni-albers\">Anni Albers</a>. To this author alone, several artists have mentioned her, including <a href=\"https://www.lerandom.art/subjects/emily-xie\">Emily Xie</a>, <a href=\"https://www.lerandom.art/subjects/tyler-hobbs\">Tyler Hobbs</a>, Snowfro and <a href=\"https://www.lerandom.art/subjects/travess-smalley\">Travess</a>. Many likely have a copy of this book on their shelves.",
       "The former <a href=\"https://www.lerandom.art/subjects/bauhaus\">Bauhaus</a> weaving workshop student and instructor had moved to the United States in 1933. <em>On Weaving</em> the book treats weaving as a structure of threads crossing at right angles, a grid of binary choices, over or under, from which patterns follow. Obviously \"a grid of binary choices\" offers a massive clue as to Albers's continued importance if you're reading this from an art and tech, contemporary perspective.",
       "In the book, Albers explained the loom's logic and traced weaving's history from ancient Peru (<a href=\"m/ancient-andean-textiles-weave-legacy-of-identity.html\" data-moment=\"ancient-andean-textiles-weave-legacy-of-identity\">Ancient Andean Textiles Weave Legacy of Identity</a>), whose textiles she collected, to industrial production. Her analysis of weaving as a system anticipates the view of textiles as a forerunner of computing, from the Jacquard loom onward."
     ],
@@ -20955,7 +20939,7 @@
   },
   "hanne-darboven-begins-her-number-constructions": {
     "body": [
-      "German artist Hanne Darboven's works of manual systems and numeric thinking in art recall Vera Molnár's <a href=\"m/vera-molnar-develops-her-machine-imaginaire.html\" data-moment=\"vera-molnar-develops-her-machine-imaginaire\">machine imaginaire</a> or Charles Csuri's \"After Artist\" series, pre-computational work that is clearly cognizant of computation.",
+      "German artist Hanne Darboven's works of manual systems and numeric thinking in art recall <a href=\"https://www.lerandom.art/subjects/vera-molnar\">Vera Molnár</a>'s <a href=\"m/vera-molnar-develops-her-machine-imaginaire.html\" data-moment=\"vera-molnar-develops-her-machine-imaginaire\">machine imaginaire</a> or <a href=\"https://www.lerandom.art/subjects/charles-csuri\">Charles Csuri</a>'s \"After Artist\" series, pre-computational work that is clearly cognizant of computation.",
       "Working in New York from 1966, Darboven began her <em>Konstruktionen</em>, drawings on graph paper built from systems of numbers. She soon based them on the calendar, adding the digits of each date to produce a sum she then wrote out by hand across page after page.",
       "The results, often filling hundreds of sheets, are records of time counted and written rather than pictures. They are the artifacts of rules and math rather than the divine hand. Darboven worked alongside <a href=\"https://www.lerandom.art/subjects/sol-lewitt\">Sol LeWitt</a> and New York's conceptual art scene, solidifying the connection between rules and conceptualism."
     ],
@@ -21366,7 +21350,7 @@
   },
   "yoko-ono-publishes-grapefruit": {
     "body": [
-      "One of the greatest and most referenced works of instruction-based art, <em>Grapefruit</em> remains a canonical example of the dematerialized art object popularized at the time by <a href=\"m/six-years-the-dematerialization-of-the-art-object-from-1966-to-1972-by-lucy-lipp.html\" data-moment=\"six-years-the-dematerialization-of-the-art-object-from-1966-to-1972-by-lucy-lipp\">Lucy Lippard</a>.",
+      "One of the greatest and most referenced works of instruction-based art, <em>Grapefruit</em> remains a canonical example of the dematerialized art object popularized at the time by <a href=\"https://www.lerandom.art/subjects/lucy-lippard\">Lucy Lippard</a>.",
       "Ono published the book on July 4, 1964 in Tokyo, itself consisting of instructions for paintings, music, events and objects, printed in an edition of 500. A work such as “Painting to Be Stepped On” exists as a written instruction that anyone can carry out and each performance of it differs.",
       "While perhaps Ono's most well-known work, the conceptual artist had written instruction pieces since the mid-1950s, which sat close to the early <a href=\"https://www.lerandom.art/subjects/fluxus\">Fluxus</a> event scores of George Brecht and La Monte Young.",
       "Artworks as sets of rules executed by others is the principle that later links conceptual art to code and technological art, as explored in <a href=\"https://www.lerandom.art/editorial/living-aesthetics-a-grammar-of-protocol-art-and-worldbuilding\" target=\"_blank\" rel=\"noopener\">“Living Aesthetics: A Grammar of Protocol Art and Worldbuilding”</a>."
@@ -21449,5 +21433,266 @@
       5
     ],
     "dateType": "published"
+  },
+  "stephen-todd-works-on-early-computer-art": {
+    "body": [
+      "This timeline is increasingly a source for firsthand accounts of generative art history. Todd shared some of his early computer work with us, stating:",
+      "“I suddenly remembered a bit of algorithmic 'art' from earlier: 1967. Modern day version <a href=\"https://jsfiddle.net/sjpt/x7qn9wgb/156/\" target=\"_blank\" rel=\"noopener\">https://jsfiddle.net/sjpt/x7qn9wgb/156/</a>. I was working as a vac job for IBM at the Technical University of Denmark in Lyngby, writing a package for the <a href=\"m/calcomp-565-drum-plotter-released.html\" data-moment=\"calcomp-565-drum-plotter-released\">Calcomp plotter</a>. I was asked to prepare a drawing of a super-egg for Piet Hein who had recently popularized the super-egg in a design for a Swedish roundabout. The idea was that a superegg has less sharp ends for cars than those seen in an elliptical roundabout. I liked the idea, but not that it was not continuously differentiable at the points; so I came up with an alternative based on the principle of a driver turning the steering wheel in a regular sine wave. The resulting curve is related to Lissajous figures and hypoid curves, but different. With parameters taken outside the original elongated roundabout it gives nice patterns. The fiddle above is rather more interactive than the 1 day turnaround (if lucky) that I had on runs with the plotter.”",
+      "Stephen Todd to Peter Bauman, February 9, 2024"
+    ],
+    "cite": [
+      {
+        "url": "https://jsfiddle.net/sjpt/x7qn9wgb/156/",
+        "label": "jsfiddle.net"
+      }
+    ],
+    "img": {
+      "src": "img/stephen-todd-works-on-early-computer-art-3012a4bd69.jpg",
+      "cap": "Stephen Todd’s 1967 roundabout curve, in his modern interactive version.",
+      "credit": "Stephen Todd, curve after his 1967 Calcomp plotter drawing, modern interactive version on JSFiddle. <a href=\"https://jsfiddle.net/sjpt/x7qn9wgb/156/\" target=\"_blank\" rel=\"noopener\">Image source</a>."
+    },
+    "tags": [
+      "Stephen Todd",
+      "plotter",
+      "Denmark",
+      "computer art",
+      "Plotter Art",
+      "Piet Hein",
+      "IBM",
+      "Technical University of Denmark",
+      "Lyngby",
+      "Sweden",
+      "CalComp plotter",
+      "superegg",
+      "Lissajous figures",
+      "mathematics",
+      "geometry",
+      "Algorithmic Art",
+      "CalComp"
+    ],
+    "people": [
+      "stephen todd"
+    ],
+    "subjects": [
+      {
+        "k": "algorithmic art",
+        "n": "Algorithmic Art",
+        "t": "themes"
+      },
+      {
+        "k": "geometry",
+        "n": "geometry",
+        "t": "themes"
+      },
+      {
+        "k": "mathematics",
+        "n": "mathematics",
+        "t": "themes"
+      },
+      {
+        "k": "calcomp plotter",
+        "n": "CalComp plotter",
+        "t": "tech"
+      },
+      {
+        "k": "computer art",
+        "n": "computer art",
+        "t": "tech"
+      },
+      {
+        "k": "lissajous figures",
+        "n": "Lissajous figures",
+        "t": "tech"
+      },
+      {
+        "k": "plotter",
+        "n": "plotter",
+        "t": "tech"
+      },
+      {
+        "k": "plotter art",
+        "n": "Plotter Art",
+        "t": "tech"
+      },
+      {
+        "k": "stephen todd",
+        "n": "Stephen Todd",
+        "t": "people"
+      },
+      {
+        "k": "calcomp",
+        "n": "CalComp",
+        "t": "orgs"
+      },
+      {
+        "k": "ibm",
+        "n": "IBM",
+        "t": "orgs"
+      },
+      {
+        "k": "denmark",
+        "n": "Denmark",
+        "t": "places"
+      },
+      {
+        "k": "sweden",
+        "n": "Sweden",
+        "t": "places"
+      },
+      {
+        "k": "lyngby",
+        "n": "Lyngby",
+        "t": "other"
+      },
+      {
+        "k": "piet hein",
+        "n": "Piet Hein",
+        "t": "other"
+      },
+      {
+        "k": "superegg",
+        "n": "superegg",
+        "t": "other"
+      },
+      {
+        "k": "technical university of denmark",
+        "n": "Technical University of Denmark",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      4,
+      5
+    ],
+    "dateType": ""
+  },
+  "richard-williams-develops-art1": {
+    "body": [
+      "The myth of computer art (that this Timeline's chapter titles are guilty of propagating. Hey, myths are useful) is that it took artists until the 1970s to engage with computers. Of course, this began in the '60s, hello <a href=\"m/bell-labs-founded.html\" data-moment=\"bell-labs-founded\">Bell Labs</a> and <a href=\"m/9-evenings-theatre-and-engineering-at-the-69th-regiment-armory.html\" data-moment=\"9-evenings-theatre-and-engineering-at-the-69th-regiment-armory\">9 Evenings</a>. It began with artists like <a href=\"m/charles-csuri-begins-experimenting-with-computers-and-art.html\" data-moment=\"charles-csuri-begins-experimenting-with-computers-and-art\">Charles Csuri</a>, <a href=\"m/exposition-of-musicelectronic-television-exhibition-by-nam-june-paik.html\" data-moment=\"exposition-of-musicelectronic-television-exhibition-by-nam-june-paik\">Nam June Paik</a>, <a href=\"m/harold-cohen-pioneers-ai-art-with-aaron.html\" data-moment=\"harold-cohen-pioneers-ai-art-with-aaron\">Harold Cohen</a>, <a href=\"m/vera-molnar-develops-her-machine-imaginaire.html\" data-moment=\"vera-molnar-develops-her-machine-imaginaire\">Vera Molnár</a>, the Bell Labs gang and others.",
+      "Well, one more of those \"others\" is Frederick Hammersley, an art faculty member at the University of New Mexico in 1968. It just so happened that at that same time and place, Richard Williams invented Art1, one of the first programs written so painters and artists (so not computer scientists) could make art on a computer.",
+      "In two years, Hammersley would go on to make 150-plus works with Art1 in a brilliant Bell-Labs-but-serendipitous collaboration between engineer and artist that echoed 9 Evenings and today's events like Rhizome's Seven on Seven.",
+      "The electrical engineer Williams developed the computer art program Art1 with the encouragement of the art department chair and renowned kinetic artist Charles Mattox. They aimed to transform UNM into a hub of high-tech creativity and, on a broader scale, sought to bridge the cultural gap that separated the worlds of art and science. The late '60s was still a time brimming with optimism about the potential of blurring the lines between art and science. Narrator voice: \"That optimism would not last the decade.\"",
+      "But perhaps the project would have been lost to history if it were not for Hammersley and his strong interest in Art1.",
+      "Patrick Frank’s book <em>Sharing Code: Art1, Frederick Hammersley, and the Dawn of Computer Art</em> draws attention to this fascinating early collaboration in computer art history."
+    ],
+    "cite": [
+      {
+        "url": "",
+        "label": "Patrick Frank. Sharing Code: Art1, Frederick Hammersley, and the Dawn of Computer Art. Museum of New Mexico Press, 2020."
+      },
+      {
+        "url": "https://sam.nmartmuseum.org/objects/21034/round-out",
+        "label": "sam.nmartmuseum.org"
+      },
+      {
+        "url": "https://alibi.com/art/art-magnified-sharing-code/",
+        "label": "alibi.com"
+      }
+    ],
+    "img": {
+      "src": "img/richard-williams-develops-art1-565534177b.jpg",
+      "cap": "Frederick Hammersley, ROUND OUT, 1969, a computer drawing made with Art1.",
+      "credit": "Frederick Hammersley, ROUND OUT, 1969. Computer-generated drawing. New Mexico Museum of Art, Gift of Frederick Hammersley Foundation, 2018 (2018.24.4). <a href=\"https://sam.nmartmuseum.org/objects/21034/round-out\" target=\"_blank\" rel=\"noopener\">Image source</a>."
+    },
+    "tags": [
+      "Mexico",
+      "collaboration",
+      "Technology and Art",
+      "Art1",
+      "Richard Williams",
+      "Charles Mattox",
+      "Frederick Hammersley",
+      "Patrick Frank",
+      "University of New Mexico",
+      "New Mexico",
+      "art and science",
+      "computer art",
+      "kinetic art",
+      "Sharing Code: Art1, Frederick Hammersley, and the Computer"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "art and science",
+        "n": "art and science",
+        "t": "themes"
+      },
+      {
+        "k": "collaboration",
+        "n": "collaboration",
+        "t": "themes"
+      },
+      {
+        "k": "technology and art",
+        "n": "Technology and Art",
+        "t": "themes"
+      },
+      {
+        "k": "computer art",
+        "n": "computer art",
+        "t": "tech"
+      },
+      {
+        "k": "kinetic art",
+        "n": "kinetic art",
+        "t": "tech"
+      },
+      {
+        "k": "mexico",
+        "n": "Mexico",
+        "t": "places"
+      },
+      {
+        "k": "new mexico",
+        "n": "New Mexico",
+        "t": "places"
+      },
+      {
+        "k": "art1",
+        "n": "Art1",
+        "t": "other"
+      },
+      {
+        "k": "charles mattox",
+        "n": "Charles Mattox",
+        "t": "other"
+      },
+      {
+        "k": "frederick hammersley",
+        "n": "Frederick Hammersley",
+        "t": "other"
+      },
+      {
+        "k": "patrick frank",
+        "n": "Patrick Frank",
+        "t": "other"
+      },
+      {
+        "k": "richard williams",
+        "n": "Richard Williams",
+        "t": "other"
+      },
+      {
+        "k": "sharing code: art1, frederick hammersley, and the computer",
+        "n": "Sharing Code: Art1, Frederick Hammersley, and the Computer",
+        "t": "other"
+      },
+      {
+        "k": "university of new mexico",
+        "n": "University of New Mexico",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      4,
+      5
+    ],
+    "dateType": ""
   }
 }

@@ -12,9 +12,10 @@
     "img": {
       "src": "img/the-great-exhibition-of-london-lights-early-spark-of-the-arts-crafts-movement.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Louis Haghe, The State Opening of the Great Exhibition, 1 May 1851. Colour lithograph, 1851. Victoria and Albert Museum, London (Public Domain, via Wikimedia Commons). <a href=\"https://commons.wikimedia.org/wiki/File:Crystal_Palace_-_Queen_Victoria_opens_the_Great_Exhibition.jpg\">Image source</a>",
       "width": 570,
-      "height": 412
+      "height": 412,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crystal_Palace_-_Queen_Victoria_opens_the_Great_Exhibition.jpg"
     },
     "tags": [
       "Frank Popper",
@@ -278,9 +279,10 @@
     "img": {
       "src": "img/william-morris-founds-decorative-arts-firm-morris-marshall-faulkner-co.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "William Morris, with birds by Philip Webb, design for Trellis wallpaper, 1862. William Morris Gallery, London (BLA472). <a href=\"https://www.wmgallery.org.uk/object/design-for-trellis-wallpaper/\">Image source</a>",
       "width": 1131,
-      "height": 1184
+      "height": 1184,
+      "sourceUrl": "https://www.wmgallery.org.uk/object/design-for-trellis-wallpaper/"
     },
     "tags": [
       "Frank Popper",
@@ -401,9 +403,10 @@
     "img": {
       "src": "img/edouard-manets-work-rejected-by-paris-salon.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Édouard Manet, Le Déjeuner sur l'herbe, 1863. Oil on canvas, 208 x 264.5 cm. Musée d'Orsay, Paris (Étienne Moreau-Nélaton donation, 1906). Image: Google Art Project, via Wikimedia Commons (Public Domain). <a href=\"https://commons.wikimedia.org/wiki/File:Edouard_Manet_-_Luncheon_on_the_Grass_-_Google_Art_Project.jpg\">Image source</a>",
       "width": 5649,
-      "height": 4389
+      "height": 4389,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edouard_Manet_-_Luncheon_on_the_Grass_-_Google_Art_Project.jpg"
     },
     "tags": [
       "London",
@@ -653,9 +656,10 @@
     "img": {
       "src": "img/james-clerk-maxwell-publishes-his-theoretical-analysis-of-watts-governor.png",
       "cap": "",
-      "credit": "",
+      "credit": "Portrait of James Clerk Maxwell, engraving probably derived from a photograph by Fergus of Greenock, before 1882. Image via Wikimedia Commons (Public Domain). <a href=\"https://commons.wikimedia.org/wiki/File:James_Clerk_Maxwell.jpg\">Image source</a>",
       "width": 331,
-      "height": 398
+      "height": 398,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:James_Clerk_Maxwell.jpg"
     },
     "tags": [
       "Cybernetic Serendipity",
@@ -763,9 +767,10 @@
     "img": {
       "src": "img/the-first-impressionist-exhibition.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Edgar Degas, The Rehearsal, c. 1874. Oil on canvas, 58.4 x 83.8 cm. The Burrell Collection, Glasgow Museums (35.246). Image via Wikimedia Commons (Public Domain). <a href=\"https://commons.wikimedia.org/wiki/File:Edgar_Degas,_The_Rehearsal,_c._1874..jpg\">Image source</a>",
       "width": 7832,
-      "height": 5315
+      "height": 5315,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edgar_Degas,_The_Rehearsal,_c._1874..jpg"
     },
     "tags": [
       "Degas",
@@ -872,9 +877,10 @@
     "img": {
       "src": "img/impressionist-movement-named.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Claude Monet, Impression, Sunrise, 1872. Oil on canvas, 48 x 63 cm. Musée Marmottan Monet, Paris. Image via Wikimedia Commons (Public Domain). <a href=\"https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg\">Image source</a>",
       "width": 5773,
-      "height": 4478
+      "height": 4478,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg"
     },
     "tags": [
       "Claude Monet",
@@ -949,9 +955,10 @@
     "img": {
       "src": "img/the-second-impressionist-exhibition.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Gustave Caillebotte, Young Man Playing the Piano, 1876. Oil on canvas. Artizon Museum, Tokyo. Photo: xiquinhosilva, via Wikimedia Commons, <a href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY 2.0</a>. <a href=\"https://commons.wikimedia.org/wiki/File:Gustave_Caillebotte_Jeune_homme_au_piano_(1876).jpg\">Image source</a>",
       "width": 6016,
-      "height": 4016
+      "height": 4016,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustave_Caillebotte_Jeune_homme_au_piano_(1876).jpg"
     },
     "tags": [
       "Paris",
@@ -1060,9 +1067,10 @@
     "img": {
       "src": "img/tulip-and-rose-by-morris-co.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "William Morris, Tulip and Rose, designed 1876. Woven wool furnishing fabric made by Morris & Co. Cooper Hewitt, Smithsonian Design Museum, New York, Gift of Harvey Smith, 1967-20-1-a,b. Catalogue photograph via Wikimedia Commons (Public Domain). <a href=\"https://commons.wikimedia.org/wiki/File:Textile,_Tulip_and_Rose,_1876_(CH_18455101-2).jpg\">Image source</a>",
       "width": 2487,
-      "height": 4096
+      "height": 4096,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Textile,_Tulip_and_Rose,_1876_(CH_18455101-2).jpg"
     },
     "tags": [
       "Morris & Co.",
@@ -1335,7 +1343,7 @@
   },
   "remington-releases-the-standard-number-2-typewriter": {
     "body": [
-      "One of the world’s first commercially successful typewriters, the Remington and Sons <a href=\"https://www.lerandom.art/subjects/standard\">Standard</a> Number 2 typewriter featured a QWERTY keyboard, which it helped to establish as the standard to this day. Its introduction revolutionized written communication. The typewriter would allow and inspire artists to create intricate, repetitive and pattern-based compositions through typed characters, offering a precursor to the digital generative art of today. The typewriter’s influence on artistic expression, particularly in the realms of concrete poetry and text-based art, helped shape the trajectory of generative art by introducing the concept of using machines and rules to generate visually striking and conceptually layered compositions."
+      "One of the world’s first commercially successful typewriters, the Remington and Sons Standard Number 2 typewriter featured a QWERTY keyboard, which it helped to establish as the standard to this day. Its introduction revolutionized written communication. The typewriter would allow and inspire artists to create intricate, repetitive and pattern-based compositions through typed characters, offering a precursor to the digital generative art of today. The typewriter’s influence on artistic expression, particularly in the realms of concrete poetry and text-based art, helped shape the trajectory of generative art by introducing the concept of using machines and rules to generate visually striking and conceptually layered compositions."
     ],
     "cite": [
       {
@@ -1452,11 +1460,6 @@
         "t": "tech"
       },
       {
-        "k": "standard",
-        "n": "Standard",
-        "t": "works"
-      },
-      {
         "k": "e. remington and sons",
         "n": "E. Remington and Sons",
         "t": "orgs"
@@ -1489,9 +1492,10 @@
     "img": {
       "src": "img/art-nouveau-is-born.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Gisbert Combaz, poster for the annual salon of La Libre Esthétique, Brussels, 1898. Colour lithograph. Library of Congress, Prints and Photographs Division (cph.3b52530), via Wikimedia Commons (Public Domain). <a href=\"https://commons.wikimedia.org/wiki/File:La_Libre_Esthétique_salon_annuel,_exhibition_poster,_1898.jpg\">Image source</a>",
       "width": 715,
-      "height": 1361
+      "height": 1361,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Libre_Esthétique_salon_annuel,_exhibition_poster,_1898.jpg"
     },
     "tags": [
       "Art Nouveau",
@@ -1603,9 +1607,10 @@
     "img": {
       "src": "img/seurat-kicks-of-post-impressionism-with-pointilism.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Georges Seurat, Study for Bathers at Asnières, c. 1883–84. Oil on wood panel. The Cleveland Museum of Art, Bequest of Leonard C. Hanna Jr., 1958.51 (Open Access). <a href=\"https://clevelandart.org/art/1958.51\">Image source</a>",
       "width": 864,
-      "height": 560
+      "height": 560,
+      "sourceUrl": "https://clevelandart.org/art/1958.51"
     },
     "tags": [
       "Georges Seurat",
@@ -1707,9 +1712,10 @@
     "img": {
       "src": "img/founding-of-the-american-institute-of-electrical-engineers.png",
       "cap": "",
-      "credit": "",
+      "credit": "Bookplate of the Library of the American Institute of Electrical Engineers, engraved by E. D. French, 1904. Reproduced in Harry Parker Ward, Some American College Bookplates (Columbus: Champlain Press, 1915), Harvard copy via HathiTrust and Wikimedia Commons (Public Domain). <a href=\"https://commons.wikimedia.org/wiki/File:American_Institute_of_Electrical_Engineers_bookplate.png\">Image source</a>",
       "width": 403,
-      "height": 610
+      "height": 610,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_Institute_of_Electrical_Engineers_bookplate.png"
     },
     "tags": [
       "Darko Fritz",
@@ -1887,7 +1893,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "arts and crafts exhibition society",
@@ -1953,9 +1959,10 @@
     "img": {
       "src": "img/john-venns-graphical-indication-of-randomness-appears-in-the-logic-of-chance.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "John Venn, path traced from the digits of pi (after William Shanks), in The Logic of Chance, 3rd ed. (London: Macmillan, 1888), ch. 5. Digitised by Project Gutenberg, eBook 57359. <a href=\"https://www.gutenberg.org/ebooks/57359\">Image source</a>",
       "width": 400,
-      "height": 369
+      "height": 369,
+      "sourceUrl": "https://www.gutenberg.org/ebooks/57359"
     },
     "tags": [
       "John Venn",
@@ -2061,7 +2068,7 @@
   },
   "the-arts-and-crafts-exhibition-society-holds-its-first-annual-exhibition": {
     "body": [
-      "These annual exhibitions by the <a href=\"m/arts-and-crafts-exhibition-society-officially-gives-arts-crafts-movement-its-nam.html\" data-moment=\"arts-and-crafts-exhibition-society-officially-gives-arts-crafts-movement-its-nam\">newly formed Arts and Crafts Exhibition Society</a> aimed to raise the cultural standing and awareness of craft work, such as ceramics, textiles, metalwork and furniture. According to the V&amp;A, “for many years in <a href=\"https://www.lerandom.art/subjects/britain\">Britain</a> exhibitions mounted by the Society were the only public platform for the decorative arts, and were critical in changing the way people looked at manufactured objects.”"
+      "These annual exhibitions by the <a href=\"m/arts-and-crafts-exhibition-society-officially-gives-arts-crafts-movement-its-nam.html\" data-moment=\"arts-and-crafts-exhibition-society-officially-gives-arts-crafts-movement-its-nam\">newly formed Arts and Crafts Exhibition Society</a> aimed to raise the cultural standing and awareness of craft work, such as ceramics, textiles, metalwork and furniture. According to the <a href=\"https://www.lerandom.art/subjects/victoria-and-albert-museum-v-a\">V&amp;A</a>, “for many years in <a href=\"https://www.lerandom.art/subjects/uk\">Britain</a> exhibitions mounted by the Society were the only public platform for the decorative arts, and were critical in changing the way people looked at manufactured objects.”"
     ],
     "cite": [
       {
@@ -2079,7 +2086,7 @@
     "tags": [
       "Arts and Crafts Exhibition Society",
       "Arts & Crafts",
-      "Britain",
+      "UK",
       "ceramics",
       "metalwork",
       "furniture",
@@ -2124,8 +2131,8 @@
         "t": "orgs"
       },
       {
-        "k": "britain",
-        "n": "Britain",
+        "k": "uk",
+        "n": "UK",
         "t": "places"
       }
     ],
@@ -2156,9 +2163,10 @@
     "img": {
       "src": "img/henri-poincare-publishes-seminal-paper-on-the-three-body-problem.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Henri Poincaré, photograph by Eugène Pirou, 1887. Via Wikimedia Commons (Public Domain). <a href=\"https://commons.wikimedia.org/wiki/File:Poincare.jpg\">Image source</a>",
       "width": 283,
-      "height": 388
+      "height": 388,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Poincare.jpg"
     },
     "tags": [
       "Henri Poincaré",
@@ -2240,9 +2248,10 @@
     "img": {
       "src": "img/paul-cezannes-first-solo-exhibition.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Paul Cézanne, Self-Portrait on a Blue Ground (Autoportrait sur fond bleu), c. 1895. Oil on canvas, 55 x 46 cm. Private collection. Image: The Yorck Project, via Wikimedia Commons (Public Domain). <a href=\"https://commons.wikimedia.org/wiki/File:Autoportrait_sur_fond_bleu,_par_Paul_Cézanne,_Yorck.jpg\">Image source</a>",
       "width": 2536,
-      "height": 3001
+      "height": 3001,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Autoportrait_sur_fond_bleu,_par_Paul_Cézanne,_Yorck.jpg"
     },
     "tags": [
       "Cézanne",
@@ -2322,9 +2331,10 @@
     "img": {
       "src": "img/un-coup-de-des-jamais-n-abolira-le-hasard-a-throw-of-the-dice-will-never-abolish.png",
       "cap": "",
-      "credit": "",
+      "credit": "Stéphane Mallarmé, Un coup de dés jamais n'abolira le hasard, autograph layout maquette, pages 16–17, April–May 1897. Image from the Sotheby's 2015 sale catalogue of the Mallarmé library, via Wikimedia Commons (Public Domain). <a href=\"https://commons.wikimedia.org/wiki/File:Un_coup_de_dés_jamais_n'abolira_le_hasard.png\">Image source</a>",
       "width": 618,
-      "height": 480
+      "height": 480,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Un_coup_de_dés_jamais_n'abolira_le_hasard.png"
     },
     "tags": [
       "Stéphane Mallarmé",
@@ -2437,9 +2447,10 @@
     "img": {
       "src": "img/hermann-muthesius-inspired-by-visit-to-great-britain.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Hermann and Anna Muthesius in their house, The Priory, Hammersmith, London, c. 1900. Photographer unknown. Via Wikimedia Commons (Public Domain). <a href=\"https://commons.wikimedia.org/wiki/File:Anna_und_Hermann_Muthesius_in_ihrem_Haus_The_Priory_,_Hammersmith,_um_1900.jpg\">Image source</a>",
       "width": 431,
-      "height": 359
+      "height": 359,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anna_und_Hermann_Muthesius_in_ihrem_Haus_The_Priory_,_Hammersmith,_um_1900.jpg"
     },
     "tags": [
       "Walter Gropius",
@@ -2449,7 +2460,7 @@
       "London",
       "Arts & Crafts",
       "Hermann Muthesius",
-      "Britain",
+      "UK",
       "Deutscher Werkbund",
       "craft",
       "design",
@@ -2507,8 +2518,8 @@
         "t": "orgs"
       },
       {
-        "k": "britain",
-        "n": "Britain",
+        "k": "uk",
+        "n": "UK",
         "t": "places"
       },
       {
@@ -2556,9 +2567,10 @@
     "img": {
       "src": "img/first-exhibition-of-fauvism.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Henri Matisse, Femme au chapeau (Woman with a Hat), 1905. Oil on canvas. San Francisco Museum of Modern Art, bequest of Elise S. Haas. <a href=\"https://www.sfmoma.org/read/matisses-femme-au-chapeau-from-scandal-to-icon/\">Image source</a>",
       "width": 1214,
-      "height": 1653
+      "height": 1653,
+      "sourceUrl": "https://www.sfmoma.org/read/matisses-femme-au-chapeau-from-scandal-to-icon/"
     },
     "tags": [
       "Matisse",
@@ -2654,9 +2666,10 @@
     "img": {
       "src": "img/cezanne-begins-his-mont-sainte-victoire-series.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Paul Cézanne, Mont Sainte-Victoire, 1904–06. Oil on canvas, 65 x 81 cm. Private collection. Image: The Yorck Project, via Wikimedia Commons (Public Domain). <a href=\"https://commons.wikimedia.org/wiki/File:Montagne_Sainte-Victoire,_par_Paul_Cézanne_111.jpg\">Image source</a>",
       "width": 3176,
-      "height": 2606
+      "height": 2606,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montagne_Sainte-Victoire,_par_Paul_Cézanne_111.jpg"
     },
     "tags": [
       "Georges Braque",
@@ -2926,9 +2939,10 @@
     "img": {
       "src": "img/the-ten-biggest-no-7-by-hilma-af-klint.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Hilma af Klint, Group IV, The Ten Largest, No. 7, Adulthood, 1907. Tempera on paper mounted on canvas. Courtesy of the Hilma af Klint Foundation, HaK108. Photo: Moderna Museet, Stockholm. <a href=\"https://www.artgallery.nsw.gov.au/artboards/hilma/the-ten-largest/\">Image source</a>",
       "width": 468,
-      "height": 621
+      "height": 621,
+      "sourceUrl": "https://www.artgallery.nsw.gov.au/artboards/hilma/the-ten-largest/"
     },
     "tags": [
       "Hilma af Klint",
@@ -3323,7 +3337,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "manifesto of futurism",
@@ -3415,7 +3429,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       }
     ],
     "linked": [],
@@ -3448,9 +3462,10 @@
     "img": {
       "src": "img/der-blaue-reiter-exhibition.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Wassily Kandinsky, cover of the Der Blaue Reiter almanac (Munich: Piper Verlag), 1912. Via Wikimedia Commons (Public Domain). <a href=\"https://commons.wikimedia.org/wiki/File:BlaueReiter.jpg\">Image source</a>",
       "width": 205,
-      "height": 268
+      "height": 268,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BlaueReiter.jpg"
     },
     "tags": [
       "Wassily Kandinsky",
@@ -3537,9 +3552,10 @@
     "img": {
       "src": "img/sonia-and-robery-delaunay-develop-orphism.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Robert Delaunay, Simultaneous Windows on the City (Les Fenêtres simultanées sur la ville), 1912. Oil on canvas with painted spruce frame, Hamburger Kunsthalle (HK-5055). Via Wikimedia Commons (Public Domain). <a href=\"https://commons.wikimedia.org/wiki/File:Delaunay-Windows.jpg\">Image source</a>",
       "width": 487,
-      "height": 567
+      "height": 567,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delaunay-Windows.jpg"
     },
     "tags": [
       "Electronic Art",
@@ -3636,7 +3652,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       }
     ],
     "linked": [],
@@ -3669,9 +3685,10 @@
     "img": {
       "src": "img/henry-van-de-velde-forms-the-weimar-school-of-arts-and-crafts.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Main building (Hauptgebäude) of the Bauhaus-Universität Weimar, designed by Henry van de Velde, built 1904–11. Photograph by Ralf Herrmann, 2006 (CC BY-SA 2.0 DE). <a href=\"https://commons.wikimedia.org/wiki/File:Bauhaus_weimar.jpg\">Image source</a>",
       "width": 1024,
-      "height": 683
+      "height": 683,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bauhaus_weimar.jpg"
     },
     "tags": [
       "Walter Gropius",
@@ -3811,9 +3828,10 @@
     "img": {
       "src": "img/nude-descending-a-staircase-no-2-by-marcel-duchamp.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Marcel Duchamp, Nude Descending a Staircase (No. 2), 1912, oil on canvas. Philadelphia Museum of Art, The Louise and Walter Arensberg Collection. <a href=\"https://www.philamuseum.org/collection/object/51449\">Image source</a>",
       "width": 3768,
-      "height": 6214
+      "height": 6214,
+      "sourceUrl": "https://www.philamuseum.org/collection/object/51449"
     },
     "tags": [
       "Marcel Duchamp",
@@ -3898,7 +3916,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "nude descending a staircase, no. 2",
@@ -3936,9 +3954,10 @@
     "img": {
       "src": "img/malevich-begins-developing-suprematism.jpeg",
       "cap": "",
-      "credit": "",
+      "credit": "Kazimir Malevich, The Knife Grinder or Principle of Glittering (Tochil'shchik, Printsip mel'kaniia), 1912–13, oil on canvas. Yale University Art Gallery, New Haven, Gift of Collection Société Anonyme, 1941.553. <a href=\"https://artgallery.yale.edu/collections/objects/45338\">Image source</a>",
       "width": 2986,
-      "height": 3000
+      "height": 3000,
+      "sourceUrl": "https://artgallery.yale.edu/collections/objects/45338"
     },
     "tags": [
       "Malevich",
@@ -4134,11 +4153,6 @@
         "t": "works"
       },
       {
-        "k": "standard",
-        "n": "Standard",
-        "t": "works"
-      },
-      {
         "k": "moma",
         "n": "MoMA",
         "t": "orgs"
@@ -4255,9 +4269,10 @@
     "img": {
       "src": "img/prismes-electriques-by-sonia-delaunay.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Sonia Delaunay, Prismes électriques (couleurs simultanées), 1914, oil on canvas, 250 x 250 cm. Centre Pompidou, Paris, Musée national d'art moderne; state purchase, 1958 (AM 3606 P). © Pracusa S.A. <a href=\"https://www.centrepompidou.fr/en/ressources/oeuvre/zS28bfR\">Image source</a>",
       "width": 620,
-      "height": 621
+      "height": 621,
+      "sourceUrl": "https://www.centrepompidou.fr/en/ressources/oeuvre/zS28bfR"
     },
     "tags": [
       "Sonia Delaunay",
@@ -4336,9 +4351,10 @@
     "img": {
       "src": "img/kazimir-malevich-stages-the-0-10-exhibition.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Installation view of Kazimir Malevich's Suprematist works at the 0,10 exhibition, Petrograd, 1915. Photograph attributed to the Bulla studio; photographer not credited. Original in the Central State Archive of Cinema, Photo and Phono Documents of St Petersburg (item D 3539), per Wikimedia Commons. <a href=\"https://commons.wikimedia.org/wiki/File:0.10_Exhibition.jpg\">Image source</a>",
       "width": 2000,
-      "height": 1452
+      "height": 1452,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:0.10_Exhibition.jpg"
     },
     "tags": [
       "Malevich",
@@ -4444,9 +4460,10 @@
     "img": {
       "src": "img/black-square-by-kazimir-malevich.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Kazimir Malevich, Black Square (Black Suprematic Square), 1915, oil on linen, 79.5 x 79.5 cm. State Tretyakov Gallery, Moscow. Photograph by Shakko (Sofia Bagdasarova), 2021 (CC BY-SA 4.0). <a href=\"https://commons.wikimedia.org/wiki/File:Black_Square_(Malevich,_1915,_GTG)_by_shakko_01.jpg\">Image source</a>",
       "width": 2115,
-      "height": 2117
+      "height": 2117,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Square_(Malevich,_1915,_GTG)_by_shakko_01.jpg"
     },
     "tags": [
       "Malevich",
@@ -4543,9 +4560,10 @@
     "img": {
       "src": "img/hugo-ball-founds-dadaism.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Hugo Ball in a Dada costume, Zurich, 1916. Studio photograph for a Cabaret Voltaire publicity postcard; photographer unknown. A large reproduction is in the Kunsthaus Zürich (Dada-Sammlung, inv. VI:5). <a href=\"https://commons.wikimedia.org/wiki/File:Hugo_Ball_Cabaret_Voltaire.jpg\">Image source</a>",
       "width": 507,
-      "height": 691
+      "height": 691,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hugo_Ball_Cabaret_Voltaire.jpg"
     },
     "tags": [
       "Frank Popper",
@@ -4672,9 +4690,10 @@
     "img": {
       "src": "img/composition-with-lines-by-piet-mondrian.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Piet Mondrian, Composition in Line, second state (Compositie in lijn, tweede staat), 1916–17, oil on canvas. Kröller-Müller Museum, Otterlo, KM 106.482. <a href=\"https://www.krollermuller.nl/en/collection/piet-mondriaan-composition-in-line-second-state-km-106-482\">Image source</a>",
       "width": 1200,
-      "height": 1210
+      "height": 1210,
+      "sourceUrl": "https://www.krollermuller.nl/en/collection/piet-mondriaan-composition-in-line-second-state-km-106-482"
     },
     "tags": [
       "A. Michael Noll",
@@ -5013,9 +5032,10 @@
     "img": {
       "src": "img/fountain-by-marcel-duchamp.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Alfred Stieglitz, photograph of Marcel Duchamp's Fountain (signed R. Mutt), 1917, taken at the 291 gallery, New York, after the Society of Independent Artists exhibition; entry tag visible, Marsden Hartley's The Warriors behind. Published in The Blind Man, no. 2, May 1917. The original urinal is lost. <a href=\"https://commons.wikimedia.org/wiki/File:Marcel_Duchamp,_1917,_Fountain,_photograph_by_Alfred_Stieglitz.jpg\">Image source</a>",
       "width": 1416,
-      "height": 1849
+      "height": 1849,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marcel_Duchamp,_1917,_Fountain,_photograph_by_Alfred_Stieglitz.jpg"
     },
     "tags": [
       "Marcel Duchamp",
@@ -5338,9 +5358,10 @@
     "img": {
       "src": "img/edouard-jeanneret-le-corbusier-and-amedee-ozenfant-form-purism.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Le Corbusier (Charles-Édouard Jeanneret), Nature morte verticale (Vertical Still Life), 1922, oil on canvas, 146.3 x 89.3 cm. Kunstmuseum Basel. <a href=\"https://en.wikipedia.org/wiki/File:Le_Corbusier_(Charles_Edouard_Jeanneret),_1922,_Nature_morte_verticale_(Vertical_Still_Life),_oil_on_canvas,_146.3_x_89.3_cm,_Kunstmuseum,_Basel.jpg\">Image source</a>",
       "width": 363,
-      "height": 600
+      "height": 600,
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:Le_Corbusier_(Charles_Edouard_Jeanneret),_1922,_Nature_morte_verticale_(Vertical_Still_Life),_oil_on_canvas,_146.3_x_89.3_cm,_Kunstmuseum,_Basel.jpg"
     },
     "tags": [
       "Le Corbusier",
@@ -5509,9 +5530,10 @@
     "img": {
       "src": "img/walter-gropius-founds-bauhaus.jpeg",
       "cap": "",
-      "credit": "",
+      "credit": "Bauhaus Dessau building, designed by Walter Gropius, built 1925–26. Photograph by Spyrosdrakopoulos, 2014 (CC BY-SA 4.0). <a href=\"https://commons.wikimedia.org/wiki/File:6265_Dessau.JPG\">Image source</a>",
       "width": 3872,
-      "height": 2592
+      "height": 2592,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:6265_Dessau.JPG"
     },
     "tags": [
       "László Moholy-Nagy",
@@ -5655,7 +5677,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "bauhaus",
@@ -5715,9 +5737,10 @@
     "img": {
       "src": "img/lhooq-by-marcel-duchamp.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Marcel Duchamp, L.H.O.O.Q., first conceived 1919. The copy shown is Francis Picabia's replica, on which Picabia drew the moustache and Duchamp later added the goatee and inscribed it April 1942. Present owner not identified. <a href=\"https://en.wikipedia.org/wiki/L.H.O.O.Q.\">Image source</a>",
       "width": 1742,
-      "height": 2250
+      "height": 2250,
+      "sourceUrl": "https://en.wikipedia.org/wiki/L.H.O.O.Q."
     },
     "tags": [
       "Marcel Duchamp",
@@ -5796,9 +5819,10 @@
     "img": {
       "src": "img/tradition-and-the-individual-talent-by-t-s-eliot.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "T. S. Eliot, photographed by Lady Ottoline Morrell, 1923. Snapshot, National Portrait Gallery, London (NPG Ax141430, per Wikimedia Commons). Cropped. <a href=\"https://commons.wikimedia.org/wiki/File:T.S._Eliot,_1923.JPG\">Image source</a>",
       "width": 587,
-      "height": 720
+      "height": 720,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:T.S._Eliot,_1923.JPG"
     },
     "tags": [
       "William Burroughs",
@@ -5910,9 +5934,10 @@
     "img": {
       "src": "img/marcel-duchamp-and-man-ray-create-rotary-glass-plates-precision-optics.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Marcel Duchamp, Rotary Glass Plates (Precision Optics), 1920, painted glass, iron, electric motor and mixed media. Yale University Art Gallery, New Haven, Gift of Collection Société Anonyme, 1941.446a-c. <a href=\"https://artgallery.yale.edu/collections/objects/43792\">Image source</a>",
       "width": 350,
-      "height": 490
+      "height": 490,
+      "sourceUrl": "https://artgallery.yale.edu/collections/objects/43792"
     },
     "tags": [
       "Marcel Duchamp",
@@ -5980,7 +6005,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "rotary glass plates (precision optics)",
@@ -6020,9 +6045,10 @@
     "img": {
       "src": "img/first-dadaist-fair-held-in-berlin.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Opening of the First International Dada Fair, Kunsthandlung Dr. Burchard, Berlin, 5 June 1920. Left to right: Hausmann, Hanna Höch, Dr. Burchard, Baader, W. Herzfelde, his wife, Dr. Oz, George Grosz, John Heartfield (as captioned). Photographer not credited. Published in Richard Huelsenbeck (ed.), Dada Almanach (Berlin: Erich Reiss Verlag, 1920); copy at the International Dada Archive, University of Iowa Libraries. <a href=\"https://commons.wikimedia.org/wiki/File:Grand_opening_of_the_first_Dada_exhibition,_Berlin,_5_June_1920.jpg\">Image source</a>",
       "width": 2515,
-      "height": 2096
+      "height": 2096,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grand_opening_of_the_first_Dada_exhibition,_Berlin,_5_June_1920.jpg"
     },
     "tags": [
       "Hannah Höch",
@@ -6194,7 +6220,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "obstruction",
@@ -6396,7 +6422,7 @@
   "random-poetry-generation-by-tristan-tzara": {
     "body": [
       "Possibly the most influential among the avant-garde experimentalist giants, Tzara says in his own words, in a 1920 manifesto later collected in <a href=\"https://monoskop.org/images/7/74/Tzara_Tristan_Sete_Manifestos_Dada.pdf\" target=\"_blank\" rel=\"noopener\">Seven Dada Manifestos</a>:",
-      "\"Take a newspaper. Take a pair of scissors. Choose an article as long as you are planning to make your poem. Cut out the article. Then cut out each of the words that make up this article and put them in a bag. <a href=\"https://www.lerandom.art/subjects/shake\">Shake</a> it gently. Then take out the scraps one after another in the order in which they left the bag. Copy conscientiously. The poem will be like you. And here you are a writer, infinitely original and endowed with a sensibility that is charming beyond the understanding of the vulgar.\"",
+      "\"Take a newspaper. Take a pair of scissors. Choose an article as long as you are planning to make your poem. Cut out the article. Then cut out each of the words that make up this article and put them in a bag. Shake it gently. Then take out the scraps one after another in the order in which they left the bag. Copy conscientiously. The poem will be like you. And here you are a writer, infinitely original and endowed with a sensibility that is charming beyond the understanding of the vulgar.\"",
       "Burroughs spoke of its influence on him in “The Third Mind interview” (1977) as have many others.",
       "-Vuk Ćosić"
     ],
@@ -6523,11 +6549,6 @@
       {
         "k": "seven dada manifestos",
         "n": "Seven Dada Manifestos",
-        "t": "works"
-      },
-      {
-        "k": "shake",
-        "n": "Shake",
         "t": "works"
       },
       {
@@ -6693,7 +6714,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "manifesto of futurism",
@@ -6741,9 +6762,10 @@
     "img": {
       "src": "img/students-responsible-for-teaching-themselves-at-bauhau-weaving-workshop.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "The weavers on the Bauhaus staircase, with Gunta Stölzl at centre and her students, Bauhaus Dessau, 1927 or 1928. Photograph attributed to T. Lux Feininger, who said Oskar Schlemmer arranged the group (Commons credits Schlemmer). <a href=\"https://commons.wikimedia.org/wiki/File:Oskar_Schlemmer_Webereiklasse_auf_der_Bauhaustreppe_1927.jpg\">Image source</a>",
       "width": 1766,
-      "height": 2350
+      "height": 2350,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oskar_Schlemmer_Webereiklasse_auf_der_Bauhaustreppe_1927.jpg"
     },
     "tags": [
       "Gunta Stölzl",
@@ -7063,9 +7085,10 @@
     "img": {
       "src": "img/rayograph-by-man-ray.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Man Ray, Untitled Rayograph, 1922, gelatin silver photogram, 23.5 x 17.8 cm. Image from the Christie's, New York sale listing; present owner not identified. <a href=\"https://en.wikipedia.org/wiki/File:Man_Ray,_1922,_Untitled_Rayograph.jpg\">Image source</a>",
       "width": 901,
-      "height": 1201
+      "height": 1201,
+      "sourceUrl": "https://en.wikipedia.org/wiki/File:Man_Ray,_1922,_Untitled_Rayograph.jpg"
     },
     "tags": [
       "Man Ray",
@@ -7162,9 +7185,10 @@
     "img": {
       "src": "img/oskar-schlemmer-premieres-triadisches-ballett.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Oskar Schlemmer, poster for performances of Das Triadische Ballett planned for Hannover, 19 and 26 February 1924 (not realised). Reproduced from Karin von Maur, Oskar Schlemmer: Oeuvrekatalog (Munich, 1979), per Wikimedia Commons. <a href=\"https://commons.wikimedia.org/wiki/File:Das_Triadische_Ballett,_Plakat_f%C3%BCr_eine_geplante_Auff%C3%BChrung_1924.jpg\">Image source</a>",
       "width": 736,
-      "height": 736
+      "height": 736,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Das_Triadische_Ballett,_Plakat_f%C3%BCr_eine_geplante_Auff%C3%BChrung_1924.jpg"
     },
     "tags": [
       "Oskar Schlemmer",
@@ -7329,7 +7353,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "assemblage",
@@ -7418,7 +7442,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "construction in enamel",
@@ -7476,9 +7500,10 @@
     "img": {
       "src": "img/composition-8-by-wassily-kandinsky.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Wassily Kandinsky, Composition 8 (Komposition 8), 1923, oil on canvas. Solomon R. Guggenheim Museum, New York. <a href=\"https://www.guggenheim.org/artwork/1924\">Image source</a>",
       "width": 3400,
-      "height": 2380
+      "height": 2380,
+      "sourceUrl": "https://www.guggenheim.org/artwork/1924"
     },
     "tags": [
       "Wassily Kandinsky",
@@ -7627,7 +7652,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "bauhaus",
@@ -7761,7 +7786,20 @@
     "body": [
       "<a href=\"https://www.lerandom.art/subjects/gunta-stolzl\">Gunta Stölzl</a> leads the women in the <a href=\"https://www.lerandom.art/subjects/bauhaus\">Bauhaus</a> weaving workshop to alter its aesthetic, emphasizing tapestries based on abstraction and countering the previous Art-Nouveau narrative."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://bauhauskooperation.de/en/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-1254",
+        "label": "bauhauskooperation.de"
+      },
+      {
+        "url": "https://collections.vam.ac.uk/item/O129977/sample-gunta-stolzl/",
+        "label": "collections.vam.ac.uk"
+      },
+      {
+        "url": "https://scalar.fas.harvard.edu/dib_in_german_studies/gunta-stlz-director-of-the-bauhaus-weaving-workshop",
+        "label": "scalar.fas.harvard.edu"
+      }
+    ],
     "img": {
       "cap": "Gunta Stölzl, Slit Tapestry Red/Green (Rot/Grün), 1927–1928. Cotton, wool, silk and linen, 150 × 110 cm. Bauhaus-Archiv, Berlin. A later example of the workshop’s abstract weaving.",
       "credit": "© Stölzl Estate / VG Bild-Kunst, Bonn. Reproduction: Gunta Stölzl Catalogue of Works. <a href=\"https://guntastoelzl.kleio.com/10_all-works/1354_slit-tapestry-wall-hanging-rot-gr-n-bauhaus-dessau\">Image source</a>.",
@@ -7862,9 +7900,10 @@
     "img": {
       "src": "img/constructivists-publish-their-manifesto-in-lef.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "El Lissitzky, Beat the Whites with the Red Wedge (Klinom krasnym bei belykh), 1919–20, lithograph poster printed in red and black. Published by UNOVIS, Vitebsk. <a href=\"https://commons.wikimedia.org/wiki/File:Klinom_Krasnim_by_El_Lisitskiy_(1920).jpg\">Image source</a>",
       "width": 849,
-      "height": 685
+      "height": 685,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Klinom_Krasnim_by_El_Lisitskiy_(1920).jpg"
     },
     "tags": [
       "Art and Technology",
@@ -7903,7 +7942,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "constructivist manifesto",
@@ -7951,9 +7990,10 @@
     "img": {
       "src": "img/mavo-movement-founded-in-japan.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Mavo performance, 1924. Photograph published in Mavo, no. 3 (August 1924); photographer unknown. Reproduced in Gennifer Weisenfeld, Mavo: Japanese Artists and the Avant-Garde, 1905–1931 (University of California Press, 2002), p. 238. <a href=\"https://commons.wikimedia.org/wiki/File:MAVO_Dance.jpg\">Image source</a>",
       "width": 637,
-      "height": 863
+      "height": 863,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MAVO_Dance.jpg"
     },
     "tags": [
       "Groupe de Recherche d'Art Visuel (GRAV)",
@@ -8162,9 +8202,10 @@
     "img": {
       "src": "img/counter-composition-v-by-theo-van-doesburg.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Theo van Doesburg, Counter-Composition V (Contra-compositie V), 1924, oil on canvas. Stedelijk Museum Amsterdam, A 567; inherited by Nelly van Doesburg and bought by the museum from her in 1936. <a href=\"https://commons.wikimedia.org/wiki/File:Theo_van_Doesburg_Counter-CompositionV_(1924).jpg\">Image source</a>",
       "width": 1441,
-      "height": 1462
+      "height": 1462,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Theo_van_Doesburg_Counter-CompositionV_(1924).jpg"
     },
     "tags": [
       "Theo van Doesburg",
@@ -8252,9 +8293,10 @@
     "img": {
       "src": "img/the-isms-of-art-by-hans-arp-and-el-lissitzky.png",
       "cap": "",
-      "credit": "",
+      "credit": "Cover of Die Kunstismen / Les ismes de l'art / The Isms of Art, 1914–1924, edited by El Lissitzky and Hans Arp (Erlenbach-Zürich, Munich, Leipzig: Eugen Rentsch Verlag, 1925). <a href=\"https://antiquarianauctions.com/lots/el-lissitzky-h-arp-die-kunstismen-isms-of-art-erlenbach-etc-1925-fine-copy-another\">Image source</a>",
       "width": 440,
-      "height": 447
+      "height": 447,
+      "sourceUrl": "https://antiquarianauctions.com/lots/el-lissitzky-h-arp-die-kunstismen-isms-of-art-erlenbach-etc-1925-fine-copy-another"
     },
     "tags": [
       "Jean Arp",
@@ -8464,7 +8506,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "bell labs",
@@ -8513,9 +8555,10 @@
     "img": {
       "src": "img/international-exposition-of-modern-industrial-and-decorative-arts-paris.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Period postcard view of the Exposition internationale des arts décoratifs et industriels modernes, Paris, 1925. Postcard publisher and photographer not identified; reproduction photographed by SiefkinDR for Wikimedia Commons. <a href=\"https://commons.wikimedia.org/wiki/File:Postcard_of_Exposition_des_Art_Decoratifs_et_Industriels_Modernes.jpg\">Image source</a>",
       "width": 2414,
-      "height": 1450
+      "height": 1450,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Postcard_of_Exposition_des_Art_Decoratifs_et_Industriels_Modernes.jpg"
     },
     "tags": [
       "Paris",
@@ -8546,7 +8589,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "international exposition of modern industrial and decorative arts",
@@ -8591,9 +8634,10 @@
     "img": {
       "src": "img/the-bauhaus-moves-to-the-iconic-dessau-campus.jpeg",
       "cap": "",
-      "credit": "",
+      "credit": "Bauhaus Dessau building, designed by Walter Gropius, built 1925–26. Photograph by Lelikron, 2009 (CC BY-SA 3.0 or GFDL). <a href=\"https://commons.wikimedia.org/wiki/File:Dessau_Bauhaus_neu.JPG\">Image source</a>",
       "width": 2592,
-      "height": 1944
+      "height": 1944,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dessau_Bauhaus_neu.JPG"
     },
     "tags": [
       "Walter Gropius",
@@ -8886,9 +8930,10 @@
     "img": {
       "src": "img/gunta-stolzl-named-director-of-bauhaus-weaving-workshop.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "The masters of the Bauhaus on the roof of the Bauhaus studio building, Dessau, 1926. Photographer unknown; shown here as a newspaper reproduction. Left to right: Albers, Scheper, Muche, Moholy-Nagy, Bayer, Schmidt, Gropius, Breuer, Kandinsky, Klee, Feininger, Stölzl, Schlemmer. A print is held by the Bauhaus-Archiv Berlin. <a href=\"https://bauhauskooperation.de/en/knowledge/the-bauhaus/works/photography/the-masters-on-the-roof-of-the-bauhaus-studio-building-in-dessau\">Image source</a>",
       "width": 1180,
-      "height": 708
+      "height": 708,
+      "sourceUrl": "https://bauhauskooperation.de/en/knowledge/the-bauhaus/works/photography/the-masters-on-the-roof-of-the-bauhaus-studio-building-in-dessau"
     },
     "tags": [
       "Gunta Stölzl",
@@ -9058,7 +9103,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "the non-objective world",
@@ -9187,9 +9232,10 @@
     "img": {
       "src": "img/philo-farnsworth-invents-the-image-dissector.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Philo T. Farnsworth, image dissector tube (video camera tube), designed 1930. Photograph published in Philo T. Farnsworth, 'Scanning with an electric pencil,' Television News, vol. 1, no. 1 (March–April 1931), p. 51, fig. A. <a href=\"https://commons.wikimedia.org/wiki/File:Farnsworth_image_dissector_tube.jpg\">Image source</a>",
       "width": 839,
-      "height": 486
+      "height": 486,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Farnsworth_image_dissector_tube.jpg"
     },
     "tags": [
       "Philo Farnsworth",
@@ -9259,9 +9305,10 @@
     "img": {
       "src": "img/vannevar-bush-constructs-his-differential-analyser.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Differential analyser, University of Cambridge, 1938. Copyright Department of Computer Science and Technology, University of Cambridge, reproduced by permission (CC BY 2.0 UK). <a href=\"https://www.cl.cam.ac.uk/Relics/archive_photos.html\">Image source</a>",
       "width": 1596,
-      "height": 1166
+      "height": 1166,
+      "sourceUrl": "https://www.cl.cam.ac.uk/Relics/archive_photos.html"
     },
     "tags": [
       "Cybernetic Serendipity",
@@ -9450,9 +9497,10 @@
     "img": {
       "src": "img/highway-and-byways-by-paul-klee.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Paul Klee, Hauptweg und Nebenwege (Highway and Byways), 1929, oil on canvas, 83.7 x 67.5 cm. Museum Ludwig, Cologne. <a href=\"https://en.wikipedia.org/wiki/Highway_and_Byways\">Image source</a>",
       "width": 920,
-      "height": 1120
+      "height": 1120,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Highway_and_Byways"
     },
     "tags": [
       "Paul Klee",
@@ -9546,9 +9594,10 @@
     "img": {
       "src": "img/arithmetic-composition-by-theo-van-doesburg.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Theo van Doesburg, Study for Arithmetic Composition, probably 1929–30, ink, pencil and watercolour on squared paper. Kröller-Müller Museum, Otterlo, inv. KM 126.798; Van Moorsel donation to the Dutch State, 1981.",
       "width": 1200,
-      "height": 1239
+      "height": 1239,
+      "sourceUrl": "https://www.krollermuller.nl/en/collection/theo-van-doesburg-study-for-arithmetic-composition-km-126-798"
     },
     "tags": [
       "Theo van Doesburg",
@@ -9628,7 +9677,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "de stijl",
@@ -9778,9 +9827,10 @@
     "img": {
       "src": "img/composition-with-red-blue-and-yellow-by-piet-mondrian.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Piet Mondrian, Composition with Red, Blue and Yellow (also catalogued as Composition II in Red, Blue, and Yellow), 1930, oil on canvas. Kunsthaus Zürich, gift of Alfred Roth, 1987, inv. 1987/0028.",
       "width": 5918,
-      "height": 6000
+      "height": 6000,
+      "sourceUrl": "https://collection.kunsthaus.ch/en/collection/item/2455/"
     },
     "tags": [
       "Piet Mondrian",
@@ -10435,11 +10485,6 @@
         "k": "aesthetic measure",
         "n": "Aesthetic Measure",
         "t": "works"
-      },
-      {
-        "k": "david",
-        "n": "David",
-        "t": "works"
       }
     ],
     "linked": [
@@ -10570,7 +10615,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "bauhaus",
@@ -10717,9 +10762,10 @@
     "img": {
       "src": "img/endless-rhythm-by-robert-delaunay.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Robert Delaunay, Endless Rhythm (Rythme sans fin), 1934, oil paint on canvas. Tate, London, purchased 1970, T01233.",
       "width": 2304,
-      "height": 2897
+      "height": 2897,
+      "sourceUrl": "https://www.tate.org.uk/art/artworks/delaunay-endless-rhythm-t01233"
     },
     "tags": [
       "kinetic art",
@@ -10810,9 +10856,10 @@
     "img": {
       "src": "img/joaquin-torres-garcia-brings-geometric-abstraction-to-latin-america.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Joaquín Torres-García, Figuras sobre uma estrutura (Figures on a structure), 1930, oil on canvas mounted on cement-fibre board. Cid Collection, held provisionally by the Museu de Arte Contemporânea da USP, São Paulo.",
       "width": 736,
-      "height": 915
+      "height": 915,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joaqu%C3%ADn_Torres_Garc%C3%ADa_-_Figuras_sobre_uma_estrutura,_1930.jpg"
     },
     "tags": [
       "Joaquín Torres-García",
@@ -11005,7 +11052,7 @@
   },
   "alan-turing-describes-the-turing-machine": {
     "body": [
-      "Considered foundational to the development of computer science, <a href=\"https://www.lerandom.art/subjects/turing\">Turing</a>’s “automatic machines” were computational devices consisting of readable and writeable tape that could implement computer algorithms."
+      "Considered foundational to the development of computer science, <a href=\"https://www.lerandom.art/subjects/alan-turing\">Turing</a>’s “automatic machines” were computational devices consisting of readable and writeable tape that could implement computer algorithms."
     ],
     "cite": [
       {
@@ -11026,7 +11073,6 @@
       "src": "img/alan-turing-describes-the-turing-machine-f74569643f.png"
     },
     "tags": [
-      "Turing",
       "Alan Turing",
       "Turing machine",
       "algorithms",
@@ -11036,8 +11082,7 @@
       "computing history"
     ],
     "people": [
-      "alan turing",
-      "turing"
+      "alan turing"
     ],
     "subjects": [
       {
@@ -11073,11 +11118,6 @@
       {
         "k": "alan turing",
         "n": "Alan Turing",
-        "t": "people"
-      },
-      {
-        "k": "turing",
-        "n": "Turing",
         "t": "people"
       }
     ],
@@ -11667,7 +11707,7 @@
     "img": {
       "src": "img/exhibition-by-31-women-at-peggy-guggenheims-the-art-of-this-century.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Cover of the printed brochure for Exhibition by 31 Women, Art of This Century, 30 West 57th Street, New York, January 1943.",
       "width": 343,
       "height": 315
     },
@@ -12189,9 +12229,10 @@
     "img": {
       "src": "img/birth-of-art-informel-in-france.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Wols, Le fantôme bleu (The Blue Phantom), 1951, oil on canvas, 73 x 60 cm. Museum Ludwig, Cologne. © VG Bild-Kunst, Bonn.",
       "width": 460,
-      "height": 593
+      "height": 593,
+      "sourceUrl": "https://www.flickr.com/photos/quadralectics/54059417363"
     },
     "tags": [
       "North America",
@@ -12772,7 +12813,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "luminous structures",
@@ -13808,9 +13849,10 @@
     "img": {
       "src": "img/the-mathematical-basis-of-the-arts-by-joseph-schillinger.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Joseph Schillinger with the Rhythmicon, 1932. Photographer unknown.",
       "width": 169,
-      "height": 348
+      "height": 348,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joseph_Schillinger_and_the_Rhythmicon.jpg"
     },
     "tags": [
       "Joseph Schillinger",
@@ -14109,7 +14151,7 @@
     "linked": [],
     "echoes": [
       "informatrix-by-edward-zajec",
-      "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html",
+      "logo-language-developed",
       "computer-art-grows"
     ],
     "eds": [],
@@ -14940,7 +14982,7 @@
   "leonardo-torres-quevedo-builds-el-ajedrecista-a-chess-playing-automaton": {
     "body": [
       "Spanish engineer <a href=\"https://www.lerandom.art/subjects/leonardo-torres-quevedo\">Leonardo Torres Quevedo</a> built the chess-playing automaton, El Ajedrecista (The Chess Player), in 1912 and presented it in <a href=\"https://www.lerandom.art/subjects/paris\">Paris</a> in 1914.",
-      "Incapable of playing a full game from scratch, the machine played one specific endgame, its own king and rook against a human’s lone king. It could sense the pieces electrically and move its own with a mechanical arm. A 1915 <em>Scientific American</em> account reported Quevedo's claim that “an automaton can do many things that are popularly classed with thought.” A second version, built in 1920, moved the pieces with electromagnets under the board.",
+      "Incapable of playing a full game from scratch, the machine played one specific endgame, its own king and rook against a human’s lone king. It could sense the pieces electrically and move its own with a mechanical arm. A 1915 <em><a href=\"https://www.lerandom.art/subjects/scientific-american\">Scientific American</a></em> account reported Quevedo's claim that “an automaton can do many things that are popularly classed with thought.” A second version, built in 1920, moved the pieces with electromagnets under the board.",
       "This machine would even impact the budding field of cybernetics, when in January 1951 Quevedo's son <a href=\"https://www.lerandom.art/subjects/gonzalo-torres-quevedo\">Gonzalo Torres-Quevedo</a> presented both machines at a Paris conference, where the 1920 machine defeated none other than <a href=\"https://www.lerandom.art/subjects/norbert-wiener\">Norbert Wiener</a>."
     ],
     "cite": [
@@ -15890,7 +15932,7 @@
     "body": [
       "It was around this mid-century turn in history when the advancements in neuroscience provided scientists in many different fields, a better understanding of the inner-workings of the human brain, neurons. This is critical because science and technology influence each other. And this work would provide future computer scientists (see Rosenblatt below) a brain-based model on which to inspire their work.",
       "The paper itself was by McGill University psychologist <a href=\"https://www.lerandom.art/subjects/donald-o-hebb\">Donald O. Hebb</a>, who published <em>The Organization of Behavior: A Neuropsychological Theory</em>. He proposed that when one nerve cell repeatedly takes part in firing another, some growth process or metabolic change makes the first more efficient at firing the second. Frequently repeated stimulation would build groups of such cells, which he called cell assemblies, and he described a series of their actions as the thought process.",
-      "Early AI researcher <a href=\"https://www.lerandom.art/subjects/frank-rosenblatt\">Frank Rosenblatt</a> named Hebb’s work as an inspiration for his 1958 perceptron. The slogan “cells that fire together, wire together” came later, from the neurobiologist <a href=\"https://www.lerandom.art/subjects/carla-shatz\">Carla Shatz</a> in a 1992 <em>Scientific American</em> article."
+      "Early AI researcher <a href=\"https://www.lerandom.art/subjects/frank-rosenblatt\">Frank Rosenblatt</a> named Hebb’s work as an inspiration for his 1958 perceptron. The slogan “cells that fire together, wire together” came later, from the neurobiologist <a href=\"https://www.lerandom.art/subjects/carla-shatz\">Carla Shatz</a> in a 1992 <em><a href=\"https://www.lerandom.art/subjects/scientific-american\">Scientific American</a></em> article."
     ],
     "cite": [
       {

@@ -653,7 +653,7 @@
     "echoes": [
       "space-invaders-asteroids-and-pac-man-released",
       "atari-founded",
-      "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html"
+      "logo-language-developed"
     ],
     "eds": [
       "dmitri-cherniak-on-strictly-for-art",
@@ -1341,7 +1341,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "mugra",
@@ -1891,11 +1891,6 @@
         "t": "works"
       },
       {
-        "k": "david",
-        "n": "David",
-        "t": "works"
-      },
-      {
         "k": "music and connectionism",
         "n": "Music and Connectionism",
         "t": "works"
@@ -2147,7 +2142,7 @@
     "echoes": [
       "lauren-lee-mccarthy-creates-p5-js",
       "grace-murray-hopper-invents-general-programming-languages",
-      "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html"
+      "logo-language-developed"
     ],
     "eds": [
       "robbie-fitzpatrick-on-basel-social-club-welcoming-the-barbarians",
@@ -2555,7 +2550,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "les artistes et la lumière",
@@ -2733,7 +2728,7 @@
       "One of four similar works in a series, this piece was included by <a href=\"https://www.lerandom.art/subjects/frank-popper\">Frank Popper</a> in Art of the Electronic Age. <a href=\"https://www.lerandom.art/subjects/joan-truckenbrod\">Joan Truckenbrod</a>’s Sociotecture series, initiated in 1991, explored the unseen dimensions of the human experience. Informed by the mythology of Native American beliefs in animating spirits, Truckenbrod’s algorithmic images embody these invisible forces. The series gradually evolves, mixing mathematical symbols within a natural ecology of leaves and flower petals. The project was inspired by emotional echoes of <a href=\"https://www.lerandom.art/subjects/gertrude-stein\">Gertrude Stein</a>, <a href=\"https://www.lerandom.art/subjects/john-cage\">John Cage</a>’s avant-garde methods and <a href=\"https://www.lerandom.art/subjects/pierre-boulez\">Pierre Boulez</a> and <a href=\"https://www.lerandom.art/subjects/george-benjamin\">George Benjamin</a>’s compositions.",
       "Truckenbrod herself <a href=\"http://www.wmgallery.com/trucken/truc_sta.html\" target=\"_blank\" rel=\"noopener\">wrote</a> of the work:",
       "“To create my early algorithmic images I created my own personal geometry that embodied these animating spirits. Coding was a vehicle for giving form to algebraic formulas that scientifically describes invisible forces such as how light waves reflect off of irregular surfaces.”",
-      "<a href=\"https://podcasts.apple.com/us/podcast/le-random/id1726153340?i=1000641955115\" target=\"_blank\" rel=\"noopener\">Listen to this author’s (Peter Bauman) Le Random’s talk with Truckenbrod here.</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-5-artist-programmer-era-1970s\">transcript</a>)</span>"
+      "<a href=\"https://podcasts.apple.com/us/podcast/le-random/id1726153340?i=1000641955115\" target=\"_blank\" rel=\"noopener\">Listen to this author’s (</a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://podcasts.apple.com/us/podcast/le-random/id1726153340?i=1000641955115\" target=\"_blank\" rel=\"noopener\">) Le Random’s talk with Truckenbrod here.</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-5-artist-programmer-era-1970s\">transcript</a>)</span>"
     ],
     "cite": [
       {
@@ -3664,11 +3659,6 @@
         "t": "people"
       },
       {
-        "k": "david",
-        "n": "David",
-        "t": "works"
-      },
-      {
         "k": "crypto '90",
         "n": "CRYPTO '90",
         "t": "orgs"
@@ -3749,11 +3739,6 @@
         "k": "mpeg-1",
         "n": "MPEG-1",
         "t": "tech"
-      },
-      {
-        "k": "standard",
-        "n": "Standard",
-        "t": "works"
       }
     ],
     "linked": [],
@@ -3972,7 +3957,7 @@
       "Stephen Scrivener",
       "Dominic Boreham",
       "Leicester",
-      "Britain"
+      "UK"
     ],
     "people": [
       "dominic boreham",
@@ -4016,8 +4001,8 @@
         "t": "orgs"
       },
       {
-        "k": "britain",
-        "n": "Britain",
+        "k": "uk",
+        "n": "UK",
         "t": "places"
       },
       {
@@ -4953,12 +4938,12 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "legend i",
@@ -5138,9 +5123,10 @@
     "img": {
       "src": "img/placeholder-by-brenda-laurel-and-rachel-strickland.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Placeholder, 1992, Brenda Laurel and Rachel Strickland, Interval Research Corporation and The Banff Centre. Collage of design drawings, computer models, VR framegrabs and installation photography, from Rob Tow's Placeholder archive; used as the back cover of ACM SIGGRAPH Computer Graphics, vol. 28, no. 2 (May 1994). <a href=\"https://www.tauzero.com/Placeholder/Hypertext/Images/Images_1.html\">Image source</a>.",
       "width": 334,
-      "height": 388
+      "height": 388,
+      "sourceUrl": "https://www.tauzero.com/Placeholder/Hypertext/Images/Images_1.html"
     },
     "tags": [
       "Interval Research",
@@ -5198,11 +5184,6 @@
       {
         "k": "banff centre",
         "n": "Banff Centre",
-        "t": "orgs"
-      },
-      {
-        "k": "interval",
-        "n": "Interval",
         "t": "orgs"
       },
       {
@@ -5472,7 +5453,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "when the machine made art",
@@ -6156,7 +6137,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "genetic images",
@@ -6350,7 +6331,16 @@
     "body": [
       "“I recall being surprised by how the computer could do so much at the beckon of a few lines of code.” -John Maeda This profound work marks Maeda’s return to computer programming using the PostScript language after a long hiatus. Inspired by his typography teacher’s questions about Maeda’s ultimate motivation in life, Maeda crafted this piece. He made it for the NeXT computer, with the piece itself featuring an infinite loop, symbolizing the endless potential of digital creation. This concept would appear in future books, such as How To Speak Machine (2019). Maeda halted the drawing at the 10,000th loop stroke. This work not only represents a pivotal moment in Maeda’s career but also reflects his journey from aspiring classical typographer to digital pioneer. AI Infinity holds deep personal significance, illustrating the convergence of his artistic and technological passions."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://maedastudio.com/ai-infinity-1992/",
+        "label": "maedastudio.com"
+      },
+      {
+        "url": "https://gazell.io/products/ai-infinity",
+        "label": "gazell.io"
+      }
+    ],
     "img": {
       "src": "img/ai-infinity-by-john-maeda.png",
       "cap": "John Maeda's AI Infinity: the accumulated stroke of an infinite loop written in PostScript, halted after 10,000 passes, as published on the artist's own studio site.",
@@ -6943,9 +6933,10 @@
     "img": {
       "src": "img/the-worlds-first-smartphone.png",
       "cap": "",
-      "credit": "",
+      "credit": "IBM Simon Personal Communicator and charging base (BellSouth), 1994. Photograph by Bcos47, 2009, modified; Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:IBM_Simon_Personal_Communicator.png\">Image source</a>.",
       "width": 581,
-      "height": 1079
+      "height": 1079,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:IBM_Simon_Personal_Communicator.png"
     },
     "tags": [
       "Casey Reas",
@@ -7425,7 +7416,7 @@
   "jodi-org-by-jodi": {
     "body": [
       "In the early days of the public web, <a href=\"https://www.lerandom.art/subjects/jodi\">JODI</a> emerged as pioneers of net art with their enigmatic website, begun around 1993, archived at <a href=\"https://wwwwwwwww.jodi.org/\" target=\"_blank\" rel=\"noopener\">wwwwwwwww.jodi.org</a>. Their webpages, visually jarring and avant garde, challenged traditional site design norms. Navigation relied on cursor movements, with links hidden within repeated images. Some images led to new visual landscapes, blurring the lines between art and exploration. <a href=\"https://wwwwwwwww.jodi.org/\" target=\"_blank\" rel=\"noopener\">wwwwwwwww.jodi.org/</a> epitomized the experimental spirit of net art, offering a glimpse into the limitless possibilities of digital expression on the web. JODI’s work underscored the transformative power of the Internet as an art distribution mechanism, fitting into the long history of mass media art.",
-      "Fellow net.art pioneer <a href=\"https://www.lerandom.art/subjects/vuk-cosic\">Vuk Ćosić</a> explained to the author (Peter Bauman) how in his view JODI were the first net.art practitioners:",
+      "Fellow net.art pioneer <a href=\"https://www.lerandom.art/subjects/vuk-cosic\">Vuk Ćosić</a> explained to the author (<a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a>) how in his view JODI were the first net.art practitioners:",
       "“On the nettime list itself we didn’t post net.art pieces that could be displayed or collected but we spoke about it and gave it life. I personally adored the JODI posts that were consistently pushing the idea of net.art as a liberating force. They were the first in many regards.”",
       "<a href=\"http://wwwwwwwww.jodi.org/\" target=\"_blank\" rel=\"noopener\">wwwwwwwww.jodi.org/</a> is not only socially critical but also self-reflexive work, commenting on the early Web while using the Internet itself as a canvas. The Internet gave artists the ability to self-publish their work to a global audience for the first time in human history. JODI’s early net art is a powerful demonstration of how the Internet would soon impact every art practice."
     ],
@@ -7635,7 +7626,7 @@
   },
   "electronic-superhighway-continental-u-s-alaska-hawaii-by-nam-june-paik": {
     "body": [
-      "<a href=\"https://www.lerandom.art/subjects/nam-june-paik\">Nam June Paik</a>’s <a href=\"https://www.lerandom.art/subjects/electronic-superhighway\">Electronic Superhighway</a>: Continental U.S., <a href=\"https://www.lerandom.art/subjects/alaska\">Alaska</a>, Hawaii captured the <a href=\"https://www.lerandom.art/subjects/united-states\">United States</a>’ shift into the information age in the mid-90s with the uncertainty and optimism that entailed. Paik’s work combined neon lights and video screens, illustrating the interconnectedness fostered by the rising Internet. Beyond its celebration of global communication, the piece prompts contemplation of technology’s encroaching cultural impact. The work’s scale evokes feelings of information overload, despite the still relativelyt small size of the mid-90s Internet. This work stands as one of Paik’s most well known, standing as a rare example of media art that garnered widespread attention, capturing the zeitgeist of society’s mid-90s relationship with a history-changing technology."
+      "<a href=\"https://www.lerandom.art/subjects/nam-june-paik\">Nam June Paik</a>’s <a href=\"https://www.lerandom.art/subjects/electronic-superhighway\">Electronic Superhighway</a>: Continental U.S., Alaska, Hawaii captured the <a href=\"https://www.lerandom.art/subjects/united-states\">United States</a>’ shift into the information age in the mid-90s with the uncertainty and optimism that entailed. Paik’s work combined neon lights and video screens, illustrating the interconnectedness fostered by the rising Internet. Beyond its celebration of global communication, the piece prompts contemplation of technology’s encroaching cultural impact. The work’s scale evokes feelings of information overload, despite the still relativelyt small size of the mid-90s Internet. This work stands as one of Paik’s most well known, standing as a rare example of media art that garnered widespread attention, capturing the zeitgeist of society’s mid-90s relationship with a history-changing technology."
     ],
     "cite": [
       {
@@ -7652,7 +7643,6 @@
     },
     "tags": [
       "Nam June Paik",
-      "Alaska",
       "Electronic Superhighway",
       "Internet",
       "United States",
@@ -7665,7 +7655,6 @@
       "information overload"
     ],
     "people": [
-      "alaska",
       "nam june paik"
     ],
     "subjects": [
@@ -7708,11 +7697,6 @@
         "k": "prompts",
         "n": "prompts",
         "t": "tech"
-      },
-      {
-        "k": "alaska",
-        "n": "Alaska",
-        "t": "people"
       },
       {
         "k": "nam june paik",
@@ -7848,11 +7832,6 @@
         "k": "ty roberts",
         "n": "Ty Roberts",
         "t": "people"
-      },
-      {
-        "k": "david",
-        "n": "David",
-        "t": "works"
       }
     ],
     "linked": [],
@@ -8319,7 +8298,7 @@
   },
   "macromedia-flash-1-0-releaseda": {
     "body": [
-      "December 19, 1996 marked the initial release of <a href=\"https://www.lerandom.art/subjects/macromedia\">Macromedia</a> Flash, a technology that paved the way rich graphics on the maturing web and for contemporary generative-web-based practices, pioneered by artists such as <a href=\"https://www.lerandom.art/subjects/joshua-davis\">Joshua Davis</a>, <a href=\"https://www.lerandom.art/subjects/yugo-nakamura\">Yugo Nakamura</a>, <a href=\"https://www.lerandom.art/subjects/brendan-dawes\">Brendan Dawes</a>, <a href=\"https://www.lerandom.art/subjects/james-paterson\">James Paterson</a> and LIA.",
+      "December 19, 1996 marked the initial release of <a href=\"https://www.lerandom.art/subjects/macromedia\">Macromedia</a> Flash, a technology that paved the way rich graphics on the maturing web and for contemporary generative-web-based practices, pioneered by artists such as <a href=\"https://www.lerandom.art/subjects/joshua-davis\">Joshua Davis</a>, <a href=\"https://www.lerandom.art/subjects/yugo-nakamura\">Yugo Nakamura</a>, <a href=\"https://www.lerandom.art/subjects/brendan-dawes\">Brendan Dawes</a> and <a href=\"https://www.lerandom.art/subjects/james-paterson\">James Paterson</a>.",
       "Flash, now a ubiquitous name in the annals of the web’s history, traces its roots back to a serendipitous meeting between <a href=\"https://www.lerandom.art/subjects/jonathan-gay\">Jonathan Gay</a> and <a href=\"https://www.lerandom.art/subjects/charlie-jackson\">Charlie Jackson</a> at a local Macintosh Users Group. Their 1993 brainchild, FutureWave Software, initially set its sights on pen computing. With the fading trend, they pivoted towards the burgeoning <a href=\"m/tim-berners-lee-invents-the-world-wide-web.html\" data-moment=\"tim-berners-lee-invents-the-world-wide-web\">World Wide Web</a>.",
       "The culmination of their efforts was FutureSplash, a pioneering web animation tool released in May 1996. FutureSplash Animator empowered designers to craft animations with increased ease, while the accompanying FutureSplash Viewer allowed for playback on browsers.",
       "When FutureSplash caught the attention of <a href=\"https://www.lerandom.art/subjects/netscape\">Netscape</a> and <a href=\"https://www.lerandom.art/subjects/microsoft\">Microsoft</a>, its trajectory shifted dramatically. Netscape featured it as an extension, while Microsoft integrated it into <a href=\"http://msn.com/\" target=\"_blank\" rel=\"noopener\">MSN.com</a>, catapulting FutureSplash into the public’s attention.",
@@ -8371,7 +8350,6 @@
       "james paterson",
       "jonathan gay",
       "joshua davis",
-      "lia",
       "yugo nakamura"
     ],
     "subjects": [
@@ -8443,11 +8421,6 @@
       {
         "k": "joshua davis",
         "n": "Joshua Davis",
-        "t": "people"
-      },
-      {
-        "k": "lia",
-        "n": "LIA",
         "t": "people"
       },
       {
@@ -9725,7 +9698,16 @@
     "body": [
       "<a href=\"https://www.lerandom.art/subjects/feng-mengbo\">Feng Mengbo</a>’s My Private Album was a pioneering work of interactive CD-ROM art, examining the combination of digital storytelling and interactivity. The work provides viewers with a dynamic look at how families change and evolve over time, questioning the concept of our family as static. Feng’s work deviates from conventional linear narratives, allowing audiences to interact choose their own path also integrating the complex nature of memory. Feng captures the essence of human resilience and hope in his art, which transcends aestheticism through intimate reflections on the ordinary lives of people. Carefully and humbly put together, My Private Album elevates the commonplace to the extraordinary, offering a moving audiovisual record that is available to everyone. It’s a standout of mid-90s interactive CD-ROM art."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://www.diaart.org/about/press/feng-mengbo-phantom-tales-is-latest-work-in-dias-series-of-artists-projects-for-the-web",
+        "label": "diaart.org"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Feng_Mengbo",
+        "label": "en.wikipedia.org"
+      }
+    ],
     "img": {
       "src": "img/my-private-album-by-feng-mengbo.jpg",
       "cap": "A screen from Feng Mengbo's interactive work My Private Album, showing a 1930s studio photograph of the artist's grandmother captioned in the work's own interface, with Menu and Quit buttons at lower left.",
@@ -9821,8 +9803,8 @@
     ],
     "cite": [
       {
-        "url": "https://benayoun.com/moben/bio/",
-        "label": "benayoun.com"
+        "url": "https://web.archive.org/web/20180202202405/http://benayoun.com/moben/bio/",
+        "label": "web.archive.org"
       }
     ],
     "img": {
@@ -10202,7 +10184,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "processos criativos com os meios eletrônicos: poéticas digitais",
@@ -10355,7 +10337,7 @@
   "yellowtail-by-golan-levin": {
     "body": [
       "This now legendary piece of software was begun by Levin at the <a href=\"https://www.lerandom.art/subjects/interval-research\">Interval Research</a> Corporation in 1998 and completed at MIT in 1999 and 2000. He would go on to show this piece to <a href=\"https://www.lerandom.art/subjects/john-maeda\">John Maeda</a>, which would convince Maeda to let Levin join MIT’s Aesthetics and Computation Group (ACG) the following year. Once there, <a href=\"https://www.lerandom.art/subjects/yellowtail\">Yellowtail</a>, <a href=\"https://www.flong.com/archive/projects/yellowtail/index.html\" target=\"_blank\" rel=\"noopener\">which was conceived before Maeda even created DBN</a>, “was first implemented using the EasyDraw DirectDraw framework by <a href=\"https://www.lerandom.art/subjects/scott-snibbe\">Scott Snibbe</a>; then the <a href=\"m/acu-program-begins.html\" data-moment=\"acu-program-begins\">ACU</a> C++ graphics framework by the MIT ACG, and then in the <a href=\"http://www.processing.org/\" target=\"_blank\" rel=\"noopener\">Processing</a> <a href=\"m/sun-microsystems-release-java-1-0.html\" data-moment=\"sun-microsystems-release-java-1-0\">Java</a> framework by <a href=\"https://www.lerandom.art/subjects/ben-fry\">Ben Fry</a> and <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>.” The work, beyond getting Levin in MIT, also was one of the first to be tested in the legendary <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">development of Processing</a> at MIT in the mid-to-late-’90s. This work’s place in art history is secured.",
-      "<a href=\"https://www.lerandom.art/editorial/golan-levin-on-the-potentiality-of-blobs\" target=\"_blank\" rel=\"noopener\">Levin spoke to this author, Peter Bauman, about his work in the 1990s saying</a>:",
+      "<a href=\"https://www.lerandom.art/editorial/golan-levin-on-the-potentiality-of-blobs\" target=\"_blank\" rel=\"noopener\">Levin spoke to this author, </a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://www.lerandom.art/editorial/golan-levin-on-the-potentiality-of-blobs\" target=\"_blank\" rel=\"noopener\">, about his work in the 1990s saying</a>:",
       "“My work from the late-90s was a reaction to the making culture that assumed that multimedia was constructed from preloaded assets like sprites and background images. I was like, ‘No, the computer is a dynamic medium that can generate things on the fly.’”",
       "The piece itself is an interactive software work that transforms user gestures into dynamic, abstract animations. Strokes made by the user are looped continuously, allowing control over both the shape and movement quality of lines. Each line has its unique cycle, creating a fluid, responsive animation, resembling organic textures."
     ],
@@ -10507,11 +10489,6 @@
       {
         "k": "aesthetics + computation group",
         "n": "Aesthetics + Computation Group",
-        "t": "orgs"
-      },
-      {
-        "k": "interval",
-        "n": "Interval",
         "t": "orgs"
       },
       {
@@ -10679,7 +10656,7 @@
       "Mark Napier",
       "net art",
       "SHREDDER",
-      "The New York Times",
+      "New York Times",
       "World Wide Web",
       "HTML",
       "print"
@@ -10719,8 +10696,8 @@
         "t": "works"
       },
       {
-        "k": "the new york times",
-        "n": "The New York Times",
+        "k": "new york times",
+        "n": "New York Times",
         "t": "orgs"
       }
     ],
@@ -10741,7 +10718,7 @@
   },
   "mpeg-4-standard-announced": {
     "body": [
-      "An important step in the rise of Mass Media Art, an important pre-condition for NFTs, according to <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>, in October 1998, the MPEG (Moving Picture Experts Group) announced the MPEG-4 standard, ISO/IEC 14496, following the success of MPEG-1 and MPEG-2. This global effort involved hundreds of researchers and engineers, resulting in approval of an International <a href=\"https://www.lerandom.art/subjects/standard\">Standard</a> by early 1999. Importantly, the fully backward compatible MPEG-4 Version 2 extensions followed, extending capabilities for digital television, interactive graphics and multimedia applications for the early web. Critical to the rise of Madd Media Art, the standard facilitated the integration of production, distribution and content access. It thus laid the foundation for interactive video, CD-ROMs and digital television and their use in creative expression. Further extensions continued into the upcoming decades, ensuring ongoing advancements in multimedia technology."
+      "An important step in the rise of Mass Media Art, an important pre-condition for NFTs, according to <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>, in October 1998, the MPEG (Moving Picture Experts Group) announced the MPEG-4 standard, ISO/IEC 14496, following the success of MPEG-1 and MPEG-2. This global effort involved hundreds of researchers and engineers, resulting in approval of an International Standard by early 1999. Importantly, the fully backward compatible MPEG-4 Version 2 extensions followed, extending capabilities for digital television, interactive graphics and multimedia applications for the early web. Critical to the rise of Madd Media Art, the standard facilitated the integration of production, distribution and content access. It thus laid the foundation for interactive video, CD-ROMs and digital television and their use in creative expression. Further extensions continued into the upcoming decades, ensuring ongoing advancements in multimedia technology."
     ],
     "cite": [
       {
@@ -10849,11 +10826,6 @@
         "k": "casey reas",
         "n": "Casey Reas",
         "t": "people"
-      },
-      {
-        "k": "standard",
-        "n": "Standard",
-        "t": "works"
       },
       {
         "k": "moving picture experts group (mpeg)",
@@ -10993,7 +10965,7 @@
     ],
     "echoes": [
       "zach-lieberman-and-taeyoon-choi-co-found-the-school-for-poetic-computation-sfpc",
-      "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html",
+      "logo-language-developed",
       "ycam-interlab-camp-vol-5-homo-codens"
     ],
     "eds": [
@@ -11145,11 +11117,6 @@
         "t": "people"
       },
       {
-        "k": "white",
-        "n": "White",
-        "t": "works"
-      },
-      {
         "k": "aesthetics + computation group",
         "n": "Aesthetics + Computation Group",
         "t": "orgs"
@@ -11171,7 +11138,7 @@
     "echoes": [
       "c-developed-by-bjarne-stroustrup-at-bell-laboratories",
       "grace-murray-hopper-invents-general-programming-languages",
-      "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html"
+      "logo-language-developed"
     ],
     "eds": [
       "golan-levin-on-the-potentiality-of-blobs",
@@ -11457,14 +11424,14 @@
     ],
     "linked": [
       "john-maeda-joins-the-mit-media-lab",
-      "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html",
+      "logo-language-developed",
       "gyorgy-kepes-establishes-the-center-for-advanced-visual-studies-cavs-at-mit",
       "ai-infinity-by-john-maeda",
       "casey-reas-and-ben-fry-initiate-processing-project",
       "yellowtail-by-golan-levin"
     ],
     "echoes": [
-      "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html",
+      "logo-language-developed",
       "processing-foundation-begins",
       "grace-murray-hopper-invents-general-programming-languages"
     ],
@@ -11789,7 +11756,7 @@
   "re-move-by-lia": {
     "body": [
       "Another important example of net.art and the rise of Mass Media art that was popularizing around the end of the decade, LIA’s Re-move (1999–2003) explores generative-audiovisual compositions that <a href=\"https://anthology.rhizome.org/re-move\" target=\"_blank\" rel=\"noopener\">combine</a> organic forms “with the rawness of fin-de-siècle Viennese abstraction.”",
-      "These works were originally created in <a href=\"https://www.lerandom.art/subjects/macromedia\">Macromedia</a> <a href=\"m/director-1-0-released.html\" data-moment=\"director-1-0-released\">Director</a> and released “on the internet to be accessible by everyone,” the artist told author Peter Bauman. They were also later released on CD-ROM. The work has since been restored for the <a href=\"https://anthology.rhizome.org/re-move\" target=\"_blank\" rel=\"noopener\">Net Art Anthology</a>. Each composition in Re-move achieves a delicate balance between the artist’s formal choices, user interaction, chance and algorithmic processes.",
+      "These works were originally created in <a href=\"https://www.lerandom.art/subjects/macromedia\">Macromedia</a> <a href=\"m/director-1-0-released.html\" data-moment=\"director-1-0-released\">Director</a> and played in the browser through the Shockwave plugin, released “on the internet to be accessible by everyone,” the artist told author <a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a>. They were also later released on CD-ROM. The work has since been restored for the <a href=\"https://anthology.rhizome.org/re-move\" target=\"_blank\" rel=\"noopener\">Net Art Anthology</a>. Each composition in Re-move achieves a delicate balance between the artist’s formal choices, user interaction, chance and algorithmic processes.",
       "These elements emphasizes the computer’s role as a dynamic medium rather than a static device. By balancing responsiveness, randomness and repetition, the time-based abstractions maintain legibility amidst their intricate complexity. <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> mentions the Macromedia Director work of LIA, released on CD-ROM, as important experimental work of this time."
     ],
     "cite": [
@@ -11950,7 +11917,6 @@
       "skinonskinonskin",
       "Entropy8Zuper!",
       "web art",
-      "Intimacy",
       "interactivity",
       "Flash Art",
       "Mass Media Art",
@@ -12015,11 +11981,6 @@
         "k": "michaël samyn",
         "n": "Michaël Samyn",
         "t": "people"
-      },
-      {
-        "k": "intimacy",
-        "n": "Intimacy",
-        "t": "works"
       },
       {
         "k": "skinonskinonskin",

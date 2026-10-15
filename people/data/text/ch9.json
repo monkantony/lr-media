@@ -403,7 +403,7 @@
   },
   "imagenet-large-scale-visual-recognition-challenge": {
     "body": [
-      "This competition would play an out-sized role in this story, as the little-known event was responsible for the decade’s most important machine vision breakthrough in 2012, when deep convolutional neural networks, a technique first built in the 1980s, won the competition outright. <a href=\"m/imagenet-launches.html\" data-moment=\"imagenet-launches\">ImageNet</a> was also responsible for Neural Style Transfers in 2015. The ImageNet Large Scale Visual <a href=\"https://www.lerandom.art/subjects/recognition\">Recognition</a> Challenge (ILSVRC) began in 2010 and lasted annually until 2017. The competition evaluated algorithms for large scale object detection and image classification. It utilized a subset of the vast ImageNet dataset—mentioned in the previous as an “All-Time Top Moment” and critical in the development of AI art—which at this point included over 10 million labeled images across over 10,000 categories. The competition aimed to benchmark advancements in computer vision with participants' algorithms identifying objects in unlabeled test images, producing a list of probable categories. This challenge drove significant progress in image recognition technologies, fostering innovation and providing a platform for researchers to compare their work against state-of-the-art methods in object detection and image annotation."
+      "This competition would play an out-sized role in this story, as the little-known event was responsible for the decade’s most important machine vision breakthrough in 2012, when deep convolutional neural networks, a technique first built in the 1980s, won the competition outright. <a href=\"m/imagenet-launches.html\" data-moment=\"imagenet-launches\">ImageNet</a> was also responsible for Neural Style Transfers in 2015. The ImageNet Large Scale Visual Recognition Challenge (ILSVRC) began in 2010 and lasted annually until 2017. The competition evaluated algorithms for large scale object detection and image classification. It utilized a subset of the vast ImageNet dataset—mentioned in the previous as an “All-Time Top Moment” and critical in the development of AI art—which at this point included over 10 million labeled images across over 10,000 categories. The competition aimed to benchmark advancements in computer vision with participants' algorithms identifying objects in unlabeled test images, producing a list of probable categories. This challenge drove significant progress in image recognition technologies, fostering innovation and providing a platform for researchers to compare their work against state-of-the-art methods in object detection and image annotation."
     ],
     "cite": [
       {
@@ -506,11 +506,6 @@
       {
         "k": "10,000",
         "n": "10,000",
-        "t": "works"
-      },
-      {
-        "k": "recognition",
-        "n": "Recognition",
         "t": "works"
       }
     ],
@@ -1143,7 +1138,6 @@
     },
     "tags": [
       "Baptiste Crespy (ciphrd)",
-      "Stripes",
       "fx(hash)",
       "artificial life",
       "Jeff Jones",
@@ -1161,8 +1155,7 @@
     "people": [
       "baptiste crespy (ciphrd)",
       "jeff jones",
-      "sage jenson",
-      "stripes"
+      "sage jenson"
     ],
     "subjects": [
       {
@@ -1223,11 +1216,6 @@
       {
         "k": "sage jenson",
         "n": "Sage Jenson",
-        "t": "people"
-      },
-      {
-        "k": "stripes",
-        "n": "Stripes",
         "t": "people"
       },
       {
@@ -2267,12 +2255,12 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "sound art",
         "n": "Sound Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "nonotak",
@@ -2298,7 +2286,7 @@
   },
   "deep-convolutional-neural-networks-unleashed": {
     "body": [
-      "Arguably the biggest development in machine learning in decades, deep convolutional neural networks (CNNs or “ConvNets”) revolutionized machine vision. Their power was deployed for the first time relating to creative expression when the SuperVision algorithm from the <a href=\"https://www.lerandom.art/subjects/university-of-toronto\">University of Toronto</a> used CNNs to win the <a href=\"m/imagenet-large-scale-visual-recognition-challenge.html\" data-moment=\"imagenet-large-scale-visual-recognition-challenge\">ImageNet Large-Scale Visual Recognition Challenge</a>. Critically, ConvNets were the driving force behind the decade’s upcoming AI developments This paradigm-shifting technique enabled computers to recognize objects with near-human accuracy by using multiple layers of small neuron collections to analyze images. Each layer overlaps and refines the image representation, allowing the system to learn intricate details. Originally conceived of theoretically in the 1980s, CNN research for the thirty years was mostly quiet due to computing restraints. They only gained prominence as computing power advanced, enabling the analysis of the large datasets required. This moments serves as the main milestone in AI art developments in the decade along with <a href=\"m/ian-goodfellow-introduces-gans.html\" data-moment=\"ian-goodfellow-introduces-gans\">GANs</a> in 2014 and <a href=\"m/googles-alexander-mordvintsev-launches-deepdream.html\" data-moment=\"googles-alexander-mordvintsev-launches-deepdream\">DeepDream</a> in 2015. It also highlights the importance of <a href=\"m/imagenet-launches.html\" data-moment=\"imagenet-launches\">2009’s ImageNet</a>—covered in the previous chapter—which had a lasting impact on the space due to its Large-Scale Visual <a href=\"https://www.lerandom.art/subjects/recognition\">Recognition</a> Challenge that began in 2010."
+      "Arguably the biggest development in machine learning in decades, deep convolutional neural networks (CNNs or “ConvNets”) revolutionized machine vision. Their power was deployed for the first time relating to creative expression when the SuperVision algorithm from the <a href=\"https://www.lerandom.art/subjects/university-of-toronto\">University of Toronto</a> used CNNs to win the <a href=\"m/imagenet-large-scale-visual-recognition-challenge.html\" data-moment=\"imagenet-large-scale-visual-recognition-challenge\">ImageNet Large-Scale Visual Recognition Challenge</a>. Critically, ConvNets were the driving force behind the decade’s upcoming AI developments This paradigm-shifting technique enabled computers to recognize objects with near-human accuracy by using multiple layers of small neuron collections to analyze images. Each layer overlaps and refines the image representation, allowing the system to learn intricate details. Originally conceived of theoretically in the 1980s, CNN research for the thirty years was mostly quiet due to computing restraints. They only gained prominence as computing power advanced, enabling the analysis of the large datasets required. This moments serves as the main milestone in AI art developments in the decade along with <a href=\"m/ian-goodfellow-introduces-gans.html\" data-moment=\"ian-goodfellow-introduces-gans\">GANs</a> in 2014 and <a href=\"m/googles-alexander-mordvintsev-launches-deepdream.html\" data-moment=\"googles-alexander-mordvintsev-launches-deepdream\">DeepDream</a> in 2015. It also highlights the importance of <a href=\"m/imagenet-launches.html\" data-moment=\"imagenet-launches\">2009’s ImageNet</a>—covered in the previous chapter—which had a lasting impact on the space due to its Large-Scale Visual Recognition Challenge that began in 2010."
     ],
     "cite": [
       {
@@ -2411,11 +2399,6 @@
         "k": "supervision",
         "n": "SuperVision",
         "t": "tech"
-      },
-      {
-        "k": "recognition",
-        "n": "Recognition",
-        "t": "works"
       },
       {
         "k": "university of toronto",
@@ -2711,8 +2694,8 @@
     ],
     "cite": [
       {
-        "url": "https://www.newrafael.com/into-time-with-mirrors-at-mis-sao-paulo-documentation-photos/",
-        "label": "newrafael.com"
+        "url": "https://web.archive.org/web/20130716121510/http://www.newrafael.com/into-time-with-mirrors-at-mis-sao-paulo-documentation-photos/",
+        "label": "web.archive.org"
       }
     ],
     "img": {
@@ -3608,7 +3591,7 @@
   "beautypi-starts-shadertoy": {
     "body": [
       "In January, 2013, <a href=\"http://shadertoy.com/\" target=\"_blank\" rel=\"noopener\">Shadertoy.com</a> was created by <a href=\"https://www.lerandom.art/subjects/pol-jeremias\">Pol Jeremias</a> and <a href=\"https://iquilezles.org/\" target=\"_blank\" rel=\"noopener\">Inigo Quilez</a> (Beautypi) as a repository for community-shared shaders. For over a decade now, ShaderToy had been a place for those interested in shaders to learn, share and experiment with the notoriously difficult form of coded expression. The community played a significant role in the development of algorithmic art as a place for thousands of users to develop for the love of coded art before it was practically feasible to sell work as NFTs.",
-      "<a href=\"https://www.lerandom.art/editorial/jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge\" target=\"_blank\" rel=\"noopener\">Jen Lowe and Patricio González Vivo, co-authors of</a> <a href=\"https://www.lerandom.art/editorial/jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge\" target=\"_blank\" rel=\"noopener\">The Book of Shaders</a><a href=\"https://www.lerandom.art/editorial/jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge\" target=\"_blank\" rel=\"noopener\">, spoke to this author (Peter Bauman) about the importance of Shadertoy</a>.",
+      "<a href=\"https://www.lerandom.art/editorial/jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge\" target=\"_blank\" rel=\"noopener\">Jen Lowe and Patricio González Vivo, co-authors of</a> <a href=\"https://www.lerandom.art/editorial/jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge\" target=\"_blank\" rel=\"noopener\">The Book of Shaders</a><a href=\"https://www.lerandom.art/editorial/jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge\" target=\"_blank\" rel=\"noopener\">, spoke to this author (</a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://www.lerandom.art/editorial/jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge\" target=\"_blank\" rel=\"noopener\">) about the importance of Shadertoy</a>.",
       "Peter Bauman: If somebody sees an art work and is interested in it for any reason, then they learn the work was made by shaders—what would you recommend they do next if they want to dig beyond the surface level and into the process of the work?‍‍",
       "<a href=\"https://www.lerandom.art/subjects/patricio-gonzalez-vivo\">Patricio González Vivo</a>: I recommend reading <a href=\"m/patricio-gonzalez-vivo-and-jen-lowe-teach-the-world-shaders.html\" data-moment=\"patricio-gonzalez-vivo-and-jen-lowe-teach-the-world-shaders\">The Book of Shaders</a> as a primer [laughs.] Then I recommend checking out the work of Inigo and what is out there in <a href=\"https://www.shadertoy.com/\" target=\"_blank\" rel=\"noopener\">Shadertoy</a>. There’s a strong relationship between the shader world and the demoscene. A lot of old demosceners like <a href=\"https://www.lerandom.art/subjects/inigo-quilez\">Inigo Quilez</a>, <a href=\"https://www.lerandom.art/subjects/mr-doob\">Mr. Doob</a> and <a href=\"https://www.lerandom.art/subjects/jaume-sanchez-clicktorelease\">Jaume Sanchez (Clicktorelease)</a>. They all met through shaders. I have found them in my work career around places like <a href=\"https://www.lerandom.art/subjects/samsung\">Samsung</a>, <a href=\"https://www.lerandom.art/subjects/apple\">Apple</a>, <a href=\"https://www.lerandom.art/subjects/adobe\">Adobe</a> and <a href=\"https://www.lerandom.art/subjects/oculus\">Oculus</a>. There are all these people who were in this petri dish of the demoscene. That bunch is very interesting because the mentality was very focused on visual and technical hacking in order to make cool, flashy demos."
     ],
@@ -3896,7 +3879,7 @@
     "linked": [],
     "echoes": [
       "mark-wilson-publishes-drawing-with-computers",
-      "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html",
+      "logo-language-developed",
       "roman-verostko-with-seminal-article-epigenetic-painting"
     ],
     "eds": [
@@ -4015,7 +3998,7 @@
       {
         "k": "sound art",
         "n": "Sound Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "visual music orchestration",
@@ -4348,7 +4331,7 @@
   "vitalik-buterin-publishes-ethereum-whitepaper": {
     "body": [
       "<a href=\"https://www.lerandom.art/subjects/vitalik-buterin\">Vitalik Buterin</a> created Ethereum with the <a href=\"https://ethereum.org/content/whitepaper/whitepaper-pdf/Ethereum_Whitepaper_-_Buterin_2014.pdf\" target=\"_blank\" rel=\"noopener\">Ethereum Whitepaper</a>, marking a pivotal shift in the story of blockchains. This new chain offered several innovations and improvements on Bitcoin and, most importantly for this story—the story of art—the chain’s introduction of smart contracts would lead the way to NFTs and digital ownership.",
-      "Ethereum’s introduction of smart contracts aimed to decentralize internet applications by enabling developers to build decentralized applications (dApps). Several years later, the <a href=\"m/dieter-shirley-develops-the-erc-721-protocol.html\" data-moment=\"dieter-shirley-develops-the-erc-721-protocol\">ERC-721</a> Token <a href=\"https://www.lerandom.art/subjects/standard\">Standard</a> would implement an API for tokens within smart contracts that allowed for the functionality digital artists had been seeking for decades—and what ascribe and the McCoys had envisioned—transfer and ownership of digital assets. This breakthrough had many critical predecessors but still stands as one of the more significant moments in this story of generative art.",
+      "Ethereum’s introduction of smart contracts aimed to decentralize internet applications by enabling developers to build decentralized applications (dApps). Several years later, the <a href=\"m/dieter-shirley-develops-the-erc-721-protocol.html\" data-moment=\"dieter-shirley-develops-the-erc-721-protocol\">ERC-721</a> Token Standard would implement an API for tokens within smart contracts that allowed for the functionality digital artists had been seeking for decades—and what ascribe and the McCoys had envisioned—transfer and ownership of digital assets. This breakthrough had many critical predecessors but still stands as one of the more significant moments in this story of generative art.",
       "Prior to Ethereum, Buterin was already a recognized figure in the crypto community, having co-founded Bitcoin Magazine and contributed to crypto research. Alongside Buterin, key figures like Dr. <a href=\"https://www.lerandom.art/subjects/gavin-wood\">Gavin Wood</a>, who developed Ethereum’s Solidity programming language, <a href=\"https://www.lerandom.art/subjects/anthony-di-iorio\">Anthony Di Iorio</a>, <a href=\"https://www.lerandom.art/subjects/charles-hoskinson\">Charles Hoskinson</a> and <a href=\"https://www.lerandom.art/subjects/joseph-lubin\">Joseph Lubin</a> significantly shaped Ethereum’s early stages. Ethereum’s vision materialized with its presentation at the 2014 North American Bitcoin Conference in <a href=\"https://www.lerandom.art/subjects/miami\">Miami</a> (2014), followed by a successful ICO that raised approximately $18 million in Bitcoin, setting a robust foundation for its development."
     ],
     "cite": [
@@ -4525,11 +4508,6 @@
       {
         "k": "ethereum whitepaper",
         "n": "Ethereum Whitepaper",
-        "t": "works"
-      },
-      {
-        "k": "standard",
-        "n": "Standard",
         "t": "works"
       },
       {
@@ -5286,7 +5264,7 @@
       "This piece from July 23, 2014, under three months after <a href=\"m/jennifer-and-kevin-mccoys-quantum.html\" data-moment=\"jennifer-and-kevin-mccoys-quantum\">Quantum</a> is another proto-NFT from 2014, yet it derives inspiration from Duchamp, 1960s Conceptualism and net.art. Other early proto-NFTs include <a href=\"m/nilicoin-by-nili-lerner.html\" data-moment=\"nilicoin-by-nili-lerner\">NILIcoin</a> and <a href=\"https://www.lerandom.art/subjects/quantum\">Quantum</a> from the same year, and <a href=\"m/mothership-by-jonathan-monaghan.html\" data-moment=\"mothership-by-jonathan-monaghan\">Mothership</a> from 2013—all found on the Timeline.",
       "The work, published as contract code in 2014 and deployed to Ethereum in 2016, that can be toggled between states of being “art” or “not art” by anyone who sends a transaction to it. This work echoes <a href=\"https://www.lerandom.art/subjects/marcel-duchamp\">Marcel Duchamp</a> by reframing a smart contract as a found object. The concept draws from the legacy of 1960s Conceptual Art and 1990s net.art, both of which critically engaged with the systems of their time, using dematerialization, decentralization and interactivity as key elements. Myers’s piece explores how blockchain technology can serve as a modern platform for these ideas, questioning the essence and authentication of art by making its designation as “art” a participatory and dynamic process.",
       "The artwork thus not only interrogates the art historical context of blockchain art from its near-beginnings but also the technological and communal frameworks that support and challenge the notion of what constitutes art today. Like the McCoys—and to some extent <a href=\"https://www.lerandom.art/subjects/kevin-abosch\">Kevin Abosch</a> and ascribe—this early attempt at inscribing creativity on the blockchain was rooted in net art and artist-led.",
-      "<a href=\"https://www.lerandom.art/editorial/rhea-myers-on-code-as-cultural-material\" target=\"_blank\" rel=\"noopener\">Myers spoke to this author (Peter Bauman) for Le Random Editorials on the foundations of her work and more.</a>",
+      "<a href=\"https://www.lerandom.art/editorial/rhea-myers-on-code-as-cultural-material\" target=\"_blank\" rel=\"noopener\">Myers spoke to this author (</a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://www.lerandom.art/editorial/rhea-myers-on-code-as-cultural-material\" target=\"_blank\" rel=\"noopener\">) for Le Random Editorials on the foundations of her work and more.</a>",
       "<a href=\"https://www.lerandom.art/subjects/jason-bailey\">Jason Bailey</a> <a href=\"https://www.youtube.com/watch?v=ZY-VformTig\" target=\"_blank\" rel=\"noopener\">spoke</a> about how this project was typical of the fragmented nature of art of the blockchain and proto-NFTs at this time. Rather than the community that would eventually form, during this time the work consisted of “individuals playing around with the concept, working on individual projects,” according to Bailey. He continues to say that there was “not much interest and not a movement; not community driven.”"
     ],
     "cite": [
@@ -5497,7 +5475,20 @@
       "Lerner’s pre-community, proto-NFTS—along with work by the McCoys and <a href=\"https://www.lerandom.art/subjects/rhea-myers\">Rhea Myers</a> were, <a href=\"https://www.youtube.com/watch?v=ZY-VformTig\" target=\"_blank\" rel=\"noopener\">according to Jason Bailey</a>, the “closest thing to early NFTs” as we now know them. This is the beginning as well, for better or worse, of the association of NFTs with memes and scams.",
       "Launched in September 2014 on the Counterparty Bitcoin side-chain, NILICoin was dubbed “art coin” and allowed for the issuance of digital assets against Bitcoin. This enabled trading and ownership verification via blockchain, a clear predecessor of NFT capabilities. NILICoin had aims beyond digital asset ownership, however, as it attempted to foster an entire decentralized monetary ecosystem, unsuccessfully challenging traditional bank credit. Lerner’s work has been heavily influenced by social media and smartphones, exemplifying how those trends combined to create the conditions for NFTs."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://cryptoticker.io/en/top-5-historical-nft-collections-on-bitcoin-counterparty/",
+        "label": "cryptoticker.io"
+      },
+      {
+        "url": "https://coinspectator.com/bitcoin-com/2021/03/28/nilicoins-rare-pepe-and-curio-cards-a-look-at-the-og-collectibles-that-started-the-nft-madness/",
+        "label": "coinspectator.com"
+      },
+      {
+        "url": "https://www.sothebys.com/en/buy/auction/2024/r-evolutionaries-digital-art-through-the-decade/the-architecture",
+        "label": "sothebys.com"
+      }
+    ],
     "img": {
       "src": "img/nilicoin-by-nili-lerner.jpg",
       "cap": "The NILIcoins collection card image -- Lerner's red painted forms under the words “This is NILIcoins” and “Full Collection” -- used by the Emblem Vault listing that wraps her 2014 Counterparty tokens; it is the collection's own graphic, not a photograph of an individual 2014 token.",
@@ -5676,9 +5667,10 @@
     "img": {
       "src": "img/ten-questions-concerning-generative-computer-art-by-mccormack-et-al.png",
       "cap": "",
-      "credit": "",
+      "credit": "Opening of Jon McCormack, Oliver Bown, Alan Dorin, Jonathan McCabe, Gordon Monro and Mitchell Whitelaw, Ten Questions Concerning Generative Computer Art, Leonardo 47, no. 2 (April 2014): 135–141. MIT Press. <a href=\"https://doi.org/10.1162/LEON_a_00533\">DOI</a>.",
       "width": 920,
-      "height": 448
+      "height": 448,
+      "sourceUrl": "https://doi.org/10.1162/LEON_a_00533"
     },
     "tags": [
       "Philip Galanter",
@@ -6613,7 +6605,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "coded: art enters the computer age, 1952–1982",
@@ -6811,7 +6803,7 @@
   "patricio-gonzalez-vivo-and-jen-lowe-teach-the-world-shaders": {
     "body": [
       "<a href=\"https://www.lerandom.art/subjects/patricio-gonzalez-vivo\">Patricio González Vivo</a> and <a href=\"https://www.lerandom.art/subjects/jen-lowe\">Jen Lowe</a>’s incredibly versatile open-source project, <a href=\"https://www.lerandom.art/subjects/the-book-of-shaders\">The Book of Shaders</a>, has been published in twelve languages and applies to various environments, including <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a>, <a href=\"m/zach-lieberman-releases-openframeworks-v0-01.html\" data-moment=\"zach-lieberman-releases-openframeworks-v0-01\">openFrameworks</a> and <a href=\"m/three-js-released.html\" data-moment=\"three-js-released\">Three.js</a>. The online book and toolkit have revolutionized the creative environment since their initial publications by teaching the world about the transformative power of fragment shaders. These short programs offer enhanced control and faster rendering to creative coders, game developers and engineers alike.",
-      "<a href=\"https://www.lerandom.art/editorial/jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge\" target=\"_blank\" rel=\"noopener\">Lowe and Gonzalez Vivo spoke to this author (Peter Bauman) about their book, saying:</a>",
+      "<a href=\"https://www.lerandom.art/editorial/jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge\" target=\"_blank\" rel=\"noopener\">Lowe and Gonzalez Vivo spoke to this author (</a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://www.lerandom.art/editorial/jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge\" target=\"_blank\" rel=\"noopener\">) about their book, saying:</a>",
       "Patricio González Vivo: After finishing my MFA, I got my first job. At the same time, I was still teaching a class at Parsons.‍",
       "Jen Lowe: He needed materials for teaching that class. Then we thought, “If you’re going to write the materials, why not make a big open-source book that’s available to everyone?” Back then, there was not anything I’m aware of that made shaders accessible.‍",
       "Patricio González Vivo: Shaders was this very niche knowledge. There were a lot of industry trade secrets between computer science, PhDs and very specific people working in the game industry. This knowledge was very gated. By then, I had been working with OpenGL and shaders for four years. Through the friction of having to learn everything and research how things were working, I decided that it would be awesome to democratize this knowledge. By then, Jen was pregnant with our first son so I had extra anxiety."
@@ -7107,7 +7099,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "creative commons",
@@ -7138,7 +7130,7 @@
     "echoes": [
       "john-maeda-joins-the-mit-media-lab",
       "grace-murray-hopper-invents-general-programming-languages",
-      "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html"
+      "logo-language-developed"
     ],
     "eds": [
       "the-zach-lieberman-commission-2",
@@ -8089,7 +8081,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "electronic superhighway",
@@ -8822,9 +8814,10 @@
     "img": {
       "src": "img/zurich-hb-flap-by-andreas-gysin-sidi-vanetti.jpeg",
       "cap": "",
-      "credit": "",
+      "credit": "Andreas Gysin and Sidi Vanetti, Zürich HB Flap, 2016, kinetic installation (split-flap display). Installation view. Photographer not identified.",
       "width": 1440,
-      "height": 960
+      "height": 960,
+      "sourceUrl": "https://www.gysin-vanetti.com/"
     },
     "tags": [
       "Andreas Gysin",
@@ -9707,9 +9700,10 @@
     "img": {
       "src": "img/matt-hall-and-john-watkinson-release-cryptopunks.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "CryptoPunk #3128, Larva Labs (Matt Hall and John Watkinson), 2017. Ethereum. <a href=\"https://cryptopunks.app/cryptopunks/details/3128\">Image source</a>.",
       "width": 336,
-      "height": 336
+      "height": 336,
+      "sourceUrl": "https://cryptopunks.app/cryptopunks/details/3128"
     },
     "tags": [
       "John Watkinson",
@@ -9912,7 +9906,7 @@
   },
   "thinking-machines-art-and-design-in-the-computer-age-19591989-at-moma": {
     "body": [
-      "The exhibition, along with <a href=\"m/open-codes-at-zkm-center-for-art-and-media.html\" data-moment=\"open-codes-at-zkm-center-for-art-and-media\">Open Codes</a> at ZKM, indicated renewed institutional interest in computer-generated art prior to the impact of NFTs. Curated by <a href=\"https://www.lerandom.art/subjects/moma\">MoMA</a>’s <a href=\"https://www.lerandom.art/subjects/sean-anderson\">Sean Anderson</a> and <a href=\"https://www.lerandom.art/subjects/giampaolo-bianconi\">Giampaolo Bianconi</a>, the exhibition celebrated the role of computers and computation in art. It examined the period from the earliest computer art in the late '50s to the dawn of the Internet in the late '80s. The exhibition mostly drew upon previous machine-centered exhibitions, including ones already mentioned in this Timeline: -<a href=\"m/the-machine-as-seen-at-the-end-of-the-mechanical-age-at-moma.html\" data-moment=\"the-machine-as-seen-at-the-end-of-the-mechanical-age-at-moma\">The Machine as Seen at the End of the Mechanical Age</a> (MoMA, 1968) -<a href=\"m/information-exhibition-at-the-museum-of-modern-art.html\" data-moment=\"information-exhibition-at-the-museum-of-modern-art\">Information</a> (MoMA, 1970) -<a href=\"m/software-at-the-jewish-museum-new-york.html\" data-moment=\"software-at-the-jewish-museum-new-york\">Software</a> (<a href=\"https://www.lerandom.art/subjects/the-jewish-museum\">The Jewish Museum</a>, 1970) While broader overviews of machines had been given, the contribution of thinking machines (or computers) had yet to be properly included in the art historical narrative. The exhibition showcased more than 100 works from all six curatorial departments, highlighting the paradigmatic impact of computers on postwar art, architecture and design. <a href=\"https://www.lerandom.art/subjects/drawn\">Drawn</a> largely from MoMA’s existing collection, it featured pioneering artists and designers like <a href=\"https://www.lerandom.art/subjects/beryl-korot\">Beryl Korot</a>, <a href=\"https://www.lerandom.art/subjects/alison-knowles\">Alison Knowles</a>, <a href=\"https://www.lerandom.art/subjects/vera-molnar\">Vera Molnár</a>, and <a href=\"https://www.lerandom.art/subjects/john-cage\">John Cage</a>, illustrating the integration of computing, systems and randomness into artistic production. The exhibition also traced the history of computer technology’s role in reshaping work, society and aesthetic hierarchies, emphasizing the lasting influence of early computational thinking. The show also draws historical linkages to kinetic art, prominently featured in the exhibit. Despite being decades overdue, the exhibition provided computer art practitioners with acknowledgement and recognition for their important contributions. While the exhibition lacked a more comprehensive overview, some of the earliest and most celebrated computer artists were featured. These included Vera Molnár, <a href=\"https://www.lerandom.art/subjects/charles-csuri\">Charles Csuri</a> and <a href=\"https://www.lerandom.art/subjects/waldemar-cordeiro\">Waldemar Cordeiro</a>. This exhibition serves as a reminder of how long institutional interest took to arrive for some artists; conversely, it also demonstrated that interest in historical computer-generated art appeared prior to the success of NFTs."
+      "The exhibition, along with <a href=\"m/open-codes-at-zkm-center-for-art-and-media.html\" data-moment=\"open-codes-at-zkm-center-for-art-and-media\">Open Codes</a> at ZKM, indicated renewed institutional interest in computer-generated art prior to the impact of NFTs. Curated by <a href=\"https://www.lerandom.art/subjects/moma\">MoMA</a>’s <a href=\"https://www.lerandom.art/subjects/sean-anderson\">Sean Anderson</a> and <a href=\"https://www.lerandom.art/subjects/giampaolo-bianconi\">Giampaolo Bianconi</a>, the exhibition celebrated the role of computers and computation in art. It examined the period from the earliest computer art in the late '50s to the dawn of the Internet in the late '80s. The exhibition mostly drew upon previous machine-centered exhibitions, including ones already mentioned in this Timeline: -<a href=\"m/the-machine-as-seen-at-the-end-of-the-mechanical-age-at-moma.html\" data-moment=\"the-machine-as-seen-at-the-end-of-the-mechanical-age-at-moma\">The Machine as Seen at the End of the Mechanical Age</a> (MoMA, 1968) -<a href=\"m/information-exhibition-at-the-museum-of-modern-art.html\" data-moment=\"information-exhibition-at-the-museum-of-modern-art\">Information</a> (MoMA, 1970) -<a href=\"m/software-at-the-jewish-museum-new-york.html\" data-moment=\"software-at-the-jewish-museum-new-york\">Software</a> (<a href=\"https://www.lerandom.art/subjects/the-jewish-museum\">The Jewish Museum</a>, 1970) While broader overviews of machines had been given, the contribution of thinking machines (or computers) had yet to be properly included in the art historical narrative. The exhibition showcased more than 100 works from all six curatorial departments, highlighting the paradigmatic impact of computers on postwar art, architecture and design. Drawn largely from MoMA’s existing collection, it featured pioneering artists and designers like <a href=\"https://www.lerandom.art/subjects/beryl-korot\">Beryl Korot</a>, <a href=\"https://www.lerandom.art/subjects/alison-knowles\">Alison Knowles</a>, <a href=\"https://www.lerandom.art/subjects/vera-molnar\">Vera Molnár</a>, and <a href=\"https://www.lerandom.art/subjects/john-cage\">John Cage</a>, illustrating the integration of computing, systems and randomness into artistic production. The exhibition also traced the history of computer technology’s role in reshaping work, society and aesthetic hierarchies, emphasizing the lasting influence of early computational thinking. The show also draws historical linkages to kinetic art, prominently featured in the exhibit. Despite being decades overdue, the exhibition provided computer art practitioners with acknowledgement and recognition for their important contributions. While the exhibition lacked a more comprehensive overview, some of the earliest and most celebrated computer artists were featured. These included Vera Molnár, <a href=\"https://www.lerandom.art/subjects/charles-csuri\">Charles Csuri</a> and <a href=\"https://www.lerandom.art/subjects/waldemar-cordeiro\">Waldemar Cordeiro</a>. This exhibition serves as a reminder of how long institutional interest took to arrive for some artists; conversely, it also demonstrated that interest in historical computer-generated art appeared prior to the success of NFTs."
     ],
     "cite": [
       {
@@ -10068,11 +10062,6 @@
         "k": "waldemar cordeiro",
         "n": "Waldemar Cordeiro",
         "t": "people"
-      },
-      {
-        "k": "drawn",
-        "n": "Drawn",
-        "t": "works"
       },
       {
         "k": "information",
@@ -12875,7 +12864,7 @@
   },
   "christies-first-sale-of-an-ai-artwork": {
     "body": [
-      "This sale could in some ways be considered the initial spark that lit the fuse of the upcoming NFT craze, peaking in 2021. <a href=\"https://www.lerandom.art/subjects/kate-vass\">Kate Vass</a> spoke to this author (Peter Bauman) about how this sale spurred her to put together the legendary <a href=\"m/automat-und-mensch-at-kate-vass-galerie.html\" data-moment=\"automat-und-mensch-at-kate-vass-galerie\">Automat und Mensch</a> a few months—and moments on this Timeline—later in May, 2019. The sale itself remains controversial, as it was an AI artwork, Portrait of Edmond de Belamy by Obvious but based on <a href=\"https://www.lerandom.art/subjects/robbie-barrat\">Robbie Barrat</a>’s open-source code."
+      "This sale could in some ways be considered the initial spark that lit the fuse of the upcoming NFT craze, peaking in 2021. <a href=\"https://www.lerandom.art/subjects/kate-vass\">Kate Vass</a> spoke to this author (<a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a>) about how this sale spurred her to put together the legendary <a href=\"m/automat-und-mensch-at-kate-vass-galerie.html\" data-moment=\"automat-und-mensch-at-kate-vass-galerie\">Automat und Mensch</a> a few months—and moments on this Timeline—later in May, 2019. The sale itself remains controversial, as it was an AI artwork, Portrait of Edmond de Belamy by Obvious but based on <a href=\"https://www.lerandom.art/subjects/robbie-barrat\">Robbie Barrat</a>’s open-source code."
     ],
     "cite": [
       {
@@ -14912,7 +14901,8 @@
     "img": {
       "src": "img/larva-labs-releases-autoglyphs.svg",
       "cap": "",
-      "credit": ""
+      "credit": "An Autoglyph, Larva Labs (Matt Hall and John Watkinson), 2019. On-chain generative art on Ethereum. Individual glyph number not identified. <a href=\"https://opensea.io/collection/autoglyphs\">Autoglyphs on OpenSea</a>.",
+      "sourceUrl": "https://opensea.io/collection/autoglyphs"
     },
     "tags": [
       "Erick Calderon",
@@ -15385,9 +15375,9 @@
   },
   "automat-und-mensch-at-kate-vass-galerie": {
     "body": [
-      "The exhibition <a href=\"https://www.lerandom.art/subjects/automat-und-mensch-a-history-of-ai-and-generative-art\">Automat und Mensch: A History of AI and Generative Art</a> in May 2019 anticipated the arrival of AI and generative art. The audacious show at <a href=\"https://www.lerandom.art/subjects/kate-vass\">Kate Vass</a> Galerie was organized by Kate Vass and curated by <a href=\"https://www.lerandom.art/subjects/jason-bailey\">Jason Bailey</a> (<a href=\"https://www.lerandom.art/subjects/artnome\">Artnome</a>) and <a href=\"https://www.lerandom.art/subjects/georg-bak\">Georg Bak</a>. <a href=\"https://www.lerandom.art/editorial/jason-bailey-georg-bak-kate-vass-on-the-art-form-of-our-generation\" target=\"_blank\" rel=\"noopener\">Vass told this author about the show</a>: “The whole show was actually an attempt to highlight the historical perspective of generative art and the predecessors of AI.” Going back several decades, the show spotlighted the historical roots of AI and generative art: cybernetics and early robotics, as well as the computer art of pioneers like <a href=\"https://www.lerandom.art/subjects/frieder-nake\">Frieder Nake</a> and <a href=\"https://www.lerandom.art/subjects/herbert-w-franke\">Herbert W. Franke</a>. The show also includes contemporary artists. <a href=\"https://www.lerandom.art/editorial/jason-bailey-georg-bak-kate-vass-on-the-art-form-of-our-generation\" target=\"_blank\" rel=\"noopener\">Bak told me</a>:",
+      "The exhibition <a href=\"https://www.lerandom.art/subjects/automat-und-mensch-a-history-of-ai-and-generative-art\">Automat und Mensch: A History of AI and Generative Art</a> in May 2019 anticipated the arrival of AI and generative art. The audacious show at <a href=\"https://www.lerandom.art/subjects/kate-vass-galerie\">Kate Vass Galerie</a> was organized by Kate Vass and curated by <a href=\"https://www.lerandom.art/subjects/jason-bailey\">Jason Bailey</a> (<a href=\"https://www.lerandom.art/subjects/artnome\">Artnome</a>) and <a href=\"https://www.lerandom.art/subjects/georg-bak\">Georg Bak</a>. <a href=\"https://www.lerandom.art/editorial/jason-bailey-georg-bak-kate-vass-on-the-art-form-of-our-generation\" target=\"_blank\" rel=\"noopener\">Vass told this author about the show</a>: “The whole show was actually an attempt to highlight the historical perspective of generative art and the predecessors of AI.” Going back several decades, the show spotlighted the historical roots of AI and generative art: cybernetics and early robotics, as well as the computer art of pioneers like <a href=\"https://www.lerandom.art/subjects/frieder-nake\">Frieder Nake</a> and <a href=\"https://www.lerandom.art/subjects/herbert-w-franke\">Herbert W. Franke</a>. The show also includes contemporary artists. <a href=\"https://www.lerandom.art/editorial/jason-bailey-georg-bak-kate-vass-on-the-art-form-of-our-generation\" target=\"_blank\" rel=\"noopener\">Bak told me</a>:",
       "“As Kate said, our aim was to reflect on the history of AI—from early generative art to the most recent developments in AI with <a href=\"m/googles-alexander-mordvintsev-launches-deepdream.html\" data-moment=\"googles-alexander-mordvintsev-launches-deepdream\">DeepDream</a> and <a href=\"m/ian-goodfellow-introduces-gans.html\" data-moment=\"ian-goodfellow-introduces-gans\">GANs</a>. We actually had <a href=\"https://www.lerandom.art/subjects/larva-labs\">Larva Labs</a> in the show with physical <a href=\"m/larva-labs-releases-autoglyphs.html\" data-moment=\"larva-labs-releases-autoglyphs\">Autoglyphs</a>. John [Watkinson] told me last time I saw him that we actually pushed him to finish <a href=\"https://www.lerandom.art/subjects/autoglyphs\">Autoglyphs</a> to get it ready for the show. It was also interesting that we actually had the first on-chain NFT in this exhibition. There were some very recent developments as well as the historical context.”",
-      "<a href=\"https://www.lerandom.art/editorial/jason-bailey-georg-bak-kate-vass-on-the-art-form-of-our-generation\" target=\"_blank\" rel=\"noopener\">Bailey spoke to this author (Peter Bauman) about the relevance of the exhibition five years later, saying</a>:",
+      "<a href=\"https://www.lerandom.art/editorial/jason-bailey-georg-bak-kate-vass-on-the-art-form-of-our-generation\" target=\"_blank\" rel=\"noopener\">Bailey spoke to this author (</a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://www.lerandom.art/editorial/jason-bailey-georg-bak-kate-vass-on-the-art-form-of-our-generation\" target=\"_blank\" rel=\"noopener\">) about the relevance of the exhibition five years later, saying</a>:",
       "“I was trying to get my heroes to agree to do this.",
       "I don’t think that’s an exaggeration. I had spent twenty years looking up to people like <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>, <a href=\"https://www.lerandom.art/subjects/jared-tarbell\">Jared Tarbell</a> and <a href=\"https://www.lerandom.art/subjects/john-maeda\">John Maeda</a>. I was lucky enough that I had been several years into writing the Artnome blog, where people were at least somewhat aware that I had been passionately—for no real profit or commercial purpose—writing about art and technology out of something that I love. That opened the door to at least getting responses to some emails. There was some strategy to trying to get the folks that I had been in more recent contact with who were maybe slightly better known names. Then, when you went further along, you could say, “Well, so and so has signed up.” Everyone wants to know who’s already agreed but you have to get the first few people to agree to be able to get the additional people to agree.",
       "It’s not an accident that we’re talking about it five years later. I think it’s a reflection of the attention to detail and the effort. I wouldn’t have anticipated—as someone who’d just started to curate—the effort that it took.”"
@@ -15553,7 +15543,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "autoglyphs",
@@ -15728,7 +15718,7 @@
   },
   "inferno-by-helena-sarin": {
     "body": [
-      "The software engineer Sarin, formerly of <a href=\"https://www.lerandom.art/subjects/bell-labs\">Bell Labs</a>, began her experiments with <a href=\"m/ian-goodfellow-introduces-gans.html\" data-moment=\"ian-goodfellow-introduces-gans\">GANs</a> in early 2018. <a href=\"https://x.com/NeuralBricolage/status/976876475810017280\" target=\"_blank\" rel=\"noopener\">This Twitter post from March 2018</a> shows an example of possibly her earliest public work. Just a year later, Sarin had already began standing out with work suggesting the surreal. By the end of 2018, <a href=\"https://www.artnome.com/news/2018/11/14/helena-sarin-why-bigger-isnt-always-better-with-gans-and-ai-art\" target=\"_blank\" rel=\"noopener\">Sarin spoke to Jason Bailey about her practice on his Artnome blog</a>.",
+      "The software engineer Sarin, formerly of <a href=\"https://www.lerandom.art/subjects/bell-labs\">Bell Labs</a>, began her experiments with <a href=\"m/ian-goodfellow-introduces-gans.html\" data-moment=\"ian-goodfellow-introduces-gans\">GANs</a> in early 2018. <a href=\"https://x.com/NeuralBricolage/status/976876475810017280\" target=\"_blank\" rel=\"noopener\">This Twitter post from March 2018</a> shows an example of possibly her earliest public work. Just a year later, Sarin had already began standing out with work suggesting the surreal. By the end of 2018, <a href=\"https://www.artnome.com/news/2018/11/14/helena-sarin-why-bigger-isnt-always-better-with-gans-and-ai-art\" target=\"_blank\" rel=\"noopener\">Sarin spoke to Jason Bailey about her practice on his </a><a href=\"https://www.lerandom.art/subjects/artnome\">Artnome</a><a href=\"https://www.artnome.com/news/2018/11/14/helena-sarin-why-bigger-isnt-always-better-with-gans-and-ai-art\" target=\"_blank\" rel=\"noopener\"> blog</a>.",
       "2019 saw Sarin’s first exhibition, which included this work, part of her #latentDoodles series. It was showcased at the Computer Vision Art Gallery during ICCV 2019 in <a href=\"https://www.lerandom.art/subjects/seoul\">Seoul</a>, <a href=\"https://www.lerandom.art/subjects/korea\">Korea</a>. The work explores the human-like quality of hand-drawn marks with the distinct patterns of computational creation. Using SNGAN trained on her sketches and doodles, Sarin upscaled and colorized the image with cycleGAN for added texture. Sarin enhances the abstract images with carefully crafted captions, adding a verbal layer that deepens the folk-like yet computationally intricate nature of her work. The work exemplifies Sarin’s master from an early of coaxing the traditional and human out of modern AI techniques."
     ],
     "cite": [
@@ -16667,11 +16657,6 @@
         "t": "people"
       },
       {
-        "k": "david",
-        "n": "David",
-        "t": "works"
-      },
-      {
         "k": "myriad (tulips)",
         "n": "Myriad (Tulips)",
         "t": "works"
@@ -16679,11 +16664,6 @@
       {
         "k": "runway palette",
         "n": "Runway Palette",
-        "t": "works"
-      },
-      {
-        "k": "white",
-        "n": "White",
         "t": "works"
       }
     ],
@@ -17085,11 +17065,6 @@
         "k": "sasha stiles",
         "n": "Sasha Stiles",
         "t": "people"
-      },
-      {
-        "k": "david",
-        "n": "David",
-        "t": "works"
       },
       {
         "k": "rerites",

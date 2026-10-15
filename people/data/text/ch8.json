@@ -185,9 +185,10 @@
     "img": {
       "src": "img/new-masters-of-flash-by-brendan-dawes.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Cover of New Masters of Flash (friends of ED, 2000). Cover design not credited. <a href=\"https://openlibrary.org/books/OL22056785M\">Book record</a>.",
       "width": 975,
-      "height": 1000
+      "height": 1000,
+      "sourceUrl": "https://openlibrary.org/books/OL22056785M"
     },
     "tags": [
       "Yugo Nakamura",
@@ -385,7 +386,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "file festival",
@@ -520,7 +521,7 @@
     "body": [
       "Perhaps important enough for the name of the entire decade, Processing is that important to the development of generative art. It will have to suffice to have heavily inspired the decade’s title, which, to be fair, does include other tooling breakthroughs such as <a href=\"https://www.lerandom.art/subjects/zach-lieberman\">Zach Lieberman</a>’s <a href=\"m/zach-lieberman-releases-openframeworks-v0-01.html\" data-moment=\"zach-lieberman-releases-openframeworks-v0-01\">openFrameworks</a>.",
       "Created by <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> and <a href=\"https://www.lerandom.art/subjects/ben-fry\">Ben Fry</a> at MIT’s ACG under <a href=\"https://www.lerandom.art/subjects/john-maeda\">John Maeda</a>, Processing changed generative art irrevocably. It educated and inspired a new generation of artist-coders, expanding generative art’s talent pool exponentially.",
-      "Artist and digital researcher Karsten Schmidt recently shared with the author Peter Bauman (Monk Antony) about the importance of Processing as an open-source tool. As such, it adhered to decades of anti-commercial, open-sharing and communal learning sentiment from the computation community, with ideals dating back to the humanist thought of <a href=\"https://www.lerandom.art/subjects/ivan-illich\">Ivan Illich</a>. Prior to this, educational institutions and artists had to pay for the latest version of commercial software, such as <a href=\"https://www.lerandom.art/subjects/macromedia\">Macromedia</a>’s <a href=\"m/director-1-0-released.html\" data-moment=\"director-1-0-released\">Director</a>. Processing gave artists not only greater control of their work but was also free to use and was continuously updated by the community, relying on the incredibly dedicated work of Project Leads Ben Fry and Casey Reas as well as <a href=\"https://processing.org/people\" target=\"_blank\" rel=\"noopener\">dozens of other contributors</a> and alumni that have made it all possible and deserve tremendous credit.",
+      "Artist and digital researcher Karsten Schmidt recently shared with the author <a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman (Monk Antony)</a> about the importance of Processing as an open-source tool. As such, it adhered to decades of anti-commercial, open-sharing and communal learning sentiment from the computation community, with ideals dating back to the humanist thought of <a href=\"https://www.lerandom.art/subjects/ivan-illich\">Ivan Illich</a>. Prior to this, educational institutions and artists had to pay for the latest version of commercial software, such as <a href=\"https://www.lerandom.art/subjects/macromedia\">Macromedia</a>’s <a href=\"m/director-1-0-released.html\" data-moment=\"director-1-0-released\">Director</a>. Processing gave artists not only greater control of their work but was also free to use and was continuously updated by the community, relying on the incredibly dedicated work of Project Leads Ben Fry and Casey Reas as well as <a href=\"https://processing.org/people\" target=\"_blank\" rel=\"noopener\">dozens of other contributors</a> and alumni that have made it all possible and deserve tremendous credit.",
       "<a href=\"https://www.lerandom.art/editorial/golan-levin-on-the-potentiality-of-blobs\" target=\"_blank\" rel=\"noopener\">Golan Levin spoke to me</a> about Processing as a response to the commercially available tools at the time: “Processing in its full-flowered implementation was a reaction to the limits of <a href=\"m/macromedia-flash-1-0-releaseda.html\" data-moment=\"macromedia-flash-1-0-releaseda\">Flash</a> and Director in terms of the assumptions that they made about artist tooling. What Ben and Casey knew was that the computer was capable of vastly more than <a href=\"https://www.lerandom.art/subjects/adobe\">Adobe</a> would lead you to believe in terms of the flexibility and malleability of dynamic digital form. ‍‍‍They showed that you could actually control the individual vertices of a polygon. You don’t just have to be stuck with ellipses and rectangles. That’s why Ben and Casey made that a first-order feature in Processing.",
       "As for the moment itself, the site <a href=\"http://www.proce55ing.net/\" target=\"_blank\" rel=\"noopener\">www.proce55ing.net</a> went live on October 20, 2001 with some sparse examples and the following <a href=\"https://medium.com/processing-foundation/a-modern-prometheus-59aed94abe85\" target=\"_blank\" rel=\"noopener\">description</a>:",
       "“Proce55ing is an environment for programming images, movement, and interaction. It is a sketchbook for developing ideas, a tool for creating prototypes, and a context for learning the fundamentals of computer programming. The Pr0cess1ng environment is in its early stages and will continue to develop.Pr()ce55ing is written in <a href=\"m/sun-microsystems-release-java-1-0.html\" data-moment=\"sun-microsystems-release-java-1-0\">Java</a> and enables the creation of Java Applications and Applets within a carefully designed set of constraints. It uses a 2D/3D Java rendering API that is a cross between postscript-style imaging in 2D and 3D rendering with OpenGL.”",
@@ -868,7 +869,7 @@
       {
         "k": "sound art",
         "n": "Sound Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "bitstreams",
@@ -1263,7 +1264,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "path",
@@ -1523,7 +1524,6 @@
     },
     "tags": [
       "Golan Levin",
-      "do it",
       "Ars Electronica",
       "SIGGRAPH",
       "software art",
@@ -1556,11 +1556,6 @@
         "k": "netochka nezvanova",
         "n": "Netochka Nezvanova",
         "t": "people"
-      },
-      {
-        "k": "do it",
-        "n": "do it",
-        "t": "works"
       },
       {
         "k": "ars electronica",
@@ -1715,9 +1710,10 @@
     "img": {
       "src": "img/agent-ruby-by-lynn-hershman-leeson.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Lynn Hershman Leeson, Agent Ruby's EDream Portal, 2002 (screen shot of agentruby.net), from Agent Ruby, 1998–2002. Collection of the San Francisco Museum of Modern Art. <a href=\"https://www.lynnhershman.com/project/agent-ruby/\">Image source</a>.",
       "width": 762,
-      "height": 430
+      "height": 430,
+      "sourceUrl": "https://www.lynnhershman.com/project/agent-ruby/"
     },
     "tags": [
       "Lynn Hershman Leeson",
@@ -2381,7 +2377,7 @@
     ],
     "echoes": [
       "ycam-interlab-camp-vol-5-homo-codens",
-      "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html",
+      "logo-language-developed",
       "mark-wilson-publishes-drawing-with-computers"
     ],
     "eds": [
@@ -2698,9 +2694,10 @@
     "img": {
       "src": "img/super-mario-clouds-by-cory-arcangel.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Installation view of Cory Arcangel, Super Mario Clouds, 2002 (hacked Super Mario Bros. cartridge and Nintendo NES, video projection). © Cory Arcangel. Courtesy of the artist. Photographer and venue not identified.",
       "width": 768,
-      "height": 1024
+      "height": 1024,
+      "sourceUrl": "https://whitney.org/collection/works/20588"
     },
     "tags": [
       "Cory Arcangel",
@@ -2832,9 +2829,10 @@
     "img": {
       "src": "img/velvet-strike-modifies-counter-strike.png",
       "cap": "",
-      "credit": "",
+      "credit": "Screenshot of the Velvet-Strike website, by Anne-Marie Schleiner, Joan Leandre and Brody Condon, 2002. <a href=\"http://www.opensorcery.net/velvet-strike/\">Image source</a>.",
       "width": 770,
-      "height": 502
+      "height": 502,
+      "sourceUrl": "http://www.opensorcery.net/velvet-strike/"
     },
     "tags": [
       "community",
@@ -3814,7 +3812,7 @@
     "body": [
       "This seminal book gave legitimacy to a field that was receiving renewed interest due to the success and rise of the Internet and net art. In Digital Art, <a href=\"https://www.lerandom.art/subjects/christiane-paul\">Christiane Paul</a> chronicles the transformative role of digital technology in art, focusing on technology as a medium itself from the early ’90s onwards, including net art and virtual reality.",
       "By beginning its “survey” of the evolution of digital art in the early-’90s, the text distinguishes between digital technology as a tool for traditional art-making (e.g., plotter work) and as a medium for pioneering new artistic forms (e.g., net.art and <a href=\"m/macromedia-flash-1-0-releaseda.html\" data-moment=\"macromedia-flash-1-0-releaseda\">Flash</a>). Paul discusses pivotal artists and works while inspecting critical themes like interactivity, artificial intelligence and social activism, alongside issues concerning the preservation, presentation and ownership of digital art.",
-      "Paul spoke to this author (Peter Bauman) about Digital Art two decades later for <a href=\"https://www.lerandom.art/editorial/christiane-paul-on-curating-cohens-aaron\" target=\"_blank\" rel=\"noopener\">a piece on Le Random Editorials</a>.",
+      "Paul spoke to this author (<a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a>) about Digital Art two decades later for <a href=\"https://www.lerandom.art/editorial/christiane-paul-on-curating-cohens-aaron\" target=\"_blank\" rel=\"noopener\">a piece on Le Random Editorials</a>.",
       "Beyond her watershed book, Paul’s impact was vital in sustaining institutional interest throughout the decade once it began to wane. Paul singularly legitimized an emerging field, while chronicling and contextualizing its history."
     ],
     "cite": [
@@ -3965,7 +3963,7 @@
   "galanter-defines-generative-art": {
     "body": [
       "In his seminal text from over twenty years ago, Galanter asks and answers, “What is Generative Art?” in the must-read essay for anyone interested in generative art: <a href=\"https://www.philipgalanter.com/downloads/ga2003_paper.pdf\" target=\"_blank\" rel=\"noopener\">“What is Generative Art? Complexity Theory as a Context for Art Theory.”</a>",
-      "This is the essay that nearly everyone cites when defining generative art. This author’s own definition is highly influenced by Galanter. Galanter spoke to this author (Peter Bauman) about his enduring definition two decades later for <a href=\"https://www.lerandom.art/editorial/decoupling-generative-art-with-philip-galanter\" target=\"_blank\" rel=\"noopener\">a piece on Le Random Editorials</a>.",
+      "This is the essay that nearly everyone cites when defining generative art. This author’s own definition is highly influenced by Galanter. Galanter spoke to this author (<a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a>) about his enduring definition two decades later for <a href=\"https://www.lerandom.art/editorial/decoupling-generative-art-with-philip-galanter\" target=\"_blank\" rel=\"noopener\">a piece on Le Random Editorials</a>.",
       "Here is Galanter’s iconic definition in full:",
       "“Generative art refers to any art practice where the artist uses a system, such as a set of natural language rules, a computer program, a machine, or other procedural invention, which is set into motion with some degree of autonomy contributing to or resulting in a completed work of art.”",
       "In other words, it is: <a href=\"https://www.lerandom.art/editorial/decoupling-generative-art-with-philip-galanter\" target=\"_blank\" rel=\"noopener\">Art using autonomous systems</a>.",
@@ -4077,9 +4075,10 @@
     "img": {
       "src": "img/yamaguchi-center-for-arts-and-media-ycam-in-japan.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Yamaguchi Center for Arts and Media (YCAM), Yamaguchi, Japan. Photograph by Bsx, 6 May 2008, Wikimedia Commons (CC BY-SA 3.0). <a href=\"https://commons.wikimedia.org/wiki/File:YCAM.jpg\">Image source</a>.",
       "width": 1019,
-      "height": 720
+      "height": 720,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:YCAM.jpg"
     },
     "tags": [
       "Japan",
@@ -4544,7 +4543,7 @@
       "Pac-Man",
       "Frank Lantz",
       "New York University",
-      "ITP (Interactive Telecommunications Program, NYU Tisch)",
+      "NYU ITP",
       "Washington Square Park",
       "Wi-Fi",
       "mobile phones",
@@ -4637,8 +4636,8 @@
         "t": "orgs"
       },
       {
-        "k": "itp (interactive telecommunications program, nyu tisch)",
-        "n": "ITP (Interactive Telecommunications Program, NYU Tisch)",
+        "k": "nyu itp",
+        "n": "NYU ITP",
         "t": "orgs"
       },
       {
@@ -4694,9 +4693,10 @@
     "img": {
       "src": "img/software-structures-by-casey-reas-jared-tarbell-robert-hodgin-and-william-ngan.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Screenshot of Structure #003 from {Software} Structures, Casey Reas with Jared Tarbell, Robert Hodgin and William Ngan, 2004. Whitney Museum of American Art, artport commission (2004 version). <a href=\"https://artport.whitney.org/commissions/software-structures/map.html\">Image source</a>.",
       "width": 995,
-      "height": 722
+      "height": 722,
+      "sourceUrl": "https://artport.whitney.org/commissions/software-structures/map.html"
     },
     "tags": [
       "Jared Tarbell",
@@ -4807,7 +4807,7 @@
   },
   "dina-chatbot-by-lynn-hershman-leeson": {
     "body": [
-      "With the release of Leeson’s video chatbot, DiNA, the artist expanded upon <a href=\"m/agent-ruby-by-lynn-hershman-leeson.html\" data-moment=\"agent-ruby-by-lynn-hershman-leeson\">Agent Ruby</a> (1998–2002), her text-based chatbot exhibited at <a href=\"https://www.lerandom.art/subjects/sfmoma\">SFMOMA</a>. DiNA, much like today’s Siri or Alexa, could be conversed with. Users could speak to DiNA through a microphone, to which she responded on a projected video screen in front. The piece also anticipates the work of contemporary AI artists like Huemin who have developed interactive AI devices like the <a href=\"https://www.lerandom.art/subjects/bright-moments\">Bright Moments</a> Dream Machine."
+      "With the release of Leeson’s video chatbot, DiNA, the artist expanded upon <a href=\"m/agent-ruby-by-lynn-hershman-leeson.html\" data-moment=\"agent-ruby-by-lynn-hershman-leeson\">Agent Ruby</a> (1998–2002), her text-based chatbot exhibited at <a href=\"https://www.lerandom.art/subjects/sfmoma\">SFMOMA</a>. DiNA, much like today’s Siri or Alexa, could be conversed with. Users could speak to DiNA through a microphone, to which she responded on a projected video screen in front. The piece also anticipates the work of contemporary AI artists like <a href=\"https://www.lerandom.art/subjects/huemin\">Huemin</a> who have developed interactive AI devices like the <a href=\"https://www.lerandom.art/subjects/bright-moments\">Bright Moments</a> Dream Machine."
     ],
     "cite": [
       {
@@ -4989,7 +4989,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       }
     ],
     "linked": [
@@ -5013,7 +5013,7 @@
   },
   "matthew-cook-proved-that-ca-rule-110-is-capable-of-universal-computation": {
     "body": [
-      "<a href=\"https://www.lerandom.art/subjects/matthew-cook\">Matthew Cook</a>’s proof, developed while assisting <a href=\"https://www.lerandom.art/subjects/stephen-wolfram\">Stephen Wolfram</a> on A New Kind of Science and published in Complex Systems in 2004, resolved a conjecture Wolfram had posited in the 1980s. Cook proved that Rule 110, a seemingly simple one-dimensional cellular automaton, is capable of universal computation. This significant achievement confirmed that Rule 110 could simulate a <a href=\"https://www.lerandom.art/subjects/turing\">Turing</a> machine, thus performing any computation that a Turing machine is capable of. Cook’s proof not only validated Wolfram’s hypothesis but also underscored the profound computational possibilities inherent in cellular automata, enhancing their standing in computational theory and the study of complex systems. This all in turn led to the continued usage and interest in the creation of visual forms."
+      "<a href=\"https://www.lerandom.art/subjects/matthew-cook\">Matthew Cook</a>’s proof, developed while assisting <a href=\"https://www.lerandom.art/subjects/stephen-wolfram\">Stephen Wolfram</a> on A New Kind of Science and published in Complex Systems in 2004, resolved a conjecture Wolfram had posited in the 1980s. Cook proved that Rule 110, a seemingly simple one-dimensional cellular automaton, is capable of universal computation. This significant achievement confirmed that Rule 110 could simulate a <a href=\"https://www.lerandom.art/subjects/alan-turing\">Turing</a> machine, thus performing any computation that a Turing machine is capable of. Cook’s proof not only validated Wolfram’s hypothesis but also underscored the profound computational possibilities inherent in cellular automata, enhancing their standing in computational theory and the study of complex systems. This all in turn led to the continued usage and interest in the creation of visual forms."
     ],
     "cite": [
       {
@@ -5030,7 +5030,7 @@
     },
     "tags": [
       "Stephen Wolfram",
-      "Turing",
+      "Alan Turing",
       "cellular automata",
       "complex systems",
       "Rules-Based Art",
@@ -5044,7 +5044,7 @@
     "people": [
       "matthew cook",
       "stephen wolfram",
-      "turing"
+      "alan turing"
     ],
     "subjects": [
       {
@@ -5088,8 +5088,8 @@
         "t": "people"
       },
       {
-        "k": "turing",
-        "n": "Turing",
+        "k": "alan turing",
+        "n": "Alan Turing",
         "t": "people"
       },
       {
@@ -5185,11 +5185,6 @@
         "k": "brendan dawes",
         "n": "Brendan Dawes",
         "t": "people"
-      },
-      {
-        "k": "big bang",
-        "n": "Big Bang",
-        "t": "works"
       },
       {
         "k": "cinema redux",
@@ -5918,11 +5913,6 @@
         "k": "tom igoe",
         "n": "Tom Igoe",
         "t": "people"
-      },
-      {
-        "k": "david",
-        "n": "David",
-        "t": "works"
       },
       {
         "k": "interaction design institute ivrea (idii)",
@@ -6771,7 +6761,7 @@
       {
         "k": "sound art",
         "n": "Sound Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "new tendencies",
@@ -6961,9 +6951,10 @@
     "img": {
       "src": "img/christa-sommerer-and-laurent-mignonneaus-life-writer.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Christa Sommerer and Laurent Mignonneau, Life Writer, 2006. Interactive installation commissioned by the Museum of Contemporary Art Cleveland (MOCA); collections of Itaú Cultural, Brazil, and ZKM Karlsruhe. © 2006 Laurent Mignonneau and Christa Sommerer. <a href=\"https://interface.ufg.ac.at/christa-laurent/LifeWriter.html\">Image source</a>.",
       "width": 464,
-      "height": 499
+      "height": 499,
+      "sourceUrl": "https://interface.ufg.ac.at/christa-laurent/LifeWriter.html"
     },
     "tags": [
       "Christa Sommerer",
@@ -8259,11 +8250,6 @@
         "t": "people"
       },
       {
-        "k": "david",
-        "n": "David",
-        "t": "works"
-      },
-      {
         "k": "instagram",
         "n": "Instagram",
         "t": "orgs"
@@ -8310,9 +8296,10 @@
     "img": {
       "src": "img/allison-parrish-launches-everyword.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Screenshot of the @everyword Twitter profile showing the final words tweeted on 7 June 2014. @everyword, Allison Parrish, 2007–2014. <a href=\"https://www.decontextualize.com/2014/06/task-complete/\">Allison Parrish, Task complete (6 June 2014)</a>.",
       "width": 900,
-      "height": 480
+      "height": 480,
+      "sourceUrl": "https://www.decontextualize.com/2014/06/task-complete/"
     },
     "tags": [
       "Twitter",
@@ -8495,7 +8482,7 @@
       "casey-reas-and-ben-fry-initiate-processing-project"
     ],
     "echoes": [
-      "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html",
+      "logo-language-developed",
       "grace-murray-hopper-invents-general-programming-languages",
       "mark-wilson-publishes-drawing-with-computers"
     ],
@@ -9696,11 +9683,6 @@
         "t": "people"
       },
       {
-        "k": "recognition",
-        "n": "Recognition",
-        "t": "works"
-      },
-      {
         "k": "princeton",
         "n": "Princeton",
         "t": "orgs"
@@ -9898,7 +9880,7 @@
     ],
     "linked": [],
     "echoes": [
-      "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html",
+      "logo-language-developed",
       "c-developed-by-bjarne-stroustrup-at-bell-laboratories",
       "computers-and-art-syracuse-everson-museum-of-art"
     ],
@@ -9915,7 +9897,7 @@
   },
   "scorelight-by-alvaro-cassinelli-masatoshi-ishikawa-yusaku-kuribaka-daito-manabe": {
     "body": [
-      "The innovative work from <a href=\"https://www.lerandom.art/subjects/japan\">Japan</a> explored the intersection of visual art and sound by transforming doodles and three-dimensional objects into musical sequences. The instrument, which operates without cameras or projectors, employs a laser to trace contours much like a stylus reads a vinyl record, but with visual forms generating the sound. Users can influence pitch by altering the inclination of lines or rotating the drawing, while tempo varies with contour length. This method reflects the continued evolution of interactive art, reminiscent of earlier explorations like the reactive installations of Myron Krueger in the 1970s. scoreLight extends these concepts into the auditory realm, merging sculptural visuals and sound in a fluid, interactive experience."
+      "The innovative work from <a href=\"https://www.lerandom.art/subjects/japan\">Japan</a> explored the intersection of visual art and sound by transforming doodles and three-dimensional objects into musical sequences. The instrument, which operates without cameras or projectors, employs a laser to trace contours much like a stylus reads a vinyl record, but with visual forms generating the sound. Users can influence pitch by altering the inclination of lines or rotating the drawing, while tempo varies with contour length. This method reflects the continued evolution of interactive art, reminiscent of earlier explorations like the reactive installations of <a href=\"https://www.lerandom.art/subjects/myron-krueger\">Myron Krueger</a> in the 1970s. scoreLight extends these concepts into the auditory realm, merging sculptural visuals and sound in a fluid, interactive experience."
     ],
     "cite": [
       {
@@ -9998,7 +9980,7 @@
       {
         "k": "sound art",
         "n": "Sound Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "japan",
@@ -10124,7 +10106,7 @@
     "echoes": [
       "muriel-cooper-founds-the-visible-language-workshop",
       "generacion-automatica-de-formas-plasticas-exhibition-at-the-mathematical-institu",
-      "adope-illustrator-developed"
+      "adobe-illustrator-developed"
     ],
     "eds": [
       "john-provencher-and-raster-on-generative-identity"

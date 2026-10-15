@@ -19,9 +19,10 @@
     "img": {
       "src": "img/enter-the-madness.png",
       "cap": "Erick Calderon, Chromie Squiggle #9691, 2022. Courtesy of the artist and owned by Le Random",
-      "credit": "",
+      "credit": "Erick Calderon (Snowfro), Chromie Squiggle #9691, 2020. Art Blocks. <a href=\"https://www.artblocks.io/collections/curated/projects/0x059edd72cd353df5106d2b9cc5ab83a52287ac3a/0\">Image source</a>",
       "width": 1600,
-      "height": 1067
+      "height": 1067,
+      "sourceUrl": "https://www.artblocks.io/collections/curated/projects/0x059edd72cd353df5106d2b9cc5ab83a52287ac3a/0"
     },
     "tags": [
       "Rafael Lozano-Hemmer",
@@ -1078,9 +1079,10 @@
     "img": {
       "src": "img/chromie-squiggle-by-snowfro.png",
       "cap": "",
-      "credit": "",
+      "credit": "Erick Calderon (Snowfro), Chromie Squiggle, 2020. Art Blocks. <a href=\"https://www.artblocks.io/collections/curated/projects/0x059edd72cd353df5106d2b9cc5ab83a52287ac3a/0\">Image source</a>",
       "width": 2400,
-      "height": 1600
+      "height": 1600,
+      "sourceUrl": "https://www.artblocks.io/collections/curated/projects/0x059edd72cd353df5106d2b9cc5ab83a52287ac3a/0"
     },
     "tags": [
       "Chromie Squiggle",
@@ -1213,13 +1215,13 @@
       "Art Blocks",
       "Ethereum Art",
       "long-form generative art",
-      "DCA (Daniel Calderon Arenas)",
+      "Daniel Calderon Arenas",
       "Construction Token",
       "Genesis",
       "generative art"
     ],
     "people": [
-      "dca (daniel calderon arenas)",
+      "daniel calderon arenas",
       "erick calderon",
       "jeff davis"
     ],
@@ -1240,8 +1242,8 @@
         "t": "tech"
       },
       {
-        "k": "dca (daniel calderon arenas)",
-        "n": "DCA (Daniel Calderon Arenas)",
+        "k": "daniel calderon arenas",
+        "n": "Daniel Calderon Arenas",
         "t": "people"
       },
       {
@@ -1372,7 +1374,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "instagram",
@@ -1427,7 +1429,6 @@
     "tags": [
       "Shohei Fujimoto",
       "Refik Anadol",
-      "Solo Show",
       "openFrameworks",
       "cybernetics",
       "North America",
@@ -1517,11 +1518,6 @@
         "k": "intangible form",
         "n": "Intangible Form",
         "t": "works"
-      },
-      {
-        "k": "solo show",
-        "n": "Solo Show",
-        "t": "orgs"
       },
       {
         "k": "teamlab",
@@ -1913,9 +1909,10 @@
     "img": {
       "src": "img/i-d-rather-be-in-a-dark-silence-than-by-operator.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Operator (Ania Catherine and Dejha Ti), I'd rather be in a dark silence than, 2020. Installation view. Photographer not credited.",
       "width": 2048,
-      "height": 1378
+      "height": 1378,
+      "sourceUrl": "https://www.operator.la/blog/lumen-prize-for-immersive-environments-at-barbican-centre"
     },
     "tags": [
       "Ania Catherine",
@@ -2219,9 +2216,10 @@
     "img": {
       "src": "img/ringers-by-dmitri-cherniak.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Dmitri Cherniak, Ringers #999, 2021. Art Blocks. <a href=\"https://www.artblocks.io/collections/curated/projects/0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270/13\">Image source</a>",
       "width": 2400,
-      "height": 2400
+      "height": 2400,
+      "sourceUrl": "https://www.artblocks.io/collections/curated/projects/0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270/13"
     },
     "tags": [
       "Dmitri Cherniak",
@@ -2633,7 +2631,7 @@
     "body": [
       "On March 1, Hicetnunc (HEN) officially launched its mainnet along with the OBJKT Swap Protocol on Tezos, which enabled NFT transactions. With low monetary barriers to entry and no gatekeepers, Hicetnunc exploded onto the digital art scene as a marketplace, fostering a loyal following of digital creatives from around the globe but particularly the Global South.",
       "Before HEN, many established generative artists were skeptical of NFTs and avoided associations with them. As respected artists such as <a href=\"https://www.lerandom.art/subjects/mario-klingemann\">Mario Klingemann</a> became some of the earliest adopters, HEN gained instant legitimacy. The platform rapidly became popular with a near-utopian, frenzied community. This explosion of creativity brought generative art from <a href=\"https://www.lerandom.art/subjects/south-america\">South America</a>, with its illustrious legacy, to the entire world.",
-      "<a href=\"https://www.lerandom.art/editorial/ten-moments-in-south-american-generative-art-history\" target=\"_blank\" rel=\"noopener\">This author, Peter Bauman, wrote about critical moments throughout generative art history in South America on a collaboration with Bright Moments.</a>"
+      "<a href=\"https://www.lerandom.art/editorial/ten-moments-in-south-american-generative-art-history\" target=\"_blank\" rel=\"noopener\">This author, </a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://www.lerandom.art/editorial/ten-moments-in-south-american-generative-art-history\" target=\"_blank\" rel=\"noopener\">, wrote about critical moments throughout generative art history in South America on a collaboration with Bright Moments.</a>"
     ],
     "cite": [
       {
@@ -2986,7 +2984,12 @@
     "body": [
       "While ultimately not a mainstream success, Cuban’s NFT viewing gallery, Lazy, demonstrated the Web3 and NFT world’s rapid rise in prominence, especially after the March Beeple sale. Cuban purchased Lazy less than two weeks after Beeple’s record-breaking sale."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://www.theblock.co/post/98974/mark-cuban-digital-art-gallery-nft",
+        "label": "theblock.co"
+      }
+    ],
     "img": {
       "cap": "Lazy.com’s NFT display interface, March 2021.",
       "credit": "Interface: Lazy.com. Screenshot published by NFT Culture, March 28, 2021. Artworks shown remain attributed to their respective creators. <a href=\"https://www.nftculture.com/nft-displays/lazy-com-the-best-way-to-display-your-nfts-in-one-place/\">Image source</a>.",
@@ -3072,7 +3075,7 @@
   },
   "social-codes-by-feral-file": {
     "body": [
-      "Originally minted on Bitmark, Social Codes was a group online exhibition by <a href=\"https://www.lerandom.art/subjects/feral-file\">Feral File</a> and curated by artist <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> in March before NFT-mania has properly taken off. The exhibition’s timing was perfect, as interest in the artists featured was rising rapidly. The ten artists included <a href=\"https://www.lerandom.art/subjects/dmitri-cherniak\">Dmitri Cherniak</a>, LIA, <a href=\"https://www.lerandom.art/subjects/andrew-benson\">Andrew Benson</a>, LIA, Dmitri Cherniak, <a href=\"https://www.lerandom.art/subjects/raven-kwok\">Raven Kwok</a>, <a href=\"https://www.lerandom.art/subjects/anna-carreras\">Anna Carreras</a>, <a href=\"https://www.lerandom.art/subjects/manolo-gamboa-naon\">Manolo Gamboa Naon</a>, <a href=\"https://www.lerandom.art/subjects/maya-man\">Maya Man</a>, <a href=\"https://www.lerandom.art/subjects/frederik-vanhoutte\">Frederik Vanhoutte</a>, <a href=\"https://www.lerandom.art/subjects/saskia-freeke\">Saskia Freeke</a> and <a href=\"https://www.lerandom.art/subjects/dave-whyte-bees-and-bombs\">Dave Whyte (Bees and Bombs)</a>. Each artwork was created using custom software, and meant to showcase the power of code as a medium for artistic expression. Social Codes provided a cohesive space for these rapidly emerging digital artists to make work, curated by the legendary creator of Processsing itself. The show was thus a critical stamp of approval for some of the earliest generative art on the blockchain, increasingly, long-form generative art."
+      "Originally minted on Bitmark, Social Codes was a group online exhibition by <a href=\"https://www.lerandom.art/subjects/feral-file\">Feral File</a> and curated by artist <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> in March before NFT-mania has properly taken off. The exhibition’s timing was perfect, as interest in the artists featured was rising rapidly. The ten artists included <a href=\"https://www.lerandom.art/subjects/dmitri-cherniak\">Dmitri Cherniak</a>, LIA, <a href=\"https://www.lerandom.art/subjects/andrew-benson\">Andrew Benson</a>, <a href=\"https://www.lerandom.art/subjects/raven-kwok\">Raven Kwok</a>, <a href=\"https://www.lerandom.art/subjects/anna-carreras\">Anna Carreras</a>, <a href=\"https://www.lerandom.art/subjects/manolo-gamboa-naon\">Manolo Gamboa Naon</a>, <a href=\"https://www.lerandom.art/subjects/maya-man\">Maya Man</a>, <a href=\"https://www.lerandom.art/subjects/frederik-vanhoutte\">Frederik Vanhoutte</a>, <a href=\"https://www.lerandom.art/subjects/saskia-freeke\">Saskia Freeke</a> and <a href=\"https://www.lerandom.art/subjects/dave-whyte-bees-and-bombs\">Dave Whyte (Bees and Bombs)</a>. Each artwork was created using custom software, and meant to showcase the power of code as a medium for artistic expression. Social Codes provided a cohesive space for these rapidly emerging digital artists to make work, curated by the legendary creator of Processsing itself. The show was thus a critical stamp of approval for some of the earliest generative art on the blockchain, increasingly, long-form generative art."
     ],
     "cite": [
       {
@@ -3281,9 +3284,10 @@
     "img": {
       "src": "img/subscapes-by-matt-deslauriers.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Matt DesLauriers, Subscapes, 2021. Art Blocks. <a href=\"https://www.artblocks.io/collections/curated/projects/0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270/53\">Image source</a>",
       "width": 2400,
-      "height": 2400
+      "height": 2400,
+      "sourceUrl": "https://www.artblocks.io/collections/curated/projects/0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270/53"
     },
     "tags": [
       "Mike Winkelmann (Beeple)",
@@ -3402,7 +3406,7 @@
     "body": [
       "After the dust settled in a chaotic generative art summer of 2021, <a href=\"https://www.lerandom.art/subjects/tyler-hobbs\">Tyler Hobbs</a>’s <a href=\"https://www.lerandom.art/subjects/fidenza\">Fidenza</a> in the end remains perhaps the most celebrated. This versatile and aesthetically diverse generative algorithm stood out for its recognizable elegance.",
       "Rooted in the flow field algorithm for which the project is now nearly synonymous, Fidenza generates intricate, (mostly) non-overlapping curves that are layered with thick, curved rectangles, creating complex, organic compositions.",
-      "The algorithm allows for a wide range of variations in turbulence, scale, and color, producing outputs that range from serene, flowing patterns to bold, chaotic structures. <a href=\"https://www.lerandom.art/editorial/tyler-hobbs-on-algorithmic-aesthetics\" target=\"_blank\" rel=\"noopener\">Hobbs spoke to this author, Peter Bauman, about his evolving views on “algorithmic aesthetics”</a>:",
+      "The algorithm allows for a wide range of variations in turbulence, scale, and color, producing outputs that range from serene, flowing patterns to bold, chaotic structures. <a href=\"https://www.lerandom.art/editorial/tyler-hobbs-on-algorithmic-aesthetics\" target=\"_blank\" rel=\"noopener\">Hobbs spoke to this author, </a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://www.lerandom.art/editorial/tyler-hobbs-on-algorithmic-aesthetics\" target=\"_blank\" rel=\"noopener\">, about his evolving views on “algorithmic aesthetics”</a>:",
       "“This is the way I like to precisely define where the art is now: it’s the potential output space of the generative procedure combined with the curation model.",
       "That is to say, I think what the artist has really crafted is that output space and all the things that can happen in it. Obviously, they don’t necessarily have control over exactly what happens but to a certain extent they do because they’re also able to choose the curation model.",
       "For example, with Fidenza, I was developing it with the knowledge that every single output could be part of the final result set. That potential output space was designed with that curation model in mind—versus <a href=\"m/qql-by-tyler-hobbs-and-dandelion-wist-mane.html\" data-moment=\"qql-by-tyler-hobbs-and-dandelion-wist-mane\">QQL</a>, where I know that it’s going to undergo heavy curation, sometimes really extreme curation.",
@@ -3417,9 +3421,10 @@
     "img": {
       "src": "img/fidenza-by-tyler-hobbs.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Tyler Hobbs, Fidenza, 2021. Art Blocks. <a href=\"https://www.artblocks.io/collections/curated/projects/0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270/78\">Image source</a>",
       "width": 2000,
-      "height": 2400
+      "height": 2400,
+      "sourceUrl": "https://www.artblocks.io/collections/curated/projects/0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270/78"
     },
     "tags": [
       "Tyler Hobbs",
@@ -4240,9 +4245,10 @@
     "img": {
       "src": "img/century-by-casey-reas.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Casey Reas, CENTURY, 2021. Art Blocks Curated, Ethereum.",
       "width": 2400,
-      "height": 2400
+      "height": 2400,
+      "sourceUrl": "https://www.artblocks.io/article/in-conversation-with-casey-reas-on-century"
     },
     "tags": [
       "Ellsworth Kelly",
@@ -4392,9 +4398,10 @@
     "img": {
       "src": "img/rituals-venice-by-aaron-penne-x-boreta.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Aaron Penne x Boreta, Rituals - Venice, 2021. Bright Moments.",
       "width": 1350,
-      "height": 2400
+      "height": 2400,
+      "sourceUrl": "https://lumenprize.org/2022-winners/nft-award-winner"
     },
     "tags": [
       "Aaron Penne",
@@ -4833,13 +4840,21 @@
   },
   "mario-klingemann-creates-botto": {
     "body": [
-      "In October, <a href=\"https://www.lerandom.art/subjects/mario-klingemann\">Mario Klingemann</a> launched <a href=\"https://www.lerandom.art/subjects/botto\">Botto</a>, a decentralized autonomous artist governed by a DAO (Decentralized Autonomous Organization). This decentralized autonomous artist was designed to generate and sell art based on community feedback mechanisms of the DAO.",
+      "In October, <a href=\"https://www.lerandom.art/subjects/mario-klingemann\">Mario Klingemann</a> launched <a href=\"https://www.lerandom.art/subjects/botto\">Botto</a>, a decentralized autonomous artist governed by a DAO (Decentralized Autonomous Organization). This decentralized autonomous artist was designed to generate and sell art based on community feedback mechanisms of the DAO. Simon Hudson, the project’s first hire, led the BottoDAO from launch day until September 2026.",
       "Utilizing AI models and governed by the BottoDAO, Botto creates thousands of images weekly, with community members voting to select and auction the final artwork as NFTs. This project challenges traditional notions of authorship, harkening back to <a href=\"https://www.lerandom.art/subjects/harold-cohen\">Harold Cohen</a> and his <a href=\"m/harold-cohen-pioneers-ai-art-with-aaron.html\" data-moment=\"harold-cohen-pioneers-ai-art-with-aaron\">AARON</a>, which was similarly intended to be an immortal artist. While both <a href=\"https://www.lerandom.art/subjects/aaron\">AARON</a> and Botto can operate somewhat independently of direct human control, Botto is guided instead by collective input and decentralized governance, meaning its future as a continuing artist is not limited by a single individual’s wishes or passing. The project’s roots lie in <a href=\"https://www.lerandom.art/subjects/gene-kogan\">Gene Kogan</a>’s <a href=\"https://www.lerandom.art/subjects/abraham\">Abraham</a>.ai from 2017."
     ],
     "cite": [
       {
         "url": "https://www.botto.com/",
         "label": "botto.com"
+      },
+      {
+        "url": "https://www.sleek-mag.com/article/digital-originals-2/",
+        "label": "sleek-mag.com"
+      },
+      {
+        "url": "https://x.com/hudsonsims/status/2102804390734143836",
+        "label": "x.com"
       }
     ],
     "img": {
@@ -4873,7 +4888,8 @@
     "people": [
       "gene kogan",
       "harold cohen",
-      "mario klingemann"
+      "mario klingemann",
+      "simon hudson"
     ],
     "subjects": [
       {
@@ -4975,6 +4991,11 @@
         "k": "october",
         "n": "October",
         "t": "orgs"
+      },
+      {
+        "k": "simon hudson",
+        "n": "Simon Hudson",
+        "t": "people"
       }
     ],
     "linked": [
@@ -5011,9 +5032,10 @@
     "img": {
       "src": "img/rgb-elementary-cellular-automaton-by-ciphrd.png",
       "cap": "",
-      "credit": "",
+      "credit": "Ciphrd, RGB Elementary Cellular Automaton #1, 2021. fxhash, Tezos. The genesis piece, minted by the artist.",
       "width": 800,
-      "height": 800
+      "height": 800,
+      "sourceUrl": "https://lerandom.art/collection/rgb-elementary-cellular-automaton-1"
     },
     "tags": [
       "Baptiste Crespy (ciphrd)",
@@ -5420,11 +5442,24 @@
   },
   "gene-kogan-creates-braindrops-long-form-ai-art-platform": {
     "body": [
-      "In November, artist and AI educator <a href=\"https://www.lerandom.art/subjects/gene-kogan\">Gene Kogan</a> co-founded <a href=\"https://www.lerandom.art/subjects/braindrops\">BrainDrops</a>, a transformative NFT platform dedicated to AI-generated art. BrainDrops quickly became a central hub for artists and enthusiasts exploring the creative potential of AI. The platform launched in November 2021 with Kogan’s own Brain Loops; <a href=\"https://www.lerandom.art/subjects/roope-rainisto\">Roope Rainisto</a>’s Life in West <a href=\"https://www.lerandom.art/subjects/america\">America</a>, later its best-known release, followed in February 2023.",
+      "In November, artist and AI educator <a href=\"https://www.lerandom.art/subjects/gene-kogan\">Gene Kogan</a> co-founded <a href=\"https://www.lerandom.art/subjects/braindrops\">BrainDrops</a>, a transformative NFT platform dedicated to AI-generated art. BrainDrops quickly became a central hub for artists and enthusiasts exploring the creative potential of AI. The platform launched in November 2021 with Kogan’s own Brain Loops; <a href=\"https://www.lerandom.art/subjects/roope-rainisto\">Roope Rainisto</a>’s Life in West <a href=\"https://www.lerandom.art/subjects/united-states\">America</a>, later its best-known release, followed in February 2023.",
       "<a href=\"https://www.youtube.com/watch?v=DA5ZjOV0O7g\" target=\"_blank\" rel=\"noopener\">Kogan spoke to this author and Le Random for our talk, covering the previous decade.</a>",
       "BrainDrops continues to foster a vibrant community, offering educational resources and innovative tools, solidifying its role and strengthening the image of the much-derided AI-generated art in the eyes of the NFT and fine art worlds."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://paragraph.com/@kaloh/%F0%9F%A4%96%F0%9F%A7%A0-market-analysis-braindrops",
+        "label": "paragraph.com"
+      },
+      {
+        "url": "https://lerandom.art/collection/art-nouveau-portrait-6",
+        "label": "lerandom.art"
+      },
+      {
+        "url": "https://genekogan.com",
+        "label": "genekogan.com"
+      }
+    ],
     "img": {
       "cap": "Gene Kogan, Brain Loops, 2021. Still from the artist’s portfolio overview of his first BrainDrops collection.",
       "credit": "Artwork: Gene Kogan. Still from the video published in his artist portfolio. <a href=\"https://genekogan.com/\">Image source</a>.",
@@ -5437,7 +5472,7 @@
     "tags": [
       "Gene Kogan",
       "BrainDrops",
-      "America",
+      "United States",
       "community",
       "ai art",
       "tools",
@@ -5528,18 +5563,13 @@
         "t": "works"
       },
       {
-        "k": "platform",
-        "n": "Platform",
-        "t": "works"
-      },
-      {
         "k": "braindrops",
         "n": "BrainDrops",
         "t": "orgs"
       },
       {
-        "k": "america",
-        "n": "America",
+        "k": "united states",
+        "n": "United States",
         "t": "places"
       }
     ],
@@ -5564,11 +5594,11 @@
   },
   "theverseverse-founded": {
     "body": [
-      "In November, a group of women poets established theVERSEverse NFT poetry gallery. The group celebrates poetry and text’s long-standing role in the history of generative expression, drawing from the legacies of artists like Hugo Ball, <a href=\"https://www.lerandom.art/subjects/christopher-strachey\">Christopher Strachey</a> and <a href=\"https://www.lerandom.art/subjects/yoko-ono\">Yoko Ono</a>. The poets of theVERSEverse are <a href=\"https://www.lerandom.art/subjects/ana-maria-caballero\">Ana María Caballero</a>, Sasha Stiles, <a href=\"https://www.lerandom.art/subjects/kalen-iwamoto\">Kalen Iwamoto</a> and <a href=\"https://www.lerandom.art/subjects/elisabeth-sweet\">Elisabeth Sweet</a>.",
+      "In November, a group of women poets established theVERSEverse NFT poetry gallery. The group celebrates poetry and text’s long-standing role in the history of generative expression, drawing from the legacies of artists like <a href=\"https://www.lerandom.art/subjects/hugo-ball\">Hugo Ball</a>, <a href=\"https://www.lerandom.art/subjects/christopher-strachey\">Christopher Strachey</a> and <a href=\"https://www.lerandom.art/subjects/yoko-ono\">Yoko Ono</a>. The poets of theVERSEverse are <a href=\"https://www.lerandom.art/subjects/ana-maria-caballero\">Ana María Caballero</a>, Sasha Stiles, <a href=\"https://www.lerandom.art/subjects/kalen-iwamoto\">Kalen Iwamoto</a> and <a href=\"https://www.lerandom.art/subjects/elisabeth-sweet\">Elisabeth Sweet</a>.",
       "The gallery creates literary experiences that reimagine how we consume text-based creativity in a world increasingly confronted with zeros and ones. As this Timeline has referenced many times, text—with its set rules—has often predated visual aleatoric experimentation, a legacy theVERSEverse excitingly highlights.",
       "Le Random is grateful that the poets have a strong connection to our Editorials and this Timeline.",
       "<a href=\"https://www.lerandom.art/subjects/sasha-stiles\" target=\"_blank\" rel=\"noopener\">Stiles is the only other co-author of this Timeline, writing dozens of the 1000+ moments</a>.",
-      "<a href=\"https://www.lerandom.art/editorial/sasha-stiles-on-writing-poets\" target=\"_blank\" rel=\"noopener\">Stiles also spoke to this author, Peter Bauman (Monk Antony) and Le Random’s Collection Lead Conrad House to discuss</a> her digital poetry practice and the historical roots of generative text for Le Random Editorials.",
+      "<a href=\"https://www.lerandom.art/editorial/sasha-stiles-on-writing-poets\" target=\"_blank\" rel=\"noopener\">Stiles also spoke to this author, </a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman (Monk Antony)</a><a href=\"https://www.lerandom.art/editorial/sasha-stiles-on-writing-poets\" target=\"_blank\" rel=\"noopener\"> and Le Random’s Collection Lead </a><a href=\"https://www.lerandom.art/subjects/conrad-house\">Conrad House</a><a href=\"https://www.lerandom.art/editorial/sasha-stiles-on-writing-poets\" target=\"_blank\" rel=\"noopener\"> to discuss</a> her digital poetry practice and the historical roots of generative text for Le Random Editorials.",
       "Sweet has authored two articles on Le Random Editorials. <a href=\"https://www.lerandom.art/editorial/generations-of-verse\" target=\"_blank\" rel=\"noopener\">The first was our fifth-ever piece, “Generations of Verse,”</a> which examined the history of generative text. <a href=\"https://www.lerandom.art/editorial/machine-reverie\" target=\"_blank\" rel=\"noopener\">The second, “machine rêverie,” is a fantastic conversation with artist ‍aurèce vettier</a>.",
       "<a href=\"https://www.lerandom.art/editorial/ana-maria-caballeros-paperwork\" target=\"_blank\" rel=\"noopener\">Ana María Caballero has contributed a piece to Le Random Editorials. When prompted to use an Editorial page as a blank canvas, she chose to share the details of her project,</a> <a href=\"https://www.lerandom.art/editorial/ana-maria-caballeros-paperwork\" target=\"_blank\" rel=\"noopener\">Paperwork</a>."
     ],
@@ -5581,9 +5611,10 @@
     "img": {
       "src": "img/theverseverse-founded.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "theVERSEverse logo. © theVERSEverse LLC.",
       "width": 2144,
-      "height": 538
+      "height": 538,
+      "sourceUrl": "https://theverseverse.com/"
     },
     "tags": [
       "Christopher Strachey",
@@ -5732,7 +5763,7 @@
   "garden-monoliths-by-zancan": {
     "body": [
       "On December 9, Michael <a href=\"https://www.lerandom.art/subjects/zancan\">Zancan</a> released what would become one of <a href=\"m/fx-hash-launches.html\" data-moment=\"fx-hash-launches\">fxhash</a>’s most revered projects, Garden, Monoliths. Just examining this single day gives an indication of the burning flames of interest that were raging during this particular time period in generative art.",
-      "GM—as the project is affectionately known—is rooted in <a href=\"m/aristid-lindenmayer-introduces-the-world-to-l-systems.html\" data-moment=\"aristid-lindenmayer-introduces-the-world-to-l-systems\">L-systems</a> and based on the artist’s own “Grass.js” algorithm developed during a period of natural inspiration. The project features intricate vector-based designs that blend the density and organic patterns of nature with the rigidity of monolithic forms. Each artwork emerges as either a “Garden” or “Monolith,” representing variations of Zancan’s now signature style that combines delicate line strokes with occasional transparent fills, harkening back to the days of 1970s plotter artists experimenting with the organic. This includes the “grass” work of artists Colette and Charles J. Bangert as well as <a href=\"https://www.lerandom.art/subjects/grace-c-hertlein\">Grace C. Hertlein</a>. <a href=\"https://www.lerandom.art/editorial/colette-bangert-on-growing-visually\" target=\"_blank\" rel=\"noopener\">This author, Peter Bauman, spoke to Colette Bangert about her naturalism-inspired work that would go on to deeply inform projects like GM, even if indirectly. Bangert said:</a>",
+      "GM—as the project is affectionately known—is rooted in <a href=\"m/aristid-lindenmayer-introduces-the-world-to-l-systems.html\" data-moment=\"aristid-lindenmayer-introduces-the-world-to-l-systems\">L-systems</a> and based on the artist’s own “Grass.js” algorithm developed during a period of natural inspiration. The project features intricate vector-based designs that blend the density and organic patterns of nature with the rigidity of monolithic forms. Each artwork emerges as either a “Garden” or “Monolith,” representing variations of Zancan’s now signature style that combines delicate line strokes with occasional transparent fills, harkening back to the days of 1970s plotter artists experimenting with the organic. This includes the “grass” work of artists Colette and Charles J. Bangert as well as <a href=\"https://www.lerandom.art/subjects/grace-c-hertlein\">Grace C. Hertlein</a>. <a href=\"https://www.lerandom.art/editorial/colette-bangert-on-growing-visually\" target=\"_blank\" rel=\"noopener\">This author, </a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://www.lerandom.art/editorial/colette-bangert-on-growing-visually\" target=\"_blank\" rel=\"noopener\">, spoke to Colette Bangert about her naturalism-inspired work that would go on to deeply inform projects like GM, even if indirectly. Bangert said:</a>",
       "“There was always the changing sky, seasonal ground and what I saw in between as I looked, walked, traveled and lived.",
       "Sometimes there were other people, other art. Mostly it was just me daily seeing and creating marks on a surface, then seeing what was there and once in a while that seeing went out into the world to be seen. The work itself, over the years, I named landscape as a way to understand and show connections to the world of the trees, sky, ground, green—or not look of the land—I’ve seen daily, even as the world climate changes everything. It’s colors, lines, forms and places daily, year by year, as I also change and grow onward.”",
       "December 9 on fxhash alone saw the releases of Zancan, <a href=\"https://www.lerandom.art/subjects/erik-swahn\">Erik Swahn</a>’s Farbteiler, <a href=\"https://www.lerandom.art/subjects/loren-bednar\">Loren Bednar</a>, ge1doot, <a href=\"https://www.lerandom.art/subjects/michael-connolly-xiiixiii\">Michael Connolly (xiiixiii)</a>, <a href=\"https://www.lerandom.art/subjects/owen-moore\">Owen Moore</a>, <a href=\"https://www.lerandom.art/subjects/rudxane\">Rudxane</a>’s Tych, collections by wblut, Loackme and many more. The period was simply an explosion of pent-up creativity that was finally released. For those lucky enough to be around the <a href=\"https://www.lerandom.art/subjects/discord\">Discord</a> chatrooms on days like this, there was an electricity and excitement that was never sustainable but demonstrated the potential of the space to move people."
@@ -5746,9 +5777,10 @@
     "img": {
       "src": "img/garden-monoliths-by-zancan.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Zancan (Michaël Zancan), Garden, Monoliths #156, 2021. fxhash, Tezos.",
       "width": 1024,
-      "height": 1024
+      "height": 1024,
+      "sourceUrl": "https://www.lerandom.art/collection/garden-monoliths-156"
     },
     "tags": [
       "Grace C. Hertlein",
@@ -6091,7 +6123,20 @@
     "body": [
       "Co-founded by <a href=\"https://www.lerandom.art/subjects/timothy-mc-alister\">Timothy Mc Alister</a> and launched as an NFT platform on the Tezos blockchain, objkt.com quickly becoming the largest digital art marketplace for NFTs on Tezos, akin to <a href=\"https://www.lerandom.art/subjects/opensea\">OpenSea</a> on Ethereum. Initially starting as an auction site, it expanded into a full marketplace, especially after <a href=\"m/hicetnunc-hen-founded-by-rafael-lima.html\" data-moment=\"hicetnunc-hen-founded-by-rafael-lima\">HEN</a>’s usability challenges and instability following the departure of its founder. One of the earliest releases was a collaboration with artist and illustrator <a href=\"https://www.lerandom.art/subjects/george-goodwin\">George Goodwin</a> on the early Tezos PFP project Tezzards, helping to congeal the early Tezos art community. The platform played a pivotal role in shaping the Tezos art ecosystem, providing a decentralized space for artists and collectors to engage, mint, trade and showcase their work."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://paragraph.com/@kaloh/an-introduction-to-tezos-nft-marketplaces",
+        "label": "paragraph.com"
+      },
+      {
+        "url": "https://decrypt.co/86020/tezos-nft-marketplace-hic-et-nunc-discontinued",
+        "label": "decrypt.co"
+      },
+      {
+        "url": "https://www.ledger.com/objkt-where-artists-are-collectors-and-vice-versa",
+        "label": "ledger.com"
+      }
+    ],
     "img": {
       "cap": "OMGiDRAWEDit (George Goodwin), Tezzardz, 2021. Selection from the collection first released through objkt.com.",
       "credit": "Artwork: George Goodwin / OMGiDRAWEDit. Official Tezzardz project preview. <a href=\"https://tezzardz.xyz/\">Image source</a>.",
@@ -6261,9 +6306,10 @@
     "img": {
       "src": "img/latent-diffusion-models-introduced.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "VulcanSphere, Astronaut Riding a Horse (SDXL), 2023. Generated with Stable Diffusion XL in NightCafe Studio from the prompt \"a photograph of an astronaut riding a horse\". Wikimedia Commons (public domain / CC0).",
       "width": 1024,
-      "height": 1024
+      "height": 1024,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astronaut_Riding_a_Horse_(SDXL).jpg"
     },
     "tags": [
       "latent diffusion models (LDMs)",
@@ -6372,7 +6418,7 @@
       "IGÚN",
       "Benin Kingdom",
       "Global South",
-      "Britain",
+      "UK",
       "AR",
       "bronze casting",
       "colonialism",
@@ -6455,8 +6501,8 @@
         "t": "places"
       },
       {
-        "k": "britain",
-        "n": "Britain",
+        "k": "uk",
+        "n": "UK",
         "t": "places"
       },
       {
@@ -6635,9 +6681,10 @@
     "img": {
       "src": "img/generativemasks-by-takawo.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Shunsuke Takawo, Generativemasks, 2021. Ethereum.",
       "width": 1600,
-      "height": 1600
+      "height": 1600,
+      "sourceUrl": "https://opensea.io/collection/generativemasks"
     },
     "tags": [
       "Shunsuke Takawo",
@@ -7554,9 +7601,10 @@
     "img": {
       "src": "img/memories-of-qilin-by-emily-xie.jpg",
       "cap": "Emily Xie, Memories of Qilin #102, 2022. Courtesy of the artist and Art Blocks",
-      "credit": "",
+      "credit": "Emily Xie, Memories of Qilin #102, 2022. Art Blocks Curated. Courtesy of the artist and Art Blocks.",
       "width": 1716,
-      "height": 2400
+      "height": 2400,
+      "sourceUrl": "https://media-proxy.artblocks.io/0x99a9b7c1116f9ceeb1652de04d5969cce509b069/282000102.png"
     },
     "tags": [
       "Emily Xie",
@@ -7797,9 +7845,18 @@
   "fx-hash-generative-art-minting-at-art-basel-hong-kong": {
     "body": [
       "In May, <a href=\"m/fx-hash-launches.html\" data-moment=\"fx-hash-launches\">fxhash</a> launched its first live minting event, <a href=\"https://www.lerandom.art/subjects/art-basel-hong-kong\">Art Basel Hong Kong</a>. The event was also one of the first public generative art minting experiences to engage the broader community as well as the traditional art world. With some of the top artists minting on fxhash at the time, the event was an earnest attempt to demonstrate the delights of minting a random work of generative art.",
-      "This author, Peter Bauman, went to the event in person and wrote this related <a href=\"https://www.fxhash.xyz/article/building-a-bridge-of-appreciation-to-the-future-of-creativity\" target=\"_blank\" rel=\"noopener\">piece</a> shortly after on fxtext."
+      "This author, <a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a>, went to the event in person and wrote this related <a href=\"https://www.fxhash.xyz/article/building-a-bridge-of-appreciation-to-the-future-of-creativity\" target=\"_blank\" rel=\"noopener\">piece</a> shortly after on fxtext."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://bitcoinist.com/tezos-generative-nfts-features-at-art-basel-hong-kong-2022/amp/",
+        "label": "bitcoinist.com"
+      },
+      {
+        "url": "https://xtznews.beehiiv.com/p/generative-art-masterpieces-from-world-leading-nft-artists-are-set-to-illuminate-art-basel-hong-kong",
+        "label": "xtznews.beehiiv.com"
+      }
+    ],
     "img": {
       "src": "img/fx-hash-generative-art-minting-at-art-basel-hong-kong.jpg",
       "cap": "",
@@ -7949,7 +8006,6 @@
       "market",
       "Terra",
       "Anchor Protocol",
-      "Luna",
       "TerraUSD (UST)",
       "stablecoins",
       "decentralized finance (DeFi)"
@@ -8000,11 +8056,6 @@
         "k": "web3",
         "n": "Web3",
         "t": "tech"
-      },
-      {
-        "k": "luna",
-        "n": "Luna",
-        "t": "works"
       }
     ],
     "linked": [],
@@ -8375,7 +8426,7 @@
       "In September, <a href=\"https://www.lerandom.art/subjects/tyler-hobbs\">Tyler Hobbs</a> and Dandelion Mané introduced their co-creative QQL, a collaborative generative art project, empowering collectors to curate their own unique pieces from the pair’s versatile algorithm.",
       "The collection was novel in the way a highly successful artist was willing to experiment with a demonstration one of the core principles of generativity—cession of control but also authorship. The question of authorship extends ideas of groups such as GRAV who de-emphasized the individual creator, stressing collective creation.",
       "The project itself consisted of 999 Mint Passes, holders of which could then mint their selected outputs. This allowed for hundreds of community members to contribute to a dynamic, evolving collection underscoring communal engagement.",
-      "The project anticipated the increased <a href=\"https://www.rightclicksave.com/article/art-in-the-age-of-co-creation\" target=\"_blank\" rel=\"noopener\">creative exploration of co-creation</a>, which this author, Peter Bauman, wrote about for <a href=\"https://www.lerandom.art/subjects/right-click-save\">Right Click Save</a> in early 2023. This shift included the launch of fxparams in March, 2023, which showed that the wider community was interested in exploring and embracing co-creative art."
+      "The project anticipated the increased <a href=\"https://www.rightclicksave.com/article/art-in-the-age-of-co-creation\" target=\"_blank\" rel=\"noopener\">creative exploration of co-creation</a>, which this author, <a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a>, wrote about for <a href=\"https://www.lerandom.art/subjects/right-click-save\">Right Click Save</a> in early 2023. This shift included the launch of fxparams in March, 2023, which showed that the wider community was interested in exploring and embracing co-creative art."
     ],
     "cite": [
       {
@@ -8386,9 +8437,10 @@
     "img": {
       "src": "img/qql-by-tyler-hobbs-and-dandelion-wist-mane.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Tyler Hobbs and Dandelion Wist Mané, QQL #295, 2023. Ethereum.",
       "width": 2400,
-      "height": 3000
+      "height": 3000,
+      "sourceUrl": "https://www.lerandom.art/collection/qql-295"
     },
     "tags": [
       "Tyler Hobbs",
@@ -9171,11 +9223,6 @@
         "k": "david holz",
         "n": "David Holz",
         "t": "people"
-      },
-      {
-        "k": "david",
-        "n": "David",
-        "t": "works"
       },
       {
         "k": "discord",
@@ -10887,7 +10934,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "coded: art enters the computer age, 1952–1982",
@@ -11085,9 +11132,10 @@
     "img": {
       "src": "img/openai-releases-chatgpt-4.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Screenshot of ChatGPT summarising a non-existent New York Times article from a fabricated URL, March 2023, an example of chatbot hallucination. Wikimedia Commons, uploaded by Yilku1 (public domain, machine-generated).",
       "width": 901,
-      "height": 463
+      "height": 463,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ChatGPT_hallucination.png"
     },
     "tags": [
       "Instagram",
@@ -11618,7 +11666,7 @@
   },
   "human-unreadable-by-operator": {
     "body": [
-      "This 2023 <a href=\"https://www.lerandom.art/subjects/lumen-prize\">Lumen Prize</a> Metaversal Generative Art Award Winner and <a href=\"m/art-blocks-brings-generative-art-on-chain.html\" data-moment=\"art-blocks-brings-generative-art-on-chain\">Art Blocks</a> Curated long-form generative art project fused code, choreography and cryptography into a visceral, three-act experience. <a href=\"https://www.lerandom.art/editorial/operator-human-unreadable\" target=\"_blank\" rel=\"noopener\">This author, Peter Bauman, spoke to artist duo Operator’s Ania Catherine and Dejha Ti about the project in “Operator on Human Unreadable” at Le Random Editorials.</a>",
+      "This 2023 <a href=\"https://www.lerandom.art/subjects/lumen-prize\">Lumen Prize</a> Metaversal Generative Art Award Winner and <a href=\"m/art-blocks-brings-generative-art-on-chain.html\" data-moment=\"art-blocks-brings-generative-art-on-chain\">Art Blocks</a> Curated long-form generative art project fused code, choreography and cryptography into a visceral, three-act experience. <a href=\"https://www.lerandom.art/editorial/operator-human-unreadable\" target=\"_blank\" rel=\"noopener\">This author, </a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://www.lerandom.art/editorial/operator-human-unreadable\" target=\"_blank\" rel=\"noopener\">, spoke to artist duo Operator’s Ania Catherine and Dejha Ti about the project in “Operator on Human Unreadable” at Le Random Editorials.</a>",
       "The work challenges the clean, universal aesthetics of modernism by introducing vulnerability, risk and the human body into the digital realm in the vein of pioneers like <a href=\"https://www.lerandom.art/editorial/analivia-cordeiro-on-perpetual-motion\" target=\"_blank\" rel=\"noopener\">Analivia Cordeiro</a> and <a href=\"https://www.lerandom.art/editorial/operator-profiles-rebecca-allen\" target=\"_blank\" rel=\"noopener\">Rebecca Allen</a>. Each piece in the collection is driven by on-chain choreographic data, creating a dialogue between human expression and technical systems. <a href=\"https://www.lerandom.art/subjects/human-unreadable\">Human Unreadable</a> invites audiences to engage with the chaotic and embodied aspects of human experience, probing the possibilities of human-machine collaboration on the blockchain, while <a href=\"https://www.lerandom.art/editorial/operator-human-unreadable\" target=\"_blank\" rel=\"noopener\">liberating the movement from the screen</a>.",
       "“As Conceptualism liberated the ’60s art world from the canvas. <a href=\"https://www.lerandom.art/subjects/operator\">Operator</a>’s Human Unreadable liberates the on-chain generative art world from the screen.” -Peter Bauman"
     ],
@@ -11631,9 +11679,10 @@
     "img": {
       "src": "img/human-unreadable-by-operator.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Operator (Ania Catherine and Dejha Ti), Human Unreadable #3, 2023. Art Blocks Curated.",
       "width": 1800,
-      "height": 2400
+      "height": 2400,
+      "sourceUrl": "https://www.lerandom.art/collection/human-unreadable-3"
     },
     "tags": [
       "Analívia Cordeiro",
@@ -12729,7 +12778,7 @@
   "fx-hash-2-0-launches": {
     "body": [
       "In December, fxhash launched its long-awaited version 2.0, which incorporated Ethereum minting capabilities in addition to Tezos.",
-      "<a href=\"https://www.lerandom.art/editorial/snowfro-and-ciphrd-on-a-symbiotic-relationship\" target=\"_blank\" rel=\"noopener\">Fxhash founder ciphrd spoke to this author, Peter Bauman, about the launch. Also joining were Paul Schmidt and Charlie Middleton.</a>",
+      "<a href=\"https://www.lerandom.art/editorial/snowfro-and-ciphrd-on-a-symbiotic-relationship\" target=\"_blank\" rel=\"noopener\">Fxhash founder ciphrd spoke to this author, </a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://www.lerandom.art/editorial/snowfro-and-ciphrd-on-a-symbiotic-relationship\" target=\"_blank\" rel=\"noopener\">, about the launch. Also joining were Paul Schmidt and Charlie Middleton.</a>",
       "“We didn’t want to be positioned as a tool that opens up any creativity while limiting our artists in terms of reach because, well, some collectors only collect on Tezos or Ethereum. There is a crossover between those collector groups, but essentially, there are also a lot of differences between these blockchains. It’s in that regard that we wanted to integrate Ethereum into the platform.”"
     ],
     "cite": [
@@ -12877,7 +12926,7 @@
     "body": [
       "In December, the real-time generative art trio AGH, consisting of <a href=\"https://www.lerandom.art/subjects/kim-asendorf\">Kim Asendorf</a>, <a href=\"https://www.lerandom.art/subjects/andreas-gysin\">Andreas Gysin</a> and <a href=\"https://www.lerandom.art/subjects/leander-herzog\">Leander Herzog</a>, debuted their collective show, <a href=\"https://www.lerandom.art/subjects/agh-1\">AGH 1</a>, in <a href=\"https://www.lerandom.art/subjects/berlin\">Berlin</a>, organized and co-curated by Grailers with support from Fingerprints and <a href=\"https://www.lerandom.art/subjects/highlight\">Highlight</a>. The group, known for their shared focus on digital aesthetics and real-time code-based art, used this platform to challenge traditional art narratives and glorify the intrinsic beauty of computational processes.",
       "Their work celebrates the digital, emphasizing its inherent qualities such as motion, interactivity and adaptability. They aim to create a new, responsive art form that reflects the technological possibilities of the contemporary digital age.",
-      "<a href=\"https://www.lerandom.art/editorial/agh-on-glorifying-the-computer\" target=\"_blank\" rel=\"noopener\">The three artists spoke to this author, Peter Bauman (Monk Antony) about the event for Le Random Editorials.</a>"
+      "<a href=\"https://www.lerandom.art/editorial/agh-on-glorifying-the-computer\" target=\"_blank\" rel=\"noopener\">The three artists spoke to this author, </a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman (Monk Antony)</a><a href=\"https://www.lerandom.art/editorial/agh-on-glorifying-the-computer\" target=\"_blank\" rel=\"noopener\"> about the event for Le Random Editorials.</a>"
     ],
     "cite": [
       {
@@ -12888,9 +12937,10 @@
     "img": {
       "src": "img/agh-1-in-berlin.jpeg",
       "cap": "",
-      "credit": "",
+      "credit": "AGH 1 (Kim Asendorf, Andreas Gysin and Leander Herzog), installation view, Funkhaus, Berlin, December 2023. Photographer not credited.",
       "width": 861,
-      "height": 574
+      "height": 574,
+      "sourceUrl": "https://log.fakewhale.xyz/?p=23095"
     },
     "tags": [
       "Leander Herzog",
@@ -13406,7 +13456,7 @@
   "grande-dame-vera-molnar-passes": {
     "body": [
       "In December, the art world and, especially the generative and digital art communities, bid farewell to the Grande Dame, <a href=\"https://www.lerandom.art/subjects/vera-molnar\">Vera Molnár</a>, a pioneering figure in generative, systems and algorithmic art.",
-      "<a href=\"https://www.lerandom.art/editorial/molnars-paris\" target=\"_blank\" rel=\"noopener\">This author, Peter Bauman, wrote “Molnár’s Paris,” taking a look at the artist’s storied life spent mostly in the French capital.</a>",
+      "<a href=\"https://www.lerandom.art/editorial/molnars-paris\" target=\"_blank\" rel=\"noopener\">This author, </a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://www.lerandom.art/editorial/molnars-paris\" target=\"_blank\" rel=\"noopener\">, wrote “Molnár’s Paris,” taking a look at the artist’s storied life spent mostly in the French capital.</a>",
       "Born in 1924, but moving to <a href=\"https://www.lerandom.art/subjects/paris\">Paris</a> in 1947 after WWII, the Hungarian artist was a trailblazer in merging human creativity with computational precision, coining the term and concept machine imaginaire to describe her innovative approach. Molnár’s work, spanning over six decades, explored the symbiosis between hand-drawn elements and algorithmic systems, with intense and prolonged interest, leaving a lasting mark on what the digital could achieve."
     ],
     "cite": [
@@ -13875,8 +13925,7 @@
       "New York",
       "digital sculpture",
       "interactive media",
-      "digital materiality",
-      "Intimacy"
+      "digital materiality"
     ],
     "people": [
       "auriea harvey",
@@ -13917,11 +13966,6 @@
         "k": "regina harsanyi",
         "n": "Regina Harsanyi",
         "t": "people"
-      },
-      {
-        "k": "intimacy",
-        "n": "Intimacy",
-        "t": "works"
       },
       {
         "k": "my veins are the wires, my body is your keyboard",
@@ -14295,9 +14339,10 @@
     "img": {
       "src": "img/taschen-releases-on-nfts-by-robert-alice.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Photograph of Robert Alice, On NFTs (TASCHEN), pp. 222 to 223, the William Mapan entry. Photographer not credited.",
       "width": 3024,
-      "height": 4032
+      "height": 4032,
+      "sourceUrl": "https://www.taschen.com/en/books/art/08154/on-nfts/"
     },
     "tags": [
       "Robert Alice",
@@ -14826,7 +14871,7 @@
       {
         "k": "sound art",
         "n": "Sound Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "sound piece v",
@@ -15517,9 +15562,10 @@
     "img": {
       "src": "img/generative-art-summit-berlin.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Family photograph of the guests of honor, Generative Art Summit Berlin, Akademie der Künste, Berlin, 3 July 2024. Published by the <a href=\"https://art-meets-science.io/en/news-fantastic-summit-in-berlin-ends/\">Herbert W. Franke Foundation / Art meets science</a>. Individual photographer not credited.",
       "width": 2048,
-      "height": 1365
+      "height": 1365,
+      "sourceUrl": "https://art-meets-science.io/en/news-fantastic-summit-in-berlin-ends/"
     },
     "tags": [
       "Joan Truckenbrod",
@@ -15715,7 +15761,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "sensing the future",
@@ -16219,7 +16265,7 @@
   },
   "v-as-digital-art-book-and-inaugural-digital-art-season": {
     "body": [
-      "October was a big month for digital art, especially in <a href=\"https://www.lerandom.art/subjects/london\">London</a>. In addition to <a href=\"https://www.lerandom.art/subjects/serpentine\">Serpentine</a>’s <a href=\"m/the-call-at-serpentine.html\" data-moment=\"the-call-at-serpentine\">The Call</a>, October included the Victoria and Albert Museum’s (V&amp;A) inaugural Digital Art Season to partly coincide with <a href=\"https://www.lerandom.art/subjects/frieze\">Frieze</a> London as well.",
+      "October was a big month for digital art, especially in <a href=\"https://www.lerandom.art/subjects/london\">London</a>. In addition to <a href=\"https://www.lerandom.art/subjects/serpentine\">Serpentine</a>’s <a href=\"m/the-call-at-serpentine.html\" data-moment=\"the-call-at-serpentine\">The Call</a>, October included the Victoria and Albert Museum’s (V&amp;A) inaugural Digital Art Season to partly coincide with <a href=\"https://www.lerandom.art/subjects/frieze-london\">Frieze London</a> as well.",
       "Included in the V&amp;A’s programming was the launch of the museum’s new historical digital art book, <a href=\"https://www.lerandom.art/subjects/digital-art-1960s-to-now\">Digital Art: 1960s to Now</a>, edited by curators <a href=\"https://www.lerandom.art/subjects/melanie-lenz\">Melanie Lenz</a>, <a href=\"https://www.lerandom.art/subjects/corinna-gardner\">Corinna Gardner</a> and <a href=\"https://www.lerandom.art/subjects/pita-arreola\">Pita Arreola</a>. I was able to attend this launch along with wonderful talks by Arreola and artist <a href=\"https://www.lerandom.art/subjects/kyle-mcdonald\">Kyle McDonald</a>.",
       "The following day at the V&amp;A was FEMG3N, the third installment of FEMGEN, featuring a <a href=\"https://www.youtube.com/watch?v=7SyYBFvtU3M&amp;ab_channel=VictoriaandAlbertMuseum\" target=\"_blank\" rel=\"noopener\">discussion with artists Licia He and Anna Ridler, writer Charlotte Kent and curator Melanie Lenz, alongside a talk by myself</a> on the contributions of women in generative art. I highlighted <a href=\"https://www.lerandom.art/subjects/eudice-feder\">Eudice Feder</a> and <a href=\"https://www.lerandom.art/subjects/joan-shogren\">Joan Shogren</a> for their barely-known contributions and wonderful stories.",
       "Founded in 2022 by <a href=\"https://www.lerandom.art/subjects/micol-apruzzese\">Micol Apruzzese</a> and <a href=\"https://www.lerandom.art/subjects/alex-estorick\">Alex Estorick</a>, FEMGEN fosters inclusivity in digital art, celebrating female and nonbinary artists working with generative systems.",
@@ -16561,9 +16607,10 @@
     "img": {
       "src": "img/ycam-interlab-camp-vol-5-homo-codens.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Introductory lecture at YCAM InterLab Camp vol.5: Homo Codens, Yamaguchi Center for Arts and Media (YCAM), 25 October 2024. Photographer not credited.",
       "width": 4032,
-      "height": 3024
+      "height": 3024,
+      "sourceUrl": "https://www.ycam.jp/events/2024/interlab-camp-vol5/"
     },
     "tags": [
       "Shunsuke Takawo",
@@ -17092,9 +17139,10 @@
     "img": {
       "src": "img/light-rafael-rozendaal-at-moma.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Installation view of Light: Rafaël Rozendaal, The Museum of Modern Art, New York, on view from 16 November 2024, Hyundai Card Digital Wall, Agnes Gund Garden Lobby.",
       "width": 1179,
-      "height": 796
+      "height": 796,
+      "sourceUrl": "https://press.moma.org/wp-content/uploads/2024/11/Rafael-Rozendaal_Announcement_07082025.pdf"
     },
     "tags": [
       "Light: Rafaël Rozendaal",
@@ -17184,7 +17232,7 @@
   "standout-procedural-work": {
     "body": [
       "Standout Generative Procedural (Code-Based) Work for 2024:",
-      "<a href=\"https://www.lerandom.art/subjects/bright-moments\">Bright Moments</a> Finale Project, (mpkoz in particular) <a href=\"https://www.lerandom.art/subjects/trevor-paglen\">Trevor Paglen</a>, Adversarially Evolved Hallucinations <a href=\"https://www.lerandom.art/subjects/travess-smalley\">Travess Smalley</a>, Crawl <a href=\"https://www.lerandom.art/subjects/golan-levin\">Golan Levin</a>, <a href=\"https://www.lerandom.art/subjects/cytographia\">Cytographia</a> <a href=\"https://www.lerandom.art/subjects/linda-dounia\">Linda Dounia</a>, Memory Machines <a href=\"https://www.lerandom.art/subjects/matt-deslauriers\">Matt DesLauriers</a>, <a href=\"https://www.lerandom.art/subjects/bitframes\">Bitframes</a> <a href=\"https://www.lerandom.art/subjects/alexander-mordvintsev\">Alexander Mordvintsev</a> and ciphrd, Genomes <a href=\"https://www.lerandom.art/subjects/marcel-schwittlick\">Marcel Schwittlick</a>, Vertical Line Test <a href=\"https://www.lerandom.art/subjects/leander-herzog\">Leander Herzog</a> and <a href=\"https://www.lerandom.art/subjects/milian-mori\">Milian Mori</a>, DOM2 <a href=\"https://www.lerandom.art/subjects/bj-rn-staal\">Bjørn Staal</a>, Entangled <a href=\"https://x.com/fx_hash_/status/1802734621664428035\" target=\"_blank\" rel=\"noopener\">(My interview with the artist for fxhash)</a> 0xfff, World Computer Sculpture Garden 0xDEAFBEEF, Payphone <a href=\"https://www.lerandom.art/subjects/yoko-ono\">Yoko Ono</a>, SOUND PIECE V <a href=\"https://www.lerandom.art/subjects/danielle-brathwaite-shirley\">Danielle Brathwaite-Shirley</a>, CANCEL YOURSELF <a href=\"https://www.lerandom.art/subjects/american-artist\">American Artist</a> and <a href=\"https://www.lerandom.art/subjects/tommy-martinez\">Tommy Martinez</a>, Integrity Protocol/Lower Limb Lecture  <a href=\"https://www.lerandom.art/subjects/rhea-myers\">Rhea Myers</a>, 10K"
+      "<a href=\"https://www.lerandom.art/subjects/bright-moments\">Bright Moments</a> Finale Project, (mpkoz in particular) <a href=\"https://www.lerandom.art/subjects/trevor-paglen\">Trevor Paglen</a>, Adversarially Evolved Hallucinations <a href=\"https://www.lerandom.art/subjects/travess-smalley\">Travess Smalley</a>, Crawl <a href=\"https://www.lerandom.art/subjects/golan-levin\">Golan Levin</a>, <a href=\"https://www.lerandom.art/subjects/cytographia\">Cytographia</a> <a href=\"https://www.lerandom.art/subjects/linda-dounia\">Linda Dounia</a>, Memory Machines <a href=\"https://www.lerandom.art/subjects/matt-deslauriers\">Matt DesLauriers</a>, <a href=\"https://www.lerandom.art/subjects/bitframes\">Bitframes</a> <a href=\"https://www.lerandom.art/subjects/alexander-mordvintsev\">Alexander Mordvintsev</a> and ciphrd, Genomes <a href=\"https://www.lerandom.art/subjects/marcel-schwittlick\">Marcel Schwittlick</a>, Vertical Line Test <a href=\"https://www.lerandom.art/subjects/leander-herzog\">Leander Herzog</a> and <a href=\"https://www.lerandom.art/subjects/milian-mori\">Milian Mori</a>, DOM2 <a href=\"https://www.lerandom.art/subjects/bj-rn-staal\">Bjørn Staal</a>, Entangled <a href=\"https://x.com/fx_hash_/status/1802734621664428035\" target=\"_blank\" rel=\"noopener\">(My interview with the artist for </a><a href=\"https://www.lerandom.art/subjects/fxhash\">fxhash</a><a href=\"https://x.com/fx_hash_/status/1802734621664428035\" target=\"_blank\" rel=\"noopener\">)</a> 0xfff, World Computer Sculpture Garden 0xDEAFBEEF, Payphone <a href=\"https://www.lerandom.art/subjects/yoko-ono\">Yoko Ono</a>, SOUND PIECE V <a href=\"https://www.lerandom.art/subjects/danielle-brathwaite-shirley\">Danielle Brathwaite-Shirley</a>, CANCEL YOURSELF <a href=\"https://www.lerandom.art/subjects/american-artist\">American Artist</a> and <a href=\"https://www.lerandom.art/subjects/tommy-martinez\">Tommy Martinez</a>, Integrity Protocol/Lower Limb Lecture  <a href=\"https://www.lerandom.art/subjects/rhea-myers\">Rhea Myers</a>, 10K"
     ],
     "cite": [
       {
@@ -17707,9 +17755,10 @@
     "img": {
       "src": "img/vibe-check-a-brave-new-world.png",
       "cap": "Courtesy of World Labs",
-      "credit": "",
+      "credit": "World Labs, Spatial Intelligence, site graphic, worldlabs.ai. Courtesy of World Labs.",
       "width": 1200,
-      "height": 678
+      "height": 678,
+      "sourceUrl": "https://www.worldlabs.ai/opengraph-image.png"
     },
     "tags": [
       "Primavera De Filippi",
@@ -18132,7 +18181,7 @@
   "pxl-dex-by-kim-asendorf": {
     "body": [
       "The end of January saw one of the year’s strongest projects right off the bat. With <a href=\"https://www.lerandom.art/subjects/pxl-dex\">PXL DEX</a>, <a href=\"https://www.lerandom.art/subjects/kim-asendorf\">Kim Asendorf</a> extends his experiments with pixels and blockchains by ratcheting up the complexity, treating the pixel as both material and asset.",
-      "<a href=\"https://www.lerandom.art/editorial/kim-asendorf-on-elegant-symbiosis\" target=\"_blank\" rel=\"noopener\">This author, Peter Bauman, spoke with Asendorf about the work.</a>",
+      "<a href=\"https://www.lerandom.art/editorial/kim-asendorf-on-elegant-symbiosis\" target=\"_blank\" rel=\"noopener\">This author, </a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://www.lerandom.art/editorial/kim-asendorf-on-elegant-symbiosis\" target=\"_blank\" rel=\"noopener\">, spoke with Asendorf about the work.</a>",
       "PXL DEX comprises 256 “Decks,” abstract 3D animations shown as an isometric matrix of colored points that pulse and warp without looping. Collectors can rotate and zoom each Deck, then tune its visual density by depositing PXL tokens upon purchase.",
       "The work attempts to join ideas of scarcity and perception into linked considerations. By “tokenizing the pixel,” the work could only exist by taking advantage of blockchain-specific affordances. It’s a smart database entangled with cryptoculture, participation and further contestation of art’s objecthood.",
       "Due to PXL DEX’s foregrounding of system mechanics, the work also plays with ideas of protocols in art, as popularized recently by <a href=\"https://www.lerandom.art/subjects/mat-dryhurst\">Mat Dryhurst</a> and <a href=\"https://www.lerandom.art/subjects/holly-herndon\">Holly Herndon</a> plus <a href=\"https://www.lerandom.art/subjects/primavera-de-filippi\">Primavera De Filippi</a>.",
@@ -18147,9 +18196,10 @@
     "img": {
       "src": "img/pxl-dex-by-kim-asendorf.png",
       "cap": "Kim Asendorf, PXL DECK 255 (Still), 2025. Courtesy of the artist",
-      "credit": "",
+      "credit": "Kim Asendorf, PXL DECK 255 (Still), 2025. PXL DEX, Ethereum. Courtesy of the artist.",
       "width": 1920,
-      "height": 1920
+      "height": 1920,
+      "sourceUrl": "https://www.lerandom.art/editorial/kim-asendorf-on-elegant-symbiosis"
     },
     "tags": [
       "Primavera De Filippi",
@@ -18290,9 +18340,10 @@
     "img": {
       "src": "img/cycles-by-material-protocol-arts.jpg",
       "cap": "Material Protocol Arts, Cycles Lens 12 (Still, detail), 2025",
-      "credit": "",
+      "credit": "Material Protocol Arts, Cycles Lens 12 (Still, detail), 2025. Ethereum.",
       "width": 1080,
-      "height": 1080
+      "height": 1080,
+      "sourceUrl": "https://www.lerandom.art/artists/material-protocol-arts"
     },
     "tags": [
       "Holly Herndon",
@@ -18514,9 +18565,10 @@
     "img": {
       "src": "img/karpathy-coins-vibe-coding.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Screenshot of a post by Andrej Karpathy (@karpathy) on X, 2 February 2025. <a href=\"https://x.com/karpathy/status/1886192184808149383\">Image source</a>",
       "width": 1172,
-      "height": 1012
+      "height": 1012,
+      "sourceUrl": "https://x.com/karpathy/status/1886192184808149383"
     },
     "tags": [
       "Andrej Karpathy",
@@ -18628,9 +18680,10 @@
     "img": {
       "src": "img/ai-art-has-a-moment.webp",
       "cap": "Holly Herndon & Mat Dryhurst, Embedding Study 1 & 2",
-      "credit": "",
+      "credit": "Holly Herndon and Mat Dryhurst, Embedding Study 1 & 2 (from the xhairymutantx series), 2024. Thermal dye diffusion transfer prints, shown in the Whitney Biennial 2024.",
       "width": 2000,
-      "height": 1492
+      "height": 1492,
+      "sourceUrl": "https://onlineonly.christies.com.cn/s/augmented-intelligence/holly-herndon-b-1980-mat-dryhurst-b-1984-3/249745"
     },
     "tags": [
       "Mario Klingemann",
@@ -19562,9 +19615,10 @@
     "img": {
       "src": "img/new-york-scene-transforms.webp",
       "cap": "Street view of Nguyen Wahed’s exhibition of Leander Herzog’s Infinite Garden. Courtesy of the gallery",
-      "credit": "",
+      "credit": "Installation view of Leander Herzog, Infinite Garden, at Nguyen Wahed, New York, 17 March to 2 May 2025. Courtesy of Nguyen Wahed and the artist. <a href=\"https://nguyenwahed.com/exhibitions/13-infinite-garden-leander-herzog/overview/\">Image source</a>",
       "width": 1200,
-      "height": 892
+      "height": 892,
+      "sourceUrl": "https://nguyenwahed.com/exhibitions/13-infinite-garden-leander-herzog/overview/"
     },
     "tags": [
       "Offline by SuperRare",
@@ -19734,9 +19788,10 @@
     "img": {
       "src": "img/one-of-us-is-real-and-it-s-not-you-at-galerie-yeche-lange.jpg",
       "cap": "Gallery view of One Of Us Is Real And It’s Not You at Galerie Yeche Lange. Courtesy of the gallery",
-      "credit": "",
+      "credit": "Installation view, One Of Us Is Real And It's Not You (Supermetal Bosch and Evil Biscuit), Galerie Yeche Lange, New York, 2025. Courtesy of Galerie Yeche Lange. Photographer not credited. <a href=\"https://www.emergentmag.com/exhibitions/one-of-us-is-real-and-its-not-you-at-galerie-yeche-lange\">Image source</a>",
       "width": 2200,
-      "height": 1466
+      "height": 1466,
+      "sourceUrl": "https://www.emergentmag.com/exhibitions/one-of-us-is-real-and-its-not-you-at-galerie-yeche-lange"
     },
     "tags": [
       "Super Metal Bosch",
@@ -19923,9 +19978,10 @@
     "img": {
       "src": "img/drifella-iii-by-evil-biscuit.jpg",
       "cap": "Evil Biscuit, Drifella III #652 (Detail), 2025. Courtesy of the artist",
-      "credit": "",
+      "credit": "Evil Biscuit, Drifella III #652 (detail), 2025. Courtesy of the artist. <a href=\"https://www.lerandom.art/editorial/drifella-iii-room-for-complexity\">Image source</a>",
       "width": 1930,
-      "height": 2102
+      "height": 2102,
+      "sourceUrl": "https://www.lerandom.art/editorial/drifella-iii-room-for-complexity"
     },
     "tags": [
       "Evil Biscuit",
@@ -20071,9 +20127,10 @@
     "img": {
       "src": "img/zero-10-debuts-at-art-basel-miami-beach.jpg",
       "cap": "Installation view of Beeple’s Regular Animals with crowd at Art Basel Miami Beach’s Zero 10. Image by Kevin Buist",
-      "credit": "",
+      "credit": "Installation view of Beeple, Regular Animals, at Zero 10, Art Basel Miami Beach, December 2025. Photo: Kevin Buist. <a href=\"https://www.lerandom.art/editorial/zero-10-part-1-beeple-casts-a-spell\">Image source</a>",
       "width": 4032,
-      "height": 3024
+      "height": 3024,
+      "sourceUrl": "https://www.lerandom.art/editorial/zero-10-part-1-beeple-casts-a-spell"
     },
     "tags": [
       "Mike Winkelmann (Beeple)",
@@ -20312,9 +20369,10 @@
     "img": {
       "src": "img/sasha-stiles-at-moma.jpg",
       "cap": "Generated frame from Sasha Stiles, A LIVING POEM, 2025. Generative language system (original poetry, fragments from MoMA’s text-art collection, p5.js code, GPT-4) and sound. Courtesy of the artist",
-      "credit": "",
+      "credit": "Generated frame from Sasha Stiles, A LIVING POEM, 2025. Generative language system (original poetry, fragments from MoMA's text-art collection, p5.js code, GPT-4) and sound. Commissioned for The Museum of Modern Art, New York. Courtesy of the artist. <a href=\"https://www.lerandom.art/editorial/sasha-stiles-and-martha-joseph-on-language-as-technology\">Image source</a>",
       "width": 7680,
-      "height": 7920
+      "height": 7920,
+      "sourceUrl": "https://www.lerandom.art/editorial/sasha-stiles-and-martha-joseph-on-language-as-technology"
     },
     "tags": [
       "Sasha Stiles",
@@ -20468,9 +20526,10 @@
     "img": {
       "src": "img/starmirror-by-holly-herndon-mat-dryhurst.jpg",
       "cap": "Holly Herndon and Mat Dryhurst, Starmirror (Installation view with Herndon at KW, Berlin), 2025. Courtesy of the artists and Frank Sperling",
-      "credit": "",
+      "credit": "Holly Herndon and Mat Dryhurst, Starmirror, 2025. Installation view at KW Institute for Contemporary Art, Berlin. Photo: Frank Sperling. <a href=\"https://www.kw-berlin.de/en/exhibitions/holly-herndon-and-mat-dryhurst-starmirror\">Image source</a>",
       "width": 2500,
-      "height": 1667
+      "height": 1667,
+      "sourceUrl": "https://www.kw-berlin.de/en/exhibitions/holly-herndon-and-mat-dryhurst-starmirror"
     },
     "tags": [
       "Hildegard von Bingen",
@@ -21043,7 +21102,7 @@
   },
   "standouts-of-2025": {
     "body": [
-      "Below is my standout art (shows and works) of 2025. In some special cases, they are written about as standalone moments as well. 1. <a href=\"m/art-of-the-year-claude-opus-4-5.html\" data-moment=\"art-of-the-year-claude-opus-4-5\">Claude Opus 4.5</a> 2. <a href=\"m/show-of-the-year-glitchs-room-service.html\" data-moment=\"show-of-the-year-glitchs-room-service\">Room Service</a> at Glitch Residency 3. <a href=\"m/basel-social-clubs-bank.html\" data-moment=\"basel-social-clubs-bank\">Basel Social Club, Bank</a> 4. Little Room by <a href=\"https://www.lerandom.art/subjects/jordan-wolfson\">Jordan Wolfson</a> at Fondation Beyeler 5. <a href=\"m/starmirror-by-holly-herndon-mat-dryhurst.html\" data-moment=\"starmirror-by-holly-herndon-mat-dryhurst\">Starmirror by Holly Herndon &amp; Mat Dryhurst</a> at KW <a href=\"https://www.lerandom.art/subjects/berlin\">Berlin</a> 6. Shaper Of God by <a href=\"https://www.lerandom.art/subjects/american-artist\">American Artist</a> at Pioneerworks 7. <a href=\"m/sasha-stiles-at-moma.html\" data-moment=\"sasha-stiles-at-moma\">A LIVING POEM</a> by <a href=\"https://www.lerandom.art/subjects/sasha-stiles\">Sasha Stiles</a> at <a href=\"https://www.lerandom.art/subjects/moma\">MoMA</a> 8. <a href=\"https://www.lerandom.art/subjects/diffuse-control\">Diffuse Control</a> by Beeple 9. The Totalists by <a href=\"https://www.lerandom.art/subjects/rachel-rossin\">Rachel Rossin</a> at Albion Jeune 10. <a href=\"https://www.lerandom.art/subjects/atlas-of-perception\">Atlas of Perception</a> by <a href=\"https://www.lerandom.art/subjects/tom-white\">Tom White</a> at <a href=\"https://www.lerandom.art/subjects/cvpr\">CVPR</a> 11. <a href=\"https://www.lerandom.art/subjects/surface-tension\">Surface Tension</a> by <a href=\"https://www.lerandom.art/subjects/karyn-nakamura\">Karyn Nakamura</a> at CVPR 12. <a href=\"https://www.lerandom.art/subjects/lu-yang\">Lu Yang</a>: <a href=\"https://www.lerandom.art/subjects/the-great-adventure-of-material-world\">The Great Adventure of Material World</a> at MoMI and <a href=\"https://www.lerandom.art/subjects/doku-doku-doku-samsara-exe\">DOKU! DOKU! DOKU!: samsara.exe</a> at <a href=\"https://www.lerandom.art/subjects/amant\">Amant</a> 13. Delivery Dancer Codex by <a href=\"https://www.lerandom.art/subjects/ayoung-kim\">Ayoung Kim</a> at <a href=\"https://www.lerandom.art/subjects/moma-ps1\">MoMA PS1</a> 14. Infinite Garden by <a href=\"https://www.lerandom.art/subjects/leander-herzog\">Leander Herzog</a> 15. Compositions in Code: The Art of Processing and p5.js at MoMI 16. <a href=\"m/drifella-iii-by-evil-biscuit.html\" data-moment=\"drifella-iii-by-evil-biscuit\">Drifella III by Evil Biscuit</a> 17. <a href=\"https://www.lerandom.art/subjects/drilady\">Drilady</a> by <a href=\"https://www.lerandom.art/subjects/parker-ito\">Parker Ito</a> 18. <a href=\"m/autonomous-forest-by-terra0.html\" data-moment=\"autonomous-forest-by-terra0\">Autonomous Forest by terra0</a> 19. <a href=\"https://www.lerandom.art/subjects/dx-terminal\">DX Terminal</a> by <a href=\"https://www.lerandom.art/subjects/dx-research-group\">DX Research Group</a> 20. Zantar by <a href=\"https://www.lerandom.art/subjects/mitchell-f-chan\">Mitchell F. Chan</a>"
+      "Below is my standout art (shows and works) of 2025. In some special cases, they are written about as standalone moments as well. 1. <a href=\"m/art-of-the-year-claude-opus-4-5.html\" data-moment=\"art-of-the-year-claude-opus-4-5\">Claude Opus 4.5</a> 2. <a href=\"m/show-of-the-year-glitchs-room-service.html\" data-moment=\"show-of-the-year-glitchs-room-service\">Room Service</a> at Glitch Residency 3. <a href=\"https://www.lerandom.art/subjects/basel-social-club\">Basel Social Club</a><a href=\"m/basel-social-clubs-bank.html\" data-moment=\"basel-social-clubs-bank\">, Bank</a> 4. Little Room by <a href=\"https://www.lerandom.art/subjects/jordan-wolfson\">Jordan Wolfson</a> at <a href=\"https://www.lerandom.art/subjects/fondation-beyeler\">Fondation Beyeler</a> 5. <a href=\"m/starmirror-by-holly-herndon-mat-dryhurst.html\" data-moment=\"starmirror-by-holly-herndon-mat-dryhurst\">Starmirror by Holly Herndon &amp; Mat Dryhurst</a> at KW <a href=\"https://www.lerandom.art/subjects/berlin\">Berlin</a> 6. Shaper Of God by <a href=\"https://www.lerandom.art/subjects/american-artist\">American Artist</a> at Pioneerworks 7. <a href=\"m/sasha-stiles-at-moma.html\" data-moment=\"sasha-stiles-at-moma\">A LIVING POEM</a> by <a href=\"https://www.lerandom.art/subjects/sasha-stiles\">Sasha Stiles</a> at <a href=\"https://www.lerandom.art/subjects/moma\">MoMA</a> 8. <a href=\"https://www.lerandom.art/subjects/diffuse-control\">Diffuse Control</a> by Beeple 9. The Totalists by <a href=\"https://www.lerandom.art/subjects/rachel-rossin\">Rachel Rossin</a> at Albion Jeune 10. <a href=\"https://www.lerandom.art/subjects/atlas-of-perception\">Atlas of Perception</a> by <a href=\"https://www.lerandom.art/subjects/tom-white\">Tom White</a> at <a href=\"https://www.lerandom.art/subjects/cvpr\">CVPR</a> 11. <a href=\"https://www.lerandom.art/subjects/surface-tension\">Surface Tension</a> by <a href=\"https://www.lerandom.art/subjects/karyn-nakamura\">Karyn Nakamura</a> at CVPR 12. <a href=\"https://www.lerandom.art/subjects/lu-yang\">Lu Yang</a>: <a href=\"https://www.lerandom.art/subjects/the-great-adventure-of-material-world\">The Great Adventure of Material World</a> at MoMI and <a href=\"https://www.lerandom.art/subjects/doku-doku-doku-samsara-exe\">DOKU! DOKU! DOKU!: samsara.exe</a> at <a href=\"https://www.lerandom.art/subjects/amant\">Amant</a> 13. Delivery Dancer Codex by <a href=\"https://www.lerandom.art/subjects/ayoung-kim\">Ayoung Kim</a> at <a href=\"https://www.lerandom.art/subjects/moma-ps1\">MoMA PS1</a> 14. Infinite Garden by <a href=\"https://www.lerandom.art/subjects/leander-herzog\">Leander Herzog</a> 15. Compositions in Code: The Art of Processing and p5.js at MoMI 16. <a href=\"m/drifella-iii-by-evil-biscuit.html\" data-moment=\"drifella-iii-by-evil-biscuit\">Drifella III by Evil Biscuit</a> 17. <a href=\"https://www.lerandom.art/subjects/drilady\">Drilady</a> by <a href=\"https://www.lerandom.art/subjects/parker-ito\">Parker Ito</a> 18. <a href=\"m/autonomous-forest-by-terra0.html\" data-moment=\"autonomous-forest-by-terra0\">Autonomous Forest by terra0</a> 19. <a href=\"https://www.lerandom.art/subjects/dx-terminal\">DX Terminal</a> by <a href=\"https://www.lerandom.art/subjects/dx-research-group\">DX Research Group</a> 20. Zantar by <a href=\"https://www.lerandom.art/subjects/mitchell-f-chan\">Mitchell F. Chan</a>"
     ],
     "cite": [
       {
@@ -21054,9 +21113,10 @@
     "img": {
       "src": "img/standouts-of-2025.jpg",
       "cap": "Installation image of Little Room by Jordan Wolfson at Fondation Beyeler. Image by Peter Bauman (the author)",
-      "credit": "",
+      "credit": "Installation view of Jordan Wolfson, Little Room, 2025 (3D scanning booth, VR headset, high-definition video), Fondation Beyeler, Riehen. Photo: Peter Bauman.",
       "width": 4032,
-      "height": 3024
+      "height": 3024,
+      "sourceUrl": "https://davidzwirner.com/news/2024/jordan-wolfson-little-room"
     },
     "tags": [
       "Mike Winkelmann (Beeple)",
@@ -21425,9 +21485,10 @@
     "img": {
       "src": "img/ai-and-creativity-at-conferences.jpg",
       "cap": "Karyn Nakamura, Surface Tension (installation view), 2025. Courtesy of the artist and SHOWstudio",
-      "credit": "",
+      "credit": "Karyn Nakamura, Surface Tension (installation view), 2025. Courtesy of the artist and SHOWstudio. Photographer not credited. <a href=\"https://shop.showstudio.com/collections/surface-tension\">Image source</a>",
       "width": 1884,
-      "height": 1781
+      "height": 1781,
+      "sourceUrl": "https://shop.showstudio.com/collections/surface-tension"
     },
     "tags": [
       "Karyn Nakamura",
@@ -21514,11 +21575,6 @@
         "k": "tom white",
         "n": "Tom White",
         "t": "people"
-      },
-      {
-        "k": "white",
-        "n": "White",
-        "t": "works"
       },
       {
         "k": "ai art gallery",
@@ -21783,9 +21839,10 @@
     "img": {
       "src": "img/autonomous-forest-by-terra0.jpg",
       "cap": "terra0, Autonomous Forest (Still from https://autonomousforest.org/map), 2025. Courtesy of the artists",
-      "credit": "",
+      "credit": "Screenshot of the live map at autonomousforest.org. terra0, Autonomous Forest, 2025, supported by LAS Art Foundation. <a href=\"https://autonomousforest.org/about\">Image source</a>",
       "width": 1812,
-      "height": 1686
+      "height": 1686,
+      "sourceUrl": "https://autonomousforest.org/about"
     },
     "tags": [
       "Paul Kolling",
@@ -21918,7 +21975,7 @@
     "img": {
       "src": "img/show-of-the-year-glitchs-room-service.jpg",
       "cap": "Glitch Room Service. Photo by the author (Peter Bauman)",
-      "credit": "",
+      "credit": "Glitch Residency, Room Service, 2025. Photo: Peter Bauman.",
       "width": 3024,
       "height": 4032
     },

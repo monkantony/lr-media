@@ -216,9 +216,10 @@
     "img": {
       "src": "img/vera-molnar-joins-francois-at-the-sorbonne.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Chapelle de la Sorbonne from Place de la Sorbonne, Paris. Photograph by Mbzt, 24 January 2015, via Wikimedia Commons, CC BY-SA 4.0.",
       "width": 1200,
-      "height": 1183
+      "height": 1183,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:P1300734_Paris_V_place_de_la_Sorbonne_rwk.jpg"
     },
     "tags": [
       "Vera Molnár",
@@ -974,11 +975,6 @@
         "k": "john h. holloway",
         "n": "John H. Holloway",
         "t": "people"
-      },
-      {
-        "k": "david",
-        "n": "David",
-        "t": "works"
       }
     ],
     "linked": [],
@@ -1008,9 +1004,10 @@
     "img": {
       "src": "img/digital-harmony-on-the-complementarity-of-music-and-visual-art-by-john-whitney.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Dust jacket of John Whitney, Digital Harmony: On the Complementarity of Music and Visual Art (McGraw-Hill / Byte Books, 1980). Jacket designer not credited. <a href=\"https://archive.org/details/DigitalHarmony_201611\">Internet Archive record</a>.",
       "width": 836,
-      "height": 1000
+      "height": 1000,
+      "sourceUrl": "https://archive.org/details/DigitalHarmony_201611"
     },
     "tags": [
       "John Whitney",
@@ -1367,11 +1364,6 @@
         "t": "people"
       },
       {
-        "k": "david",
-        "n": "David",
-        "t": "works"
-      },
-      {
         "k": "persepol",
         "n": "Persepol",
         "t": "works"
@@ -1697,11 +1689,6 @@
         "t": "people"
       },
       {
-        "k": "david",
-        "n": "David",
-        "t": "works"
-      },
-      {
         "k": "may i",
         "n": "May I",
         "t": "works"
@@ -2005,9 +1992,14 @@
       }
     ],
     "img": {
-      "src": "",
-      "cap": "",
-      "credit": ""
+      "cap": "Yoichiro Kawaguchi, Growth Model, 1981",
+      "alt": "Four computer-graphic images of coiling, tentacle-like forms in saturated pink, green and blue, from Yoichiro Kawaguchi’s Growth Model series",
+      "credit": "Yoichiro Kawaguchi, Growth Model, 1981. Digital Art Museum (DAM), Berlin. <a href=\"https://dam.org/museum/artists_ui/artists/kawaguchi-yoichiro/\">Image source</a>.",
+      "sourceUrl": "https://dam.org/museum/artists_ui/artists/kawaguchi-yoichiro/",
+      "creator": "Yoichiro Kawaguchi",
+      "width": 800,
+      "height": 717,
+      "src": "img/digital-image-published-by-55551ed90b.jpg"
     },
     "tags": [
       "Yoichiro Kawaguchi",
@@ -2105,9 +2097,10 @@
     "img": {
       "src": "img/ibm-introduces-their-first-pc-5150.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "IBM Personal Computer 5150 with IBM 5151 monochrome monitor and keyboard, 1981. Photograph by Boffy b, Wikimedia Commons (CC BY-SA 3.0). <a href=\"https://commons.wikimedia.org/wiki/File:IBM_PC_5150.jpg\">Image source</a>.",
       "width": 800,
-      "height": 589
+      "height": 589,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:IBM_PC_5150.jpg"
     },
     "tags": [
       "market",
@@ -2427,7 +2420,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "computer culture 81",
@@ -2757,7 +2750,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "art and technology: chicago video",
@@ -3108,7 +3101,16 @@
     "body": [
       "A huge hit, Pitfall! was one of the <a href=\"m/atari-2600-released.html\" data-moment=\"atari-2600-released\">Atari 2600</a>’s signature games and one of 1982’s most popular. It was also a work of generative art, as it used an algorithmically generated world."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pitfall!",
+        "label": "en.wikipedia.org"
+      },
+      {
+        "url": "https://hackaday.com/2013/06/05/retrotechtacular-how-i-wrote-pitfall-for-the-atari-2600/",
+        "label": "hackaday.com"
+      }
+    ],
     "img": {
       "cap": "Pitfall! cartridge for the Atari 2600, Activision, 1982. Designed by David Crane.",
       "credit": "Activision, 1982. The Strong National Museum of Play, object 111.4444; image via Google Arts & Culture. <a href=\"https://artsandculture.google.com/asset/video-game-atari-pitfall-activision/mQEFCEIK3Nq9fA?hl=en\">Image source</a>.",
@@ -3162,11 +3164,6 @@
         "k": "david crane",
         "n": "David Crane",
         "t": "people"
-      },
-      {
-        "k": "david",
-        "n": "David",
-        "t": "works"
       },
       {
         "k": "pitfall!",
@@ -3656,7 +3653,16 @@
     "body": [
       "The Apollo Domain computer featured what’s believed to be the first touchpad. It was placed to the right of the keyboard."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Touchpad",
+        "label": "en.wikipedia.org"
+      },
+      {
+        "url": "https://www.computerhistory.org/collections/catalog/102642008",
+        "label": "computerhistory.org"
+      }
+    ],
     "img": {
       "cap": "Apollo’s DN4xx and DN6xx keyboard, with the touchpad at right, in Getting Started With Your DOMAIN System, October 1983, figure 1-6.",
       "credit": "Apollo Computer Inc., Getting Started With Your DOMAIN System, order 002348, revision 01 (1983), p. 1-10. Original manual preserved by Bitsavers; Stuttgart mirror. <a href=\"http://bitsavers.informatik.uni-stuttgart.de/pdf/apollo/\">Image source</a>.",
@@ -4000,7 +4006,7 @@
   "nam-june-paik-at-whitney-museum-of-american-art": {
     "body": [
       "This <a href=\"https://www.lerandom.art/subjects/nam-june-paik\">Nam June Paik</a> retrospective exhibition at the Whitney Museum celebrated the contributions of the pioneering video artist while also showcasing his latest work, V-yrimads.",
-      "<a href=\"https://www.nytimes.com/1982/05/07/arts/art-nam-june-paik-has-show-at-whitney.html\" target=\"_blank\" rel=\"noopener\">According to a 1982 review in the New York Times</a>:",
+      "<a href=\"https://www.nytimes.com/1982/05/07/arts/art-nam-june-paik-has-show-at-whitney.html\" target=\"_blank\" rel=\"noopener\">According to a 1982 review in </a><a href=\"https://www.lerandom.art/subjects/new-york-times\">the New York Times</a>:",
       "“The largest show ever devoted to a single video artist, according to the museum, the exhibition comprises more than 60 works that go back to the beginnings of the Paik career.”"
     ],
     "cite": [
@@ -4019,7 +4025,7 @@
     "tags": [
       "Nam June Paik",
       "Whitney Museum of American Art",
-      "The New York Times",
+      "New York Times",
       "video art",
       "V-yramid",
       "video installation"
@@ -4049,8 +4055,8 @@
         "t": "works"
       },
       {
-        "k": "the new york times",
-        "n": "The New York Times",
+        "k": "new york times",
+        "n": "New York Times",
         "t": "orgs"
       },
       {
@@ -4306,7 +4312,7 @@
   },
   "cryptographer-david-chaum-first-proposes-blockchain-like-protocol": {
     "body": [
-      "<a href=\"https://www.lerandom.art/subjects/david\">David</a> Lee Chaum, an American pioneering cryptographer, released his dissertation, “Computer Systems Established, Maintained, and Trusted by Mutually Suspicious Groups.” This paper is considered the first known proposal for a blockchain protocol. It even included the code to implement the system. Throughout the '80s, Chaum would pioneer privacy and digital currencies. His idea of “blind signatures” allowed a user to create an untraceable digital payment. While Chaum’s work laid the groundwork for anonymous transactions, his proposed systems still relied on a centralized authority, raising concerns about privacy and control. <a href=\"https://www.lerandom.art/subjects/satoshi-nakamoto\">Satoshi Nakamoto</a> would go on to solve these issues. Nakamoto’s innovation was the consensus mechanism called Proof of Work, which enabled a network of computers to validate transactions without the need for a central authority. This decentralized approach addressed the issues of control and trust present in Chaum’s earlier work."
+      "David Lee Chaum, an American pioneering cryptographer, released his dissertation, “Computer Systems Established, Maintained, and Trusted by Mutually Suspicious Groups.” This paper is considered the first known proposal for a blockchain protocol. It even included the code to implement the system. Throughout the '80s, Chaum would pioneer privacy and digital currencies. His idea of “blind signatures” allowed a user to create an untraceable digital payment. While Chaum’s work laid the groundwork for anonymous transactions, his proposed systems still relied on a centralized authority, raising concerns about privacy and control. <a href=\"https://www.lerandom.art/subjects/satoshi-nakamoto\">Satoshi Nakamoto</a> would go on to solve these issues. Nakamoto’s innovation was the consensus mechanism called Proof of Work, which enabled a network of computers to validate transactions without the need for a central authority. This decentralized approach addressed the issues of control and trust present in Chaum’s earlier work."
     ],
     "cite": [
       {
@@ -4395,11 +4401,6 @@
         "k": "satoshi nakamoto",
         "n": "Satoshi Nakamoto",
         "t": "people"
-      },
-      {
-        "k": "david",
-        "n": "David",
-        "t": "works"
       },
       {
         "k": "electronics research laboratory",
@@ -4832,11 +4833,6 @@
         "t": "people"
       },
       {
-        "k": "david",
-        "n": "David",
-        "t": "works"
-      },
-      {
         "k": "the computer/the artist",
         "n": "The Computer/The Artist",
         "t": "exhibitions"
@@ -4891,14 +4887,19 @@
       }
     ],
     "img": {
-      "src": "",
-      "cap": "",
-      "credit": ""
+      "cap": "Grant D. Taylor, When the Machine Made Art: The Troubled History of Computer Art (Bloomsbury, 2014)",
+      "alt": "Book cover of When the Machine Made Art by Grant D. Taylor, showing a colourful isometric computer-generated grid on black",
+      "credit": "Cover of Grant D. Taylor, When the Machine Made Art: The Troubled History of Computer Art (New York: Bloomsbury, 2014), ISBN 9781623568849. Publisher cover image. <a href=\"https://www.bloomsbury.com/us/when-the-machine-made-art-9781623568849/\">Image source</a>.",
+      "sourceUrl": "https://www.bloomsbury.com/us/when-the-machine-made-art-9781623568849/",
+      "creator": "Bloomsbury Academic",
+      "width": 324,
+      "height": 500,
+      "src": "img/portrait-of-the-artist-as-a-young-computer-by-grace-glueck-dbdd0a591d.jpg"
     },
     "tags": [
       "Grant Taylor",
       "Programmed",
-      "The New York Times",
+      "New York Times",
       "computer art",
       "Grace Glueck",
       "Portrait of the Artist As a Young Computer",
@@ -4968,11 +4969,6 @@
       {
         "k": "playboy",
         "n": "Playboy",
-        "t": "orgs"
-      },
-      {
-        "k": "the new york times",
-        "n": "The New York Times",
         "t": "orgs"
       }
     ],
@@ -5469,11 +5465,6 @@
         "k": "max mathews",
         "n": "Max Mathews",
         "t": "people"
-      },
-      {
-        "k": "david",
-        "n": "David",
-        "t": "works"
       },
       {
         "k": "emi",
@@ -6021,7 +6012,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "artificial reality",
@@ -6152,11 +6143,6 @@
         "t": "people"
       },
       {
-        "k": "david",
-        "n": "David",
-        "t": "works"
-      },
-      {
         "k": "acm siggraph computer graphics achievement award",
         "n": "ACM SIGGRAPH Computer Graphics Achievement Award",
         "t": "orgs"
@@ -6206,7 +6192,7 @@
     "body": [
       "As mentioned as a key “under the radar” event in generative art history by <a href=\"https://www.lerandom.art/editorial/reas-history-1\" target=\"_blank\" rel=\"noopener\">Casey Reas in an interview with Le Random</a>, the exhibition of <a href=\"https://www.lerandom.art/subjects/harold-cohen\">Harold Cohen</a>’s <a href=\"m/harold-cohen-pioneers-ai-art-with-aaron.html\" data-moment=\"harold-cohen-pioneers-ai-art-with-aaron\">AARON</a> at major institutions around the world was sadly an outlier in terms of computer-generated art’s institutional acceptance.",
       "Reas continues: “We always talk about the fact that institutions have never supported generative art. And I think that they haven’t at all, in a really awful way, but there are exceptions. Harold Cohen had <a href=\"https://www.lerandom.art/subjects/aaron\">AARON</a> making drawings at the <a href=\"https://www.lerandom.art/subjects/san-francisco\">San Francisco</a> Museum of Modern Art (<a href=\"https://www.lerandom.art/subjects/sfmoma\">SFMOMA</a>) and the <a href=\"https://www.lerandom.art/subjects/tate\">Tate</a> Gallery in <a href=\"https://www.lerandom.art/subjects/london\">London</a>. Those are really big events that we should promote more. Harold was an extraordinary pioneer in the field.”",
-      "Cohen’s SFMOMA show was in 1979, and 1983 is when AARON appeared at <a href=\"https://www.lerandom.art/subjects/britain\">Britain</a>’s Tate Gallery, a critical moment of exposure to the legacy art world that was all too rare in computer-generated art’s history."
+      "Cohen’s SFMOMA show was in 1979, and 1983 is when AARON appeared at <a href=\"https://www.lerandom.art/subjects/uk\">Britain</a>’s Tate Gallery, a critical moment of exposure to the legacy art world that was all too rare in computer-generated art’s history."
     ],
     "cite": [
       {
@@ -6231,7 +6217,7 @@
       "London",
       "institutions",
       "artificial intelligence",
-      "Britain",
+      "UK",
       "institutional recognition",
       "ai art"
     ],
@@ -6286,8 +6272,8 @@
         "t": "orgs"
       },
       {
-        "k": "britain",
-        "n": "Britain",
+        "k": "uk",
+        "n": "UK",
         "t": "places"
       },
       {
@@ -6323,7 +6309,7 @@
   },
   "electra-exhibition-curated-by-frank-popper-and-marie-odile-briot": {
     "body": [
-      "Electra (1983) was an exhibition curated by <a href=\"https://www.lerandom.art/subjects/frank-popper\">Frank Popper</a> and <a href=\"https://www.lerandom.art/subjects/marie-odile-briot\">Marie-Odile Briot</a> at the Musée d’Art Moderne de la Ville de <a href=\"https://www.lerandom.art/subjects/paris\">Paris</a> from 1983 until 1984. The full name of the exhibition was Electra. L’électricité et l’électronique dans l’art au XXe siècle [Electricity and Electronics in the Art of the XXth Century]. The initial exhibition would feature two works from <a href=\"https://www.lerandom.art/subjects/herbert-w-franke\">Herbert W. Franke</a>, including Butterfly and Mikado, which both focused on color combinations. Sonia Sheridan from Generative Systems and <a href=\"https://www.lerandom.art/subjects/roy-ascott\">Roy Ascott</a> would also produce work for the show. In her typical preponderance to incorporate the new, Sheridan’s work was the first to use the Paintbox system, <a href=\"https://microartsgroup.com/1983-computer-digital-art-and-music/\" target=\"_blank\" rel=\"noopener\">according to Geoff Davis at MicroArts</a>.",
+      "Electra (1983) was an exhibition curated by <a href=\"https://www.lerandom.art/subjects/frank-popper\">Frank Popper</a> and <a href=\"https://www.lerandom.art/subjects/marie-odile-briot\">Marie-Odile Briot</a> at the Musée d’Art Moderne de la Ville de <a href=\"https://www.lerandom.art/subjects/paris\">Paris</a> from 1983 until 1984. The full name of the exhibition was Electra. L’électricité et l’électronique dans l’art au XXe siècle [Electricity and Electronics in the Art of the XXth Century]. The initial exhibition would feature two works from <a href=\"https://www.lerandom.art/subjects/herbert-w-franke\">Herbert W. Franke</a>, including Butterfly and Mikado, which both focused on color combinations. Sonia Sheridan from Generative Systems and <a href=\"https://www.lerandom.art/subjects/roy-ascott\">Roy Ascott</a> would also produce work for the show. In her typical preponderance to incorporate the new, Sheridan’s work was the first to use the Paintbox system, <a href=\"https://microartsgroup.com/1983-computer-digital-art-and-music/\" target=\"_blank\" rel=\"noopener\">according to </a><a href=\"https://www.lerandom.art/subjects/geoff-davis\">Geoff Davis</a><a href=\"https://microartsgroup.com/1983-computer-digital-art-and-music/\" target=\"_blank\" rel=\"noopener\"> at MicroArts</a>.",
       "<a href=\"http://www.veramolnar.com/?p=1185\" target=\"_blank\" rel=\"noopener\">Vera Molnár’s work was also referenced by the exhibition catalogue</a>; her participation in a Parisian Computer art event in the 1980s is far from shocking."
     ],
     "cite": [
@@ -6433,7 +6419,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "mikado",
@@ -6674,9 +6660,10 @@
     "img": {
       "src": "img/art-and-the-computer-by-melvin-prueitt.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Cover of Melvin L. Prueitt, Art and the Computer, introduction by Carl Sagan (New York: McGraw-Hill, 1984). Cover artwork and design not credited. <a href=\"https://www.computerhistory.org/collections/catalog/102701017\">Book record</a>.",
       "width": 1000,
-      "height": 846
+      "height": 846,
+      "sourceUrl": "https://www.computerhistory.org/collections/catalog/102701017"
     },
     "tags": [
       "Grant Taylor",
@@ -6839,9 +6826,10 @@
     "img": {
       "src": "img/order-out-of-chaos-mans-new-dialogue-with-nature-by-ilya-prigogine-and-isabelle-.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Cover of Ilya Prigogine and Isabelle Stengers, Order Out of Chaos: Man's New Dialogue with Nature, foreword by Alvin Toffler (Bantam Books paperback, 1984). Cover design not credited. <a href=\"https://openlibrary.org/books/OL7825767M\">Book record</a>.",
       "width": 248,
-      "height": 377
+      "height": 377,
+      "sourceUrl": "https://openlibrary.org/books/OL7825767M"
     },
     "tags": [
       "Grant Taylor",
@@ -6960,9 +6948,10 @@
     "img": {
       "src": "img/art-after-modernism-by-brian-wallis.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Cover of Art After Modernism: Rethinking Representation, edited by Brian Wallis, foreword by Marcia Tucker (New Museum of Contemporary Art and David R. Godine, 1984). Cover design not credited. <a href=\"https://openlibrary.org/books/OL2859954M\">Book record</a>.",
       "width": 900,
-      "height": 900
+      "height": 900,
+      "sourceUrl": "https://openlibrary.org/books/OL2859954M"
     },
     "tags": [
       "Art and Technology",
@@ -7021,7 +7010,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       }
     ],
     "linked": [],
@@ -7195,7 +7184,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "chromas",
@@ -7246,7 +7235,6 @@
       "height": 272
     },
     "tags": [
-      "Stripes",
       "Demoscene",
       "Video Game Art",
       "German Cracking Service",
@@ -7261,8 +7249,7 @@
     ],
     "people": [
       "1103/jedi",
-      "snoopy",
-      "stripes"
+      "snoopy"
     ],
     "subjects": [
       {
@@ -7298,11 +7285,6 @@
       {
         "k": "snoopy",
         "n": "Snoopy",
-        "t": "people"
-      },
-      {
-        "k": "stripes",
-        "n": "Stripes",
         "t": "people"
       },
       {
@@ -7343,7 +7325,7 @@
   "major-publications-of-1984": {
     "body": [
       "<a href=\"https://bitforms.art/pdfs/bibliography/mohr/1990ArtJournal.pdf\" target=\"_blank\" rel=\"noopener\">Copper Giloth and Lynn Pocock-Williams miraculously tracked the major publications</a> for the decade and they are listed here:",
-      "1. <a href=\"https://www.lerandom.art/subjects/stan-augarten\">Stan Augarten</a>, Bit by Bit: An Illustrated History of Computers 2. <a href=\"https://www.lerandom.art/subjects/herbert-w-franke\">Herbert W. Franke</a>, ComputergrafikGalerie; Bilder nach Programm: Kunst im elektronischen Zeitalter.  3. <a href=\"https://www.lerandom.art/subjects/hiroshi-inose\">Hiroshi Inose</a> and John Peirce, Information Technology and Civilization (<a href=\"https://www.lerandom.art/subjects/japan\">Japan</a>) 4. <a href=\"https://www.lerandom.art/subjects/judy-e-sachter\">Judy E. Sachter</a>, “The Basic Concepts of Three-Dimensional Computer Graphics for Artists.”  5. <a href=\"https://www.lerandom.art/subjects/lee-silverman\">Lee Silverman</a>, “<a href=\"https://www.lerandom.art/subjects/inside\">Inside</a> the Loop: Computer Graphics within the Technological Highway.”  7. Thomas Defanti, “The Mass Impact of Videogame Technology.”"
+      "1. <a href=\"https://www.lerandom.art/subjects/stan-augarten\">Stan Augarten</a>, Bit by Bit: An Illustrated History of Computers 2. <a href=\"https://www.lerandom.art/subjects/herbert-w-franke\">Herbert W. Franke</a>, ComputergrafikGalerie; Bilder nach Programm: Kunst im elektronischen Zeitalter.  3. <a href=\"https://www.lerandom.art/subjects/hiroshi-inose\">Hiroshi Inose</a> and John Peirce, Information Technology and Civilization (<a href=\"https://www.lerandom.art/subjects/japan\">Japan</a>) 4. <a href=\"https://www.lerandom.art/subjects/judy-e-sachter\">Judy E. Sachter</a>, “The Basic Concepts of Three-Dimensional Computer Graphics for Artists.”  5. <a href=\"https://www.lerandom.art/subjects/lee-silverman\">Lee Silverman</a>, “Inside the Loop: Computer Graphics within the Technological Highway.”  7. Thomas Defanti, “The Mass Impact of Videogame Technology.”"
     ],
     "cite": [
       {
@@ -7474,11 +7456,6 @@
       {
         "k": "information technology and civilization",
         "n": "Information Technology and Civilization",
-        "t": "works"
-      },
-      {
-        "k": "inside",
-        "n": "Inside",
         "t": "works"
       },
       {
@@ -7625,7 +7602,16 @@
     "body": [
       "Abel did early film work with <a href=\"https://www.lerandom.art/subjects/john-whitney\">John Whitney</a> Sr. and <a href=\"https://www.lerandom.art/subjects/saul-bass\">Saul Bass</a> for <a href=\"https://www.lerandom.art/subjects/alfred-hitchcock\">Alfred Hitchcock</a>’s Vertigo. This famous ad, “Brilliance,” was produced in 1984 and premiered a year after the Macintosh commercial, during Super Bowl XIX in January 1985. This thirty-second ad for, of all things, the Canned Food Information Council featured a risqué robot based on motion capture. It was an important example of raster graphics developed with software."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://www.cartoonbrew.com/cgi/this-pioneering-work-of-cg-animation-premiered-during-the-1985-super-bowl-150585.html",
+        "label": "cartoonbrew.com"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Robert_Abel_(animator)",
+        "label": "en.wikipedia.org"
+      }
+    ],
     "img": {
       "src": "img/robert-abel-and-associates-produce-first-computer-generated-30-commercial.jpg",
       "cap": "The chrome robot of Robert Abel and Associates' Brilliance commercial, in a frame from The Making of Brilliance screened at SIGGRAPH 1985.",
@@ -7770,9 +7756,18 @@
   },
   "cubicomp-picture-maker": {
     "body": [
-      "From 1984 to 1988, Cubicomp specialized in computer-aided design (CAD) software and played a pivotal role in the development of 3D computer graphics on the personal computer. Cubicomp’s PictureMaker and ModelMaker software was instrumental in revolutionizing how artists and designers created and visualized complex 3D models. Additionally, Picture Maker was some of the earliest PC-based 3D animation software and was used by artists such as <a href=\"https://www.lerandom.art/subjects/victor-acevedo\">Victor Acevedo</a>. He used the Cubicomp to create works including <a href=\"https://www.lerandom.art/subjects/wired\">Wired</a> Couple Series (1989-1990), 6.26.27.86 (1989-1991) and Tell Me the Truth (1989-1990), which entered the Victoria and Albert Museum in 2008 as part of the <a href=\"https://www.lerandom.art/subjects/patric-prince\">Patric Prince</a> gift, the museum dating the print it holds to 1991. Acevedo spoke to Peter Bauman (Monk Antony) about Cubicomp, saying: “After my early experiments with algorithmic computer graphics in 1983 and 1984, in early 1985, I moved to the Cubicomp system because I could interactively and visually build polyhedral models, combine them with digitized photographs and animate image sequences. I wanted to expand on the type of hybrid geometrical imagery that I had developed with traditional analog media in the years 1977–1984.”"
+      "From 1984 to 1988, Cubicomp specialized in computer-aided design (CAD) software and played a pivotal role in the development of 3D computer graphics on the personal computer. Cubicomp’s PictureMaker and ModelMaker software was instrumental in revolutionizing how artists and designers created and visualized complex 3D models. Additionally, Picture Maker was some of the earliest PC-based 3D animation software and was used by artists such as <a href=\"https://www.lerandom.art/subjects/victor-acevedo\">Victor Acevedo</a>. He used the Cubicomp to create works including <a href=\"https://www.lerandom.art/subjects/wired\">Wired</a> Couple Series (1989-1990), 6.26.27.86 (1989-1991) and Tell Me the Truth (1989-1990), which entered the Victoria and Albert Museum in 2008 as part of the <a href=\"https://www.lerandom.art/subjects/patric-prince\">Patric Prince</a> gift, the museum dating the print it holds to 1991. Acevedo spoke to <a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman (Monk Antony)</a> about Cubicomp, saying: “After my early experiments with algorithmic computer graphics in 1983 and 1984, in early 1985, I moved to the Cubicomp system because I could interactively and visually build polyhedral models, combine them with digitized photographs and animate image sequences. I wanted to expand on the type of hybrid geometrical imagery that I had developed with traditional analog media in the years 1977–1984.”"
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://history.siggraph.org/?p=184986",
+        "label": "history.siggraph.org"
+      },
+      {
+        "url": "https://collections.vam.ac.uk/item/O240234/",
+        "label": "collections.vam.ac.uk"
+      }
+    ],
     "img": {
       "cap": "Victor Acevedo, <em>Tell Me the Truth</em>, 1989–1990. Created with Cubicomp 3D modeling and Targa (TIPS) digital painting on an IBM PC clone.",
       "credit": "Victor Acevedo. © 1990 + 2021 Victor Acevedo. Image from the artist-authored record in the Archive of Digital Art. <a href=\"https://www.archive-digitalart.eu/database/general/work/tell-me-the-truth.html\">Image source</a>.",
@@ -8004,7 +7999,7 @@
       }
     ],
     "linked": [
-      "adope-illustrator-developed"
+      "adobe-illustrator-developed"
     ],
     "echoes": [
       "leslie-mezei-develops-sparta",
@@ -8522,7 +8517,7 @@
     ],
     "linked": [],
     "echoes": [
-      "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html",
+      "logo-language-developed",
       "zach-lieberman-and-taeyoon-choi-co-found-the-school-for-poetic-computation-sfpc",
       "casey-reas-and-ben-fry-publish-processing-textbook"
     ],
@@ -8686,7 +8681,7 @@
   },
   "perlin-noise-invented": {
     "body": [
-      "First developed in 1983 and formally described in 1995, <a href=\"https://www.lerandom.art/subjects/ken-perlin\">Ken Perlin</a>’s groundbreaking invention of Perlin Noise marked a watershed moment in the history of computer graphics and digital generative art that reverberates to this very day (just check out the latest release on <a href=\"m/fx-hash-launches.html\" data-moment=\"fx-hash-launches\">fxhash</a>). Perlin, a computer scientist and computer graphics pioneer, created this algorithm to generate naturalistic textures for <a href=\"https://www.lerandom.art/subjects/disney\">Disney</a>’s animated film \"<a href=\"https://www.lerandom.art/subjects/tron\">Tron</a>.” Perlin Noise quickly became a foundational tool in computer graphics, offering a method for simulating intricate, organic patterns such as clouds, fire, and terrain. Its ability to create complex, visually appealing randomness with controllable characteristics transformed the artistic and technical possibilities of digital art and animation. Perlin noise played a vital role in shaping the aesthetic of digital landscapes, making it an essential tool for artists, game developers and filmmakers. Artist <a href=\"https://www.lerandom.art/subjects/emily-xie\">Emily Xie</a> added this to the author, Peter Bauman, about Perlin: “Ken Perlin develops Perlin Noise, a gradient noise function that generates natural-appearing randomness. It was a huge stepping stone for graphical computing, allowing simulation of the natural world with realistic surfaces, patterns and textures. Perlin noise has been integral to generative art and is considered a foundational technique of the space.”"
+      "First developed in 1983 and formally described in 1995, <a href=\"https://www.lerandom.art/subjects/ken-perlin\">Ken Perlin</a>’s groundbreaking invention of Perlin Noise marked a watershed moment in the history of computer graphics and digital generative art that reverberates to this very day (just check out the latest release on <a href=\"m/fx-hash-launches.html\" data-moment=\"fx-hash-launches\">fxhash</a>). Perlin, a computer scientist and computer graphics pioneer, created this algorithm to generate naturalistic textures for <a href=\"https://www.lerandom.art/subjects/disney\">Disney</a>’s animated film \"<a href=\"https://www.lerandom.art/subjects/tron\">Tron</a>.” Perlin Noise quickly became a foundational tool in computer graphics, offering a method for simulating intricate, organic patterns such as clouds, fire, and terrain. Its ability to create complex, visually appealing randomness with controllable characteristics transformed the artistic and technical possibilities of digital art and animation. Perlin noise played a vital role in shaping the aesthetic of digital landscapes, making it an essential tool for artists, game developers and filmmakers. Artist <a href=\"https://www.lerandom.art/subjects/emily-xie\">Emily Xie</a> added this to the author, <a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a>, about Perlin: “Ken Perlin develops Perlin Noise, a gradient noise function that generates natural-appearing randomness. It was a huge stepping stone for graphical computing, allowing simulation of the natural world with realistic surfaces, patterns and textures. Perlin noise has been integral to generative art and is considered a foundational technique of the space.”"
     ],
     "cite": [
       {
@@ -9220,7 +9215,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "shoe-field",
@@ -10469,7 +10464,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "computer arts society",
@@ -11080,11 +11075,6 @@
         "t": "tech"
       },
       {
-        "k": "pioneer",
-        "n": "Pioneer",
-        "t": "tech"
-      },
-      {
         "k": "virtual reality (vr)",
         "n": "virtual reality (VR)",
         "t": "tech"
@@ -11219,7 +11209,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "art ware: kunst und elektronik",
@@ -11264,7 +11254,7 @@
   "the-computer-as-an-art-tool-at-hurlbutt-gallery-at-the-greenwich-public-library-": {
     "body": [
       "This small exhibition in Connecticut, where <a href=\"https://www.lerandom.art/subjects/mark-wilson\">Mark Wilson</a> is based, featured many of the prominent computer artists of the 1980s. The show defied was a relative rarity in that it showed work in <a href=\"https://www.lerandom.art/subjects/north-america\">North America</a> in a fine art setting as opposed to being attached to technological and scientific conferences. The show demonstrated that art made by computers was still continuing to gain acceptance.",
-      "According to <a href=\"https://www.nytimes.com/1986/04/13/nyregion/art-hightech-images-on-view-in-greenwich.html\" target=\"_blank\" rel=\"noopener\">this review in the New York Times</a>, while there was excitement for the event, many viewers found the results underwhelming, especially given the sophisticated tools involved. The exhibition featured works by various artists and mediums, including the early experiments by the legendary <a href=\"https://www.lerandom.art/subjects/darcy-gerbarg\">Darcy Gerbarg</a> in computer-generated abstract art.",
+      "According to <a href=\"https://www.nytimes.com/1986/04/13/nyregion/art-hightech-images-on-view-in-greenwich.html\" target=\"_blank\" rel=\"noopener\">this review in </a><a href=\"https://www.lerandom.art/subjects/new-york-times\">the New York Times</a>, while there was excitement for the event, many viewers found the results underwhelming, especially given the sophisticated tools involved. The exhibition featured works by various artists and mediums, including the early experiments by the legendary <a href=\"https://www.lerandom.art/subjects/darcy-gerbarg\">Darcy Gerbarg</a> in computer-generated abstract art.",
       "Mark Wilson and <a href=\"https://www.lerandom.art/subjects/manfred-mohr\">Manfred Mohr</a>’s highly detailed computer-generated pieces came closest to fulfilling the expectations of the general public. <a href=\"https://www.lerandom.art/subjects/margot-lovejoy\">Margot Lovejoy</a> incorporated computer-derived images into three-dimensional constructions, addressing societal changes.",
       "The exhibition also included computer-generated motion in videos set to music. <a href=\"https://www.lerandom.art/subjects/lillian-schwartz\">Lillian Schwartz</a>’s steel mobile, programmed to move uniquely for years, was exhibited and particularly appreciated at the event, according to <a href=\"https://www.nytimes.com/1986/04/13/nyregion/art-hightech-images-on-view-in-greenwich.html\" target=\"_blank\" rel=\"noopener\">the New York Times</a> review. Visitors could interact with painting programs on <a href=\"https://www.lerandom.art/subjects/apple\">Apple</a> computers in a back room, offering a glimpse into the future of computer art."
     ],
@@ -11288,7 +11278,7 @@
       "Manfred Mohr",
       "Mark Wilson",
       "Programmed",
-      "The New York Times",
+      "New York Times",
       "Apple",
       "North America",
       "tools",
@@ -11404,8 +11394,8 @@
         "t": "orgs"
       },
       {
-        "k": "the new york times",
-        "n": "The New York Times",
+        "k": "new york times",
+        "n": "New York Times",
         "t": "orgs"
       },
       {
@@ -11703,7 +11693,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "composites: computer-generated portraits",
@@ -11713,11 +11703,6 @@
       {
         "k": "computer graphics for designers and artists",
         "n": "Computer Graphics for Designers and Artists",
-        "t": "works"
-      },
-      {
-        "k": "david",
-        "n": "David",
         "t": "works"
       },
       {
@@ -11972,7 +11957,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "medialab/unb",
@@ -12111,11 +12096,6 @@
         "t": "tech"
       },
       {
-        "k": "pioneer",
-        "n": "Pioneer",
-        "t": "tech"
-      },
-      {
         "k": "unix",
         "n": "Unix",
         "t": "tech"
@@ -12143,7 +12123,7 @@
       {
         "k": "art and technology",
         "n": "Art and Technology",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "art of the electronic age",
@@ -12369,7 +12349,7 @@
       "tim-berners-lee-invents-the-world-wide-web"
     ],
     "echoes": [
-      "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html",
+      "logo-language-developed",
       "casey-reas-and-ben-fry-publish-processing-textbook",
       "love-letters-by-christopher-strachey"
     ],
@@ -12387,7 +12367,7 @@
   "director-1-0-released": {
     "body": [
       "MacroMind Director 1.0 made its debut, forever transforming multimedia content creation. Developed by MacroMind, this pioneering software, later passing to <a href=\"https://www.lerandom.art/subjects/macromedia\">Macromedia</a> and then <a href=\"https://www.lerandom.art/subjects/adobe\">Adobe</a>, allowed designers to craft interactive multimedia presentations and animations with remarkable ease relative to previous software.",
-      "A standout artist in the use of Director is LIA, who in the ’90s was at the forefront of this powerful language. She described in a conversation with Le Random:",
+      "A standout artist in the use of Director is LIA, who began coding with it in 1995 and in the ’90s was at the forefront of this powerful language. She described in a conversation with Le Random:",
       "“I got a copy of the program. I got the handbook, and I basically copied the Macromedia Director Handbook by hand twice until I understood what a function was. It was called a handler, and the language was lingo, and it still is or was, actually.",
       "It was one of the most powerful programs ever out there. Macromedia Director.",
       "It allowed people really quickly do some animations by dragging and dropping without knowing how to code, and then you could enter the next level by actually writing code.”",
@@ -13113,7 +13093,7 @@
       }
     ],
     "linked": [
-      "adope-illustrator-developed"
+      "adobe-illustrator-developed"
     ],
     "echoes": [
       "lacma-digital-witness",
@@ -13225,9 +13205,10 @@
     "img": {
       "src": "img/william-latham-begins-collaborations-with-stephen-todd.jpg",
       "cap": "William Latham in Lab at IBM UK Scientific Centre (1987-8) Colour 1 Mutator 1 Period. Courtesy of the artsit",
-      "credit": "",
+      "credit": "William Latham in the lab at the IBM UK Scientific Centre, Winchester, 1987–88. Courtesy of the artist. Photographer not credited.",
       "width": 2180,
-      "height": 1460
+      "height": 1460,
+      "sourceUrl": "https://computer-arts-society.com/casarchive/cas/william-latham.html"
     },
     "tags": [
       "Baptiste Crespy (ciphrd)",
@@ -13851,11 +13832,6 @@
         "t": "works"
       },
       {
-        "k": "david",
-        "n": "David",
-        "t": "works"
-      },
-      {
         "k": "the second emerging expression biennial: the artist and computer",
         "n": "The Second Emerging Expression Biennial: The Artist and Computer",
         "t": "exhibitions"
@@ -13998,7 +13974,7 @@
     ],
     "dateType": "published"
   },
-  "adope-illustrator-developed": {
+  "adobe-illustrator-developed": {
     "body": [
       "Developed in 1986 but first shipped in 1987, <a href=\"https://www.lerandom.art/subjects/adobe\">Adobe</a> Illustrator emerged as a groundbreaking vector graphics software, revolutionizing the design industry. Developed by Adobe Systems for the <a href=\"https://www.lerandom.art/subjects/apple\">Apple</a> Macintoush, Illustrator provided designers with a powerful toolset for creating scalable and precise, visually compelling illustrations. Its intuitive interface and robust features quickly made it an essential piece of software for graphic designers, allowing for the creation of logos, icons and intricate artwork. Illustrator is the companion product to <a href=\"m/february-initial-public-release-of-adobe-photoshop.html\" data-moment=\"february-initial-public-release-of-adobe-photoshop\">Photoshop</a> that focuses on areas of typesetting and logography in design. The program was a step forward in graphic design from software such as MacDraw and was the commercialization of Adobe’s PostScript."
     ],
@@ -14503,7 +14479,12 @@
     "body": [
       "This important work in the history of Japanese computer graphics was highlighted by <a href=\"https://www.lerandom.art/subjects/frank-popper\">Frank Popper</a> in his seminal text, Art of the Electronic Age."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://zkm.de/en/node/8973",
+        "label": "zkm.de"
+      }
+    ],
     "img": {
       "src": "img/geometric-love-by-masaki-fujihata.jpg",
       "cap": "",
@@ -14760,7 +14741,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "first international symposium on electronic art (fisea)",
@@ -14894,7 +14875,20 @@
     "body": [
       "Highlighted by <a href=\"https://www.lerandom.art/subjects/frank-popper\">Frank Popper</a> in his seminal text, Art of the Electronic Age, Agam’s Visual Music Orchestration is one of the Israeli sculptor and experimental abstract kinetic artist’s most known works. Agam is known for his use of audience participation, light and sound, anticipating today’s digital art."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Yaacov_Agam",
+        "label": "en.wikipedia.org"
+      },
+      {
+        "url": "https://www.universalis.fr/encyclopedie/yaacov-agam/",
+        "label": "universalis.fr"
+      },
+      {
+        "url": "https://e-artexte.ca/id/eprint/11064/",
+        "label": "e-artexte.ca"
+      }
+    ],
     "img": {
       "src": "img/visual-music-by-yaacov-agam.jpg",
       "cap": "",
@@ -14969,7 +14963,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "visual music orchestration",
@@ -15312,7 +15306,7 @@
   },
   "other-major-1988-publications": {
     "body": [
-      "Publications for the year, as always curated by <a href=\"https://www.lerandom.art/subjects/copper-giloth\">Copper Giloth</a> and <a href=\"https://www.lerandom.art/subjects/lynn-pocock-williams\">Lynn Pocock-Williams</a>: 1. <a href=\"https://www.lerandom.art/subjects/timothy-binkley\">Timothy Binkley</a>, “Camera Fantasia.” 2. <a href=\"https://www.lerandom.art/subjects/christopher-burnett\">Christopher Burnett</a>, “<a href=\"https://www.lerandom.art/subjects/computers-and-art\">Computers and Art</a> in the Age of the World Picture.” 3. <a href=\"https://www.lerandom.art/subjects/timothy-druckrey\">Timothy Druckrey</a>, “User Friendly?” 4. <a href=\"https://www.lerandom.art/subjects/david\">David</a> Ross, The Art of <a href=\"https://www.lerandom.art/subjects/david-em\">David Em</a>: 100 Computer Paintings. 5. Wim Van Der Plas, ed., <a href=\"https://www.lerandom.art/subjects/electronic-art\">Electronic Art</a>"
+      "Publications for the year, as always curated by <a href=\"https://www.lerandom.art/subjects/copper-giloth\">Copper Giloth</a> and <a href=\"https://www.lerandom.art/subjects/lynn-pocock-williams\">Lynn Pocock-Williams</a>: 1. <a href=\"https://www.lerandom.art/subjects/timothy-binkley\">Timothy Binkley</a>, “Camera Fantasia.” 2. <a href=\"https://www.lerandom.art/subjects/christopher-burnett\">Christopher Burnett</a>, “<a href=\"https://www.lerandom.art/subjects/computers-and-art\">Computers and Art</a> in the Age of the World Picture.” 3. <a href=\"https://www.lerandom.art/subjects/timothy-druckrey\">Timothy Druckrey</a>, “User Friendly?” 4. David Ross, The Art of <a href=\"https://www.lerandom.art/subjects/david-em\">David Em</a>: 100 Computer Paintings. 5. Wim Van Der Plas, ed., <a href=\"https://www.lerandom.art/subjects/electronic-art\">Electronic Art</a>"
     ],
     "cite": [
       {
@@ -15416,14 +15410,9 @@
         "t": "works"
       },
       {
-        "k": "david",
-        "n": "David",
-        "t": "works"
-      },
-      {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       },
       {
         "k": "the art of david em: 100 computer paintings",
@@ -16198,11 +16187,6 @@
         "t": "people"
       },
       {
-        "k": "david",
-        "n": "David",
-        "t": "works"
-      },
-      {
         "k": "does \"computer art\" still exist?",
         "n": "Does \"Computer Art\" Still Exist?",
         "t": "works"
@@ -16361,7 +16345,7 @@
     "body": [
       "Digital creativity witnessed a revolution with the invention of Kid Pix. Developed by <a href=\"https://www.lerandom.art/subjects/craig-hickman\">Craig Hickman</a> and published by Broderbund Software in 1991, Kid Pix marked a paradigm shift in computer software designed for children. <a href=\"https://www.lerandom.art/editorial/reas-history-1\" target=\"_blank\" rel=\"noopener\">lerandom.art</a>:",
       "“Kid Pix is a drawing program written for children. It was made as a direct response to MacPaint (1984). And it includes a lot of generative drawing tools. You can drag your mouse across the screen and things drip down or you drag your mouse across the screen and all of these concentric circles emerge from that point.”",
-      "<a href=\"https://www.lerandom.art/editorial/reas-history-1:https://www.lerandom.art/editorial/reas-history-1\" target=\"_blank\" rel=\"noopener\">lerandom.art</a> “I think the huge disappointment in Mac Paint, it’s an extraordinary piece of software but all it, is that it emulates existing tools. This is the airbrush tool. This is the Eraser tool. This is the Pen tool. Kid Pix branches out from there and makes drawing tools that are unique, and that can only be made with code. It really encouraged a generation of children to play with drawing in software.”"
+      "<a href=\"https://www.lerandom.art/editorial/reas-history-1\" target=\"_blank\" rel=\"noopener\">lerandom.art</a> “I think the huge disappointment in Mac Paint, it’s an extraordinary piece of software but all it, is that it emulates existing tools. This is the airbrush tool. This is the Eraser tool. This is the Pen tool. Kid Pix branches out from there and makes drawing tools that are unique, and that can only be made with code. It really encouraged a generation of children to play with drawing in software.”"
     ],
     "cite": [
       {
@@ -16764,7 +16748,6 @@
     },
     "tags": [
       "Jean-Pierre Hébert",
-      "Solo Show",
       "SIGGRAPH",
       "community",
       "computer art",
@@ -16834,11 +16817,6 @@
       {
         "k": "siggraph",
         "n": "SIGGRAPH",
-        "t": "orgs"
-      },
-      {
-        "k": "solo show",
-        "n": "Solo Show",
         "t": "orgs"
       },
       {
@@ -16933,7 +16911,7 @@
       {
         "k": "electronic art",
         "n": "Electronic Art",
-        "t": "works"
+        "t": "themes"
       }
     ],
     "linked": [],
@@ -17049,7 +17027,20 @@
     "body": [
       "The subgroup of Red Sector Inc., TCC, released this classic of the demoscene, winning first in the Tristar Part 1989 and voted 1st in the Cracher Journal 16."
     ],
-    "cite": [],
+    "cite": [
+      {
+        "url": "https://demozoo.org/productions/10297/",
+        "label": "demozoo.org"
+      },
+      {
+        "url": "https://www.exotica.org.uk/wiki/RSI",
+        "label": "exotica.org.uk"
+      },
+      {
+        "url": "https://www.exotica.org.uk/wiki/Tristar_Party",
+        "label": "exotica.org.uk"
+      }
+    ],
     "img": {
       "cap": "Red Sector Inc. and The Clumsy Creepers, Megademo, Amiga, 1989.",
       "credit": "Red Sector Inc. / The Clumsy Creepers; original demo screenshot preserved by Pouët <a href=\"https://www.pouet.net/prod.php?which=3119\">Image source</a>.",

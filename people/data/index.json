@@ -487,8 +487,8 @@
       "Computing Machinery"
     ],
     "f": [],
-    "sc": "loom",
-    "sf": 0,
+    "sc": "pascaline",
+    "sf": 3,
     "img": "blaise-pascal-invents-mechanical-calculator.jpg",
     "x": 0.0806,
     "y2": 0.7326,
@@ -6535,6 +6535,27 @@
     "cl": 6
   },
   {
+    "s": "eduardo-mac-entyre-founds-the-pintura-generativa-group",
+    "t": "Eduardo Mac Entyre Founds the Pintura Generativa Group",
+    "th": "Eduardo Mac Entyre Founds the Pintura Generativa Group",
+    "y": "1959",
+    "yn": 1959,
+    "c": 3,
+    "ty": [
+      "Invention"
+    ],
+    "rg": "South America",
+    "mv": [],
+    "f": [],
+    "sc": "oscilloscope",
+    "sf": 0,
+    "img": "eduardo-mac-entyre-founds-the-pintura-generativa-group-ba27a88f1e.jpg",
+    "x": -0.785829283395376,
+    "y2": -0.42914482626512995,
+    "z": -0.07214944573333554,
+    "cl": 7
+  },
+  {
     "s": "kurd-alsleben-and-cord-passow-make-analog-computer-drawings",
     "t": "Kurd Alsleben and Cord Passow Make Analog Computer Drawings",
     "th": "Kurd Alsleben and Cord Passow Make Analog Computer Drawings",
@@ -9460,7 +9481,7 @@
     "cl": 14
   },
   {
-    "s": "https-el-media-mit-edu-logo-foundation-what-is-logo-history-html",
+    "s": "logo-language-developed",
     "t": "Logo Language Developed",
     "th": "Logo Language Developed",
     "y": "1967",
@@ -9508,6 +9529,27 @@
     "y2": -0.26291493089220397,
     "z": -0.02790940356151633,
     "cl": 13
+  },
+  {
+    "s": "stephen-todd-works-on-early-computer-art",
+    "t": "Stephen Todd Works on Early Computer Art",
+    "th": "Stephen Todd Works on Early Computer Art",
+    "y": "1967",
+    "yn": 1967,
+    "c": 4,
+    "ty": [
+      "Event"
+    ],
+    "rg": "Europe",
+    "mv": [],
+    "f": [],
+    "sc": "plotter",
+    "sf": 0,
+    "img": "stephen-todd-works-on-early-computer-art-3012a4bd69.jpg",
+    "x": -0.4836097286629411,
+    "y2": 0.2902540272953256,
+    "z": -0.2024060789497494,
+    "cl": 8
   },
   {
     "s": "schotter-by-georg-nees",
@@ -10294,6 +10336,28 @@
     "y2": -0.032665133743512806,
     "z": -0.11055636678828382,
     "cl": 20
+  },
+  {
+    "s": "richard-williams-develops-art1",
+    "t": "Richard Williams Develops Art1",
+    "th": "Richard Williams Develops Art1",
+    "y": "1968",
+    "yn": 1968,
+    "c": 4,
+    "ty": [
+      "Artwork",
+      "Invention"
+    ],
+    "rg": "",
+    "mv": [],
+    "f": [],
+    "sc": "plotter",
+    "sf": 0,
+    "img": "richard-williams-develops-art1-565534177b.jpg",
+    "x": -0.15077212822421704,
+    "y2": 0.3261907636693184,
+    "z": -0.07468838792737158,
+    "cl": 14
   },
   {
     "s": "quad-iii-by-robert-mallary",
@@ -13371,6 +13435,48 @@
     "cl": 15
   },
   {
+    "s": "james-baker-and-fred-jelinek-bring-hidden-markov-models-to-speech-recognition",
+    "t": "James Baker and Fred Jelinek Bring Hidden Markov Models to Speech Recognition",
+    "th": "James Baker and Fred Jelinek Bring Hidden Markov Models to Speech Recognition",
+    "y": "1975",
+    "yn": 1975,
+    "c": 5,
+    "ty": [
+      "Invention"
+    ],
+    "rg": "North America",
+    "mv": [],
+    "f": [],
+    "sc": "videosynth",
+    "sf": 0,
+    "img": "james-baker-and-fred-jelinek-bring-hidden-markov-models-to-speech-recognition-59896956f7.jpg",
+    "x": 0.5001849782755758,
+    "y2": -0.22639348138515183,
+    "z": -0.04762476592472174,
+    "cl": 13
+  },
+  {
+    "s": "joan-truckenbrod-makes-coded-algorithmic-drawings",
+    "t": "Joan Truckenbrod Makes *Coded Algorithmic Drawings*",
+    "th": "Joan Truckenbrod Makes <em>Coded Algorithmic Drawings</em>",
+    "y": "1975",
+    "yn": 1975,
+    "c": 5,
+    "ty": [
+      "Artwork"
+    ],
+    "rg": "North America",
+    "mv": [],
+    "f": [],
+    "sc": "videosynth",
+    "sf": 0,
+    "img": "joan-truckenbrod-makes-coded-algorithmic-drawings-bc73355c33.jpg",
+    "x": 0.0589899712235589,
+    "y2": 0.2427177752496925,
+    "z": -0.17382984572968718,
+    "cl": 20
+  },
+  {
     "s": "ruth-leavitt-publishes-groundbreaking-book-computer-and-artist",
     "t": "Ruth Leavitt Publishes Groundbreaking Book, Artist and Computer",
     "th": "Ruth Leavitt Publishes Groundbreaking Book, Artist and Computer",
@@ -13502,6 +13608,90 @@
     "y2": 0.7011,
     "z": -0.023,
     "cl": 4
+  },
+  {
+    "s": "bertram-raphael-publishes-the-thinking-computer",
+    "t": "Bertram Raphael Publishes *The Thinking Computer*",
+    "th": "Bertram Raphael Publishes <em>The Thinking Computer</em>",
+    "y": "1976",
+    "yn": 1976,
+    "c": 5,
+    "ty": [
+      "Publication"
+    ],
+    "rg": "North America",
+    "mv": [],
+    "f": [],
+    "sc": "videosynth",
+    "sf": 0,
+    "img": "bertram-raphael-publishes-the-thinking-computer-e364a790fb.jpg",
+    "x": 0.1931855997108426,
+    "y2": 0.08043849050507274,
+    "z": -0.11521170099898922,
+    "cl": 6
+  },
+  {
+    "s": "joseph-weizenbaum-publishes-computer-power-and-human-reason",
+    "t": "Joseph Weizenbaum Publishes *Computer Power and Human Reason*",
+    "th": "Joseph Weizenbaum Publishes <em>Computer Power and Human Reason</em>",
+    "y": "1976",
+    "yn": 1976,
+    "c": 5,
+    "ty": [
+      "Publication"
+    ],
+    "rg": "North America",
+    "mv": [],
+    "f": [],
+    "sc": "videosynth",
+    "sf": 0,
+    "img": "joseph-weizenbaum-publishes-computer-power-and-human-reason-81ac8dda74.jpg",
+    "x": 0.5907737954011163,
+    "y2": -0.20838071768260613,
+    "z": -0.009476921812252582,
+    "cl": 3
+  },
+  {
+    "s": "kenneth-m-sayre-publishes-cybernetics-and-the-philosophy-of-mind",
+    "t": "Kenneth M. Sayre Publishes *Cybernetics and the Philosophy of Mind*",
+    "th": "Kenneth M. Sayre Publishes <em>Cybernetics and the Philosophy of Mind</em>",
+    "y": "1976",
+    "yn": 1976,
+    "c": 5,
+    "ty": [
+      "Publication"
+    ],
+    "rg": "Europe",
+    "mv": [],
+    "f": [],
+    "sc": "videosynth",
+    "sf": 0,
+    "img": "kenneth-m-sayre-publishes-cybernetics-and-the-philosophy-of-mind-e65a7acc16.jpg",
+    "x": -0.45601641483089267,
+    "y2": 0.47023898078043397,
+    "z": -0.2104840319212648,
+    "cl": 18
+  },
+  {
+    "s": "stephen-grossberg-introduces-adaptive-resonance-theory",
+    "t": "Stephen Grossberg Introduces Adaptive Resonance Theory",
+    "th": "Stephen Grossberg Introduces Adaptive Resonance Theory",
+    "y": "1976",
+    "yn": 1976,
+    "c": 5,
+    "ty": [
+      "Publication"
+    ],
+    "rg": "United States",
+    "mv": [],
+    "f": [],
+    "sc": "videosynth",
+    "sf": 0,
+    "img": "stephen-grossberg-introduces-adaptive-resonance-theory-1f992a6d2e.jpg",
+    "x": 0.4321635420633739,
+    "y2": -0.253504443189682,
+    "z": -0.02739003915275164,
+    "cl": 13
   },
   {
     "s": "harold-cohen-exhibits-aaron-at-the-stedelijk-museum",
@@ -14090,6 +14280,27 @@
     "x": 0.4167,
     "y2": 0.6928,
     "z": -0.014,
+    "cl": 4
+  },
+  {
+    "s": "digital-tv-dinner-by-jamie-fenton-and-raul-zaritsky",
+    "t": "Digital TV Dinner by Jamie Fenton and Raul Zaritsky",
+    "th": "Digital TV Dinner by Jamie Fenton and Raul Zaritsky",
+    "y": "1978",
+    "yn": 1978,
+    "c": 5,
+    "ty": [
+      "Artwork"
+    ],
+    "rg": "United States",
+    "mv": [],
+    "f": [],
+    "sc": "videosynth",
+    "sf": 0,
+    "img": "digital-tv-dinner-by-jamie-fenton-and-raul-zaritsky-9d05d5e3aa.jpg",
+    "x": 0.31680005749618967,
+    "y2": 0.5747965033092682,
+    "z": -0.03129859841531169,
     "cl": 4
   },
   {
@@ -14762,7 +14973,7 @@
     "f": [],
     "sc": "c64",
     "sf": 0,
-    "img": "",
+    "img": "digital-image-published-by-55551ed90b.jpg",
     "x": -0.0784,
     "y2": 0.5034,
     "z": -0.162,
@@ -15406,7 +15617,7 @@
     "f": [],
     "sc": "plotter",
     "sf": 2,
-    "img": "",
+    "img": "portrait-of-the-artist-as-a-young-computer-by-grace-glueck-dbdd0a591d.jpg",
     "x": -0.2327,
     "y2": 0.3954,
     "z": -0.202,
@@ -17150,9 +17361,9 @@
     "cl": 12
   },
   {
-    "s": "adope-illustrator-developed",
-    "t": "Adope Illustrator Developed",
-    "th": "Adope Illustrator Developed",
+    "s": "adobe-illustrator-developed",
+    "t": "Adobe Illustrator Developed",
+    "th": "Adobe Illustrator Developed",
     "y": "1987",
     "yn": 1987,
     "c": 6,
