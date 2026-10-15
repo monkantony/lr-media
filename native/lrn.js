@@ -815,7 +815,7 @@ try{
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---- The Window: rotating programme ---- */
-  var PROG = [{"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/phil-mohun-on-making-space-for-digital-art.mp4?v=83c54202", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/phil-mohun-on-making-space-for-digital-art.jpg?v=b772a6dd", "slug": "phil-mohun-on-making-space-for-digital-art", "work": "Phil Mohun on NODE Studio NYC: Making Space for Digital Art", "artist": "Peter Bauman", "credit": "Phil Mohun · Le Random", "year": "2026"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/london-digital-art-guide.mp4?v=86bb9165", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/london-digital-art-guide.jpg?v=66b25edc", "slug": "london-digital-art-guide", "work": "London Digital Art Guide", "artist": "Corinna Gardner, Melanie Lenz, Hannah Redler-Hawes, Alex Estorick, Clara Che Wei Peh, Robert Alice, Abigail Miller and Peter Bauman", "credit": "London Digital Art Guide · Le Random", "year": "2025"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/the-living-timeline.mp4?v=8966e6c6", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/the-living-timeline.jpg?v=1112345b", "slug": "the-living-timeline", "href": "https://timeline.lerandom.art/", "work": "The Living Timeline", "artist": "The Living Timeline", "credit": "The Living Timeline · Le Random", "year": "2026", "piece": {"t": "The Living Timeline", "kind": "Timeline", "d": "71,000 BCE – 2025", "byline": "1,147 moments of generative art history and 35 playable machines", "read": "Enter the timeline"}, "keep": "slot 3 held 2026-10-12 (Peter: Phil 1, London 2, Timeline 3)"}], cur = 0;   /* the window always opens on the latest (Peter, Aug 31) */
+  var PROG = [{"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/phil-mohun-on-making-space-for-digital-art.mp4?v=83c54202", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/phil-mohun-on-making-space-for-digital-art.jpg?v=b772a6dd", "slug": "phil-mohun-on-making-space-for-digital-art", "work": "Phil Mohun on NODE Studio NYC: Making Space for Digital Art", "artist": "Peter Bauman", "credit": "Phil Mohun · Le Random", "year": "2026"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/london-digital-art-guide.mp4?v=86bb9165", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/london-digital-art-guide.jpg?v=66b25edc", "slug": "london-digital-art-guide", "work": "London Digital Art Guide", "artist": "Corinna Gardner, Melanie Lenz, Hannah Redler-Hawes, Alex Estorick, Clara Che Wei Peh, Robert Alice, Abigail Miller and Peter Bauman", "credit": "London Digital Art Guide · Le Random", "year": "2025"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/the-living-timeline.mp4?v=8966e6c6", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/the-living-timeline.jpg?v=1112345b", "slug": "the-living-timeline", "href": "https://timeline.lerandom.art/", "work": "The Living Timeline", "artist": "The Living Timeline", "credit": "The Living Timeline · Le Random", "year": "2026", "piece": {"t": "The Living Timeline", "kind": "Timeline", "d": "71,000 BCE – 2025", "byline": "1,157 moments of generative art history and 35 playable machines", "read": "Enter the timeline"}, "keep": "slot 3 held 2026-10-12 (Peter: Phil 1, London 2, Timeline 3)"}], cur = 0;   /* the window always opens on the latest (Peter, Aug 31) */
   /* lr-window-gate (9 Oct 2026): the Timeline-first programme needs the page's static first frame (.win-pin);
      a page without it (www until Peter's go) keeps the previous programme */
   var LRW_PROG_PREV = [{"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/ryan-murdock-on-hacking-ai.mp4?v=4d4b1857", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/ryan-murdock-on-hacking-ai.jpg?v=c8ea046d", "slug": "ryan-murdock-on-hacking-ai", "work": "Hacking AI", "artist": "Ryan Murdock", "credit": "Cover image · Le Random", "year": "2026"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/new-york-city-digital-art-guide.mp4?v=7ea9b533", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/window/new-york-city-digital-art-guide.jpg?v=67df9fb7", "slug": "new-york-city-digital-art-guide", "work": "New York City Digital Art Guide", "artist": "LoVid, Emily Edelman, Josh Yakov and Peter Bauman", "credit": "Cover image · Le Random", "year": "2025"}, {"src": "https://raw.githubusercontent.com/monkantony/lr-media/main/trailer-goodfellow.mp4", "poster": "https://raw.githubusercontent.com/monkantony/lr-media/main/poster-goodfellow.jpg", "slug": "ian-goodfellow-on-inventing-gans", "work": "Inventing GANs", "artist": "Ian Goodfellow", "credit": "Trailer · Le Random", "year": "2025"}];
@@ -4293,6 +4293,28 @@ try{
   if (!mount()) { var n = 0, t = setInterval(function(){ if (mount() || ++n > 60) clearInterval(t); }, 250); }
 })();
 
+
+/* ---------- the Timeline's moment count, live (15 Oct 2026, Peter: "update the timeline NN moments number wherever
+   necessary"). The Timeline's chapters.json (4 KB, CORS for www) carries each chapter's count; their sum replaces the
+   number in the band, the moment-of-the-day line and the Archive's Timeline split, so a new moment never leaves a
+   stale "1,1xx" behind. The baked number stays as the fallback (staging, offline, a failed fetch). ---------- */
+(function(){
+  var SEL = ['#timeline-band .tlb-x', '.tl-wrap .tl-meta', '#register-timeline .rg-split-r'];
+  function put(N){
+    SEL.forEach(function(s){ document.querySelectorAll(s).forEach(function(el){
+      var w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), t;
+      while ((t = w.nextNode())) { var v = t.nodeValue.replace(/\b\d{1,3}(?:,\d{3})+(?=\s+(?:entries|moments)\b)/g, N); if (v !== t.nodeValue) t.nodeValue = v; }
+    }); });
+  }
+  fetch('https://timeline.lerandom.art/data/chapters.json', {cache: 'no-cache'}).then(function(r){ return r.ok ? r.json() : null; }).then(function(c){
+    if (!c || !c.length) return;
+    var n = 0; c.forEach(function(x){ n += +x.count || 0; });
+    if (n < 1000) return;
+    window.__LRTLN = n; var N = n.toLocaleString('en-US');
+    put(N); setTimeout(function(){ put(N); }, 1500); setTimeout(function(){ put(N); }, 5000);
+  }).catch(function(){});
+})();
+
 /* ---------- native: the Timeline moment of the day, from every moment (tl/daily, tl_daily.py) ---------- */
 (function(){
   var y = document.getElementById('tl-year'), t = document.getElementById('tl-title'), b = document.getElementById('tl-body');
@@ -4303,7 +4325,7 @@ try{
     y.textContent = e.y; t.textContent = e.t; b.textContent = e.b;
     var a = y.closest('a'); if (a && e.s) a.href = 'https://timeline.lerandom.art/m/' + e.s;
     var meta = document.querySelector('.tl-wrap .tl-meta');
-    if (meta && j.n) meta.textContent = 'One of ' + Number(j.n).toLocaleString('en-US') + ' moments across ten chapters, from 73,000 years ago to now, edited by Peter Bauman.';
+    if (meta && j.n) meta.textContent = 'One of ' + Number(window.__LRTLN || j.n).toLocaleString('en-US') + ' moments across ten chapters, from 73,000 years ago to now, edited by Peter Bauman.';
   }).catch(function(){});
 })();
 
