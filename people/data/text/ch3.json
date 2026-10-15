@@ -9906,7 +9906,11 @@
       "geometry",
       "motion"
     ],
-    "people": [],
+    "people": [
+      "eduardo mac entyre",
+      "ignacio pirovano",
+      "miguel ángel vidal"
+    ],
     "subjects": [
       {
         "k": "abstraction",
@@ -9944,6 +9948,21 @@
         "t": "themes"
       },
       {
+        "k": "eduardo mac entyre",
+        "n": "Eduardo Mac Entyre",
+        "t": "people"
+      },
+      {
+        "k": "ignacio pirovano",
+        "n": "Ignacio Pirovano",
+        "t": "people"
+      },
+      {
+        "k": "miguel ángel vidal",
+        "n": "Miguel Ángel Vidal",
+        "t": "people"
+      },
+      {
         "k": "argentina",
         "n": "Argentina",
         "t": "places"
@@ -9952,21 +9971,6 @@
         "k": "buenos aires",
         "n": "Buenos Aires",
         "t": "places"
-      },
-      {
-        "k": "eduardo mac entyre",
-        "n": "Eduardo Mac Entyre",
-        "t": "other"
-      },
-      {
-        "k": "ignacio pirovano",
-        "n": "Ignacio Pirovano",
-        "t": "other"
-      },
-      {
-        "k": "miguel ángel vidal",
-        "n": "Miguel Ángel Vidal",
-        "t": "other"
       },
       {
         "k": "pintura generativa",

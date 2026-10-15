@@ -21471,6 +21471,7 @@
       "CalComp"
     ],
     "people": [
+      "piet hein",
       "stephen todd"
     ],
     "subjects": [
@@ -21515,6 +21516,11 @@
         "t": "tech"
       },
       {
+        "k": "piet hein",
+        "n": "Piet Hein",
+        "t": "people"
+      },
+      {
         "k": "stephen todd",
         "n": "Stephen Todd",
         "t": "people"
@@ -21542,11 +21548,6 @@
       {
         "k": "lyngby",
         "n": "Lyngby",
-        "t": "other"
-      },
-      {
-        "k": "piet hein",
-        "n": "Piet Hein",
         "t": "other"
       },
       {
@@ -21613,7 +21614,12 @@
       "kinetic art",
       "Sharing Code: Art1, Frederick Hammersley, and the Computer"
     ],
-    "people": [],
+    "people": [
+      "charles mattox",
+      "frederick hammersley",
+      "patrick frank",
+      "richard williams"
+    ],
     "subjects": [
       {
         "k": "art and science",
@@ -21641,6 +21647,26 @@
         "t": "tech"
       },
       {
+        "k": "charles mattox",
+        "n": "Charles Mattox",
+        "t": "people"
+      },
+      {
+        "k": "frederick hammersley",
+        "n": "Frederick Hammersley",
+        "t": "people"
+      },
+      {
+        "k": "patrick frank",
+        "n": "Patrick Frank",
+        "t": "people"
+      },
+      {
+        "k": "richard williams",
+        "n": "Richard Williams",
+        "t": "people"
+      },
+      {
         "k": "mexico",
         "n": "Mexico",
         "t": "places"
@@ -21656,28 +21682,8 @@
         "t": "other"
       },
       {
-        "k": "charles mattox",
-        "n": "Charles Mattox",
-        "t": "other"
-      },
-      {
-        "k": "frederick hammersley",
-        "n": "Frederick Hammersley",
-        "t": "other"
-      },
-      {
-        "k": "patrick frank",
-        "n": "Patrick Frank",
-        "t": "other"
-      },
-      {
-        "k": "richard williams",
-        "n": "Richard Williams",
-        "t": "other"
-      },
-      {
-        "k": "sharing code: art1, frederick hammersley, and the computer",
-        "n": "Sharing Code: Art1, Frederick Hammersley, and the Computer",
+        "k": "sharing code: art1, frederick hammersley, and the dawn of computer art",
+        "n": "Sharing Code: Art1, Frederick Hammersley, and the Dawn of Computer Art",
         "t": "other"
       },
       {

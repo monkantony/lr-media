@@ -29271,7 +29271,7 @@
   },
   "bertram raphael": {
     "n": "Bertram Raphael",
-    "t": "other",
+    "t": "people",
     "m": [
       "stanford-research-institute-builds-shakey-the-robot",
       "bertram-raphael-publishes-the-thinking-computer"
@@ -32685,7 +32685,8 @@
     "n": "Jamie Fenton",
     "t": "people",
     "m": [
-      "thomas-defanti-develops-zgrass"
+      "thomas-defanti-develops-zgrass",
+      "digital-tv-dinner-by-jamie-fenton-and-raul-zaritsky"
     ]
   },
   "nola donato": {
@@ -44982,21 +44983,21 @@
   },
   "eduardo mac entyre": {
     "n": "Eduardo Mac Entyre",
-    "t": "other",
+    "t": "people",
     "m": [
       "eduardo-mac-entyre-founds-the-pintura-generativa-group"
     ]
   },
   "ignacio pirovano": {
     "n": "Ignacio Pirovano",
-    "t": "other",
+    "t": "people",
     "m": [
       "eduardo-mac-entyre-founds-the-pintura-generativa-group"
     ]
   },
   "miguel ángel vidal": {
     "n": "Miguel Ángel Vidal",
-    "t": "other",
+    "t": "people",
     "m": [
       "eduardo-mac-entyre-founds-the-pintura-generativa-group"
     ]
@@ -45024,7 +45025,7 @@
   },
   "piet hein": {
     "n": "Piet Hein",
-    "t": "other",
+    "t": "people",
     "m": [
       "stephen-todd-works-on-early-computer-art"
     ]
@@ -45052,35 +45053,28 @@
   },
   "charles mattox": {
     "n": "Charles Mattox",
-    "t": "other",
+    "t": "people",
     "m": [
       "richard-williams-develops-art1"
     ]
   },
   "frederick hammersley": {
     "n": "Frederick Hammersley",
-    "t": "other",
+    "t": "people",
     "m": [
       "richard-williams-develops-art1"
     ]
   },
   "patrick frank": {
     "n": "Patrick Frank",
-    "t": "other",
+    "t": "people",
     "m": [
       "richard-williams-develops-art1"
     ]
   },
   "richard williams": {
     "n": "Richard Williams",
-    "t": "other",
-    "m": [
-      "richard-williams-develops-art1"
-    ]
-  },
-  "sharing code: art1, frederick hammersley, and the computer": {
-    "n": "Sharing Code: Art1, Frederick Hammersley, and the Computer",
-    "t": "other",
+    "t": "people",
     "m": [
       "richard-williams-develops-art1"
     ]
@@ -45157,7 +45151,7 @@
   },
   "kenneth sayre": {
     "n": "Kenneth Sayre",
-    "t": "other",
+    "t": "people",
     "m": [
       "kenneth-m-sayre-publishes-cybernetics-and-the-philosophy-of-mind"
     ]
@@ -45184,15 +45178,15 @@
     ]
   },
   "gail carpenter": {
-    "n": "gail carpenter",
-    "t": "other",
+    "n": "Gail Carpenter",
+    "t": "people",
     "m": [
       "stephen-grossberg-introduces-adaptive-resonance-theory"
     ]
   },
   "stephen grossberg": {
-    "n": "stephen grossberg",
-    "t": "other",
+    "n": "Stephen Grossberg",
+    "t": "people",
     "m": [
       "stephen-grossberg-introduces-adaptive-resonance-theory"
     ]
@@ -45206,7 +45200,7 @@
   },
   "dick ainsworth": {
     "n": "Dick Ainsworth",
-    "t": "other",
+    "t": "people",
     "m": [
       "digital-tv-dinner-by-jamie-fenton-and-raul-zaritsky"
     ]
@@ -45225,16 +45219,9 @@
       "digital-tv-dinner-by-jamie-fenton-and-raul-zaritsky"
     ]
   },
-  "jamie fenton": {
-    "n": "Jamie Fenton",
-    "t": "other",
-    "m": [
-      "digital-tv-dinner-by-jamie-fenton-and-raul-zaritsky"
-    ]
-  },
   "raul zaritsky": {
     "n": "Raul Zaritsky",
-    "t": "other",
+    "t": "people",
     "m": [
       "digital-tv-dinner-by-jamie-fenton-and-raul-zaritsky"
     ]
@@ -45244,6 +45231,34 @@
     "t": "other",
     "m": [
       "digital-tv-dinner-by-jamie-fenton-and-raul-zaritsky"
+    ]
+  },
+  "james baker": {
+    "n": "James Baker",
+    "t": "people",
+    "m": [
+      "james-baker-and-fred-jelinek-bring-hidden-markov-models-to-speech-recognition"
+    ]
+  },
+  "fred jelinek": {
+    "n": "Fred Jelinek",
+    "t": "people",
+    "m": [
+      "james-baker-and-fred-jelinek-bring-hidden-markov-models-to-speech-recognition"
+    ]
+  },
+  "leonard baum": {
+    "n": "Leonard Baum",
+    "t": "people",
+    "m": [
+      "james-baker-and-fred-jelinek-bring-hidden-markov-models-to-speech-recognition"
+    ]
+  },
+  "sharing code: art1, frederick hammersley, and the dawn of computer art": {
+    "n": "Sharing Code: Art1, Frederick Hammersley, and the Dawn of Computer Art",
+    "t": "other",
+    "m": [
+      "richard-williams-develops-art1"
     ]
   }
 }

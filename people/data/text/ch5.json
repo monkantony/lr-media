@@ -16743,7 +16743,11 @@
       "language",
       "data science"
     ],
-    "people": [],
+    "people": [
+      "fred jelinek",
+      "james baker",
+      "leonard baum"
+    ],
     "subjects": [
       {
         "k": "ai history",
@@ -16799,6 +16803,21 @@
         "k": "training data",
         "n": "training data",
         "t": "tech"
+      },
+      {
+        "k": "fred jelinek",
+        "n": "Fred Jelinek",
+        "t": "people"
+      },
+      {
+        "k": "james baker",
+        "n": "James Baker",
+        "t": "people"
+      },
+      {
+        "k": "leonard baum",
+        "n": "Leonard Baum",
+        "t": "people"
       },
       {
         "k": "ibm",
@@ -16946,7 +16965,9 @@
       "symbolic AI",
       "knowledge representation"
     ],
-    "people": [],
+    "people": [
+      "bertram raphael"
+    ],
     "subjects": [
       {
         "k": "symbolic ai",
@@ -16956,7 +16977,7 @@
       {
         "k": "bertram raphael",
         "n": "Bertram Raphael",
-        "t": "other"
+        "t": "people"
       },
       {
         "k": "knowledge representation",
@@ -17101,7 +17122,9 @@
       "Notre Dame",
       "consciousness"
     ],
-    "people": [],
+    "people": [
+      "kenneth sayre"
+    ],
     "subjects": [
       {
         "k": "consciousness",
@@ -17121,7 +17144,7 @@
       {
         "k": "kenneth sayre",
         "n": "Kenneth Sayre",
-        "t": "other"
+        "t": "people"
       },
       {
         "k": "notre dame",
@@ -17189,7 +17212,10 @@
       "adaptive resonance theory",
       "united states"
     ],
-    "people": [],
+    "people": [
+      "gail carpenter",
+      "stephen grossberg"
+    ],
     "subjects": [
       {
         "k": "ai history",
@@ -17247,6 +17273,16 @@
         "t": "tech"
       },
       {
+        "k": "gail carpenter",
+        "n": "Gail Carpenter",
+        "t": "people"
+      },
+      {
+        "k": "stephen grossberg",
+        "n": "Stephen Grossberg",
+        "t": "people"
+      },
+      {
         "k": "united states",
         "n": "United States",
         "t": "places"
@@ -17254,16 +17290,6 @@
       {
         "k": "adaptive resonance theory",
         "n": "adaptive resonance theory",
-        "t": "other"
-      },
-      {
-        "k": "gail carpenter",
-        "n": "gail carpenter",
-        "t": "other"
-      },
-      {
-        "k": "stephen grossberg",
-        "n": "stephen grossberg",
         "t": "other"
       }
     ],
@@ -17321,7 +17347,11 @@
       "WTTW",
       "Chicago"
     ],
-    "people": [],
+    "people": [
+      "dick ainsworth",
+      "jamie fenton",
+      "raul zaritsky"
+    ],
     "subjects": [
       {
         "k": "video art",
@@ -17337,6 +17367,21 @@
         "k": "glitch",
         "n": "glitch",
         "t": "tech"
+      },
+      {
+        "k": "dick ainsworth",
+        "n": "Dick Ainsworth",
+        "t": "people"
+      },
+      {
+        "k": "jamie fenton",
+        "n": "Jamie Fenton",
+        "t": "people"
+      },
+      {
+        "k": "raul zaritsky",
+        "n": "Raul Zaritsky",
+        "t": "people"
       },
       {
         "k": "digital tv dinner",
@@ -17359,11 +17404,6 @@
         "t": "other"
       },
       {
-        "k": "dick ainsworth",
-        "n": "Dick Ainsworth",
-        "t": "other"
-      },
-      {
         "k": "electronic visualization event",
         "n": "Electronic Visualization Event",
         "t": "other"
@@ -17371,16 +17411,6 @@
       {
         "k": "glitch art",
         "n": "glitch art",
-        "t": "other"
-      },
-      {
-        "k": "jamie fenton",
-        "n": "Jamie Fenton",
-        "t": "other"
-      },
-      {
-        "k": "raul zaritsky",
-        "n": "Raul Zaritsky",
         "t": "other"
       },
       {
