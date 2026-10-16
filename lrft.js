@@ -1513,6 +1513,12 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       (m[k] || []).forEach(function(n){ if (subj.length < 24) subj.push(n[0]); });
     });
     if (subj.length) ld.about = subj.map(function(n){ return { '@type': 'Thing', 'name': n }; });
+    /* 16 Oct 2026, Peter's yes: the exhibition an article is about, from his own standfirst only */
+    var EV = { 'degrees-of-disruption-vera-molnar-at-the-va': { '@type': 'ExhibitionEvent',
+      'name': 'Degrees of Disruption: Vera Molnar and Generative Art', 'startDate': '2026-10-16',
+      'location': { '@type': 'Museum', 'name': 'V&A South Kensington' },
+      'about': { '@type': 'Person', 'name': 'Vera Molnár' } } };
+    if (EV[slug]) (ld.about = ld.about || []).unshift(EV[slug]);
     if (node) node.textContent = JSON.stringify(ld);
     else { var el = document.createElement('script'); el.type = 'application/ld+json'; el.id = 'lrft-ld'; el.textContent = JSON.stringify(ld); document.head.appendChild(el); }
     if (!document.getElementById('lrft-bc')) {
