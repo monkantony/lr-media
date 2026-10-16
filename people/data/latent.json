@@ -217,7 +217,7 @@
     },
     {
       "id": 8,
-      "n": 47,
+      "n": 48,
       "x": -0.5459907293993331,
       "y": 0.2634741327221976,
       "terms": [
@@ -236,7 +236,7 @@
         "4": 21,
         "5": 9,
         "6": 8,
-        "10": 2
+        "10": 3
       },
       "label": "Early computer drawing and plotters"
     },
@@ -14694,6 +14694,22 @@
         "montana-by-mary-jane-veeder",
         "sod-by-jodi",
         "video-art-the-electronic-medium-at-the-chicago-museum-of-contemporary-art"
+      ]
+    },
+    {
+      "s": "degrees-of-disruption-brings-vera-molnar-to-the-v-a",
+      "x": -0.4923375788306078,
+      "y": 0.20716038988007976,
+      "z": -0.1302078508169244,
+      "cl": 8,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "vera-molnar-survey-at-pompidou",
+        "vera-molnar-begins-her-computer-art-phase-with-the-interruptions-series",
+        "grande-dame-vera-molnar-passes",
+        "hypertransformations-by-vera-molnar",
+        "emerging-expressions-at-the-bronx-museum-of-the-arts-new-york"
       ]
     }
   ],

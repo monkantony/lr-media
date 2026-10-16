@@ -14316,6 +14316,7 @@
       "vera-molnar-first-solo-exhibition-transformations"
     ],
     "eds": [
+      "degrees-of-disruption-vera-molnar-at-the-va",
       "machine-reverie",
       "generations-of-verse",
       "a-a-murakami-on-existence-as-medium",
@@ -22259,5 +22260,164 @@
       14
     ],
     "dateType": "published"
+  },
+  "degrees-of-disruption-brings-vera-molnar-to-the-v-a": {
+    "body": [
+      "On October 16, 2026, the V&amp;A opened “Degrees of Disruption: Vera Molnar and Generative Art” in Rooms 88A and 90 at South Kensington. The free display runs to May 30, 2027.",
+      "Curated by Melanie Lenz, the V&amp;A’s curator of digital art, it brings together more than 50 works to show how <a href=\"https://www.lerandom.art/subjects/vera-molnar\" target=\"_blank\" rel=\"noopener\">Vera Molnár</a> used algorithms, carried out by hand or by machine, from her <a href=\"m/vera-molnar-begins-her-computer-art-phase-with-the-interruptions-series.html\" data-moment=\"vera-molnar-begins-her-computer-art-phase-with-the-interruptions-series\"><em>Interruptions</em></a> plotter drawings to <a href=\"m/vera-molnar-begins-her-iconic-des-ordres-series.html\" data-moment=\"vera-molnar-begins-her-iconic-des-ordres-series\"><em>(Des)Ordres</em></a>. Eight contemporary generative artists show alongside her, among them Casey Reas, Zach Lieberman, Harm van den Dorpel, William Mapan, Licia He, Matt DesLauriers and Entangled Others.",
+      "It opened two years after the <a href=\"m/vera-molnar-survey-at-pompidou.html\" data-moment=\"vera-molnar-survey-at-pompidou\">Pompidou survey</a>.",
+      "<a href=\"https://www.lerandom.art/editorial/degrees-of-disruption-vera-molnar-at-the-va\" target=\"_blank\" rel=\"noopener\">Read on Le Random</a>"
+    ],
+    "cite": [
+      {
+        "url": "https://www.vam.ac.uk/exhibitions/degrees-of-disruption-vera-molnar-and-generative-art",
+        "label": "vam.ac.uk"
+      },
+      {
+        "url": "https://www.vam.ac.uk/event/bR2y7zMWW3/online-curator-talk-generative-art",
+        "label": "vam.ac.uk"
+      }
+    ],
+    "img": {
+      "src": "img/degrees-of-disruption-brings-vera-molnar-to-the-v-a-ff035c0f11.jpg",
+      "cap": "Vera Molnár, *(Des)Ordres*, 1974, a plotter drawing in the V&amp;A’s collection.",
+      "credit": "Vera Molnár, (Des)Ordres, 1974. Plotter drawing. Victoria and Albert Museum, London, E.271-2011. Image © Victoria and Albert Museum, London. <a href=\"https://collections.vam.ac.uk/item/O1193781/\" target=\"_blank\" rel=\"noopener\">Image source</a>."
+    },
+    "tags": [
+      "Vera Molnár",
+      "Melanie Lenz",
+      "Casey Reas",
+      "Harm van den Dorpel",
+      "William Mapan",
+      "Licia He",
+      "Victoria and Albert Museum (V&A)",
+      "London",
+      "Interruptions",
+      "(Dés)Ordres",
+      "generative art",
+      "Plotter Art",
+      "institutional recognition",
+      "legacy",
+      "digital art",
+      "Zach Lieberman",
+      "Matt DesLauriers",
+      "Entangled Others"
+    ],
+    "people": [
+      "casey reas",
+      "harm van den dorpel",
+      "licia he",
+      "matt deslauriers",
+      "melanie lenz",
+      "vera molnár",
+      "william mapan",
+      "zach lieberman"
+    ],
+    "subjects": [
+      {
+        "k": "digital art",
+        "n": "digital art",
+        "t": "themes"
+      },
+      {
+        "k": "generative art",
+        "n": "generative art",
+        "t": "themes"
+      },
+      {
+        "k": "institutional recognition",
+        "n": "institutional recognition",
+        "t": "themes"
+      },
+      {
+        "k": "legacy",
+        "n": "legacy",
+        "t": "themes"
+      },
+      {
+        "k": "plotter art",
+        "n": "Plotter Art",
+        "t": "tech"
+      },
+      {
+        "k": "casey reas",
+        "n": "Casey Reas",
+        "t": "people"
+      },
+      {
+        "k": "harm van den dorpel",
+        "n": "Harm van den Dorpel",
+        "t": "people"
+      },
+      {
+        "k": "licia he",
+        "n": "Licia He",
+        "t": "people"
+      },
+      {
+        "k": "matt deslauriers",
+        "n": "Matt DesLauriers",
+        "t": "people"
+      },
+      {
+        "k": "melanie lenz",
+        "n": "Melanie Lenz",
+        "t": "people"
+      },
+      {
+        "k": "vera molnár",
+        "n": "Vera Molnár",
+        "t": "people"
+      },
+      {
+        "k": "william mapan",
+        "n": "William Mapan",
+        "t": "people"
+      },
+      {
+        "k": "zach lieberman",
+        "n": "Zach Lieberman",
+        "t": "people"
+      },
+      {
+        "k": "(dés)ordres",
+        "n": "(Dés)Ordres",
+        "t": "works"
+      },
+      {
+        "k": "interruptions",
+        "n": "Interruptions",
+        "t": "works"
+      },
+      {
+        "k": "degrees of disruption",
+        "n": "Degrees of Disruption",
+        "t": "exhibitions"
+      },
+      {
+        "k": "entangled others",
+        "n": "Entangled Others",
+        "t": "orgs"
+      },
+      {
+        "k": "victoria and albert museum (v&a)",
+        "n": "Victoria and Albert Museum (V&A)",
+        "t": "orgs"
+      },
+      {
+        "k": "london",
+        "n": "London",
+        "t": "places"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [
+      "degrees-of-disruption-vera-molnar-at-the-va"
+    ],
+    "pods": [
+      14
+    ],
+    "dateType": "exact"
   }
 }
