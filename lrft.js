@@ -833,9 +833,10 @@ html.lrlb-lock, html.lrlb-lock body { overflow:hidden; }
 /* lr-navprops (6 Oct 2026, Peter): on phones the site switcher sits in the navbar under the logo, as on the Timeline,
    and the bar below keeps one row. The links copy the bar's switcher, so the current site stays underlined. */
 .lr-navprops { display:none; }
-@media(max-width:600px){
+@media(max-width:760px){
+  html.lr-navprops-on #topbar .wrap.util > nav, html.lr-navprops-on #lrtopbar .wrap.util > nav { display:none !important; }
   html.lr-navprops-on .navbar_component .mobile-logo { transform:translateY(-7px); }
-  .lr-navprops { display:flex; position:absolute; z-index:2; align-items:center; gap:14px; margin:0; padding:0; line-height:1; }
+  html.lr-navprops-on .lr-navprops { display:flex; position:absolute; z-index:2; align-items:center; gap:14px; margin:0; padding:0; line-height:1; }
   .lr-navprops a { font-family:'Rules',Arial,sans-serif; font-size:10px; font-weight:500; letter-spacing:.1em;
     text-transform:uppercase; white-space:nowrap; color:inherit; text-decoration:none; opacity:.55; padding:0 0 2px;
     border-bottom:1px solid transparent; }
@@ -892,10 +893,14 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
        baked bar already in this order is left untouched (compare first), so nothing moves on screen. */
     (function(){
       /* LIVE on www 9 Oct 2026 (Peter's go): was webflow.io/localhost only */
-      var ORDER = ['/editorials', 'https://timeline.lerandom.art', '/podcast', '/subjects'];
+      /* lr-askii-tab (14 Oct 2026, Peter: "editorials timeline askii podcast subjects"): Askii joins the switcher, third. */
+      var ORDER = ['/editorials', 'https://timeline.lerandom.art', 'https://askii.lerandom.art/', '/podcast', '/subjects'];
       function rank(a){ var i = ORDER.indexOf(a.getAttribute('href')); return i < 0 ? 99 : i; }
       [bar.querySelector('.tb-props'), document.querySelector('.lr-navprops-baked')].forEach(function(box){
         if (!box) return;
+        if (!box.querySelector('a[href*="askii.lerandom.art"]')) { var src = box.querySelector(':scope > a:not(.on)') || box.querySelector(':scope > a');
+          if (src) { var k = src.cloneNode(false); k.className = ''; k.removeAttribute('aria-current'); k.removeAttribute('data-w-id'); k.removeAttribute('target');
+            k.setAttribute('href', 'https://askii.lerandom.art/'); k.textContent = 'Askii'; box.appendChild(k); } }
         var as = [].slice.call(box.querySelectorAll(':scope > a')), want = as.slice().sort(function(x, y){ return rank(x) - rank(y); });
         if (want.some(function(a, i){ return a !== as[i]; })) want.forEach(function(a){ box.appendChild(a); });
       });
