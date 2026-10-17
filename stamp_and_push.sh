@@ -36,6 +36,26 @@ if [[ ! "$HOSTS" =~ '^(\*|[a-z0-9.-]+(,[a-z0-9.-]+)*)$' ]]; then
 fi
 
 if [[ $MODE == full ]]; then
+# ---- 17 Oct 2026 audit (A5-01): never sweep up another session's edits ----------
+# Twice in two days a publish shipped files the publisher never meant to: a whole-file copy from a
+# stage folder rolled back approved features (16 Oct), and uncommitted edits another session had left
+# in this shared clone went out inside an unrelated publish (17 Oct). Core site code may only ship when
+# the caller names it: LR_EXPECT="lrft.js,native/" (comma list of paths or path prefixes).
+# Changes outside LR_EXPECT refuse the publish. Data-only publishes (json/txt data) are unaffected.
+CORE_RX='^(lrft\.js|lrw_bundle\.txt|cmdk\.js|native/|subjects/.*\.js|people/.*\.js|stamp_and_push\.sh|set_hosts\.sh)'
+CHANGED=$(git status --porcelain | awk '{print $NF}')
+CORE_CHANGED=$(print -r -- "$CHANGED" | grep -E "$CORE_RX" || true)
+if [[ -n "$LR_EXPECT" ]]; then
+  for _f in ${(f)CHANGED}; do
+    _ok=0; for _e in ${(s:,:)LR_EXPECT}; do [[ "$_f" == "$_e" || "$_f" == "$_e"* ]] && _ok=1; done
+    [[ $_ok == 1 ]] || { echo "REFUSING: '$_f' is modified but not in LR_EXPECT ($LR_EXPECT). Someone else's edit? Nothing was published."; exit 1; }
+  done
+elif [[ -n "$CORE_CHANGED" ]]; then
+  echo "REFUSING: core site code is modified in this clone and LR_EXPECT is not set:"
+  print -r -- "$CORE_CHANGED"
+  echo "If these are YOUR changes, re-run with LR_EXPECT=\"<files>\" $0 \"msg\". If not, they belong to another session: stop and ask. Nothing was published."
+  exit 1
+fi
 STAMP=$(date +%Y%m%d%H%M%S)
 python3 - "$STAMP" <<'PY'
 import json, sys, re, os
@@ -96,7 +116,9 @@ elif [[ -f "$GATE" ]]; then
   echo "-- publish gate"
   node "$GATE" || { echo "REFUSING: the publish gate failed. Nothing was committed or pushed."; exit 1; }
 else
-  echo "!! publish gate not found at $GATE — publishing unchecked"
+  # 17 Oct 2026 audit (A5-08): fail closed. A missing gate used to publish unchecked.
+  echo "REFUSING: publish gate not found at $GATE. Set LR_GATE, or LR_SKIP_GATE=1 to publish unchecked on purpose."
+  exit 1
 fi
 
 # ---- stage only publish files; jsDelivr keeps commit-pinned files forever ------
