@@ -56,6 +56,28 @@ elif [[ -n "$CORE_CHANGED" ]]; then
   echo "If these are YOUR changes, re-run with LR_EXPECT=\"<files>\" $0 \"msg\". If not, they belong to another session: stop and ask. Nothing was published."
   exit 1
 fi
+# ---- 17 Oct 2026 /security-review (infra, 8/10): new untracked files are vetted BEFORE any git add ----
+# The extension globs below stage untracked files in every subdirectory before the untracked-files guard runs,
+# so that guard never saw them (proved with scratch/webflow_token.json + notes.txt in a throwaway clone).
+# Now every untracked file is checked first: secret-shaped names always refuse; a new top-level file needs
+# LR_EXPECT; a new file elsewhere is allowed only where that folder already publishes that file type.
+if [[ "$LRW_INCLUDE_UNTRACKED" != 1 ]]; then
+  for _f in ${(f)"$(git status --porcelain --untracked-files=all | grep '^??' | cut -c4-)"}; do
+    [[ -z "$_f" ]] && continue
+    _named=0; for _e in ${(s:,:)LR_EXPECT}; do [[ -n "$_e" && ( "$_f" == "$_e" || "$_f" == "$_e"* ) ]] && _named=1; done
+    if print -r -- "$_f" | grep -qiE '(\.env|secret|token|credential|password|apikey|api_key|\.pem|\.key|id_rsa|client_secret)'; then
+      echo "REFUSING: '$_f' looks like a secret and must never reach the public repo. Nothing was published."; exit 1
+    fi
+    [[ $_named == 1 ]] && continue
+    if [[ "$_f" != */* ]]; then
+      echo "REFUSING: new top-level file '$_f'. Name it in LR_EXPECT if it really should be public. Nothing was published."; exit 1
+    fi
+    _dir=${_f%%/*}; _ext=${_f##*.}
+    if [[ -z "$(git ls-files -- "$_dir/*.$_ext" | head -1)" ]]; then
+      echo "REFUSING: new file '$_f': $_dir/ has never published .$_ext files. Name it in LR_EXPECT if intended. Nothing was published."; exit 1
+    fi
+  done
+fi
 STAMP=$(date +%Y%m%d%H%M%S)
 python3 - "$STAMP" <<'PY'
 import json, sys, re, os
