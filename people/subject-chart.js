@@ -104,15 +104,17 @@
     get('embed.html').then(inlineCode).then(function (h) {
       var assets = cfg.assets_base || TL;
       var head = '<base href="' + assets + '"><script>window.LR_EMBED=1;window.LR_FRAMED=true;window.LR_PEOPLE_HOME="main";' +
-        'window.LR_DATA=' + JSON.stringify(RAW) + ';window.LR_LEAD=' + JSON.stringify(cfg.lead || {}) + ';' +
+        'window.LR_DATA=' + JSON.stringify(RAW).replace(/</g, '\\u003c') + ';window.LR_LEAD=' + JSON.stringify(cfg.lead || {}).replace(/</g, '\\u003c') + ';' +
         'window.LR_PARAMS=' + JSON.stringify({ token: tok || '' }) + ';' +
         'window.LR_SUBJ=' + JSON.stringify(subj || null).replace(/</g, '\\u003c') + ';' +
         (FOCUS ? 'window.LR_SUBJECTS_INDEX=1;window.LR_SL_FOCUS=1;window.LR_SL_DATA=' + JSON.stringify(SRAW) + ';' : '') + '<\/script>';
       // the page's own code and styles come from lr-media, not from the Timeline the <base> points at
-      h = h.replace('<!--LR-EMBED-HEAD-->', head).replace(/(href|src)="assets\//g, '$1="' + BASE + 'assets/');
+      h = h.replace('<!--LR-EMBED-HEAD-->', function () { return head; }).replace(/(href|src)="assets\//g, '$1="' + BASE + 'assets/');
       fr.srcdoc = h;
       box.appendChild(fr);
       fr.addEventListener('load', function () { var w = box.querySelector('.lr-pp-wait'); if (w) w.remove(); });
+    }).catch(function () {   // audit 17 Oct 2026: embed.html unreachable on both hosts -> give the page back, no stuck block
+      box.remove(); pad.remove(); var r = document.documentElement; r.classList.remove('lr-pp-on'); r.classList.add('lr-pp-none');
     });
 
     function tlUrl(page, p) {
@@ -123,6 +125,7 @@
       return u;
     }
     function open(url, newtab) {
+      if (typeof url !== 'string' || !/^https:\/\/(www\.lerandom\.art|timeline\.lerandom\.art|lerandom-art\.webflow\.io)\//.test(url) && !/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?\//.test(url)) return;   // audit 17 Oct 2026: own sites only
       url = url.replace(/^(https:\/\/timeline\.lerandom\.art\/m\/[a-z0-9-]+)\.html/, '$1');
       if (newtab) { var w = window.open(url, '_blank'); if (w) { try { w.opener = null; } catch (e) {} } else location.href = url; } else location.href = url;
     }
