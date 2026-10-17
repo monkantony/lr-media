@@ -236,7 +236,7 @@ js = patch(js, "var h = q('#featured .cover-h'); if (!h || q('br', h)) return;",
            "var h = q('#featured .cover-h'); if (!h || q('br', h) || h.querySelector('.lr-tl')) return;   /* lrn-native: Title lines carries the break */",
            'native cover break')
 js = patch(js, "var cpool = POOLS.ed.picks.filter(function(x){ return CANON.indexOf(x[0]) >= 0; });",
-           "var cpool = window.__lrnDeck ? window.__lrnDeck() : POOLS.ed.picks.filter(function(x){ return CANON.indexOf(x[0]) >= 0; });   /* lrn-native: deal from the Featured deck Webflow renders */",
+           "var cpool = (window.__lrnDeck && window.__lrnDeck()) || POOLS.ed.picks.filter(function(x){ return CANON.indexOf(x[0]) >= 0; });   /* lrn-native: deal from the Featured deck Webflow renders */",
            'native Featured pool')
 js = patch(js, "var fz = document.getElementById('featured');\n    if (fz && p) {",
            "var fz = document.getElementById('featured');\n    if (fz && p && !(window.__lrnFeature && window.__lrnFeature(fz, p[0]))) {",

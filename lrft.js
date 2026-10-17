@@ -171,7 +171,7 @@
   }
   function epItem(e) { return { href: '/episodes/' + e[4], t: e[1], s: 'Le Random Podcast · Episode ' + e[0] + ' · ' + e[2], icon: '<span class="lrk-ic lrk-ep">' + e[0] + '</span>' }; }
   function momItem(m) { return { href: 'https://timeline.lerandom.art/m/' + m[0], t: m[1], s: 'Generative Art Timeline · ' + m[2] + (m[4] ? ' · ' + m[4] : ''), icon: '<span class="lrk-ic">◷</span>' }; }
-  function setItem(t) { return { href: '/editorials#dossiers', t: t[0], s: t[1] + ' · ' + t[2].length + ' editorials', icon: '<span class="lrk-ic">≡</span>' }; }
+  function setItem(t) { return { href: '/editorials#dossiers', key: t[0], t: t[0], s: t[1] + ' · ' + t[2].length + ' editorials', icon: '<span class="lrk-ic">≡</span>' }; }
   function pageItem(p) { return { href: '/editorials#' + p[2], t: p[0], s: p[1], icon: '<span class="lrk-ic">#</span>' }; }
 
   /* ---------- panel ---------- */
@@ -298,7 +298,7 @@
       var h = document.createElement('div'); h.className = 'lrk-grp'; h.setAttribute('role', 'presentation'); h.textContent = g[0]; frag.appendChild(h);
       g[1].forEach(function (x) {
         var i = ITEMS.length; ITEMS.push(x);
-        var key = x.href + (x.rnd ? '#rnd' : ''), a = ROWS[key];
+        var key = x.href + (x.rnd ? '#rnd' : '') + (x.key ? '|' + x.key : ''), a = ROWS[key];
         if (!a) {
           a = document.createElement('a'); a.className = 'lrk-it'; a.setAttribute('role', 'option'); a.href = x.href;
           a.innerHTML = x.icon + '<span class="lrk-tx"><span class="lrk-t"></span><span class="lrk-s"></span></span>';

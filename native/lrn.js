@@ -171,7 +171,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261016215115";
+var LRW_BUILD = "20261017130720";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -364,7 +364,7 @@ var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-m
   }
   function epItem(e) { return { href: '/episodes/' + e[4], t: e[1], s: 'Le Random Podcast · Episode ' + e[0] + ' · ' + e[2], icon: '<span class="lrk-ic lrk-ep">' + e[0] + '</span>' }; }
   function momItem(m) { return { href: 'https://timeline.lerandom.art/m/' + m[0], t: m[1], s: 'Generative Art Timeline · ' + m[2] + (m[4] ? ' · ' + m[4] : ''), icon: '<span class="lrk-ic">◷</span>' }; }
-  function setItem(t) { return { href: '/editorials#dossiers', t: t[0], s: t[1] + ' · ' + t[2].length + ' editorials', icon: '<span class="lrk-ic">≡</span>' }; }
+  function setItem(t) { return { href: '/editorials#dossiers', key: t[0], t: t[0], s: t[1] + ' · ' + t[2].length + ' editorials', icon: '<span class="lrk-ic">≡</span>' }; }
   function pageItem(p) { return { href: '/editorials#' + p[2], t: p[0], s: p[1], icon: '<span class="lrk-ic">#</span>' }; }
 
   /* ---------- panel ---------- */
@@ -491,7 +491,7 @@ var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-m
       var h = document.createElement('div'); h.className = 'lrk-grp'; h.setAttribute('role', 'presentation'); h.textContent = g[0]; frag.appendChild(h);
       g[1].forEach(function (x) {
         var i = ITEMS.length; ITEMS.push(x);
-        var key = x.href + (x.rnd ? '#rnd' : ''), a = ROWS[key];
+        var key = x.href + (x.rnd ? '#rnd' : '') + (x.key ? '|' + x.key : ''), a = ROWS[key];
         if (!a) {
           a = document.createElement('a'); a.className = 'lrk-it'; a.setAttribute('role', 'option'); a.href = x.href;
           a.innerHTML = x.icon + '<span class="lrk-tx"><span class="lrk-t"></span><span class="lrk-s"></span></span>';
@@ -2180,7 +2180,7 @@ try{
       'ian-goodfellow-on-inventing-gans','marina-abramovic-on-new-possibilities',
       'reas-history-1','casey-reas-on-the-history-of-generative-art-part-2',   /* lr-canon-15 (7 Oct 2026) */
       'micky-malka-becky-kleiner-on-the-birth-of-node','holly-herndon-mat-dryhurst-on-artificial-psychedelia','karl-sims-alexander-mordvintsev-on-merging-technology-and-biology','beeple-on-infinite-creation-machines','christiane-paul-on-defining-ai-art','mario-klingemann-a-i-c-c-a-on-alien-perspective','zach-lieberman'];
-    var cpool = window.__lrnDeck ? window.__lrnDeck() : POOLS.ed.picks.filter(function(x){ return CANON.indexOf(x[0]) >= 0; });   /* lrn-native: deal from the Featured deck Webflow renders */
+    var cpool = (window.__lrnDeck && window.__lrnDeck()) || POOLS.ed.picks.filter(function(x){ return CANON.indexOf(x[0]) >= 0; });   /* lrn-native: deal from the Featured deck Webflow renders */
     if (!cpool.length) cpool = POOLS.ed.picks;
     var p = cpool[Math.floor(rnd() * cpool.length)];
     try { if (window.__lrwSetSlot3) window.__lrwSetSlot3(p[0]); } catch (_e) {}
@@ -3308,7 +3308,7 @@ try{
       + '<span class="pl-x"><span class="pl-t">'
       /* 18 Sep 2026 (Peter): a row for something you can go to links to that show's OWN page,
          verified one at a time; an anniversary never links. */
-      + ((o.u && (o.k === 'event' || o.k === 'exhibition'))
+      + ((o.u && /^https?:\/\//i.test(o.u) && (o.k === 'event' || o.k === 'exhibition'))
           ? '<a class="pl-a" href="' + esc(o.u) + '" target="_blank" rel="noopener">' + ital(o.t) + '</a>'
           : ital(o.t))
       + '</span><span class="pl-m">' + m + '</span></span></div>';
