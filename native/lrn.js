@@ -1541,10 +1541,10 @@ try{
           + '<span class="ln-badge">Listen</span>'
           + '<span class="ln-len">' + Math.round((l.secs || 0) / 60) + ' min</span>' + '</a>';
       }).join('');
-      var pn = (d.prev != null ? '<a href="#pod=' + d.prev + '"><span class="lrft-dir">&#8592; Previous &#183; ' + ('0' + d.prev).slice(-2) + '</span><span class="lrft-t">' + esc(d.prev_t || '') + '</span></a>' : '<span></span>')
-        + (d.next != null ? '<a href="#pod=' + d.next + '"><span class="lrft-dir">Next &#183; ' + ('0' + d.next).slice(-2) + ' &#8594;</span><span class="lrft-t">' + esc(d.next_t || '') + '</span></a>' : '<span></span>');
+      var pn = (d.prev != null ? '<a href="#pod=' + d.prev + '"><span class="lrft-dir">&#8592; Previous &#183; ' + ('0' + d.prev).slice(-2) + '</span><span class="lrft-t">' + esc(d.prev_t || '').replace(/\*([^*<>]+)\*/g, '<em>$1</em>') + '</span></a>' : '<span></span>')
+        + (d.next != null ? '<a href="#pod=' + d.next + '"><span class="lrft-dir">Next &#183; ' + ('0' + d.next).slice(-2) + ' &#8594;</span><span class="lrft-t">' + esc(d.next_t || '').replace(/\*([^*<>]+)\*/g, '<em>$1</em>') + '</span></a>' : '<span></span>');
       view.innerHTML = '<span class="pv-back" id="pv-back">&#8592; All episodes</span>'
-        + '<h1>' + esc(d.title) + '</h1>'
+        + '<h1>' + esc(d.title).replace(/\*([^*<>]+)\*/g, '<em>$1</em>') + '</h1>'
         + '<div class="pv-meta"><span>Le Random Podcast &#183; Episode ' + ('0' + d.n).slice(-2) + '</span><span>' + esc(d.date) + '</span></div>'
         + '<div class="pv-player"><button class="pv-skip pv-b15" type="button" aria-label="Back 15 seconds">&#8722;15</button>'
         + '<button class="pv-btn" type="button" aria-label="Play episode">'
@@ -4313,6 +4313,28 @@ try{
     window.__LRTLN = n; var N = n.toLocaleString('en-US');
     put(N); setTimeout(function(){ put(N); }, 1500); setTimeout(function(){ put(N); }, 5000);
   }).catch(function(){});
+})();
+
+
+/* ---------- the Archive's counts, from its own rows (audit 17 Oct 2026, B5-01/B6-07: the header said "156 editorials and
+   46 episodes" and the counter "Showing 204 of 204" while the register listed 160 + 46 = 206). Written once at load, only
+   when they differ, and only while no search or chip has narrowed the list. ---------- */
+(function(){
+  function fix(){
+    var reg = document.getElementById('register'); if (!reg) return;
+    var eds = reg.querySelectorAll('.rg-row:not(.rg-pod)').length, eps = reg.querySelectorAll('.rg-row.rg-pod').length;
+    if (!eds) return;
+    var all = eds + eps, lab = reg.querySelector('.zone-head .more');
+    if (lab && /^\s*\d+ editorials and \d+ episodes\s*$/.test(lab.textContent)) {
+      var t = eds + ' editorials and ' + eps + ' episodes'; if (lab.textContent !== t) lab.textContent = t;
+    }
+    var q = document.getElementById('rg-q'), n = document.getElementById('rg-n');
+    if (n && (!q || !q.value) && ![].some.call(reg.querySelectorAll('.rg-row'), function(r){ return r.style.display === 'none'; })) {
+      if (n.textContent !== String(all)) n.textContent = String(all);
+      var tail = n.nextSibling; if (tail && tail.nodeType === 3 && /^\s*of \d+\s*$/.test(tail.nodeValue)) tail.nodeValue = ' of ' + all;
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fix); else fix();
 })();
 
 /* ---------- native: the Timeline moment of the day, from every moment (tl/daily, tl_daily.py) ---------- */
