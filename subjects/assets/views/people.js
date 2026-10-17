@@ -1827,7 +1827,7 @@
           : `<h2 class="lab">${tags.length ? 'Tags' : 'Subjects'}</h2><div class="pv-chips">${tags.slice(0,8).map(x=>`<span class="pv-chip">${esc(x.tag)}</span>`).join('')}</div>`;
         tEl.dataset.ready = '1'; mergeSubjects(p, tEl);
       }
-      const edRow = x => `<li class="pv-ed"><a class="t" href="${esc(x.e.url)}" target="_blank" rel="noopener">${esc(x.e.title)}</a><p>${named.has(x.k) ? '<span class="nm">Names them</span> &middot; ' : ''}${esc(x.e.type)} &middot; ${esc(x.e.author)} &middot; ${esc(x.e.date)}</p></li>`;
+      const edRow = x => `<li class="pv-ed"><a class="t" href="${esc(/^https?:\/\//i.test(x.e.url || '') ? x.e.url : LRWEB + '/editorials')}" target="_blank" rel="noopener">${esc(x.e.title)}</a><p>${named.has(x.k) ? '<span class="nm">Names them</span> &middot; ' : ''}${esc(x.e.type)} &middot; ${esc(x.e.author)} &middot; ${esc(x.e.date)}</p></li>`;
       if (eEl) eEl.innerHTML = `<h2 class="lab">Related reading <small>${eds.length || ''}</small></h2>${eds.length ? `<ul class="pv-list">${eds.slice(0, 6).map(edRow).join('')}</ul>${eds.length > 6 ? `<details class="pv-more"><summary class="pv-ib" style="display:inline-grid;list-style:none">${eds.length - 6} more</summary><ul class="pv-list">${eds.slice(6).map(edRow).join('')}</ul></details>` : ''}` : '<p class="pv-empty">No Le Random editorial is linked to these moments yet.</p>'}`;
       const podRow = x => { const c = chOf(x.k); return `<li class="pv-pod"><p class="lab">Episode ${esc(x.k)}${c ? ` &middot; <b>the Chapter ${c} episode</b>` : ''}${namedPod.has(x.k) ? ' &middot; <b>names them</b>' : ''}</p>
         <p class="t">${esc(x.e.title)}</p><p class="m">${esc(x.e.date)} &middot; ${mins(x.e.secs)}</p>
@@ -2346,7 +2346,7 @@
       });
       if (!hits.length) return;
       hits.sort((a, b) => (a.e || '9') < (b.e || '9') ? -1 : 1);
-      box.innerHTML = `<h2 class="lab">On view now <small>${fmt(hits.length)}</small></h2><ul class="pv-list">${hits.slice(0, 8).map(i => `<li class="pv-ed pv-onv"><a class="t" href="${esc(i.u || LRWEB + '/editorials')}" target="_blank" rel="noopener">${esc(i.t).replace(/&lt;(\/?)i&gt;/g, '<$1i>')}</a><p>${esc(i.p)}${i.e ? ` &middot; Until ${untilOf(i.e)}` : ''}</p></li>`).join('')}</ul>`;
+      box.innerHTML = `<h2 class="lab">On view now <small>${fmt(hits.length)}</small></h2><ul class="pv-list">${hits.slice(0, 8).map(i => `<li class="pv-ed pv-onv"><a class="t" href="${esc(/^https?:\/\//i.test(i.u || '') ? i.u : LRWEB + '/editorials')}" target="_blank" rel="noopener">${esc(i.t).replace(/&lt;(\/?)i&gt;/g, '<$1i>')}</a><p>${esc(i.p)}${i.e ? ` &middot; Until ${untilOf(i.e)}` : ''}</p></li>`).join('')}</ul>`;
       box.hidden = false;
     });
   }

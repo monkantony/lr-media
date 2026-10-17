@@ -47,6 +47,7 @@
     });
   }
   function open(url, newtab) {
+      if (typeof url !== 'string' || !/^https:\/\/(www\.lerandom\.art|timeline\.lerandom\.art|lerandom-art\.webflow\.io)\//.test(url) && !/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?\//.test(url)) return;   // audit 17 Oct 2026: own sites only
     url = url.replace(/^(https:\/\/timeline\.lerandom\.art\/m\/[a-z0-9-]+)\.html/, '$1');
     if (newtab) { var w = window.open(url, '_blank'); if (w) { try { w.opener = null; } catch (e) {} } else location.href = url; } else location.href = url;
   }
@@ -72,7 +73,7 @@
       // the subjects layout from the frame's first paint (the engine would add it only once it starts)
       // 9 Oct 2026 (Peter): wide-screen split view; the page head switches it on (html.sx-split), so the frame matches from its first paint
       if (CALM) h = h.replace('<main id="pp" class="pp ', '<main id="pp" class="pp sl-on ' + (HERO ? 'sl-hero ' : '') + (HERO && document.documentElement.classList.contains('sx-split') ? 'sl-split ' : ''));
-      h = h.replace('<!--LR-EMBED-HEAD-->', head).replace(/(href|src)="assets\//g, '$1="' + P_BASE + 'assets/');
+      h = h.replace('<!--LR-EMBED-HEAD-->', function () { return head; }).replace(/(href|src)="assets\//g, '$1="' + P_BASE + 'assets/');
       fr.srcdoc = h;
       box.appendChild(fr);
       fr.addEventListener('load', function () { if (CALM) setTimeout(show, 8000); else show(); });   // (in case the frame never says it is ready)
