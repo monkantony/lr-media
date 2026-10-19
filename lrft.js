@@ -1800,3 +1800,36 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
    wrapped word by word in the badge column. Wrap everything after the year into one title cell, for every row, every piece.
    The footer sits far below the fold, so the one reflow is never seen. */
 (function(){function fix(){var as=document.querySelectorAll('#lrft[data-static] .lrft-tlrt a');for(var i=0;i<as.length;i++){var a=as[i];if(a.querySelector('.lrft-tlt'))continue;var s=document.createElement('span');s.className='lrft-tlt';var n=a.firstChild;while(n){var nx=n.nextSibling;if(!(n.nodeType===1&&n.tagName==='STRONG'&&!s.firstChild)){if(!(n.nodeType===3&&!s.firstChild&&!n.nodeValue.trim()))s.appendChild(n);else a.removeChild(n);}n=nx;}a.appendChild(s);}}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fix);else fix();setTimeout(fix,1500);})();
+/* 19 Oct 2026 (Peter): (1) the header standfirst under the title is the plain-text Post Summary, so artwork titles there could not be
+   italic. Titles the image captions set in <em> (Hummingbird, Random War ...) are italicised in that line too: captions use <em> only for
+   titles, unlike body text. Whole-word matches only. (2) The About the Author name links to the author's subject page when one
+   exists (checked with a HEAD request; nothing changes if it is missing). */
+(function(){
+  var LAT='A-Za-z0-9\u00C0-\u024F';
+  function run(){
+    var h1=document.querySelector('h1.text-weight-medium'); var sum=h1&&h1.nextElementSibling;
+    if(sum&&/text-size-regular/.test(sum.className)&&!sum.getAttribute('data-lr-it')){
+      sum.setAttribute('data-lr-it','1');
+      var seen={},titles=[],ems=document.querySelectorAll('.w-richtext figcaption em, .w-richtext figcaption i');
+      for(var i=0;i<ems.length;i++){var t=(ems[i].textContent||'').replace(/\s+/g,' ').trim();
+        if(t.length<3||t.length>80||!new RegExp('^[A-Z0-9\u00C0-\u00DE]').test(t)||seen[t])continue;seen[t]=1;titles.push(t);}
+      titles.sort(function(a,b){return b.length-a.length;});
+      if(titles.length){
+        var esc=function(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');};
+        var re=new RegExp('(^|[^'+LAT+'])('+titles.map(esc).join('|')+')(?!['+LAT+'])','g');
+        var w=document.createTreeWalker(sum,NodeFilter.SHOW_TEXT,null),nodes=[],n;while((n=w.nextNode()))nodes.push(n);
+        nodes.forEach(function(tn){if(tn.parentNode&&tn.parentNode.closest&&tn.parentNode.closest('em,i'))return;var s=tn.data,last=0,m,frag=null;re.lastIndex=0;
+          while((m=re.exec(s))){frag=frag||document.createDocumentFragment();var start=m.index+m[1].length;
+            frag.appendChild(document.createTextNode(s.slice(last,start)));var em=document.createElement('em');em.textContent=m[2];frag.appendChild(em);last=start+m[2].length;}
+          if(frag){frag.appendChild(document.createTextNode(s.slice(last)));var sp=document.createElement('span');sp.appendChild(frag);tn.parentNode.replaceChild(sp,tn);}});
+      }
+    }
+    var ans=document.querySelectorAll('.text-weight-semibold.blog-post5-content_author-image-wrapper');
+    for(var k=0;k<ans.length;k++)(function(an){if(an.querySelector('a,img')||an.getAttribute('data-lr-ln'))return;
+      an.setAttribute('data-lr-ln','1');var name=(an.textContent||'').trim();
+      var slug=name.normalize?name.normalize('NFD').replace(/[\u0300-\u036F]/g,''):name;slug=slug.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+      if(slug&&window.fetch){fetch('/subjects/'+slug,{method:'HEAD'}).then(function(r){if(!r.ok)return;var a=document.createElement('a');a.href='/subjects/'+slug;a.textContent=name;a.style.color='inherit';an.textContent='';an.appendChild(a);}).catch(function(){});}
+    })(ans[k]);
+  }
+  if(document.readyState!=='loading')run();else document.addEventListener('DOMContentLoaded',run);
+})();
