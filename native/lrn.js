@@ -171,7 +171,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261019145748";
+var LRW_BUILD = "20261019150457";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -4336,6 +4336,11 @@ try{
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fix); else fix();
 })();
+
+/* 19 Oct 2026 (Peter: fix): from 1160 to 1440 px the centred header tab strip overflowed at both ends, so LATEST read TEST and
+   CONTRIBUTORS lost its tail. Safe centring never cuts the first tab, tighter gaps and tracking fit the five tabs where they can,
+   and where they still cannot the strip scrolls with the house fade (as on tablets) instead of clipping mid-word. */
+(function(){if(document.getElementById('lr-nav-band'))return;var st=document.createElement('style');st.id='lr-nav-band';st.textContent="@media (min-width:1160px) and (max-width:1440px){#lrtopbar .util nav,#topbar .util nav,#lrw .topbar .util nav{justify-content:safe center!important;gap:7px!important;overflow-x:auto}#lrtopbar .util nav a,#topbar .util nav a,#lrw .topbar .util nav a{letter-spacing:.07em!important}#lrtopbar .util nav.lr-ovf,#topbar .util nav.lr-ovf{justify-content:flex-start!important;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent);scroll-snap-type:x proximity}#lrtopbar .util nav.lr-ovf a,#topbar .util nav.lr-ovf a{scroll-snap-align:start}}";(document.head||document.documentElement).appendChild(st);function chk(){var ns=document.querySelectorAll('#lrtopbar .util nav,#topbar .util nav');for(var i=0;i<ns.length;i++){var n=ns[i];n.classList.toggle('lr-ovf',n.scrollWidth>n.clientWidth+1);}}var t=0;function soon(){clearTimeout(t);t=setTimeout(chk,120);}addEventListener('resize',soon);addEventListener('load',chk);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(chk);setTimeout(chk,400);setTimeout(chk,2000);chk();})();
 
 /* ---------- native: the Timeline moment of the day, from every moment (tl/daily, tl_daily.py) ---------- */
 (function(){

@@ -1789,3 +1789,14 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
     });
   } catch (e) {}
 })();
+
+/* 19 Oct 2026 (Peter: fix): from 1160 to 1440 px the centred header tab strip overflowed at both ends, so LATEST read TEST and
+   CONTRIBUTORS lost its tail. Safe centring never cuts the first tab, tighter gaps and tracking fit the five tabs where they can,
+   and where they still cannot the strip scrolls with the house fade (as on tablets) instead of clipping mid-word. */
+(function(){if(document.getElementById('lr-nav-band'))return;var st=document.createElement('style');st.id='lr-nav-band';st.textContent="@media (min-width:1160px) and (max-width:1440px){#lrtopbar .util nav,#topbar .util nav,#lrw .topbar .util nav{justify-content:safe center!important;gap:7px!important;overflow-x:auto}#lrtopbar .util nav a,#topbar .util nav a,#lrw .topbar .util nav a{letter-spacing:.07em!important}#lrtopbar .util nav.lr-ovf,#topbar .util nav.lr-ovf{justify-content:flex-start!important;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent);scroll-snap-type:x proximity}#lrtopbar .util nav.lr-ovf a,#topbar .util nav.lr-ovf a{scroll-snap-align:start}}";(document.head||document.documentElement).appendChild(st);function chk(){var ns=document.querySelectorAll('#lrtopbar .util nav,#topbar .util nav');for(var i=0;i<ns.length;i++){var n=ns[i];n.classList.toggle('lr-ovf',n.scrollWidth>n.clientWidth+1);}}var t=0;function soon(){clearTimeout(t);t=setTimeout(chk,120);}addEventListener('resize',soon);addEventListener('load',chk);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(chk);setTimeout(chk,400);setTimeout(chk,2000);chk();})();
+
+/* 19 Oct 2026 (Peter: fix, No. 160): a Timeline work moment reads "<em>Hummingbird</em> by Charles Csuri" in the footer's
+   rich text. The template lays each row out as a grid, so the loose " by Charles Csuri" text became its own grid item and
+   wrapped word by word in the badge column. Wrap everything after the year into one title cell, for every row, every piece.
+   The footer sits far below the fold, so the one reflow is never seen. */
+(function(){function fix(){var as=document.querySelectorAll('#lrft[data-static] .lrft-tlrt a');for(var i=0;i<as.length;i++){var a=as[i];if(a.querySelector('.lrft-tlt'))continue;var s=document.createElement('span');s.className='lrft-tlt';var n=a.firstChild;while(n){var nx=n.nextSibling;if(!(n.nodeType===1&&n.tagName==='STRONG'&&!s.firstChild)){if(!(n.nodeType===3&&!s.firstChild&&!n.nodeValue.trim()))s.appendChild(n);else a.removeChild(n);}n=nx;}a.appendChild(s);}}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fix);else fix();setTimeout(fix,1500);})();
