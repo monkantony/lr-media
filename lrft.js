@@ -1306,8 +1306,14 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
         });
         notes = notes.slice(0, 3);
         if (!notes.length) return;
+        /* 20 Oct 2026 (Peter: "never put between an image and its caption ... never do it again"): a card never
+           sits next to a picture. A paragraph right after a figure or a media embed may be that picture's caption
+           (some pieces set captions as their own paragraph), and caption-like paragraphs are never anchors. */
+        var MEDIA = function(el){ return !!el && (el.tagName === 'FIGURE' || (/w-embed/.test(el.className || '') && !!el.querySelector('img,video,iframe,picture'))); };
+        var CAPTION = function(el){ var tx = (el.textContent || '').trim(), em = el.querySelector('em,i');
+          return /^(courtesy|photo|image|credit|installation view|still from)\b/i.test(tx) || (em && (em.textContent || '').trim().length >= tx.length - 2); };
         var paras = [].filter.call(body.children, function(el){
-          return el.tagName === 'P' && (el.textContent || '').length > 150;
+          return el.tagName === 'P' && (el.textContent || '').length > 150 && !CAPTION(el);
         });
         if (paras.length < 6) return;
         var stops = [0.22, 0.55, 0.82];
@@ -1328,6 +1334,9 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
           var ref = at;
           while (ref.previousElementSibling && /^H[1-6]$/.test(ref.previousElementSibling.tagName)) ref = ref.previousElementSibling;
           if (ref !== at && !ref.previousElementSibling) ref = at.nextElementSibling || at;
+          /* and never directly under a picture: then the box follows the chosen paragraph instead */
+          if (MEDIA(ref.previousElementSibling)) ref = at.nextElementSibling;
+          if (!ref) return;
           ref.parentNode.insertBefore(el, ref);
         });
       }).catch(function(){});
