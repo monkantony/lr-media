@@ -1796,8 +1796,8 @@
       "cybernetics"
     ],
     "f": [],
-    "sc": "dada",
-    "sf": 0,
+    "sc": "ajedrecista",
+    "sf": 3,
     "img": "leonardo-torres-quevedo-builds-el-ajedrecista-a-chess-playing-automaton.jpg",
     "x": -0.1764,
     "y2": 0.1948,
@@ -4438,8 +4438,8 @@
   },
   {
     "s": "ben-laposky-kicks-off-the-computer-era-of-generative-art",
-    "t": "Ben Laposky Makes the First Oscillons",
-    "th": "Ben Laposky Makes the First Oscillons",
+    "t": "Ben Laposky Makes His First Oscillons",
+    "th": "Ben Laposky Makes His First Oscillons",
     "y": "1950",
     "yn": 1950,
     "c": 3,
@@ -8165,8 +8165,8 @@
   },
   {
     "s": "the-worlds-first-public-computer-art-exhibit-computer-grafik-by-georg-nees-and-f",
-    "t": "The World’s First Computer Art Exhibition: “Georg Nees: Computergrafik”, Studiengalerie der TH Stuttgart",
-    "th": "The World’s First Computer Art Exhibition: <em>Georg Nees: Computergrafik</em>, Studiengalerie der TH Stuttgart",
+    "t": "The World’s First Gallery Exhibition of Algorithmic Computer Art: “Georg Nees: Computergrafik”, Studiengalerie der TH Stuttgart",
+    "th": "The World’s First Gallery Exhibition of Algorithmic Computer Art: <em>Georg Nees: Computergrafik</em>, Studiengalerie der TH Stuttgart",
     "y": "1965",
     "yn": 1965,
     "c": 4,
@@ -11990,6 +11990,30 @@
     "y2": 0.2289223727878361,
     "z": -0.1739411530232828,
     "cl": 20
+  },
+  {
+    "s": "molnars-paris-sorbonne-university-orsay-computing-centre",
+    "t": "Molnár’s Paris: CIRCE, the Orsay Computing Centre",
+    "th": "Molnár’s Paris: CIRCE, the Orsay Computing Centre",
+    "y": "1970s",
+    "yn": 1972,
+    "c": 5,
+    "ty": [
+      "Event"
+    ],
+    "rg": "Europe",
+    "mv": [
+      "computer art",
+      "Plotter Art"
+    ],
+    "f": [],
+    "sc": "system370",
+    "sf": 3,
+    "img": "molnars-paris-sorbonne-university-orsay-computing-centre-fda3f53629.jpg",
+    "x": -0.4851449108973415,
+    "y2": 0.30568182636146246,
+    "z": -0.1846587583055008,
+    "cl": 8
   },
   {
     "s": "dennis-ritchie-develops-the-c-language",
@@ -18748,8 +18772,8 @@
   },
   {
     "s": "fleischmann-monika-strauss-wolfgang-home-of-the-brain-virtual-reality-installati",
-    "t": "Fleischmann, Monika/Strauss, Wolfgang: *Home of the Brain*, virtual reality installation, 1989-1990",
-    "th": "Fleischmann, Monika/Strauss, Wolfgang: <em>Home of the Brain</em>, virtual reality installation, 1989-1990",
+    "t": "Fleischmann, Monika/Strauss, Wolfgang: *Home of the Brain*, virtual reality installation, 1989-1991",
+    "th": "Fleischmann, Monika/Strauss, Wolfgang: <em>Home of the Brain</em>, virtual reality installation, 1989-1991",
     "y": "1991",
     "yn": 1991,
     "c": 7,
@@ -27782,9 +27806,9 @@
     "cl": 0
   },
   {
-    "s": "whitney-biennal-includes-mat-holly",
-    "t": "Whitney Biennal Includes Mat & Holly",
-    "th": "Whitney Biennal Includes Mat &amp; Holly",
+    "s": "whitney-biennial-includes-mat-holly",
+    "t": "Whitney Biennial Includes Mat & Holly",
+    "th": "Whitney Biennial Includes Mat &amp; Holly",
     "y": "2024",
     "yn": 2024,
     "c": 10,

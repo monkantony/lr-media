@@ -7996,7 +7996,8 @@
       "matt-deslauriers-on-a-generative-world"
     ],
     "pods": [
-      6
+      6,
+      46
     ],
     "dateType": "made"
   },
@@ -9252,7 +9253,8 @@
       "living-aesthetics-a-grammar-of-protocol-art-and-worldbuilding"
     ],
     "pods": [
-      6
+      6,
+      46
     ],
     "dateType": "made"
   },
@@ -10267,7 +10269,8 @@
       "infinite-images-finite-control"
     ],
     "pods": [
-      6
+      6,
+      46
     ],
     "dateType": "made"
   },
@@ -10659,7 +10662,8 @@
     ],
     "pods": [
       6,
-      21
+      21,
+      46
     ],
     "dateType": "made"
   },
@@ -13345,7 +13349,7 @@
     "img": {
       "src": "img/energized-artscience-at-the-chicago-museum-of-science-and-industry.jpg",
       "cap": "",
-      "credit": "Wikipedia. 2023. \"Museum of Science and Industry (Chicago).\" Wikimedia Foundation. Last modified August 18, 2023. <a href=\"https://en.wikipedia.org/wiki/Museum_of_Science_and_Industry_(Chicago\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>).",
+      "credit": "Wikipedia. 2023. \"Museum of Science and Industry (Chicago).\" Wikimedia Foundation. Last modified August 18, 2023. <a href=\"https://en.wikipedia.org/wiki/Museum_of_Science_and_Industry_(Chicago)\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>).",
       "width": 2397,
       "height": 1687
     },
@@ -16708,7 +16712,7 @@
       "But what are these things? A Markov model is a simple rule that what comes next depends only on what came just before. The odds are taken from counting real examples. But the catch is they can’t see far back and don't understand anything. Neural nets are the smarty pants that can understand. They learn their own patterns from data, so they can find much richer relationships and use much longer context.",
       "Hidden Markov models taught machines from piles of recordings to predict what most likely came next. Jelinek’s IBM team carried that approach into statistical translation and next-word prediction. Today’s large language models still do the same basic job of predicting the next word from probabilities learned from data, only over far longer stretches of text, to put it lightly.",
       "The disjointed nature of AI research in these days meant this breakthrough came from researchers in three places and took years. First, James Baker at Carnegie Mellon described DRAGON, a speech recognizer built on “a probabilistic function of a Markov process.” Then, in 1976 Fred Jelinek of IBM Research published statistical methods for recognizing continuous speech. Both built on theory from Leonard Baum and colleagues at the Institute for Defense Analyses. Yes, military funding always seems just around the corner from AI research.",
-      "In this further blow to our poor neural nets, Markov models would remain the learning field’s preferred method until the early 1990s. Minsky, you devil."
+      "In this further blow to our poor neural nets, Markov models would remain speech recognition’s preferred method well into the 2000s. Minsky, you devil."
     ],
     "cite": [
       {
@@ -17032,7 +17036,7 @@
     "img": {
       "src": "img/joseph-weizenbaum-publishes-computer-power-and-human-reason-81ac8dda74.jpg",
       "cap": "Joseph Weizenbaum in Berlin, 2006.",
-      "credit": "Photo: Andreas Schepers, CC BY 2.0 (cropped), via <a href=\"https://commons.wikimedia.org/wiki/File:Hans_Uszkoreit,_Joseph_Weizenbaum_(238430262\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>.jpg)."
+      "credit": "Photo: Andreas Schepers, CC BY 2.0 (cropped), via <a href=\"https://commons.wikimedia.org/wiki/File:Hans_Uszkoreit,_Joseph_Weizenbaum_(238430262).jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>.jpg)."
     },
     "tags": [
       "Joseph Weizenbaum",
@@ -17422,6 +17426,102 @@
     "linked": [],
     "echoes": [],
     "eds": [],
+    "pods": [
+      6
+    ],
+    "dateType": ""
+  },
+  "molnars-paris-sorbonne-university-orsay-computing-centre": {
+    "body": [
+      "After finally accessing her <a href=\"m/molnars-paris-first-computer-encounter-bull-ge-hq.html\" data-moment=\"molnars-paris-first-computer-encounter-bull-ge-hq\">machine réelle</a>, <a href=\"https://www.lerandom.art/subjects/vera-molnar\" target=\"_blank\" rel=\"noopener\">Vera Molnár</a> could no longer be without it. She had no official role at CIRCE, the computing centre in Orsay, but its director let her use leftover machine time on evenings and weekends: an IBM System/370 mainframe computer, its IBM 2250 screen and a Benson drum plotter. Most of her plotter work from the 1970s was created here, “shrunk in a corner, the last in line,” as she told <a href=\"https://www.lerandom.art/subjects/hans-ulrich-obrist\" target=\"_blank\" rel=\"noopener\">Hans Ulrich Obrist</a>. The now-legendary sprocket-holed sheets carry the machine’s stamp: a date code, the hour of calculation and “JOB FROM MOLNAR.” The Molnárs wrote the <a href=\"m/vera-molnar-develops-molnart-software.html\" data-moment=\"vera-molnar-develops-molnart-software\">Molnart</a> program together, in Fortran."
+    ],
+    "cite": [
+      {
+        "url": "https://www.lerandom.art/editorial/molnars-paris",
+        "label": "lerandom.art"
+      },
+      {
+        "url": "https://vintage.hu/wp-content/uploads/2019/03/Molnar-Vera-HUO-interview.pdf",
+        "label": "vintage.hu"
+      },
+      {
+        "url": "https://www.holo.mg/dossiers/vera-molnar-weaving-variations/",
+        "label": "holo.mg"
+      }
+    ],
+    "img": {
+      "src": "img/molnars-paris-sorbonne-university-orsay-computing-centre-fda3f53629.jpg",
+      "cap": "An IBM System/370 control panel at Université Laval, Quebec, in September 1972.",
+      "credit": "Photo: Yves Tessier, September 1972 (348-3-001, Bibliothèque de l’Université Laval), lens correction by DigitalIceAge. CC BY-SA 4.0, via <a href=\"https://commons.wikimedia.org/wiki/File:Ordinateurs_centraux_348-3-001-2_%28edit%29.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>."
+    },
+    "tags": [
+      "Vera Molnár",
+      "François Molnár",
+      "Hans Ulrich Obrist",
+      "IBM",
+      "Molnart",
+      "Plotter Art",
+      "plotter",
+      "computer art",
+      "Paris"
+    ],
+    "people": [
+      "françois molnár",
+      "hans ulrich obrist",
+      "vera molnár"
+    ],
+    "subjects": [
+      {
+        "k": "computer art",
+        "n": "computer art",
+        "t": "tech"
+      },
+      {
+        "k": "molnart",
+        "n": "Molnart",
+        "t": "tech"
+      },
+      {
+        "k": "plotter",
+        "n": "plotter",
+        "t": "tech"
+      },
+      {
+        "k": "plotter art",
+        "n": "Plotter Art",
+        "t": "tech"
+      },
+      {
+        "k": "françois molnár",
+        "n": "François Molnár",
+        "t": "people"
+      },
+      {
+        "k": "hans ulrich obrist",
+        "n": "Hans Ulrich Obrist",
+        "t": "people"
+      },
+      {
+        "k": "vera molnár",
+        "n": "Vera Molnár",
+        "t": "people"
+      },
+      {
+        "k": "ibm",
+        "n": "IBM",
+        "t": "orgs"
+      },
+      {
+        "k": "paris",
+        "n": "Paris",
+        "t": "places"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [
+      "molnars-paris"
+    ],
     "pods": [
       6
     ],

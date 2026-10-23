@@ -426,20 +426,20 @@
   },
   "ray-kurzweils-cybernetic-poet": {
     "body": [
-      "<a href=\"https://www.kurzweilcyberart.com/poetry/rkcp_how_it_works.php\" target=\"_blank\" rel=\"noopener\">Ray Kurzweil’s Cybernetic Poet</a> first written in the mid-1980s, creates language models of the works of various human authors and uses language analysis and mathematical modeling to generate original poems “inspired” by these authors.",
+      "<a href=\"https://web.archive.org/web/20260607143654/https://www.kurzweilcyberart.com/poetry/rkcp_how_it_works.php\" target=\"_blank\" rel=\"noopener\">Ray Kurzweil’s Cybernetic Poet</a> first written in the mid-1980s, creates language models of the works of various human authors and uses language analysis and mathematical modeling to generate original poems “inspired” by these authors.",
       "-Sasha Stiles"
     ],
     "cite": [
       {
-        "url": "https://www.kurzweilcyberart.com/poetry/rkcp_how_it_works.php",
+        "url": "https://web.archive.org/web/20260607143654/https://www.kurzweilcyberart.com/poetry/rkcp_how_it_works.php",
         "label": "kurzweilcyberart.com"
       }
     ],
     "img": {
       "cap": "“Moon Child,” an example poem on the original Ray Kurzweil’s Cybernetic Poet website, with its explanation of the program’s method.",
-      "credit": "Kurzweil CyberArt Technologies. Browser capture, 27 September 2026. <a href=\"https://www.kurzweilcyberart.com/poetry/rkcp_how_it_works.php\">Image source</a>.",
+      "credit": "Kurzweil CyberArt Technologies. Browser capture, 27 September 2026. <a href=\"https://web.archive.org/web/20260607143654/https://www.kurzweilcyberart.com/poetry/rkcp_how_it_works.php\">Image source</a>.",
       "alt": "The Cybernetic Poet website shows the poem Moon Child and explains how the program generates poems from source texts.",
-      "sourceUrl": "https://www.kurzweilcyberart.com/poetry/rkcp_how_it_works.php",
+      "sourceUrl": "https://web.archive.org/web/20260607143654/https://www.kurzweilcyberart.com/poetry/rkcp_how_it_works.php",
       "creator": [],
       "width": 577,
       "height": 436,
@@ -1503,7 +1503,7 @@
   },
   "transmediale-2001-diy-do-it-yourself": {
     "body": [
-      "Transmediale, the <a href=\"https://www.lerandom.art/subjects/berlin\">Berlin</a> festival-conference, was emblematic of the excitement globally for software and net-based art at the turn of the new millennium, as in 2001 it introduced an artistic software award. According to the event’s jury <a href=\"https://pastwebsites.transmediale.de/01/en/software.htm\" target=\"_blank\" rel=\"noopener\">pastwebsites.transmediale.de</a>, “To our knowledge, this is the first award given and solely dedicated to software art.” <a href=\"https://www.lerandom.art/subjects/siggraph\">SIGGRAPH</a> or <a href=\"https://www.lerandom.art/subjects/ars-electronica\">Ars Electronica</a> might have something to say about that claim, however.",
+      "Transmediale, the <a href=\"https://www.lerandom.art/subjects/berlin\">Berlin</a> festival-conference, was emblematic of the excitement globally for software and net-based art at the turn of the new millennium, as in 2001 it introduced an artistic software award. According to the event’s jury <a href=\"https://web.archive.org/web/20231007211322/https://pastwebsites.transmediale.de/01/en/software.htm\" target=\"_blank\" rel=\"noopener\">pastwebsites.transmediale.de</a>, “To our knowledge, this is the first award given and solely dedicated to software art.” <a href=\"https://www.lerandom.art/subjects/siggraph\">SIGGRAPH</a> or <a href=\"https://www.lerandom.art/subjects/ars-electronica\">Ars Electronica</a> might have something to say about that claim, however.",
       "The shortlisted works included pieces by <a href=\"https://www.lerandom.art/subjects/golan-levin\">Golan Levin</a> and net.art pioneer <a href=\"https://www.lerandom.art/subjects/netochka-nezvanova\">Netochka Nezvanova</a>."
     ],
     "cite": [
@@ -1782,7 +1782,7 @@
     "echoes": [
       "joseph-weizenbaum-publishes-eliza",
       "noteworthy-ai-work-3",
-      "whitney-biennal-includes-mat-holly"
+      "whitney-biennial-includes-mat-holly"
     ],
     "eds": [
       "reas-history-1",
@@ -2954,7 +2954,7 @@
     "echoes": [
       "noland-bushnell-invents-first-video-game-pong",
       "space-invaders-asteroids-and-pac-man-released",
-      "whitney-biennal-includes-mat-holly"
+      "whitney-biennial-includes-mat-holly"
     ],
     "eds": [
       "minne-atairu-on-shaping-our-own-image"
@@ -3076,7 +3076,7 @@
   },
   "derivative-launches-touchdesigner": {
     "body": [
-      "TouchDesigner, introduced by Derivative, marked a transformative advancement in interactive, real-time multimedia programming for visual artists. Launched by founders <a href=\"https://www.lerandom.art/subjects/greg-hermanovic\">Greg Hermanovic</a>, <a href=\"https://www.lerandom.art/subjects/rob-bairos\">Rob Bairos</a>, and <a href=\"https://www.lerandom.art/subjects/jarrett-smith\">Jarrett Smith</a>, this innovative platform was born from the Houdini 4.1 source code, aimed at revolutionizing live visual performances. As a comprehensive real-time visual tool, TouchDesigner catered to the interest in interactive and dynamic digital artistry that started in earnest a decade prior, at the beginning of the 1990s, with events like artFutura as well as the work of early interactive pioneers such as <a href=\"https://www.lerandom.art/subjects/karl-sims\">Karl Sims</a>. This was pioneered in the ’70s at EVL in <a href=\"https://www.lerandom.art/subjects/chicago\">Chicago</a> with CAVE. TouchDesigner offered creators the ability to author, perform, and interact with visuals in unprecedented ways. With its first generation running from 2002, TouchDesigner established itself as an essential medium for artists to meld creativity with cutting-edge technology, fostering a new wave of digital expression."
+      "TouchDesigner, introduced by Derivative, marked a transformative advancement in interactive, real-time multimedia programming for visual artists. Launched by founders <a href=\"https://www.lerandom.art/subjects/greg-hermanovic\">Greg Hermanovic</a>, <a href=\"https://www.lerandom.art/subjects/rob-bairos\">Rob Bairos</a>, and <a href=\"https://www.lerandom.art/subjects/jarrett-smith\">Jarrett Smith</a>, this innovative platform was born from the Houdini 4.1 source code, aimed at revolutionizing live visual performances. As a comprehensive real-time visual tool, TouchDesigner catered to the interest in interactive and dynamic digital artistry that started in earnest a decade prior, at the beginning of the 1990s, with events like artFutura as well as the work of early interactive pioneers such as <a href=\"https://www.lerandom.art/subjects/karl-sims\">Karl Sims</a>. This was pioneered in the early ’90s at EVL in <a href=\"https://www.lerandom.art/subjects/chicago\">Chicago</a> with CAVE. TouchDesigner offered creators the ability to author, perform, and interact with visuals in unprecedented ways. With its first generation running from 2002, TouchDesigner established itself as an essential medium for artists to meld creativity with cutting-edge technology, fostering a new wave of digital expression."
     ],
     "cite": [
       {
@@ -7534,7 +7534,8 @@
       "infinite-images-finite-control"
     ],
     "pods": [
-      11
+      11,
+      46
     ],
     "dateType": ""
   },
@@ -7845,7 +7846,7 @@
     "img": {
       "src": "img/daito-manabe-launches-rhizomatiks.jpg",
       "cap": "",
-      "credit": "\"<a href=\"https://www.flickr.com/photos/36085842@N06/51462472006&quot;\" target=\"_blank\" rel=\"noopener\">flickr.com</a> by <a href=\"https://www.flickr.com/photos/36085842@N06\" target=\"_blank\" rel=\"noopener\">flickr.com</a> is licensed under <a href=\"https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=openverse\" target=\"_blank\" rel=\"noopener\">creativecommons.org</a>.",
+      "credit": "\"<a href=\"https://www.flickr.com/photos/36085842@N06/51462472006\" target=\"_blank\" rel=\"noopener\">flickr.com</a> by <a href=\"https://www.flickr.com/photos/36085842@N06\" target=\"_blank\" rel=\"noopener\">flickr.com</a> is licensed under <a href=\"https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=openverse\" target=\"_blank\" rel=\"noopener\">creativecommons.org</a>.",
       "width": 1024,
       "height": 683
     },

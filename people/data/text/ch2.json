@@ -4052,7 +4052,7 @@
     "img": {
       "src": "img/3-standard-stoppages-by-marcel-duchamp.jpg",
       "cap": "",
-      "credit": "\"<a href=\"https://www.flickr.com/photos/9319517@N06/5738413498&quot;\" target=\"_blank\" rel=\"noopener\">flickr.com</a> by <a href=\"https://www.flickr.com/photos/9319517@N06\" target=\"_blank\" rel=\"noopener\">flickr.com</a> is licensed under <a href=\"https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse\" target=\"_blank\" rel=\"noopener\">creativecommons.org</a>.",
+      "credit": "\"<a href=\"https://www.flickr.com/photos/9319517@N06/5738413498\" target=\"_blank\" rel=\"noopener\">flickr.com</a> by <a href=\"https://www.flickr.com/photos/9319517@N06\" target=\"_blank\" rel=\"noopener\">flickr.com</a> is licensed under <a href=\"https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse\" target=\"_blank\" rel=\"noopener\">creativecommons.org</a>.",
       "width": 1024,
       "height": 1024
     },
@@ -4190,7 +4190,7 @@
     "img": {
       "src": "img/bicycle-wheel-by-marcel-duchamp.jpg",
       "cap": "",
-      "credit": "\"<a href=\"https://www.flickr.com/photos/7393833@N05/3871525804&quot;\" target=\"_blank\" rel=\"noopener\">flickr.com</a> by <a href=\"https://www.flickr.com/photos/7393833@N05\" target=\"_blank\" rel=\"noopener\">flickr.com</a> is licensed under <a href=\"https://creativecommons.org/licenses/by-nd-nc/2.0/jp/?ref=openverse\" target=\"_blank\" rel=\"noopener\">creativecommons.org</a>.",
+      "credit": "\"<a href=\"https://www.flickr.com/photos/7393833@N05/3871525804\" target=\"_blank\" rel=\"noopener\">flickr.com</a> by <a href=\"https://www.flickr.com/photos/7393833@N05\" target=\"_blank\" rel=\"noopener\">flickr.com</a> is licensed under <a href=\"https://creativecommons.org/licenses/by-nc-nd/2.0/jp/?ref=openverse\" target=\"_blank\" rel=\"noopener\">creativecommons.org</a>.",
       "width": 720,
       "height": 1024
     },
@@ -6149,7 +6149,7 @@
     "img": {
       "src": "img/obstruction-by-man-ray.jpg",
       "cap": "",
-      "credit": "\"<a href=\"https://www.flickr.com/photos/40646519@N00/25302776966&quot;\" target=\"_blank\" rel=\"noopener\">flickr.com</a> by <a href=\"https://www.flickr.com/photos/40646519@N00\" target=\"_blank\" rel=\"noopener\">flickr.com</a> is licensed under <a href=\"https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=openverse\" target=\"_blank\" rel=\"noopener\">creativecommons.org</a>",
+      "credit": "\"<a href=\"https://www.flickr.com/photos/40646519@N00/25302776966\" target=\"_blank\" rel=\"noopener\">flickr.com</a> by <a href=\"https://www.flickr.com/photos/40646519@N00\" target=\"_blank\" rel=\"noopener\">flickr.com</a> is licensed under <a href=\"https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=openverse\" target=\"_blank\" rel=\"noopener\">creativecommons.org</a>",
       "width": 1024,
       "height": 768
     },
@@ -10134,12 +10134,20 @@
   },
   "gunta-stolzl-departs-the-bauhaus": {
     "body": [
-      "<a href=\"https://www.lerandom.art/subjects/gunta-stolzl\">Gunta Stölzl</a>, pioneering weaver and textile artist, left the <a href=\"https://www.lerandom.art/subjects/bauhaus\">Bauhaus</a> due to conflicts with its male-dominated administration, her support for left-wing politics and rising anti-semitism in <a href=\"https://www.lerandom.art/subjects/germany\">Germany</a>. Her departure was a significant loss for the school but Stölzl would continue to be a leading figure in the development of modernist textile art and design. She would become the first woman to be exhibited for textiles at <a href=\"https://www.lerandom.art/subjects/moma\">MoMA</a>."
+      "<a href=\"https://www.lerandom.art/subjects/gunta-stolzl\">Gunta Stölzl</a>, pioneering weaver and textile artist, was forced to resign from the <a href=\"https://www.lerandom.art/subjects/bauhaus\">Bauhaus</a> in 1931 amid rising anti-semitism in <a href=\"https://www.lerandom.art/subjects/germany\">Germany</a>. After she married the Jewish architect Arieh Sharon, she clashed with far-right students and local politicians, and the school’s new director, Ludwig Mies van der Rohe, did not back her. Her departure was a significant loss for the school but Stölzl would continue to be a leading figure in the development of modernist textile art and design. <a href=\"https://www.lerandom.art/subjects/moma\">MoMA</a> has held her textiles since 1958."
     ],
     "cite": [
       {
         "url": "https://artsandculture.google.com/story/the-bauhaus-women%E2%80%99s-class-stiftung-bauhaus-dessau/swXxDJ_rSG37KQ?hl=en",
         "label": "artsandculture.google.com"
+      },
+      {
+        "url": "https://www.deutsche-biographie.de/sfzS20440.html",
+        "label": "deutsche-biographie.de"
+      },
+      {
+        "url": "https://www.moma.org/artists/5675",
+        "label": "moma.org"
       }
     ],
     "img": {
@@ -11487,7 +11495,7 @@
     "img": {
       "src": "img/konrad-zuse-completes-the-z3.jpg",
       "cap": "",
-      "credit": "Wikipedia. 2023. \"Z3 (computer).\" Wikimedia Foundation. Last modified March 17, 2023. <a href=\"https://en.wikipedia.org/wiki/Z3_(computer\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>).",
+      "credit": "Wikipedia. 2023. \"Z3 (computer).\" Wikimedia Foundation. Last modified March 17, 2023. <a href=\"https://en.wikipedia.org/wiki/Z3_(computer)\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>).",
       "width": 1015,
       "height": 586
     },
@@ -13020,7 +13028,8 @@
       "hans-ulrich-obrist-on-exhibitions-as-living-organisms"
     ],
     "pods": [
-      2
+      2,
+      46
     ],
     "dateType": ""
   },
@@ -13832,7 +13841,8 @@
       "travess-smalley-profiles-mark-wilson"
     ],
     "pods": [
-      2
+      2,
+      46
     ],
     "dateType": ""
   },
@@ -14982,7 +14992,7 @@
   "leonardo-torres-quevedo-builds-el-ajedrecista-a-chess-playing-automaton": {
     "body": [
       "Spanish engineer <a href=\"https://www.lerandom.art/subjects/leonardo-torres-quevedo\">Leonardo Torres Quevedo</a> built the chess-playing automaton, El Ajedrecista (The Chess Player), in 1912 and presented it in <a href=\"https://www.lerandom.art/subjects/paris\">Paris</a> in 1914.",
-      "Incapable of playing a full game from scratch, the machine played one specific endgame, its own king and rook against a human’s lone king. It could sense the pieces electrically and move its own with a mechanical arm. A 1915 <em><a href=\"https://www.lerandom.art/subjects/scientific-american\">Scientific American</a></em> account reported Quevedo's claim that “an automaton can do many things that are popularly classed with thought.” A second version, built in 1920, moved the pieces with electromagnets under the board.",
+      "Incapable of playing a full game, the machine played one specific endgame, its own king and rook against a human’s lone king. It could sense the pieces electrically and move its own with a carriage of two crossing steel arms. A 1915 <em><a href=\"https://www.lerandom.art/subjects/scientific-american\">Scientific American</a></em> account reported Quevedo's claim that “an automaton can do many things that are popularly classed with thought.” A second version, built in 1920, moved the pieces with electromagnets under the board.",
       "This machine would even impact the budding field of cybernetics, when in January 1951 Quevedo's son <a href=\"https://www.lerandom.art/subjects/gonzalo-torres-quevedo\">Gonzalo Torres-Quevedo</a> presented both machines at a Paris conference, where the 1920 machine defeated none other than <a href=\"https://www.lerandom.art/subjects/norbert-wiener\">Norbert Wiener</a>."
     ],
     "cite": [

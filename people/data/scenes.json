@@ -25,6 +25,20 @@
       "chapterDefault": true
     },
     {
+      "id": "ajedrecista",
+      "launched": "2026-10-20T12:30:00Z",
+      "chapter": 2,
+      "title": "El Ajedrecista",
+      "blurb": "Play your lone king against a simulation of Torres Quevedo's 1912 endgame machine: an upright board, six lettered drums and a carriage that moves its pieces. It always mates.",
+      "home": "leonardo-torres-quevedo-builds-el-ajedrecista-a-chess-playing-automaton",
+      "fits": "chess automata, electromechanical machines, early artificial intelligence, rule-based play, games",
+      "file": "scenes/ajedrecista.html",
+      "cls": "scene-ajedrecista",
+      "status": "live",
+      "chapterDefault": false,
+      "brief": "A simulation after Vigneron's 1914 account and photographs of the 1912 machine: an upright board with plug-in pieces, a carriage on two slides that pulls the machine's piece out and plugs it in, six lettered drums (one per maneuver; Vigneron's six cases pick one), four weights hung above the panel and three lamps on the table that light on illegal moves. The viewer plays the lone black king from one published start; the machine always mates. Three illegal moves and it refuses to play until the PARTIDA NUEVA switch is thrown. The start squares, timing and lamp colors are ours."
+    },
+    {
       "id": "oscilloscope",
       "chapter": 3,
       "title": "Phosphor oscilloscope",
@@ -47,6 +61,20 @@
       "cls": "ch04",
       "status": "live",
       "chapterDefault": true
+    },
+    {
+      "id": "system370",
+      "chapter": 5,
+      "title": "IBM System/370 and Benson drum plotter",
+      "blurb": "Pick versions of a square drawing on an IBM 2250 screen, the way we believe Vera Molnár worked at Orsay, then watch a Benson drum plotter draw each one in ink on its own frame of the roll.",
+      "launched": "2026-10-23T14:17:00Z",
+      "home": "molnars-paris-sorbonne-university-orsay-computing-centre",
+      "fits": "mainframe computing centres, batch jobs, drum plotters, 1970s computer art, Vera Molnár at Orsay",
+      "file": "scenes/system370.html",
+      "cls": "scene-system370",
+      "status": "live",
+      "chapterDefault": false,
+      "brief": "One 3D room at CIRCE, Orsay, after hours: the IBM 2250 console (green vector screen, typed input, programmed function keys, no light pen) beside a Benson drum plotter in the form of the ACONIT Benson 1112. The 2250 runs a model of RESEAU-TO, the program Molnár describes in Leonardo (1975): an array of sets of concentric squares with six variables (sets, squares per set, displacement, deformation, elimination, curves). A second program models MOLNART's two squares with moving corners (Love Story, 1974). Nine versions on the screen step one value; the visitor picks a few and presses PLOT; the System/370 runs the job; the plotter draws each pick on its own 55 x 36 cm frame, stamped with the hour of calculation and JOB FROM <name> as it passes the pens; the visitor cuts the roll and the sheets are laid out to keep. No machine model numbers, no input syntax, no speed or room layout are claimed; the drawings are the models', not Molnár's; her name is refused as a job name and saved sheets carry a simulation line."
     },
     {
       "id": "videosynth",

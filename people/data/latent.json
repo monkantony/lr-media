@@ -217,7 +217,7 @@
     },
     {
       "id": 8,
-      "n": 47,
+      "n": 48,
       "x": -0.5459907293993331,
       "y": 0.2634741327221976,
       "terms": [
@@ -234,7 +234,7 @@
         "2": 4,
         "3": 3,
         "4": 21,
-        "5": 9,
+        "5": 10,
         "6": 8,
         "10": 2
       },
@@ -9667,7 +9667,7 @@
       "echoes": [
         "noland-bushnell-invents-first-video-game-pong",
         "space-invaders-asteroids-and-pac-man-released",
-        "whitney-biennal-includes-mat-holly"
+        "whitney-biennial-includes-mat-holly"
       ]
     },
     {
@@ -10315,7 +10315,7 @@
       "echoes": [
         "joseph-weizenbaum-publishes-eliza",
         "noteworthy-ai-work-3",
-        "whitney-biennal-includes-mat-holly"
+        "whitney-biennial-includes-mat-holly"
       ]
     },
     {
@@ -13103,7 +13103,7 @@
       ]
     },
     {
-      "s": "whitney-biennal-includes-mat-holly",
+      "s": "whitney-biennial-includes-mat-holly",
       "x": 0.4444,
       "y": -0.4157,
       "z": 0.043,
@@ -14694,6 +14694,22 @@
         "montana-by-mary-jane-veeder",
         "sod-by-jodi",
         "video-art-the-electronic-medium-at-the-chicago-museum-of-contemporary-art"
+      ]
+    },
+    {
+      "s": "molnars-paris-sorbonne-university-orsay-computing-centre",
+      "x": -0.4851449108973415,
+      "y": 0.30568182636146246,
+      "z": -0.1846587583055008,
+      "cl": 8,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "emerging-expressions-at-the-bronx-museum-of-the-arts-new-york",
+        "mark-wilson-skew-j17",
+        "harold-cohens-arnolfini-series",
+        "charles-csuri-enters-the-computer-art-scene-with-series-of-important-works",
+        "23-ecke-by-georg-nees"
       ]
     }
   ],

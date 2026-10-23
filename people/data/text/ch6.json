@@ -350,7 +350,8 @@
       "living-aesthetics-a-grammar-of-protocol-art-and-worldbuilding"
     ],
     "pods": [
-      8
+      8,
+      46
     ],
     "dateType": "occurred"
   },
@@ -993,7 +994,7 @@
   },
   "digital-harmony-on-the-complementarity-of-music-and-visual-art-by-john-whitney": {
     "body": [
-      "<a href=\"https://ossarchive.adm.ntu.edu.sg/2014-15/ejfoo1/index.html_p=208.html\" target=\"_blank\" rel=\"noopener\">In the book, Whitney wrote</a> of the future of art and society: “The future of Society: the way we communicate, learn and entertain ourselves lay in making pictures that move, images created by cameras and computers and displayed on a computer screen.”"
+      "<a href=\"https://archive.org/details/DigitalHarmony_201611/page/n10/mode/1up\" target=\"_blank\" rel=\"noopener\">In the book’s foreword, Whitney wrote</a> that he expected “an art that will show well on the video screen” and in a new kind of theater and gallery, played everywhere on videodisc (p. 7)."
     ],
     "cite": [
       {
@@ -5890,7 +5891,7 @@
   },
   "major-publications-of-1983": {
     "body": [
-      "1983 featured a wealth of important articles and publications related to art and technology, <a href=\"https://bitforms.art/pdfs/bibliography/mohr/1990ArtJournal.pdf\" target=\"_blank\" rel=\"noopener\">as highlighted by Copper Giloth and Lynn Pocock-Williams</a>, including:",
+      "1983 featured a wealth of important articles and publications related to art and technology, <a href=\"https://web.archive.org/web/20201109210543/https://bitforms.art/pdfs/bibliography/mohr/1990ArtJournal.pdf\" target=\"_blank\" rel=\"noopener\">as highlighted by Copper Giloth and Lynn Pocock-Williams</a>, including:",
       "1. <a href=\"https://www.lerandom.art/subjects/jean-baudrillard\">Jean Baudrillard</a>, <a href=\"https://www.lerandom.art/subjects/simulation\">Simulations</a>",
       "2. <a href=\"https://www.lerandom.art/subjects/hal-foster\">Hal Foster</a>, ed: “<a href=\"https://www.lerandom.art/subjects/the-anti-aesthetic\">The Anti-Aesthetic</a>: Essays on Postmodern Culture”",
       "3. <a href=\"https://www.lerandom.art/subjects/lucinda-furlong\">Lucinda Furlong</a>: “Notes toward a History of Image-Processed Video”",
@@ -7324,7 +7325,7 @@
   },
   "major-publications-of-1984": {
     "body": [
-      "<a href=\"https://bitforms.art/pdfs/bibliography/mohr/1990ArtJournal.pdf\" target=\"_blank\" rel=\"noopener\">Copper Giloth and Lynn Pocock-Williams miraculously tracked the major publications</a> for the decade and they are listed here:",
+      "<a href=\"https://web.archive.org/web/20201109210543/https://bitforms.art/pdfs/bibliography/mohr/1990ArtJournal.pdf\" target=\"_blank\" rel=\"noopener\">Copper Giloth and Lynn Pocock-Williams miraculously tracked the major publications</a> for the decade and they are listed here:",
       "1. <a href=\"https://www.lerandom.art/subjects/stan-augarten\">Stan Augarten</a>, Bit by Bit: An Illustrated History of Computers 2. <a href=\"https://www.lerandom.art/subjects/herbert-w-franke\">Herbert W. Franke</a>, ComputergrafikGalerie; Bilder nach Programm: Kunst im elektronischen Zeitalter.  3. <a href=\"https://www.lerandom.art/subjects/hiroshi-inose\">Hiroshi Inose</a> and John Peirce, Information Technology and Civilization (<a href=\"https://www.lerandom.art/subjects/japan\">Japan</a>) 4. <a href=\"https://www.lerandom.art/subjects/judy-e-sachter\">Judy E. Sachter</a>, “The Basic Concepts of Three-Dimensional Computer Graphics for Artists.”  5. <a href=\"https://www.lerandom.art/subjects/lee-silverman\">Lee Silverman</a>, “Inside the Loop: Computer Graphics within the Technological Highway.”  7. Thomas Defanti, “The Mass Impact of Videogame Technology.”"
     ],
     "cite": [
@@ -7509,7 +7510,7 @@
     "img": {
       "src": "img/apples-macintosh-introduction-commercial.jpg",
       "cap": "",
-      "credit": "Wikipedia. 2023. \"Mac (Computer).\" Wikimedia Foundation. Last modified October 1, 2023. <a href=\"https://en.wikipedia.org/wiki/Mac_(computer\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>).",
+      "credit": "Wikipedia. 2023. \"Mac (Computer).\" Wikimedia Foundation. Last modified October 1, 2023. <a href=\"https://en.wikipedia.org/wiki/Mac_(computer)\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>).",
       "width": 3340,
       "height": 4918
     },
@@ -7770,9 +7771,9 @@
     ],
     "img": {
       "cap": "Victor Acevedo, <em>Tell Me the Truth</em>, 1989–1990. Created with Cubicomp 3D modeling and Targa (TIPS) digital painting on an IBM PC clone.",
-      "credit": "Victor Acevedo. © 1990 + 2021 Victor Acevedo. Image from the artist-authored record in the Archive of Digital Art. <a href=\"https://www.archive-digitalart.eu/database/general/work/tell-me-the-truth.html\">Image source</a>.",
+      "credit": "Victor Acevedo. © 1990 + 2021 Victor Acevedo. Image from the artist-authored record in the Archive of Digital Art. <a href=\"https://web.archive.org/web/20260508110938/https://www.archive-digitalart.eu/database/general/work/tell-me-the-truth.html\">Image source</a>.",
       "alt": "Victor Acevedo’s digital composition overlays digitized photographs with a large yellow and purple polyhedron, wireframe lines, and colored pixel fragments.",
-      "sourceUrl": "https://www.archive-digitalart.eu/database/general/work/tell-me-the-truth.html",
+      "sourceUrl": "https://web.archive.org/web/20260508110938/https://www.archive-digitalart.eu/database/general/work/tell-me-the-truth.html",
       "creator": "Victor Acevedo",
       "copyrightNotice": "© 1990 + 2021 Victor Acevedo",
       "width": 1343,
@@ -8032,7 +8033,7 @@
     "img": {
       "src": "img/loren-carpenter-introduces-distributed-ray-tracing.png",
       "cap": "",
-      "credit": "Wikipedia. 2023. \"Ray Tracing (Graphics).\" Wikimedia Foundation. Last modified September 17, 2023. <a href=\"https://en.wikipedia.org/wiki/Ray_tracing_(graphics\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>).",
+      "credit": "Wikipedia. 2023. \"Ray Tracing (Graphics).\" Wikimedia Foundation. Last modified September 17, 2023. <a href=\"https://en.wikipedia.org/wiki/Ray_tracing_(graphics)\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>).",
       "width": 800,
       "height": 800
     },
@@ -11567,7 +11568,7 @@
   },
   "additional-important-publications-of-1986": {
     "body": [
-      "Additional important publications <a href=\"https://bitforms.art/pdfs/bibliography/mohr/1990ArtJournal.pdf\" target=\"_blank\" rel=\"noopener\">as curated by Copper Giloth and Lynn Pocock-Williams</a>:",
+      "Additional important publications <a href=\"https://web.archive.org/web/20201109210543/https://bitforms.art/pdfs/bibliography/mohr/1990ArtJournal.pdf\" target=\"_blank\" rel=\"noopener\">as curated by Copper Giloth and Lynn Pocock-Williams</a>:",
       "1. Rene Berger and <a href=\"https://www.lerandom.art/subjects/lloyd-eby\">Lloyd Eby</a>, eds., <a href=\"https://www.lerandom.art/subjects/art-and-technology\">Art and Technology</a>.  2. <a href=\"https://www.lerandom.art/subjects/nancy-burson\">Nancy Burson</a>, <a href=\"https://www.lerandom.art/subjects/richard-carling\">Richard Carling</a>, and <a href=\"https://www.lerandom.art/subjects/david-kramlich\">David Kramlich</a>, Composites: ComputerGenerated Portraits.  3. <a href=\"https://www.lerandom.art/subjects/isaac-victor-kerlow\">Isaac Victor Kerlow</a> and <a href=\"https://www.lerandom.art/subjects/judson-rosebush\">Judson Rosebush</a>, Computer Graphics for Designers and Artists."
     ],
     "cite": [
@@ -14555,7 +14556,7 @@
   },
   "roman-verostko-with-seminal-article-epigenetic-painting": {
     "body": [
-      "Verostko’s <a href=\"https://www.verostko.com/epigenet.html#:~:text=The%20epigenesis%20of%20organisms%20is,for%20growing%20the%20mature%20form.\" target=\"_blank\" rel=\"noopener\">paper</a> is <a href=\"https://isea-archives.siggraph.org/person/roman-verostko/\" target=\"_blank\" rel=\"noopener\">said to have</a> “identified biological analogues to autonomous form generating procedures. His ‘epigenetic art’ includes a limited edition of <a href=\"https://www.lerandom.art/subjects/george-boole\">George Boole</a>’s ‘Derivation of the laws illustrated with his own ‘personal expert system,’” known as Hodos.",
+      "Verostko’s <a href=\"https://www.verostko.com/epigenet.html#:~:text=The%20epigenesis%20of%20organisms%20is,for%20growing%20the%20mature%20form.\" target=\"_blank\" rel=\"noopener\">paper</a> is <a href=\"https://web.archive.org/web/20250428164035/https://isea-archives.siggraph.org/person/roman-verostko/\" target=\"_blank\" rel=\"noopener\">said to have</a> “identified biological analogues to autonomous form generating procedures. His ‘epigenetic art’ includes a limited edition of <a href=\"https://www.lerandom.art/subjects/george-boole\">George Boole</a>’s ‘Derivation of the laws illustrated with his own ‘personal expert system,’” known as Hodos.",
       "Presented at FISEA in 1988 and published in <a href=\"m/first-publication-of-leonardo.html\" data-moment=\"first-publication-of-leonardo\">Leonardo</a> in 1990, the paper anticipated prompt-based AI in many ways, outlining a new era in art-making systems. Artists use program feedback to iteratively develop software, akin to refining compilers. The evolving software becomes a distinct art form, comparable to genetic code. Verostko envisions hybridization, coding art ideas from different creators, resulting in unique combinations like “Kandinsky-Mussorgsky” with audio and visual drivers. Anticipating future advancements, he sees artists easily constructing personal expert systems, fostering generational growth in improvisational works. In this uncanny process, software takes on a life of its own, requiring artists to humanize it—providing form and structure to align with artistic and life quality."
     ],
     "cite": [
@@ -17577,7 +17578,7 @@
   },
   "important-publications-of-1989": {
     "body": [
-      "<a href=\"https://bitforms.art/pdfs/bibliography/mohr/1990ArtJournal.pdf\" target=\"_blank\" rel=\"noopener\">Copper Giloth and Lynn Pocock-Williams miraculously tracked the major publications</a> for the decade and they are listed here:",
+      "<a href=\"https://web.archive.org/web/20201109210543/https://bitforms.art/pdfs/bibliography/mohr/1990ArtJournal.pdf\" target=\"_blank\" rel=\"noopener\">Copper Giloth and Lynn Pocock-Williams miraculously tracked the major publications</a> for the decade and they are listed here:",
       "1. <a href=\"https://www.lerandom.art/subjects/edward-barrett\">Edward Barrett</a>, The Society of Text: Hypertext, Hypermedia, and the Social Construction of Information.  2. <a href=\"https://www.lerandom.art/subjects/andrew-s-glassner\">Andrew S. Glassner</a>, 3D Computer Graphics: A User’s Guide for Artists and Designers.  3. <a href=\"https://www.lerandom.art/subjects/john-lansdown\">John Lansdown</a> and Rae A. Earshaw, eds., Computers in Art, Design, and Animation.  5. <a href=\"https://www.lerandom.art/subjects/martha-rosler\">Martha Rosler</a>, “Image Simulations, Computer Manipulations: Some Considerations.”  6. <a href=\"m/first-publication-of-leonardo.html\" data-moment=\"first-publication-of-leonardo\">Leonardo</a> begins publication of F.A.S.T. Electronic Bulletin Board."
     ],
     "cite": [
