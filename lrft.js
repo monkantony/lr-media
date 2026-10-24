@@ -1803,14 +1803,12 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
   } catch (e) {}
 })();
 
-/* 24 Oct 2026 (Peter's GO on the structured-data release, via CEO (new)). STAGING ONLY (webflow.io, localhost) until
-   Peter's www go. (1) Image credit: editorials, episodes and subjects carry an "Image credit" CMS field, printed by each
+/* 24 Oct 2026 (Peter's GO on the structured-data release, via CEO (new)). LIVE on www 24 Oct 2026 (Peter: "go"). (1) Image credit: editorials, episodes and subjects carry an "Image credit" CMS field, printed by each
    template head into <meta name="lr-image-credit">. When it is not empty, the page's main image in JSON-LD becomes an
    ImageObject with creditText, plus creator and copyrightNotice where their fields are set. Empty: nothing changes. (2) sameAs: people's verified external
    IDs from people/sameas.json (Subjects Guru, d8e3823) join the /artists link, on about and mainEntity alike. */
 window.__lrImageCredit = function(){
   try {
-    if (!/(^|\.)webflow\.io$|^localhost$/.test(location.hostname)) return;
     var mc = document.querySelector('meta[name="lr-image-credit"]');
     var c = mc ? String(mc.getAttribute('content') || '').trim() : ''; if (!c) return;
     function meta(n){ var e = document.querySelector('meta[name="' + n + '"]'); return e ? String(e.getAttribute('content') || '').trim() : ''; }
@@ -1840,7 +1838,6 @@ window.__lrImageCredit();
 addEventListener('load', function(){ window.__lrImageCredit(); });
 (function(){
   try {
-    if (!/(^|\.)webflow\.io$|^localhost$/.test(location.hostname)) return;
     var m = location.pathname.match(/^\/subjects\/([^\/?#]+)/); if (!m) return;
     var slug = decodeURIComponent(m[1]);
     fetch((window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/') + 'people/sameas.json', { credentials: 'omit' })
