@@ -1807,6 +1807,12 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
    template head into <meta name="lr-image-credit">. When it is not empty, the page's main image in JSON-LD becomes an
    ImageObject with creditText, plus creator and copyrightNotice where their fields are set. Empty: nothing changes. (2) sameAs: people's verified external
    IDs from people/sameas.json (Subjects Guru, d8e3823) join the /artists link, on about and mainEntity alike. */
+window.__lrCcDeed = function(t){
+  t = String(t || '');
+  if (/\bCC0\b/i.test(t)) return 'https://creativecommons.org/publicdomain/zero/1.0/';
+  var m = t.match(/\bCC[ -]BY((?:-(?:NC|SA|ND))*)[ -]?(\d\.\d)(?:[ -]([A-Za-z]{2})\b(?![ -]?\w))?/i);   /* "2.0 de" = the ported deed */
+  return m ? 'https://creativecommons.org/licenses/by' + m[1].toLowerCase() + '/' + m[2] + '/' + (m[3] ? m[3].toLowerCase() + '/' : '') : '';
+};
 window.__lrImageCredit = function(){
   try {
     var mc = document.querySelector('meta[name="lr-image-credit"]');
@@ -1819,6 +1825,14 @@ window.__lrImageCredit = function(){
         v['@type'] = 'ImageObject'; v.creditText = c;
         if (cr) v.creator = { '@type': 'Person', 'name': cr };
         if (cp) v.copyrightNotice = cp;
+        /* 24 Oct 2026 (CEO (new), on Peter's credit-line go): Commons portraits become licensable. The file page goes in
+           acquireLicensePage; license only when the credit names a Creative Commons licence, mapped to its deed.
+           "Courtesy of ..." gets neither. STAGING ONLY (webflow.io, localhost) until Peter's www go. */
+        if (/(^|\.)webflow\.io$|^localhost$/.test(location.hostname)) {
+          var lk = meta('lr-image-credit-link'), dd = window.__lrCcDeed(c);
+          if (lk) v.acquireLicensePage = lk;
+          if (dd) v.license = dd;
+        }
       }
       return v;
     }
