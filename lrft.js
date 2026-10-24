@@ -1806,16 +1806,22 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
 /* 24 Oct 2026 (Peter's GO on the structured-data release, via CEO (new)). STAGING ONLY (webflow.io, localhost) until
    Peter's www go. (1) Image credit: editorials, episodes and subjects carry an "Image credit" CMS field, printed by each
    template head into <meta name="lr-image-credit">. When it is not empty, the page's main image in JSON-LD becomes an
-   ImageObject with creditText (Google image metadata). Empty: nothing changes. (2) sameAs: people's verified external
+   ImageObject with creditText, plus creator and copyrightNotice where their fields are set. Empty: nothing changes. (2) sameAs: people's verified external
    IDs from people/sameas.json (Subjects Guru, d8e3823) join the /artists link, on about and mainEntity alike. */
 window.__lrImageCredit = function(){
   try {
     if (!/(^|\.)webflow\.io$|^localhost$/.test(location.hostname)) return;
     var mc = document.querySelector('meta[name="lr-image-credit"]');
     var c = mc ? String(mc.getAttribute('content') || '').trim() : ''; if (!c) return;
+    function meta(n){ var e = document.querySelector('meta[name="' + n + '"]'); return e ? String(e.getAttribute('content') || '').trim() : ''; }
+    var cr = meta('lr-image-creator'), cp = meta('lr-image-copyright');   /* editorials only, and only where the caption says so */
     function io(v){
-      if (typeof v === 'string' && v) return { '@type': 'ImageObject', 'url': v, 'contentUrl': v, 'creditText': c };
-      if (v && typeof v === 'object' && !Array.isArray(v) && (v.url || v.contentUrl) && !v.creditText) { v['@type'] = 'ImageObject'; v.creditText = c; }
+      if (typeof v === 'string' && v) v = { 'url': v, 'contentUrl': v };
+      if (v && typeof v === 'object' && !Array.isArray(v) && (v.url || v.contentUrl) && !v.creditText) {
+        v['@type'] = 'ImageObject'; v.creditText = c;
+        if (cr) v.creator = { '@type': 'Person', 'name': cr };
+        if (cp) v.copyrightNotice = cp;
+      }
       return v;
     }
     [].forEach.call(document.querySelectorAll('script[type="application/ld+json"]'), function(s){
