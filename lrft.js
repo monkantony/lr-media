@@ -1549,6 +1549,7 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
         { '@type': 'ListItem', 'position': 3, 'name': r[2] } ] });
       document.head.appendChild(bc);
     }
+    if (window.__lrImageCredit) window.__lrImageCredit();   /* 24 Oct 2026: credit the image once the node is complete */
     /* the visible date becomes a <time> with a machine-readable datetime; the words do not change */
     var dv = document.querySelector('.text-block-25');
     if (dv && dp && !dv.querySelector('time') && dv.children.length === 0) {
@@ -1799,6 +1800,56 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       if (type === 'Person') d['@type'] = 'ProfilePage', d.mainEntity = d.about;
       s.textContent = JSON.stringify(d);
     });
+  } catch (e) {}
+})();
+
+/* 24 Oct 2026 (Peter's GO on the structured-data release, via CEO (new)). STAGING ONLY (webflow.io, localhost) until
+   Peter's www go. (1) Image credit: editorials, episodes and subjects carry an "Image credit" CMS field, printed by each
+   template head into <meta name="lr-image-credit">. When it is not empty, the page's main image in JSON-LD becomes an
+   ImageObject with creditText (Google image metadata). Empty: nothing changes. (2) sameAs: people's verified external
+   IDs from people/sameas.json (Subjects Guru, d8e3823) join the /artists link, on about and mainEntity alike. */
+window.__lrImageCredit = function(){
+  try {
+    if (!/(^|\.)webflow\.io$|^localhost$/.test(location.hostname)) return;
+    var mc = document.querySelector('meta[name="lr-image-credit"]');
+    var c = mc ? String(mc.getAttribute('content') || '').trim() : ''; if (!c) return;
+    function io(v){
+      if (typeof v === 'string' && v) return { '@type': 'ImageObject', 'url': v, 'contentUrl': v, 'creditText': c };
+      if (v && typeof v === 'object' && !Array.isArray(v) && (v.url || v.contentUrl) && !v.creditText) { v['@type'] = 'ImageObject'; v.creditText = c; }
+      return v;
+    }
+    [].forEach.call(document.querySelectorAll('script[type="application/ld+json"]'), function(s){
+      var d; try { d = JSON.parse(s.textContent); } catch (e) { return; }
+      if (!d) return;
+      var t = d['@type'];
+      if ((t === 'Article' || t === 'PodcastEpisode') && d.image && !d.image.creditText) d.image = io(d.image);
+      else if ((t === 'WebPage' || t === 'ProfilePage') && d.about && d.about.image && !d.about.image.creditText) {
+        d.about.image = io(d.about.image); if (d.mainEntity) d.mainEntity = d.about;
+      } else return;
+      s.textContent = JSON.stringify(d);
+    });
+  } catch (e) {}
+};
+window.__lrImageCredit();
+addEventListener('load', function(){ window.__lrImageCredit(); });
+(function(){
+  try {
+    if (!/(^|\.)webflow\.io$|^localhost$/.test(location.hostname)) return;
+    var m = location.pathname.match(/^\/subjects\/([^\/?#]+)/); if (!m) return;
+    var slug = decodeURIComponent(m[1]);
+    fetch((window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/') + 'people/sameas.json', { credentials: 'omit' })
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(all){
+        var ext = all && all[slug]; if (!ext || !ext.length) return;
+        [].forEach.call(document.querySelectorAll('script[type="application/ld+json"]'), function(s){
+          var d; try { d = JSON.parse(s.textContent); } catch (e) { return; }
+          if (!d || !d.about || d.about['@type'] !== 'Person' || (d['@type'] !== 'ProfilePage' && d['@type'] !== 'WebPage')) return;
+          var cur = [].concat(d.about.sameAs || []);
+          ext.forEach(function(u){ if (cur.indexOf(u) < 0) cur.push(u); });
+          d.about.sameAs = cur; if (d.mainEntity) d.mainEntity = d.about;
+          s.textContent = JSON.stringify(d);
+        });
+      }).catch(function(){});
   } catch (e) {}
 })();
 
