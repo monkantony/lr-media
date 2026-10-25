@@ -1827,12 +1827,10 @@ window.__lrImageCredit = function(){
         if (cp) v.copyrightNotice = cp;
         /* 24 Oct 2026 (CEO (new), on Peter's credit-line go): Commons portraits become licensable. The file page goes in
            acquireLicensePage; license only when the credit names a Creative Commons licence, mapped to its deed.
-           "Courtesy of ..." gets neither. STAGING ONLY (webflow.io, localhost) until Peter's www go. */
-        if (/(^|\.)webflow\.io$|^localhost$/.test(location.hostname)) {
-          var lk = meta('lr-image-credit-link'), dd = window.__lrCcDeed(c);
-          if (lk) v.acquireLicensePage = lk;
-          if (dd) v.license = dd;
-        }
+           "Courtesy of ..." gets neither. LIVE on www 25 Oct 2026 (Peter: "go"). */
+        var lk = meta('lr-image-credit-link'), dd = window.__lrCcDeed(c);
+        if (lk) v.acquireLicensePage = lk;
+        if (dd) v.license = dd;
       }
       return v;
     }
