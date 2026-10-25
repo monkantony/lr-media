@@ -39,15 +39,19 @@ window.__lrnSxDeal = function(col, rng, lrN){
     var w = (e && lrN ? lrN(e) : 0) || 1;
     return { it: it, k: Math.pow(rng(), 1 / w), len: ((it.textContent || '').trim().length + 2) };
   }).sort(function(a, b){ return b.k - a.k; });
-  var out = [], used = 0, budget = 240;
-  for (var i = 0; i < keyed.length && out.length < 10; i++) {
+  /* 25 Oct 2026 (Peter: "tighten subject section design"): where the page carries style#lr-sx-tight, each box fits its
+     list and shows 8, so the deal picks up to 8 (the head style ships with the Webflow page, so script and CSS agree).
+     There the zone takes its dealt height: no height lock, which held the server-rendered height and left a gap. */
+  var cap = document.getElementById('lr-sx-tight') ? 8 : 10;
+  var out = [], used = 0, budget = cap === 8 ? 200 : 240;
+  for (var i = 0; i < keyed.length && out.length < cap; i++) {
     if (out.length >= 5 && used + keyed[i].len > budget) break;
     used += keyed[i].len; out.push(keyed[i].it);
   }
   var box = items[0].parentNode, grid = col.parentNode;
   /* the zone keeps the height the server-rendered top 10 gave it: the first deal records it, and a deal that would make
      the zone taller drops its last picks (never below 5), so dealing can neither shrink nor grow it (peer review, M3) */
-  if (grid && !grid.__lrnH) { grid.__lrnH = grid.getBoundingClientRect().height; grid.style.minHeight = grid.__lrnH + 'px';
+  if (grid && cap === 10 && !grid.__lrnH) { grid.__lrnH = grid.getBoundingClientRect().height; grid.style.minHeight = grid.__lrnH + 'px';
     addEventListener('resize', function(){ grid.style.minHeight = ''; }, { once: true }); }
   items.forEach(function(it){ it.classList.remove('lrn-on'); });
   out.forEach(function(it){ it.classList.add('lrn-on'); box.appendChild(it); });
@@ -171,7 +175,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261025100050";
+var LRW_BUILD = "20261025101556";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
