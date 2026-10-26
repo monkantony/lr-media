@@ -1316,18 +1316,14 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
           return el.tagName === 'P' && (el.textContent || '').length > 150 && !CAPTION(el);
         });
         if (paras.length < 6) return;
-        var stops = [0.22, 0.55, 0.82];
-        notes.forEach(function(n, i){
-          var at = paras[Math.min(paras.length - 1, Math.round(stops[i] * paras.length))];
-          if (!at || at.dataset.lrmgUsed) return;
-          at.dataset.lrmgUsed = '1';
-          var el = document.createElement('aside');
-          el.className = 'lrmg-in';
-          el.innerHTML = '<a ' + (n.ext ? 'target="_blank" rel="noopener" ' : '')
-            + 'href="' + n.href.replace(/"/g, '&quot;') + '">'
-            + '<span class="lrmg-lbl">' + n.lbl + '</span>'
-            + '<span class="lrmg-q">\u201C' + String(n.q).replace(/&/g,'&amp;').replace(/</g,'&lt;') + '\u201D</span>'
-            + '<span class="lrmg-s">' + String(n.s).replace(/&/g,'&amp;').replace(/</g,'&lt;') + '</span></a>';
+        /* 26 Oct 2026 (No. 161): a card never touches a pull quote either, above or below it, and never sits
+           within two blocks of another card. When the chosen paragraph has no clean slot, the nearest
+           paragraphs are tried, nearest first; a piece with no clean slot left shows fewer cards. */
+        var QUOTE = function(el){ return !!el && el.tagName === 'BLOCKQUOTE'; };
+        var CARD = function(el){ return !!el && /\blrmg-in\b/.test(el.className || ''); };
+        var nearCard = function(r){ var a = r.previousElementSibling, b = r.nextElementSibling;
+          return CARD(r) || CARD(a) || CARD(a && a.previousElementSibling) || CARD(b); };
+        var slot = function(at){
           /* never directly under a heading (Peter, 17 Sep 2026: "it's confusing"): when the chosen
              paragraph opens a section, the box goes ABOVE the heading and closes the section before;
              a heading that opens the article has nothing before it, so the box goes below the paragraph */
@@ -1336,7 +1332,27 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
           if (ref !== at && !ref.previousElementSibling) ref = at.nextElementSibling || at;
           /* and never directly under a picture: then the box follows the chosen paragraph instead */
           if (MEDIA(ref.previousElementSibling)) ref = at.nextElementSibling;
+          var ok = function(r){ var b = r && r.previousElementSibling;
+            return !!r && !QUOTE(r) && !QUOTE(b) && !MEDIA(b) && !(b && /^H[1-6]$/.test(b.tagName)) && !nearCard(r); };
+          return ok(ref) ? ref : ok(at.nextElementSibling) ? at.nextElementSibling : null;
+        };
+        var stops = [0.22, 0.55, 0.82];
+        notes.forEach(function(n, i){
+          var k = Math.min(paras.length - 1, Math.round(stops[i] * paras.length)), at = null, ref = null;
+          for (var d = 0; d < paras.length && !ref; d++) {
+            var j = k + (d % 2 ? -(d + 1) / 2 : d / 2);
+            if (j < 0 || j >= paras.length || paras[j].dataset.lrmgUsed) continue;
+            at = paras[j]; ref = slot(at);
+          }
           if (!ref) return;
+          at.dataset.lrmgUsed = '1';
+          var el = document.createElement('aside');
+          el.className = 'lrmg-in';
+          el.innerHTML = '<a ' + (n.ext ? 'target="_blank" rel="noopener" ' : '')
+            + 'href="' + n.href.replace(/"/g, '&quot;') + '">'
+            + '<span class="lrmg-lbl">' + n.lbl + '</span>'
+            + '<span class="lrmg-q">\u201C' + String(n.q).replace(/&/g,'&amp;').replace(/</g,'&lt;') + '\u201D</span>'
+            + '<span class="lrmg-s">' + String(n.s).replace(/&/g,'&amp;').replace(/</g,'&lt;') + '</span></a>';
           ref.parentNode.insertBefore(el, ref);
         });
       }).catch(function(){});
