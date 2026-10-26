@@ -6857,7 +6857,7 @@
   },
   "k-vii-by-laszlo-moholy-nagy": {
     "body": [
-      "Characterized by ordered, geometric forms, the work was completed one year before <a href=\"m/laszlo-moholy-nagy-begins-teaching-at-bauhaus.html\" data-moment=\"laszlo-moholy-nagy-begins-teaching-at-bauhaus\">Moholy-Nagy began teaching at the Bauhaus</a>. “Moholy-Nagy’s appointment signalled a major shift in the school’s philosophy away from its earlier crafts ethos towards a closer alignment with the demands of modern industry, and a programme of simple design and unadorned functionalism.”"
+      "Characterized by ordered, geometric forms, the work was completed one year before <a href=\"m/laszlo-moholy-nagy-begins-teaching-at-bauhaus.html\" data-moment=\"laszlo-moholy-nagy-begins-teaching-at-bauhaus\">Moholy-Nagy began teaching at the Bauhaus</a>. “<a href=\"https://www.lerandom.art/subjects/laszlo-moholy-nagy\" target=\"_blank\" rel=\"noopener\">Moholy-Nagy</a>’s appointment signalled a major shift in the school’s philosophy away from its earlier crafts ethos towards a closer alignment with the demands of modern industry, and a programme of simple design and unadorned functionalism.”"
     ],
     "cite": [
       {
@@ -7278,7 +7278,7 @@
   },
   "laszlo-moholy-nagy-begins-teaching-at-bauhaus": {
     "body": [
-      "Moholy-Nagy remained at the <a href=\"https://www.lerandom.art/subjects/bauhaus\">Bauhaus</a> until 1928, where he focused on painting, lithographs, montage, assemblage and photography. The pioneer of experimental photography, heavily inspired in later years by the upcoming Constructivism, advocated for a fusion of art and technology. His ideas about the role of art in modern society influenced the development of the Bauhaus and subsequent modernist movements."
+      "<a href=\"https://www.lerandom.art/subjects/laszlo-moholy-nagy\" target=\"_blank\" rel=\"noopener\">Moholy-Nagy</a> remained at the <a href=\"https://www.lerandom.art/subjects/bauhaus\">Bauhaus</a> until 1928, where he focused on painting, lithographs, montage, assemblage and photography. The pioneer of experimental photography, heavily inspired in later years by the upcoming Constructivism, advocated for a fusion of art and technology. His ideas about the role of art in modern society influenced the development of the Bauhaus and subsequent modernist movements."
     ],
     "cite": [
       {
@@ -7387,7 +7387,7 @@
   },
   "construction-in-enamel-by-laszlo-moholy-nagy": {
     "body": [
-      "Moholy-Nagy’s piece, which he described over the telephone to a local enamel factory in Weimar, would go on to influence the Japanese Jikken Kobo movement, particularly <a href=\"https://www.lerandom.art/subjects/katsuhiro-yamaguchi\">Katsuhiro Yamaguchi</a>’s “order art.”"
+      "<a href=\"https://www.lerandom.art/subjects/laszlo-moholy-nagy\" target=\"_blank\" rel=\"noopener\">Moholy-Nagy</a>’s piece, which he described over the telephone to a local enamel factory in Weimar, would go on to influence the Japanese Jikken Kobo movement, particularly <a href=\"https://www.lerandom.art/subjects/katsuhiro-yamaguchi\">Katsuhiro Yamaguchi</a>’s “order art.”"
     ],
     "cite": [
       {
@@ -8744,9 +8744,10 @@
     "img": {
       "src": "img/bauhaus-weavers-revolt.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Gunta Stölzl’s Bauhaus Dessau identity card, public domain, via <a href=\"https://commons.wikimedia.org/wiki/File:Stolzl_bauhaus_ausweis.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>.",
       "width": 746,
-      "height": 1000
+      "height": 1000,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stolzl_bauhaus_ausweis.jpg"
     },
     "tags": [
       "Gunta Stölzl",
@@ -9707,7 +9708,7 @@
   },
   "light-prop-for-an-electric-stage-by-laszlo-moholy-nagy": {
     "body": [
-      "One of the first electrically powered kinetic sculptures, this kinetic light sculpture is an important example of the historical lineage connecting early Lumino-Kinetic Art to Op and Kinetic art, which led to the development of digital art. Created two years after Moholy-Nagy left the <a href=\"https://www.lerandom.art/subjects/bauhaus\">Bauhaus</a>, this piece synthesizes his experiments there, incorporating light, technology and industrial materials."
+      "One of the first electrically powered kinetic sculptures, this kinetic light sculpture is an important example of the historical lineage connecting early Lumino-Kinetic Art to Op and Kinetic art, which led to the development of digital art. Created two years after <a href=\"https://www.lerandom.art/subjects/laszlo-moholy-nagy\" target=\"_blank\" rel=\"noopener\">Moholy-Nagy</a> left the <a href=\"https://www.lerandom.art/subjects/bauhaus\">Bauhaus</a>, this piece synthesizes his experiments there, incorporating light, technology and industrial materials."
     ],
     "cite": [
       {
@@ -10524,9 +10525,10 @@
     "img": {
       "src": "img/black-mountain-college-opens.jpg",
       "cap": "",
-      "credit": "",
+      "credit": "Photo: unknown, public domain, via <a href=\"https://commons.wikimedia.org/wiki/File:Black_Mountain_College.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>.",
       "width": 2000,
-      "height": 1333
+      "height": 1333,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Mountain_College.jpg"
     },
     "tags": [
       "Robert Rauschenberg",

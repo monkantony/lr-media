@@ -19334,9 +19334,10 @@
     "img": {
       "src": "img/beeples-studio-shows.jpg",
       "cap": "Courtesy of Beeple Studios",
-      "credit": "",
+      "credit": "Photo: Berkeyt, CC BY-SA 4.0, via <a href=\"https://commons.wikimedia.org/wiki/File:Beeple_Studios.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>.",
       "width": 1920,
-      "height": 1281
+      "height": 1281,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beeple_Studios.jpg"
     },
     "tags": [
       "Mike Winkelmann (Beeple)",
