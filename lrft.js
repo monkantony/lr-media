@@ -1098,6 +1098,16 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
      (a new editorial before its footer import), the static block hides and the drawn footer stands in, as before. */
   var lrStatic = document.querySelector('#lrft[data-static]');
   var lrStaticFull = !!(lrStatic && lrStatic.querySelector('.lrft-chip, .lrft-card, .lrft-ln, .lrft-tlrt a'));
+  /* 26 Oct 2026 (Peter, No. 161: Dan Sandin under PLACES, Ted Nelson under THEMES): the template's "Mentioned in"
+     list arrives in CMS order, and its CSS writes each kind's label on the first chip of that kind, so it only reads
+     right when the chips are grouped. Group them here: kind order as in GROUPS below, then A-Z. */
+  if (lrStatic) [].forEach.call(lrStatic.querySelectorAll('.lrft-mention .w-dyn-items'), function(l){
+    var ORD = ['Person', 'Work', 'Exhibition', 'Organisation', 'Place', 'Technique', 'Theme'];
+    var rank = function(it){ var a = it.querySelector('[data-k]'), i = a ? ORD.indexOf(a.getAttribute('data-k').trim()) : -1; return i < 0 ? ORD.length : i; };
+    var name = function(it){ return it.textContent.trim(); };
+    [].slice.call(l.children).sort(function(a, b){ return rank(a) - rank(b) || name(a).localeCompare(name(b)); })
+      .forEach(function(it){ l.appendChild(it); });
+  });
   if (lrStatic) {
     if (lrStaticFull) box = document.createElement('div');
     else {
