@@ -1,11 +1,11 @@
 {
   "enter-y2k": {
     "body": [
-      "The decade of the 2000s began with the optimism of the dot-com era and the promise of the Internet’s potential. While markets were cooling on the initial profitability of Internet companies, the realization of the full power of the Internet was only being realized by the developed populations that were benefiting from them. This interest in the Internet sparked a renewed interest in digital art, especially as it pertained to net art and software art.",
+      "The decade of the 2000s began with the optimism of the dot-com era and the promise of the <a href=\"https://www.lerandom.art/subjects/internet\">Internet</a>’s potential. While markets were cooling on the initial profitability of Internet companies, the realization of the full power of the Internet was only being realized by the developed populations that were benefiting from them. This interest in the Internet sparked a renewed interest in <a href=\"https://www.lerandom.art/subjects/digital-art\">digital art</a>, especially as it pertained to <a href=\"https://www.lerandom.art/subjects/net-art\">net art</a> and <a href=\"https://www.lerandom.art/subjects/software-art\">software art</a>.",
       "<a href=\"https://www.youtube.com/watch?v=dQwaxro5-Us&amp;t=35s\" target=\"_blank\" rel=\"noopener\">For more context, we suggest [watching</a> or <a href=\"https://open.spotify.com/episode/52vEr3wswYS4338uTWrgfm?si=010ed12ce4a641fc\" target=\"_blank\" rel=\"noopener\">listening</a> <span class=\"episode-transcript-reference\">(<a href=\"https://www.lerandom.art/episodes/timeline-chapter-8-tooling-era-2000s\">transcript</a>)</span> to our Ch 8 Artist Discussion with <a href=\"https://www.lerandom.art/subjects/christiane-paul\">Christiane Paul</a>⁠, ⁠<a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>⁠, ⁠<a href=\"https://www.lerandom.art/subjects/christa-sommerer\">Christa Sommerer</a>⁠ and ⁠<a href=\"https://www.lerandom.art/subjects/golan-levin\">Golan Levin</a>⁠.]",
-      "This optimism was exemplified by exhibitions at the Whitney, such as <a href=\"m/bitstreams-at-the-whitney-museum-new-york.html\" data-moment=\"bitstreams-at-the-whitney-museum-new-york\">BitStreams</a> and <a href=\"m/data-dynamics-at-the-whitney.html\" data-moment=\"data-dynamics-at-the-whitney\">Data Dynamics</a>. Bitforms Gallery opened its doors in 2001, celebrating artists engaging with new technologies and media art. This optimistic trend was solidified and forever memorialized by the seminal 2003 publication of Christiane Paul’s <a href=\"m/digital-art-by-christiane-paul.html\" data-moment=\"digital-art-by-christiane-paul\">Digital Art</a>. <a href=\"https://www.lerandom.art/editorial/christiane-paul-on-curating-cohens-aaron\" target=\"_blank\" rel=\"noopener\">Paul explained further in a conversation with me</a>:",
-      "“We have seen these waves [of optimism] before. Like 2000 [2001] was a big one, when at that moment the Whitney did <a href=\"https://www.lerandom.art/subjects/bitstreams\">BitStreams</a> and <a href=\"https://www.lerandom.art/subjects/data-dynamics\">Data Dynamics</a> and suddenly all of the institutions were commissioning net art. And then it all collapsed. I’m not saying that will happen. I think this is a more sustained engagement but there are also always ups and downs.”",
-      "This optimism, combined with the emergence of <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a> in 2001 and computer-generated art, experienced not its first nor its last renaissance. Or perhaps, as Paul also noticed, the baton changed from one digital generative art movement (<a href=\"https://www.lerandom.art/subjects/algorists\">Algorists</a>) to another (Process-ists)."
+      "This optimism was exemplified by <a href=\"https://www.lerandom.art/subjects/exhibitions\">exhibitions</a> at the Whitney, such as <a href=\"m/bitstreams-at-the-whitney-museum-new-york.html\" data-moment=\"bitstreams-at-the-whitney-museum-new-york\">BitStreams</a> and <a href=\"m/data-dynamics-at-the-whitney.html\" data-moment=\"data-dynamics-at-the-whitney\">Data Dynamics</a>. Bitforms Gallery opened its doors in 2001, celebrating artists engaging with new technologies and media art. This optimistic trend was solidified and forever memorialized by the seminal 2003 publication of Christiane Paul’s <a href=\"m/digital-art-by-christiane-paul.html\" data-moment=\"digital-art-by-christiane-paul\">Digital Art</a>. <a href=\"https://www.lerandom.art/editorial/christiane-paul-on-curating-cohens-aaron\" target=\"_blank\" rel=\"noopener\">Paul explained further in a conversation with me</a>:",
+      "“We have seen these waves [of optimism] before. Like 2000 [2001] was a big one, when at that moment the Whitney did <a href=\"https://www.lerandom.art/subjects/bitstreams\">BitStreams</a> and <a href=\"https://www.lerandom.art/subjects/data-dynamics\">Data Dynamics</a> and suddenly all of the <a href=\"https://www.lerandom.art/subjects/institutions\">institutions</a> were commissioning net art. And then it all collapsed. I’m not saying that will happen. I think this is a more sustained engagement but there are also always ups and downs.”",
+      "This optimism, combined with the emergence of <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a> in 2001 and computer-generated art, experienced not its first nor its last renaissance. Or perhaps, as Paul also noticed, the baton changed from one digital <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a> movement (<a href=\"https://www.lerandom.art/subjects/algorists\">Algorists</a>) to another (Process-ists)."
     ],
     "cite": [
       {
@@ -183,6 +183,7 @@
       }
     ],
     "img": {
+      "alt": "Black book cover with pink grid, title New Masters of Flash, list of names, and a gridded close-up of a face",
       "src": "img/new-masters-of-flash-by-brendan-dawes.jpg",
       "cap": "",
       "credit": "Cover of New Masters of Flash (friends of ED, 2000). Cover design not credited. <a href=\"https://openlibrary.org/books/OL22056785M\">Book record</a>.",
@@ -311,6 +312,7 @@
       }
     ],
     "img": {
+      "alt": "Lit glass gallery front with red dotted FILE festival graphics and a row of screens on white plinths",
       "src": "img/file-festival-showcases-regional-digital-art.jpg",
       "cap": "",
       "credit": "Wikipedia. 2024. \"Electronic Language International Festival.\" Wikimedia Foundation. Last modified March 2, 2024. <a href=\"https://en.wikipedia.org/wiki/Electronic_Language_International_Festival\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>.",
@@ -519,13 +521,13 @@
   },
   "casey-reas-and-ben-fry-initiate-processing-project": {
     "body": [
-      "Perhaps important enough for the name of the entire decade, Processing is that important to the development of generative art. It will have to suffice to have heavily inspired the decade’s title, which, to be fair, does include other tooling breakthroughs such as <a href=\"https://www.lerandom.art/subjects/zach-lieberman\">Zach Lieberman</a>’s <a href=\"m/zach-lieberman-releases-openframeworks-v0-01.html\" data-moment=\"zach-lieberman-releases-openframeworks-v0-01\">openFrameworks</a>.",
+      "Perhaps important enough for the name of the entire decade, <a href=\"https://www.lerandom.art/subjects/processing\">Processing</a> is that important to the development of <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a>. It will have to suffice to have heavily inspired the decade’s title, which, to be fair, does include other tooling breakthroughs such as <a href=\"https://www.lerandom.art/subjects/zach-lieberman\">Zach Lieberman</a>’s <a href=\"m/zach-lieberman-releases-openframeworks-v0-01.html\" data-moment=\"zach-lieberman-releases-openframeworks-v0-01\">openFrameworks</a>.",
       "Created by <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> and <a href=\"https://www.lerandom.art/subjects/ben-fry\">Ben Fry</a> at MIT’s ACG under <a href=\"https://www.lerandom.art/subjects/john-maeda\">John Maeda</a>, Processing changed generative art irrevocably. It educated and inspired a new generation of artist-coders, expanding generative art’s talent pool exponentially.",
-      "Artist and digital researcher Karsten Schmidt recently shared with the author <a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman (Monk Antony)</a> about the importance of Processing as an open-source tool. As such, it adhered to decades of anti-commercial, open-sharing and communal learning sentiment from the computation community, with ideals dating back to the humanist thought of <a href=\"https://www.lerandom.art/subjects/ivan-illich\">Ivan Illich</a>. Prior to this, educational institutions and artists had to pay for the latest version of commercial software, such as <a href=\"https://www.lerandom.art/subjects/macromedia\">Macromedia</a>’s <a href=\"m/director-1-0-released.html\" data-moment=\"director-1-0-released\">Director</a>. Processing gave artists not only greater control of their work but was also free to use and was continuously updated by the community, relying on the incredibly dedicated work of Project Leads Ben Fry and Casey Reas as well as <a href=\"https://processing.org/people\" target=\"_blank\" rel=\"noopener\">dozens of other contributors</a> and alumni that have made it all possible and deserve tremendous credit.",
+      "Artist and digital researcher <a href=\"https://www.lerandom.art/subjects/karsten-schmidt-toxi\">Karsten Schmidt</a> recently shared with the author <a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman (Monk Antony)</a> about the importance of Processing as an open-source tool. As such, it adhered to decades of anti-commercial, open-sharing and communal learning sentiment from the computation community, with ideals dating back to the humanist thought of <a href=\"https://www.lerandom.art/subjects/ivan-illich\">Ivan Illich</a>. Prior to this, educational institutions and artists had to pay for the latest version of commercial software, such as <a href=\"https://www.lerandom.art/subjects/macromedia\">Macromedia</a>’s <a href=\"m/director-1-0-released.html\" data-moment=\"director-1-0-released\">Director</a>. Processing gave artists not only greater control of their work but was also free to use and was continuously updated by the community, relying on the incredibly dedicated work of Project Leads Ben Fry and Casey Reas as well as <a href=\"https://processing.org/people\" target=\"_blank\" rel=\"noopener\">dozens of other contributors</a> and alumni that have made it all possible and deserve tremendous credit.",
       "<a href=\"https://www.lerandom.art/editorial/golan-levin-on-the-potentiality-of-blobs\" target=\"_blank\" rel=\"noopener\">Golan Levin spoke to me</a> about Processing as a response to the commercially available tools at the time: “Processing in its full-flowered implementation was a reaction to the limits of <a href=\"m/macromedia-flash-1-0-releaseda.html\" data-moment=\"macromedia-flash-1-0-releaseda\">Flash</a> and Director in terms of the assumptions that they made about artist tooling. What Ben and Casey knew was that the computer was capable of vastly more than <a href=\"https://www.lerandom.art/subjects/adobe\">Adobe</a> would lead you to believe in terms of the flexibility and malleability of dynamic digital form. ‍‍‍They showed that you could actually control the individual vertices of a polygon. You don’t just have to be stuck with ellipses and rectangles. That’s why Ben and Casey made that a first-order feature in Processing.",
       "As for the moment itself, the site <a href=\"http://www.proce55ing.net/\" target=\"_blank\" rel=\"noopener\">www.proce55ing.net</a> went live on October 20, 2001 with some sparse examples and the following <a href=\"https://medium.com/processing-foundation/a-modern-prometheus-59aed94abe85\" target=\"_blank\" rel=\"noopener\">description</a>:",
       "“Proce55ing is an environment for programming images, movement, and interaction. It is a sketchbook for developing ideas, a tool for creating prototypes, and a context for learning the fundamentals of computer programming. The Pr0cess1ng environment is in its early stages and will continue to develop.Pr()ce55ing is written in <a href=\"m/sun-microsystems-release-java-1-0.html\" data-moment=\"sun-microsystems-release-java-1-0\">Java</a> and enables the creation of Java Applications and Applets within a carefully designed set of constraints. It uses a 2D/3D Java rendering API that is a cross between postscript-style imaging in 2D and 3D rendering with OpenGL.”",
-      "Processing continues to be an essential tool for many creative coders, artists and students. Beyond being an invaluable tool across classrooms worldwide teaching creative coding to the newest generation of artists and designers, Processing offers a way for illustrious artists with careers measured in the decades to continue their practice.",
+      "Processing continues to be an essential tool for many creative coders, artists and students. Beyond being an invaluable tool across classrooms worldwide teaching <a href=\"https://www.lerandom.art/subjects/creative-coding\">creative coding</a> to the newest generation of artists and designers, Processing offers a way for illustrious artists with careers measured in the decades to continue their practice.",
       "<a href=\"https://www.lerandom.art/subjects/frieder-nake\">Frieder Nake</a>, the icon, one of the earliest computer and digital artists, spoke to me about Processing in 2024, saying:",
       "“I have for the last 15 years—maybe more—used Processing. Now, Casey Reas, one of the two founders, it’s so fantastic that he himself is an artist. Ben Fry, his friend, the two did it at MIT. They were still students when they did this. So the fact that here an artist, who was an artist before he was using computers, designed together with his friend, that programming language, that’s a historic fact that the world should really become aware of. And to use Processing is really simple. Ever since, I’ve never taught anything else to my students. Processing, it is so powerful because it’s based on Java. But you don’t have to know Java.”"
     ],
@@ -538,7 +540,7 @@
     "img": {
       "cap": "Examples made with Processing in 2003, illustrating the early software’s visual and physical-computing capabilities, two years after the project began.",
       "credit": "Image published by Processing Foundation in Casey Reas and Ben Fry’s history of Processing, A Modern Prometheus (2018). <a href=\"https://www.processingfoundation.org/blog/a-modern-prometheus/\">Image source</a>.",
-      "alt": "Three rows of early Processing examples show colourful geometry, three-dimensional forms, photography and electronic experiments.",
+      "alt": "Grid of 21 early Processing examples from 2003: abstract patterns, 3D forms, photos and electronics",
       "sourceUrl": "https://www.processingfoundation.org/blog/a-modern-prometheus/",
       "sourceImageUrl": "https://www.processingfoundation.org/_astro/dKDpmdpQABsXbWIRWsRy2A.TNO5vTzY_24gD8A.webp",
       "creator": [
@@ -743,7 +745,7 @@
   "bitstreams-at-the-whitney-museum-new-york": {
     "body": [
       "“Nothing since the invention of photography has had a greater impact on artistic practice than the emergence of digital technologies,” begins the Whitney Museum’s description of <a href=\"https://www.lerandom.art/subjects/bitstreams\">BitStreams</a>, a startling admission from a major art museum. As the Internet reinvigorated interest in technology and art, BitStreams was tied together through a common use of software. This exhibition would profoundly impact recent graduate <a href=\"https://www.lerandom.art/subjects/zach-lieberman\">Zach Lieberman</a>, who in 2005 would go on to release <a href=\"m/zach-lieberman-releases-openframeworks-v0-01.html\" data-moment=\"zach-lieberman-releases-openframeworks-v0-01\">openFrameworks</a>, software similar to <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a> but C++ based.",
-      "<a href=\"https://www.lerandom.art/editorial/zach-lieberman\" target=\"_blank\" rel=\"noopener\">Lieberman shared with me about the impact of this exhibition on his practice</a>: “For me, personally, the BitStreams exhibition at the Whitney in 2001 was especially meaningful. I was a student when I went to the Whitney Museum and I saw <a href=\"https://www.lerandom.art/subjects/jason-salavon\">Jason Salavon</a>’s artwork; I heard <a href=\"https://www.lerandom.art/subjects/yasunao-tone\">Yasunao Tone</a>’s “<a href=\"https://www.lerandom.art/subjects/solo-for-wounded-cd\">Solo for Wounded CD</a>.” I was a student and I put on these headphones. Here’s this artist making glitch music, basically breaking CDs and I was thinking, “Woah, what is this? It’s wild.”"
+      "<a href=\"https://www.lerandom.art/editorial/zach-lieberman\" target=\"_blank\" rel=\"noopener\">Lieberman shared with me about the impact of this exhibition on his practice</a>: “For me, personally, the BitStreams exhibition at the Whitney in 2001 was especially meaningful. I was a student when I went to the Whitney Museum and I saw <a href=\"https://www.lerandom.art/subjects/jason-salavon\">Jason Salavon</a>’s artwork; I heard <a href=\"https://www.lerandom.art/subjects/yasunao-tone\">Yasunao Tone</a>’s “<a href=\"https://www.lerandom.art/subjects/solo-for-wounded-cd\">Solo for Wounded CD</a>.” I was a student and I put on these headphones. Here’s this artist making <a href=\"https://www.lerandom.art/subjects/glitch\">glitch</a> music, basically breaking CDs and I was thinking, “Woah, what is this? It’s wild.”"
     ],
     "cite": [
       {
@@ -913,9 +915,9 @@
   },
   "data-dynamics-at-the-whitney": {
     "body": [
-      "Curated by <a href=\"https://www.lerandom.art/subjects/christiane-paul\">Christiane Paul</a> and indicative of the early millennium enthusiasm for digital art—as the Internet sucked more and more of the cultural air—<a href=\"https://www.lerandom.art/subjects/new-york\">New York</a>’s Whitney Museum hosted two major digital themed exhibitions in 2001 with <a href=\"https://www.lerandom.art/subjects/data-dynamics\">Data Dynamics</a> (March 2001) and <a href=\"m/bitstreams-at-the-whitney-museum-new-york.html\" data-moment=\"bitstreams-at-the-whitney-museum-new-york\">BitStreams</a>.",
+      "Curated by <a href=\"https://www.lerandom.art/subjects/christiane-paul\">Christiane Paul</a> and indicative of the early millennium enthusiasm for <a href=\"https://www.lerandom.art/subjects/digital-art\">digital art</a>—as the Internet sucked more and more of the cultural air—<a href=\"https://www.lerandom.art/subjects/new-york\">New York</a>’s Whitney Museum hosted two major digital themed <a href=\"https://www.lerandom.art/subjects/exhibitions\">exhibitions</a> in 2001 with <a href=\"https://www.lerandom.art/subjects/data-dynamics\">Data Dynamics</a> (March 2001) and <a href=\"m/bitstreams-at-the-whitney-museum-new-york.html\" data-moment=\"bitstreams-at-the-whitney-museum-new-york\">BitStreams</a>.",
       "<a href=\"https://www.lerandom.art/editorial/christiane-paul-on-curating-cohens-aaron\" target=\"_blank\" rel=\"noopener\">lerandom.art</a>:",
-      "“Overall, I would say I’m always a little bit skeptical because we have seen these waves before. For instance, 2000 was a big one when, at that moment, the Whitney did <a href=\"https://www.lerandom.art/subjects/bitstreams\">BitStreams</a> and Data Dynamics and suddenly all of the institutions were commissioning net art.”",
+      "“Overall, I would say I’m always a little bit skeptical because we have seen these waves before. For instance, 2000 was a big one when, at that moment, the Whitney did <a href=\"https://www.lerandom.art/subjects/bitstreams\">BitStreams</a> and Data Dynamics and suddenly all of the institutions were commissioning <a href=\"https://www.lerandom.art/subjects/net-art\">net art</a>.”",
       "The exhibition itself was inspired by the recent enthusiasm for net.art and showcased Internet-based art, addressing the challenge of visually representing the fluidity of data and information. The exhibition featured installations in the museum and online, anticipating our contemporary digitized art market by nearly twenty years. The online experience also provided diverse navigational experiences through visual and textual data in a net.art-inspired interactive experience. Works by <a href=\"https://www.lerandom.art/subjects/marek-walczak\">Marek Walczak</a>, <a href=\"https://www.lerandom.art/subjects/martin-wattenberg\">Martin Wattenberg</a>, <a href=\"https://www.lerandom.art/subjects/mark-napier\">Mark Napier</a>, <a href=\"https://www.lerandom.art/subjects/maciej-wisniewski\">Maciej Wisniewski</a>, <a href=\"https://www.lerandom.art/subjects/beth-stryker\">Beth Stryker</a>, <a href=\"https://www.lerandom.art/subjects/sawad-brooks\">Sawad Brooks</a> and <a href=\"https://www.lerandom.art/subjects/adrianne-wortzel\">Adrianne Wortzel</a> explored various data dynamics, from mapping language and stories to traffic in physical and virtual spaces."
     ],
     "cite": [
@@ -1088,9 +1090,9 @@
   },
   "inaugural-exhibition-at-bitforms-casey-reass-first-public-exhibition": {
     "body": [
-      "This show is the first for the newly opened gallery, bitforms, which would help to reintroduce the fine art world to technology and art at the turn of the millennium.",
+      "This show is the first for the newly opened gallery, <a href=\"https://www.lerandom.art/subjects/bitforms\">bitforms</a>, which would help to reintroduce the fine art world to technology and art at the turn of the millennium.",
       "Founded by <a href=\"https://www.lerandom.art/subjects/steve-sacks\">Steve Sacks</a>, bitforms opened its doors in 2001 with Inaugural Exhibition. The new <a href=\"https://www.lerandom.art/subjects/chelsea\">Chelsea</a> gallery aimed to “celebrate the nexus of art and technology,” serving as \"a forum to display digital and digitally inspired art.”",
-      "The opening of bitforms in 2001, combined with the release of <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a> by <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> and <a href=\"https://www.lerandom.art/subjects/ben-fry\">Ben Fry</a> to reinvigorate code-based art.",
+      "The opening of bitforms in 2001, combined with the release of <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a> by <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> and <a href=\"https://www.lerandom.art/subjects/ben-fry\">Ben Fry</a> to reinvigorate <a href=\"https://www.lerandom.art/subjects/code-based-art\">code-based art</a>.",
       "Inaugural Exhibition featured Casey Reas along with <a href=\"https://www.lerandom.art/subjects/golan-levin\">Golan Levin</a>, <a href=\"https://www.lerandom.art/subjects/dorothy-krause\">Dorothy Krause</a> and four others. Reas’s displayed work, Path series, would go on to become Tissue, exhibited as software the following year at bitforms and in 2021 as Phototaxis on <a href=\"m/art-blocks-brings-generative-art-on-chain.html\" data-moment=\"art-blocks-brings-generative-art-on-chain\">Art Blocks</a>. Path and Tissue can even be seen as primitive-AI work. Reas himself <a href=\"https://medium.com/@REAS/notes-on-phototaxis-db7aa7641ad8\" target=\"_blank\" rel=\"noopener\">explains</a> in Medium:",
       "“Late in my time studying Media Arts and Sciences as a graduate student at MIT, I found my way into an Artificial Intelligence class taught by <a href=\"https://www.lerandom.art/subjects/rodney-brooks\">Rodney Brooks</a>. In that class, I was introduced to the book Vehicles written by the neuroanatomist <a href=\"https://www.lerandom.art/subjects/valentino-braitenberg\">Valentino Braitenberg</a>. The ideas in this short but profound book were the origin for the Path and Tissue prints that I created 2001–03. Braitenberg’s “vehicles” are minimal, simulated bodies that have behaviors similar to living organisms. Through writing code, I interpreted these organisms as software machines for drawing.”",
       "Beyond the Reas and Levin show, a year later, <a href=\"https://www.lerandom.art/subjects/manfred-mohr\">Manfred Mohr</a> would open the first of his several solo shows at bitforms. It featured works spanning the first three decades of the digital generative art pioneer’s career.",
@@ -1104,6 +1106,7 @@
       }
     ],
     "img": {
+      "alt": "Grid of 24 square prints of tangled teal and ochre line loops swirling around central knots",
       "src": "img/inaugural-exhibition-at-bitforms-casey-reass-first-public-exhibition.jpg",
       "cap": "",
       "credit": "",
@@ -1346,6 +1349,7 @@
       }
     ],
     "img": {
+      "alt": "Archive page of The Alphabet Synthesis Machine listing invented alphabets with glyph samples, November 2001",
       "src": "img/alphabet-synthesis-machine-by-golan-levin.jpg",
       "cap": "A screenshot of The Alphabet Synthesis Machine's public archive, listing user-created alphabets by name, author and date (November 2001) beside samples of each invented writing system.",
       "credit": "Golan Levin, Jonathan Feinberg and Cassidy Curtis, The Alphabet Synthesis Machine, 2001-2002. Courtesy the artists, flong.com.",
@@ -1503,7 +1507,7 @@
   },
   "transmediale-2001-diy-do-it-yourself": {
     "body": [
-      "Transmediale, the <a href=\"https://www.lerandom.art/subjects/berlin\">Berlin</a> festival-conference, was emblematic of the excitement globally for software and net-based art at the turn of the new millennium, as in 2001 it introduced an artistic software award. According to the event’s jury <a href=\"https://web.archive.org/web/20231007211322/https://pastwebsites.transmediale.de/01/en/software.htm\" target=\"_blank\" rel=\"noopener\">pastwebsites.transmediale.de</a>, “To our knowledge, this is the first award given and solely dedicated to software art.” <a href=\"https://www.lerandom.art/subjects/siggraph\">SIGGRAPH</a> or <a href=\"https://www.lerandom.art/subjects/ars-electronica\">Ars Electronica</a> might have something to say about that claim, however.",
+      "Transmediale, the <a href=\"https://www.lerandom.art/subjects/berlin\">Berlin</a> festival-conference, was emblematic of the excitement globally for software and net-based art at the turn of the new millennium, as in 2001 it introduced an artistic software award. According to the event’s jury <a href=\"https://web.archive.org/web/20231007211322/https://pastwebsites.transmediale.de/01/en/software.htm\" target=\"_blank\" rel=\"noopener\">pastwebsites.transmediale.de</a>, “To our knowledge, this is the first award given and solely dedicated to <a href=\"https://www.lerandom.art/subjects/software-art\">software art</a>.” <a href=\"https://www.lerandom.art/subjects/siggraph\">SIGGRAPH</a> or <a href=\"https://www.lerandom.art/subjects/ars-electronica\">Ars Electronica</a> might have something to say about that claim, however.",
       "The shortlisted works included pieces by <a href=\"https://www.lerandom.art/subjects/golan-levin\">Golan Levin</a> and net.art pioneer <a href=\"https://www.lerandom.art/subjects/netochka-nezvanova\">Netochka Nezvanova</a>."
     ],
     "cite": [
@@ -1606,6 +1610,7 @@
       }
     ],
     "img": {
+      "alt": "Ben Fry's Genomic Cartography: Chromosome 18, rows of tiny DNA letters forming dark and light grey bands",
       "src": "img/genomic-cartography-chromosome-18-ben-fry.jpg",
       "cap": "Ben Fry's Genomic Cartography: Chromosome 18, in which the chromosome's sequence is set out letter by letter so that repeated regions emerge as darker bands across the field.",
       "credit": "Ben Fry, Aesthetics + Computation Group, MIT Media Laboratory. Genomic Cartography: Chromosome 18, 2001. The Museum of Modern Art, New York.",
@@ -1699,7 +1704,7 @@
   "agent-ruby-by-lynn-hershman-leeson": {
     "body": [
       "An important example in the development of AI art by Leeson, Agent Ruby (1998–2002), commissioned by <a href=\"https://www.lerandom.art/subjects/sfmoma\">SFMOMA</a>, grew out of the expanded cinema experience from Leeson’s film Teknolust. This interactive, multiuser artwork features Ruby—a web agent with a female persona based within a website mimicking the lab of the film’s characters, Rosetta Stone and Agent Ruby.",
-      "<a href=\"http://agentruby.sfmoma.org/\" target=\"_blank\" rel=\"noopener\">Users to this day can engage with Ruby</a>, who responds to inquiries with varying expressions and moods that adapt based on her interactions and web traffic. Continually learning, Ruby searches the internet to augment her knowledge, evolving her responses and capabilities over time. The work stands as a clear predecessor to today’s LLM AI chat bots. Agent Ruby makes clear the relationship between art and the development of AI."
+      "<a href=\"http://agentruby.sfmoma.org/\" target=\"_blank\" rel=\"noopener\">Users to this day can engage with Ruby</a>, who responds to inquiries with varying expressions and moods that adapt based on her interactions and web traffic. Continually learning, Ruby searches the internet to augment her knowledge, evolving her responses and capabilities over time. The work stands as a clear predecessor to today’s LLM AI chat <a href=\"https://www.lerandom.art/subjects/bots\">bots</a>. Agent Ruby makes clear the relationship between art and the development of AI."
     ],
     "cite": [
       {
@@ -1708,6 +1713,7 @@
       }
     ],
     "img": {
+      "alt": "Agent Ruby's EDream Portal web page: a woman's floating eyes, nose and red lips beside an orange chat box",
       "src": "img/agent-ruby-by-lynn-hershman-leeson.jpg",
       "cap": "",
       "credit": "Lynn Hershman Leeson, Agent Ruby's EDream Portal, 2002 (screen shot of agentruby.net), from Agent Ruby, 1998–2002. Collection of the San Francisco Museum of Modern Art. <a href=\"https://www.lynnhershman.com/project/agent-ruby/\">Image source</a>.",
@@ -1798,7 +1804,7 @@
   "teamlab-formed": {
     "body": [
       "<a href=\"https://www.lerandom.art/subjects/toshiyuki-inoko\">Toshiyuki Inoko</a> founded the digital art collective teamLab in 2001 with four friends, bringing together approximately 400 'ultratechnologists' with backgrounds across art, mathematics and technology. teamLab, headquartered in <a href=\"https://www.lerandom.art/subjects/tokyo\">Tokyo</a> and with branches in <a href=\"https://www.lerandom.art/subjects/singapore\">Singapore</a> and <a href=\"https://www.lerandom.art/subjects/shanghai\">Shanghai</a>, from the beginning aimed to transform how people interact with their surroundings through digital art. To this day, they create immersive installations that combine the physical and digital worlds, redefining our perceptions of space. The group is known for investigating sensory experiences with viewer interaction, creating one-of-a-kind environments in which participants can transcend reality.",
-      "The group’s immersive installations recall the work from the previous decade of CAVE from EVL (Electronic Visualization Lab).",
+      "The group’s immersive installations recall the work from the previous decade of <a href=\"https://www.lerandom.art/subjects/cave\">CAVE</a> from EVL (Electronic Visualization Lab).",
       "Toshiyuki <a href=\"https://news.artnet.com/career-stories/career-stories-teamlab-toshiyuki-inoko-1953102\" target=\"_blank\" rel=\"noopener\">spoke to Artnet</a> about the collective’s first project in 2001:",
       "“The first work for teamLab was in 2001. It was a collaboration artwork with a musician. While the musician was singing, people watching the live show could put a comment on the internet. We took these comments and displayed them inside the space, so the comments were floating all around. It was projected on the wall, and the comments eventually created the shape of a tree, kind of like an immersive space, with all of the comments floating.”"
     ],
@@ -1960,7 +1966,7 @@
   },
   "doug-eck-advances-neural-network-creative-expression": {
     "body": [
-      "These early creative expressions with neural networks continued decades of previous research covered in the Timeline by Peter M. Todd, J. P. Lewis, <a href=\"https://www.lerandom.art/subjects/jurgen-schmidhuber\">Jürgen Schmidhuber</a> and others. A key figure in the foundation of modern AI art, <a href=\"https://www.lerandom.art/subjects/doug-eck\">Doug Eck</a> created four “Blues Improvisations” in the essay “Composing Music with LSTM Recurrent Networks - Blues Improvisation.” In this unassuming but fascinating paper, Eck, a former postdoc of Schmidhuber, explored using “Long Short-Term Memory” [LSTM] recurrent neural networks for music composition. The project focused on creating blues improvisations, training the network with a 12-bar jazz bebop blues structure. The LSTM learned to generate coherent melodies and harmonize with fixed chords, showcasing its ability to capture long-term musical structure. Often the first experiments with new technologies and system appear in music or text with their pre-set rules. <a href=\"https://www.lerandom.art/subjects/christopher-strachey\">Christopher Strachey</a> and Max Mathews working with the earliest computers in text (1952) and sound (1957) respectively both pre-date Michael Noll’s first visual experimentation. As it is with neural network art, where artistic experimentation with music preceded the visual."
+      "These early creative expressions with <a href=\"https://www.lerandom.art/subjects/neural-networks\">neural networks</a> continued decades of previous research covered in the Timeline by <a href=\"https://www.lerandom.art/subjects/peter-m-todd\">Peter M. Todd</a>, J. P. Lewis, <a href=\"https://www.lerandom.art/subjects/jurgen-schmidhuber\">Jürgen Schmidhuber</a> and others. A key figure in the foundation of modern AI art, <a href=\"https://www.lerandom.art/subjects/doug-eck\">Doug Eck</a> created four “Blues Improvisations” in the essay “Composing Music with <a href=\"https://www.lerandom.art/subjects/lstm\">LSTM</a> Recurrent Networks - Blues Improvisation.” In this unassuming but fascinating paper, Eck, a former postdoc of Schmidhuber, explored using “Long Short-Term Memory” [LSTM] <a href=\"https://www.lerandom.art/subjects/recurrent-neural-networks-rnns\">recurrent neural networks</a> for music composition. The project focused on creating blues improvisations, training the network with a 12-bar jazz bebop blues structure. The LSTM learned to generate coherent melodies and harmonize with fixed chords, showcasing its ability to capture long-term musical structure. Often the first experiments with new technologies and system appear in music or text with their pre-set rules. <a href=\"https://www.lerandom.art/subjects/christopher-strachey\">Christopher Strachey</a> and Max Mathews working with the earliest computers in text (1952) and sound (1957) respectively both pre-date Michael Noll’s first visual experimentation. As it is with neural network art, where artistic experimentation with music preceded the visual."
     ],
     "cite": [
       {
@@ -1969,6 +1975,7 @@
       }
     ],
     "img": {
+      "alt": "Musical staff in treble clef and 4/4 showing a twelve-bar blues chord sequence labelled C, F7, Gm, Dm, G7",
       "src": "img/doug-eck-advances-neural-network-creative-expression.jpg",
       "cap": "The twelve-bar blues chord sequence used to train the LSTM recurrent network, reproduced as a figure on the project page for Doug Eck's Blues Improvisations.",
       "credit": "Figure from Douglas Eck and Jurgen Schmidhuber, 'A First Look at Music Composition using LSTM Recurrent Neural Networks' / 'Blues Improvisation', IDSIA, 2002. people.idsia.ch.",
@@ -2107,9 +2114,9 @@
   "golan-levin-and-casey-reas-the-art-of-code-at-bitforms-new-york": {
     "body": [
       "This exhibition featured <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>’s Tissue, a continuation of Path from the year prior, which today is known as Phototaxis and can be found on <a href=\"m/art-blocks-brings-generative-art-on-chain.html\" data-moment=\"art-blocks-brings-generative-art-on-chain\">Art Blocks</a>. Levin exhibited his interactive work Meshy (1998).",
-      "The Art of Code at Bitforms, <a href=\"https://www.lerandom.art/subjects/new-york\">New York</a>, spotlighted the early software works of Casey Reas and <a href=\"https://www.lerandom.art/subjects/golan-levin\">Golan Levin</a>. Reas presented Tissue, an early foray into digital, generative systems with boundless outcomes, later evolving into Phototaxis on <a href=\"https://www.lerandom.art/subjects/art-blocks\">Art Blocks</a>, exemplifying the algorithm’s long-form potential. Tissue, incorporating Braitenberg’s “vehicles” can be seen as primitive AI art.",
+      "The Art of Code at Bitforms, <a href=\"https://www.lerandom.art/subjects/new-york\">New York</a>, spotlighted the early software works of Casey Reas and <a href=\"https://www.lerandom.art/subjects/golan-levin\">Golan Levin</a>. Reas presented Tissue, an early foray into digital, <a href=\"https://www.lerandom.art/subjects/generative-systems\">generative systems</a> with boundless outcomes, later evolving into Phototaxis on <a href=\"https://www.lerandom.art/subjects/art-blocks\">Art Blocks</a>, exemplifying the algorithm’s long-form potential. Tissue, incorporating Braitenberg’s “vehicles” can be seen as primitive AI art.",
       "Levin’s <a href=\"https://www.youtube.com/watch?v=MzCPUBve6xE&amp;ab_channel=GolanLevin\" target=\"_blank\" rel=\"noopener\">Meshy</a> offered an immersive drawing space where user interactions shaped a responsive, animated mesh, evolving with each new line drawn, showcasing the fluidity between artist, audience and digital medium.",
-      "The Art of Code was the gallery’s second show, following the Inaugural Exhibition of November 2001, and its first two-person exhibition. bitforms, founded by <a href=\"https://www.lerandom.art/subjects/steve-sacks\">Steve Sacks</a> to bridge art and technological innovation, became a beacon for code-based art, notably after the release of <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a>, invigorating the genre. Over the years, Bitforms has nurtured the art-tech nexus, displaying a spectrum from Beryl Korot’s textiles to <a href=\"https://www.lerandom.art/subjects/refik-anadol\">Refik Anadol</a>’s quantum computing art."
+      "The Art of Code was the gallery’s second show, following the Inaugural Exhibition of November 2001, and its first two-person exhibition. <a href=\"https://www.lerandom.art/subjects/bitforms\">bitforms</a>, founded by <a href=\"https://www.lerandom.art/subjects/steve-sacks\">Steve Sacks</a> to bridge art and technological innovation, became a beacon for <a href=\"https://www.lerandom.art/subjects/code-based-art\">code-based art</a>, notably after the release of <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a>, invigorating the genre. Over the years, Bitforms has nurtured the art-tech nexus, displaying a spectrum from <a href=\"https://www.lerandom.art/subjects/beryl-korot\">Beryl Korot</a>’s textiles to <a href=\"https://www.lerandom.art/subjects/refik-anadol\">Refik Anadol</a>’s quantum computing art."
     ],
     "cite": [
       {
@@ -2118,6 +2125,7 @@
       }
     ],
     "img": {
+      "alt": "Grid of forty Tissue prints by Casey Reas on a gallery wall, with a pale wooden plinth station at right",
       "src": "img/golan-levin-and-casey-reas-the-art-of-code-at-bitforms-new-york.jpg",
       "cap": "An installation view from The Art of Code at bitforms, New York, with a grid of some forty Tissue prints by Casey Reas on the wall and a plinth-mounted interactive station at right.",
       "credit": "Installation view, Golan Levin and Casey Reas: The Art of Code, bitforms gallery, New York, 2002, showing Casey Reas's Tissue. Courtesy bitforms gallery.",
@@ -2295,7 +2303,7 @@
   },
   "the-first-processing-forum": {
     "body": [
-      "Generative art witnessed a significant community milestone with the launch of the Processing Forum, an online platform named <a href=\"https://discourse.processing.org/\" target=\"_blank\" rel=\"noopener\">Discourse</a>. Announced on the <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing site</a> in August 2002, it was where <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>, <a href=\"https://www.lerandom.art/subjects/ben-fry\">Ben Fry</a> and other early contributors began an explorative dialogue that would shape the future of this medium. A collaborative space, the forum fostered an environment of mutual support and creativity, propelling the exploration and knowledge-sharing of Processing. It has thus been critical to the nurturing of one of the most significant developments in generative art, especially since the turn of the millennium. The forum underwent several evolutions, transitioning from “alpha” 2005 to “1.0” in 2010 and beyond, each phase marking an expansion in the community and its contributions to the field. Today, the forum still exists as a place to share and elicit information about Processing."
+      "Generative art witnessed a significant community milestone with the launch of the <a href=\"https://www.lerandom.art/subjects/processing\">Processing</a> Forum, an online platform named <a href=\"https://discourse.processing.org/\" target=\"_blank\" rel=\"noopener\">Discourse</a>. Announced on the <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing site</a> in August 2002, it was where <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>, <a href=\"https://www.lerandom.art/subjects/ben-fry\">Ben Fry</a> and other early contributors began an explorative dialogue that would shape the future of this medium. A collaborative space, the forum fostered an environment of mutual support and creativity, propelling the exploration and knowledge-sharing of Processing. It has thus been critical to the nurturing of one of the most significant developments in <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a>, especially since the turn of the millennium. The forum underwent several evolutions, transitioning from “alpha” 2005 to “1.0” in 2010 and beyond, each phase marking an expansion in the community and its contributions to the field. Today, the forum still exists as a place to share and elicit information about Processing."
     ],
     "cite": [
       {
@@ -2304,6 +2312,7 @@
       }
     ],
     "img": {
+      "alt": "Proce55ing wordmark in white pixel type on a red and black angular banner, 2 August 2002",
       "src": "img/the-first-processing-forum.gif",
       "cap": "The Proce55ing wordmark as it appeared at the top of proce55ing.net on 2 August 2002, the day the site's Discourse forum page was first archived.",
       "credit": "Proce55ing.net wordmark, 2 August 2002. Internet Archive Wayback Machine capture.",
@@ -2393,7 +2402,7 @@
   },
   "re-mark-by-golan-levin-zach-lieberman": {
     "body": [
-      "A commission of the <a href=\"https://www.lerandom.art/subjects/ars-electronica\">Ars Electronica</a> Museum of the Future, Re:MARK, by Tmema (<a href=\"https://www.lerandom.art/subjects/golan-levin\">Golan Levin</a> and Zachary Lieberman) with production support from the Ars Electronica Futurelab, was an interactive installation that visualized speech as whimsical animated text and shapes. Utilizing voice analysis, motion sensing and real-time animation, the installation cast the spoken words and sounds of participants as shadows, creating a playful, reactive and interactive environment. The exhibition created a shadow world of cartoon language that became a stage for participants. This immersive and participatory experience showcased the lighter side of software art and its ability to amaze."
+      "A commission of the <a href=\"https://www.lerandom.art/subjects/ars-electronica\">Ars Electronica</a> Museum of the Future, Re:MARK, by Tmema (<a href=\"https://www.lerandom.art/subjects/golan-levin\">Golan Levin</a> and Zachary Lieberman) with production support from the Ars Electronica Futurelab, was an interactive installation that visualized speech as whimsical animated text and shapes. Utilizing voice analysis, motion sensing and <a href=\"https://www.lerandom.art/subjects/real-time-animation\">real-time animation</a>, the installation cast the spoken words and sounds of participants as shadows, creating a playful, reactive and interactive environment. The exhibition created a shadow world of cartoon language that became a stage for participants. This immersive and participatory experience showcased the lighter side of <a href=\"https://www.lerandom.art/subjects/software-art\">software art</a> and its ability to amaze."
     ],
     "cite": [
       {
@@ -2402,6 +2411,7 @@
       }
     ],
     "img": {
+      "alt": "A woman speaks into a microphone as small drawn glyphs float above shadow silhouettes on a white screen",
       "src": "img/re-mark-by-golan-levin-zach-lieberman.jpg",
       "cap": "An installation view of Re:MARK: a visitor speaks into a microphone while her silhouette on the projection screen emits animated glyphs and shapes generated from her voice.",
       "credit": "Golan Levin and Zachary Lieberman, Re:MARK, 2002. Ars Electronica Futurelab commission, Museum of the Future, Linz. Courtesy the artists, flong.com.",
@@ -2555,7 +2565,7 @@
   },
   "isometricblocks-ben-fry": {
     "body": [
-      "Emanating from his tenure at the <a href=\"https://www.lerandom.art/subjects/mit-media-lab\">MIT Media Lab</a>’s <a href=\"https://www.lerandom.art/subjects/aesthetics-computation-group\">Aesthetics + Computation Group</a> (ACG), <a href=\"https://www.lerandom.art/subjects/ben-fry\">Ben Fry</a>’s isometricblocks (2002–2004) is a seminal work that marries generative art with genetic data visualization. The work showcases Fry’s brilliant software-based data visualization. Utilizing the nascent versions of <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a>, this project offers a comparative visual analysis of genomes, transforming complex genetic information into an accessible and visually striking format. Developed during Fry’s doctoral research, isometricblocks integrates various analytical methods into a unified visual narrative, enhancing our comprehension of genetic differences. By making intricate genetic structures more perceptible, isometricblocks serves as a quintessential example of how art and science can intersect, using algorithmic artistry to cast light on complex scientific data now recognized and preserved within <a href=\"https://www.lerandom.art/subjects/moma\">MoMA</a>’s permanent collection."
+      "Emanating from his tenure at the <a href=\"https://www.lerandom.art/subjects/mit-media-lab\">MIT Media Lab</a>’s <a href=\"https://www.lerandom.art/subjects/aesthetics-computation-group\">Aesthetics + Computation Group</a> (ACG), <a href=\"https://www.lerandom.art/subjects/ben-fry\">Ben Fry</a>’s isometricblocks (2002–2004) is a seminal work that marries <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a> with genetic data visualization. The work showcases Fry’s brilliant software-based data visualization. Utilizing the nascent versions of <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a>, this project offers a comparative visual analysis of genomes, transforming complex genetic information into an accessible and visually striking format. Developed during Fry’s doctoral research, isometricblocks integrates various analytical methods into a unified visual narrative, enhancing our comprehension of genetic differences. By making intricate genetic structures more perceptible, isometricblocks serves as a quintessential example of how art and science can intersect, using algorithmic artistry to cast light on complex scientific data now recognized and preserved within <a href=\"https://www.lerandom.art/subjects/moma\">MoMA</a>’s permanent collection."
     ],
     "cite": [
       {
@@ -2564,6 +2574,7 @@
       }
     ],
     "img": {
+      "alt": "Ben Fry's isometricblocks: columns of red genetic letter sequences linked by fine blue lines",
       "src": "img/isometricblocks-ben-fry.jpg",
       "cap": "A full-resolution output of Ben Fry's isometricblocks, the haplotype-comparison visualisation built with alpha releases of Processing; the printed sheet dates from April 2004.",
       "credit": "Ben Fry, isometricblocks, 2002-2004. Courtesy the artist, benfry.com.",
@@ -2692,6 +2703,7 @@
       }
     ],
     "img": {
+      "alt": "Cory Arcangel's Super Mario Clouds: pixel clouds on blue sky projected in a corner, projector and CRT TV",
       "src": "img/super-mario-clouds-by-cory-arcangel.jpg",
       "cap": "",
       "credit": "Installation view of Cory Arcangel, Super Mario Clouds, 2002 (hacked Super Mario Bros. cartridge and Nintendo NES, video projection). © Cory Arcangel. Courtesy of the artist. Photographer and venue not identified.",
@@ -2827,6 +2839,7 @@
       }
     ],
     "img": {
+      "alt": "Velvet-Strike website: soldier silhouettes aiming rifles form a heart around a red X, with menu links",
       "src": "img/velvet-strike-modifies-counter-strike.png",
       "cap": "",
       "credit": "Screenshot of the Velvet-Strike website, by Anne-Marie Schleiner, Joan Leandre and Brody Condon, 2002. <a href=\"http://www.opensorcery.net/velvet-strike/\">Image source</a>.",
@@ -2975,6 +2988,7 @@
       }
     ],
     "img": {
+      "alt": "Mark Napier's Waiting Room: layered translucent orange, blue and green forms built from fine lines",
       "src": "img/waiting-room-by-mark-napier.jpg",
       "cap": "A screen capture of Mark Napier's networked artwork Waiting Room, showing the layered translucent forms produced by multiple simultaneous users.",
       "credit": "Mark Napier, Waiting Room, 2002. Courtesy the artist, potatoland.org.",
@@ -3076,7 +3090,7 @@
   },
   "derivative-launches-touchdesigner": {
     "body": [
-      "TouchDesigner, introduced by Derivative, marked a transformative advancement in interactive, real-time multimedia programming for visual artists. Launched by founders <a href=\"https://www.lerandom.art/subjects/greg-hermanovic\">Greg Hermanovic</a>, <a href=\"https://www.lerandom.art/subjects/rob-bairos\">Rob Bairos</a>, and <a href=\"https://www.lerandom.art/subjects/jarrett-smith\">Jarrett Smith</a>, this innovative platform was born from the Houdini 4.1 source code, aimed at revolutionizing live visual performances. As a comprehensive real-time visual tool, TouchDesigner catered to the interest in interactive and dynamic digital artistry that started in earnest a decade prior, at the beginning of the 1990s, with events like artFutura as well as the work of early interactive pioneers such as <a href=\"https://www.lerandom.art/subjects/karl-sims\">Karl Sims</a>. This was pioneered in the early ’90s at EVL in <a href=\"https://www.lerandom.art/subjects/chicago\">Chicago</a> with CAVE. TouchDesigner offered creators the ability to author, perform, and interact with visuals in unprecedented ways. With its first generation running from 2002, TouchDesigner established itself as an essential medium for artists to meld creativity with cutting-edge technology, fostering a new wave of digital expression."
+      "<a href=\"https://www.lerandom.art/subjects/touchdesigner\">TouchDesigner</a>, introduced by Derivative, marked a transformative advancement in interactive, real-time multimedia programming for visual artists. Launched by founders <a href=\"https://www.lerandom.art/subjects/greg-hermanovic\">Greg Hermanovic</a>, <a href=\"https://www.lerandom.art/subjects/rob-bairos\">Rob Bairos</a>, and <a href=\"https://www.lerandom.art/subjects/jarrett-smith\">Jarrett Smith</a>, this innovative platform was born from the <a href=\"https://www.lerandom.art/subjects/houdini\">Houdini</a> 4.1 source code, aimed at revolutionizing live visual performances. As a comprehensive real-time visual tool, TouchDesigner catered to the interest in interactive and dynamic digital artistry that started in earnest a decade prior, at the beginning of the 1990s, with events like artFutura as well as the work of early interactive pioneers such as <a href=\"https://www.lerandom.art/subjects/karl-sims\">Karl Sims</a>. This was pioneered in the early ’90s at EVL in <a href=\"https://www.lerandom.art/subjects/chicago\">Chicago</a> with <a href=\"https://www.lerandom.art/subjects/cave\">CAVE</a>. TouchDesigner offered creators the ability to author, perform, and interact with visuals in unprecedented ways. With its first generation running from 2002, TouchDesigner established itself as an essential medium for artists to meld creativity with cutting-edge technology, fostering a new wave of digital expression."
     ],
     "cite": [
       {
@@ -3354,7 +3368,7 @@
   },
   "machado-and-cardosos-nevar-system": {
     "body": [
-      "Machado and Cardoso’s NEvAr system is an artistic tool that leverages concepts from evolutionary art. It is thus a continuation of decades of evolutionary and genetic algorithm art, which shares machine learning roots with today’s AI art. Developed by <a href=\"https://www.lerandom.art/subjects/penousal-machado\">Penousal Machado</a> and <a href=\"https://www.lerandom.art/subjects/amilcar-cardoso\">Amílcar Cardoso</a> at the University of Coimbra, the NEvAr (Neuro Evolutionary Art) system harnesses evolutionary algorithms to automate aesthetic decision-making. Users engage with NEvAr by evaluating and selecting images, which then undergo evolutionary processes to enhance their appeal based on the users' preferences. This system utilizes a fitness function that incorporates complexity measures, aligning with <a href=\"https://www.lerandom.art/subjects/philip-galanter\">Philip Galanter</a>’s exploration of evolutionary art’s potential to overcome the “fitness bottleneck” in creative processes. NEvAr’s capacity to generate visually compelling artwork with limited human intervention underscores how evolutionary artists were pushing for—or creating their own—tools that today resemble more automated processes like <a href=\"m/ian-goodfellow-introduces-gans.html\" data-moment=\"ian-goodfellow-introduces-gans\">GANs</a> and generative AI. Like many evolutionary art and early AI work, NEvAr was inspired by the work of <a href=\"https://www.lerandom.art/subjects/karl-sims\">Karl Sims</a> as well as <a href=\"https://www.lerandom.art/subjects/richard-dawkins\">Richard Dawkins</a>. Yet its roots extend to <a href=\"https://www.lerandom.art/subjects/yoichiro-kawaguchi\">Yoichiro Kawaguchi</a> from <a href=\"https://www.lerandom.art/subjects/japan\">Japan</a>."
+      "Machado and Cardoso’s NEvAr system is an artistic tool that leverages concepts from evolutionary art. It is thus a continuation of decades of evolutionary and genetic algorithm art, which shares <a href=\"https://www.lerandom.art/subjects/machine-learning\">machine learning</a> roots with today’s AI art. Developed by <a href=\"https://www.lerandom.art/subjects/penousal-machado\">Penousal Machado</a> and <a href=\"https://www.lerandom.art/subjects/amilcar-cardoso\">Amílcar Cardoso</a> at the University of Coimbra, the NEvAr (Neuro Evolutionary Art) system harnesses <a href=\"https://www.lerandom.art/subjects/evolutionary-algorithms\">evolutionary algorithms</a> to automate aesthetic decision-making. Users engage with NEvAr by evaluating and selecting images, which then undergo evolutionary processes to enhance their appeal based on the users' preferences. This system utilizes a fitness function that incorporates complexity measures, aligning with <a href=\"https://www.lerandom.art/subjects/philip-galanter\">Philip Galanter</a>’s exploration of evolutionary art’s potential to overcome the “fitness bottleneck” in creative processes. NEvAr’s capacity to generate visually compelling artwork with limited human intervention underscores how evolutionary artists were pushing for—or creating their own—tools that today resemble more automated processes like <a href=\"m/ian-goodfellow-introduces-gans.html\" data-moment=\"ian-goodfellow-introduces-gans\">GANs</a> and <a href=\"https://www.lerandom.art/subjects/generative-ai\">generative AI</a>. Like many evolutionary art and early AI work, NEvAr was inspired by the work of <a href=\"https://www.lerandom.art/subjects/karl-sims\">Karl Sims</a> as well as <a href=\"https://www.lerandom.art/subjects/richard-dawkins\">Richard Dawkins</a>. Yet its roots extend to <a href=\"https://www.lerandom.art/subjects/yoichiro-kawaguchi\">Yoichiro Kawaguchi</a> from <a href=\"https://www.lerandom.art/subjects/japan\">Japan</a>."
     ],
     "cite": [
       {
@@ -3363,6 +3377,7 @@
       }
     ],
     "img": {
+      "alt": "Abstract NEvAr image of swirling peach and navy bands forming tall fluted shapes above a horizon",
       "src": "img/machado-and-cardosos-nevar-system.png",
       "cap": "One of the example images evolved with NEvAr reproduced as Figure 3 in Machado and Cardoso's paper 'NEvAr - System Overview,' presented at the Generative Art 2003 conference in Milan.",
       "credit": "Penousal Machado and Amilcar Cardoso, 'NEvAr - System Overview,' Generative Art 2003, Milan. Image courtesy the authors.",
@@ -3538,7 +3553,7 @@
   },
   "substrate-jared-tarbell": {
     "body": [
-      "Made with <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a>, this 2003 masterpiece by Tarbell highlights one of the powers of generative art and computation: the ability to convey complexity from simplicity.",
+      "Made with <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a>, this 2003 masterpiece by Tarbell highlights one of the powers of <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a> and computation: the ability to convey complexity from simplicity.",
       "A single growth rule based on perpendicular growth, from just a single line, manufactures intricate, urban-esque compositions. The simplicity of the rule in Tarbell’s <a href=\"https://www.lerandom.art/subjects/substrate\">Substrate</a> helped to amplify the power of the new tool to creatives and still stands as a source of inspiration for artists. 2010s generative artist <a href=\"https://inconvergent.net/generative/fractures/\" target=\"_blank\" rel=\"noopener\">inconvergent</a> wrote: “One of the first pieces of generative art I ever saw and took notice of was Tarbell’s Substrate. It’s a genius algorithm in all it’s simplicity.”",
       "In <a href=\"https://www.lerandom.art/subjects/jason-bailey\">Jason Bailey</a>’s (<a href=\"https://www.lerandom.art/subjects/artnome\">Artnome</a>) seminal text, “<a href=\"https://www.artnome.com/news/2018/8/8/why-love-generative-art\" target=\"_blank\" rel=\"noopener\">Why Love Generative Art?</a>” he wrote of Tarbell and Substrate:",
       "“For me, Tarbell’s work is the perfect generative art. It is the poster child for the duality of chaos and control, and has an intense level of visual complexity that slowly emerges from simplicity, making it feel more like it grew out of the soil than coming from algorithms.”"
@@ -3550,6 +3565,7 @@
       }
     ],
     "img": {
+      "alt": "Jared Tarbell's Substrate: dense diagonal clusters of thin perpendicular lines like a city plan on white",
       "src": "img/substrate-jared-tarbell.jpg",
       "cap": "An output of Jared Tarbell's Substrate, the Processing sketch whose single perpendicular-growth rule produces city-like crystalline structures.",
       "credit": "Jared Tarbell, Substrate, 2003. Courtesy the artist, complexification.net.",
@@ -3689,7 +3705,7 @@
   },
   "samorost-by-amanita-design": {
     "body": [
-      "This <a href=\"m/macromedia-flash-1-0-releaseda.html\" data-moment=\"macromedia-flash-1-0-releaseda\">Flash</a> art video game, known for its artistic emphasis, was created by Amanita Design, a Czech indie game studio. The studio was founded by Jakub Dvorský, in 2003, when it introduced the gaming world to Samorost, an adventure that distinctively blended surreal landscapes, whimsical humor and a handcrafted aesthetic. The hero of the story is a gnome. This title marked Amanita Design’s commitment to creating rich, audiovisual gaming experiences, setting a precedent for their future works. Samorost, with its unique art style and engaging gameplay, established Amanita Design as a key player in the indie game development sphere but also showcased the potential for games to transcend traditional entertainment, becoming immersive, artistic experiences."
+      "This <a href=\"m/macromedia-flash-1-0-releaseda.html\" data-moment=\"macromedia-flash-1-0-releaseda\">Flash</a> art video game, known for its artistic emphasis, was created by Amanita Design, a Czech indie game studio. The studio was founded by <a href=\"https://www.lerandom.art/subjects/jakub-dvorsky\">Jakub Dvorský</a>, in 2003, when it introduced the gaming world to Samorost, an adventure that distinctively blended surreal landscapes, whimsical humor and a handcrafted aesthetic. The hero of the story is a gnome. This title marked Amanita Design’s commitment to creating rich, audiovisual gaming experiences, setting a precedent for their future works. Samorost, with its unique art style and engaging gameplay, established Amanita Design as a key player in the indie game development sphere but also showcased the potential for games to transcend traditional entertainment, becoming immersive, artistic experiences."
     ],
     "cite": [
       {
@@ -3698,6 +3714,7 @@
       }
     ],
     "img": {
+      "alt": "Samorost 1: a mossy tree-stump asteroid floating in starry space, a small rocket flying beside it",
       "src": "img/samorost-by-amanita-design.jpg",
       "cap": "An official screenshot from Amanita Design's Samorost 1 page, showing the gnome's tree-trunk asteroid and the approaching spacecraft in Jakub Dvorský's photo-collage style.",
       "credit": "Amanita Design, Samorost 1. Courtesy Amanita Design.",
@@ -3810,8 +3827,8 @@
   },
   "digital-art-by-christiane-paul": {
     "body": [
-      "This seminal book gave legitimacy to a field that was receiving renewed interest due to the success and rise of the Internet and net art. In Digital Art, <a href=\"https://www.lerandom.art/subjects/christiane-paul\">Christiane Paul</a> chronicles the transformative role of digital technology in art, focusing on technology as a medium itself from the early ’90s onwards, including net art and virtual reality.",
-      "By beginning its “survey” of the evolution of digital art in the early-’90s, the text distinguishes between digital technology as a tool for traditional art-making (e.g., plotter work) and as a medium for pioneering new artistic forms (e.g., net.art and <a href=\"m/macromedia-flash-1-0-releaseda.html\" data-moment=\"macromedia-flash-1-0-releaseda\">Flash</a>). Paul discusses pivotal artists and works while inspecting critical themes like interactivity, artificial intelligence and social activism, alongside issues concerning the preservation, presentation and ownership of digital art.",
+      "This seminal book gave legitimacy to a field that was receiving renewed interest due to the success and rise of the <a href=\"https://www.lerandom.art/subjects/internet\">Internet</a> and <a href=\"https://www.lerandom.art/subjects/net-art\">net art</a>. In Digital Art, <a href=\"https://www.lerandom.art/subjects/christiane-paul\">Christiane Paul</a> chronicles the transformative role of digital technology in art, focusing on technology as a medium itself from the early ’90s onwards, including net art and virtual reality.",
+      "By beginning its “survey” of the evolution of <a href=\"https://www.lerandom.art/subjects/digital-art\">digital art</a> in the early-’90s, the text distinguishes between digital technology as a tool for traditional art-making (e.g., plotter work) and as a medium for pioneering new artistic forms (e.g., net.art and <a href=\"m/macromedia-flash-1-0-releaseda.html\" data-moment=\"macromedia-flash-1-0-releaseda\">Flash</a>). Paul discusses pivotal artists and works while inspecting critical themes like interactivity, artificial intelligence and social activism, alongside issues concerning the preservation, presentation and ownership of digital art.",
       "Paul spoke to this author (<a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a>) about Digital Art two decades later for <a href=\"https://www.lerandom.art/editorial/christiane-paul-on-curating-cohens-aaron\" target=\"_blank\" rel=\"noopener\">a piece on Le Random Editorials</a>.",
       "Beyond her watershed book, Paul’s impact was vital in sustaining institutional interest throughout the decade once it began to wane. Paul singularly legitimized an emerging field, while chronicling and contextualizing its history."
     ],
@@ -3962,12 +3979,12 @@
   },
   "galanter-defines-generative-art": {
     "body": [
-      "In his seminal text from over twenty years ago, Galanter asks and answers, “What is Generative Art?” in the must-read essay for anyone interested in generative art: <a href=\"https://www.philipgalanter.com/downloads/ga2003_paper.pdf\" target=\"_blank\" rel=\"noopener\">“What is Generative Art? Complexity Theory as a Context for Art Theory.”</a>",
+      "In his seminal text from over twenty years ago, Galanter asks and answers, “What is Generative Art?” in the must-read essay for anyone interested in <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a>: <a href=\"https://www.philipgalanter.com/downloads/ga2003_paper.pdf\" target=\"_blank\" rel=\"noopener\">“What is Generative Art? Complexity Theory as a Context for Art Theory.”</a>",
       "This is the essay that nearly everyone cites when defining generative art. This author’s own definition is highly influenced by Galanter. Galanter spoke to this author (<a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a>) about his enduring definition two decades later for <a href=\"https://www.lerandom.art/editorial/decoupling-generative-art-with-philip-galanter\" target=\"_blank\" rel=\"noopener\">a piece on Le Random Editorials</a>.",
       "Here is Galanter’s iconic definition in full:",
       "“Generative art refers to any art practice where the artist uses a system, such as a set of natural language rules, a computer program, a machine, or other procedural invention, which is set into motion with some degree of autonomy contributing to or resulting in a completed work of art.”",
       "In other words, it is: <a href=\"https://www.lerandom.art/editorial/decoupling-generative-art-with-philip-galanter\" target=\"_blank\" rel=\"noopener\">Art using autonomous systems</a>.",
-      "The essay goes on to explore generative art through the lens of complexity scienceGalanter explains how generative art integrates principles from complexity theory, showing that systems range from highly ordered to highly disordered, with generative art often embodying a mixture of both. By situating generative art within this framework, he offers a broad historical perspective—much as this Timeline aims to—revealing that generative processes have been intrinsic to art-making throughout history, from ancient geometric patterns to contemporary digital and algorithmic methods. This comprehensive view not only clarifies the definition of generative art but also highlights its pervasive influence across diverse artistic domains. The view was also highly influential on this author, as this first moment on our Timeline attests to."
+      "The essay goes on to explore generative art through the lens of complexity scienceGalanter explains how generative art integrates principles from complexity theory, showing that <a href=\"https://www.lerandom.art/subjects/systems\">systems</a> range from highly ordered to highly disordered, with generative art often embodying a mixture of both. By situating generative art within this framework, he offers a broad historical perspective—much as this Timeline aims to—revealing that generative processes have been intrinsic to art-making throughout history, from ancient geometric patterns to contemporary digital and algorithmic methods. This comprehensive view not only clarifies the definition of generative art but also highlights its pervasive influence across diverse artistic domains. The view was also highly influential on this author, as this first moment on our Timeline attests to."
     ],
     "cite": [
       {
@@ -3979,7 +3996,7 @@
       "src": "img/galanter-defines-generative-art-2e948fda06.png",
       "cap": "Figure 8.1, ‘Generative Art Systems,’ from Philip Galanter’s 2003 paper <em>What Is Generative Art? Complexity Theory as a Context for Art Theory</em>, mapping generative methods between order and disorder.",
       "credit": "Philip Galanter, 2003, Figure 8.1. Reproduced from the author’s PDF. <a href=\"https://www.philipgalanter.com/downloads/ga2003_paper.pdf\">Image source</a>.",
-      "alt": "Galanter’s diagram places symmetry, fractals, Lindenmayer systems, genetic systems and artificial life, stochastic systems, and randomization along an order-to-disorder axis below a curve peaking at complexity.",
+      "alt": "Galanter's diagram: generative methods on an order-to-disorder axis, complexity peaking at genetic systems & A-Life",
       "width": 1280,
       "height": 734,
       "sourceUrl": "https://www.philipgalanter.com/downloads/ga2003_paper.pdf",
@@ -4064,7 +4081,7 @@
   },
   "yamaguchi-center-for-arts-and-media-ycam-in-japan": {
     "body": [
-      "Defined by the pursuit of new artistic expression that incorporates technology and media, the Center continues to play an important role in showcasing, cultivating and supporting the generative art community in <a href=\"https://www.lerandom.art/subjects/japan\">Japan</a>."
+      "Defined by the pursuit of new artistic expression that incorporates technology and media, the Center continues to play an important role in showcasing, cultivating and supporting the <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a> community in <a href=\"https://www.lerandom.art/subjects/japan\">Japan</a>."
     ],
     "cite": [
       {
@@ -4073,6 +4090,7 @@
       }
     ],
     "img": {
+      "alt": "YCAM's long glass building with a wavy roof behind a lawn where children and adults play",
       "src": "img/yamaguchi-center-for-arts-and-media-ycam-in-japan.jpg",
       "cap": "",
       "credit": "Yamaguchi Center for Arts and Media (YCAM), Yamaguchi, Japan. Photograph by Bsx, 6 May 2008, Wikimedia Commons (CC BY-SA 3.0). <a href=\"https://commons.wikimedia.org/wiki/File:YCAM.jpg\">Image source</a>.",
@@ -4159,6 +4177,7 @@
       }
     ],
     "img": {
+      "alt": "Two panels from Keiko Kimoto's Imaginary-Numbers: thin white curves and bright blue streaks on black",
       "src": "img/imaginarynumbers-by-keiko-kimoto.jpg",
       "cap": "Two panels of Keiko Kimoto's Imaginary-Numbers, the curves and spirals generated from a non-linear dynamics formula, as reproduced in the ACM SIGGRAPH Art Show Archives.",
       "credit": "Keiko Kimoto, Imaginary-Numbers. ACM SIGGRAPH Art Show Archives.",
@@ -4285,7 +4304,7 @@
   },
   "facebook-launches-at-harvard": {
     "body": [
-      "On 4 February 2004 <a href=\"https://www.lerandom.art/subjects/mark-zuckerberg\">Mark Zuckerberg</a> launched thefacebook.com, open at first only to Harvard e-mail addresses, marking a turning point in humanity’s relationship with communities and popularizing online identities and interactions in a way that mainstreamed what before was looked on as niche. In many ways it was the culmination of the computer nerd transforming into the most popular kid on campus, reflecting our newfound embrace of the digital and the networked. Needless to say, the moment was a pivotal development in the evolution of social media, a term so pervasive it would practically come to define the time period of the proceeding decade. The platform, initially created for college students to connect and share information, quickly expanded beyond the academic setting, making countless millions comfortable with a life—at least a social one—online."
+      "On 4 February 2004 <a href=\"https://www.lerandom.art/subjects/mark-zuckerberg\">Mark Zuckerberg</a> launched thefacebook.com, open at first only to Harvard e-mail addresses, marking a turning point in humanity’s relationship with communities and popularizing online identities and interactions in a way that mainstreamed what before was looked on as niche. In many ways it was the culmination of the computer nerd transforming into the most popular kid on campus, reflecting our newfound embrace of the digital and the networked. Needless to say, the moment was a pivotal development in the evolution of <a href=\"https://www.lerandom.art/subjects/social-media\">social media</a>, a term so pervasive it would practically come to define the time period of the proceeding decade. The platform, initially created for college students to connect and share information, quickly expanded beyond the academic setting, making countless millions comfortable with a life—at least a social one—online."
     ],
     "cite": [
       {
@@ -4385,7 +4404,7 @@
   },
   "pitch-and-volume-by-anna-ursyn": {
     "body": [
-      "Exhibited at <a href=\"https://www.lerandom.art/subjects/siggraph\">SIGGRAPH</a> 2004’s Synaesthesia, Pitch and Volume by <a href=\"https://www.lerandom.art/subjects/anna-ursyn\">Anna Ursyn</a>, scrutinizes the intricate relationship between the digital and natural orders, exploring how both domains manifest structured patterns that can be perceived and analyzed. Ursyn articulates her process of merging these patterns in her art, employing techniques that range from initial sketches to complex computer programming. Her work reflects on how urban environments and big datasets resonate with natural rhythms and structures, influencing her artistic expression and teaching in computer art and graphics. Through this blend, Ursyn emphasizes the symbiotic interaction between human technological impacts and the inherent order of the natural world, enriching our understanding and engagement with both. Other artists to exhibit include <a href=\"https://www.lerandom.art/subjects/roman-verostko\">Roman Verostko</a>, <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> and <a href=\"https://www.lerandom.art/subjects/hans-dehlinger\">Hans Dehlinger</a>."
+      "Exhibited at <a href=\"https://www.lerandom.art/subjects/siggraph\">SIGGRAPH</a> 2004’s Synaesthesia, Pitch and Volume by <a href=\"https://www.lerandom.art/subjects/anna-ursyn\">Anna Ursyn</a>, scrutinizes the intricate relationship between the digital and natural orders, exploring how both domains manifest structured patterns that can be perceived and analyzed. Ursyn articulates her process of merging these patterns in her art, employing techniques that range from initial sketches to complex computer <a href=\"https://www.lerandom.art/subjects/programming\">programming</a>. Her work reflects on how urban environments and big <a href=\"https://www.lerandom.art/subjects/datasets\">datasets</a> resonate with natural rhythms and structures, influencing her artistic expression and teaching in <a href=\"https://www.lerandom.art/subjects/computer-art\">computer art</a> and graphics. Through this blend, Ursyn emphasizes the symbiotic interaction between human technological impacts and the inherent order of the natural world, enriching our understanding and engagement with both. Other artists to exhibit include <a href=\"https://www.lerandom.art/subjects/roman-verostko\">Roman Verostko</a>, <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> and <a href=\"https://www.lerandom.art/subjects/hans-dehlinger\">Hans Dehlinger</a>."
     ],
     "cite": [
       {
@@ -4394,6 +4413,7 @@
       }
     ],
     "img": {
+      "alt": "Anna Ursyn's Pitch and Volume: a fractured collage of city streets, yellow taxis, brass horns and rows of keys",
       "src": "img/pitch-and-volume-by-anna-ursyn.jpg",
       "cap": "Anna Ursyn's Pitch and Volume as reproduced in the ACM SIGGRAPH Art Show Archives entry for the SIGGRAPH 2004 Synaesthesia exhibition.",
       "credit": "Anna Ursyn, Pitch and Volume, 2004. ACM SIGGRAPH Art Show Archives.",
@@ -4513,7 +4533,7 @@
   },
   "pac-manhattan": {
     "body": [
-      "This IRL <a href=\"m/space-invaders-asteroids-and-pac-man-released.html\" data-moment=\"space-invaders-asteroids-and-pac-man-released\">Pac-Man</a> Pac-Manhattan was an innovative work of urban-performance art that transformed the streets of <a href=\"https://www.lerandom.art/subjects/new-york\">New York</a> City into a live-action videogame, replicating the classic 1980's arcade game Pac-Man. The project recalled the work of GRAV and other performance artists who encouraged—rather, required—audience participation. Developed within NYU’s Interactive Telecommunications graduate program under <a href=\"https://www.lerandom.art/subjects/frank-lantz\">Frank Lantz</a>, the artwork experimented with the dynamics of gaming by bringing digital play into the physical realm of <a href=\"https://www.lerandom.art/subjects/manhattan\">Manhattan</a>’s Washington Square Park area. Players dressed as Pac-Man and the ghosts navigated the city’s grid, with Pac-Man attempting to collect all virtual “dots” along the streets, while the ghosts tried to tag him. Each street player was paired by mobile phone with a controller in a Wi-Fi-equipped control room who moved their icon on a shared map, and the game state was broadcast over the internet. It can also be seen as an early attempt at an immersive, virtual reality performance piece on a large scale."
+      "This IRL <a href=\"m/space-invaders-asteroids-and-pac-man-released.html\" data-moment=\"space-invaders-asteroids-and-pac-man-released\">Pac-Man</a> Pac-Manhattan was an innovative work of urban-performance art that transformed the streets of <a href=\"https://www.lerandom.art/subjects/new-york\">New York</a> City into a live-action videogame, replicating the classic 1980's arcade game Pac-Man. The project recalled the work of <a href=\"https://www.lerandom.art/subjects/groupe-de-recherche-dart-visuel-grav\">GRAV</a> and other performance artists who encouraged—rather, required—audience participation. Developed within NYU’s Interactive Telecommunications graduate program under <a href=\"https://www.lerandom.art/subjects/frank-lantz\">Frank Lantz</a>, the artwork experimented with the dynamics of gaming by bringing digital play into the physical realm of <a href=\"https://www.lerandom.art/subjects/manhattan\">Manhattan</a>’s Washington Square Park area. Players dressed as Pac-Man and the ghosts navigated the city’s grid, with Pac-Man attempting to collect all virtual “dots” along the streets, while the ghosts tried to tag him. Each street player was paired by mobile phone with a controller in a Wi-Fi-equipped control room who moved their icon on a shared map, and the game state was broadcast over the internet. It can also be seen as an early attempt at an immersive, <a href=\"https://www.lerandom.art/subjects/virtual-reality-vr\">virtual reality</a> performance piece on a large scale."
     ],
     "cite": [
       {
@@ -4522,6 +4542,7 @@
       }
     ],
     "img": {
+      "alt": "Pac-Man style maze with labeled street intersections, ghosts near B4 and text 'Clyde moved to B4'",
       "src": "img/pac-manhattan.gif",
       "cap": "A screenshot of the Pac-Manhattan live tracking board, which mapped the Washington Square street grid onto a Pac-Man maze and updated players' positions in real time ('Clyde moved to B4').",
       "credit": "Pac-Manhattan, 2004. NYU Interactive Telecommunications Program. Courtesy pacmanhattan.com.",
@@ -4682,7 +4703,7 @@
   },
   "software-structures-by-casey-reas-jared-tarbell-robert-hodgin-and-william-ngan": {
     "body": [
-      "This online commission for the Whitney Museum’s Artport was created by <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> as a way to explain generative art’s ability to visualize the same simple instructions in many different ways depending on the execution of the artist’s algorithm. The technique is rooted in the instruction-based <a href=\"m/sol-lewitt-brings-his-wall-drawings.html\" data-moment=\"sol-lewitt-brings-his-wall-drawings\">wall drawings</a> of <a href=\"https://www.lerandom.art/subjects/sol-lewitt\">Sol LeWitt</a>. {Software} Structures by Casey Reas, alongside collaborators <a href=\"https://www.lerandom.art/subjects/jared-tarbell\">Jared Tarbell</a>, <a href=\"https://www.lerandom.art/subjects/robert-hodgin\">Robert Hodgin</a>, and <a href=\"https://www.lerandom.art/subjects/william-ngan\">William Ngan</a>, investigated the relationship between algorithmic rigor and artistic fluidity. Inspired by Sol LeWitt’s conceptual methodologies, Reas reimagined the creation of art, making programming as immediate and fluid as drawing. By spending initial days crafting core technical code, he then engaged with this foundation intuitively for months, akin to modifying a sketch, thus allowing for dynamic and iterative creation without the constraints of the original algorithms. This process culminated in artworks that, rather than being direct outputs of code, emerged from processes of pre-planned structures and real-time artistic intervention. This approach not only echoed LeWitt’s wall drawings, which separate the conception of art from its execution by involving external actors, but also implemented these concepts through software, where the 'actors' were replaced by dynamic, interactive systems. These software structures, therefore, did not merely replicate physical artworks digitally but transformed them."
+      "This online commission for the Whitney Museum’s Artport was created by <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> as a way to explain <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a>’s ability to visualize the same simple instructions in many different ways depending on the execution of the artist’s algorithm. The technique is rooted in the instruction-based <a href=\"m/sol-lewitt-brings-his-wall-drawings.html\" data-moment=\"sol-lewitt-brings-his-wall-drawings\">wall drawings</a> of <a href=\"https://www.lerandom.art/subjects/sol-lewitt\">Sol LeWitt</a>. {Software} Structures by Casey Reas, alongside collaborators <a href=\"https://www.lerandom.art/subjects/jared-tarbell\">Jared Tarbell</a>, <a href=\"https://www.lerandom.art/subjects/robert-hodgin\">Robert Hodgin</a>, and <a href=\"https://www.lerandom.art/subjects/william-ngan\">William Ngan</a>, investigated the relationship between algorithmic rigor and artistic fluidity. Inspired by Sol LeWitt’s conceptual methodologies, Reas reimagined the creation of art, making <a href=\"https://www.lerandom.art/subjects/programming\">programming</a> as immediate and fluid as drawing. By spending initial days crafting core technical code, he then engaged with this foundation intuitively for months, akin to modifying a sketch, thus allowing for dynamic and iterative creation without the constraints of the original algorithms. This process culminated in artworks that, rather than being direct outputs of code, emerged from processes of pre-planned structures and real-time artistic intervention. This approach not only echoed LeWitt’s wall drawings, which separate the conception of art from its execution by involving external actors, but also implemented these concepts through software, where the 'actors' were replaced by dynamic, interactive systems. These software structures, therefore, did not merely replicate physical artworks digitally but transformed them."
     ],
     "cite": [
       {
@@ -4691,6 +4712,7 @@
       }
     ],
     "img": {
+      "alt": "Web page for Structure #003 from {Software} Structures: grids of black-and-white line and circle renderings",
       "src": "img/software-structures-by-casey-reas-jared-tarbell-robert-hodgin-and-william-ngan.jpg",
       "cap": "",
       "credit": "Screenshot of Structure #003 from {Software} Structures, Casey Reas with Jared Tarbell, Robert Hodgin and William Ngan, 2004. Whitney Museum of American Art, artport commission (2004 version). <a href=\"https://artport.whitney.org/commissions/software-structures/map.html\">Image source</a>.",
@@ -4816,6 +4838,7 @@
       }
     ],
     "img": {
+      "alt": "Lynn Hershman Leeson's DiNA: a visitor speaks into a podium microphone facing a large projected woman's face",
       "src": "img/dina-chatbot-by-lynn-hershman-leeson.jpg",
       "cap": "An installation view of Lynn Hershman Leeson's DiNA, with a visitor speaking into a microphone at the podium while the projected agent answers.",
       "credit": "Lynn Hershman Leeson, DiNA, 2004. Courtesy the artist, lynnhershman.com.",
@@ -5013,7 +5036,7 @@
   },
   "matthew-cook-proved-that-ca-rule-110-is-capable-of-universal-computation": {
     "body": [
-      "<a href=\"https://www.lerandom.art/subjects/matthew-cook\">Matthew Cook</a>’s proof, developed while assisting <a href=\"https://www.lerandom.art/subjects/stephen-wolfram\">Stephen Wolfram</a> on A New Kind of Science and published in Complex Systems in 2004, resolved a conjecture Wolfram had posited in the 1980s. Cook proved that Rule 110, a seemingly simple one-dimensional cellular automaton, is capable of universal computation. This significant achievement confirmed that Rule 110 could simulate a <a href=\"https://www.lerandom.art/subjects/alan-turing\">Turing</a> machine, thus performing any computation that a Turing machine is capable of. Cook’s proof not only validated Wolfram’s hypothesis but also underscored the profound computational possibilities inherent in cellular automata, enhancing their standing in computational theory and the study of complex systems. This all in turn led to the continued usage and interest in the creation of visual forms."
+      "<a href=\"https://www.lerandom.art/subjects/matthew-cook\">Matthew Cook</a>’s proof, developed while assisting <a href=\"https://www.lerandom.art/subjects/stephen-wolfram\">Stephen Wolfram</a> on A New Kind of Science and published in Complex Systems in 2004, resolved a conjecture Wolfram had posited in the 1980s. Cook proved that Rule 110, a seemingly simple one-dimensional cellular automaton, is capable of universal computation. This significant achievement confirmed that Rule 110 could simulate a <a href=\"https://www.lerandom.art/subjects/alan-turing\">Turing</a> machine, thus performing any computation that a Turing machine is capable of. Cook’s proof not only validated Wolfram’s hypothesis but also underscored the profound computational possibilities inherent in <a href=\"https://www.lerandom.art/subjects/cellular-automata\">cellular automata</a>, enhancing their standing in computational theory and the study of <a href=\"https://www.lerandom.art/subjects/complex-systems\">complex systems</a>. This all in turn led to the continued usage and interest in the creation of visual forms."
     ],
     "cite": [
       {
@@ -5022,6 +5045,7 @@
       }
     ],
     "img": {
+      "alt": "Rule 110 cellular automaton grown from one cell: a black triangle of interlocking small triangles",
       "src": "img/matthew-cook-proved-that-ca-rule-110-is-capable-of-universal-computation.png",
       "cap": "A 768-generation run of the Rule 110 elementary cellular automaton from a single live cell, the automaton Matthew Cook proved capable of universal computation.",
       "credit": "Rule 110 cellular automaton, sample run from a single cell. Wikimedia Commons, CC0.",
@@ -5124,7 +5148,7 @@
     "body": [
       "Part of <a href=\"https://www.lerandom.art/subjects/moma\">MoMA</a>’s permanent collection, Dawes’s Cinema Redux transformed the experience of a film into a singular visual artifact. This innovative concept distills an entire movie into one image, where each row corresponds to one minute of the film, with each of the 60 frames representing a second. This technique effectively creates a “visual fingerprint” of a film, capturing its essence in a composite image. Acquired by the MoMA in 2008, Cinema Redux was <a href=\"https://brendandawes.com/blog/thankyoup5\" target=\"_blank\" rel=\"noopener\">a work on Processing</a> by Dawes.",
       "Dawes <a href=\"https://brendandawes.com/blog/thankyoup5\" target=\"_blank\" rel=\"noopener\">recalls</a> the impact of the piece and the relevance of <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a> to its success:",
-      "“Then in 2007 I got an email from The Museum of Modern Art asking if they could feature Cinema Redux in their new exhibition called <a href=\"https://www.lerandom.art/subjects/design-and-the-elastic-mind\">Design and the Elastic Mind</a>. I still remember starring at that email in absolute disbelief — after all I only managed to get a grade C in art at high school. This was ridiculous. In 2008 myself and my wife travelled to <a href=\"https://www.lerandom.art/subjects/new-york\">New York</a> for the opening and saw Cinema Redux printed thirty feet high, proudly sat alongside other beautiful work. MoMA would then go to acquire the work for the permanent collection, featuring in three more MoMA exhibitions as well as other exhibitions around the world including <a href=\"https://www.lerandom.art/subjects/big-bang-data\">Big Bang Data</a>. All this made possible because of freely messing about in this wonderful thing called Processing.”"
+      "“Then in 2007 I got an email from The Museum of Modern Art asking if they could feature Cinema Redux in their new exhibition called <a href=\"https://www.lerandom.art/subjects/design-and-the-elastic-mind\">Design and the Elastic Mind</a>. I still remember starring at that email in absolute disbelief — after all I only managed to get a grade C in art at high school. This was ridiculous. In 2008 myself and my wife travelled to <a href=\"https://www.lerandom.art/subjects/new-york\">New York</a> for the opening and saw Cinema Redux printed thirty feet high, proudly sat alongside other beautiful work. MoMA would then go to acquire the work for the permanent collection, featuring in three more MoMA exhibitions as well as other exhibitions around the world including <a href=\"https://www.lerandom.art/subjects/big-bang-data\">Big Bang Data</a>. All this made possible because of freely messing about in this wonderful thing called <a href=\"https://www.lerandom.art/subjects/processing\">Processing</a>.”"
     ],
     "cite": [
       {
@@ -5233,7 +5257,7 @@
   },
   "reas-begins-process-compendium-series-2004-2014": {
     "body": [
-      "In his seminal series Process, documented comprehensively in the book <a href=\"https://www.lerandom.art/subjects/process-compendium\">Process Compendium</a> 2004-2010, <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> explores the intricate phenomenon of emergence through his unique artistic system. This system is built on the foundational elements of Forms, Behaviors and Elements, allowing Reas to generate an endless variety of visual compositions with his chosen visual grammar. Each element in this system—referred to as a simple machine—combines form with dynamic behaviors within a defined processual environment. For example, <a href=\"https://www.lerandom.art/subjects/process-4\">Process 4</a> populates a surface with simple machines, circles moving in straight lines at consistent speeds. As these elements overlap, lines are drawn between them, visually capturing their interaction. This kinetic drawing machine, devoid of a predetermined end, evolves visually through discrete steps where each element adapts based on its behavior, thus continuously creating new forms. Over seven years, Reas refined this system, producing a rich tapestry of forms that draw from diverse influences, including the history of mathematics and the concepts of artificial life. The Process Compendium captures this evolution through a collection of fifteen prints from Process 4 to Process 18, offering insights into the static and dynamic variations of these processes and the emergent visual phenomena they produce."
+      "In his seminal series Process, documented comprehensively in the book <a href=\"https://www.lerandom.art/subjects/process-compendium\">Process Compendium</a> 2004-2010, <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> explores the intricate phenomenon of emergence through his unique artistic system. This system is built on the foundational elements of Forms, Behaviors and Elements, allowing Reas to generate an endless variety of visual compositions with his chosen visual grammar. Each element in this system—referred to as a simple machine—combines form with dynamic behaviors within a defined processual environment. For example, <a href=\"https://www.lerandom.art/subjects/process-4\">Process 4</a> populates a surface with simple machines, circles moving in straight lines at consistent speeds. As these elements overlap, lines are drawn between them, visually capturing their interaction. This kinetic <a href=\"https://www.lerandom.art/subjects/drawing-machine\">drawing machine</a>, devoid of a predetermined end, evolves visually through discrete steps where each element adapts based on its behavior, thus continuously creating new forms. Over seven years, Reas refined this system, producing a rich tapestry of forms that draw from diverse influences, including the history of mathematics and the concepts of <a href=\"https://www.lerandom.art/subjects/artificial-life\">artificial life</a>. The Process Compendium captures this evolution through a collection of fifteen prints from Process 4 to Process 18, offering insights into the static and dynamic variations of these processes and the emergent visual phenomena they produce."
     ],
     "cite": [
       {
@@ -5242,6 +5266,7 @@
       }
     ],
     "img": {
+      "alt": "Dense grayscale field of tangled radiating thread-like strokes forming star-shaped clusters",
       "src": "img/reas-begins-process-compendium-series-2004-2014.jpg",
       "cap": "",
       "credit": "Courtesy of Casey Reas.",
@@ -5340,7 +5365,7 @@
   },
   "twenty-six-visions-of-hildegarde-by-roman-verostko": {
     "body": [
-      "Twenty-Six Visions of Hildegarde by <a href=\"https://www.lerandom.art/subjects/roman-verostko\">Roman Verostko</a> the pioneering Algorist who was deeply influenced by early twentieth-century abstractionists, was created for the <a href=\"https://www.lerandom.art/subjects/siggraph\">SIGGRAPH</a> 2004 Synaesthesia exhibition. This collection comprises pen-and-ink drawings enhanced with gold leaf, each measuring 25 by 33 inches. In this series, Verostko continues to explore the interface between digital procedures and artistic expression, using algorithms akin to his painting methods. These artworks are meticulously drawn using a pen plotter controlled by algorithms developed through Verostko’s Hodos program, manifesting complexity through code and encapsulating his lifelong engagement with algorithmic art."
+      "Twenty-Six Visions of Hildegarde by <a href=\"https://www.lerandom.art/subjects/roman-verostko\">Roman Verostko</a> the pioneering Algorist who was deeply influenced by early twentieth-century abstractionists, was created for the <a href=\"https://www.lerandom.art/subjects/siggraph\">SIGGRAPH</a> 2004 Synaesthesia exhibition. This collection comprises pen-and-ink drawings enhanced with gold leaf, each measuring 25 by 33 inches. In this series, Verostko continues to explore the interface between digital procedures and artistic expression, using <a href=\"https://www.lerandom.art/subjects/algorithms\">algorithms</a> akin to his painting methods. These artworks are meticulously drawn using a pen plotter controlled by algorithms developed through Verostko’s Hodos program, manifesting complexity through code and encapsulating his lifelong engagement with algorithmic art."
     ],
     "cite": [
       {
@@ -5349,6 +5374,7 @@
       }
     ],
     "img": {
+      "alt": "Verostko's Twenty-Six Visions of Hildegarde: grid of dense, symmetrical coloured-ink tangles with gold discs",
       "src": "img/twenty-six-visions-of-hildegarde-by-roman-verostko.jpg",
       "cap": "Verostko's Twenty-Six Visions of Hildegarde, twenty-six pen-plotter drawings in coloured ink laid out in a grid with four gold-leaf discs at the corners.",
       "credit": "Roman Verostko, Twenty-Six Visions of Hildegarde, 2004. ACM SIGGRAPH Art Show Archives.",
@@ -5453,7 +5479,7 @@
   },
   "eden-by-john-mccormack": {
     "body": [
-      "Eden is an interactive, self-generating, artificial ecosystem installation active from 2004–2012. McCormack created artificial creatures that inhabited a virtual world governed by minimal physics, seeking survival through adaptation and learning. These beings exhibited complex behaviors such as foraging, communication and hibernation in response to seasonal changes and human presence. Projected onto floating screens, the creatures interacted within a translucent, immersive space, blurring distinctions between reality and simulation. Audience interaction influences the ecosystem, as the presence of viewers sustains the creatures' food supply. Over time, a symbiotic relationship between audience and artwork emerges, shaping the evolution of the virtual ecosystem and highlighting the interconnectedness of art, technology and human engagement. The system was mentioned by Phil Galanter as a prime example of generative artificial life."
+      "Eden is an interactive, self-generating, artificial ecosystem installation active from 2004–2012. McCormack created artificial creatures that inhabited a virtual world governed by minimal physics, seeking survival through adaptation and learning. These beings exhibited complex behaviors such as foraging, communication and hibernation in response to seasonal changes and human presence. Projected onto floating screens, the creatures interacted within a translucent, immersive space, blurring distinctions between reality and simulation. Audience interaction influences the ecosystem, as the presence of viewers sustains the creatures' food supply. Over time, a symbiotic relationship between audience and artwork emerges, shaping the evolution of the virtual ecosystem and highlighting the interconnectedness of art, technology and human engagement. The system was mentioned by Phil Galanter as a prime example of generative <a href=\"https://www.lerandom.art/subjects/artificial-life\">artificial life</a>."
     ],
     "cite": [
       {
@@ -5462,6 +5488,7 @@
       }
     ],
     "img": {
+      "alt": "Silhouetted visitor before angled translucent screens glowing with blue projected cellular patterns, Eden",
       "src": "img/eden-by-john-mccormack.jpg",
       "cap": "An installation view of Jon McCormack's Eden at ACMI in 2004, showing the translucent screens on which the artificial ecosystem was projected.",
       "credit": "Jon McCormack, Eden, 2004. Installation view, Australian Centre for the Moving Image, SenseSurround, 7 October - 7 November 2004. Courtesy the artist.",
@@ -5609,7 +5636,7 @@
   },
   "zach-lieberman-releases-openframeworks-v0-01": {
     "body": [
-      "With a decade titled the “Tooling Era,” tools clearly played a critical role in this decade’s impact on the history of generative thinking and art. Along with <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a>, that was developed at MIT’s ACG by <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> and <a href=\"https://www.lerandom.art/subjects/ben-fry\">Ben Fry</a> under <a href=\"https://www.lerandom.art/subjects/john-maeda\">John Maeda</a>, openFrameworks was developed a few years later by <a href=\"https://www.lerandom.art/subjects/zach-lieberman\">Zach Lieberman</a>, who had spent much of his early career collaborating with former Parsons professor <a href=\"https://www.lerandom.art/subjects/golan-levin\">Golan Levin</a>. Levin also studied at ACG under Maeda. On August 3, 2005, Zach Lieberman released OpenFrameworks v0.01; Theodore Watson and <a href=\"https://www.lerandom.art/subjects/arturo-castro\">Arturo Castro</a> joined afterwards. To this day, the release of openFrameworks represents a significant move to bolster the creative coding community. It’s an open-source C++ toolkit designed to streamline the creative process. The comprehensive framework integrates several widely used libraries, facilitating tasks in graphics, audio, video and computer vision across multiple platforms, including Windows, OSX, Linux, iOS and Android. The language aims at making coding more accessible and fostering a collaborative and extensible development environment focused on inclusion. Like Processing, the software is open source, ensuring an open ecosystem of learning and sharing, which is foundational to the history of computing outside of military laboratories."
+      "With a decade titled the “Tooling Era,” tools clearly played a critical role in this decade’s impact on the history of generative thinking and art. Along with <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a>, that was developed at MIT’s ACG by <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> and <a href=\"https://www.lerandom.art/subjects/ben-fry\">Ben Fry</a> under <a href=\"https://www.lerandom.art/subjects/john-maeda\">John Maeda</a>, <a href=\"https://www.lerandom.art/subjects/openframeworks\">openFrameworks</a> was developed a few years later by <a href=\"https://www.lerandom.art/subjects/zach-lieberman\">Zach Lieberman</a>, who had spent much of his early career collaborating with former Parsons professor <a href=\"https://www.lerandom.art/subjects/golan-levin\">Golan Levin</a>. Levin also studied at ACG under Maeda. On August 3, 2005, Zach Lieberman released OpenFrameworks v0.01; Theodore Watson and <a href=\"https://www.lerandom.art/subjects/arturo-castro\">Arturo Castro</a> joined afterwards. To this day, the release of openFrameworks represents a significant move to bolster the <a href=\"https://www.lerandom.art/subjects/creative-coding\">creative coding</a> community. It’s an open-source C++ toolkit designed to streamline the creative process. The comprehensive framework integrates several widely used libraries, facilitating tasks in graphics, audio, video and computer vision across multiple platforms, including Windows, OSX, Linux, iOS and Android. The language aims at making coding more accessible and fostering a collaborative and extensible development environment focused on inclusion. Like <a href=\"https://www.lerandom.art/subjects/processing\">Processing</a>, the software is <a href=\"https://www.lerandom.art/subjects/open-source\">open source</a>, ensuring an open ecosystem of learning and sharing, which is foundational to the history of computing outside of military laboratories."
     ],
     "cite": [
       {
@@ -5618,6 +5645,7 @@
       }
     ],
     "img": {
+      "alt": "Software panels showing a hand silhouette, background subtraction, and blob detection outline",
       "src": "img/zach-lieberman-releases-openframeworks-v0-01.png",
       "cap": "",
       "credit": "Wikipedia. 2024. \"OpenFrameworks.\" Wikimedia Foundation. Last modified April 9, 2024. <a href=\"https://en.wikipedia.org/wiki/OpenFrameworks\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>.",
@@ -5951,7 +5979,7 @@
   },
   "soft-cinema-by-lev-manovich": {
     "body": [
-      "As included in <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>’s course 50 Years of Software Artists at <a href=\"https://www.lerandom.art/subjects/ucla\">UCLA</a>, Manovich’s Soft Cinema is an innovative exploration into the dynamics of digital cinema. This project emerged from Manovich’s collaborations with <a href=\"https://www.lerandom.art/subjects/andreas-kratky\">Andreas Kratky</a> and notable contributors across various fields, including music by <a href=\"https://www.lerandom.art/subjects/dj-spooky\">DJ Spooky</a> and Scanner. Soft Cinema utilizes algorithms to edit media dynamically, creating an ever-changing narrative from a database of video clips. The software, written in Lingo, sorts clips based on both content and formal attributes such as color and movement, allowing the creation of varied cinematic sequences. This approach exemplifies a shift towards a database-driven narrative, which Manovich has termed 'Soft(ware) Cinema,' reflecting a new era where software and human inputs merge to generate unique cinematic experiences. This project highlights a pivotal moment in the evolution of digital and software media, offering a profound insight into the possibilities of algorithmic creativity beyond static imagery."
+      "As included in <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>’s course 50 Years of Software Artists at <a href=\"https://www.lerandom.art/subjects/ucla\">UCLA</a>, Manovich’s Soft Cinema is an innovative exploration into the dynamics of digital cinema. This project emerged from Manovich’s collaborations with <a href=\"https://www.lerandom.art/subjects/andreas-kratky\">Andreas Kratky</a> and notable contributors across various fields, including music by <a href=\"https://www.lerandom.art/subjects/dj-spooky\">DJ Spooky</a> and Scanner. Soft Cinema utilizes <a href=\"https://www.lerandom.art/subjects/algorithms\">algorithms</a> to edit media dynamically, creating an ever-changing narrative from a database of video clips. The software, written in Lingo, sorts clips based on both content and formal attributes such as color and movement, allowing the creation of varied cinematic sequences. This approach exemplifies a shift towards a database-driven narrative, which Manovich has termed 'Soft(ware) Cinema,' reflecting a new era where software and human inputs merge to generate unique cinematic experiences. This project highlights a pivotal moment in the evolution of digital and software media, offering a profound insight into the possibilities of algorithmic creativity beyond static imagery."
     ],
     "cite": [
       {
@@ -5962,7 +5990,7 @@
     "img": {
       "cap": "Lev Manovich and Andreas Kratky, Mission to Earth (Soft Cinema Edition), 2003–2004. Multi-frame imagery from the project included in Soft Cinema: Navigating the Database (2005).",
       "credit": "Lev Manovich and Andreas Kratky. Source: Lev Manovich’s project archive. The site licenses content created by Lev Manovich under CC BY-NC-SA. <a href=\"https://manovich.net/index.php/art/mission-to-earth\">Image source</a>.",
-      "alt": "A multi-frame Soft Cinema composition combines a car window, ship interiors, abstract lines and a woman behind a rectangular window.",
+      "alt": "Four-panel grid of video frames and colour blocks: rainy car window, porthole rooms, tangled lines, office window",
       "sourceUrl": "https://manovich.net/index.php/art/mission-to-earth",
       "creator": [
         "Lev Manovich",
@@ -6080,7 +6108,7 @@
   },
   "monster-movie-by-takeshi-murata": {
     "body": [
-      "In the collection of <a href=\"https://www.lerandom.art/subjects/sfmoma\">SFMOMA</a> and included in <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>’s course 50 Years of Software Artists at <a href=\"https://www.lerandom.art/subjects/ucla\">UCLA</a>, <a href=\"https://www.lerandom.art/subjects/takeshi-murata\">Takeshi Murata</a>’s sub-four-minute digital video, Monster Movie was a revolutionary work in digital video art. It transformed a snippet from the 1981 B movie Caveman into a dynamic, disintegrating spectacle of digital forms. To achieve this, Murata applied datamoshing—a technique where he manipulates video compression—to dissolve and mutate traditional film imagery into a fluid mosaic of color and shape. This piece, characterized by its aggressive audio track and ceaseless visual transformation, critiques and manipulates the digital medium itself. Murata’s work exemplified a shift from static cinematic narratives to dynamic digital realms, challenging viewers' perceptions of continuity and identity in our digitizing times. Through Monster Movie, Murata both reflects and distorts the visual music and abstraction traditions in film, illustrating the transformative potential of digital tools while commenting on the ephemeral nature of digital identity."
+      "In the collection of <a href=\"https://www.lerandom.art/subjects/sfmoma\">SFMOMA</a> and included in <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>’s course 50 Years of Software Artists at <a href=\"https://www.lerandom.art/subjects/ucla\">UCLA</a>, <a href=\"https://www.lerandom.art/subjects/takeshi-murata\">Takeshi Murata</a>’s sub-four-minute digital video, Monster Movie was a revolutionary work in digital <a href=\"https://www.lerandom.art/subjects/video-art\">video art</a>. It transformed a snippet from the 1981 B movie Caveman into a dynamic, disintegrating spectacle of digital forms. To achieve this, Murata applied datamoshing—a technique where he manipulates video compression—to dissolve and mutate traditional film imagery into a fluid mosaic of color and shape. This piece, characterized by its aggressive audio track and ceaseless visual transformation, critiques and manipulates the digital medium itself. Murata’s work exemplified a shift from static cinematic narratives to dynamic digital realms, challenging viewers' perceptions of continuity and identity in our digitizing times. Through Monster Movie, Murata both reflects and distorts the visual music and abstraction traditions in film, illustrating the transformative potential of digital tools while commenting on the ephemeral nature of digital identity."
     ],
     "cite": [
       {
@@ -6089,6 +6117,7 @@
       }
     ],
     "img": {
+      "alt": "Still from Takeshi Murata's Monster Movie: datamoshed frames dissolving into colourful blocks and smears",
       "src": "img/monster-movie-by-takeshi-murata.jpg",
       "cap": "A still from Takeshi Murata's Monster Movie showing the datamoshed frames of the 1981 film Caveman dissolving into blocks and smears of colour.",
       "credit": "Takeshi Murata, Monster Movie, 2005 (still). San Francisco Museum of Modern Art, gift of Christopher Vroom.",
@@ -6206,7 +6235,7 @@
   },
   "part-object-part-sculpture-columbus-ohio": {
     "body": [
-      "At Columbus, <a href=\"https://www.lerandom.art/subjects/ohio\">Ohio</a>’s Wexner Center for the Arts, Part Object Part Sculpture, organized by curator <a href=\"https://www.lerandom.art/subjects/helen-molesworth\">Helen Molesworth</a>, presented a compelling rethinking of post-World War II sculpture that highlighted the work of Duchamp’s Conceptualism in the art historical canon. By making room for Duchamp and Conceptualism, Molesworth also ties in the history of generative art with Duchamp as a common ancestor of electronic sculpture, randomness in art, the material-generative, minimalism, cybernetic (feedback loops in art) and more. Focusing on the tactile and artisanal aspects of <a href=\"https://www.lerandom.art/subjects/marcel-duchamp\">Marcel Duchamp</a>’s later works, the show reevaluated the notion of the “Duchampian” beyond the ready-made, emphasizing the handcrafted, erotic and absurd elements. Molesworth positioned artists like <a href=\"https://www.lerandom.art/subjects/louise-bourgeois\">Louise Bourgeois</a>, <a href=\"https://www.lerandom.art/subjects/yayoi-kusama\">Yayoi Kusama</a>, and <a href=\"https://www.lerandom.art/subjects/eva-hesse\">Eva Hesse</a> not as peripheral figures but as central to a new narrative that highlighted materiality, memory and form over institutional critique."
+      "At Columbus, <a href=\"https://www.lerandom.art/subjects/ohio\">Ohio</a>’s Wexner Center for the Arts, Part Object Part Sculpture, organized by curator <a href=\"https://www.lerandom.art/subjects/helen-molesworth\">Helen Molesworth</a>, presented a compelling rethinking of post-World War II sculpture that highlighted the work of Duchamp’s Conceptualism in the art historical canon. By making room for Duchamp and Conceptualism, Molesworth also ties in the history of <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a> with Duchamp as a common ancestor of electronic sculpture, randomness in art, the material-generative, minimalism, cybernetic (feedback loops in art) and more. Focusing on the tactile and artisanal aspects of <a href=\"https://www.lerandom.art/subjects/marcel-duchamp\">Marcel Duchamp</a>’s later works, the show reevaluated the notion of the “Duchampian” beyond the ready-made, emphasizing the handcrafted, erotic and absurd elements. Molesworth positioned artists like <a href=\"https://www.lerandom.art/subjects/louise-bourgeois\">Louise Bourgeois</a>, <a href=\"https://www.lerandom.art/subjects/yayoi-kusama\">Yayoi Kusama</a>, and <a href=\"https://www.lerandom.art/subjects/eva-hesse\">Eva Hesse</a> not as peripheral figures but as central to a new narrative that highlighted materiality, memory and form over institutional critique."
     ],
     "cite": [
       {
@@ -6215,6 +6244,7 @@
       }
     ],
     "img": {
+      "alt": "Catalogue cover for Part Object Part Sculpture: a round white spiral form with a red rim on white",
       "src": "img/part-object-part-sculpture-columbus-ohio.jpg",
       "cap": "The cover of the exhibition catalogue for Part Object Part Sculpture, Helen Molesworth's 2005 exhibition at the Wexner Center for the Arts.",
       "credit": "Part Object Part Sculpture, ed. Helen Molesworth (Columbus: Wexner Center for the Arts / Penn State University Press, 2005). Cover image via Open Library.",
@@ -6353,7 +6383,7 @@
   },
   "seven-easy-pieces-by-marina-abramovic-at-the-guggenheim": {
     "body": [
-      "In November 2005, <a href=\"https://www.lerandom.art/subjects/marina-abramovic\">Marina Abramović</a> presented Seven Easy Pieces at the <a href=\"https://www.lerandom.art/subjects/solomon-r-guggenheim-museum\">Solomon R. Guggenheim Museum</a> in <a href=\"https://www.lerandom.art/subjects/new-york\">New York</a>. This exhibition featured seven consecutive nights of performance, reenacting legendary works by pioneering performance artists alongside one of Abramović’s own pieces. Each night, from 5 pm to 12 am, she explored various themes, from physical limits to intimate connections with the audience. The performances included <a href=\"https://www.lerandom.art/subjects/bruce-nauman\">Bruce Nauman</a>’s Body Pressure, <a href=\"https://www.lerandom.art/subjects/vito-acconci\">Vito Acconci</a>’s Seedbed and <a href=\"https://www.lerandom.art/subjects/joseph-beuys\">Joseph Beuys</a>' How to Explain Pictures to a Dead Hare, showcasing a range from provocative intimacy to physical endurance and pain. This work from Abramović carries on the tradition of <a href=\"https://www.lerandom.art/subjects/fluxus\">Fluxus</a> artists and can be seen as performative generative art."
+      "In November 2005, <a href=\"https://www.lerandom.art/subjects/marina-abramovic\">Marina Abramović</a> presented Seven Easy Pieces at the <a href=\"https://www.lerandom.art/subjects/solomon-r-guggenheim-museum\">Solomon R. Guggenheim Museum</a> in <a href=\"https://www.lerandom.art/subjects/new-york\">New York</a>. This exhibition featured seven consecutive nights of performance, reenacting legendary works by pioneering performance artists alongside one of Abramović’s own pieces. Each night, from 5 pm to 12 am, she explored various themes, from physical limits to intimate connections with the audience. The performances included <a href=\"https://www.lerandom.art/subjects/bruce-nauman\">Bruce Nauman</a>’s Body Pressure, <a href=\"https://www.lerandom.art/subjects/vito-acconci\">Vito Acconci</a>’s Seedbed and <a href=\"https://www.lerandom.art/subjects/joseph-beuys\">Joseph Beuys</a>' How to Explain Pictures to a Dead Hare, showcasing a range from provocative intimacy to physical endurance and pain. This work from Abramović carries on the tradition of <a href=\"https://www.lerandom.art/subjects/fluxus\">Fluxus</a> artists and can be seen as performative <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a>."
     ],
     "cite": [
       {
@@ -6493,7 +6523,7 @@
   },
   "marius-watz-begins-generator-x-project": {
     "body": [
-      "In an important early attempt at digital preservation, <a href=\"https://www.lerandom.art/subjects/marius-watz\">Marius Watz</a> began his generator.x project documenting generative art in collaboration with <a href=\"https://www.lerandom.art/subjects/atle-barcley\">Atle Barcley</a>, director of Atelier Nord. This curatorial platform researches the use of generative strategies and software processes across digital art, architecture and design. It championed and supported this new generation of creatives who use code as a medium for artistic expression that was increasing after the introduction of the tools of the decade, including <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a> and <a href=\"m/zach-lieberman-releases-openframeworks-v0-01.html\" data-moment=\"zach-lieberman-releases-openframeworks-v0-01\">openFrameworks</a>. The project kicked off with Generator.x 1.0: Art from Code, which featured a conference and a touring exhibition starting in Oslo in September 2005, culminating in December 2007. The initiative reflects a commitment to exploring the frontiers of digital creativity through generative methodologies."
+      "In an important early attempt at digital preservation, <a href=\"https://www.lerandom.art/subjects/marius-watz\">Marius Watz</a> began his generator.x project documenting <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a> in collaboration with <a href=\"https://www.lerandom.art/subjects/atle-barcley\">Atle Barcley</a>, director of Atelier Nord. This curatorial platform researches the use of generative strategies and software processes across digital art, architecture and design. It championed and supported this new generation of creatives who use code as a medium for artistic expression that was increasing after the introduction of the tools of the decade, including <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a> and <a href=\"m/zach-lieberman-releases-openframeworks-v0-01.html\" data-moment=\"zach-lieberman-releases-openframeworks-v0-01\">openFrameworks</a>. The project kicked off with Generator.x 1.0: Art from Code, which featured a conference and a touring exhibition starting in Oslo in September 2005, culminating in December 2007. The initiative reflects a commitment to exploring the frontiers of digital creativity through generative methodologies."
     ],
     "cite": [
       {
@@ -6502,6 +6532,7 @@
       }
     ],
     "img": {
+      "alt": "Radial abstract pattern of fine lines in yellow, magenta, cyan and dark green spiraling to a center",
       "src": "img/marius-watz-begins-generator-x-project.jpg",
       "cap": "",
       "credit": "Credit of Marius Watz.",
@@ -6647,7 +6678,7 @@
   },
   "atom-by-christopher-bauder": {
     "body": [
-      "This large-scale audio-visual experience by <a href=\"https://www.lerandom.art/subjects/christopher-bauder\">Christopher Bauder</a> and <a href=\"https://www.lerandom.art/subjects/robert-henke\">Robert Henke</a> used algorithmic choreography to transform a room into a dynamic, immersive environment. The work references and continues the legacy of kinetic sound and light installations that date back to Duchamp, <a href=\"https://www.lerandom.art/subjects/laszlo-moholy-nagy\">László Moholy-Nagy</a> and the various <a href=\"https://www.lerandom.art/subjects/new-tendencies\">New Tendencies</a> groups. These were critical predecessors to digital art, which <a href=\"https://www.lerandom.art/subjects/frank-popper\">Frank Popper</a> highlights extensively in his book Art of the Electronic Age. For this work, an ensemble of white, self-illuminated balloons, suspended like the atoms of a complex molecule, floats throughout the space. These helium-filled balloons are connected to a computer-controlled system that adjusts their height and internal illumination through dimmable, super-bright LEDs, turning each sphere into a pixel within a three-dimensional matrix. The installation is accompanied by a four-channel sound system that emits deep, evolving noises synchronized with the rhythmic movement and changing patterns of light."
+      "This large-scale audio-visual experience by <a href=\"https://www.lerandom.art/subjects/christopher-bauder\">Christopher Bauder</a> and <a href=\"https://www.lerandom.art/subjects/robert-henke\">Robert Henke</a> used algorithmic choreography to transform a room into a dynamic, immersive environment. The work references and continues the legacy of kinetic sound and light installations that date back to Duchamp, <a href=\"https://www.lerandom.art/subjects/laszlo-moholy-nagy\">László Moholy-Nagy</a> and the various <a href=\"https://www.lerandom.art/subjects/new-tendencies\">New Tendencies</a> groups. These were critical predecessors to <a href=\"https://www.lerandom.art/subjects/digital-art\">digital art</a>, which <a href=\"https://www.lerandom.art/subjects/frank-popper\">Frank Popper</a> highlights extensively in his book Art of the Electronic Age. For this work, an ensemble of white, self-illuminated balloons, suspended like the atoms of a complex molecule, floats throughout the space. These helium-filled balloons are connected to a computer-controlled system that adjusts their height and internal illumination through dimmable, super-bright <a href=\"https://www.lerandom.art/subjects/leds\">LEDs</a>, turning each sphere into a pixel within a three-dimensional matrix. The installation is accompanied by a four-channel sound system that emits deep, evolving noises synchronized with the rhythmic movement and changing patterns of light."
     ],
     "cite": [
       {
@@ -6656,6 +6687,7 @@
       }
     ],
     "img": {
+      "alt": "Christopher Bauder and Robert Henke's ATOM: glowing white balloons above a light grid, audience in red light",
       "src": "img/atom-by-christopher-bauder.jpg",
       "cap": "An installation view of ATOM, with the helium balloons lit from within by LEDs and suspended in a computer-controlled three-dimensional matrix above the audience.",
       "credit": "Christopher Bauder and Robert Henke, ATOM. Courtesy WHITEvoid, whitevoid.com.",
@@ -6797,6 +6829,7 @@
       }
     ],
     "img": {
+      "alt": "Blue pen sketch on yellow legal pad of a 'Status' web interface with text box, 'set' button and options",
       "src": "img/twitter-founded.jpg",
       "cap": "",
       "credit": "Wikipedia. 2024. \"Twitter.\" Wikimedia Foundation. Last modified April 28, 2024. <a href=\"https://en.wikipedia.org/wiki/Twitter\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>.",
@@ -6940,7 +6973,7 @@
   },
   "christa-sommerer-and-laurent-mignonneaus-life-writer": {
     "body": [
-      "<a href=\"https://www.lerandom.art/subjects/christa-sommerer\">Christa Sommerer</a> and <a href=\"https://www.lerandom.art/subjects/laurent-mignonneau\">Laurent Mignonneau</a>’s Life Writer, an excellent example of mid-2000s cybernetic—or feedback loop-based art—that was artificial life in nature. It was exhibited for the first time in 2006 at the Museum of Contemporary Art Cleveland (<a href=\"https://www.lerandom.art/subjects/moca\">MOCA</a>). It continues to be exhibited in museums around the world as of 2024. The work carries on the tradition of Duchamp from the early-twentieth century, cybernetics in the mid-twentieth century and evolutionary art of the later-twentieth century. It thus connects these movements as well to contemporary AI art that’s based on feedback loops, evolutionary algorithms and self-learning. Sommerer and Mignonneau’s interactive installation Life Writer visually merged the nostalgic charm of a vintage typewriter with advanced artificial life technology. Debuting as a poignant fusion of analog and digital realms, the artwork transforms the simple act of typing into a generative process of life creation. When users type, the characters are projected onto paper, morphing into dynamic, black-and-white creatures upon hitting the carriage return. These creatures, governed by genetic algorithms derived from the duo’s earlier work, Life Spacies, exhibit behaviors influenced by the textual “genetic code” input by the user. In this digital ecosystem, the artificial life forms must consume text to survive, growing and reproducing as they interact with newly typed characters. Users can manipulate these creatures using the typewriter’s scroll, adding a tactile dimension to the digital interaction. Life Writer not only revisits the history of text processing but also invites users to ponder the creation of life and interaction within an emergent system."
+      "<a href=\"https://www.lerandom.art/subjects/christa-sommerer\">Christa Sommerer</a> and <a href=\"https://www.lerandom.art/subjects/laurent-mignonneau\">Laurent Mignonneau</a>’s Life Writer, an excellent example of mid-2000s cybernetic—or feedback loop-based art—that was <a href=\"https://www.lerandom.art/subjects/artificial-life\">artificial life</a> in nature. It was exhibited for the first time in 2006 at the Museum of Contemporary Art Cleveland (<a href=\"https://www.lerandom.art/subjects/moca\">MOCA</a>). It continues to be exhibited in museums around the world as of 2024. The work carries on the tradition of Duchamp from the early-twentieth century, cybernetics in the mid-twentieth century and evolutionary art of the later-twentieth century. It thus connects these movements as well to contemporary AI art that’s based on feedback loops, <a href=\"https://www.lerandom.art/subjects/evolutionary-algorithms\">evolutionary algorithms</a> and self-learning. Sommerer and Mignonneau’s interactive installation Life Writer visually merged the nostalgic charm of a vintage typewriter with advanced artificial life technology. Debuting as a poignant fusion of analog and digital realms, the artwork transforms the simple act of typing into a generative process of life creation. When users type, the characters are projected onto paper, morphing into dynamic, black-and-white creatures upon hitting the carriage return. These creatures, governed by <a href=\"https://www.lerandom.art/subjects/genetic-algorithms\">genetic algorithms</a> derived from the duo’s earlier work, Life Spacies, exhibit behaviors influenced by the textual “genetic code” input by the user. In this digital ecosystem, the artificial life forms must consume text to survive, growing and reproducing as they interact with newly typed characters. Users can manipulate these creatures using the typewriter’s scroll, adding a tactile dimension to the digital interaction. Life Writer not only revisits the history of text processing but also invites users to ponder the creation of life and interaction within an emergent system."
     ],
     "cite": [
       {
@@ -6949,6 +6982,7 @@
       }
     ],
     "img": {
+      "alt": "Life Writer: vintage black typewriter with a sheet of paper covered in a swarm of small black creatures",
       "src": "img/christa-sommerer-and-laurent-mignonneaus-life-writer.jpg",
       "cap": "",
       "credit": "Christa Sommerer and Laurent Mignonneau, Life Writer, 2006. Interactive installation commissioned by the Museum of Contemporary Art Cleveland (MOCA); collections of Itaú Cultural, Brazil, and ZKM Karlsruhe. © 2006 Laurent Mignonneau and Christa Sommerer. <a href=\"https://interface.ufg.ac.at/christa-laurent/LifeWriter.html\">Image source</a>.",
@@ -7252,7 +7286,7 @@
     "img": {
       "cap": "Cover of Siegfried Zielinski’s Deep Time of the Media: Toward an Archaeology of Hearing and Seeing by Technical Means, translated by Gloria Custance. MIT Press paperback edition, 2008; English hardcover first published in 2006.",
       "credit": "Siegfried Zielinski; translation by Gloria Custance. The MIT Press. Cover image supplied by Penguin Books New Zealand, ISBN 9780262740326. <a href=\"https://www.penguin.co.nz/books/deep-time-of-the-media-9780262740326\">Image source</a>.",
-      "alt": "Dark brown Deep Time of the Media cover with a circular instrument motif, green title lettering and the author and translator names below.",
+      "alt": "Dark book cover of Deep Time of the Media with a half-lit sun-like circular motif and green title",
       "sourceUrl": "https://www.penguin.co.nz/books/deep-time-of-the-media-9780262740326",
       "creator": [
         "Siegfried Zielinski"
@@ -7336,7 +7370,7 @@
   },
   "google-buys-youtube": {
     "body": [
-      "<a href=\"https://www.lerandom.art/subjects/youtube\">YouTube</a> was created by three former <a href=\"https://www.lerandom.art/subjects/paypal\">PayPal</a> employees and bought by <a href=\"https://www.lerandom.art/subjects/google\">Google</a>, announced 9 October and completed 13 November 2006, for $1.65 billion in what some have described as “<a href=\"https://www.theringer.com/2016/10/10/16042354/google-youtube-acquisition-10-years-tech-deals-69fdbe1c8a06\" target=\"_blank\" rel=\"noopener\">the best tech deal ever.</a>” The move signifies for the sake of this timeline, both the peak of Web2’s dominance and the ever-continuing rise of mass-media art. This precondition for NFTs, according to <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>, began in earnest with the appearance of digital media devices in the home, like early video and music players (e.g., VHS and tape players) in the late ’70s and early ’80s. The purchase of YouTube by Google signified another giant step in mass media art’s decades-long development."
+      "<a href=\"https://www.lerandom.art/subjects/youtube\">YouTube</a> was created by three former <a href=\"https://www.lerandom.art/subjects/paypal\">PayPal</a> employees and bought by <a href=\"https://www.lerandom.art/subjects/google\">Google</a>, announced 9 October and completed 13 November 2006, for $1.65 billion in what some have described as “<a href=\"https://www.theringer.com/2016/10/10/16042354/google-youtube-acquisition-10-years-tech-deals-69fdbe1c8a06\" target=\"_blank\" rel=\"noopener\">the best tech deal ever.</a>” The move signifies for the sake of this timeline, both the peak of Web2’s dominance and the ever-continuing rise of mass-media art. This precondition for <a href=\"https://www.lerandom.art/subjects/nfts\">NFTs</a>, according to <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>, began in earnest with the appearance of digital media devices in the home, like early video and music players (e.g., VHS and tape players) in the late ’70s and early ’80s. The purchase of YouTube by Google signified another giant step in mass media art’s decades-long development."
     ],
     "cite": [
       {
@@ -7345,6 +7379,7 @@
       }
     ],
     "img": {
+      "alt": "YouTube logo: \"You\" in black letters beside \"Tube\" in white on a red rounded rectangle",
       "src": "img/google-buys-youtube.jpg",
       "cap": "",
       "credit": "Wikipedia. 2024. \"YouTube.\" Wikimedia Foundation. Last modified April 30, 2024. <a href=\"https://en.wikipedia.org/wiki/YouTube\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>.",
@@ -7446,6 +7481,7 @@
       }
     ],
     "img": {
+      "alt": "Open book spread: title text on left, overlapping black and red line letters spelling SZOMBATHELY and VIRÁG",
       "src": "img/16-etudes-sur-les-origines-de-blum-by-vera-molnar.jpg",
       "cap": "The title-page spread of Vera Molnar's 16 Etudes sur les origines de Blum, with the line '... my name is Virag Lipoti of Szombathely ...' facing her overlaid lettering of SZOMBATHELY and VIRAG.",
       "credit": "Vera Molnar, 16 Etudes sur les origines de Blum, 2006. Collection Leo J. M. Koenders, jamesjoycesnotgreen.com.",
@@ -7541,7 +7577,7 @@
   },
   "20th-century-computer-art-at-tama-art-university-museum-tokyo": {
     "body": [
-      "The rise of educational tooling for artists in the first half of the decade, as we have covered, such as <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a> and <a href=\"m/zach-lieberman-releases-openframeworks-v0-01.html\" data-moment=\"zach-lieberman-releases-openframeworks-v0-01\">openFrameworks</a> served the main purpose of making it easier for artists to create works using software. This increased accessibility—also due to the maturing Internet—led to increased interest, artistic output and, ultimately, academic and institutional importance, as demonstrated by this exhibition at a museum associated with a university. The show closely examined and reevaluated the history of computer art and is especially important in celebrating the contribution of many Japanese artists as well as indicating a rising level of interest in the country and the region. 20th Century Computer Art: Beginnings and Developments. The Work and Thought of Pioneers and Contemporary Practitioners of Algorithmic Art at Tama Art University Museum in <a href=\"https://www.lerandom.art/subjects/tokyo\">Tokyo</a>, <a href=\"https://www.lerandom.art/subjects/japan\">Japan</a>, displayed over 250 works combining historic and contemporary computer art mostly from Japan. Contributing Japanese artists included <a href=\"https://www.lerandom.art/subjects/hiroshi-kawano\">Hiroshi Kawano</a>, Eiichi Izuhara, <a href=\"https://www.lerandom.art/subjects/koji-kusabuka\">Koji Kusabuka</a>, <a href=\"https://www.lerandom.art/subjects/chihaya-shimomura\">Chihaya Shimomura</a>, <a href=\"https://www.lerandom.art/subjects/akihiro-kubota\">Akihiro Kubota</a>, Computer Technique Group, <a href=\"https://www.lerandom.art/subjects/masao-kohmura\">Masao Kohmura</a>, <a href=\"https://www.lerandom.art/subjects/yoshiyuki-abe\">Yoshiyuki Abe</a> and <a href=\"https://www.lerandom.art/subjects/atsuhiko-iwakoshi\">Atsuhiko Iwakoshi</a>. International contributors were <a href=\"https://www.lerandom.art/subjects/georg-nees\">Georg Nees</a>, <a href=\"https://www.lerandom.art/subjects/herbert-w-franke\">Herbert W. Franke</a>, <a href=\"https://www.lerandom.art/subjects/frieder-nake\">Frieder Nake</a>, <a href=\"https://www.lerandom.art/subjects/eugen-roth\">Eugen Roth</a>, <a href=\"https://www.lerandom.art/subjects/wolfgang-kiwus\">Wolfgang Kiwus</a>, <a href=\"https://www.lerandom.art/subjects/a-michael-noll\">A. Michael Noll</a>, <a href=\"https://www.lerandom.art/subjects/harold-cohen\">Harold Cohen</a>, <a href=\"https://www.lerandom.art/subjects/manfred-mohr\">Manfred Mohr</a>, <a href=\"https://www.lerandom.art/subjects/edward-zajec\">Edward Zajec</a>, <a href=\"https://www.lerandom.art/subjects/roman-verostko\">Roman Verostko</a>, Vera Molnár, <a href=\"https://www.lerandom.art/subjects/erwin-steller\">Erwin Steller</a>, <a href=\"https://www.lerandom.art/subjects/herve-huitric\">Hervé Huitric</a>, <a href=\"https://www.lerandom.art/subjects/monique-nahas\">Monique Nahas</a> and <a href=\"https://www.lerandom.art/subjects/manuel-barbadillo\">Manuel Barbadillo</a>."
+      "The rise of educational tooling for artists in the first half of the decade, as we have covered, such as <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a> and <a href=\"m/zach-lieberman-releases-openframeworks-v0-01.html\" data-moment=\"zach-lieberman-releases-openframeworks-v0-01\">openFrameworks</a> served the main purpose of making it easier for artists to create works using software. This increased accessibility—also due to the maturing Internet—led to increased interest, artistic output and, ultimately, academic and institutional importance, as demonstrated by this exhibition at a museum associated with a university. The show closely examined and reevaluated the history of <a href=\"https://www.lerandom.art/subjects/computer-art\">computer art</a> and is especially important in celebrating the contribution of many Japanese artists as well as indicating a rising level of interest in the country and the region. 20th Century Computer Art: Beginnings and Developments. The Work and Thought of Pioneers and Contemporary Practitioners of Algorithmic Art at Tama Art University Museum in <a href=\"https://www.lerandom.art/subjects/tokyo\">Tokyo</a>, <a href=\"https://www.lerandom.art/subjects/japan\">Japan</a>, displayed over 250 works combining historic and contemporary computer art mostly from Japan. Contributing Japanese artists included <a href=\"https://www.lerandom.art/subjects/hiroshi-kawano\">Hiroshi Kawano</a>, Eiichi Izuhara, <a href=\"https://www.lerandom.art/subjects/koji-kusabuka\">Koji Kusabuka</a>, <a href=\"https://www.lerandom.art/subjects/chihaya-shimomura\">Chihaya Shimomura</a>, <a href=\"https://www.lerandom.art/subjects/akihiro-kubota\">Akihiro Kubota</a>, Computer Technique Group, <a href=\"https://www.lerandom.art/subjects/masao-kohmura\">Masao Kohmura</a>, <a href=\"https://www.lerandom.art/subjects/yoshiyuki-abe\">Yoshiyuki Abe</a> and <a href=\"https://www.lerandom.art/subjects/atsuhiko-iwakoshi\">Atsuhiko Iwakoshi</a>. International contributors were <a href=\"https://www.lerandom.art/subjects/georg-nees\">Georg Nees</a>, <a href=\"https://www.lerandom.art/subjects/herbert-w-franke\">Herbert W. Franke</a>, <a href=\"https://www.lerandom.art/subjects/frieder-nake\">Frieder Nake</a>, <a href=\"https://www.lerandom.art/subjects/eugen-roth\">Eugen Roth</a>, <a href=\"https://www.lerandom.art/subjects/wolfgang-kiwus\">Wolfgang Kiwus</a>, <a href=\"https://www.lerandom.art/subjects/a-michael-noll\">A. Michael Noll</a>, <a href=\"https://www.lerandom.art/subjects/harold-cohen\">Harold Cohen</a>, <a href=\"https://www.lerandom.art/subjects/manfred-mohr\">Manfred Mohr</a>, <a href=\"https://www.lerandom.art/subjects/edward-zajec\">Edward Zajec</a>, <a href=\"https://www.lerandom.art/subjects/roman-verostko\">Roman Verostko</a>, Vera Molnár, <a href=\"https://www.lerandom.art/subjects/erwin-steller\">Erwin Steller</a>, <a href=\"https://www.lerandom.art/subjects/herve-huitric\">Hervé Huitric</a>, <a href=\"https://www.lerandom.art/subjects/monique-nahas\">Monique Nahas</a> and <a href=\"https://www.lerandom.art/subjects/manuel-barbadillo\">Manuel Barbadillo</a>."
     ],
     "cite": [
       {
@@ -7550,6 +7586,7 @@
       }
     ],
     "img": {
+      "alt": "Concrete building with curved arched glass walls among trees under a blue sky",
       "src": "img/20th-century-computer-art-at-tama-art-university-museum-tokyo.jpg",
       "cap": "",
       "credit": "Wikipedia. 2024. \"Tama Art University.\" Wikimedia Foundation. Last modified March 6, 2024. <a href=\"https://en.wikipedia.org/wiki/Tama_Art_University\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>.",
@@ -7844,6 +7881,7 @@
       }
     ],
     "img": {
+      "alt": "Two visitors watch a wall-mounted screen showing orange 3D figures and data panels in a brick gallery",
       "src": "img/daito-manabe-launches-rhizomatiks.jpg",
       "cap": "",
       "credit": "\"<a href=\"https://www.flickr.com/photos/36085842@N06/51462472006\" target=\"_blank\" rel=\"noopener\">flickr.com</a> by <a href=\"https://www.flickr.com/photos/36085842@N06\" target=\"_blank\" rel=\"noopener\">flickr.com</a> is licensed under <a href=\"https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=openverse\" target=\"_blank\" rel=\"noopener\">creativecommons.org</a>.",
@@ -7903,8 +7941,8 @@
   },
   "rondo-by-anna-ursyn": {
     "body": [
-      "This work of digital generative art remains fascinating—a work so contemporary yet rooted in <a href=\"m/john-backus-releases-fortran.html\" data-moment=\"john-backus-releases-fortran\">Fortran</a>, a programming language dating to the 1950s. The work encapsulates Ursyn’s exploration of the intersections between natural order and human technological constructs. Through her methodical creative process, she sketches and then uses computer programs to transform these ideas into iconic images of animals and other objects, portraying them within dynamic, abstract landscapes. Ursyn <a href=\"https://digitalartarchive.siggraph.org/artwork/anna-ursyn-rondo/\" target=\"_blank\" rel=\"noopener\">explains</a>:",
-      "“I create programs in Fortran, then I add photographic content using scanners and digital cameras. To attain the composition, I use repetition of lines, shapes, and forms, select color combinations, transform light intensity, apply grid patterns and moire effects, and distort and manipulate images by scaling, rotating, slanting, and changing perspective.”",
+      "This work of digital <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a> remains fascinating—a work so contemporary yet rooted in <a href=\"m/john-backus-releases-fortran.html\" data-moment=\"john-backus-releases-fortran\">Fortran</a>, a programming language dating to the 1950s. The work encapsulates Ursyn’s exploration of the intersections between natural order and human technological constructs. Through her methodical creative process, she sketches and then uses computer programs to transform these ideas into iconic images of animals and other objects, portraying them within dynamic, abstract landscapes. Ursyn <a href=\"https://digitalartarchive.siggraph.org/artwork/anna-ursyn-rondo/\" target=\"_blank\" rel=\"noopener\">explains</a>:",
+      "“I create programs in <a href=\"https://www.lerandom.art/subjects/fortran\">Fortran</a>, then I add photographic content using scanners and digital cameras. To attain the composition, I use repetition of lines, shapes, and forms, select color combinations, transform light intensity, apply grid patterns and moire effects, and distort and manipulate images by scaling, rotating, slanting, and changing perspective.”",
       "Her work combines elements from both the physical and digital realms, utilizing techniques such as photolithography, digital manipulation, and traditional painting to enrich the textures and depth of her compositions. Ursyn’s art serves as a bridge between the scientific understanding of data and the aesthetic appreciation of visual arts, challenging observers to perceive the world through a blend of nature’s randomness and human-designed order through a scientific and artistic lens."
     ],
     "cite": [
@@ -7914,6 +7952,7 @@
       }
     ],
     "img": {
+      "alt": "Anna Ursyn's Rondo: dotted looping lines over a collaged landscape of fields, fences, trees and bright color bands",
       "src": "img/rondo-by-anna-ursyn.jpg",
       "cap": "Anna Ursyn's Rondo as reproduced in the ACM SIGGRAPH Art Show Archives, combining her FORTRAN-generated structures with scanned photographic content.",
       "credit": "Anna Ursyn, Rondo, 2006. ACM SIGGRAPH Art Show Archives.",
@@ -8008,7 +8047,7 @@
   },
   "steve-jobs-announces-the-iphone": {
     "body": [
-      "On January 9, 2007, <a href=\"https://www.lerandom.art/subjects/steve-jobs\">Steve Jobs</a> changed the world by announcing the iPhone. The touchscreen device combined the previously wildly popular iPod with a camera, web browsing and other <a href=\"https://www.lerandom.art/subjects/apple\">Apple</a> native “apps.” Prior to this, phones were largely utilitarian devices that mostly served as communication devices. Overnight, Jobs replaced this useful-but-not-extraordinary hardware with a supercomputer. The effect that this had—not only on creativity but on our relationship with machines and the digital—is profound practically beyond hyperbole. As mentioned many times in this Timeline, <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> mentioned several pre-conditions for NFTs in human history, including the dematerialization of the art object beginning in the 1960s and the rise of mass media art—coupled with our changing relationship with the machine and mechanical devices, as this author argues—in the 1970s and ’80s that paved the way for the NFT and digital art’s potential mass adoption. The next key step, according to Reas, is the sudden ubiquitous computer power afforded to billions of people on the planet in the form of a computer in their pocket. A gigantic leap in this development is the announcement of the first iPhone. Another theme of this Timeline is the challenges of accessibility of computers, dating back to Vera Molnár needing to sneak into Parisian mainframe premises to access one. Again, overnight, that issue, on a conceptual level, disappeared. The pathway to billions having access to a computer became apparent. It would take time to realize but the effects on human creativity and expression are still only being reached on a superficial level."
+      "On January 9, 2007, <a href=\"https://www.lerandom.art/subjects/steve-jobs\">Steve Jobs</a> changed the world by announcing the iPhone. The touchscreen device combined the previously wildly popular iPod with a camera, web browsing and other <a href=\"https://www.lerandom.art/subjects/apple\">Apple</a> native “apps.” Prior to this, phones were largely utilitarian devices that mostly served as communication devices. Overnight, Jobs replaced this useful-but-not-extraordinary hardware with a supercomputer. The effect that this had—not only on creativity but on our relationship with machines and the digital—is profound practically beyond hyperbole. As mentioned many times in this Timeline, <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> mentioned several pre-conditions for <a href=\"https://www.lerandom.art/subjects/nfts\">NFTs</a> in human history, including the dematerialization of the art object beginning in the 1960s and the rise of mass media art—coupled with our changing relationship with the machine and mechanical devices, as this author argues—in the 1970s and ’80s that paved the way for the NFT and digital art’s potential mass adoption. The next key step, according to Reas, is the sudden ubiquitous computer power afforded to billions of people on the planet in the form of a computer in their pocket. A gigantic leap in this development is the announcement of the first iPhone. Another theme of this Timeline is the challenges of accessibility of computers, dating back to <a href=\"https://www.lerandom.art/subjects/vera-molnar\">Vera Molnár</a> needing to sneak into Parisian mainframe premises to access one. Again, overnight, that issue, on a conceptual level, disappeared. The pathway to billions having access to a computer became apparent. It would take time to realize but the effects on human creativity and expression are still only being reached on a superficial level."
     ],
     "cite": [
       {
@@ -8156,7 +8195,7 @@
   },
   "tumblr-launched": {
     "body": [
-      "Launched on 1 March 2007, <a href=\"https://www.lerandom.art/subjects/tumblr\">Tumblr</a>, founded by <a href=\"https://www.lerandom.art/subjects/david-karp\">David Karp</a> with lead developer <a href=\"https://www.lerandom.art/subjects/marco-arment\">Marco Arment</a>, served as a critical place for the presentation and distribution of digital art from the mid- to late-2000s. The microblogging site served a similar function two decades ago to sites like <a href=\"https://www.lerandom.art/subjects/instagram\">Instagram</a> and <a href=\"https://www.lerandom.art/subjects/twitter\">Twitter</a> today. Tumblr serves as an important step in the pre-conditions for NFTs, as well as it combined with the emergence of smartphones, the iPhone having been announced two months earlier and released that June, to transform how digital media was consumed and shared. With the same iPhones but simply the more popular Instagram emerging as the distribution method of choice, we are still living with the smartphone-social-media-fication of digital art that largely began these first two months of 2007."
+      "Launched on 1 March 2007, <a href=\"https://www.lerandom.art/subjects/tumblr\">Tumblr</a>, founded by <a href=\"https://www.lerandom.art/subjects/david-karp\">David Karp</a> with lead developer <a href=\"https://www.lerandom.art/subjects/marco-arment\">Marco Arment</a>, served as a critical place for the presentation and distribution of <a href=\"https://www.lerandom.art/subjects/digital-art\">digital art</a> from the mid- to late-2000s. The microblogging site served a similar function two decades ago to sites like <a href=\"https://www.lerandom.art/subjects/instagram\">Instagram</a> and <a href=\"https://www.lerandom.art/subjects/twitter\">Twitter</a> today. Tumblr serves as an important step in the pre-conditions for <a href=\"https://www.lerandom.art/subjects/nfts\">NFTs</a>, as well as it combined with the emergence of <a href=\"https://www.lerandom.art/subjects/smartphones\">smartphones</a>, the iPhone having been announced two months earlier and released that June, to transform how digital media was consumed and shared. With the same iPhones but simply the more popular Instagram emerging as the distribution method of choice, we are still living with the smartphone-social-media-fication of digital art that largely began these first two months of 2007."
     ],
     "cite": [
       {
@@ -8295,6 +8334,7 @@
       }
     ],
     "img": {
+      "alt": "@everyword Twitter profile with final tweets \"étui\" and \"études\" from 7 June 2014",
       "src": "img/allison-parrish-launches-everyword.jpg",
       "cap": "",
       "credit": "Screenshot of the @everyword Twitter profile showing the final words tweeted on 7 June 2014. @everyword, Allison Parrish, 2007–2014. <a href=\"https://www.decontextualize.com/2014/06/task-complete/\">Allison Parrish, Task complete (6 June 2014)</a>.",
@@ -8382,7 +8422,7 @@
   },
   "casey-reas-and-ben-fry-publish-processing-textbook": {
     "body": [
-      "In order to <a href=\"https://medium.com/processing-foundation/a-modern-prometheus-59aed94abe85\" target=\"_blank\" rel=\"noopener\">lay out</a> “our vision for how <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a> could be used in a university classroom,” <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> and <a href=\"https://www.lerandom.art/subjects/ben-fry\">Ben Fry</a> published the Processing textbook, Processing: a programming handbook for visual designers and artists.",
+      "In order to <a href=\"https://medium.com/processing-foundation/a-modern-prometheus-59aed94abe85\" target=\"_blank\" rel=\"noopener\">lay out</a> “our vision for how <a href=\"m/casey-reas-and-ben-fry-initiate-processing-project.html\" data-moment=\"casey-reas-and-ben-fry-initiate-processing-project\">Processing</a> could be used in a university classroom,” <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a> and <a href=\"https://www.lerandom.art/subjects/ben-fry\">Ben Fry</a> published the <a href=\"https://www.lerandom.art/subjects/processing\">Processing</a> textbook, Processing: a programming handbook for visual designers and artists.",
       "The textbook served as an essential guide to introduce computer programming to those within the visual arts community. This book leveraged six years of software development and educational insights gained from Reas’s teaching at <a href=\"https://www.lerandom.art/subjects/ucla\">UCLA</a> and Fry’s time at the <a href=\"https://www.lerandom.art/subjects/mit-media-lab\">MIT Media Lab</a> and <a href=\"https://www.lerandom.art/subjects/carnegie-mellon\">Carnegie Mellon</a>. Designed for individuals with minimal coding experience, the book guides those who are keen on exploring interactive and visual software creation. Through tutorials, professional project interviews and extension sections, the book thoroughly discusses the integration of software with arts like photography, drawing, animation and more.",
       "This and other texts, such as the earliest one by <a href=\"https://www.lerandom.art/subjects/ira-greenberg\">Ira Greenberg</a>, helped with the practicalities of teaching Processing once it was already initiated."
     ],
@@ -8393,6 +8433,7 @@
       }
     ],
     "img": {
+      "alt": "Cover of Reas and Fry's Processing handbook, 2007: overlapping blue circles linked by a network of thin lines",
       "src": "img/casey-reas-and-ben-fry-publish-processing-textbook.jpg",
       "cap": "The front cover of the first edition of Casey Reas and Ben Fry's Processing: A Programming Handbook for Visual Designers and Artists (MIT Press, 2007), with a foreword by John Maeda.",
       "credit": "Cover of Casey Reas and Ben Fry, Processing: A Programming Handbook for Visual Designers and Artists (Cambridge, MA: MIT Press, 2007). Cover scan via Open Library / Internet Archive.",
@@ -8500,7 +8541,7 @@
   },
   "cory-arcangel-begins-his-photoshop-gradients": {
     "body": [
-      "<a href=\"https://www.lerandom.art/subjects/cory-arcangel\">Cory Arcangel</a>’s Photoshop Gradient and Smudge Tool Demonstration would go on to become some of the most well known software-based work of the decade. Arcangel continues his work exploring gradients to this day (2024) and the work has been acquired by the Whitney Museum and the <a href=\"https://www.lerandom.art/subjects/smithsonian\">Smithsonian</a> American Art Museum. Arcangel became known a few years prior for his work creating videos from old video games, “applying archaeology to historical computer technology of the 1980s,” according to Thaddaeus Ropac, his gallery."
+      "<a href=\"https://www.lerandom.art/subjects/cory-arcangel\">Cory Arcangel</a>’s <a href=\"https://www.lerandom.art/subjects/photoshop\">Photoshop</a> Gradient and Smudge Tool Demonstration would go on to become some of the most well known software-based work of the decade. Arcangel continues his work exploring gradients to this day (2024) and the work has been acquired by the Whitney Museum and the <a href=\"https://www.lerandom.art/subjects/smithsonian\">Smithsonian</a> American Art Museum. Arcangel became known a few years prior for his work creating videos from old <a href=\"https://www.lerandom.art/subjects/video-games\">video games</a>, “applying archaeology to historical computer technology of the 1980s,” according to Thaddaeus Ropac, his gallery."
     ],
     "cite": [
       {
@@ -8509,6 +8550,7 @@
       }
     ],
     "img": {
+      "alt": "Cory Arcangel's 2007 rainbow radial gradient with smudged looping ribbon strokes in red, blue and yellow",
       "src": "img/cory-arcangel-begins-his-photoshop-gradients.jpg",
       "cap": "The 2007 Photoshop gradient and smudge tool demonstration from Cory Arcangel's own catalogue of works: a full-spectrum radial gradient dragged and smudged into looping ribbon forms.",
       "credit": "Cory Arcangel, Photoshop Gradient and Smudge Tool Demonstration, 2007. Inkjet on laminate, 43 x 43 in. Courtesy the artist, coryarcangel.com.",
@@ -8606,6 +8648,7 @@
       }
     ],
     "img": {
+      "alt": "About thirty exhibiting artists pose under the WACK! banner outside The Geffen Contemporary at MOCA, 2007",
       "src": "img/wack-art-and-the-feminist-revolution-museum-of-contemporary-art-los-angeles.jpg",
       "cap": "Some thirty of the exhibiting artists gathered outdoors beneath the WACK! Art and the Feminist Revolution banner at the entrance to The Geffen Contemporary at MOCA, 2007.",
       "credit": "WACK! Art and the Feminist Revolution, March 4 - July 16, 2007 at The Geffen Contemporary at MOCA, courtesy of The Museum of Contemporary Art, Los Angeles, photo by Brian Forrest.",
@@ -8746,6 +8789,7 @@
       }
     ],
     "img": {
+      "alt": "Ben Fry's All Streets, 2007: dense black road lines forming a map of the lower 48 US states on cream",
       "src": "img/all-streets-by-ben-fry.jpg",
       "cap": "Ben Fry's All Streets: every road in the lower 48 states drawn from US Census Bureau TIGER/Line data, with no state outlines, so population density and mountain ranges emerge from the road network alone.",
       "credit": "Ben Fry, All Streets, 2007. Courtesy the artist, benfry.com.",
@@ -8868,6 +8912,7 @@
       }
     ],
     "img": {
+      "alt": "Cao Fei's RMB City: a virtual island crammed with a bicycle-wheel Ferris wheel, panda and Tiananmen gate",
       "src": "img/rmb-city-by-cao-fei.jpg",
       "cap": "A still from Cao Fei's RMB City: A Second Life City Planning by China Tracy, showing the artist's floating virtual metropolis -- a bicycle-wheel Ferris wheel, a submerged CCTV tower, a crane-hoisted panda and the Tiananmen gate compressed onto an island in a blue sea.",
       "credit": "Cao Fei, RMB City: A Second Life City Planning by China Tracy (aka: Cao Fei), 2007. Solomon R. Guggenheim Museum, New York.",
@@ -8999,6 +9044,7 @@
       }
     ],
     "img": {
+      "alt": "Petra Cortright gazing into her webcam as lightning-bolt clip art streaks across her forehead",
       "src": "img/vvebcam-by-petra-cortright.jpg",
       "cap": "A still from Petra Cortright's VVEBCAM: the artist looking impassively into her laptop webcam while animated lightning-bolt clip art streaks across her forehead.",
       "credit": "Petra Cortright, VVEBCAM, 2007. Still courtesy the artist and Rhizome's Net Art Anthology.",
@@ -9119,6 +9165,7 @@
       }
     ],
     "img": {
+      "alt": "Electric Sheep fractal flame sheep 23407: wispy teal feathered forms like a bird's head on black",
       "src": "img/evolution-and-collective-intelligence-of-the-electric-sheep-by-scott-draves.jpg",
       "cap": "A single frame from the Electric Sheep distributed screensaver -- fractal-flame sheep no. 23407, one of the evolved forms produced by the network of volunteer computers Scott Draves describes in the essay.",
       "credit": "Scott Draves, Electric Sheep, sheep 23407 (generation 198). CC BY 2.5, via Wikimedia Commons.",
@@ -9257,7 +9304,7 @@
   },
   "satoshi-nakamoto-publishes-bitcoin-whitepaper": {
     "body": [
-      "<a href=\"https://www.lerandom.art/subjects/satoshi-nakamoto\">Satoshi Nakamoto</a>’s <a href=\"https://bitcoin.org/bitcoin.pdf\" target=\"_blank\" rel=\"noopener\">bitcoin.org</a> is important to the story of digital art as it was the first conceptualization of a decentralized blockchain. Decentralization was long part of the net.art global ethos, along with an anti-authority mindset, <a href=\"https://www.lerandom.art/editorial/kevin-mccoy-on-bridging-net-art-and-blockchain\" target=\"_blank\" rel=\"noopener\">lerandom.art</a>, specifically Bitcoin. He elaborates,",
+      "<a href=\"https://www.lerandom.art/subjects/satoshi-nakamoto\">Satoshi Nakamoto</a>’s <a href=\"https://bitcoin.org/bitcoin.pdf\" target=\"_blank\" rel=\"noopener\">bitcoin.org</a> is important to the story of <a href=\"https://www.lerandom.art/subjects/digital-art\">digital art</a> as it was the first conceptualization of a decentralized <a href=\"https://www.lerandom.art/subjects/blockchain\">blockchain</a>. Decentralization was long part of the net.art global ethos, along with an anti-authority mindset, <a href=\"https://www.lerandom.art/editorial/kevin-mccoy-on-bridging-net-art-and-blockchain\" target=\"_blank\" rel=\"noopener\">lerandom.art</a>, specifically <a href=\"https://www.lerandom.art/subjects/bitcoin\">Bitcoin</a>. He elaborates,",
       "“In retrospect, people think of net.art as websites and HTML but it was more diffuse than that. Websites are the things that can easily survive after the fact, but it was all kinds of performances, events, software or tools that people could work with. Net.art was just an element in a broader form of digital experimentation and digital creativity that was happening and that broader ethos was very much about decentralization, anti-authoritarianism, bottom-up approaches and anti-surveillance. Then I started seeing with Bitcoin, especially at that early time, a very cypherpunk, anti-authoritarian project. It was easy to connect with that for me. I definitely saw this in that same vein.”",
       "But it also had an enormous impact on digital art, as quickly artists would begin exploring the intersection of blockchains and art. McCoy himself released some of the earliest proto-NFTs on Namecoin, Bitcoin fork, in 2014. This list also extend to <a href=\"https://www.lerandom.art/subjects/rhea-myers\">Rhea Myers</a> early Bitcoin art experiments, and <a href=\"https://www.lerandom.art/subjects/sarah-meyohas\">Sarah Meyohas</a>’s <a href=\"https://www.lerandom.art/subjects/bitchcoin\">Bitchcoin</a> from 2015.",
       "As for the landmark paper itself, “Bitcoin: A Peer-to-Peer Electronic Cash System” introduced the concept of Bitcoin and the mechanics of a decentralized digital currency to the world in the midst of the worst financial crisis since arguably the Great Depression. The paper proposed a long-sought solution to the double-spending problem using a peer-to-peer network, which timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work. This forms a record that is computationally impractical to change, creating a robust ledger without the need for a trusted third party. Nakamoto’s introduction of Bitcoin fundamentally challenged traditional notions of currency and financial systems in an era of uncertainty."
@@ -9442,7 +9489,7 @@
   },
   "bitcoin-genesis-block": {
     "body": [
-      "The Bitcoin genesis block executed by <a href=\"https://www.lerandom.art/subjects/satoshi-nakamoto\">Satoshi Nakamoto</a> demonstrated the workability of Bitcoin as more than just a concept. As explained above, Bitcoin would go on to play a crucial role in the evolution of digital art by aligning with the net.art ethos of decentralization and anti-authoritarianism. This ethos resonated with digital artists who saw Bitcoin’s potential for anti-surveillance, bottom-up creative expression. <a href=\"https://www.lerandom.art/subjects/kevin-mccoy\">Kevin McCoy</a>, linking these philosophies, was among the artists exploring blockchain’s application in digital art, leading to early forms of NFTs and innovative projects like <a href=\"https://www.lerandom.art/subjects/bitchcoin\">Bitchcoin</a>. Nakamoto’s paper not only proposed a solution to digital currency’s double-spending problem but also challenged the traditional financial systems during a global crisis, embedding blockchain as a tool for artistic and financial disruption."
+      "The <a href=\"https://www.lerandom.art/subjects/bitcoin\">Bitcoin</a> genesis block executed by <a href=\"https://www.lerandom.art/subjects/satoshi-nakamoto\">Satoshi Nakamoto</a> demonstrated the workability of Bitcoin as more than just a concept. As explained above, Bitcoin would go on to play a crucial role in the evolution of <a href=\"https://www.lerandom.art/subjects/digital-art\">digital art</a> by aligning with the net.art ethos of decentralization and anti-authoritarianism. This ethos resonated with digital artists who saw Bitcoin’s potential for anti-surveillance, bottom-up creative expression. <a href=\"https://www.lerandom.art/subjects/kevin-mccoy\">Kevin McCoy</a>, linking these philosophies, was among the artists exploring <a href=\"https://www.lerandom.art/subjects/blockchain\">blockchain</a>’s application in digital art, leading to early forms of <a href=\"https://www.lerandom.art/subjects/nfts\">NFTs</a> and innovative projects like <a href=\"https://www.lerandom.art/subjects/bitchcoin\">Bitchcoin</a>. Nakamoto’s paper not only proposed a solution to digital currency’s double-spending problem but also challenged the traditional financial systems during a global crisis, embedding blockchain as a tool for artistic and financial disruption."
     ],
     "cite": [
       {
@@ -9451,6 +9498,7 @@
       }
     ],
     "img": {
+      "alt": "Hex dump of Bitcoin's genesis block, 3 January 2009, with The Times headline text in the right column",
       "src": "img/bitcoin-genesis-block.jpg",
       "cap": "The raw data of Bitcoin block 0, the genesis block mined on 3 January 2009, with the coinbase text quoting that day's Times headline visible in the right-hand column.",
       "credit": "Bitcoin genesis block, raw data by Satoshi Nakamoto, public domain, via Wikimedia Commons.",
@@ -9568,7 +9616,7 @@
   },
   "imagenet-launches": {
     "body": [
-      "Conceived by <a href=\"https://www.lerandom.art/subjects/fei-fei-li\">Fei-Fei Li</a> at <a href=\"https://www.lerandom.art/subjects/princeton\">Princeton</a> University, ImageNet launched in 2009 as a pivotal image database aimed at enhancing machine learning capabilities in image recognition. Spanning 3.2 million annotated images at launch and over 14 million today, it established a new benchmark through the annual <a href=\"m/imagenet-large-scale-visual-recognition-challenge.html\" data-moment=\"imagenet-large-scale-visual-recognition-challenge\">ImageNet Large Scale Visual Recognition Challenge</a> (ILSVRC), accelerating the adoption of convolutional neural networks (CNNs). This tool for advancing computer vision played a significant role in the development of AI, <a href=\"m/ian-goodfellow-introduces-gans.html\" data-moment=\"ian-goodfellow-introduces-gans\">GANs</a> and AI art, making it one of the most impactful moments of the decade. ImageNet stands as perhaps the decade’s most meaningful contribution to the development of AI and AI art that would explode in the following decade."
+      "Conceived by <a href=\"https://www.lerandom.art/subjects/fei-fei-li\">Fei-Fei Li</a> at <a href=\"https://www.lerandom.art/subjects/princeton\">Princeton</a> University, ImageNet launched in 2009 as a pivotal image database aimed at enhancing <a href=\"https://www.lerandom.art/subjects/machine-learning\">machine learning</a> capabilities in <a href=\"https://www.lerandom.art/subjects/image-recognition\">image recognition</a>. Spanning 3.2 million annotated images at launch and over 14 million today, it established a new benchmark through the annual <a href=\"m/imagenet-large-scale-visual-recognition-challenge.html\" data-moment=\"imagenet-large-scale-visual-recognition-challenge\">ImageNet Large Scale Visual Recognition Challenge</a> (ILSVRC), accelerating the adoption of <a href=\"https://www.lerandom.art/subjects/convolutional-neural-networks-cnns\">convolutional neural networks</a> (CNNs). This tool for advancing <a href=\"https://www.lerandom.art/subjects/computer-vision\">computer vision</a> played a significant role in the development of AI, <a href=\"m/ian-goodfellow-introduces-gans.html\" data-moment=\"ian-goodfellow-introduces-gans\">GANs</a> and AI art, making it one of the most impactful moments of the decade. ImageNet stands as perhaps the decade’s most meaningful contribution to the development of AI and AI art that would explode in the following decade."
     ],
     "cite": [
       {
@@ -9580,7 +9628,7 @@
       "src": "img/imagenet-launches-7f36cd9ba1.png",
       "cap": "ImageNet’s semantic hierarchy and example-image tree, from the team’s 2009 VSS poster <em>ImageNet: Construction and Analysis of a Large Scale Image Ontology</em>.",
       "credit": "Li Fei-Fei, Jia Deng, Minh Do, Hao Su and Kai Li, Princeton University / ImageNet, 2009. <a href=\"https://www.image-net.org/static_files/papers/ImageNet_VSS2009.pdf\">Image source</a>.",
-      "alt": "ImageNet Trees diagram connects a WordNet hierarchy to mammal subtrees and example photographs of aquatic mammals, cats and dogs.",
+      "alt": "ImageNet tree diagram: concept hierarchy branching to mammal subtrees with photos of seals, cats and dogs",
       "width": 1852,
       "height": 657,
       "sourceUrl": "https://www.image-net.org/static_files/papers/ImageNet_VSS2009.pdf",
@@ -9730,6 +9778,7 @@
       }
     ],
     "img": {
+      "alt": "Hand-drawn figure with a marionette pointing a wand at a laptop, lettered 'art & code, march 7th to 9th'",
       "src": "img/first-art-code-conference-organized-by-golan-levin.jpg",
       "cap": "The banner graphic for the first Art &amp;&amp; Code conference -- a hand-drawn figure holding a marionette and pointing a wand at a laptop, lettered 'art &amp; code, march 7th to 9th, at CMU in Pittsburgh, PA'.",
       "credit": "Art &amp;&amp; Code, March 7-9, 2009. Courtesy the Frank-Ratchye STUDIO for Creative Inquiry, Carnegie Mellon University.",
@@ -9907,6 +9956,7 @@
       }
     ],
     "img": {
+      "alt": "scoreLight in use: hands around a white sheet as a red laser traces a contour between fingers",
       "src": "img/scorelight-by-alvaro-cassinelli-masatoshi-ishikawa-yusaku-kuribaka-daito-manabe.jpg",
       "cap": "scoreLight in use: several pairs of hands around a sheet of paper as the instrument's red laser spot traces the drawn contour it is reading as sound.",
       "credit": "scoreLight by Alvaro Cassinelli, Masatoshi Ishikawa, Yusaku Kuribara and Daito Manabe. Courtesy Alvaro Cassinelli.",
@@ -10008,7 +10058,7 @@
   },
   "muirmcneil-founded": {
     "body": [
-      "Founded by <a href=\"https://www.lerandom.art/subjects/paul-mcneil\">Paul McNeil</a> and <a href=\"https://www.lerandom.art/subjects/hamish-muir\">Hamish Muir</a>, MuirMcNeil uses software to explore parametric design systems in typography and graphic design. Their work can be seen as generative typography or generative design. The pair have <a href=\"https://www.eyemagazine.com/feature/article/pleasure-in-the-process\" target=\"_blank\" rel=\"noopener\">spoken to Eye Magazine</a> about a lack of acceptance from peers of their algorithmic-derived methodology, echoing a lot of early criticism of computer art, with their work referred to “as something that anybody could do—as if there’s no real quality to it.”"
+      "Founded by <a href=\"https://www.lerandom.art/subjects/paul-mcneil\">Paul McNeil</a> and <a href=\"https://www.lerandom.art/subjects/hamish-muir\">Hamish Muir</a>, MuirMcNeil uses software to explore parametric design systems in typography and graphic design. Their work can be seen as generative typography or generative design. The pair have <a href=\"https://www.eyemagazine.com/feature/article/pleasure-in-the-process\" target=\"_blank\" rel=\"noopener\">spoken to Eye Magazine</a> about a lack of acceptance from peers of their algorithmic-derived methodology, echoing a lot of early criticism of <a href=\"https://www.lerandom.art/subjects/computer-art\">computer art</a>, with their work referred to “as something that anybody could do—as if there’s no real quality to it.”"
     ],
     "cite": [
       {
@@ -10017,6 +10067,7 @@
       }
     ],
     "img": {
+      "alt": "MuirMcNeil's TwoPoint type: 'quadratic sine' and 'Newton tangent' in black dot-grid letters on white",
       "src": "img/muirmcneil-founded.png",
       "cap": "A specimen of MuirMcNeil's TwoPoint parametric type system, setting the words 'quadratic sine' and 'Newton tangent' from a modular grid of dots -- the studio's algorithmic approach to letterform construction.",
       "credit": "MuirMcNeil, TwoPoint type system. Courtesy MuirMcNeil (Paul McNeil and Hamish Muir).",
@@ -10119,7 +10170,7 @@
   },
   "a-philosophy-of-computer-art-by-dominic-lopes": {
     "body": [
-      "This book critically examines the unique characteristics of computer art, setting a new theoretical foundation for understanding its place in the art world. Lopes challenges traditional art concepts like meaning, form and expression, positing that computer art requires a shift in focus towards interactivity and user engagement. His analysis underscores the distinct roles of the computer artist and the user, which diverge significantly from those of conventional artists and viewers, reflecting ideas that extend to cybernetics and the information theory of <a href=\"https://www.lerandom.art/subjects/abraham-moles\">Abraham Moles</a> and Norbert Wiener."
+      "This book critically examines the unique characteristics of <a href=\"https://www.lerandom.art/subjects/computer-art\">computer art</a>, setting a new theoretical foundation for understanding its place in the art world. Lopes challenges traditional art concepts like meaning, form and expression, positing that computer art requires a shift in focus towards interactivity and user engagement. His analysis underscores the distinct roles of the computer artist and the user, which diverge significantly from those of conventional artists and viewers, reflecting ideas that extend to cybernetics and the information theory of <a href=\"https://www.lerandom.art/subjects/abraham-moles\">Abraham Moles</a> and Norbert Wiener."
     ],
     "cite": [
       {
@@ -10128,6 +10179,7 @@
       }
     ],
     "img": {
+      "alt": "Cover of A Philosophy of Computer Art, Routledge 2009: a face repeated in tiled, pixelated fragments",
       "src": "img/a-philosophy-of-computer-art-by-dominic-lopes.jpg",
       "cap": "The cover of Dominic McIver Lopes's A Philosophy of Computer Art (Routledge, 2009), showing a wall of tiled, pixelated repetitions of a single face.",
       "credit": "Cover of Dominic McIver Lopes, A Philosophy of Computer Art (London: Routledge, 2009). Cover scan via Open Library / Internet Archive.",

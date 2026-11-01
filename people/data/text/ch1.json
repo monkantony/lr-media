@@ -2,7 +2,7 @@
   "blombos-cave-drawing": {
     "body": [
       "The earliest known drawing made by humans is generative. Ochre cross-hatching found at <a href=\"https://www.lerandom.art/subjects/blombos-cave\">Blombos Cave</a> in <a href=\"https://www.lerandom.art/subjects/south-africa\">South Africa</a> is the earliest known drawing yet found anywhere. “They qualify as generative because the placement of individual marks has not been decided by the artisan, but dictated by a manually executed symmetry‐based algorithm,” according to <a href=\"https://www.lerandom.art/subjects/philip-galanter\">Philip Galanter</a>.",
-      "<a href=\"https://www.lerandom.art/editorial/casey-reas-on-the-history-of-generative-art-part-2\" target=\"_blank\" rel=\"noopener\">Casey Reas has spoken</a> of how logical, systems thinking is “really essential for this medium.” What the Blombos cave art and many other similar, prehistoric tiling patterns reveal is the ancient, innate and unmistakably human origins of systems thinking in art.",
+      "<a href=\"https://www.lerandom.art/editorial/casey-reas-on-the-history-of-generative-art-part-2\" target=\"_blank\" rel=\"noopener\">Casey Reas has spoken</a> of how logical, <a href=\"https://www.lerandom.art/subjects/systems\">systems</a> thinking is “really essential for this medium.” What the Blombos cave art and many other similar, prehistoric tiling patterns reveal is the ancient, innate and unmistakably human origins of systems thinking in art.",
       "Blombos Cave’s symmetry-based tiling system may not universally be considered autonomous and thus generative. <a href=\"https://www.lerandom.art/editorial/decoupling-generative-art-with-philip-galanter\" target=\"_blank\" rel=\"noopener\">As I argue</a>, the critical question to ask is: “Does the artist relinquish control to an external system at some point?” While a simple tiling system is deployed here, more complex versions will appear later in our story with Islamic tile art."
     ],
     "cite": [
@@ -12,6 +12,7 @@
       }
     ],
     "img": {
+      "alt": "Ochre stone engraved with cross-hatched lines, 1 cm scale bar, above a white tracing of the pattern",
       "src": "img/blombos-cave-drawing.jpg",
       "cap": "Blombos Cave Drawing",
       "credit": "Ochre stone with cross-hatched pattern, Blombos Cave, South Africa, ca. 70,000 years ago. Image by Chris S. Henshilwood, via Wikimedia Commons (CC BY-SA 4.0). <a href=\"https://commons.wikimedia.org/wiki/File:Blombo.jpg\">Image source</a>",
@@ -139,6 +140,7 @@
       }
     ],
     "img": {
+      "alt": "Shallow coiled reed basket from New Kingdom Egypt, ca. 1550–1300 BCE, with worn spiral rows",
       "src": "img/oldest-evidence-of-basket-weaving.jpg",
       "cap": "A coiled reed basket from New Kingdom Egypt — a contextual image of the coiling technique, not the Upper Palaeolithic evidence itself.",
       "credit": "Basket, Egypt, ca. 1550–1300 BCE, coiled basketry. The Metropolitan Museum of Art, New York, Rogers Fund, 1925 (Open Access / CC0).",
@@ -226,6 +228,7 @@
       }
     ],
     "img": {
+      "alt": "Enheduanna in a tiered flounced robe and headdress, carved relief detail, Disk of Enheduanna, ca. 2300 BCE",
       "src": "img/first-known-author-is-a-woman.jpg",
       "cap": "",
       "credit": "Enheduanna, detail of the Disk of Enheduanna, Ur, ca. 2300 BCE, limestone/calcite. University of Pennsylvania Museum of Archaeology and Anthropology, Philadelphia, B16665; British Museum/University Museum Expedition to Ur, 1926. Photograph by Mefman00, via Wikimedia Commons (CC0). <a href=\"https://commons.wikimedia.org/wiki/File:Enheduanna,_daughter_of_Sargon_of_Akkad.jpg\">Image source</a>",
@@ -335,6 +338,7 @@
       }
     ],
     "img": {
+      "alt": "Clay tablet IM 67118, its surface densely covered in rows of wedge-shaped cuneiform signs",
       "src": "img/babylonians-begin-visualizing-mathematics.jpg",
       "cap": "",
       "credit": "Clay tablet IM 67118, geometric-algebraic problem text, from Tell al-Dhabba'i, Iraq, Old Babylonian period. Iraq Museum, Baghdad. Photograph by Osama Shukir Muhammed Amin FRCP(Glasg), 2019, via Wikimedia Commons (CC BY-SA 4.0). <a href=\"https://commons.wikimedia.org/wiki/File:Clay_tablet,_mathematical,_geometric-algebraic,_similar_to_the_Pythagorean_theorem._From_Tell_al-Dhabba'i,_Iraq._2003-1595_BCE._Iraq_Museum.jpg\">Image source</a>",
@@ -408,6 +412,7 @@
       }
     ],
     "img": {
+      "alt": "Hexagram diagram: 64 hexagrams in a circle around a square grid, with Chinese labels and added numerals",
       "src": "img/i-ching-introduces-binary-concept.jpeg",
       "cap": "",
       "credit": "Diagram of I Ching hexagrams sent by Joachim Bouvet to Gottfried Wilhelm Leibniz, 1701; the Arabic numerals were added by Leibniz. Leibniz Archive, Niedersächsische Landesbibliothek, Hannover. Reproduced in Franklin Perkins, Leibniz and China (Cambridge University Press, 2004), p. 117, via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz,_1701.jpg\">Image source</a>",
@@ -569,7 +574,7 @@
   },
   "ancient-andean-textiles-weave-legacy-of-identity": {
     "body": [
-      "For millennia, reaching back to at least 4200 BCE, Andean textiles have woven together stories of identity and ancestral beliefs. Predating written languages, textiles served as the predominant medium for conveying images and concepts, often including striking geometric patterns. These intricate cloth creations continue to hold profound significance to the Andean worldview to this day."
+      "For millennia, reaching back to at least 4200 BCE, Andean <a href=\"https://www.lerandom.art/subjects/textiles\">textiles</a> have woven together stories of identity and ancestral beliefs. Predating written languages, textiles served as the predominant medium for conveying images and concepts, often including striking geometric patterns. These intricate cloth creations continue to hold profound significance to the Andean worldview to this day."
     ],
     "cite": [
       {
@@ -578,6 +583,7 @@
       }
     ],
     "img": {
+      "alt": "Embroidered Paracas border fragment, 450–175 BCE: red, gold and green flying figures on dark ground, fringed edge",
       "src": "img/ancient-andean-textiles-weave-legacy-of-identity.jpg",
       "cap": "An embroidered Paracas border fragment from the south coast of Peru, its repeating figural and geometric bands worked in camelid hair on cotton.",
       "credit": "Border Fragment, Paracas, 450–175 BCE. The Metropolitan Museum of Art, New York, Bequest of Arthur M. Bullowa, 1993 (Open Access / CC0).",
@@ -684,6 +690,7 @@
       }
     ],
     "img": {
+      "alt": "John Collier's Priestess of Delphi: woman in red robes on a tall tripod stool holding laurel and a dish amid smoke",
       "src": "img/oracle-at-delphi.jpg",
       "cap": "",
       "credit": "John Collier, Priestess of Delphi, 1891. Oil on canvas. Art Gallery of South Australia, Adelaide; Gift of the Rt. Honourable, the Earl of Kintore 1893. Accession 0.108. <a href=\"https://www.agsa.sa.gov.au/collection-publications/collection/works/_/25000/\">Image source</a>",
@@ -765,7 +772,7 @@
   },
   "pythagoras-popularizes-geometric-patterns": {
     "body": [
-      "<a href=\"https://www.lerandom.art/subjects/pythagoras\">Pythagoras</a> credited with popularizing geometrical patterns, “the main feature of 1960s computer art. Computer artworks were frequently based on the golden section, Fibonacci numbers, and many other emblematic Pythagorean premises,” according to <a href=\"https://www.lerandom.art/subjects/grant-taylor\">Grant Taylor</a>."
+      "<a href=\"https://www.lerandom.art/subjects/pythagoras\">Pythagoras</a> credited with popularizing geometrical patterns, “the main feature of 1960s <a href=\"https://www.lerandom.art/subjects/computer-art\">computer art</a>. Computer artworks were frequently based on the golden section, Fibonacci numbers, and many other emblematic Pythagorean premises,” according to <a href=\"https://www.lerandom.art/subjects/grant-taylor\">Grant Taylor</a>."
     ],
     "cite": [
       {
@@ -858,7 +865,7 @@
   },
   "euclids-elements": {
     "body": [
-      "Considered one of the most influential and long-used textbooks of all time, <a href=\"https://www.lerandom.art/subjects/elements\">Elements</a> remains a key work in geometry’s logical development. <a href=\"https://www.lerandom.art/subjects/euclid\">Euclid</a>’s ancient Greek text consists of thirteen books that demonstrate how to make logical proofs to ascertain certainty and investigate the unknown. The books also include some of the earliest known algorithms. The concepts Elements introduced would be critical in the development of algorithms by Islamic mathematicians and throughout the European Middle Ages. The text would again prove vital in early modern science, influencing <a href=\"https://www.lerandom.art/subjects/copernicus\">Copernicus</a>, <a href=\"https://www.lerandom.art/subjects/kepler\">Kepler</a> and <a href=\"https://www.lerandom.art/subjects/galileo\">Galileo</a> among countless others. Its legacy throughout the millennia is unquestioned. Like the seminal advancements in binary systems from <a href=\"m/i-ching-introduces-binary-concept.html\" data-moment=\"i-ching-introduces-binary-concept\">I Ching</a>, Elements played a critical role in moving the field of logic forward. Binary systems and logic would prove foundational to modern attempts to design computing machines, including by <a href=\"https://www.lerandom.art/subjects/gottfried-leibniz\">Gottfried Leibniz</a> later in this chapter."
+      "Considered one of the most influential and long-used textbooks of all time, <a href=\"https://www.lerandom.art/subjects/elements\">Elements</a> remains a key work in geometry’s logical development. <a href=\"https://www.lerandom.art/subjects/euclid\">Euclid</a>’s ancient Greek text consists of thirteen books that demonstrate how to make logical proofs to ascertain certainty and investigate the unknown. The books also include some of the earliest known <a href=\"https://www.lerandom.art/subjects/algorithms\">algorithms</a>. The concepts Elements introduced would be critical in the development of algorithms by Islamic mathematicians and throughout the European Middle Ages. The text would again prove vital in early modern science, influencing <a href=\"https://www.lerandom.art/subjects/copernicus\">Copernicus</a>, <a href=\"https://www.lerandom.art/subjects/kepler\">Kepler</a> and <a href=\"https://www.lerandom.art/subjects/galileo\">Galileo</a> among countless others. Its legacy throughout the millennia is unquestioned. Like the seminal advancements in binary systems from <a href=\"m/i-ching-introduces-binary-concept.html\" data-moment=\"i-ching-introduces-binary-concept\">I Ching</a>, Elements played a critical role in moving the field of logic forward. Binary systems and logic would prove foundational to modern attempts to design computing machines, including by <a href=\"https://www.lerandom.art/subjects/gottfried-leibniz\">Gottfried Leibniz</a> later in this chapter."
     ],
     "cite": [
       {
@@ -867,6 +874,7 @@
       }
     ],
     "img": {
+      "alt": "Torn papyrus fragment of Euclid's Elements with Greek handwriting and a square diagram",
       "src": "img/euclids-elements.jpg",
       "cap": "",
       "credit": "Papyrus fragment of Euclid's Elements, Book II, Proposition 5, from Oxyrhynchus, Egypt (P.Oxy. I 29). University of Pennsylvania Museum of Archaeology and Anthropology, Philadelphia, inv. E02748. Via Wikimedia Commons (public domain). <a href=\"https://openn.library.upenn.edu/Data/0016/html/e2748.html\">Image source</a>",
@@ -1006,6 +1014,7 @@
       }
     ],
     "img": {
+      "alt": "Engraving of scholars reading scrolls among carved columns and scroll-filled shelves in a great library",
       "src": "img/library-of-alexandria-established.jpg",
       "cap": "",
       "credit": "The Great Library of Alexandria, illustration by O. Von Corven, 19th century. Reproduced in Don Heinrich Tolzmann, Alfred Hessel and Reuben Peiss, The Memory of Mankind (Oak Knoll Press, 2001), via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Ancientlibraryalex.jpg\">Image source</a>",
@@ -1113,6 +1122,7 @@
       }
     ],
     "img": {
+      "alt": "Manuscript diagram of a columned temple automaton with pipes, pulleys and weights above Greek text",
       "src": "img/hero-of-alexandria-invents-automata.jpg",
       "cap": "",
       "credit": "Hero of Alexandria, Automata, diagram of an automaton of Bacchus dispensing wine and milk in a small temple (Automata 13). Early 14th-century copy, Venice, Biblioteca Nazionale Marciana, Gr. 516, fol. 202r. Via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Hero_of_Alexandria,_Automata,_Venice,_Gr._516.jpg\">Image source</a>",
@@ -1209,6 +1219,7 @@
       }
     ],
     "img": {
+      "alt": "Diamond-set lustre tiles with geometric and floral patterns around the mihrab arch, Great Mosque of Kairouan",
       "src": "img/emergence-of-islamic-geometric-art.jpg",
       "cap": "",
       "credit": "Lustre tiles around the mihrab, Great Mosque of Kairouan, Tunisia, 9th century. Photograph by tai_mab, 2009, via Wikimedia Commons (CC BY-SA 2.0). <a href=\"https://commons.wikimedia.org/wiki/File:Grande_Mosquée_de_Kairouan,_carreaux_lustrés_-_Kairouan's_Great_Mosque,_luster_tiles.jpg\">Image source</a>",
@@ -1293,6 +1304,7 @@
       }
     ],
     "img": {
+      "alt": "Engraved imaginary portrait of al-Khwarizmi, a bearded man in a turban",
       "src": "img/al-khwarizmis-writes-concerning-the-hindu-art-of-reckoning.jpg",
       "cap": "",
       "credit": "Imaginary portrait of al-Khwarizmi, adapted by Michel Bakni from a 1983 Soviet postage stamp, via Wikimedia Commons (CC BY-SA 4.0). No contemporary likeness is known. <a href=\"https://commons.wikimedia.org/wiki/File:Al-Khwarizmi_portrait.jpg\">Image source</a>",
@@ -1405,6 +1417,7 @@
       }
     ],
     "img": {
+      "alt": "Ramon Llull's letter-labeled concentric wheels, one with a hexagram, beside a triangular table of letter pairs",
       "src": "img/ramon-llull-designs-the-logic-machine.jpg",
       "cap": "",
       "credit": "",
@@ -1502,6 +1515,7 @@
       }
     ],
     "img": {
+      "alt": "Medieval miniature of Richard of Wallingford, a robed monk, measuring a gold disc with compasses at a desk",
       "src": "img/richard-of-wallingford-invents-clockwork-figures.jpg",
       "cap": "",
       "credit": "Richard of Wallingford measuring with compasses, miniature from Thomas Walsingham, History of the Abbots of St Albans, 14th century. British Library, Cotton MS Claudius E. IV, f. 201. Via Wikimedia Commons (public domain; image cropped and colour adjusted). <a href=\"https://commons.wikimedia.org/wiki/File:Richard_of_Wallingford.jpg\">Image source</a>",
@@ -1587,6 +1601,7 @@
       }
     ],
     "img": {
+      "alt": "Daniel Chodowiecki drawing, ca. 1770: workers inking type, handling a press frame and setting type in a print shop",
       "src": "img/johannes-gutenberg-s-printing-press.jpg",
       "cap": "",
       "credit": "Daniel Chodowiecki, The Printing House (Die Buchdruckerei), Tab. XXI c, drawing for Johann Bernhard Basedow's Elementarwerk, ca. 1770. Reproduced in Daniel Chodowiecki: 62 bisher unveröffentlichte Handzeichnungen zu dem Elementarwerk von Johann Bernhard Basedow (Frankfurt am Main: Voigtländer-Tetzner, 1922), via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Chodowiecki_Basedow_Tafel_21_c_Z.jpg\">Image source</a>",
@@ -1776,6 +1791,7 @@
       }
     ],
     "img": {
+      "alt": "Dürer's Melencolia I, 1514: winged figure brooding among tools, polyhedron, sphere, dog and magic square",
       "src": "img/albrecht-durer-creates-engraving-melencolia-i.jpg",
       "cap": "",
       "credit": "Albrecht Dürer, Melencolia I, 1514. Engraving. Minneapolis Institute of Art, 2012.16; acquired through the Ethel Morrison Van Derlip Fund and other funds and gifts. Via Google Arts & Culture and Wikimedia Commons (public domain). <a href=\"https://artsandculture.google.com/asset/melencolia-i/_AGDdr3EHmNGyA\">Image source</a>",
@@ -1891,7 +1907,7 @@
     "body": [
       "Centuries before the <a href=\"m/alan-turing-proposes-the-turing-test.html\" data-moment=\"alan-turing-proposes-the-turing-test\">Turing test</a>, we have the Descartes test. In René Descartes' <em>Discourse on the Method</em> published originally in 1637, as the preface to three essays; an English translation followed in 1649.",
       "In its fifth part he imagines machines built to look and move like humans and gives two tests that would still expose them, saying: \"For we may easily conceive a machine to be so constructed that it emits vocables, and even that it emits some correspondent to the action upon it of external objects which cause a change in its organs; for example, if touched in a particular place it may demand what we wish to say to it; if in another it may cry out that it is hurt, and such like; but not that it should arrange them variously so as appositely to reply to what is said in its presence, as men of the lowest grade of intellect can do.\"",
-      "So Descartes had two tests. The first is language. Such a machine might respond in human-like ways but Descartes was skeptical that such a machine could ever arrange their responses generally. The second is versatility across all of life's tasks. Natural language processing and conversational programs dating back to <a href=\"m/joseph-weizenbaum-publishes-eliza.html\" data-moment=\"joseph-weizenbaum-publishes-eliza\">Joseph Weizenbaum’s ELIZA</a> and including today’s LLMs still answer to Descartes bar: replying sensibly to whatever is said."
+      "So Descartes had two tests. The first is language. Such a machine might respond in human-like ways but Descartes was skeptical that such a machine could ever arrange their responses generally. The second is versatility across all of life's tasks. <a href=\"https://www.lerandom.art/subjects/natural-language-processing\">Natural language processing</a> and conversational programs dating back to <a href=\"m/joseph-weizenbaum-publishes-eliza.html\" data-moment=\"joseph-weizenbaum-publishes-eliza\">Joseph Weizenbaum’s ELIZA</a> and including today’s <a href=\"https://www.lerandom.art/subjects/llms\">LLMs</a> still answer to Descartes bar: replying sensibly to whatever is said."
     ],
     "cite": [
       {
@@ -1906,7 +1922,7 @@
     "img": {
       "cap": "René Descartes, author of the 1637 Discourse on the Method, in a Netherlandish portrait after Frans Hals, dated 1625–1650 by the Louvre.",
       "credit": "Netherlandish school, after Frans Hals, Portrait de René Descartes (1596–1650), philosophe, 1625–1650, oil on canvas. Musée du Louvre, Département des Peintures (INV 1317; MR 738). Photograph: © 2016 GrandPalaisRmn (musée du Louvre) / Tony Querrec. <a href=\"https://collections.louvre.fr/ark:/53355/cl010062106\">Image source</a>.",
-      "alt": "Painted portrait of René Descartes with shoulder-length dark hair, a moustache and a bright white collar, facing the viewer against a dark olive background.",
+      "alt": "Painted portrait of René Descartes with long dark hair, moustache and white collar on a dark background",
       "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010062106",
       "sourceImageUrl": "https://collections.louvre.fr/media/cache/large/0000000021/0000062106/0000601792_OG.JPG",
       "creator": [
@@ -1997,6 +2013,7 @@
       }
     ],
     "img": {
+      "alt": "Engraved plate of the Pascaline: top view of eight numbered dials, below a cutaway of its drums and gears",
       "src": "img/blaise-pascal-invents-mechanical-calculator.jpg",
       "cap": "",
       "credit": "Machine arithmétique (the Pascaline), Plate I, engraved by P. B. Bradel, from Oeuvres de Blaise Pascal, vol. IV (La Haye: Detune, 1779). Via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Pascaline_-_top_view_and_mechanism.jpg\">Image source</a>",
@@ -2081,7 +2098,7 @@
   "gottfried-leibniz-pioneers-computational-thinking": {
     "body": [
       "Leibniz’s <a href=\"https://www.lerandom.art/subjects/dissertatio-de-arte-combinatoria\">Dissertatio de arte combinatoria</a> (“On the Combinatorial Art” 1666) was one of several cornerstone papers he would write throughout his life on concepts such as symbols, binary systems and formal logic. His voluminous writing and tinkering with machines would prove hugely influential to the development of computing.",
-      "“On the Combinatorial Art” expanded his habilitation thesis at Leipzig. In it, he proposed a system of using symbols and rules to combine ideas and discover new knowledge. His system for arranging and manipulating concepts to find answers sounds remarkably similar to what we call algorithms.",
+      "“On the Combinatorial Art” expanded his habilitation thesis at Leipzig. In it, he proposed a system of using symbols and rules to combine ideas and discover new knowledge. His system for arranging and manipulating concepts to find answers sounds remarkably similar to what we call <a href=\"https://www.lerandom.art/subjects/algorithms\">algorithms</a>.",
       "In addition to this seminal text, <a href=\"https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=1315&amp;context=tme\" target=\"_blank\" rel=\"noopener\">Leibniz decades later</a> published the paper, “<a href=\"https://www.lerandom.art/subjects/explanation-of-binary-arithmetic\">Explanation of Binary Arithmetic</a>,\" in which he is credited for inventing the binary system. Leibniz also made important contributions to the field of formal logic before inventing several mechanical computational devices. His ability to synthesize knowledge throughout the ages to contribute to modern computing make him a singular figure in our story."
     ],
     "cite": [
@@ -2091,6 +2108,7 @@
       }
     ],
     "img": {
+      "alt": "Leibniz's 1666 circular diagram linking fire, air, water and earth with their qualities, a rose at center",
       "src": "img/gottfried-leibniz-pioneers-computational-thinking.jpg",
       "cap": "",
       "credit": "Leibniz, diagram of the four elements and their qualities, from Dissertatio de arte combinatoria, 1666. Via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Leibniz_four_elements.jpg\">Image source</a>",
@@ -2198,6 +2216,7 @@
       }
     ],
     "img": {
+      "alt": "Leibniz's stepped reckoner mechanism: rows of dials and gears with a large central crank wheel",
       "src": "img/gottfried-leibniz-builds-the-calculating-machine.png",
       "cap": "",
       "credit": "Mechanism of Leibniz's stepped reckoner, halftone photograph in Wilhelm Franz Meyer, Encyklopädie der mathematischen Wissenschaften, vol. 2 (Leipzig: Teubner, 1904), p. 964, fig. 11. Via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Leibniz_Stepped_Reckoner_mechanism.png\">Image source</a>",
@@ -2261,7 +2280,7 @@
   "artificial-versifying-by-john-peter": {
     "body": [
       "In <a href=\"https://digitalarchive.tpl.ca/objects/332679/artificial-versifying-or-the-schoolboys-recreation--a-n\" target=\"_blank\" rel=\"noopener\">John Peter’s book</a> <a href=\"https://digitalarchive.tpl.ca/objects/332679/artificial-versifying-or-the-schoolboys-recreation--a-n\" target=\"_blank\" rel=\"noopener\">Artificial Versifying</a>, the English mathematician describes a simple procedure that could be used to make generative poetry in Latin.",
-      "Meant as fun for children, the procedure involved selecting letters in a way to produce grammatically and metrically correct poems without any prior knowledge of the language. This system stands as one of the earliest examples of generativity used in a creative endeavor. <a href=\"https://www.lerandom.art/subjects/john-clark\">John Clark</a> would go on to build the <a href=\"m/eureka-exhibited-at-londons-egyptian-hall.html\" data-moment=\"eureka-exhibited-at-londons-egyptian-hall\">Eureka machine</a> between 1832 and 1845, based on Peter’s <a href=\"https://www.lerandom.art/subjects/artificial-versifying\">Artificial Versifying</a>."
+      "Meant as fun for children, the procedure involved selecting letters in a way to produce grammatically and metrically correct poems without any prior knowledge of the language. This system stands as one of the earliest examples of <a href=\"https://www.lerandom.art/subjects/generativity\">generativity</a> used in a creative endeavor. <a href=\"https://www.lerandom.art/subjects/john-clark\">John Clark</a> would go on to build the <a href=\"m/eureka-exhibited-at-londons-egyptian-hall.html\" data-moment=\"eureka-exhibited-at-londons-egyptian-hall\">Eureka machine</a> between 1832 and 1845, based on Peter’s <a href=\"https://www.lerandom.art/subjects/artificial-versifying\">Artificial Versifying</a>."
     ],
     "cite": [
       {
@@ -2594,7 +2613,7 @@
   },
   "thomas-bayes-develops-bayesian-inference": {
     "body": [
-      "<a href=\"https://www.lerandom.art/subjects/thomas-bayes\">Thomas Bayes</a> developed this statistical framework, published posthumously by <a href=\"https://www.lerandom.art/subjects/richard-price\">Richard Price</a>, allowing for the quantification of uncertainty and the updating of probabilities based on new evidence. It has wide applications in fields such as artificial intelligence and data science. It contributed to the development of machine and deep learning when in 1964 <a href=\"https://www.lerandom.art/subjects/ray-solomonoff\">Ray Solomonoff</a> combined Bayesian probability-based reasoning and theoretical computer science to make predictions based on the past. Solomonoff and Andrej Kolmogorov would go on to expand upon information theory—discussed more in chapters 3 and 4—to develop Occam’s razor, a key concept to neural networks."
+      "<a href=\"https://www.lerandom.art/subjects/thomas-bayes\">Thomas Bayes</a> developed this statistical framework, published posthumously by <a href=\"https://www.lerandom.art/subjects/richard-price\">Richard Price</a>, allowing for the quantification of uncertainty and the updating of probabilities based on new evidence. It has wide applications in fields such as artificial intelligence and data science. It contributed to the development of machine and <a href=\"https://www.lerandom.art/subjects/deep-learning\">deep learning</a> when in 1964 <a href=\"https://www.lerandom.art/subjects/ray-solomonoff\">Ray Solomonoff</a> combined Bayesian probability-based reasoning and theoretical computer science to make predictions based on the past. Solomonoff and Andrej Kolmogorov would go on to expand upon information theory—discussed more in chapters 3 and 4—to develop Occam’s razor, a key concept to <a href=\"https://www.lerandom.art/subjects/neural-networks\">neural networks</a>."
     ],
     "cite": [
       {
@@ -2603,6 +2622,7 @@
       }
     ],
     "img": {
+      "alt": "Grainy black-and-white engraved portrait of a man in a dark clerical gown with white bands, said to be Thomas Bayes",
       "src": "img/thomas-bayes-develops-bayesian-inference.png",
       "cap": "",
       "credit": "Portrait traditionally captioned as Thomas Bayes; the identification is doubtful. Reproduced in Terence O'Donnell, History of Life Insurance in Its Formative Years (Chicago: American Conservation Co., 1936), p. 335, via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Thomas_Bayes.gif\">Image source</a>",
@@ -2803,7 +2823,7 @@
   },
   "joseph-marie-jacquard-invents-the-jacquard-loom": {
     "body": [
-      "The Jacquard loom used punch cards to control the weaving of patterns in fabric. It introduced the notion of a program stored outside the machine on punch cards, which would later result in generative weaving and modern computing. <a href=\"https://www.lerandom.art/subjects/charles-babbage\">Charles Babbage</a> would go on to utilize Jacquard’s method of punch card programming as one of computing’s earliest pioneers. “Computers did not pave the way for generative art; generative art helped to pave the way for computers,” according to Phil Galanter. Punch card programming would continue developing for the next century and a half before culminating in the use of mainframe computers and early languages such as <a href=\"m/john-backus-releases-fortran.html\" data-moment=\"john-backus-releases-fortran\">FORTRAN</a>. Additionally, textile design has continued to influence both fine art as well as generative art to this day. Examples include the <a href=\"m/bauhaus-weaving-workshop-initiated-by-gunta-stolzl.html\" data-moment=\"bauhaus-weaving-workshop-initiated-by-gunta-stolzl\">Bauhaus weaving workshop</a>’s <a href=\"https://www.lerandom.art/subjects/anni-albers\">Anni Albers</a> and <a href=\"https://www.lerandom.art/subjects/gunta-stolzl\">Gunta Stölzl</a>, the quilters of Gee’s Bend, <a href=\"https://www.lerandom.art/subjects/anna-lucia\">Anna Lucia</a>, Travess and <a href=\"https://www.lerandom.art/subjects/andreas-rau\">Andreas Rau</a>."
+      "The <a href=\"https://www.lerandom.art/subjects/jacquard-loom\">Jacquard loom</a> used <a href=\"https://www.lerandom.art/subjects/punch-cards\">punch cards</a> to control the weaving of patterns in fabric. It introduced the notion of a program stored outside the machine on punch cards, which would later result in generative weaving and modern computing. <a href=\"https://www.lerandom.art/subjects/charles-babbage\">Charles Babbage</a> would go on to utilize Jacquard’s method of punch card programming as one of computing’s earliest pioneers. “Computers did not pave the way for <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a>; generative art helped to pave the way for computers,” according to Phil Galanter. Punch card programming would continue developing for the next century and a half before culminating in the use of mainframe computers and early languages such as <a href=\"m/john-backus-releases-fortran.html\" data-moment=\"john-backus-releases-fortran\">FORTRAN</a>. Additionally, textile design has continued to influence both fine art as well as generative art to this day. Examples include the <a href=\"m/bauhaus-weaving-workshop-initiated-by-gunta-stolzl.html\" data-moment=\"bauhaus-weaving-workshop-initiated-by-gunta-stolzl\">Bauhaus weaving workshop</a>’s <a href=\"https://www.lerandom.art/subjects/anni-albers\">Anni Albers</a> and <a href=\"https://www.lerandom.art/subjects/gunta-stolzl\">Gunta Stölzl</a>, the quilters of Gee’s Bend, <a href=\"https://www.lerandom.art/subjects/anna-lucia\">Anna Lucia</a>, Travess and <a href=\"https://www.lerandom.art/subjects/andreas-rau\">Andreas Rau</a>."
     ],
     "cite": [
       {
@@ -2812,6 +2832,7 @@
       }
     ],
     "img": {
+      "alt": "Wooden Jacquard loom with a fan of harness threads beside a hanging chain of punched cards",
       "src": "img/joseph-marie-jacquard-invents-the-jacquard-loom.jpg",
       "cap": "",
       "credit": "Jacquard loom with punched cards, National Museum of Scotland, Edinburgh. Photograph by Stephencdickson, 2019, via Wikimedia Commons (CC BY-SA 4.0). <a href=\"https://commons.wikimedia.org/wiki/File:A_Jacquard_loom_showing_information_punchcards,_National_Museum_of_Scotland.jpg\">Image source</a>",
@@ -3067,8 +3088,8 @@
   },
   "nicephore-niepce-produces-first-permanent-photograph": {
     "body": [
-      "‍Photography’s impact on modern art is well established but its impact on digital and computer art more specifically is less examined yet central to this story. According to <a href=\"https://www.lerandom.art/subjects/herbert-w-franke\">Herbert W. Franke</a>, \"The most significant stage on the path to the mechanization of the fine arts has been photography.” Further, art critic <a href=\"https://www.lerandom.art/subjects/frank-popper\">Frank Popper</a> includes photography as the first of seven influences on the development of digital art. <a href=\"https://www.jstor.org/stable/777112\" target=\"_blank\" rel=\"noopener\">Digital generative artists such as</a> <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>, <a href=\"https://www.lerandom.art/subjects/margot-lovejoy\">Margot Lovejoy</a> and <a href=\"https://www.lerandom.art/subjects/terry-gips\">Terry Gips</a> have all stressed the importance of photography to the development of computer art as well.",
-      "<a href=\"https://www.lerandom.art/subjects/nicephore-niepce\">Nicéphore Niépce</a> produced the earliest photograph made in a camera obscura that survives today, using a pewter plate coated with bitumen. This breakthrough served as the basis for the continuation of developments in photography to this day. The invention of photography stands as a paradigm shift in art history. The camera’s ability to capture representations of the visible world would lead to painters losing interest in strict realism and spur the gradual abstraction of modern art. Photography, in addition to becoming its own art form, would also lead to cinema and video art, as art expanded from a handmade practice to include capture practices."
+      "‍Photography’s impact on modern art is well established but its impact on digital and <a href=\"https://www.lerandom.art/subjects/computer-art\">computer art</a> more specifically is less examined yet central to this story. According to <a href=\"https://www.lerandom.art/subjects/herbert-w-franke\">Herbert W. Franke</a>, \"The most significant stage on the path to the mechanization of the fine arts has been photography.” Further, art critic <a href=\"https://www.lerandom.art/subjects/frank-popper\">Frank Popper</a> includes photography as the first of seven influences on the development of <a href=\"https://www.lerandom.art/subjects/digital-art\">digital art</a>. <a href=\"https://www.jstor.org/stable/777112\" target=\"_blank\" rel=\"noopener\">Digital generative artists such as</a> <a href=\"https://www.lerandom.art/subjects/casey-reas\">Casey Reas</a>, <a href=\"https://www.lerandom.art/subjects/margot-lovejoy\">Margot Lovejoy</a> and <a href=\"https://www.lerandom.art/subjects/terry-gips\">Terry Gips</a> have all stressed the importance of photography to the development of computer art as well.",
+      "<a href=\"https://www.lerandom.art/subjects/nicephore-niepce\">Nicéphore Niépce</a> produced the earliest photograph made in a <a href=\"https://www.lerandom.art/subjects/camera-obscura\">camera obscura</a> that survives today, using a pewter plate coated with bitumen. This breakthrough served as the basis for the continuation of developments in photography to this day. The invention of photography stands as a paradigm shift in art history. The camera’s ability to capture representations of the visible world would lead to painters losing interest in strict realism and spur the gradual abstraction of modern art. Photography, in addition to becoming its own art form, would also lead to cinema and <a href=\"https://www.lerandom.art/subjects/video-art\">video art</a>, as art expanded from a handmade practice to include capture practices."
     ],
     "cite": [
       {
@@ -3077,6 +3098,7 @@
       }
     ],
     "img": {
+      "alt": "Niépce's View from the Window at Le Gras, 1827: faint grey rooftops and a tree on a scratched pewter plate",
       "src": "img/nicephore-niepce-produces-first-permanent-photograph.jpg",
       "cap": "",
       "credit": "Joseph Nicéphore Niépce, View from the Window at Le Gras, 1827. Heliograph on pewter, 16.7 x 20.3 cm. Gernsheim Collection, Harry Ransom Center, The University of Texas at Austin. <a href=\"https://www.hrc.utexas.edu/niepce-heliograph/\">Image source</a>",
@@ -3211,7 +3233,7 @@
   },
   "charles-babbage-develops-his-analytical-engine": {
     "body": [
-      "Foundational to the development of cybernetics, this unrealized mechanical computer aimed to use punch cards, inspired by the <a href=\"m/joseph-marie-jacquard-invents-the-jacquard-loom.html\" data-moment=\"joseph-marie-jacquard-invents-the-jacquard-loom\">Jacquard Loom</a>, to perform calculations.",
+      "Foundational to the development of cybernetics, this unrealized mechanical computer aimed to use <a href=\"https://www.lerandom.art/subjects/punch-cards\">punch cards</a>, inspired by the <a href=\"m/joseph-marie-jacquard-invents-the-jacquard-loom.html\" data-moment=\"joseph-marie-jacquard-invents-the-jacquard-loom\">Jacquard Loom</a>, to perform calculations.",
       "One of the earliest designs for a programmable computer, it also had a significant impact on the development of modern computers and programming languages."
     ],
     "cite": [
@@ -3221,6 +3243,7 @@
       }
     ],
     "img": {
+      "alt": "Babbage's 1840 plan of the Analytical Engine: a large central circle ringed by gears, with punched-card drawings",
       "src": "img/charles-babbage-develops-his-analytical-engine.jpg",
       "cap": "",
       "credit": "Charles Babbage, General plan of the Analytical Engine (Plan 25), 6 August 1840, as displayed at the Computer History Museum. Photograph by Arnold Reinhold, 2018, via Wikimedia Commons (CC BY 4.0). <a href=\"https://commons.wikimedia.org/wiki/File:Babbage_Analytical_Engine_Plan_1840_CHM.agr.jpg\">Image source</a>",
@@ -3338,7 +3361,7 @@
   },
   "ada-lovelace-becomes-first-computer-programmer": {
     "body": [
-      "Computer programming is born, as <a href=\"https://www.lerandom.art/subjects/ada-lovelace\">Ada Lovelace</a>’s 1843 notes on <a href=\"m/charles-babbage-develops-his-analytical-engine.html\" data-moment=\"charles-babbage-develops-his-analytical-engine\">Charles Babbage’s Analytical Engine</a> set out a program for computing Bernoulli numbers, making her the first published computer programmer. Her work demonstrated the potential for computers to perform complex tasks, foreshadowing the development of modern programming languages. She even envisioned the computer’s ability to create programmed art. Inspired by the notion of combining science and art, Lovelace recognized the computer’s ability to extend beyond calculating numbers. She understood its potential to create complex images and music by translating basic rules into symbolic logic, carrying on the traditions of <a href=\"https://www.lerandom.art/subjects/euclid\">Euclid</a>, <a href=\"https://www.lerandom.art/subjects/al-khwarizmi\">Al-Khwārizmī</a> and Leibniz. Lovelace foresaw a future where computers could be programmed to create beautiful and imaginative works of art, envisioning a creative partnership between humans and machines. This concept anticipated the field of computer-generated art by over a century. Her prescient ideas have inspired generations of computer programmers and artists. Lovelace would inspire future women pioneers in the field of programming such as <a href=\"m/grace-murray-hopper-invents-general-programming-languages.html\" data-moment=\"grace-murray-hopper-invents-general-programming-languages\">Grace Hopper who introduced the use of natural language in programming in the 1950s</a>.",
+      "Computer <a href=\"https://www.lerandom.art/subjects/programming\">programming</a> is born, as <a href=\"https://www.lerandom.art/subjects/ada-lovelace\">Ada Lovelace</a>’s 1843 notes on <a href=\"m/charles-babbage-develops-his-analytical-engine.html\" data-moment=\"charles-babbage-develops-his-analytical-engine\">Charles Babbage’s Analytical Engine</a> set out a program for computing Bernoulli numbers, making her the first published computer programmer. Her work demonstrated the potential for computers to perform complex tasks, foreshadowing the development of modern programming languages. She even envisioned the computer’s ability to create programmed art. Inspired by the notion of combining science and art, Lovelace recognized the computer’s ability to extend beyond calculating numbers. She understood its potential to create complex images and music by translating basic rules into symbolic logic, carrying on the traditions of <a href=\"https://www.lerandom.art/subjects/euclid\">Euclid</a>, <a href=\"https://www.lerandom.art/subjects/al-khwarizmi\">Al-Khwārizmī</a> and Leibniz. Lovelace foresaw a future where computers could be programmed to create beautiful and imaginative works of art, envisioning a creative partnership between humans and machines. This concept anticipated the field of computer-generated art by over a century. Her prescient ideas have inspired generations of computer programmers and artists. Lovelace would inspire future women pioneers in the field of programming such as <a href=\"m/grace-murray-hopper-invents-general-programming-languages.html\" data-moment=\"grace-murray-hopper-invents-general-programming-languages\">Grace Hopper who introduced the use of natural language in programming in the 1950s</a>.",
       "The \"notes\" accompany Lovelace's 1843 English translation of Luigi Federico Menabrea's French memoir on the Engine. However, the notes actually run about three times as long as the memoir."
     ],
     "cite": [
@@ -3348,6 +3371,7 @@
       }
     ],
     "img": {
+      "alt": "Printed 1843 table of numbered operations and variables computing Bernoulli numbers on the Analytical Engine",
       "src": "img/ada-lovelace-becomes-first-computer-programmer.jpg",
       "cap": "",
       "credit": "Diagram for the computation by the Engine of the Numbers of Bernoulli (Note G), from Ada Lovelace's translation and notes to L. F. Menabrea, Sketch of the Analytical Engine invented by Charles Babbage, Taylor's Scientific Memoirs, vol. 3, 1843. Via Wikimedia Commons (public domain). <a href=\"https://commons.wikimedia.org/wiki/File:Diagram_for_the_computation_of_Bernoulli_numbers.jpg\">Image source</a>",
@@ -3472,7 +3496,7 @@
   },
   "hugh-blackburn-describes-the-harmonograph": {
     "body": [
-      "The Harmonograph, commonly agreed to be invented by <a href=\"https://www.lerandom.art/subjects/hugh-blackburn\">Hugh Blackburn</a>, is a mechanical apparatus that creates geometric drawings, typically Lissajous-type figures, through the use of pendulums. It stands as an early example of an autonomous system/machine that generates artistic forms, and as a precursor to later generative art and computer graphics."
+      "The Harmonograph, commonly agreed to be invented by <a href=\"https://www.lerandom.art/subjects/hugh-blackburn\">Hugh Blackburn</a>, is a mechanical apparatus that creates geometric drawings, typically Lissajous-type figures, through the use of pendulums. It stands as an early example of an autonomous system/machine that generates artistic forms, and as a precursor to later <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a> and <a href=\"https://www.lerandom.art/subjects/computer-graphics\">computer graphics</a>."
     ],
     "cite": [
       {
@@ -3489,6 +3513,7 @@
       }
     ],
     "img": {
+      "alt": "Wooden harmonograph with a chain-hung platform where a green pen draws looping lines on paper",
       "src": "img/hugh-blackburn-describes-the-harmonograph.jpg",
       "cap": "",
       "credit": "Wikipedia. 2023. \"Harmonograph.\" Wikimedia Foundation. Last modified February 2, 2023. <a href=\"https://en.wikipedia.org/wiki/Harmonograph\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>.",
@@ -3576,7 +3601,7 @@
   "eureka-exhibited-at-londons-egyptian-hall": {
     "body": [
       "<a href=\"https://www.lerandom.art/subjects/john-clark\">John Clark</a>’s Latin verse generating machine, Eureka, was a full mechanized version of <a href=\"https://digitalarchive.tpl.ca/objects/332679/artificial-versifying-or-the-schoolboys-recreation--a-n\" target=\"_blank\" rel=\"noopener\">John Peter’s book,</a> <a href=\"https://digitalarchive.tpl.ca/objects/332679/artificial-versifying-or-the-schoolboys-recreation--a-n\" target=\"_blank\" rel=\"noopener\">Artificial Versifying</a>, <a href=\"m/artificial-versifying-by-john-peter.html\" data-moment=\"artificial-versifying-by-john-peter\">from 1677 and earlier in this Timeline</a>.",
-      "The machine generated Latin hexameter verse and stands as a precursor to the typewriter and other early mechanical devices. The inventor John Clark spent thirteen years building Eureka, from 1832 to 1845, which resembles a bookcase. This early automatic machine combined science, mechanization, computation, randomness and art in a way that is recognizable to contemporary digital generative art.",
+      "The machine generated Latin hexameter verse and stands as a precursor to the typewriter and other early mechanical devices. The inventor John Clark spent thirteen years building Eureka, from 1832 to 1845, which resembles a bookcase. This early automatic machine combined science, mechanization, computation, randomness and art in a way that is recognizable to contemporary digital <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a>.",
       "The device stands as another example of the roots of generative poetry often stretching back further than generative graphics."
     ],
     "cite": [
@@ -3586,6 +3611,7 @@
       }
     ],
     "img": {
+      "alt": "Engraving of the Eureka, a tall cabinet machine with columns, carved trim and a front window of rows",
       "src": "img/eureka-exhibited-at-londons-egyptian-hall.jpg",
       "cap": "",
       "credit": "Wikipedia. 2023. \"The Eureka.\" Wikimedia Foundation. Last modified June 19, 2023. <a href=\"https://en.wikipedia.org/wiki/The_Eureka\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>.",
