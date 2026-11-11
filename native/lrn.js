@@ -175,7 +175,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261111135045";
+var LRW_BUILD = "20261111140626";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -3950,6 +3950,19 @@ window.__lrwGlide = function(t, reduce, holdMs, onStable){
       return [t];
     }
     function esc(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+    /* lr-window-fit (11 Nov 2026, Peter: "that title needs to fit on 2 lines. second line beginning 'on'"): each
+       authored line of the headline (a span, or Title lines' break in .lr-tl) stays one line. The type steps down
+       until nothing wraps, never below 60% of the stylesheet size; past that the line may still wrap. */
+    function fitH(h){
+      if (!h) return;
+      h.style.fontSize = '';
+      var tl = h.querySelector('.lr-tl'), box = tl || h;
+      var want = tl ? tl.textContent.trim().split('\n').length : h.querySelectorAll('span').length;
+      if (!want || !box.offsetHeight) return;
+      var base = parseFloat(getComputedStyle(h).fontSize) || 0, size = base, n = 0;
+      function lines(){ var lh = parseFloat(getComputedStyle(box).lineHeight) || size * 1.02; return Math.round(box.offsetHeight / lh); }
+      while (base && lines() > want && size > base * 0.6 && n++ < 40) { size = Math.max(base * 0.6, size * 0.96); h.style.fontSize = size.toFixed(2) + 'px'; }
+    }
 
     var piece = bakedPiece; if (!piece) { piece = document.createElement('div'); piece.className = 'win-piece';
     piece.innerHTML =
@@ -3979,10 +3992,14 @@ window.__lrwGlide = function(t, reduce, holdMs, onStable){
       read.querySelector('span').textContent =
         r.read ? r.read : 'Read the ' + (k === 'interview' ? 'interview' : k === 'essay' ? 'essay' : k === 'guide' ? 'guide' : 'article');
     }
-    sync();
+    function syncFit(){ sync(); fitH(piece.querySelector('.win-h')); }   /* lr-window-fit */
+    syncFit();
     if (link && window.MutationObserver)
-      new MutationObserver(sync).observe(link, { attributes: true, attributeFilter: ['href'] });
-    addEventListener('lrw:window-changed', sync);
+      new MutationObserver(syncFit).observe(link, { attributes: true, attributeFilter: ['href'] });
+    addEventListener('lrw:window-changed', syncFit);
+    var fitPending = 0;
+    addEventListener('resize', function(){ if (fitPending) return; fitPending = requestAnimationFrame(function(){ fitPending = 0; fitH(piece.querySelector('.win-h')); }); }, { passive: true });
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ fitH(piece.querySelector('.win-h')); });
   } catch (e) {}
 })();
 
