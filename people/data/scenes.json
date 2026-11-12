@@ -510,6 +510,20 @@
       "chapterDefault": false,
       "wave": 2,
       "brief": "A simulated contract state machine visualised as the artwork: members deposit, propose and vote; proposals pass or fail by quorum; the treasury and rules change; a generative image re-renders from the contract state each block. The viewer joins as a simulated member, proposes a change to one visual parameter and votes; every transaction is labelled simulated, no wallet. Original, not any real DAO or artwork."
+    },
+    {
+      "id": "oxo",
+      "launched": "2026-11-10T14:00:00Z",
+      "chapter": 3,
+      "title": "OXO on EDSAC",
+      "blurb": "Dial your move against a simulation of A. S. Douglas's noughts and crosses program for Cambridge's EDSAC, written about 1952. It answers on a screen of dots and never loses.",
+      "home": "early-computers-play-tic-tac-toe-nim-chess-and-draughts",
+      "fits": "early computing, computer games, stored-program computers, cathode-ray displays, human-computer interaction, game-playing programs",
+      "file": "scenes/oxo.html",
+      "cls": "scene-oxo",
+      "status": "live",
+      "chapterDefault": false,
+      "brief": "A simulation of A. S. Douglas's noughts and crosses program for EDSAC (Cambridge, about 1952; now known as OXO). One monitor tube shows a 35 by 16 dot store with the board drawn as Martin Campbell-Kelly's EDSAC simulator draws it, and a rotary telephone dial takes the moves. Dialling 0 (EDSAC) or 1 (you) chooses who moves first and the squares are numbered 9 8 7 / 6 5 4 / 3 2 1, as in the OXO tape distributed with that simulator; its header reads A S DOUGLAS, C.1952, and how it relates to Douglas's own program is undocumented. On wide screens a teleprinter slip prints the tape's own lines: the prompts EDSAC/USER FIRST (DIAL 0/1): and DIAL MOVE:, then DRAWN GAME... or EDSAC WON..., and a ? after the prompt for a dial the program cannot use. You play X and EDSAC plays O, and when EDSAC moves first it opens in square 9, as the tape does when run. Its other replies are a full minimax search, so it never loses; accounts say Douglas's program also played a perfect game, but this is not his code. Clicking a square on the tube turns the dial to that square's number. The outlines on the tube, the rings on the dial and the notes on EDSAC's moves are this simulation's own guides. EDSAC had several monitor tubes (the Tutorial Guide's photograph shows three side by side); the scene shows only the store tube that drew the board. Sounds, the valve glow and the thinking time are atmosphere."
     }
   ]
 }
