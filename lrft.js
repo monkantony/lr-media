@@ -1843,6 +1843,9 @@ var AUDIO = {"a-a-murakami-on-existence-as-medium":["https://raw.githubuserconte
       d.about['@type'] = type;
       var also = document.querySelector('a.sj-also[href]');
       if (type === 'Person' && also && also.offsetParent !== null) d.about.sameAs = [also.href];
+      /* 14 Nov 2026 (CEO): a person gets a stable @id, the www page URL + "#person". On Peter's page that is the @id of the
+         site-wide Organization "employee" entry, so search engines read the two as one Peter Bauman. */
+      if (type === 'Person') d.about['@id'] = 'https://www.lerandom.art' + location.pathname.replace(/\/+$/, '') + '#person';
       if (type === 'Person') d['@type'] = 'ProfilePage', d.mainEntity = d.about;
       s.textContent = JSON.stringify(d);
     });
@@ -1894,25 +1897,8 @@ window.__lrImageCredit = function(){
 };
 window.__lrImageCredit();
 addEventListener('load', function(){ window.__lrImageCredit(); });
-(function(){
-  try {
-    var m = location.pathname.match(/^\/subjects\/([^\/?#]+)/); if (!m) return;
-    var slug = decodeURIComponent(m[1]);
-    fetch((window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/') + 'people/sameas.json', { credentials: 'omit' })
-      .then(function(r){ return r.ok ? r.json() : null; })
-      .then(function(all){
-        var ext = all && all[slug]; if (!ext || !ext.length) return;
-        [].forEach.call(document.querySelectorAll('script[type="application/ld+json"]'), function(s){
-          var d; try { d = JSON.parse(s.textContent); } catch (e) { return; }
-          if (!d || !d.about || d.about['@type'] !== 'Person' || (d['@type'] !== 'ProfilePage' && d['@type'] !== 'WebPage')) return;
-          var cur = [].concat(d.about.sameAs || []);
-          ext.forEach(function(u){ if (cur.indexOf(u) < 0) cur.push(u); });
-          d.about.sameAs = cur; if (d.mainEntity) d.mainEntity = d.about;
-          s.textContent = JSON.stringify(d);
-        });
-      }).catch(function(){});
-  } catch (e) {}
-})();
+/* (2) retired 14 Nov 2026: people/sameas.json left lr-media on 26 Oct (ead7e519) when the Subjects template took sameAs from
+   its Wikidata and Wikipedia fields (head line 16), so its fetch here only 404'd on every subject page. */
 
 /* 19 Oct 2026 (Peter: fix): from 1160 to 1440 px the centred header tab strip overflowed at both ends, so LATEST read TEST and
    CONTRIBUTORS lost its tail. Safe centring never cuts the first tab, tighter gaps and tracking fit the five tabs where they can,
