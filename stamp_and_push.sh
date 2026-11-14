@@ -206,6 +206,10 @@ for _sync in 1 2 3; do
   read -r _B_STAMP BASE _B_HOSTS < version.txt || true
   git cat-file -e "${BASE}^{commit}" 2>/dev/null || BASE="HEAD~1"
   FILES=(${(f)"$(git diff --name-only --diff-filter=d "$BASE" "$H" -- . ':!version.txt')"})
+  # 14 Nov 2026 (CEO): a new commit is a new jsDelivr URL for EVERY file, and past 50 MB jsDelivr can refuse an unchanged
+  # one (403, cached until purged: 5 runtime files at the live pin bb7d4db4 that day). So every file a live page reads at
+  # the pinned commit (runtime_files.sh) is warmed too, and the pointer stays put unless all of them answer 200.
+  [[ -x ./runtime_files.sh ]] && FILES=(${(u)FILES} ${(f)"$(./runtime_files.sh "$H")"})
   pending=($FILES)
   (( ${#pending} )) && echo "content ${H:0:12}: waiting until the CDNs serve ${#pending} changed files"
   for round in {1..24}; do
