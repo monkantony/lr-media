@@ -497,8 +497,8 @@
   },
   {
     "s": "gottfried-leibniz-pioneers-computational-thinking",
-    "t": "Gottfried Leibniz Pioneers Computational Thinking",
-    "th": "Gottfried Leibniz Pioneers Computational Thinking",
+    "t": "Gottfried Leibniz Lays Out Computational Thinking",
+    "th": "Gottfried Leibniz Lays Out Computational Thinking",
     "y": "1666",
     "yn": 1666,
     "c": 1,
@@ -2212,8 +2212,8 @@
   },
   {
     "s": "lhooq-by-marcel-duchamp",
-    "t": "*LHOOQ* by Marcel Duchamp",
-    "th": "<em>LHOOQ</em> by Marcel Duchamp",
+    "t": "*L.H.O.O.Q.* (LHOOQ) by Marcel Duchamp",
+    "th": "<em>L.H.O.O.Q.</em> (LHOOQ) by Marcel Duchamp", "ht": "L.H.O.O.Q. (LHOOQ) by Marcel Duchamp (1919) · Le Random",
     "y": "1919",
     "yn": 1919,
     "c": 2,
@@ -3016,8 +3016,8 @@
   },
   {
     "s": "max-ernst-develops-pioneering-method-of-chance-in-painting-grattage",
-    "t": "Max Ernst Develops Pioneering Method of Chance in Painting, Grattage",
-    "th": "Max Ernst Develops Pioneering Method of Chance in Painting, Grattage",
+    "t": "Max Ernst Develops Grattage, a Method of Chance in Painting",
+    "th": "Max Ernst Develops Grattage, a Method of Chance in Painting",
     "y": "1927",
     "yn": 1927,
     "c": 2,
@@ -7406,8 +7406,8 @@
   },
   {
     "s": "daphne-oram-develops-oramics-sound-drawn-by-hand",
-    "t": "Daphne Oram Develops Oramics, Sound Drawn by Hand",
-    "th": "Daphne Oram Develops Oramics, Sound Drawn by Hand",
+    "t": "Daphne Oram Develops Oramics: Hand-Drawn Sound",
+    "th": "Daphne Oram Develops Oramics: Hand-Drawn Sound",
     "y": "1962",
     "yn": 1962,
     "c": 4,
@@ -7420,8 +7420,8 @@
       "Generative Sound"
     ],
     "f": [],
-    "sc": "plotter",
-    "sf": 0,
+    "sc": "oramics",
+    "sf": 3,
     "img": "daphne-oram-develops-oramics-sound-drawn-by-hand.jpg",
     "x": 0.17617919618406747,
     "y2": -0.022620684434658762,
@@ -8688,8 +8688,8 @@
   },
   {
     "s": "ctg-pioneers-digital-generative-systems",
-    "t": "CTG Pioneers Digital Generative Systems",
-    "th": "CTG Pioneers Digital Generative Systems",
+    "t": "CTG Builds Digital Generative Systems",
+    "th": "CTG Builds Digital Generative Systems",
     "y": "1966",
     "yn": 1966,
     "c": 4,
@@ -11178,8 +11178,8 @@
   },
   {
     "s": "women-pioneers-bring-naturalism-to-computer-art",
-    "t": "Women Pioneers Bring Naturalism to Computer Art",
-    "th": "Women Pioneers Bring Naturalism to Computer Art",
+    "t": "Women Artists Bring Naturalism to Computer Art",
+    "th": "Women Artists Bring Naturalism to Computer Art",
     "y": "1970",
     "yn": 1970,
     "c": 5,
@@ -12477,8 +12477,8 @@
   },
   {
     "s": "harold-cohen-pioneers-ai-art-with-aaron",
-    "t": "Harold Cohen Pioneers AI Art with AARON",
-    "th": "Harold Cohen Pioneers AI Art with AARON",
+    "t": "Harold Cohen Begins AARON",
+    "th": "Harold Cohen Begins AARON",
     "y": "1973",
     "yn": 1973,
     "c": 5,
@@ -14830,6 +14830,29 @@
     "cl": 6
   },
   {
+    "s": "expert-systems-reach-industry",
+    "t": "Expert Systems Reach Industry",
+    "th": "Expert Systems Reach Industry",
+    "y": "1980",
+    "yn": 1980,
+    "c": 6,
+    "ty": [
+      "Invention"
+    ],
+    "rg": "North America",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "c64",
+    "sf": 0,
+    "img": "expert-systems-reach-industry-ba72bc119f.jpg",
+    "x": 0.12440335855212858,
+    "y2": 0.014502214936990797,
+    "z": -0.13035984583417157,
+    "cl": 6
+  },
+  {
     "s": "first-symposium-on-small-computers-in-the-arts-held-in-philadelphia",
     "t": "First “Symposium on Small Computers in the Arts” Held in Philadelphia",
     "th": "First <em>Symposium on Small Computers in the Arts</em> Held in Philadelphia",
@@ -15546,6 +15569,29 @@
     "y2": -0.9185,
     "z": 0.393,
     "cl": 2
+  },
+  {
+    "s": "the-hopfield-network",
+    "t": "The Hopfield Network",
+    "th": "The Hopfield Network",
+    "y": "1982",
+    "yn": 1982,
+    "c": 6,
+    "ty": [
+      "Invention"
+    ],
+    "rg": "North America",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "c64",
+    "sf": 0,
+    "img": "the-hopfield-network-9b7d2fdc5e.jpg",
+    "x": 0.4703580890773656,
+    "y2": -0.22212029692241678,
+    "z": -0.028299782710924832,
+    "cl": 13
   },
   {
     "s": "growth-by-yoichiro-kawaguchi",
@@ -17002,6 +17048,29 @@
     "cl": 14
   },
   {
+    "s": "backpropagation-works",
+    "t": "Backpropagation Works",
+    "th": "Backpropagation Works",
+    "y": "1986",
+    "yn": 1986,
+    "c": 6,
+    "ty": [
+      "Publication"
+    ],
+    "rg": "North America",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "c64",
+    "sf": 0,
+    "img": "backpropagation-works-f0b4dfabec.jpg",
+    "x": 0.4595034801860827,
+    "y2": -0.2323389525821264,
+    "z": 0.01181786069840671,
+    "cl": 13
+  },
+  {
     "s": "mona-leo-by-lillian-schwartz",
     "t": "*Mona-Leo* by Lillian Schwartz",
     "th": "<em>Mona-Leo</em> by Lillian Schwartz",
@@ -17387,7 +17456,7 @@
   {
     "s": "adobe-illustrator-developed",
     "t": "Adobe Illustrator Developed",
-    "th": "Adobe Illustrator Developed",
+    "th": "Adobe Illustrator Developed", "ht": "When Was Adobe Illustrator Released? March 1987 | Generative Art Timeline",
     "y": "1987",
     "yn": 1987,
     "c": 6,
@@ -17526,6 +17595,52 @@
     "y2": 0.4818,
     "z": -0.322,
     "cl": 12
+  },
+  {
+    "s": "expert-systems-collapse",
+    "t": "Expert Systems Collapse",
+    "th": "Expert Systems Collapse",
+    "y": "1987",
+    "yn": 1987,
+    "c": 6,
+    "ty": [
+      "Event"
+    ],
+    "rg": "North America",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "c64",
+    "sf": 0,
+    "img": "expert-systems-collapse-be6538ee02.jpg",
+    "x": 0.1170224329291063,
+    "y2": 0.03795292133948487,
+    "z": -0.13035545661955142,
+    "cl": 6
+  },
+  {
+    "s": "rules-winter",
+    "t": "Rules Winter",
+    "th": "Rules Winter",
+    "y": "1987–1993",
+    "yn": 1987,
+    "c": 6,
+    "ty": [
+      "Event"
+    ],
+    "rg": "North America",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "c64",
+    "sf": 0,
+    "img": "rules-winter-b01a9874d6.jpg",
+    "x": 0.10583283186247588,
+    "y2": 0.0428647436150754,
+    "z": -0.13035680461790686,
+    "cl": 6
   },
   {
     "s": "roman-verostko-with-seminal-article-epigenetic-painting",
@@ -18212,6 +18327,29 @@
     "y2": 0.7978,
     "z": 0.001,
     "cl": 6
+  },
+  {
+    "s": "machines-learn-to-read",
+    "t": "Machines Learn to Read",
+    "th": "Machines Learn to Read",
+    "y": "1989",
+    "yn": 1989,
+    "c": 6,
+    "ty": [
+      "Invention"
+    ],
+    "rg": "North America",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "c64",
+    "sf": 0,
+    "img": "machines-learn-to-read-c757349b80.jpg",
+    "x": 0.44885244583953915,
+    "y2": -0.2361586305280602,
+    "z": 0.02782230445180514,
+    "cl": 13
   },
   {
     "s": "paul-brown-s-1989-essay-beyond-art",
@@ -19471,7 +19609,7 @@
   {
     "s": "the-worlds-first-smartphone",
     "t": "The world’s first smartphone",
-    "th": "The world’s first smartphone",
+    "th": "The world’s first smartphone", "ht": "When Was the First Smartphone Released? August 1994 | Generative Art Timeline",
     "y": "1994",
     "yn": 1994,
     "c": 7,
@@ -19674,7 +19812,7 @@
   {
     "s": "google-is-born",
     "t": "Google is born",
-    "th": "Google is born",
+    "th": "Google is born", "ht": "When Was Google Created? September 1998 | Generative Art Timeline",
     "y": "1995",
     "yn": 1995,
     "c": 7,
@@ -19768,6 +19906,75 @@
     "y2": 0.3078,
     "z": 0.102,
     "cl": 16
+  },
+  {
+    "s": "support-vector-machines",
+    "t": "Support Vector Machines",
+    "th": "Support Vector Machines",
+    "y": "1995",
+    "yn": 1995,
+    "c": 7,
+    "ty": [
+      "Publication"
+    ],
+    "rg": "North America",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "netart",
+    "sf": 0,
+    "img": "support-vector-machines-5f2d17c00e.jpg",
+    "x": 0.4647097456536662,
+    "y2": -0.22054066207896902,
+    "z": -0.034402582637327817,
+    "cl": 13
+  },
+  {
+    "s": "machines-dream-in-pictures",
+    "t": "Machines Dream in Pictures",
+    "th": "Machines Dream in Pictures",
+    "y": "1995",
+    "yn": 1995,
+    "c": 7,
+    "ty": [
+      "Publication"
+    ],
+    "rg": "North America",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "netart",
+    "sf": 0,
+    "img": "machines-dream-in-pictures-69f194af3c.jpg",
+    "x": 0.4508902487442633,
+    "y2": -0.2349232674801035,
+    "z": -0.013899957980545075,
+    "cl": 13
+  },
+  {
+    "s": "neural-net-winter",
+    "t": "Neural Net Winter",
+    "th": "Neural Net Winter",
+    "y": "1995–2006",
+    "yn": 1995,
+    "c": 7,
+    "ty": [
+      "Event"
+    ],
+    "rg": "North America",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "netart",
+    "sf": 0,
+    "img": "neural-net-winter-de031db52a.jpg",
+    "x": 0.47606846086231863,
+    "y2": -0.21612531921835296,
+    "z": -0.015950315079534996,
+    "cl": 13
   },
   {
     "s": "macromedia-flash-1-0-releaseda",
@@ -19925,7 +20132,7 @@
   {
     "s": "the-crossing-by-bill-viola",
     "t": "The Crossing by Bill Viola",
-    "th": "The Crossing by Bill Viola",
+    "th": "The Crossing by Bill Viola", "ht": "Bill Viola, The Crossing (1996): Fire and Water · Le Random",
     "y": "1996",
     "yn": 1996,
     "c": 7,
@@ -19973,8 +20180,8 @@
   },
   {
     "s": "documenta-done-by-vuk-cosic",
-    "t": "*Documenta Done* by the net art pioneer Vuk Ćosić",
-    "th": "<em>Documenta Done</em> by the net art pioneer Vuk Ćosić",
+    "t": "*Documenta Done* by Vuk Ćosić",
+    "th": "<em>Documenta Done</em> by Vuk Ćosić",
     "y": "1997",
     "yn": 1997,
     "c": 7,
@@ -22016,6 +22223,29 @@
     "cl": 1
   },
   {
+    "s": "deep-learning-rebrand",
+    "t": "Deep Learning Rebrand",
+    "th": "Deep Learning Rebrand",
+    "y": "2006",
+    "yn": 2006,
+    "c": 8,
+    "ty": [
+      "Publication"
+    ],
+    "rg": "North America",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "sketchbook",
+    "sf": 0,
+    "img": "deep-learning-rebrand-6c6e3c8d77.jpg",
+    "x": 0.47616017228563395,
+    "y2": -0.20943202059191632,
+    "z": -0.01869649915479664,
+    "cl": 13
+  },
+  {
     "s": "steve-jobs-announces-the-iphone",
     "t": "Steve Jobs Announces the iPhone",
     "th": "Steve Jobs Announces the iPhone",
@@ -22046,7 +22276,7 @@
   {
     "s": "tumblr-launched",
     "t": "Tumblr Launched",
-    "th": "Tumblr Launched",
+    "th": "Tumblr Launched", "ht": "When Was Tumblr Created? February 2007 | Generative Art Timeline",
     "y": "2007",
     "yn": 2007,
     "c": 8,
@@ -22868,6 +23098,29 @@
     "y2": -0.421,
     "z": -0.021,
     "cl": 5
+  },
+  {
+    "s": "watson-wins-jeopardy",
+    "t": "Watson Wins Jeopardy!",
+    "th": "Watson Wins Jeopardy!",
+    "y": "2011",
+    "yn": 2011,
+    "c": 9,
+    "ty": [
+      "Event"
+    ],
+    "rg": "North America",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "gan",
+    "sf": 0,
+    "img": "watson-wins-jeopardy-bf177c6f75.jpg",
+    "x": 0.4521001797141993,
+    "y2": -0.21315468958883876,
+    "z": -0.023515751628927196,
+    "cl": 13
   },
   {
     "s": "deep-convolutional-neural-networks-unleashed",
@@ -24088,6 +24341,29 @@
     "cl": 9
   },
   {
+    "s": "alphago-and-alphafold",
+    "t": "AlphaGo and AlphaFold",
+    "th": "AlphaGo and AlphaFold",
+    "y": "2016",
+    "yn": 2016,
+    "c": 9,
+    "ty": [
+      "Event"
+    ],
+    "rg": "Europe",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "gan",
+    "sf": 0,
+    "img": "alphago-and-alphafold-a7bc7bd21c.jpg",
+    "x": 0.4616108820954259,
+    "y2": -0.20616682837660097,
+    "z": -0.022335428910328546,
+    "cl": 13
+  },
+  {
     "s": "curios-cards-first-art-nft-on-ethereum",
     "t": "Curios Cards: First Art NFT on Ethereum",
     "th": "Curios Cards: First Art NFT on Ethereum",
@@ -24446,6 +24722,29 @@
     "y2": -0.2783,
     "z": -0.042,
     "cl": 9
+  },
+  {
+    "s": "attention-is-all-you-need",
+    "t": "Attention Is All You Need",
+    "th": "Attention Is All You Need",
+    "y": "2017",
+    "yn": 2017,
+    "c": 9,
+    "ty": [
+      "Publication"
+    ],
+    "rg": "North America",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "gan",
+    "sf": 0,
+    "img": "attention-is-all-you-need-f49868de4f.jpg",
+    "x": 0.45331293840687814,
+    "y2": -0.2172033752757848,
+    "z": -0.02271124685490283,
+    "cl": 13
   },
   {
     "s": "why-love-generative-art-by-jason-bailey-on-artnome",
@@ -25709,7 +26008,7 @@
   {
     "s": "dall-e-launched",
     "t": "DALL-E Launched",
-    "th": "DALL-E Launched",
+    "th": "DALL-E Launched", "ht": "When Was DALL·E Released? January 2021 | Generative Art Timeline",
     "y": "2021",
     "yn": 2021,
     "c": 10,
@@ -26893,7 +27192,7 @@
   {
     "s": "midjourney-launched",
     "t": "Midjourney Launched",
-    "th": "Midjourney Launched",
+    "th": "Midjourney Launched", "ht": "When Was Midjourney Released? July 2022 | Generative Art Timeline",
     "y": "2022",
     "yn": 2022,
     "c": 10,
@@ -26942,7 +27241,7 @@
   {
     "s": "stable-diffusion-released",
     "t": "Stable Diffusion Released",
-    "th": "Stable Diffusion Released",
+    "th": "Stable Diffusion Released", "ht": "When Was Stable Diffusion Released? August 2022 | Generative Art Timeline",
     "y": "2022",
     "yn": 2022,
     "c": 10,
@@ -27163,6 +27462,29 @@
     "x": 0.3996,
     "y2": -0.3707,
     "z": 0.02,
+    "cl": 13
+  },
+  {
+    "s": "chatgpt",
+    "t": "ChatGPT",
+    "th": "ChatGPT",
+    "y": "2022",
+    "yn": 2022,
+    "c": 10,
+    "ty": [
+      "Invention"
+    ],
+    "rg": "North America",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "chain",
+    "sf": 0,
+    "img": "chatgpt-44f53c7852.jpg",
+    "x": 0.42195587147742086,
+    "y2": -0.2514544561734748,
+    "z": 0.016078482376310946,
     "cl": 13
   },
   {
@@ -28233,6 +28555,29 @@
     "x": 0.3986,
     "y2": -0.4006,
     "z": 0.19,
+    "cl": 13
+  },
+  {
+    "s": "deep-learning-wins-nobels",
+    "t": "Deep Learning Wins Nobels",
+    "th": "Deep Learning Wins Nobels",
+    "y": "2024",
+    "yn": 2024,
+    "c": 10,
+    "ty": [
+      "Event"
+    ],
+    "rg": "Europe",
+    "mv": [
+      "artificial intelligence"
+    ],
+    "f": [],
+    "sc": "chain",
+    "sf": 0,
+    "img": "deep-learning-wins-nobels-c1378d8928.jpg",
+    "x": 0.4589616643201399,
+    "y2": -0.22409419990076035,
+    "z": -0.021885435969403122,
     "cl": 13
   },
   {

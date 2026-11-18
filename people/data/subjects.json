@@ -2992,7 +2992,9 @@
     "t": "tech",
     "m": [
       "rene-descartes-poses-a-language-test-for-machines",
-      "openai-releases-gpt2"
+      "attention-is-all-you-need",
+      "openai-releases-gpt2",
+      "chatgpt"
     ]
   },
   "turing test": {
@@ -3608,12 +3610,15 @@
       "computer-nude-studies-in-perception-i-by-leon-harmon-and-ken-knowlton",
       "the-machine-as-seen-at-the-end-of-the-mechanical-age-at-moma",
       "lillian-schwartz-begins-her-computer-art-career",
-      "dennis-ritchie-develops-the-c-language",
-      "c-developed-by-bjarne-stroustrup-at-bell-laboratories",
       "lillian-schwartz-and-ken-knowlton-make-pixillation",
       "lillian-schwartz-and-ken-knowlton-make-ufos",
+      "dennis-ritchie-develops-the-c-language",
+      "c-developed-by-bjarne-stroustrup-at-bell-laboratories",
       "jaron-laniers-moondust",
       "mona-leo-by-lillian-schwartz",
+      "machines-learn-to-read",
+      "support-vector-machines",
+      "neural-net-winter",
       "electronic-superhighway-2016-1966-at-whitechapel-gallery-london",
       "inferno-by-helena-sarin"
     ]
@@ -3716,14 +3721,20 @@
       "james-baker-and-fred-jelinek-bring-hidden-markov-models-to-speech-recognition",
       "stephen-grossberg-introduces-adaptive-resonance-theory",
       "harold-cohen-exhibits-aaron-at-the-stedelijk-museum",
+      "expert-systems-reach-industry",
       "yoichiro-kawaguchi-designates-his-work-digital-art",
       "paul-werbos-proposes-backpropagation-to-train-neural-networks",
+      "the-hopfield-network",
       "growth-by-yoichiro-kawaguchi",
       "harold-cohens-arnolfini-series",
       "aaron-harold-cohen-exhibitions-at-major-museums-around-the-world-including-brita",
       "boids-by-craig-reynolds",
       "langton-s-ant",
+      "backpropagation-works",
       "william-latham-begins-collaborations-with-stephen-todd",
+      "expert-systems-collapse",
+      "rules-winter",
+      "machines-learn-to-read",
       "paul-brown-s-1989-essay-beyond-art",
       "panspermia-by-karl-sims",
       "the-evolution-of-form-by-william-latham",
@@ -3739,6 +3750,9 @@
       "just-this-once-by-scott-french",
       "genetic-images-by-karl-sims",
       "evolved-virtual-creatures-by-karl-sims",
+      "support-vector-machines",
+      "machines-dream-in-pictures",
+      "neural-net-winter",
       "galapagos-by-karl-sims",
       "ntt-intercommunication-center-opens-in-tokyo",
       "frankensteinian-methods-for-evolutionary-music-composition-by-peter-todd-and-gre",
@@ -3754,11 +3768,13 @@
       "dina-chatbot-by-lynn-hershman-leeson",
       "eden-by-john-mccormack",
       "christa-sommerer-and-laurent-mignonneaus-life-writer",
+      "deep-learning-rebrand",
       "evolution-and-collective-intelligence-of-the-electric-sheep-by-scott-draves",
       "imagenet-launches",
       "enter-the-turbo-charged-2010s",
       "imagenet-large-scale-visual-recognition-challenge",
       "color-of-words-by-gene-kogan",
+      "watson-wins-jeopardy",
       "deep-convolutional-neural-networks-unleashed",
       "data-masks-series-by-sterling-crispin",
       "ian-goodfellow-introduces-gans",
@@ -3769,8 +3785,10 @@
       "drawing-operations-by-sougwen-chung",
       "journey-through-the-layers-of-the-mind-by-memo-akten",
       "neural-network-written-rap-song-by-robbie-barrat",
+      "alphago-and-alphafold",
       "lauren-by-lauren-lee-mccarthy",
       "1-the-road-by-ross-goodwin",
+      "attention-is-all-you-need",
       "landscapes-and-nude-portraits-by-robbie-barrat",
       "memories-of-passersby-i-by-mario-klingemann",
       "bob-by-ian-cheng",
@@ -3799,9 +3817,11 @@
       "stable-diffusion-released",
       "rafael-lozano-hemmer-common-measures-by-rafael-lozano-hemmer-at-pace",
       "peer-to-peer-presented-by-buffalo-akg-and-feral-file",
+      "chatgpt",
       "openai-releases-chatgpt-4",
       "harold-cohen-aaron-at-whitney",
       "generative-art-summit-berlin",
+      "deep-learning-wins-nobels",
       "the-world-through-ai-at-jeu-de-paume",
       "show-of-the-year-glitchs-room-service"
     ]
@@ -3827,20 +3847,24 @@
     "t": "tech",
     "m": [
       "thomas-bayes-develops-bayesian-inference",
-      "dall-e-launched",
-      "vibe-check-a-brave-new-world",
-      "zero-10-debuts-at-art-basel-miami-beach",
-      "frieder-nake-wins-2025-acm-siggraph-distinguished-artist-award-for-lifetime-achi",
-      "shun-ichi-amari-publishes-learning-rules-for-neural-networks",
       "alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks",
+      "shun-ichi-amari-publishes-learning-rules-for-neural-networks",
       "frank-rosenblatt-dies-at-43",
       "paul-werbos-proposes-backpropagation-to-train-neural-networks",
+      "deep-learning-rebrand",
       "imagenet-launches",
       "enter-the-turbo-charged-2010s",
       "deep-convolutional-neural-networks-unleashed",
       "journey-through-the-layers-of-the-mind-by-memo-akten",
+      "alphago-and-alphafold",
+      "attention-is-all-you-need",
       "uumwelt-by-pierre-huyghe",
-      "all-we-d-ever-need-is-one-another-by-adam-basanta"
+      "all-we-d-ever-need-is-one-another-by-adam-basanta",
+      "dall-e-launched",
+      "deep-learning-wins-nobels",
+      "vibe-check-a-brave-new-world",
+      "zero-10-debuts-at-art-basel-miami-beach",
+      "frieder-nake-wins-2025-acm-siggraph-distinguished-artist-award-for-lifetime-achi"
     ]
   },
   "information theory": {
@@ -3904,6 +3928,7 @@
       "mutations-by-william-latham",
       "fuse-by-scott-draves",
       "a-volve-by-christa-sommerer-and-laurent-mignonneau",
+      "support-vector-machines",
       "electric-sheep-by-scott-draves",
       "machado-and-cardosos-nevar-system",
       "imagenet-launches",
@@ -3945,13 +3970,20 @@
       "teuvo-kohonen-kaoru-nakano-and-james-anderson-publish-associative-memory-network",
       "stephen-grossberg-introduces-adaptive-resonance-theory",
       "paul-werbos-proposes-backpropagation-to-train-neural-networks",
+      "the-hopfield-network",
       "jaron-laniers-moondust",
+      "backpropagation-works",
+      "rules-winter",
+      "machines-learn-to-read",
       "jurgen-schmidhuber-proposes-artificial-curiosity",
       "music-and-connectionism-by-peter-m-todd-and-gareth-loy",
       "evolved-virtual-creatures-by-karl-sims",
+      "machines-dream-in-pictures",
+      "neural-net-winter",
       "galapagos-by-karl-sims",
       "electric-sheep-by-scott-draves",
       "doug-eck-advances-neural-network-creative-expression",
+      "deep-learning-rebrand",
       "imagenet-launches",
       "enter-the-turbo-charged-2010s",
       "imagenet-large-scale-visual-recognition-challenge",
@@ -3966,7 +3998,8 @@
       "uumwelt-by-pierre-huyghe",
       "eons-by-mike-tyka",
       "rerites-by-david-jhave",
-      "dall-e-launched"
+      "dall-e-launched",
+      "deep-learning-wins-nobels"
     ]
   },
   "theoretical computer science": {
@@ -5064,20 +5097,22 @@
     "n": "generative AI",
     "t": "tech",
     "m": [
+      "machines-dream-in-pictures",
+      "machado-and-cardosos-nevar-system",
       "enter-the-madness",
       "dall-e-launched",
       "gene-kogan-creates-braindrops-long-form-ai-art-platform",
       "latent-diffusion-models-introduced",
       "midjourney-launched",
       "stable-diffusion-released",
+      "chatgpt",
       "openai-releases-chatgpt-4",
       "generative-platforms-explode",
       "sound-machines-by-moma-and-feral-file",
       "whitney-biennial-includes-mat-holly",
       "karpathy-coins-vibe-coding",
       "machine-love-at-mori-art-museum",
-      "the-world-through-ai-at-jeu-de-paume",
-      "machado-and-cardosos-nevar-system"
+      "the-world-through-ai-at-jeu-de-paume"
     ]
   },
   "nfts": {
@@ -7603,9 +7638,10 @@
     "n": "OpenAI",
     "t": "orgs",
     "m": [
+      "openai-releases-gpt2",
       "dall-e-launched",
-      "openai-releases-chatgpt-4",
-      "openai-releases-gpt2"
+      "chatgpt",
+      "openai-releases-chatgpt-4"
     ]
   },
   "generative systems": {
@@ -12786,6 +12822,7 @@
     "n": "ChatGPT",
     "t": "tech",
     "m": [
+      "chatgpt",
       "openai-releases-chatgpt-4",
       "deepseek-shocks-ai-world",
       "art-of-the-year-claude-opus-4-5"
@@ -12824,8 +12861,6 @@
     "n": "Google",
     "t": "orgs",
     "m": [
-      "openai-releases-chatgpt-4",
-      "ai-and-creativity-at-conferences",
       "google-is-born",
       "google-buys-youtube",
       "enter-the-turbo-charged-2010s",
@@ -12833,8 +12868,11 @@
       "googles-alexander-mordvintsev-launches-deepdream",
       "journey-through-the-layers-of-the-mind-by-memo-akten",
       "factory-of-the-sun-by-hito-steyerl",
+      "attention-is-all-you-need",
       "meandering-river-by-onformative",
-      "poemportraits-by-ross-goodwin"
+      "poemportraits-by-ross-goodwin",
+      "openai-releases-chatgpt-4",
+      "ai-and-creativity-at-conferences"
     ]
   },
   "tiktok": {
@@ -14231,8 +14269,9 @@
     "n": "UC San Diego",
     "t": "orgs",
     "m": [
-      "harold-cohen-aaron-at-whitney",
-      "harold-cohens-early-work-exhibited-at-lacma"
+      "harold-cohens-early-work-exhibited-at-lacma",
+      "backpropagation-works",
+      "harold-cohen-aaron-at-whitney"
     ]
   },
   "seriality": {
@@ -15752,6 +15791,8 @@
     "n": "Demis Hassabis",
     "t": "people",
     "m": [
+      "alphago-and-alphafold",
+      "deep-learning-wins-nobels",
       "vibe-check-a-brave-new-world"
     ]
   },
@@ -15804,6 +15845,9 @@
     "n": "Yann LeCun",
     "t": "people",
     "m": [
+      "rules-winter",
+      "machines-learn-to-read",
+      "neural-net-winter",
       "vibe-check-a-brave-new-world"
     ]
   },
@@ -17286,6 +17330,7 @@
     "n": "NeurIPS",
     "t": "orgs",
     "m": [
+      "rules-winter",
       "ai-and-creativity-at-conferences"
     ]
   },
@@ -22788,7 +22833,8 @@
       "john-mccarthy-and-marvin-minsky-found-the-mit-artificial-intelligence-project",
       "the-national-physical-laboratory-s-mechanisation-of-thought-processes",
       "the-split-neural-networks-fall-from-favor-after-perceptrons",
-      "marvin-minskys-frames-and-roger-schank-and-robert-abelsons-scripts"
+      "marvin-minskys-frames-and-roger-schank-and-robert-abelsons-scripts",
+      "expert-systems-collapse"
     ]
   },
   "ferranti mark i": {
@@ -23552,8 +23598,8 @@
       "running-cola-is-africa-by-computer-technique-group-ctg",
       "stephen-todd-works-on-early-computer-art",
       "ctg-participates-in-the-paris-biennale",
-      "molnars-paris-sorbonne-university-orsay-computing-centre",
       "art-and-technology-exhibition-at-the-los-angeles-county-museum-of-art-lacma",
+      "molnars-paris-sorbonne-university-orsay-computing-centre",
       "ibm-produces-first-portable-computer",
       "mandelbrot-coins-the-term-fractal",
       "james-baker-and-fred-jelinek-bring-hidden-markov-models-to-speech-recognition",
@@ -23568,6 +23614,7 @@
       "scott-draves-developed-the-fractal-flame-algorithm",
       "the-worlds-first-smartphone",
       "sun-microsystems-release-java-1-0",
+      "watson-wins-jeopardy",
       "from-the-archives-art-and-technology-at-lacma-19671971-at-los-angeles-county-mus"
     ]
   },
@@ -23602,10 +23649,25 @@
       "the-first-ai-winter",
       "james-baker-and-fred-jelinek-bring-hidden-markov-models-to-speech-recognition",
       "stephen-grossberg-introduces-adaptive-resonance-theory",
+      "expert-systems-reach-industry",
       "paul-werbos-proposes-backpropagation-to-train-neural-networks",
+      "the-hopfield-network",
+      "backpropagation-works",
+      "expert-systems-collapse",
+      "rules-winter",
+      "machines-learn-to-read",
       "jurgen-schmidhuber-proposes-artificial-curiosity",
+      "support-vector-machines",
+      "machines-dream-in-pictures",
+      "neural-net-winter",
+      "deep-learning-rebrand",
+      "watson-wins-jeopardy",
       "googles-alexander-mordvintsev-launches-deepdream",
-      "automat-und-mensch-at-kate-vass-galerie"
+      "alphago-and-alphafold",
+      "attention-is-all-you-need",
+      "automat-und-mensch-at-kate-vass-galerie",
+      "chatgpt",
+      "deep-learning-wins-nobels"
     ]
   },
   "origins": {
@@ -23654,7 +23716,8 @@
     "t": "orgs",
     "m": [
       "john-mccarthy-marvin-minsky-claude-shannon-introduce-world-to-ai",
-      "the-term-artificial-intelligence-is-coined"
+      "the-term-artificial-intelligence-is-coined",
+      "deep-learning-rebrand"
     ]
   },
   "dartmouth summer research project on artificial intelligence": {
@@ -25461,7 +25524,8 @@
     "n": "Symbolics",
     "t": "orgs",
     "m": [
-      "john-mccarthy-introduces-lisp"
+      "john-mccarthy-introduces-lisp",
+      "expert-systems-collapse"
     ]
   },
   "niki de saint phalle": {
@@ -26515,6 +26579,8 @@
     "t": "orgs",
     "m": [
       "leslie-mezei-gives-the-first-lecture-on-computer-art",
+      "machines-dream-in-pictures",
+      "deep-learning-rebrand",
       "deep-convolutional-neural-networks-unleashed"
     ]
   },
@@ -28953,10 +29019,11 @@
     "n": "Jürgen Schmidhuber",
     "t": "people",
     "m": [
-      "shun-ichi-amari-publishes-learning-rules-for-neural-networks",
       "alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks",
+      "shun-ichi-amari-publishes-learning-rules-for-neural-networks",
       "paul-werbos-proposes-backpropagation-to-train-neural-networks",
       "jurgen-schmidhuber-proposes-artificial-curiosity",
+      "neural-net-winter",
       "doug-eck-advances-neural-network-creative-expression"
     ]
   },
@@ -28985,7 +29052,9 @@
     "n": "John Hopfield",
     "t": "other",
     "m": [
-      "shun-ichi-amari-publishes-learning-rules-for-neural-networks"
+      "shun-ichi-amari-publishes-learning-rules-for-neural-networks",
+      "the-hopfield-network",
+      "deep-learning-wins-nobels"
     ]
   },
   "s. saito": {
@@ -29016,7 +29085,10 @@
       "dendral-project-begins-at-stanford",
       "richard-fikes-and-nils-nilsson-introduce-strips",
       "edward-shortliffe-and-colleagues-develop-mycin-at-stanford",
+      "expert-systems-reach-industry",
       "yoichiro-kawaguchi-designates-his-work-digital-art",
+      "expert-systems-collapse",
+      "rules-winter",
       "roman-verostko-with-seminal-article-epigenetic-painting"
     ]
   },
@@ -29237,6 +29309,8 @@
       "the-split-neural-networks-fall-from-favor-after-perceptrons",
       "the-lighthill-report-is-published",
       "the-first-ai-winter",
+      "expert-systems-collapse",
+      "rules-winter",
       "jurgen-schmidhuber-proposes-artificial-curiosity"
     ]
   },
@@ -33240,7 +33314,8 @@
     "n": "roger schank",
     "t": "other",
     "m": [
-      "marvin-minskys-frames-and-roger-schank-and-robert-abelsons-scripts"
+      "marvin-minskys-frames-and-roger-schank-and-robert-abelsons-scripts",
+      "expert-systems-collapse"
     ]
   },
   "wendy lehnert": {
@@ -33915,7 +33990,9 @@
     "n": "backpropagation",
     "t": "tech",
     "m": [
-      "paul-werbos-proposes-backpropagation-to-train-neural-networks"
+      "paul-werbos-proposes-backpropagation-to-train-neural-networks",
+      "backpropagation-works",
+      "machines-learn-to-read"
     ]
   },
   "pytorch": {
@@ -41990,6 +42067,7 @@
     "n": "convolutional neural networks (CNNs)",
     "t": "tech",
     "m": [
+      "machines-learn-to-read",
       "imagenet-launches",
       "enter-the-turbo-charged-2010s",
       "imagenet-large-scale-visual-recognition-challenge",
@@ -45267,6 +45345,266 @@
     "t": "other",
     "m": [
       "richard-williams-develops-art1"
+    ]
+  },
+  "carnegie mellon university": {
+    "n": "Carnegie Mellon University",
+    "t": "other",
+    "m": [
+      "expert-systems-reach-industry",
+      "backpropagation-works"
+    ]
+  },
+  "digital equipment corporation": {
+    "n": "Digital Equipment Corporation",
+    "t": "other",
+    "m": [
+      "expert-systems-reach-industry"
+    ]
+  },
+  "john mcdermott": {
+    "n": "John McDermott",
+    "t": "other",
+    "m": [
+      "expert-systems-reach-industry"
+    ]
+  },
+  "caltech": {
+    "n": "Caltech",
+    "t": "other",
+    "m": [
+      "the-hopfield-network"
+    ]
+  },
+  "geoffrey hinton": {
+    "n": "Geoffrey Hinton",
+    "t": "other",
+    "m": [
+      "the-hopfield-network",
+      "backpropagation-works",
+      "machines-dream-in-pictures",
+      "neural-net-winter",
+      "deep-learning-rebrand",
+      "deep-learning-wins-nobels"
+    ]
+  },
+  "terry sejnowski": {
+    "n": "Terry Sejnowski",
+    "t": "other",
+    "m": [
+      "the-hopfield-network"
+    ]
+  },
+  "david rumelhart": {
+    "n": "David Rumelhart",
+    "t": "other",
+    "m": [
+      "backpropagation-works"
+    ]
+  },
+  "ronald williams": {
+    "n": "Ronald Williams",
+    "t": "other",
+    "m": [
+      "backpropagation-works"
+    ]
+  },
+  "lisp machines": {
+    "n": "Lisp machines",
+    "t": "other",
+    "m": [
+      "expert-systems-collapse"
+    ]
+  },
+  "fifth generation computer systems": {
+    "n": "Fifth Generation Computer Systems",
+    "t": "other",
+    "m": [
+      "rules-winter"
+    ]
+  },
+  "kunihiko fukushima": {
+    "n": "Kunihiko Fukushima",
+    "t": "other",
+    "m": [
+      "machines-learn-to-read"
+    ]
+  },
+  "corinna cortes": {
+    "n": "Corinna Cortes",
+    "t": "other",
+    "m": [
+      "support-vector-machines",
+      "neural-net-winter"
+    ]
+  },
+  "support vector machines": {
+    "n": "support vector machines",
+    "t": "other",
+    "m": [
+      "support-vector-machines",
+      "neural-net-winter"
+    ]
+  },
+  "vladimir vapnik": {
+    "n": "Vladimir Vapnik",
+    "t": "other",
+    "m": [
+      "support-vector-machines"
+    ]
+  },
+  "brendan frey": {
+    "n": "Brendan Frey",
+    "t": "other",
+    "m": [
+      "machines-dream-in-pictures"
+    ]
+  },
+  "peter dayan": {
+    "n": "Peter Dayan",
+    "t": "other",
+    "m": [
+      "machines-dream-in-pictures"
+    ]
+  },
+  "radford neal": {
+    "n": "Radford Neal",
+    "t": "other",
+    "m": [
+      "machines-dream-in-pictures"
+    ]
+  },
+  "ruslan salakhutdinov": {
+    "n": "Ruslan Salakhutdinov",
+    "t": "other",
+    "m": [
+      "deep-learning-rebrand"
+    ]
+  },
+  "brad rutter": {
+    "n": "Brad Rutter",
+    "t": "other",
+    "m": [
+      "watson-wins-jeopardy"
+    ]
+  },
+  "david ferrucci": {
+    "n": "David Ferrucci",
+    "t": "other",
+    "m": [
+      "watson-wins-jeopardy"
+    ]
+  },
+  "ken jennings": {
+    "n": "Ken Jennings",
+    "t": "other",
+    "m": [
+      "watson-wins-jeopardy"
+    ]
+  },
+  "watson": {
+    "n": "Watson",
+    "t": "other",
+    "m": [
+      "watson-wins-jeopardy"
+    ]
+  },
+  "alphafold": {
+    "n": "AlphaFold",
+    "t": "other",
+    "m": [
+      "alphago-and-alphafold"
+    ]
+  },
+  "alphago": {
+    "n": "AlphaGo",
+    "t": "other",
+    "m": [
+      "alphago-and-alphafold"
+    ]
+  },
+  "deepmind": {
+    "n": "DeepMind",
+    "t": "other",
+    "m": [
+      "alphago-and-alphafold"
+    ]
+  },
+  "lee sedol": {
+    "n": "Lee Sedol",
+    "t": "other",
+    "m": [
+      "alphago-and-alphafold"
+    ]
+  },
+  "ashish vaswani": {
+    "n": "Ashish Vaswani",
+    "t": "other",
+    "m": [
+      "attention-is-all-you-need"
+    ]
+  },
+  "niki parmar": {
+    "n": "Niki Parmar",
+    "t": "other",
+    "m": [
+      "attention-is-all-you-need"
+    ]
+  },
+  "transformers": {
+    "n": "transformers",
+    "t": "other",
+    "m": [
+      "attention-is-all-you-need"
+    ]
+  },
+  "alec radford": {
+    "n": "Alec Radford",
+    "t": "other",
+    "m": [
+      "chatgpt"
+    ]
+  },
+  "ilya sutskever": {
+    "n": "Ilya Sutskever",
+    "t": "other",
+    "m": [
+      "chatgpt"
+    ]
+  },
+  "john schulman": {
+    "n": "John Schulman",
+    "t": "other",
+    "m": [
+      "chatgpt"
+    ]
+  },
+  "mira murati": {
+    "n": "Mira Murati",
+    "t": "other",
+    "m": [
+      "chatgpt"
+    ]
+  },
+  "david baker": {
+    "n": "David Baker",
+    "t": "other",
+    "m": [
+      "deep-learning-wins-nobels"
+    ]
+  },
+  "john jumper": {
+    "n": "John Jumper",
+    "t": "other",
+    "m": [
+      "deep-learning-wins-nobels"
+    ]
+  },
+  "nobel prize": {
+    "n": "Nobel Prize",
+    "t": "other",
+    "m": [
+      "deep-learning-wins-nobels"
     ]
   }
 }

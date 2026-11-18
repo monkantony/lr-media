@@ -121,7 +121,8 @@
       "decoupling-generative-art-with-philip-galanter"
     ],
     "pods": [
-      1
+      1,
+      47
     ],
     "dateType": "occurred"
   },
@@ -2291,7 +2292,7 @@
     "img": {
       "cap": "John Peter, the six versifying tables from Artificial Versifying, first edition, London: John Sims, 1677.",
       "credit": "John Peter / John Sims, 1677. Reproduction: Kaeden Berg, Henry Koelling and James Ryan, “English Versification for the Billion,” ELO 2021, figure 2, via ELMCIP. Original scan photographer not identified. <a href=\"https://elmcip.net/sites/default/files/media/critical_writing/attachments/kaeden_berg_henry_koelling_and_james_ryan_english_versification_for_the_billion_translating_the_early_latin_poetry_generator_artificial_versifying_1677_81.pdf\">Image source</a>.",
-      "alt": "Six numbered grids of Latin letters and dark stopping cells used to generate hexameter verse.",
+      "alt": "John Peter, Artificial Versifying, 1677: Six numbered grids of Latin letters and dark stopping cells used to generate hexameter verse.",
       "sourceUrl": "https://elmcip.net/sites/default/files/media/critical_writing/attachments/kaeden_berg_henry_koelling_and_james_ryan_english_versification_for_the_billion_translating_the_early_latin_poetry_generator_artificial_versifying_1677_81.pdf",
       "creator": [
         "John Peter"
@@ -2469,7 +2470,7 @@
       }
     ],
     "img": {
-      "cap": "Johann Philipp Kirnberger, Der allezeit fertige Polonoisen- und Menuettencomponist, title page of the 1767 printing, Berlin: George Ludewig Winter. The work was first published in 1757.",
+      "cap": "Johann Philipp Kirnberger, Der allezeit fertige Polonoisen- und Menuettencomponist, title page of the 1757 printing, Berlin: George Ludewig Winter; in this Munich copy the date has been altered by hand to read 1767.",
       "credit": "Johann Philipp Kirnberger / George Ludewig Winter. Bavarian State Library copy, reproduced via Wikimedia Commons; scan photographer unidentified. <a href=\"https://books.google.com/books/about/Der_allezeit_fertige_Polonoisen_und_Menu.html?id=Me1CAAAAcAAJ\">Image source</a>.",
       "alt": "Sepia title page for Kirnberger’s dice-composition manual, with blackletter type and a small allegorical vignette.",
       "sourceUrl": "https://books.google.com/books/about/Der_allezeit_fertige_Polonoisen_und_Menu.html?id=Me1CAAAAcAAJ",

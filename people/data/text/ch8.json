@@ -183,7 +183,7 @@
       }
     ],
     "img": {
-      "alt": "Black book cover with pink grid, title New Masters of Flash, list of names, and a gridded close-up of a face",
+      "alt": "friends of ED, New Masters of Flash published, 2000: Black book cover with pink grid, title New Masters of Flash, list of names, and a gridded close-up of a face",
       "src": "img/new-masters-of-flash-by-brendan-dawes.jpg",
       "cap": "",
       "credit": "Cover of New Masters of Flash (friends of ED, 2000). Cover design not credited. <a href=\"https://openlibrary.org/books/OL22056785M\">Book record</a>.",
@@ -1349,7 +1349,7 @@
       }
     ],
     "img": {
-      "alt": "Archive page of The Alphabet Synthesis Machine listing invented alphabets with glyph samples, November 2001",
+      "alt": "Golan Levin, Alphabet Synthesis Machine, 2001: Archive page of The Alphabet Synthesis Machine listing invented alphabets with glyph samples, November 2001",
       "src": "img/alphabet-synthesis-machine-by-golan-levin.jpg",
       "cap": "A screenshot of The Alphabet Synthesis Machine's public archive, listing user-created alphabets by name, author and date (November 2001) beside samples of each invented writing system.",
       "credit": "Golan Levin, Jonathan Feinberg and Cassidy Curtis, The Alphabet Synthesis Machine, 2001-2002. Courtesy the artists, flong.com.",
@@ -1713,7 +1713,7 @@
       }
     ],
     "img": {
-      "alt": "Agent Ruby's EDream Portal web page: a woman's floating eyes, nose and red lips beside an orange chat box",
+      "alt": "Lynn Hershman Leeson, Agent Ruby, 2001: a woman's floating eyes, nose and red lips beside an orange chat box",
       "src": "img/agent-ruby-by-lynn-hershman-leeson.jpg",
       "cap": "",
       "credit": "Lynn Hershman Leeson, Agent Ruby's EDream Portal, 2002 (screen shot of agentruby.net), from Agent Ruby, 1998–2002. Collection of the San Francisco Museum of Modern Art. <a href=\"https://www.lynnhershman.com/project/agent-ruby/\">Image source</a>.",
@@ -2411,7 +2411,7 @@
       }
     ],
     "img": {
-      "alt": "A woman speaks into a microphone as small drawn glyphs float above shadow silhouettes on a white screen",
+      "alt": "Golan Levin & Zach Lieberman, Re:MARK, 2002: A woman speaks into a microphone as small drawn glyphs float above shadow silhouettes on a white screen",
       "src": "img/re-mark-by-golan-levin-zach-lieberman.jpg",
       "cap": "An installation view of Re:MARK: a visitor speaks into a microphone while her silhouette on the projection screen emits animated glyphs and shapes generated from her voice.",
       "credit": "Golan Levin and Zachary Lieberman, Re:MARK, 2002. Ars Electronica Futurelab commission, Museum of the Future, Linz. Courtesy the artists, flong.com.",
@@ -2703,7 +2703,7 @@
       }
     ],
     "img": {
-      "alt": "Cory Arcangel's Super Mario Clouds: pixel clouds on blue sky projected in a corner, projector and CRT TV",
+      "alt": "Cory Arcangel, Super Mario Clouds, 2002: pixel clouds on blue sky projected in a corner, projector and CRT TV",
       "src": "img/super-mario-clouds-by-cory-arcangel.jpg",
       "cap": "",
       "credit": "Installation view of Cory Arcangel, Super Mario Clouds, 2002 (hacked Super Mario Bros. cartridge and Nintendo NES, video projection). © Cory Arcangel. Courtesy of the artist. Photographer and venue not identified.",
@@ -2988,7 +2988,7 @@
       }
     ],
     "img": {
-      "alt": "Mark Napier's Waiting Room: layered translucent orange, blue and green forms built from fine lines",
+      "alt": "Mark Napier, Waiting Room, 2002: layered translucent orange, blue and green forms built from fine lines",
       "src": "img/waiting-room-by-mark-napier.jpg",
       "cap": "A screen capture of Mark Napier's networked artwork Waiting Room, showing the layered translucent forms produced by multiple simultaneous users.",
       "credit": "Mark Napier, Waiting Room, 2002. Courtesy the artist, potatoland.org.",
@@ -3714,7 +3714,7 @@
       }
     ],
     "img": {
-      "alt": "Samorost 1: a mossy tree-stump asteroid floating in starry space, a small rocket flying beside it",
+      "alt": "Amanita Design, Samorost, 2003: a mossy tree-stump asteroid floating in starry space, a small rocket flying beside it",
       "src": "img/samorost-by-amanita-design.jpg",
       "cap": "An official screenshot from Amanita Design's Samorost 1 page, showing the gnome's tree-trunk asteroid and the approaching spacecraft in Jakub Dvorský's photo-collage style.",
       "credit": "Amanita Design, Samorost 1. Courtesy Amanita Design.",
@@ -3843,7 +3843,8 @@
       "cap": "The cover of the first edition of Christiane Paul's Digital Art in the Thames &amp; Hudson World of Art series.",
       "credit": "Christiane Paul, Digital Art (London: Thames &amp; Hudson, World of Art, 2003). Cover image via Open Library.",
       "width": 342,
-      "height": 475
+      "height": 475,
+      "alt": "Christiane Paul, Digital Art, 2003"
     },
     "tags": [
       "Christiane Paul",
@@ -4177,7 +4178,7 @@
       }
     ],
     "img": {
-      "alt": "Two panels from Keiko Kimoto's Imaginary-Numbers: thin white curves and bright blue streaks on black",
+      "alt": "Keiko Kimoto, Imaginary・Numbers, 2003: thin white curves and bright blue streaks on black",
       "src": "img/imaginarynumbers-by-keiko-kimoto.jpg",
       "cap": "Two panels of Keiko Kimoto's Imaginary-Numbers, the curves and spirals generated from a non-linear dynamics formula, as reproduced in the ACM SIGGRAPH Art Show Archives.",
       "credit": "Keiko Kimoto, Imaginary-Numbers. ACM SIGGRAPH Art Show Archives.",
@@ -4413,7 +4414,7 @@
       }
     ],
     "img": {
-      "alt": "Anna Ursyn's Pitch and Volume: a fractured collage of city streets, yellow taxis, brass horns and rows of keys",
+      "alt": "Anna Ursyn, Pitch and Volume, 2004: a fractured collage of city streets, yellow taxis, brass horns and rows of keys",
       "src": "img/pitch-and-volume-by-anna-ursyn.jpg",
       "cap": "Anna Ursyn's Pitch and Volume as reproduced in the ACM SIGGRAPH Art Show Archives entry for the SIGGRAPH 2004 Synaesthesia exhibition.",
       "credit": "Anna Ursyn, Pitch and Volume, 2004. ACM SIGGRAPH Art Show Archives.",
@@ -4712,7 +4713,7 @@
       }
     ],
     "img": {
-      "alt": "Web page for Structure #003 from {Software} Structures: grids of black-and-white line and circle renderings",
+      "alt": "Casey Reas, Jared Tarbell, Robert Hodgin and William Ngan, {Software} Structures, 2004: grids of black-and-white line and circle renderings",
       "src": "img/software-structures-by-casey-reas-jared-tarbell-robert-hodgin-and-william-ngan.jpg",
       "cap": "",
       "credit": "Screenshot of Structure #003 from {Software} Structures, Casey Reas with Jared Tarbell, Robert Hodgin and William Ngan, 2004. Whitney Museum of American Art, artport commission (2004 version). <a href=\"https://artport.whitney.org/commissions/software-structures/map.html\">Image source</a>.",
@@ -5374,7 +5375,7 @@
       }
     ],
     "img": {
-      "alt": "Verostko's Twenty-Six Visions of Hildegarde: grid of dense, symmetrical coloured-ink tangles with gold discs",
+      "alt": "Roman Verostko, Twenty-Six Visions of Hildegarde, 2004: grid of dense, symmetrical coloured-ink tangles with gold discs",
       "src": "img/twenty-six-visions-of-hildegarde-by-roman-verostko.jpg",
       "cap": "Verostko's Twenty-Six Visions of Hildegarde, twenty-six pen-plotter drawings in coloured ink laid out in a grid with four gold-leaf discs at the corners.",
       "credit": "Roman Verostko, Twenty-Six Visions of Hildegarde, 2004. ACM SIGGRAPH Art Show Archives.",
@@ -5488,7 +5489,7 @@
       }
     ],
     "img": {
-      "alt": "Silhouetted visitor before angled translucent screens glowing with blue projected cellular patterns, Eden",
+      "alt": "Jon McCormack, Eden, 2004: Silhouetted visitor before angled translucent screens glowing with blue projected cellular patterns, Eden",
       "src": "img/eden-by-john-mccormack.jpg",
       "cap": "An installation view of Jon McCormack's Eden at ACMI in 2004, showing the translucent screens on which the artificial ecosystem was projected.",
       "credit": "Jon McCormack, Eden, 2004. Installation view, Australian Centre for the Moving Image, SenseSurround, 7 October - 7 November 2004. Courtesy the artist.",
@@ -5990,7 +5991,7 @@
     "img": {
       "cap": "Lev Manovich and Andreas Kratky, Mission to Earth (Soft Cinema Edition), 2003–2004. Multi-frame imagery from the project included in Soft Cinema: Navigating the Database (2005).",
       "credit": "Lev Manovich and Andreas Kratky. Source: Lev Manovich’s project archive. The site licenses content created by Lev Manovich under CC BY-NC-SA. <a href=\"https://manovich.net/index.php/art/mission-to-earth\">Image source</a>.",
-      "alt": "Four-panel grid of video frames and colour blocks: rainy car window, porthole rooms, tangled lines, office window",
+      "alt": "Lev Manovich, Soft Cinema, 2005: Four-panel grid of video frames and colour blocks: rainy car window, porthole rooms, tangled lines, office window",
       "sourceUrl": "https://manovich.net/index.php/art/mission-to-earth",
       "creator": [
         "Lev Manovich",
@@ -6117,7 +6118,7 @@
       }
     ],
     "img": {
-      "alt": "Still from Takeshi Murata's Monster Movie: datamoshed frames dissolving into colourful blocks and smears",
+      "alt": "Takeshi Murata, Monster Movie, 2005: datamoshed frames dissolving into colourful blocks and smears",
       "src": "img/monster-movie-by-takeshi-murata.jpg",
       "cap": "A still from Takeshi Murata's Monster Movie showing the datamoshed frames of the 1981 film Caveman dissolving into blocks and smears of colour.",
       "credit": "Takeshi Murata, Monster Movie, 2005 (still). San Francisco Museum of Modern Art, gift of Christopher Vroom.",
@@ -6687,7 +6688,7 @@
       }
     ],
     "img": {
-      "alt": "Christopher Bauder and Robert Henke's ATOM: glowing white balloons above a light grid, audience in red light",
+      "alt": "Christopher Bauder and Robert Henke, Atom, 2005: glowing white balloons above a light grid, audience in red light",
       "src": "img/atom-by-christopher-bauder.jpg",
       "cap": "An installation view of ATOM, with the helium balloons lit from within by LEDs and suspended in a computer-controlled three-dimensional matrix above the audience.",
       "credit": "Christopher Bauder and Robert Henke, ATOM. Courtesy WHITEvoid, whitevoid.com.",
@@ -7155,7 +7156,7 @@
     "img": {
       "cap": "R. Luke DuBois, Academy, 2006. Still from the video artwork, reproduced in bitforms gallery’s exhibition archive.",
       "credit": "R. Luke DuBois. Image source: bitforms gallery, R. Luke DuBois & Björn Schülke exhibition archive on CONTXT. <a href=\"https://cloud.contxt.art/bitforms/r-luke-dubois-bj-rn-sch-lke\">Image source</a>.",
-      "alt": "A black-and-white Academy video still merges film imagery into translucent vertical traces inside a black border.",
+      "alt": "R. Luke DuBois, Academy, 2006: A black-and-white Academy video still merges film imagery into translucent vertical traces inside a black border.",
       "sourceUrl": "https://cloud.contxt.art/bitforms/r-luke-dubois-bj-rn-sch-lke",
       "creator": [
         "R. Luke DuBois"
@@ -7286,7 +7287,7 @@
     "img": {
       "cap": "Cover of Siegfried Zielinski’s Deep Time of the Media: Toward an Archaeology of Hearing and Seeing by Technical Means, translated by Gloria Custance. MIT Press paperback edition, 2008; English hardcover first published in 2006.",
       "credit": "Siegfried Zielinski; translation by Gloria Custance. The MIT Press. Cover image supplied by Penguin Books New Zealand, ISBN 9780262740326. <a href=\"https://www.penguin.co.nz/books/deep-time-of-the-media-9780262740326\">Image source</a>.",
-      "alt": "Dark book cover of Deep Time of the Media with a half-lit sun-like circular motif and green title",
+      "alt": "Siegfried Zielinski, Deep Time of the Media: Toward an Archaeology of Hearing and Seeing by Technical Means, 2006: Dark book cover of Deep Time of the Media with a half-lit sun-like circular motif and green title",
       "sourceUrl": "https://www.penguin.co.nz/books/deep-time-of-the-media-9780262740326",
       "creator": [
         "Siegfried Zielinski"
@@ -7481,7 +7482,7 @@
       }
     ],
     "img": {
-      "alt": "Open book spread: title text on left, overlapping black and red line letters spelling SZOMBATHELY and VIRÁG",
+      "alt": "Vera Molnár, 16 Études sur les origines de Blum, 2006: Open book spread: title text on left, overlapping black and red line letters spelling SZOMBATHELY and VIRÁG",
       "src": "img/16-etudes-sur-les-origines-de-blum-by-vera-molnar.jpg",
       "cap": "The title-page spread of Vera Molnar's 16 Etudes sur les origines de Blum, with the line '... my name is Virag Lipoti of Szombathely ...' facing her overlaid lettering of SZOMBATHELY and VIRAG.",
       "credit": "Vera Molnar, 16 Etudes sur les origines de Blum, 2006. Collection Leo J. M. Koenders, jamesjoycesnotgreen.com.",
@@ -7952,7 +7953,7 @@
       }
     ],
     "img": {
-      "alt": "Anna Ursyn's Rondo: dotted looping lines over a collaged landscape of fields, fences, trees and bright color bands",
+      "alt": "Anna Ursyn, Rondo, 2006: dotted looping lines over a collaged landscape of fields, fences, trees and bright color bands",
       "src": "img/rondo-by-anna-ursyn.jpg",
       "cap": "Anna Ursyn's Rondo as reproduced in the ACM SIGGRAPH Art Show Archives, combining her FORTRAN-generated structures with scanned photographic content.",
       "credit": "Anna Ursyn, Rondo, 2006. ACM SIGGRAPH Art Show Archives.",
@@ -8195,7 +8196,7 @@
   },
   "tumblr-launched": {
     "body": [
-      "Launched on 1 March 2007, <a href=\"https://www.lerandom.art/subjects/tumblr\">Tumblr</a>, founded by <a href=\"https://www.lerandom.art/subjects/david-karp\">David Karp</a> with lead developer <a href=\"https://www.lerandom.art/subjects/marco-arment\">Marco Arment</a>, served as a critical place for the presentation and distribution of <a href=\"https://www.lerandom.art/subjects/digital-art\">digital art</a> from the mid- to late-2000s. The microblogging site served a similar function two decades ago to sites like <a href=\"https://www.lerandom.art/subjects/instagram\">Instagram</a> and <a href=\"https://www.lerandom.art/subjects/twitter\">Twitter</a> today. Tumblr serves as an important step in the pre-conditions for <a href=\"https://www.lerandom.art/subjects/nfts\">NFTs</a>, as well as it combined with the emergence of <a href=\"https://www.lerandom.art/subjects/smartphones\">smartphones</a>, the iPhone having been announced two months earlier and released that June, to transform how digital media was consumed and shared. With the same iPhones but simply the more popular Instagram emerging as the distribution method of choice, we are still living with the smartphone-social-media-fication of digital art that largely began these first two months of 2007."
+      "Launched on 19 February 2007, <a href=\"https://www.lerandom.art/subjects/tumblr\">Tumblr</a>, founded by <a href=\"https://www.lerandom.art/subjects/david-karp\">David Karp</a> with lead developer <a href=\"https://www.lerandom.art/subjects/marco-arment\">Marco Arment</a>, served as a critical place for the presentation and distribution of <a href=\"https://www.lerandom.art/subjects/digital-art\">digital art</a> from the mid- to late-2000s. The microblogging site served a similar function two decades ago to sites like <a href=\"https://www.lerandom.art/subjects/instagram\">Instagram</a> and <a href=\"https://www.lerandom.art/subjects/twitter\">Twitter</a> today. Tumblr serves as an important step in the pre-conditions for <a href=\"https://www.lerandom.art/subjects/nfts\">NFTs</a>, as well as it combined with the emergence of <a href=\"https://www.lerandom.art/subjects/smartphones\">smartphones</a>, the iPhone having been announced two months earlier and released that June, to transform how digital media was consumed and shared. With the same iPhones but simply the more popular Instagram emerging as the distribution method of choice, we are still living with the smartphone-social-media-fication of digital art that largely began these first two months of 2007."
     ],
     "cite": [
       {
@@ -8789,7 +8790,7 @@
       }
     ],
     "img": {
-      "alt": "Ben Fry's All Streets, 2007: dense black road lines forming a map of the lower 48 US states on cream",
+      "alt": "Ben Fry, All Streets, 2007: dense black road lines forming a map of the lower 48 US states on cream",
       "src": "img/all-streets-by-ben-fry.jpg",
       "cap": "Ben Fry's All Streets: every road in the lower 48 states drawn from US Census Bureau TIGER/Line data, with no state outlines, so population density and mountain ranges emerge from the road network alone.",
       "credit": "Ben Fry, All Streets, 2007. Courtesy the artist, benfry.com.",
@@ -8912,7 +8913,7 @@
       }
     ],
     "img": {
-      "alt": "Cao Fei's RMB City: a virtual island crammed with a bicycle-wheel Ferris wheel, panda and Tiananmen gate",
+      "alt": "Cao Fei, RMB City, 2007: a virtual island crammed with a bicycle-wheel Ferris wheel, panda and Tiananmen gate",
       "src": "img/rmb-city-by-cao-fei.jpg",
       "cap": "A still from Cao Fei's RMB City: A Second Life City Planning by China Tracy, showing the artist's floating virtual metropolis -- a bicycle-wheel Ferris wheel, a submerged CCTV tower, a crane-hoisted panda and the Tiananmen gate compressed onto an island in a blue sea.",
       "credit": "Cao Fei, RMB City: A Second Life City Planning by China Tracy (aka: Cao Fei), 2007. Solomon R. Guggenheim Museum, New York.",
@@ -9044,7 +9045,7 @@
       }
     ],
     "img": {
-      "alt": "Petra Cortright gazing into her webcam as lightning-bolt clip art streaks across her forehead",
+      "alt": "Petra Cortright, VVEBCAM, 2007: Petra Cortright gazing into her webcam as lightning-bolt clip art streaks across her forehead",
       "src": "img/vvebcam-by-petra-cortright.jpg",
       "cap": "A still from Petra Cortright's VVEBCAM: the artist looking impassively into her laptop webcam while animated lightning-bolt clip art streaks across her forehead.",
       "credit": "Petra Cortright, VVEBCAM, 2007. Still courtesy the artist and Rhizome's Net Art Anthology.",
@@ -9165,7 +9166,7 @@
       }
     ],
     "img": {
-      "alt": "Electric Sheep fractal flame sheep 23407: wispy teal feathered forms like a bird's head on black",
+      "alt": "Scott Draves, Evolution and Collective Intelligence of the Electric Sheep, 2008: Electric Sheep fractal flame sheep 23407: wispy teal feathered forms like a bird's head on black",
       "src": "img/evolution-and-collective-intelligence-of-the-electric-sheep-by-scott-draves.jpg",
       "cap": "A single frame from the Electric Sheep distributed screensaver -- fractal-flame sheep no. 23407, one of the evolved forms produced by the network of volunteer computers Scott Draves describes in the essay.",
       "credit": "Scott Draves, Electric Sheep, sheep 23407 (generation 198). CC BY 2.5, via Wikimedia Commons.",
@@ -9956,7 +9957,7 @@
       }
     ],
     "img": {
-      "alt": "scoreLight in use: hands around a white sheet as a red laser traces a contour between fingers",
+      "alt": "Alvaro Cassinelli, Masatoshi Ishikawa, Yusaku Kuribara and Daito Manabe, scoreLight, 2009: hands around a white sheet as a red laser traces a contour between fingers",
       "src": "img/scorelight-by-alvaro-cassinelli-masatoshi-ishikawa-yusaku-kuribaka-daito-manabe.jpg",
       "cap": "scoreLight in use: several pairs of hands around a sheet of paper as the instrument's red laser spot traces the drawn contour it is reading as sound.",
       "credit": "scoreLight by Alvaro Cassinelli, Masatoshi Ishikawa, Yusaku Kuribara and Daito Manabe. Courtesy Alvaro Cassinelli.",
@@ -10179,7 +10180,7 @@
       }
     ],
     "img": {
-      "alt": "Cover of A Philosophy of Computer Art, Routledge 2009: a face repeated in tiled, pixelated fragments",
+      "alt": "Dominic Lopes, A Philosophy of Computer Art, 2009: a face repeated in tiled, pixelated fragments",
       "src": "img/a-philosophy-of-computer-art-by-dominic-lopes.jpg",
       "cap": "The cover of Dominic McIver Lopes's A Philosophy of Computer Art (Routledge, 2009), showing a wall of tiled, pixelated repetitions of a single face.",
       "credit": "Cover of Dominic McIver Lopes, A Philosophy of Computer Art (London: Routledge, 2009). Cover scan via Open Library / Internet Archive.",
@@ -10276,5 +10277,85 @@
       11
     ],
     "dateType": "published"
+  },
+  "deep-learning-rebrand": {
+    "body": [
+      "In July, five veterans of the 1956 workshop returned to Dartmouth for AI’s fiftieth anniversary. That month, in <em>Science</em>, Hinton’s team showed that deep networks, built by stacking Boltzmann machines, could be trained one layer at a time. As the mostly rules-based founders looked back in Dartmouth, the learning camp found its new name, deep learning, and shot forward."
+    ],
+    "cite": [
+      {
+        "url": "https://doi.org/10.1126/science.1127647",
+        "label": "G. E. Hinton and R. R. Salakhutdinov, “Reducing the Dimensionality of Data with Neural Networks,” Science 313 (2006)"
+      },
+      {
+        "url": "https://doi.org/10.1609/aimag.v27i4.1911",
+        "label": "James Moor, “The Dartmouth College Artificial Intelligence Conference: The Next Fifty Years,” AI Magazine 27 (2006)"
+      }
+    ],
+    "img": {
+      "src": "img/deep-learning-rebrand-6c6e3c8d77.jpg",
+      "cap": "A restricted Boltzmann machine: one layer of visible units, one of hidden units.",
+      "credit": "Diagram: Martin Thoma, CC0, via <a href=\"https://commons.wikimedia.org/wiki/File:Restricted-boltzmann-machine.svg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>."
+    },
+    "tags": [
+      "Geoffrey Hinton",
+      "Ruslan Salakhutdinov",
+      "University of Toronto",
+      "Dartmouth College",
+      "deep learning",
+      "neural networks",
+      "artificial intelligence",
+      "ai history"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "ai history",
+        "n": "ai history",
+        "t": "themes"
+      },
+      {
+        "k": "artificial intelligence",
+        "n": "artificial intelligence",
+        "t": "tech"
+      },
+      {
+        "k": "deep learning",
+        "n": "deep learning",
+        "t": "tech"
+      },
+      {
+        "k": "neural networks",
+        "n": "neural networks",
+        "t": "tech"
+      },
+      {
+        "k": "dartmouth college",
+        "n": "Dartmouth College",
+        "t": "orgs"
+      },
+      {
+        "k": "university of toronto",
+        "n": "University of Toronto",
+        "t": "orgs"
+      },
+      {
+        "k": "geoffrey hinton",
+        "n": "Geoffrey Hinton",
+        "t": "other"
+      },
+      {
+        "k": "ruslan salakhutdinov",
+        "n": "Ruslan Salakhutdinov",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      11
+    ],
+    "dateType": ""
   }
 }

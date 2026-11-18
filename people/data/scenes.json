@@ -163,6 +163,7 @@
     },
     {
       "id": "dice",
+      "opening": true,
       "chapter": 1,
       "title": "Musical dice game",
       "blurb": "Roll two dice per bar to assemble a minuet from pre-composed measures, then hear it on a harpsichord.",
@@ -292,6 +293,19 @@
       "status": "live",
       "chapterDefault": false,
       "brief": "A live random-dot stereogram pair (and an anaglyph toggle for red-cyan glasses) generated from a hidden depth map that the viewer can draw or select (shapes, letters, a rotating solid). Includes a gentle guide for free-fusing (converge to see the shape), and a reveal slider that shows the hidden map. Dots regenerate each frame option (dynamic RDS)."
+    },
+    {
+      "id": "oramics",
+      "chapter": 4,
+      "title": "Oramics",
+      "blurb": "Draw on moving film and hear it play, in a simulation of Daphne Oram's Oramics Machine: tape on four films sets the pitch, drawn lines the volumes and waveforms painted on glass the timbre.",
+      "home": "daphne-oram-develops-oramics-sound-drawn-by-hand",
+      "fits": "drawn sound, graphic scores, electronic music, synthesizers, optical sound, women in music technology",
+      "file": "scenes/oramics.html",
+      "cls": "scene-oramics",
+      "status": "live",
+      "chapterDefault": false,
+      "brief": "A simulation of Daphne Oram's Oramics Machine in its late-1960s form, after Tom Richards's account of it around 1968 (Goldsmiths PhD thesis, 2018) and the machine at the Science Museum, London: ten separate strips of clear 35 mm film run right to left over a pale bed in a slotted-steel frame. Four pitch films carry pieces of black tape (Oram's neumes), one decimal digit of the frequency in hertz per film, coded 8 4 2 1 across four light sensors; each group latches the pitch until the next. Six films carry hand-drawn outlines that a small tube's spot follows: vibrato (it bends the pitch up or down from the film's centre), the volumes of four waves and the reverb mix; torch bulbs at the right glow with each volume, and their light sets it. Four scanners in a cabinet trace waveforms painted dark on glass slides (solid below the line) to make the timbres; the machine was built for four. Output is one line of melody. Controls follow Oram's start-up notes: motor, then clutch, and a speed pointer at about 3 inches a second; a vibrato switch. The film order, the loop length, the labels, the layout of the controls and the music are ours; with the film stopped, the note holds."
     },
     {
       "id": "copier",

@@ -70,7 +70,7 @@
     "years": "1980s",
     "era": "Personal Computer Era",
     "desc": "The ’80s sees the fragmentation of computer-based art as the personal computer significantly impacts the availability of computers.",
-    "count": 147,
+    "count": 153,
     "first": "1980",
     "last": "1989",
     "pods": [
@@ -83,7 +83,7 @@
     "years": "1990s",
     "era": "Net Era",
     "desc": "The rise of the Internet propelled mass media art, the demoscene and net art as well as early web software artists such as LIA, working in Macromedia Director, and Joshua Davis, working in Flash.",
-    "count": 93,
+    "count": 96,
     "first": "1990",
     "last": "1999",
     "pods": [
@@ -96,7 +96,7 @@
     "years": "2000s",
     "era": "Tooling Era",
     "desc": "Casey Reas and Ben Fry develop Processing at the MIT Media Lab under the direction of John Maeda. Processing enables anyone in the world to learn creative coding, educating and inspiring a new generation of artist-coders.",
-    "count": 75,
+    "count": 76,
     "first": "2000",
     "last": "2009",
     "pods": [
@@ -109,7 +109,7 @@
     "years": "2010s",
     "era": "AI Era",
     "desc": "This decade saw two paradigmatic shifts for technology and art: the rise of AI and the invention of NFTs. This chapter covers these twin developments, as AI completely reimagines digital expression while NFTs enable digital ownership. Combined, they serve as unparalleled growth catalysts for generative art.",
-    "count": 115,
+    "count": 118,
     "first": "2010",
     "last": "2019",
     "pods": [
@@ -122,7 +122,7 @@
     "years": "2020s",
     "era": "On-Chain Era",
     "desc": "The advent of long form generative art platforms Art Blocks and fxhash spark renewed interest in generative art and cultivate the thriving scene of today.",
-    "count": 140,
+    "count": 142,
     "first": "2020",
     "last": "2025",
     "pods": [

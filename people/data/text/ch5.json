@@ -1705,7 +1705,7 @@
   },
   "john-conway-publishes-landmark-the-game-of-life": {
     "body": [
-      "Originally played by hand with counters and published by <a href=\"https://www.lerandom.art/subjects/martin-gardner\">Martin Gardner</a>, Conway’s Life is the best-known two-dimensional cellular automaton. It served as a foundational concept and source of inspiration for many generative artists. Life is played on an infinite two-dimensional grid with a certain amount of occupied cells. Each generation determines whether each cell is alive or dead depending on the state of the cells that surround it. Each cell changes status each generation. Conway’s Life would have a profound affect on the field of computation and computer generated art, specifically through its influence on the use of <a href=\"https://www.lerandom.art/subjects/cellular-automata\">cellular automata</a> in complexity science. This enabled simulation modeling of an diverse range of phenomenon including insects, traffic, weather and astronomic bodies. Overall, Life has had a profound impact on <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a> by inspiring artists to explore emergent behavior, pattern generation, and algorithmic systems."
+      "Originally played by hand with counters and published by <a href=\"https://www.lerandom.art/subjects/martin-gardner\">Martin Gardner</a>, Conway’s Life is the best-known two-dimensional cellular automaton. It served as a foundational concept and source of inspiration for many generative artists. Life is played on an infinite two-dimensional grid with a certain amount of occupied cells. Each generation determines whether each cell is alive or dead depending on the state of the cells that surround it. All cells are updated at once each generation. Conway’s Life would have a profound affect on the field of computation and computer generated art, specifically through its influence on the use of <a href=\"https://www.lerandom.art/subjects/cellular-automata\">cellular automata</a> in complexity science. This enabled simulation modeling of an diverse range of phenomenon including insects, traffic, weather and astronomic bodies. Overall, Life has had a profound impact on <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a> by inspiring artists to explore emergent behavior, pattern generation, and algorithmic systems."
     ],
     "cite": [
       {
@@ -2104,7 +2104,8 @@
       "cap": "The Senster photographed with its maker, Edward Ihnatowicz.",
       "credit": "Edward Ihnatowicz with The Senster. Scan via Monoskop.",
       "width": 823,
-      "height": 581
+      "height": 581,
+      "alt": "Edward Ihnatowicz, The Senster, 1970"
     },
     "tags": [
       "Edward Ihnatowicz",
@@ -2170,7 +2171,7 @@
       }
     ],
     "img": {
-      "alt": "Grace C. Hertlein's City Painting: overlapping hatched and crosshatched rectangles forming a skyline",
+      "alt": "Grace C. Hertlein, City Painting, 1970: overlapping hatched and crosshatched rectangles forming a skyline",
       "src": "img/city-painting-by-grace-c-hertlein.png",
       "cap": "",
       "credit": "Grace C. Hertlein, City Painting, c. 1970–72, computer-generated print. ZKM | Center for Art and Media Karlsruhe.",
@@ -2366,7 +2367,7 @@
       }
     ],
     "img": {
-      "alt": "Book cover of Art et ordinateur by Abraham A. Moles, with colourful abstract patterns and repeated letters",
+      "alt": "Abraham Moles and Marie-Luce André, Art et ordinateur, 1971: Book cover of Art et ordinateur by Abraham A. Moles, with colourful abstract patterns and repeated letters",
       "src": "img/art-et-ordinateur-by-abraham-moles.jpg",
       "cap": "",
       "credit": "Cover of Abraham A. Moles, Art et ordinateur (Blusson edition). First published by Casterman, 1971, with the collaboration of Marie-Luce André.",
@@ -4006,7 +4007,7 @@
     "img": {
       "cap": "Waldemar Cordeiro, A mulher que não é B.B., 1971. A computer-generated work from his Arteônica practice.",
       "credit": "Waldemar Cordeiro. Image: Waldemar Cordeiro estate website. <a href=\"https://www.waldemarcordeiro.com/arteonica\">Image source</a>.",
-      "alt": "A woman’s face rendered in dense rows of printed computer characters in Waldemar Cordeiro’s A mulher que não é B.B.",
+      "alt": "Waldemar Cordeiro, Arteônica Exhibition, 1971: A woman’s face rendered in dense rows of printed computer characters in Waldemar Cordeiro’s A mulher que não é B.B.",
       "sourceUrl": "https://www.waldemarcordeiro.com/arteonica",
       "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/5e34ea59ccdf2069316b0346/1589067932021-M24K2D0C197LDHOYV52I/amulherquenaoebb",
       "rights": "Artwork and image rights remain with their respective rights holders; source: Waldemar Cordeiro estate.",
@@ -4824,7 +4825,7 @@
       }
     ],
     "img": {
-      "alt": "Manfred Mohr, P-133 (cluster phobia), 1972: grid of white banded line blocks on a black square",
+      "alt": "Manfred Mohr, P-120-A Meta Language II, 1972: Manfred Mohr, P-133 (cluster phobia), 1972: grid of white banded line blocks on a black square",
       "src": "img/p-120-a-meta-language-ii-by-manfred-mohr.jpg",
       "cap": "Not P-120-A: Manfred Mohr's P-133 (cluster phobia) of 1972, a dense field of algorithmically placed marks made in the same year and from the same generative-aesthetics programme as Meta Language II.",
       "credit": "Manfred Mohr, P-133 (cluster phobia), 1972. Victoria and Albert Museum, London (E.80-2008). Given by the Computer Arts Society, supported by System Simulation Ltd, London.",
@@ -5257,7 +5258,7 @@
       }
     ],
     "img": {
-      "alt": "Bartlett's Surface Substitution on 36 Plates (1972): 6×6 grid plates with dense and sparse dot patterns",
+      "alt": "Jennifer Bartlett, Surface Substitution on 36 Plates, 1972: 6×6 grid plates with dense and sparse dot patterns",
       "src": "img/surface-substitution-on-36-plates-by-jennifer-bartlett.jpg",
       "cap": "Jennifer Bartlett's Surface Substitution on 36 Plates (1972), the full six-by-six array of enamelled steel plates, each silkscreened with a grey grid and filled with hand-painted dots in a sequence driven by the Fibonacci series.",
       "credit": "Jennifer Bartlett, Surface Substitution on 36 Plates, 1972. Tate, London (T06637). © Estate of Jennifer Bartlett.",
@@ -5565,7 +5566,7 @@
       }
     ],
     "img": {
-      "alt": "Cordeiro's A Mulher que não é B.B., 1971: photo of a crying Vietnamese woman beside its line-printer version",
+      "alt": "Waldemar Cordeiro, Arteônica, 1972: Cordeiro's A Mulher que não é B.B., 1971: photo of a crying Vietnamese woman beside its line-printer version",
       "src": "img/arteonica-by-waldemar-cordeiro.jpg",
       "cap": "Not the book: Cordeiro's Arteônica-period work A Mulher que não é B.B. (1971), the press photograph of a Vietnamese woman shown beside the line-printer version Cordeiro generated from it.",
       "credit": "Waldemar Cordeiro, A Mulher que não é B.B., 1971, source photograph and computer-processed print. Courtesy Família Cordeiro / waldemarcordeiro.com.",
@@ -6128,7 +6129,7 @@
       }
     ],
     "img": {
-      "alt": "Still from Analívia Cordeiro's M 3x3: black silhouetted dancers, arms outstretched, along dashed grid lines",
+      "alt": "Analívia Cordeiro, M 3x3, 1973: black silhouetted dancers, arms outstretched, along dashed grid lines",
       "src": "img/m-3x3-by-analivia-cordeiro.webp",
       "cap": "A still from Analívia Cordeiro's M 3x3 (1973): dancers in high-contrast black-and-white silhouette, arms outstretched, spaced along the dashed grid lines of the three-metre-square studio matrix.",
       "credit": "Analívia Cordeiro, M 3x3, 1972–1973, video, black and white, sound, 9 min 50 sec. Courtesy of the artist, © Analívia Cordeiro. Via AWARE: Archives of Women Artists, Research and Exhibitions.",
@@ -6827,7 +6828,7 @@
       }
     ],
     "img": {
-      "alt": "Close-up of Gerhard Richter's 1024 Colours, a grid of randomly arranged colour rectangles on white",
+      "alt": "Gerhard Richter, 1024 Colours, 1973: Close-up of Gerhard Richter's 1024 Colours, a grid of randomly arranged colour rectangles on white",
       "src": "img/1024-colours-by-gerhard-richter.jpg",
       "cap": "",
       "credit": "Oliver Smith. Flickr. “Richter - 1024 Colours.” 2013. <a href=\"https://www.flickr.com/photos/48297083@N07/9370401635\" target=\"_blank\" rel=\"noopener\">flickr.com</a>",
@@ -7125,7 +7126,7 @@
       }
     ],
     "img": {
-      "alt": "Manfred Mohr's P-154-C1 (1973): grid of rotated wireframe cubes losing lines row by row, with angle labels",
+      "alt": "Manfred Mohr, P-154-C, 1973: grid of rotated wireframe cubes losing lines row by row, with angle labels",
       "src": "img/p-154-c-by-manfred-mohr.jpg",
       "cap": "Manfred Mohr's plotter drawing P-154-C1 (1973): a seven-by-ten grid of wireframe cubes, each captioned with its three rotation angles and each progressively stripped of lines until only fragments remain.",
       "credit": "Manfred Mohr, P-154-C1, 1973, plotter drawing on paper, 60 x 60 cm. Courtesy the artist and bitforms gallery, New York.",
@@ -7563,7 +7564,7 @@
       }
     ],
     "img": {
-      "alt": "Worn dark red cover of Lucy Lippard's Six Years (1973), its long subtitle in white type, torn at right",
+      "alt": "Lucy Lippard, Six Years: The Dematerialization of the Art Object from 1966 to 1972, 1973: Worn dark red cover of Lucy Lippard's Six Years (1973), its long subtitle in white type, torn at right",
       "src": "img/six-years-the-dematerialization-of-the-art-object-from-1966-to-1972-by-lucy-lipp.jpg",
       "cap": "The front cover of the first edition of Lucy Lippard's Six Years (Praeger, 1973), whose entire design is the book's long subtitle set in white sans-serif on dark red, the paper torn away at the right edge of this copy.",
       "credit": "Cover of Lucy R. Lippard, Six Years: The Dematerialization of the Art Object from 1966 to 1972 (New York: Praeger, 1973). Scan via Monoskop.",
@@ -8470,7 +8471,7 @@
       }
     ],
     "img": {
-      "alt": "Nam June Paik's TV Buddha: a seated Buddha statue faces a round TV showing it via a video camera",
+      "alt": "Nam June Paik, TV Buddha and TV Garden, 1974: Nam June Paik's TV Buddha: a seated Buddha statue faces a round TV showing it via a video camera",
       "src": "img/tv-buddha-and-tv-garden-by-nam-june-paik.jpg",
       "cap": "",
       "credit": "Flickr. Nam June Paik's \"TV Buddha”. 2009. <a href=\"https://www.flickr.com/photos/42773169@N00/3724063964\" target=\"_blank\" rel=\"noopener\">flickr.com</a>",
@@ -8634,7 +8635,7 @@
       }
     ],
     "img": {
-      "alt": "Sol LeWitt's Incomplete Open Cubes: white open cube frames in a grid on a gray gallery floor",
+      "alt": "Sol LeWitt, Incomplete Open Cubes, 1974: white open cube frames in a grid on a gray gallery floor",
       "src": "img/incomplete-open-cubes-by-sol-lewitt.jpg",
       "cap": "",
       "credit": "Rob Corder. Flickr. “Sol LeWitt.” 2018. <a href=\"https://www.flickr.com/photos/16482030@N00/38885988190\" target=\"_blank\" rel=\"noopener\">flickr.com</a>",
@@ -8856,7 +8857,7 @@
       }
     ],
     "img": {
-      "alt": "Judy Chicago's The Dinner Party: long tables with embroidered runners, painted plates and goblets",
+      "alt": "Judy Chicago, The Dinner Party, 1974: long tables with embroidered runners, painted plates and goblets",
       "src": "img/the-dinner-party-by-judy-chicago.jpg",
       "cap": "",
       "credit": "Wikipedia. 2023. \"Judy Chicago.\" Wikimedia Foundation. Last modified September 5, 2023. <a href=\"https://en.wikipedia.org/wiki/Judy_Chicago\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>.",
@@ -9068,7 +9069,7 @@
       }
     ],
     "img": {
-      "alt": "Videoplace screen: two orange silhouettes on black, a green line looping between their hands",
+      "alt": "Myron Krueger, Videoplace, 1974: two orange silhouettes on black, a green line looping between their hands",
       "src": "img/videoplace-by-myron-krueger.jpg",
       "cap": "A Videoplace screen: two participants rendered as orange silhouettes against black, a green line drawn between their hands looping and stretching as they move.",
       "credit": "Myron Krueger, Videoplace. Interactive installation. Courtesy Digital Art Museum (dam.org).",
@@ -9314,7 +9315,7 @@
       }
     ],
     "img": {
-      "alt": "Title page of Stewart Kranz's Science & Technology in the Arts, with editor credits and Van Nostrand Reinhold logo",
+      "alt": "Stewart Kranz, Science and Technology in the Arts: A Tour through the Realm of Science/Art, 1974: Title page of Stewart Kranz's Science & Technology in the Arts, with editor credits and Van Nostrand Reinhold logo",
       "src": "img/science-and-technology-in-the-arts-a-tour-through-the-realm-of-science-art-by-st.jpg",
       "cap": "",
       "credit": "Title page of Stewart Kranz, Science and Technology in the Arts: A Tour through the Realm of Science/Art (New York: Van Nostrand Reinhold, 1974).",
@@ -9950,7 +9951,7 @@
       }
     ],
     "img": {
-      "alt": "Book cover of Melvin L. Prueitt's Computer Graphics: a yellow and red wave surface inside a green wireframe cube",
+      "alt": "Melvin L. Prueitt, Computer Graphics, 1975: a yellow and red wave surface inside a green wireframe cube",
       "src": "img/computer-graphics-by-melvin-l-prueitt.jpg",
       "cap": "",
       "credit": "Cover of Melvin L. Prueitt, Computer Graphics: 118 Computer-Generated Designs (New York: Dover Publications, 1975).",
@@ -10050,7 +10051,8 @@
       "cap": "Paul Brown's untitled computer-assisted drawing, the work itself, from the Victoria and Albert Museum collection.",
       "credit": "Paul Brown, Untitled, Computer Assisted Drawing. © Victoria and Albert Museum, London / Paul Brown",
       "width": 1104,
-      "height": 1200
+      "height": 1200,
+      "alt": "Paul Brown, Untitled Computer Assisted Drawing, 1975"
     },
     "tags": [
       "Paul Brown",
@@ -10230,7 +10232,7 @@
       }
     ],
     "img": {
-      "alt": "Vera Molnar's Hypertransformations (1975/76): slightly off-axis nested squares plotted on fan-fold paper",
+      "alt": "Vera Molnár, Hypertransformations, 1975: slightly off-axis nested squares plotted on fan-fold paper",
       "src": "img/hypertransformations-by-vera-molnar.jpg",
       "cap": "One sheet from Vera Molnar's Hypertransformations (1975/76): a set of concentric squares plotted on fan-fold paper, each square displaced slightly from true so the nest appears to drift off-axis.",
       "credit": "Vera Molnar, Hypertransformations, 1975/76, computer graphic print, c. 20 x 20 cm. Courtesy Digital Art Museum (digitalartmuseum.org).",
@@ -11494,7 +11496,7 @@
       "src": "img/l-ordinateur-et-les-arts-visuels-by-francois-molnar-70c2da2232.jpg",
       "cap": "Vera Molnár, examples from the <em>Molndrian</em> series reproduced in François Molnár’s 1977 essay “L’ordinateur dans l’art et dans la science de l’art.” Figure reproduced in Aline Guillermet’s <em>Vera Molnar’s Computer Paintings</em> (2020), fig. 4.",
       "credit": "Courtesy of Vera Molnar / Galerie Oniris, as credited in Aline Guillermet, <a href=\"https://doi.org/10.1525/rep.2020.149.1.1\"><em>Vera Molnar’s Computer Paintings</em>, Representations 149 (2020), fig. 4</a>.",
-      "alt": "Three sparse arrangements of short black horizontal and vertical lines on white, with a denser central composition.",
+      "alt": "François Molnár, L’ordinateur et les arts visuels, 1977: Three sparse arrangements of short black horizontal and vertical lines on white, with a denser central composition.",
       "width": 1066,
       "height": 380,
       "sourceUrl": "https://doi.org/10.1525/rep.2020.149.1.1",
@@ -11612,7 +11614,7 @@
       }
     ],
     "img": {
-      "alt": "Framed plotter drawing of Manfred Mohr's P 197 Cubic Limit II: an 8x8 grid of rotated cube line figures",
+      "alt": "Manfred Mohr, P-196-A and P-197-A, 1977: Framed plotter drawing of Manfred Mohr's P 197 Cubic Limit II: an 8x8 grid of rotated cube line figures",
       "src": "img/p-196-a-and-p-197-a-by-manfred-mohr.jpg",
       "cap": "",
       "credit": "Spalter Digital. P 197 Cubic Limit II. <a href=\"https://spalterdigital.com/artworks/untitled-35/\" target=\"_blank\" rel=\"noopener\">spalterdigital.com</a>",
@@ -11753,7 +11755,7 @@
       }
     ],
     "img": {
-      "alt": "Book cover of Computergraphik by Lothar Limbeck: orange grid of squares receding into a tunnel",
+      "alt": "Lothar Limbeck, Computergraphik, 1977: orange grid of squares receding into a tunnel",
       "src": "img/computergraphik-by-lothar-limbeck.jpg",
       "cap": "",
       "credit": "",
@@ -12191,7 +12193,8 @@
       "cap": "",
       "credit": "Spalter Digital. 2023. Da Vinci Series. <a href=\"https://spalterdigital.com/artworks/da-vinci-series/\" target=\"_blank\" rel=\"noopener\">spalterdigital.com</a>",
       "width": 1536,
-      "height": 1520
+      "height": 1520,
+      "alt": "Charles Csuri, 3-D Computer Animation, 1977"
     },
     "tags": [
       "Charles Csuri",
@@ -12758,7 +12761,7 @@
       }
     ],
     "img": {
-      "alt": "High-contrast video still of a face with dark hollow eyes, crossed by purple and green scan-line bands",
+      "alt": "Barbara Latham, Arbitrary Fragments, 1978: High-contrast video still of a face with dark hollow eyes, crossed by purple and green scan-line bands",
       "src": "img/arbitrary-fragments-by-barbara-latham.jpg",
       "cap": "A still from Barbara Latham's Arbitrary Fragments, used by the Video Data Bank as the poster frame for its preview clip of the tape.",
       "credit": "Barbara Latham, Arbitrary Fragments, 1978. Courtesy Video Data Bank, School of the Art Institute of Chicago",
@@ -13233,7 +13236,8 @@
       "cap": "Cover of Stiny and Gips's Algorithmic Aesthetics: Computer Models for Criticism and Design in the Arts.",
       "credit": "Algorithmic Aesthetics: Computer Models for Criticism and Design in the Arts by George Stiny and James Gips, cover. Via Open Library",
       "width": 351,
-      "height": 500
+      "height": 500,
+      "alt": "George Stiny and James Gips, Algorithmic Aesthetics: Computer Models for Criticism and Design in the Arts, 1978"
     },
     "tags": [
       "François Morellet",
@@ -14355,7 +14359,7 @@
       }
     ],
     "img": {
-      "alt": "Gallery with projected dancer silhouettes on one wall, framed drawings and scores on another, bench in front",
+      "alt": "Lucinda Childs, Dance, 1979: Gallery with projected dancer silhouettes on one wall, framed drawings and scores on another, bench in front",
       "src": "img/dance-by-lucinda-childs.jpg",
       "cap": "Gallery view of the Whitney Museum's 2009 exhibition Lucinda Childs: Dance, which brought together the Childs, Glass and LeWitt material for the 1979 work.",
       "credit": "Installation view, Lucinda Childs: Dance, Whitney Museum of American Art, 2009. Photograph: Sheldan C. Collins. Courtesy Whitney Museum of American Art. <a href=\"https://whitney.org/exhibitions/lucinda-childs\">Image source</a>.",
@@ -14565,7 +14569,8 @@
       "cap": "A scanned page image from Edward Zajec's Informatrix, held in the compArt database of digital art.",
       "credit": "Edward Zajec, Informatrix. Via compArt database Digital Art (dada.compart-bremen.de)",
       "width": 400,
-      "height": 288
+      "height": 288,
+      "alt": "Edward Zajec, Informatrix, 1979"
     },
     "tags": [
       "Edward Zajec",
@@ -17400,7 +17405,8 @@
     "img": {
       "src": "img/digital-tv-dinner-by-jamie-fenton-and-raul-zaritsky-9d05d5e3aa.jpg",
       "cap": "A frame from Digital TV Dinner, 1978: the Bally Astrocade’s picture breaking into bands of color.",
-      "credit": "Jamie Fenton and Raul Zaritsky, Digital TV Dinner, 1978. Frame from Jamie Fenton’s upload on <a href=\"https://www.youtube.com/watch?v=Ad9zdlaRvdM\" target=\"_blank\" rel=\"noopener\">YouTube</a>."
+      "credit": "Jamie Fenton and Raul Zaritsky, Digital TV Dinner, 1978. Frame from Jamie Fenton’s upload on <a href=\"https://www.youtube.com/watch?v=Ad9zdlaRvdM\" target=\"_blank\" rel=\"noopener\">YouTube</a>.",
+      "alt": "Jamie Fenton and Raul Zaritsky, Digital TV Dinner, 1978"
     },
     "tags": [
       "Jamie Fenton",

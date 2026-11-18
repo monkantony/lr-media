@@ -165,7 +165,7 @@
     },
     {
       "id": 6,
-      "n": 76,
+      "n": 79,
       "x": 0.09644407546257207,
       "y": 0.31116108707388157,
       "terms": [
@@ -184,7 +184,7 @@
         "3": 10,
         "4": 4,
         "5": 11,
-        "6": 7,
+        "6": 10,
         "7": 1,
         "8": 2
       },
@@ -348,7 +348,7 @@
     },
     {
       "id": 13,
-      "n": 50,
+      "n": 62,
       "x": 0.45020789010666207,
       "y": -0.32302225424678294,
       "terms": [
@@ -365,11 +365,11 @@
         "1": 1,
         "3": 5,
         "4": 7,
-        "6": 1,
-        "7": 1,
-        "8": 1,
-        "9": 13,
-        "10": 14,
+        "6": 4,
+        "7": 4,
+        "8": 2,
+        "9": 16,
+        "10": 16,
         "5": 7
       },
       "label": "Deep learning and image generation"
@@ -14710,6 +14710,246 @@
         "harold-cohens-arnolfini-series",
         "charles-csuri-enters-the-computer-art-scene-with-series-of-important-works",
         "23-ecke-by-georg-nees"
+      ]
+    },
+    {
+      "s": "expert-systems-reach-industry",
+      "x": 0.12440335855212858,
+      "y": 0.014502214936990797,
+      "z": -0.13035984583417157,
+      "cl": 6,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "edward-shortliffe-and-colleagues-develop-mycin-at-stanford",
+        "dendral-project-begins-at-stanford",
+        "richard-fikes-and-nils-nilsson-introduce-strips",
+        "john-mccarthy-and-marvin-minsky-found-the-mit-artificial-intelligence-project",
+        "allen-newell-cliff-shaw-and-herbert-simon-build-the-logic-theorist"
+      ]
+    },
+    {
+      "s": "the-hopfield-network",
+      "x": 0.4703580890773656,
+      "y": -0.22212029692241678,
+      "z": -0.028299782710924832,
+      "cl": 13,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks",
+        "i-j-good-predicts-an-intelligence-explosion",
+        "the-split-neural-networks-fall-from-favor-after-perceptrons",
+        "bernard-widrow-and-marcian-hoff-introduce-adaline",
+        "john-mccarthy-marvin-minsky-claude-shannon-introduce-world-to-ai"
+      ]
+    },
+    {
+      "s": "backpropagation-works",
+      "x": 0.4595034801860827,
+      "y": -0.2323389525821264,
+      "z": 0.01181786069840671,
+      "cl": 13,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "the-hopfield-network",
+        "paul-werbos-proposes-backpropagation-to-train-neural-networks",
+        "alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks",
+        "i-j-good-predicts-an-intelligence-explosion",
+        "the-split-neural-networks-fall-from-favor-after-perceptrons"
+      ]
+    },
+    {
+      "s": "expert-systems-collapse",
+      "x": 0.1170224329291063,
+      "y": 0.03795292133948487,
+      "z": -0.13035545661955142,
+      "cl": 6,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "expert-systems-reach-industry",
+        "edward-shortliffe-and-colleagues-develop-mycin-at-stanford",
+        "dendral-project-begins-at-stanford",
+        "richard-fikes-and-nils-nilsson-introduce-strips",
+        "marvin-minskys-frames-and-roger-schank-and-robert-abelsons-scripts"
+      ]
+    },
+    {
+      "s": "rules-winter",
+      "x": 0.10583283186247588,
+      "y": 0.0428647436150754,
+      "z": -0.13035680461790686,
+      "cl": 6,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "expert-systems-collapse",
+        "expert-systems-reach-industry",
+        "edward-shortliffe-and-colleagues-develop-mycin-at-stanford",
+        "dendral-project-begins-at-stanford",
+        "richard-fikes-and-nils-nilsson-introduce-strips"
+      ]
+    },
+    {
+      "s": "machines-learn-to-read",
+      "x": 0.44885244583953915,
+      "y": -0.2361586305280602,
+      "z": 0.02782230445180514,
+      "cl": 13,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "backpropagation-works",
+        "paul-werbos-proposes-backpropagation-to-train-neural-networks",
+        "the-hopfield-network",
+        "googles-alexander-mordvintsev-launches-deepdream",
+        "alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks"
+      ]
+    },
+    {
+      "s": "support-vector-machines",
+      "x": 0.4647097456536662,
+      "y": -0.22054066207896902,
+      "z": -0.034402582637327817,
+      "cl": 13,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks",
+        "the-hopfield-network",
+        "the-split-neural-networks-fall-from-favor-after-perceptrons",
+        "bernard-widrow-and-marcian-hoff-introduce-adaline",
+        "john-mccarthy-marvin-minsky-claude-shannon-introduce-world-to-ai"
+      ]
+    },
+    {
+      "s": "machines-dream-in-pictures",
+      "x": 0.4508902487442633,
+      "y": -0.2349232674801035,
+      "z": -0.013899957980545075,
+      "cl": 13,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "the-hopfield-network",
+        "backpropagation-works",
+        "machines-learn-to-read",
+        "support-vector-machines",
+        "alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks"
+      ]
+    },
+    {
+      "s": "neural-net-winter",
+      "x": 0.47606846086231863,
+      "y": -0.21612531921835296,
+      "z": -0.015950315079534996,
+      "cl": 13,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "the-hopfield-network",
+        "support-vector-machines",
+        "machines-dream-in-pictures",
+        "backpropagation-works",
+        "machines-learn-to-read"
+      ]
+    },
+    {
+      "s": "deep-learning-rebrand",
+      "x": 0.47616017228563395,
+      "y": -0.20943202059191632,
+      "z": -0.01869649915479664,
+      "cl": 13,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "neural-net-winter",
+        "the-hopfield-network",
+        "alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks",
+        "machines-dream-in-pictures",
+        "backpropagation-works"
+      ]
+    },
+    {
+      "s": "watson-wins-jeopardy",
+      "x": 0.4521001797141993,
+      "y": -0.21315468958883876,
+      "z": -0.023515751628927196,
+      "cl": 13,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "support-vector-machines",
+        "neural-net-winter",
+        "the-hopfield-network",
+        "deep-learning-rebrand",
+        "machines-dream-in-pictures"
+      ]
+    },
+    {
+      "s": "alphago-and-alphafold",
+      "x": 0.4616108820954259,
+      "y": -0.20616682837660097,
+      "z": -0.022335428910328546,
+      "cl": 13,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "deep-learning-rebrand",
+        "alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks",
+        "watson-wins-jeopardy",
+        "support-vector-machines",
+        "neural-net-winter"
+      ]
+    },
+    {
+      "s": "attention-is-all-you-need",
+      "x": 0.45331293840687814,
+      "y": -0.2172033752757848,
+      "z": -0.02271124685490283,
+      "cl": 13,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "deep-learning-rebrand",
+        "alphago-and-alphafold",
+        "alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks",
+        "watson-wins-jeopardy",
+        "support-vector-machines"
+      ]
+    },
+    {
+      "s": "chatgpt",
+      "x": 0.42195587147742086,
+      "y": -0.2514544561734748,
+      "z": 0.016078482376310946,
+      "cl": 13,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "attention-is-all-you-need",
+        "machines-dream-in-pictures",
+        "openai-releases-chatgpt-4",
+        "watson-wins-jeopardy",
+        "support-vector-machines"
+      ]
+    },
+    {
+      "s": "deep-learning-wins-nobels",
+      "x": 0.4589616643201399,
+      "y": -0.22409419990076035,
+      "z": -0.021885435969403122,
+      "cl": 13,
+      "echoes": [],
+      "placement": "topic-neighbors",
+      "placement_neighbors": [
+        "deep-learning-rebrand",
+        "the-hopfield-network",
+        "alphago-and-alphafold",
+        "neural-net-winter",
+        "alexey-ivakhnenko-and-valentin-lapa-train-multilayer-networks"
       ]
     }
   ],

@@ -372,7 +372,8 @@
       "cap": "A frame from Spiral 5 PTL showing the spiral motif generated with the Sandin Image Processor and DeFanti's GRASS system.",
       "credit": "Dan Sandin, Spiral 5 PTL, 1980. Electronic Visualization Laboratory, University of Illinois Chicago",
       "width": 330,
-      "height": 265
+      "height": 265,
+      "alt": "Dan Sandin, Tom DeFanti and Mimi Shevitz, Spiral 5 PTL, 1980"
     },
     "tags": [
       "Mimi Shevitz",
@@ -628,7 +629,8 @@
       "cap": "Image is copyrighted the artist and courtesy of The Anne and Michael Spalter Digital Art Collection.",
       "credit": "Spalter Digital. 2023. P-300b Divisibility I. <a href=\"https://spalterdigital.com/artworks/490/\" target=\"_blank\" rel=\"noopener\">spalterdigital.com</a>",
       "width": 1631,
-      "height": 1632
+      "height": 1632,
+      "alt": "Manfred Mohr, Divisibility I, 1980"
     },
     "tags": [
       "Manfred Mohr",
@@ -1008,7 +1010,7 @@
       }
     ],
     "img": {
-      "alt": "Black book jacket of John Whitney's Digital Harmony with colorful sine waves over sol, la, ti, do labels",
+      "alt": "John Whitney, Digital Harmony: On the Complementarity of Music and Visual Art, 1980: Black book jacket of John Whitney's Digital Harmony with colorful sine waves over sol, la, ti, do labels",
       "src": "img/digital-harmony-on-the-complementarity-of-music-and-visual-art-by-john-whitney.jpg",
       "cap": "",
       "credit": "Dust jacket of John Whitney, Digital Harmony: On the Complementarity of Music and Visual Art (McGraw-Hill / Byte Books, 1980). Jacket designer not credited. <a href=\"https://archive.org/details/DigitalHarmony_201611\">Internet Archive record</a>.",
@@ -1304,7 +1306,7 @@
       }
     ],
     "img": {
-      "alt": "David Em's Persepol: white crescent shapes swirling in orange-green particle trails on a starry black field",
+      "alt": "David Em, Persepol, 1981: white crescent shapes swirling in orange-green particle trails on a starry black field",
       "src": "img/persepol-by-david-em.jpg",
       "cap": "",
       "credit": "Wikipedia. 2023. \"David Em.\" Wikimedia Foundation. Last modified March 20, 2023. <a href=\"https://en.wikipedia.org/wiki/David_Em\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>.",
@@ -1760,7 +1762,7 @@
       }
     ],
     "img": {
-      "alt": "Frame from Nelson Max's Carla's Island: dark rocks in a blue sea, moonlight glinting on the waves",
+      "alt": "Nelson Max, Carla’s Island, 1981: dark rocks in a blue sea, moonlight glinting on the waves",
       "src": "img/carlas-island-by-nelson-max.jpg",
       "cap": "A frame from Nelson Max's Carla's Island showing the simulated ocean at moonrise, with the moon's specular track running across the waves.",
       "credit": "Nelson Max, Carla's Island. ACM SIGGRAPH History Archives",
@@ -3133,7 +3135,7 @@
     "img": {
       "cap": "Pitfall! cartridge for the Atari 2600, Activision, 1982. Designed by David Crane.",
       "credit": "Activision, 1982. The Strong National Museum of Play, object 111.4444; image via Google Arts & Culture. <a href=\"https://artsandculture.google.com/asset/video-game-atari-pitfall-activision/mQEFCEIK3Nq9fA?hl=en\">Image source</a>.",
-      "alt": "A black Atari cartridge with the green Pitfall! label and an image of the jungle platform game.",
+      "alt": "David Crane, Pitfall!, 1982: A black Atari cartridge with the green Pitfall! label and an image of the jungle platform game.",
       "width": 859,
       "height": 1023,
       "sourceUrl": "https://artsandculture.google.com/asset/video-game-atari-pitfall-activision/mQEFCEIK3Nq9fA?hl=en",
@@ -3357,7 +3359,7 @@
       }
     ],
     "img": {
-      "alt": "Nam June Paik's V-yramid: vintage TVs with glowing screens stacked into a tall tower in a gallery",
+      "alt": "Nam June Paik, V-yramid, 1982: vintage TVs with glowing screens stacked into a tall tower in a gallery",
       "src": "img/v-yramid-by-nam-june-paik.jpg",
       "cap": "",
       "credit": "Trevor Patt. Flickr. \"IMG_5583.” 2015. <a href=\"https://www.flickr.com/photos/15416816@N05/19849571533\" target=\"_blank\" rel=\"noopener\">flickr.com</a>",
@@ -3537,7 +3539,7 @@
       }
     ],
     "img": {
-      "alt": "Loren Carpenter's 1980 fractal rendering of Mount Rainier: pale lit peaks under a blue sky",
+      "alt": "Alain Fournier, Don Fussell, Loren Carpenter, Computer Rendering of Stochastic Models, 1982: Loren Carpenter's 1980 fractal rendering of Mount Rainier: pale lit peaks under a blue sky",
       "src": "img/computer-rendering-of-stochastic-models-by-alain-fournier-don-fussell-loren-carp.jpg",
       "cap": "Loren Carpenter's fractal-terrain rendering of Mount Rainier, from his film Vol Libre, shown in the SIGGRAPH 1980 Art Show; Carpenter co-authored the 1982 paper that set out the stochastic subdivision method behind images like this one.",
       "credit": "Loren C. Carpenter, Mount Rainier from the North (from Vol Libre), 1980. ACM SIGGRAPH History Archives.",
@@ -3762,7 +3764,7 @@
       }
     ],
     "img": {
-      "alt": "Montana by Jane Veeder: black-and-white video graphic of an eagle, globes, triangles, city skyline",
+      "alt": "Jane Veeder, Montana, 1982: black-and-white video graphic of an eagle, globes, triangles, city skyline",
       "src": "img/montana-by-mary-jane-veeder.jpg",
       "cap": "",
       "credit": "Gallery 400. Flickr. “Chicago New Media 1973–1992.” 2018. <a href=\"https://www.flickr.com/photos/40646737@N07/29221774647\" target=\"_blank\" rel=\"noopener\">flickr.com</a>",
@@ -4126,7 +4128,8 @@
       "cap": "The front cover of the 1982 first edition of The Computer Image: Applications of Computer Graphics.",
       "credit": "Donald P. Greenberg, Aaron Marcus, Allan H. Schmidt and Vernon Gorter, The Computer Image: Applications of Computer Graphics (Addison-Wesley, 1982). Scan courtesy Internet Archive.",
       "width": 1594,
-      "height": 1996
+      "height": 1996,
+      "alt": "Donald Greenberg, Aaron Marcus, Allan H. Schmidt, and Vernon Gorter, The Computer Image, 1982"
     },
     "tags": [
       "Aaron Marcus",
@@ -4471,7 +4474,7 @@
       }
     ],
     "img": {
-      "alt": "Frame from Yoichiro Kawaguchi's Growth (1983): green and yellow branching form with purple bulbs on black",
+      "alt": "Yoichiro Kawaguchi, Growth, 1983: green and yellow branching form with purple bulbs on black",
       "src": "img/growth-by-yoichiro-kawaguchi.jpg",
       "cap": "A frame from Yoichiro Kawaguchi's Growth (1983), the shell-like branching form generated by his GROWTH algorithm and rendered on the LINKS-1 system in Osaka.",
       "credit": "Yoichiro Kawaguchi, Growth, 1983. ACM SIGGRAPH History Archives. © 1983 Y. Kawaguchi.",
@@ -4918,7 +4921,7 @@
     ],
     "img": {
       "cap": "Grant D. Taylor, When the Machine Made Art: The Troubled History of Computer Art (Bloomsbury, 2014)",
-      "alt": "Book cover of When the Machine Made Art by Grant D. Taylor, showing a colourful isometric computer-generated grid on black",
+      "alt": "Grace Glueck, Portrait of the Artist As a Young Computer, 1983: Book cover of When the Machine Made Art by Grant D. Taylor, showing a colourful isometric computer-generated grid on black",
       "credit": "Cover of Grant D. Taylor, When the Machine Made Art: The Troubled History of Computer Art (New York: Bloomsbury, 2014), ISBN 9781623568849. Publisher cover image. <a href=\"https://www.bloomsbury.com/us/when-the-machine-made-art-9781623568849/\">Image source</a>.",
       "sourceUrl": "https://www.bloomsbury.com/us/when-the-machine-made-art-9781623568849/",
       "creator": "Bloomsbury Academic",
@@ -6779,7 +6782,7 @@
     "img": {
       "cap": "William Gibson, Neuromancer (first published 1984); cover of a later Ace paperback printing.",
       "credit": "Ace Books; cover image preserved by the Computer History Museum <a href=\"https://www.computerhistory.org/timeline/1984/\">Image source</a>.",
-      "alt": "White Neuromancer paperback cover with red title, blue author lettering and a dark cyberpunk illustration.",
+      "alt": "William Gibson, Neuromancer, 1984: White Neuromancer paperback cover with red title, blue author lettering and a dark cyberpunk illustration.",
       "sourceUrl": "https://www.computerhistory.org/timeline/1984/",
       "creator": [],
       "width": 800,
@@ -6860,7 +6863,7 @@
       }
     ],
     "img": {
-      "alt": "Black book cover of Order Out of Chaos with four orange spiral patterns in a grid",
+      "alt": "Ilya Prigogine and Isabelle Stengers, Order Out of Chaos: Man’s New Dialogue with Nature, 1984: Black book cover of Order Out of Chaos with four orange spiral patterns in a grid",
       "src": "img/order-out-of-chaos-mans-new-dialogue-with-nature-by-ilya-prigogine-and-isabelle-.jpg",
       "cap": "",
       "credit": "Cover of Ilya Prigogine and Isabelle Stengers, Order Out of Chaos: Man's New Dialogue with Nature, foreword by Alvin Toffler (Bantam Books paperback, 1984). Cover design not credited. <a href=\"https://openlibrary.org/books/OL7825767M\">Book record</a>.",
@@ -6988,7 +6991,8 @@
       "credit": "Cover of Art After Modernism: Rethinking Representation, edited by Brian Wallis, foreword by Marcia Tucker (New Museum of Contemporary Art and David R. Godine, 1984). Cover design not credited. <a href=\"https://openlibrary.org/books/OL2859954M\">Book record</a>.",
       "width": 900,
       "height": 900,
-      "sourceUrl": "https://openlibrary.org/books/OL2859954M"
+      "sourceUrl": "https://openlibrary.org/books/OL2859954M",
+      "alt": "Brian Wallis, Art After Modernism: Rethinking Representation, edited, 1984"
     },
     "tags": [
       "Art and Technology",
@@ -7158,7 +7162,7 @@
       }
     ],
     "img": {
-      "alt": "Frame from Edward Zajec's Chromas: overlapping blue and ochre triangles with pixelated horizontal bands",
+      "alt": "Edward Zajec, Chromas, 1984: overlapping blue and ochre triangles with pixelated horizontal bands",
       "src": "img/chromas-by-edward-zajec.jpg",
       "cap": "A frame from Edward Zajec's Chromas, the colour-and-form series he began in 1984 and set to a piano composition by Giampaolo Coral.",
       "credit": "Edward Zajec, Chromas, 1984-88. Courtesy the artist, edwardzajec.com.",
@@ -8330,7 +8334,7 @@
       }
     ],
     "img": {
-      "alt": "Frame from Larry Cuba's Calculated Movements (1985): white, grey and black bar-forms over horizontal lines",
+      "alt": "Larry Cuba, Calculated Movements, 1985: white, grey and black bar-forms over horizontal lines",
       "src": "img/calculated-movements-by-larry-cuba.jpg",
       "cap": "A frame from Larry Cuba's Calculated Movements (1985), showing the solid bar-forms he could build once he moved to the raster-graphics Datamax UV-1 and Tom DeFanti's ZGRASS language.",
       "credit": "Larry Cuba, Calculated Movements, 1985. ACM SIGGRAPH History Archives.",
@@ -9203,7 +9207,7 @@
       }
     ],
     "img": {
-      "alt": "Grid of twenty numbered photos of feet in shoes above the text 'Which SHOES would you like to interact with?'",
+      "alt": "Sonya Rapoport, Shoe-Field, 1985: Grid of twenty numbered photos of feet in shoes above the text 'Which SHOES would you like to interact with?'",
       "src": "img/shoe-field-by-sonya-rapopport.jpg",
       "cap": "A colour lithograph print from Sonya Rapoport's Shoe-Field, showing the numbered chart of twenty shoes and the prompt 'Which SHOES would you like to interact with?' that participants answered.",
       "credit": "Sonya Rapoport, Shoe-Field, colour lithograph on paper mounted on card. Victoria and Albert Museum, London (museum no. E.1012:5-2008). Given by the American Friends of the V&amp;A through the generosity of Patric Prince.",
@@ -9303,7 +9307,7 @@
       }
     ],
     "img": {
-      "alt": "Jane Veeder's Vizgame screen: blue pixel title above a 4x3 grid of line, shape and pattern icons",
+      "alt": "Jane Veeder, Vizgame, 1985: blue pixel title above a 4x3 grid of line, shape and pattern icons",
       "src": "img/vizgame-by-jane-veeder.jpg",
       "cap": "A screen image from Jane Veeder's Vizgame, showing the title and the grid of drawing and animation options the player worked through on the Datamax UV-1.",
       "credit": "Jane Veeder, Vizgame, 1985. ACM SIGGRAPH History Archives.",
@@ -9784,7 +9788,7 @@
     "img": {
       "cap": "Craig Reynolds, boids flocking simulation, illustration from Flocks, Herds, and Schools: A Distributed Behavioral Model, 1987.",
       "credit": "Craig Reynolds; ACM SIGGRAPH 1987 paper, author-prepared online reprint <a href=\"https://www.cs.toronto.edu/~dt/siggraph97-course/cwr87/\">Image source</a>.",
-      "alt": "Computer-simulated birds flock among tall cylindrical obstacles.",
+      "alt": "Craig Reynolds, Boids, 1986: Computer-simulated birds flock among tall cylindrical obstacles.",
       "sourceUrl": "https://www.cs.toronto.edu/~dt/siggraph97-course/cwr87/",
       "creator": [
         "Craig Reynolds"
@@ -10037,7 +10041,7 @@
       }
     ],
     "img": {
-      "alt": "Cover of The Beauty of Fractals: a white fractal landscape with a purple sphere against a dark sky",
+      "alt": "Heinz-Otto Peitgen and Peter Richter, The Beauty of Fractals, 1986: a white fractal landscape with a purple sphere against a dark sky",
       "src": "img/the-beauty-of-fractals-by-heinz-otto-peitgen-and-peter-richter.jpg",
       "cap": "",
       "credit": "Wikipedia. 2022. \"The Beauty of Fractals.\" Wikimedia Foundation. Last modified March 3, 2022. <a href=\"https://en.wikipedia.org/wiki/The_Beauty_of_Fractals\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>.",
@@ -10168,7 +10172,7 @@
       "src": "img/evolving-aesthetic-criteria-for-computer-generated-art-a-delphi-study-by-richard-4b54d0974c.png",
       "cap": "Title page of Richard Edward Lucas’s <em>Evolving Aesthetic Criteria for Computer Generated Art: A Delphi Study</em>, MA thesis, The Ohio State University, 1986.",
       "credit": "Richard Edward Lucas. Digitized thesis: <a href=\"https://rave.ohiolink.edu/etdc/view?acc_num=osu1157038631\">The Ohio State University / OhioLINK Electronic Theses and Dissertations Center</a>. The repository records © 1986, all rights reserved.",
-      "alt": "Upside-down scan of a typewritten 1986 thesis title page by Richard Edward Lucas, with adviser's signature",
+      "alt": "Richard Lucas, Evolving aesthetic criteria for computer generated art: A Delphi Study, 1986: Upside-down scan of a typewritten 1986 thesis title page by Richard Edward Lucas, with adviser's signature",
       "width": 2550,
       "height": 3312,
       "sourceUrl": "https://rave.ohiolink.edu/etdc/view?acc_num=osu1157038631",
@@ -10711,7 +10715,7 @@
     "img": {
       "cap": "Richard Dawkins, The Blind Watchmaker, Longman, 1986: the first-edition dust jacket, illustrated by Desmond Morris.",
       "credit": "Photograph of the book: Pemberley Books. Jacket artwork: Desmond Morris; Longman, 1986. <a href=\"https://www.pemberleybooks.com/product/the-blind-watchmaker/51273/\">Image source</a>.",
-      "alt": "Black first-edition dust jacket of The Blind Watchmaker, with white title lettering and a surreal coloured illustration.",
+      "alt": "Richard Dawkins, The Blind Watchmaker, 1986: Black first-edition dust jacket of The Blind Watchmaker, with white title lettering and a surreal coloured illustration.",
       "sourceUrl": "https://www.pemberleybooks.com/product/the-blind-watchmaker/51273/",
       "creator": [
         "Desmond Morris"
@@ -10838,7 +10842,7 @@
     "img": {
       "cap": "Liliane Lijn, <em>Conjunction of Opposites: Lady of the Wild Things and Woman of War</em>, 1986. Installation view, <em>Cosmic Dramas</em>, Rodeo, Piraeus, 2018.",
       "credit": "Artwork by Liliane Lijn. Photograph: Boris Kirpotin. © Boris Kirpotin, Rodeo Gallery. Source: Liliane Lijn’s artist archive. <a href=\"https://www.lilianelijn.com/portfolio-item/cosmic-dramas-2/\">Image source</a>.",
-      "alt": "Liliane Lijn's two feathered sculptures in a dark gallery, linked by a red laser beam",
+      "alt": "Liliane Lijn, Woman of War, Lady of the Wild Things, 1986: Liliane Lijn's two feathered sculptures in a dark gallery, linked by a red laser beam",
       "sourceUrl": "https://www.lilianelijn.com/portfolio-item/cosmic-dramas-2/",
       "creator": "Boris Kirpotin",
       "copyrightNotice": "© Boris Kirpotin, Rodeo Gallery",
@@ -10987,7 +10991,7 @@
       }
     ],
     "img": {
-      "alt": "Four white wireframe 3D head models on black, facing different directions, by Rebecca Allen, 1986",
+      "alt": "Rebecca Allen, Modélisation d’un visage, 1986: Four white wireframe 3D head models on black, facing different directions, by Rebecca Allen, 1986",
       "src": "img/modelisation-dun-visage-by-rebecca-allen.jpg",
       "cap": "Four wireframe head models from Rebecca Allen's 1986 facial-animation work, made with the face-modelling software she developed that year for Kraftwerk's Musique Non Stop; the image is published on the artist's own site under that project's title, not as Modelisation d'un visage.",
       "credit": "Rebecca Allen, computer-generated head models for Musique Non Stop, 1986. Courtesy of the artist, rebeccaallen.com.",
@@ -11802,7 +11806,7 @@
     "img": {
       "cap": "Pixar’s Luxo Jr. (1986), made in the year Steve Jobs acquired the company.",
       "credit": "Pixar, official company history. <a href=\"https://www.pixar.com/our-story\">Image source</a>.",
-      "alt": "Two articulated desk lamps face a small ball decorated with a red star against a dark background in Luxo Jr.",
+      "alt": "Steve Jobs, Pixar purchased from Lucasfilm, 1986: Two articulated desk lamps face a small ball decorated with a red star against a dark background in Luxo Jr.",
       "sourceUrl": "https://www.pixar.com/our-story",
       "creator": [
         "Pixar"
@@ -12072,7 +12076,7 @@
       }
     ],
     "img": {
-      "alt": "Black-and-white print of Lillian Schwartz's Mona-Leo: half Mona Lisa face, half Leonardo's aged face",
+      "alt": "Lillian Schwartz, Mona-Leo, 1987: half Mona Lisa face, half Leonardo's aged face",
       "src": "img/mona-leo-by-lillian-schwartz.jpg",
       "cap": "A signed, editioned print of Lillian Schwartz's Mona-Leo, joining half of the Mona Lisa to the mirrored half of Leonardo's self-portrait; The Henry Ford dates this print 1988, a year after the image was made.",
       "credit": "Lillian F. Schwartz, Mona-Leo, print, 1988. From the Collections of The Henry Ford. Gift of the Lillian F. Schwartz &amp; Laurens R. Schwartz Collection (object 2021.14.349).",
@@ -12848,7 +12852,7 @@
       }
     ],
     "img": {
-      "alt": "Cover of Digital Visions: Computers and Art: pink 3D fish swimming over microchips on a blue surface",
+      "alt": "Cynthia Goodman, Digital Visions, 1987: Computers and Art: pink 3D fish swimming over microchips on a blue surface",
       "src": "img/digital-visions-by-cynthia-goodman.jpg",
       "cap": "The cover of Cynthia Goodman's Digital Visions: Computers and Art, the book published alongside her 1987 exhibition at the IBM Gallery of Science and Art.",
       "credit": "Cover of Cynthia Goodman, Digital Visions: Computers and Art (New York: Harry N. Abrams, 1987). Internet Archive.",
@@ -12966,7 +12970,7 @@
       }
     ],
     "img": {
-      "alt": "Herbert W. Franke reading from an open book at a wooden table with a microphone, 2007",
+      "alt": "Herbert W. Franke, The Expanding Medium: The Future of Computer Art, 1987: Herbert W. Franke reading from an open book at a wooden table with a microphone, 2007",
       "src": "img/the-expanding-medium-the-future-of-computer-art-by-herbert-w-franke.jpg",
       "cap": "A photographic portrait of Herbert W. Franke, author of 'The Expanding Medium: The Future of Computer Art', reading from a book at a table with a microphone in 2007; it is a portrait of the author, not an image of the essay.",
       "credit": "Herbert W. Franke, 8 September 2007. Photograph: Mike Kruger, CC BY-SA 4.0, via Wikimedia Commons.",
@@ -13520,7 +13524,7 @@
       }
     ],
     "img": {
-      "alt": "Karen Guzak's Red Ridge, 1987: a black and red field split by a winding line, framed by striped edges",
+      "alt": "Karen Guzak, Red Ridge, 1987: a black and red field split by a winding line, framed by striped edges",
       "src": "img/red-ridge-by-karen-guzak.jpg",
       "cap": "Karen Guzak's 1987 lithograph Red Ridge, reproduced from the slide scan held by the Washington State Arts Commission; the work is installed at Hamblen Elementary School, Spokane.",
       "credit": "Karen Guzak, Red Ridge, 1987, lithograph, 22 x 29 in. Washington State Art Collection, ArtsWA (1994.026.000).",
@@ -14560,7 +14564,7 @@
       }
     ],
     "img": {
-      "alt": "Performer at a laptop on a dark stage beside a projected screen of white 3D line graphics",
+      "alt": "Masaki Fujihata, Geometric Love, 1987: Performer at a laptop on a dark stage beside a projected screen of white 3D line graphics",
       "src": "img/geometric-love-by-masaki-fujihata.jpg",
       "cap": "",
       "credit": "Wikipedia. 2021. \"Masaki Fujihata.\" Wikimedia Foundation. Last modified December 31, 2021. <a href=\"https://en.wikipedia.org/wiki/Masaki_Fujihata\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>.",
@@ -14968,7 +14972,7 @@
       }
     ],
     "img": {
-      "alt": "Yaacov Agam, white-haired and bearded, arms crossed before a tall building with colorful striped balconies",
+      "alt": "Yaacov Agam, Visual Music, 1988: Yaacov Agam, white-haired and bearded, arms crossed before a tall building with colorful striped balconies",
       "src": "img/visual-music-by-yaacov-agam.jpg",
       "cap": "",
       "credit": "Wikipedia. 2023. \"Yaacov Agam.\" Wikimedia Foundation. Last modified November 23, 2023. <a href=\"https://en.wikipedia.org/wiki/Yaacov_Agam\" target=\"_blank\" rel=\"noopener\">en.wikipedia.org</a>.",
@@ -15681,7 +15685,7 @@
       }
     ],
     "img": {
-      "alt": "Vent Noir II by Jean-Pierre Hébert, 1989: dense plotted ink lines forming a rippling, folded square relief",
+      "alt": "Jean-Pierre Hébert, Vent Noir II, 1989: dense plotted ink lines forming a rippling, folded square relief",
       "src": "img/vent-noir-ii-by-jean-pierre-hebert.jpg",
       "cap": "Vent Noir II, Jean-Pierre Hebert's 1989 plotter drawing: a square field of extremely closely drawn ink lines that reads as a rippling, self-similar relief.",
       "credit": "Jean-Pierre Hebert, Vent Noir II, 1989. Pen and china ink, 9 x 9 in. on a 15 x 12 in. Strathmore sheet. Courtesy of the artist, jeanpierrehebert.com.",
@@ -16330,7 +16334,7 @@
       }
     ],
     "img": {
-      "alt": "Brian Reffin Smith's Text Text Piece: columns of glyph-like text around an orange and yellow panel",
+      "alt": "Brian Reffin Smith, Beyond Computer Art, 1989: Brian Reffin Smith's Text Text Piece: columns of glyph-like text around an orange and yellow panel",
       "src": "img/beyond-computer-art-by-brian-reffin-smith.jpg",
       "cap": "Brian Reffin Smith's Text Text Piece, hung in the SIGGRAPH '89 art show: two columns of dense typescript flanking a band of orange and yellow marks, headed by a line of blocky computer lettering. It is a work by the author of 'Beyond Computer Art', not the essay.",
       "credit": "Brian Reffin Smith, Text Text Piece, 1988. Ink on paper, 8.25 x 11.75 in. Shown in the SIGGRAPH 1989 Art Show. ACM SIGGRAPH History Archives.",
@@ -16832,7 +16836,7 @@
       }
     ],
     "img": {
-      "alt": "Detail of Jean-Pierre Hebert's Soft Lozenge, 1989: dense black ink lines forming curved, woven patterns",
+      "alt": "Jean-Pierre Hébert, Sans lever la plume, 1989: Detail of Jean-Pierre Hebert's Soft Lozenge, 1989: dense black ink lines forming curved, woven patterns",
       "src": "img/sans-lever-la-plume-by-jean-pierre-hebert.jpg",
       "cap": "Soft Lozenge, a 1989 pen-and-china-ink plotter drawing by Jean-Pierre Hebert, reproduced from the artist's own page on his 1980s work; it is a drawing of the period of the Galerie Chave show, not identified as a work that hung in it.",
       "credit": "Jean-Pierre Hebert, Soft Lozenge, 1989. Pen and china ink on paper, detail 4 x 2 in. within 15 x 15 in. Courtesy of the artist, jeanpierrehebert.com.",
@@ -16946,7 +16950,7 @@
       }
     ],
     "img": {
-      "alt": "Cover of Margot Lovejoy's Postmodern Currents, title over a mint-green computer casing and red field",
+      "alt": "Margot Lovejoy, Postmodern Currents: Art and Artists in the Age of Electronic Media, 1989: Cover of Margot Lovejoy's Postmodern Currents, title over a mint-green computer casing and red field",
       "src": "img/postmodern-currents-art-and-artists-in-the-age-of-electronic-media-by-margot-lov.jpg",
       "cap": "The front cover of Margot Lovejoy's Postmodern Currents: Art and Artists in the Age of Electronic Media, its title split across a mint-green ghosted computer casing and a red field, with a foreword credit to Carter Ratcliff.",
       "credit": "Cover of Margot Lovejoy, Postmodern Currents: Art and Artists in the Age of Electronic Media (Ann Arbor: UMI Research Press, 1989). Internet Archive.",
@@ -17228,7 +17232,7 @@
       }
     ],
     "img": {
-      "alt": "The Legible City by Jeffrey Shaw: a person on a stationary bike rides toward giant 3D letters on a screen",
+      "alt": "Jeffrey Shaw, The Legible City, 1989: a person on a stationary bike rides toward giant 3D letters on a screen",
       "src": "img/the-legible-city-by-jeffrey-shaw.jpg",
       "cap": "",
       "credit": "Kyra Ocean. Flickr. “Jean-Pierre Dalbera. Flickr. “Les magiciens de la terre, retour sur une exposition légendaire (Centre Pompidou).” 2013. <a href=\"https://www.flickr.com/photos/49832497@N02/10430750573\" target=\"_blank\" rel=\"noopener\">flickr.com</a>",
@@ -17936,5 +17940,463 @@
       8
     ],
     "dateType": "made"
+  },
+  "expert-systems-reach-industry": {
+    "body": [
+      "Finally, AI started making economic sense, thanks to rules. McDermott’s R1, later called XCON, went to work at DEC in 1980, checking and configuring computer orders. By the mid-1980s it reportedly saved the company millions a year. It helped end the first winter and opened an early-eighties boom when “expert systems” dominated AI research."
+    ],
+    "cite": [
+      {
+        "url": "https://doi.org/10.1016/0004-3702(82)90021-2",
+        "label": "John McDermott, “R1: A Rule-Based Configurer of Computer Systems,” Artificial Intelligence 19 (1982)"
+      }
+    ],
+    "img": {
+      "src": "img/expert-systems-reach-industry-ba72bc119f.jpg",
+      "cap": "A DEC VAX-11/780, the computer whose orders R1 configured.",
+      "credit": "Photo: Joe Mabel, CC BY-SA 3.0, via <a href=\"https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>."
+    },
+    "tags": [
+      "John McDermott",
+      "Carnegie Mellon University",
+      "Digital Equipment Corporation",
+      "expert systems",
+      "artificial intelligence",
+      "ai history"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "ai history",
+        "n": "ai history",
+        "t": "themes"
+      },
+      {
+        "k": "artificial intelligence",
+        "n": "artificial intelligence",
+        "t": "tech"
+      },
+      {
+        "k": "expert systems",
+        "n": "expert systems",
+        "t": "tech"
+      },
+      {
+        "k": "carnegie mellon university",
+        "n": "Carnegie Mellon University",
+        "t": "other"
+      },
+      {
+        "k": "digital equipment corporation",
+        "n": "Digital Equipment Corporation",
+        "t": "other"
+      },
+      {
+        "k": "john mcdermott",
+        "n": "John McDermott",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      8
+    ],
+    "dateType": ""
+  },
+  "the-hopfield-network": {
+    "body": [
+      "Hopfield helped revive neural networks by applying physics. His network stored memories as valleys in a landscape where a damaged pattern rolled downhill to the nearest whole one. In 1985, Hinton and Sejnowski extended the concept into the Boltzmann machine. In 2024 Hopfield and Hinton shared the Nobel Prize in Physics."
+    ],
+    "cite": [
+      {
+        "url": "https://doi.org/10.1073/pnas.79.8.2554",
+        "label": "J. J. Hopfield, “Neural networks and physical systems with emergent collective computational abilities,” PNAS 79 (1982)"
+      },
+      {
+        "url": "https://www.nobelprize.org/prizes/physics/2024/summary/",
+        "label": "The Nobel Prize in Physics 2024"
+      }
+    ],
+    "img": {
+      "src": "img/the-hopfield-network-9b7d2fdc5e.jpg",
+      "cap": "John Hopfield in Stockholm, 2024.",
+      "credit": "Photo: Arthur Petron, CC BY-SA 4.0, via <a href=\"https://commons.wikimedia.org/wiki/File:John_J._Hopfield,_2024_Nobel_Prize_Laureate_in_Physics_1.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>."
+    },
+    "tags": [
+      "John Hopfield",
+      "Caltech",
+      "Geoffrey Hinton",
+      "Terry Sejnowski",
+      "neural networks",
+      "artificial intelligence",
+      "ai history"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "ai history",
+        "n": "ai history",
+        "t": "themes"
+      },
+      {
+        "k": "artificial intelligence",
+        "n": "artificial intelligence",
+        "t": "tech"
+      },
+      {
+        "k": "neural networks",
+        "n": "neural networks",
+        "t": "tech"
+      },
+      {
+        "k": "caltech",
+        "n": "Caltech",
+        "t": "other"
+      },
+      {
+        "k": "geoffrey hinton",
+        "n": "Geoffrey Hinton",
+        "t": "other"
+      },
+      {
+        "k": "john hopfield",
+        "n": "John Hopfield",
+        "t": "other"
+      },
+      {
+        "k": "terry sejnowski",
+        "n": "Terry Sejnowski",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      8
+    ],
+    "dateType": ""
+  },
+  "backpropagation-works": {
+    "body": [
+      "Their <em>Nature</em> paper showed how to train the multilayer networks Minsky and Papert had doubted. Errors were passed backwards through the network so every connection learned its share of the blame. The idea itself wasn’t new, having been sketched in the 1970s and ignored, but now backpropagation worked. After seventeen years, the learning camp was back."
+    ],
+    "cite": [
+      {
+        "url": "https://doi.org/10.1038/323533a0",
+        "label": "David E. Rumelhart, Geoffrey E. Hinton and Ronald J. Williams, “Learning representations by back-propagating errors,” Nature 323 (1986)"
+      }
+    ],
+    "img": {
+      "src": "img/backpropagation-works-f0b4dfabec.jpg",
+      "cap": "David Rumelhart at the International Joint Conference on Neural Networks, Seattle, 1991.",
+      "credit": "Photo: Rolf Kickuth, CC BY-SA 4.0, via <a href=\"https://commons.wikimedia.org/wiki/File:DavidRumelhart-IJCNNseattle1991-07-08.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>."
+    },
+    "tags": [
+      "David Rumelhart",
+      "Geoffrey Hinton",
+      "Ronald Williams",
+      "UC San Diego",
+      "Carnegie Mellon University",
+      "backpropagation",
+      "neural networks",
+      "artificial intelligence",
+      "ai history"
+    ],
+    "people": [],
+    "subjects": [
+      {
+        "k": "ai history",
+        "n": "ai history",
+        "t": "themes"
+      },
+      {
+        "k": "artificial intelligence",
+        "n": "artificial intelligence",
+        "t": "tech"
+      },
+      {
+        "k": "backpropagation",
+        "n": "backpropagation",
+        "t": "tech"
+      },
+      {
+        "k": "neural networks",
+        "n": "neural networks",
+        "t": "tech"
+      },
+      {
+        "k": "uc san diego",
+        "n": "UC San Diego",
+        "t": "orgs"
+      },
+      {
+        "k": "carnegie mellon university",
+        "n": "Carnegie Mellon University",
+        "t": "other"
+      },
+      {
+        "k": "david rumelhart",
+        "n": "David Rumelhart",
+        "t": "other"
+      },
+      {
+        "k": "geoffrey hinton",
+        "n": "Geoffrey Hinton",
+        "t": "other"
+      },
+      {
+        "k": "ronald williams",
+        "n": "Ronald Williams",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      8
+    ],
+    "dateType": ""
+  },
+  "expert-systems-collapse": {
+    "body": [
+      "At a 1984 conference Marvin Minsky and Roger Schank warned of an “AI winter.” By 1987, it had rolled in. Cheaper workstations wiped out the specialised Lisp machines built to run rules-based AI. Expert systems also proved brittle outside their specialist domains and costly to maintain."
+    ],
+    "cite": [
+      {
+        "url": "https://doi.org/10.1609/aimag.v6i3.494",
+        "label": "“The Dark Ages of AI: A Panel Discussion at AAAI-84,” AI Magazine 6 (1985)"
+      }
+    ],
+    "img": {
+      "src": "img/expert-systems-collapse-be6538ee02.jpg",
+      "cap": "The keyboard of a Symbolics Lisp machine.",
+      "credit": "Photo: Retro-Computing Society of Rhode Island, CC BY-SA 3.0, via <a href=\"https://commons.wikimedia.org/wiki/File:Symbolics-keyboard.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>."
+    },
+    "tags": [
+      "Marvin Minsky",
+      "Roger Schank",
+      "Symbolics",
+      "Lisp machines",
+      "expert systems",
+      "ai winter",
+      "artificial intelligence",
+      "ai history"
+    ],
+    "people": [
+      "marvin minsky"
+    ],
+    "subjects": [
+      {
+        "k": "ai history",
+        "n": "ai history",
+        "t": "themes"
+      },
+      {
+        "k": "ai winter",
+        "n": "AI winter",
+        "t": "themes"
+      },
+      {
+        "k": "artificial intelligence",
+        "n": "artificial intelligence",
+        "t": "tech"
+      },
+      {
+        "k": "expert systems",
+        "n": "expert systems",
+        "t": "tech"
+      },
+      {
+        "k": "marvin minsky",
+        "n": "Marvin Minsky",
+        "t": "people"
+      },
+      {
+        "k": "symbolics",
+        "n": "Symbolics",
+        "t": "orgs"
+      },
+      {
+        "k": "lisp machines",
+        "n": "Lisp machines",
+        "t": "other"
+      },
+      {
+        "k": "roger schank",
+        "n": "roger schank",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      8
+    ],
+    "dateType": ""
+  },
+  "rules-winter": {
+    "body": [
+      "Following this expert-system-led collapse, businesses and the US military cut AI budgets, again, while Japan’s Fifth Generation project ended short of its goals. This period is known as an AI winter but the rules camp really took the hit. The learning camp had momentum following backpropagation: the neural-network conference NIPS (now NeurIPS) first met in 1987 and Yann LeCun’s networks finally showed their practicality."
+    ],
+    "cite": [
+      {
+        "url": "https://proceedings.neurips.cc/paper/1987",
+        "label": "Neural Information Processing Systems (NIPS) 1987 proceedings"
+      },
+      {
+        "url": "https://mitpress.mit.edu/9780262182263/strategic-computing/",
+        "label": "Alex Roland and Philip Shiman, Strategic Computing: DARPA and the Quest for Machine Intelligence, 1983–1993 (MIT Press, 2002)"
+      }
+    ],
+    "img": {
+      "src": "img/rules-winter-b01a9874d6.jpg",
+      "cap": "Genera, the operating system of the Symbolics Lisp machines.",
+      "credit": "Screenshot: Michael L. Umbricht, Retro-Computing Society of Rhode Island, public domain, via <a href=\"https://commons.wikimedia.org/wiki/File:Symbolics_Genera_screenshot.gif\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>."
+    },
+    "tags": [
+      "ai winter",
+      "expert systems",
+      "Fifth Generation Computer Systems",
+      "NeurIPS",
+      "Yann LeCun",
+      "neural networks",
+      "artificial intelligence",
+      "ai history"
+    ],
+    "people": [
+      "yann lecun"
+    ],
+    "subjects": [
+      {
+        "k": "ai history",
+        "n": "ai history",
+        "t": "themes"
+      },
+      {
+        "k": "ai winter",
+        "n": "AI winter",
+        "t": "themes"
+      },
+      {
+        "k": "artificial intelligence",
+        "n": "artificial intelligence",
+        "t": "tech"
+      },
+      {
+        "k": "expert systems",
+        "n": "expert systems",
+        "t": "tech"
+      },
+      {
+        "k": "neural networks",
+        "n": "neural networks",
+        "t": "tech"
+      },
+      {
+        "k": "yann lecun",
+        "n": "Yann LeCun",
+        "t": "people"
+      },
+      {
+        "k": "neurips",
+        "n": "NeurIPS",
+        "t": "orgs"
+      },
+      {
+        "k": "fifth generation computer systems",
+        "n": "Fifth Generation Computer Systems",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      8
+    ],
+    "dateType": ""
+  },
+  "machines-learn-to-read": {
+    "body": [
+      "Building on Japanese researcher Kunihiko Fukushima’s neocognitron, LeCun trained a convolutional neural network with backpropagation. Rather than following rules for each digit, it learned to read handwritten US zip codes straight from the pixels. By the late 1990s its descendants were reading millions of American cheques a day."
+    ],
+    "cite": [
+      {
+        "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+        "label": "Y. LeCun et al., “Backpropagation Applied to Handwritten Zip Code Recognition,” Neural Computation 1 (1989)"
+      }
+    ],
+    "img": {
+      "src": "img/machines-learn-to-read-c757349b80.jpg",
+      "cap": "Yann LeCun, 2018.",
+      "credit": "Photo: Jérémy Barande, CC BY-SA 2.0 (cropped), via <a href=\"https://commons.wikimedia.org/wiki/File:Yann_LeCun_-_2018_%28cropped%29.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>."
+    },
+    "tags": [
+      "Yann LeCun",
+      "Kunihiko Fukushima",
+      "Bell Labs",
+      "convolutional neural networks (CNNs)",
+      "backpropagation",
+      "neural networks",
+      "artificial intelligence",
+      "ai history"
+    ],
+    "people": [
+      "yann lecun"
+    ],
+    "subjects": [
+      {
+        "k": "ai history",
+        "n": "ai history",
+        "t": "themes"
+      },
+      {
+        "k": "artificial intelligence",
+        "n": "artificial intelligence",
+        "t": "tech"
+      },
+      {
+        "k": "backpropagation",
+        "n": "backpropagation",
+        "t": "tech"
+      },
+      {
+        "k": "convolutional neural networks (cnns)",
+        "n": "convolutional neural networks (CNNs)",
+        "t": "tech"
+      },
+      {
+        "k": "neural networks",
+        "n": "neural networks",
+        "t": "tech"
+      },
+      {
+        "k": "yann lecun",
+        "n": "Yann LeCun",
+        "t": "people"
+      },
+      {
+        "k": "bell labs",
+        "n": "Bell Labs",
+        "t": "orgs"
+      },
+      {
+        "k": "kunihiko fukushima",
+        "n": "Kunihiko Fukushima",
+        "t": "other"
+      }
+    ],
+    "linked": [],
+    "echoes": [],
+    "eds": [],
+    "pods": [
+      8
+    ],
+    "dateType": ""
   }
 }
