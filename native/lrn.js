@@ -195,7 +195,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261125155724";
+var LRW_BUILD = "20261125174825";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -4408,7 +4408,7 @@ try{
      a row: ~8 s) and a just-pushed commit can answer 403 (the map failed). The map files are read from the commit that
      last CHANGED calmap/ (stamped by build.py): one URL across publishes, warm at the CDN and in the browser's cache.
      LRWB's copy is the fallback. */
-  var B = 'https://cdn.jsdelivr.net/gh/monkantony/lr-media@f29f2a617e0445f042a575b24282fb5b85aa769b/calmap/' || LRWB + 'calmap/', B2 = LRWB + 'calmap/', css = document.createElement('link');
+  var B = 'https://cdn.jsdelivr.net/gh/monkantony/lr-media@b039a15be6c64b262f2e34bd8039d202ac96c01f/calmap/' || LRWB + 'calmap/', B2 = LRWB + 'calmap/', css = document.createElement('link');
   css.rel = 'stylesheet'; css.href = B + 'lr-calmap.css'; document.head.appendChild(css);
   var st = document.createElement('style');   /* the zone head orders its parts (title 1, tools 3): the switch is a tool, on the right */
   st.textContent = '#lrw .zone-head.zh .lrcm-seg{order:3;flex:0 0 auto;margin:0;align-self:center}';
