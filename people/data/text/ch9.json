@@ -3605,7 +3605,7 @@
   },
   "beautypi-starts-shadertoy": {
     "body": [
-      "In January, 2013, <a href=\"http://shadertoy.com/\" target=\"_blank\" rel=\"noopener\">Shadertoy.com</a> was created by <a href=\"https://www.lerandom.art/subjects/pol-jeremias\">Pol Jeremias</a> and <a href=\"https://iquilezles.org/\" target=\"_blank\" rel=\"noopener\">Inigo Quilez</a> (Beautypi) as a repository for community-shared <a href=\"https://www.lerandom.art/subjects/shaders\">shaders</a>. For over a decade now, ShaderToy had been a place for those interested in shaders to learn, share and experiment with the notoriously difficult form of coded expression. The community played a significant role in the development of algorithmic art as a place for thousands of users to develop for the love of coded art before it was practically feasible to sell work as NFTs.",
+      "In January, 2013, <a href=\"http://shadertoy.com/\" target=\"_blank\" rel=\"noopener\">Shadertoy.com</a> was created by <a href=\"https://www.lerandom.art/subjects/pol-jeremias\">Pol Jeremias</a> and <a href=\"https://iquilezles.org/\" target=\"_blank\" rel=\"noopener\">Inigo Quilez</a> (Beautypi) as a repository for community-shared <a href=\"https://www.lerandom.art/subjects/shaders\">shaders</a>. For over a decade now, ShaderToy had been a place for those interested in shaders to learn, share and experiment with the notoriously difficult form of coded expression. The community played a significant role in the development of <a href=\"https://www.lerandom.art/subjects/algorithmic-art\">algorithmic art</a> as a place for thousands of users to develop for the love of coded art before it was practically feasible to sell work as NFTs.",
       "<a href=\"https://www.lerandom.art/editorial/jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge\" target=\"_blank\" rel=\"noopener\">Jen Lowe and Patricio González Vivo, co-authors of</a> <a href=\"https://www.lerandom.art/editorial/jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge\" target=\"_blank\" rel=\"noopener\">The Book of Shaders</a><a href=\"https://www.lerandom.art/editorial/jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge\" target=\"_blank\" rel=\"noopener\">, spoke to this author (</a><a href=\"https://www.lerandom.art/subjects/peter-bauman\">Peter Bauman</a><a href=\"https://www.lerandom.art/editorial/jen-lowe-and-patricio-gonzalez-vivo-on-democratizing-knowledge\" target=\"_blank\" rel=\"noopener\">) about the importance of Shadertoy</a>.",
       "Peter Bauman: If somebody sees an art work and is interested in it for any reason, then they learn the work was made by shaders—what would you recommend they do next if they want to dig beyond the surface level and into the process of the work?‍‍",
       "<a href=\"https://www.lerandom.art/subjects/patricio-gonzalez-vivo\">Patricio González Vivo</a>: I recommend reading <a href=\"m/patricio-gonzalez-vivo-and-jen-lowe-teach-the-world-shaders.html\" data-moment=\"patricio-gonzalez-vivo-and-jen-lowe-teach-the-world-shaders\">The Book of Shaders</a> as a primer [laughs.] Then I recommend checking out the work of Inigo and what is out there in <a href=\"https://www.shadertoy.com/\" target=\"_blank\" rel=\"noopener\">Shadertoy</a>. There’s a strong relationship between the shader world and the demoscene. A lot of old demosceners like <a href=\"https://www.lerandom.art/subjects/inigo-quilez\">Inigo Quilez</a>, <a href=\"https://www.lerandom.art/subjects/mr-doob\">Mr. Doob</a> and <a href=\"https://www.lerandom.art/subjects/jaume-sanchez-clicktorelease\">Jaume Sanchez (Clicktorelease)</a>. They all met through shaders. I have found them in my work career around places like <a href=\"https://www.lerandom.art/subjects/samsung\">Samsung</a>, <a href=\"https://www.lerandom.art/subjects/apple\">Apple</a>, <a href=\"https://www.lerandom.art/subjects/adobe\">Adobe</a> and <a href=\"https://www.lerandom.art/subjects/oculus\">Oculus</a>. There are all these people who were in this petri dish of the demoscene. That bunch is very interesting because the mentality was very focused on visual and technical hacking in order to make cool, flashy demos."
@@ -4808,7 +4808,8 @@
     "pods": [
       13,
       38,
-      41
+      41,
+      48
     ],
     "dateType": "occurred"
   },
@@ -8982,7 +8983,7 @@
   "so-you-want-to-build-a-generator-by-kate-compton": {
     "body": [
       "<a href=\"https://www.lerandom.art/subjects/golan-levin\">Golan Levin</a> considers this article, “<a href=\"https://www.tumblr.com/galaxykate0/139774965871/so-you-want-to-build-a-generator\" target=\"_blank\" rel=\"noopener\">So you want to build a generator</a>” by <a href=\"https://www.lerandom.art/subjects/kate-compton\">Kate Compton</a>, to be “foundational for <a href=\"https://www.lerandom.art/subjects/generative-art\">generative art</a>” along with <a href=\"https://www.lerandom.art/subjects/max-bense\">Max Bense</a>’s “Projects of Generative Aesthetics” (1965). The “beginner-level advice essay” applies equally well to “practiced experts” and explains how to create various types of generators, including Twitterbots, level generators and art-making <a href=\"https://www.lerandom.art/subjects/bots\">bots</a>.",
-      "The essay guides readers through defining their “artist-in-a-box’s” output, identifying desirable and undesirable properties, and exploring different generative methods such as distribution, parametric, tile-based, grammars, constraint solvers and simulations. The essay highlights the level of human intentionality in generative art and its so-called “autonomous” processes. It emphasizes the challenges and difficulty of understanding these high-level human creative processes and translating them into computational, generative methods. Compton’s (galaxykate0) work serves as a comprehensive resource for both novice and experienced generator builders, fostering creativity and innovation in <a href=\"https://www.lerandom.art/subjects/digital-art\">digital art</a> and procedural generation."
+      "The essay guides readers through defining their “artist-in-a-box’s” output, identifying desirable and undesirable properties, and exploring different generative methods such as distribution, parametric, tile-based, grammars, constraint solvers and simulations. The essay highlights the level of human intentionality in generative art and its so-called “autonomous” processes. It emphasizes the challenges and difficulty of understanding these high-level human creative processes and translating them into computational, generative methods. Compton’s (galaxykate0) work serves as a comprehensive resource for both novice and experienced generator builders, fostering creativity and innovation in <a href=\"https://www.lerandom.art/subjects/digital-art\">digital art</a> and <a href=\"https://www.lerandom.art/subjects/procedural-art\">procedural generation</a>."
     ],
     "cite": [
       {
@@ -15297,7 +15298,8 @@
     ],
     "pods": [
       13,
-      11
+      11,
+      48
     ],
     "dateType": "acquired"
   },
