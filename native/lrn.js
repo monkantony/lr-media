@@ -195,7 +195,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261127113529";
+var LRW_BUILD = "20261127114332";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -3307,6 +3307,12 @@ try{
   /* lr-planner-later-tab (Peter, 27 Nov 2026: "after feb, have an upcoming 2027 tab with all this"): this month and
      the next three keep a tab each; every later month folds into one "Upcoming" tab listing all its dates by month. */
   var MONTH_TABS = 4;
+  /* lr-planner-later-tab-css: the native page skips the bundle css, so the subhead style rides with the module */
+  try { if (!document.getElementById('lr-pl-later-css')) { var st = document.createElement('style'); st.id = 'lr-pl-later-css';
+    st.textContent = '.pl-row.pl-sub{height:auto;min-height:0;padding:16px 0 6px;border-bottom:1px solid var(--pl-rule,rgba(2,176,244,.32))}'
+      + '.pl-sm{font-family:var(--sans,Rules,Arial,sans-serif);font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-70,rgba(1,16,21,.7))}'
+      + '.pl-later .pl-ap{font-size:11px;letter-spacing:.06em}';
+    document.head.appendChild(st); } } catch (e) {}
   function buildTabs(){
     tabs = []; var later = [];
     months.forEach(function(mi){ if (mi < CURM + MONTH_TABS) tabs.push({ ms: [mi] }); else later.push(mi); });
