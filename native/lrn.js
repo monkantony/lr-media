@@ -195,7 +195,7 @@ window.__lrnFeature = function(fz, slug){
   box.classList.toggle('lrn-picked', !!hit);
   return true;
 };
-var LRW_BUILD = "20261125174825";
+var LRW_BUILD = "20261127113529";
 var LRWB = (window.LRW_RAW || 'https://raw.githubusercontent.com/monkantony/lr-media/main/');
 /* ---------- self-healing cache: a moved build id refreshes the page once (raw path only; the CDN path reads a fresh pointer every load) ---------- */
 (function(){
@@ -3303,9 +3303,21 @@ try{
     return out;
   }
 
-  var occ = [], months = [], sel = 0, nowOpen = false, datesOpen = false, lastCols = 0, rt = 0;
+  var occ = [], months = [], tabs = [], sel = 0, nowOpen = false, datesOpen = false, lastCols = 0, rt = 0;
+  /* lr-planner-later-tab (Peter, 27 Nov 2026: "after feb, have an upcoming 2027 tab with all this"): this month and
+     the next three keep a tab each; every later month folds into one "Upcoming" tab listing all its dates by month. */
+  var MONTH_TABS = 4;
+  function buildTabs(){
+    tabs = []; var later = [];
+    months.forEach(function(mi){ if (mi < CURM + MONTH_TABS) tabs.push({ ms: [mi] }); else later.push(mi); });
+    if (later.length) {
+      var y0 = Math.floor(later[0] / 12), y1 = Math.floor(later[later.length - 1] / 12);
+      tabs.push({ ms: later, later: 1, label: 'Upcoming' + (y0 === y1 ? ' ' + y0 : ''), year: y0 === y1 ? y0 : (y0 + '\u2013' + y1) });
+    }
+  }
+  function tabOf(mi){ for (var i = 0; i < tabs.length; i++) if (tabs[i].ms.indexOf(mi) > -1) return i; return -1; }
   /* lr-search-upcoming: a search result opens its month */
-  window.__lrwPlannerGoto = function(ymd){ try { var p = String(ymd).split('-'); var mi = parseInt(p[0], 10) * 12 + parseInt(p[1], 10) - 1; var k = months.indexOf(mi); if (k > -1) { sel = k; nowOpen = true; datesOpen = true; render(); } } catch (e) {} };   /* the row a search points at is always on screen */
+  window.__lrwPlannerGoto = function(ymd){ try { var p = String(ymd).split('-'); var mi = parseInt(p[0], 10) * 12 + parseInt(p[1], 10) - 1; var k = tabOf(mi); if (k > -1) { sel = k; nowOpen = true; datesOpen = true; render(); } } catch (e) {} };   /* the row a search points at is always on screen */
 
   function colsFor(){ return 1; } /* lr-planner-one-month: one month at a time, the tabs change it (Peter, 8 Sep) */
   function baseRows(c){ return c === 3 ? 9 : (c === 2 ? 10 : 12); }
@@ -3318,10 +3330,10 @@ try{
     }
     return out;
   }
-  function rowHTML(o){
+  function rowHTML(o, later){
     var mk = o.k === 'event' ? 'pl-ev' : (o.k === 'exhibition' ? 'pl-ex' : 'pl-an');
     var kw = o.k === 'event' ? 'Event' : (o.k === 'exhibition' ? 'Exhibition' : (o.k === 'deadline' ? 'Deadline' : 'Anniversary')); /* lr-planner-words: the kind in words, every row (Peter, 8 Sep) */
-    var d = o.now ? 'Now' : esc(o.day) + (o.ap ? '<i class="pl-ap">?</i>' : '');
+    var d = o.now ? 'Now' : ((later && o.ap) ? '<i class="pl-ap">TBA</i>' : esc(o.day) + (o.ap ? '<i class="pl-ap">?</i>' : ''));
     var m = '<span class="pl-kw">' + kw + '</span><span class="pl-rest">';
     if (o.v) m += '<span class="pl-v">' + esc(o.v) + '</span>';
     if (o.p) m += (o.v ? '<span class="pl-sep">\u00b7</span>' : '') + '<span class="pl-p">' + esc(o.p) + '</span>';
@@ -3342,12 +3354,33 @@ try{
      "All upcoming dates" under the last line opens the month's remaining dates. The single "Show full month"
      it replaces was drawn only when the capped list overflowed, so late in a month (2 dates left, 49 shows
      running) nothing could open the hidden shows. */
-  function monthParts(mi){
+  function monthParts(ms){
+    if (typeof ms === 'number') ms = [ms];
     var nows = [], dated = [];
-    for (var i = 0; i < occ.length; i++) { var o = occ[i]; if (o.m !== mi) continue; (o.now ? nows : dated).push(o); }
+    for (var i = 0; i < occ.length; i++) { var o = occ[i]; if (ms.indexOf(o.m) < 0) continue; (o.now ? nows : dated).push(o); }
     return { nows: nows, dated: dated, dcap: Math.max(1, baseRows(1) - Math.min(nows.length, NOW_CAP)) };
   }
-  function colHTML(mi){
+  function laterHTML(tb){
+    var q = monthParts(tb.ms), cap = baseRows(1), list = datesOpen ? q.dated : q.dated.slice(0, cap);
+    var h = '<div class="pl-mh"><span class="pl-mn">Upcoming</span><span class="pl-my">' + tb.year + '</span></div>';
+    var body = '', lastM = -1;
+    for (var i = 0; i < list.length; i++) {
+      var o = list[i];
+      if (o.m !== lastM) { lastM = o.m; var yy = Math.floor(o.m / 12), mm = o.m - yy * 12;
+        body += '<div class="pl-row pl-sub"><span class="pl-d"></span><span class="pl-x"><span class="pl-sm">' + MONL[mm] + ' ' + yy + '</span></span></div>'; }
+      body += rowHTML(o, 1);
+    }
+    if (!body) body = '<div class="pl-row e"><span class="pl-d"></span><span class="pl-x"><span class="pl-none">Nothing listed yet</span></span></div>';
+    var rest = q.dated.length - cap;
+    var foot = '<div class="pl-cf">' + (rest > 0
+      ? (datesOpen ? '<button class="pl-more" type="button" data-dates="0" aria-expanded="true">Show less</button>'
+                   : '<button class="pl-more" type="button" data-dates="1" aria-expanded="false">All upcoming dates (+' + rest + ')</button>')
+      : '') + '</div>';
+    return '<div class="pl-col pl-later" role="group" aria-label="' + esc(tb.label) + '">' + h + '<div class="pl-rows">' + body + '</div>' + foot + '</div>';
+  }
+  function colHTML(tb){
+    if (tb.later) return laterHTML(tb);
+    var mi = tb.ms[0];
     var y = Math.floor(mi / 12), mo = mi - y * 12, q = monthParts(mi);
     var list = (nowOpen ? q.nows : q.nows.slice(0, NOW_CAP)).concat(datesOpen ? q.dated : q.dated.slice(0, q.dcap));
     var nowBtn = q.nows.length > NOW_CAP
@@ -3367,17 +3400,18 @@ try{
   }
   function render(){
     var c = colsFor(); lastCols = c;
-    var start = Math.max(0, Math.min(sel, months.length - c));
-    var vis = months.slice(start, start + c);
+    var start = Math.max(0, Math.min(sel, tabs.length - c));
+    var vis = tabs.slice(start, start + c);
     root.setAttribute('data-cols', String(Math.min(c, Math.max(1, vis.length))));
-    tabsEl.innerHTML = months.map(function(mi, i){
-      var y = Math.floor(mi / 12), mo = mi - y * 12, n = listFor(mi, Infinity).length;
+    tabsEl.innerHTML = tabs.map(function(tb, i){
+      var mi = tb.ms[0], y = Math.floor(mi / 12), mo = mi - y * 12, n = 0;
+      tb.ms.forEach(function(m){ n += listFor(m, Infinity).length; });
       var cls = i === sel ? ' on' : (i >= start && i < start + c ? ' vis' : '');
       return '<button class="pl-tab' + cls + '" type="button" role="tab" data-tab="' + i + '"'
-        + ' aria-selected="' + (i === sel ? 'true' : 'false') + '">' + MON[mo]
+        + ' aria-selected="' + (i === sel ? 'true' : 'false') + '">' + (tb.later ? esc(tb.label) : MON[mo])
         + '<span class="pl-tc">' + n + ' event' + (n === 1 ? '' : 's') + '</span></button>';
     }).join('');
-    gridEl.innerHTML = vis.map(function(mi){ return colHTML(mi); }).join('');
+    gridEl.innerHTML = vis.map(function(tb){ return colHTML(tb); }).join('');
     if (fullBtn) fullBtn.hidden = true;           /* the old "Full month" pill is retired */
   }
 
@@ -3404,7 +3438,8 @@ try{
     occ.forEach(function(o){ if (o.m >= CURM) seen[o.m] = 1; });
     seen[CURM] = 1;
     months = Object.keys(seen).map(Number).sort(function(a, b){ return a - b; });
-    sel = months.indexOf(CURM); if (sel < 0) sel = 0;
+    buildTabs();
+    sel = tabOf(CURM); if (sel < 0) sel = 0;
     render();
     sec.removeAttribute('hidden'); sec.style.display = '';
   }).catch(function(){});
